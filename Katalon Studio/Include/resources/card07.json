@@ -1,0 +1,985 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: rebate card or low rate card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares a rebate reward card with a low interest rate card. Rebate reward cards allow you to accumulate points, or credits, toward merchandise when you make purchases. Often, the reward card comes with a higher annual fee than an ordinary card and may have a higher interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The rebate card will cost you $266 less over a 3 year period."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Rebate card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Low rate card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalCost_result_label",
+      "value": "Total net cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalCost_result_value",
+      "value": "$12,780"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalCost_result_value",
+      "value": "$13,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalInterestAndFees_result_label",
+      "value": "Interest and fees paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalInterestAndFees_result_value",
+      "value": "$1,030"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalInterestAndFees_result_value",
+      "value": "$846"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalEarned_result_label",
+      "value": "Rebate earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalEarned_result_value",
+      "value": "$450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_NotAvailable_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "RebateCard-accordion",
+      "value": "Rebate Card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryInterestRate-label",
+      "value": "Introductory interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardIntroductoryInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory interest rate'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory interest rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory rate'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryTerm-label",
+      "value": "Introductory term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardIntroductoryTerm",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryTerm-error-message",
+      "value": "Must be between 0 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Card_RebateCardIntroductoryTerm_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Card_RebateCardIntroductoryTerm_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryAnnualFee-label",
+      "value": "Introductory annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardIntroductoryAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardIntroductoryAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardInterestRate",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardAnnualFee-label",
+      "value": "Regular annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "RebateInfo-accordion",
+      "value": "Rebate Rates"
+    }
+  },
+  {
+    "click": {
+      "id": "RebateInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateRateOnRegularPurchases-label",
+      "value": "% earned on regular purchases"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardRebateRateOnRegularPurchases",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateRateOnRegularPurchases-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateRateOnBalanceOwed-label",
+      "value": "% earned on balance owed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateRateOnBalanceOwed",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateRateOnBalanceOwed-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateRateOnBalanceTransfer-label",
+      "value": "% earned on balance transfer"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardRebateRateOnBalanceTransfer",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateRateOnBalanceTransfer-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateOnSpecificBrandPurchases-label",
+      "value": "% earned on specific brand purchases"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardRebateOnSpecificBrandPurchases",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebateOnSpecificBrandPurchases-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Card_RebateCardRebateOnSpecificBrandPurchases_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Card_RebateCardRebateOnSpecificBrandPurchases_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Rebate rate on rebate card (specific brands)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The rebate rate on a brand-specific rebate card is the percentage rate at which you can earn rewards using the card on brand-related purchases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardSpecificBrandPurchasesMonthly-label",
+      "value": "Specific brand purchases (monthly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardSpecificBrandPurchasesMonthly",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardSpecificBrandPurchasesMonthly-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Card_RebateCardSpecificBrandPurchasesMonthly_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Card_RebateCardSpecificBrandPurchasesMonthly_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Monthly amount purchased towards specific-brand rebates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "If you use a rebate card for specific-brand goods, enter the amount of future monthly purchases that are made for those goods. For example, if you expect future monthly charges of $300, and $50 of those charges are for the specific-brand goods, enter $300 as Future monthly charges and $50 as Monthly amount purchased (on the specific-brand goods). Monthly amount purchased is included in Future monthly charges but is entered separately in order to calculate the rebate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "RebateLimits-accordion",
+      "value": "Rebate Limits"
+    }
+  },
+  {
+    "click": {
+      "id": "RebateLimits-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardMaximumYearlyRebate-label",
+      "value": "Maximum rebate earned (annually)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardMaximumYearlyRebate",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardMaximumYearlyRebate-error-message",
+      "value": "Must be between $1 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardMaximumTotalRebate-label",
+      "value": "Maximum total rebate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardMaximumTotalRebate",
+      "value": "4,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardMaximumTotalRebate-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateCardRebatePayoutType-label",
+      "value": "Rebate payout each year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Card_RebateCardRebatePayoutType\"]/option[1]",
+      "value": "In cash"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//*[@id=\"lf_Card_RebateCardRebatePayoutType\"]/option[2]",
+      "value": "Pay down"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RebateCardRebatePayoutType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LowRateCard-accordion",
+      "value": "Low Rate Card"
+    }
+  },
+  {
+    "click": {
+      "id": "LowRateCard-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate-label",
+      "value": "Introductory interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryTerm-label",
+      "value": "Introductory term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryTerm",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryTerm-error-message",
+      "value": "Must be between 0 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[2]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[2]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee-label",
+      "value": "Introductory annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardInterestRate",
+      "value": "9.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardAnnualFee-label",
+      "value": "Regular annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CardActivity-accordion",
+      "value": "Card Activity"
+    }
+  },
+  {
+    "click": {
+      "id": "CardActivity-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-label",
+      "value": "Card balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsCardToBeUsed-label",
+      "value": "Years you'll use card"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_YearsCardToBeUsed",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsCardToBeUsed-error-message",
+      "value": "Must be between 1 and 30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-label",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly charges'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly charges'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-label",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly payments'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly payments'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "RebateCard-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardIntroductoryInterestRate",
+      "value": "5.35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardIntroductoryTerm",
+      "value": "14"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardIntroductoryAnnualFee",
+      "value": "56"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardInterestRate",
+      "value": "9.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardAnnualFee",
+      "value": "65"
+    }
+  },
+  {
+    "click": {
+      "id": "RebateInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardRebateRateOnRegularPurchases",
+      "value": "6.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateRateOnBalanceOwed",
+      "value": "10.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardRebateRateOnBalanceTransfer",
+      "value": "10.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardRebateOnSpecificBrandPurchases",
+      "value": "12.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardSpecificBrandPurchasesMonthly",
+      "value": "100"
+    }
+  },
+  {
+    "click": {
+      "id": "RebateLimits-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardMaximumYearlyRebate",
+      "value": "3,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RebateCardMaximumTotalRebate",
+      "value": "5,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Card_RebateCardRebatePayoutType",
+      "value": "label=Pay down"
+    }
+  },
+  {
+    "click": {
+      "id": "LowRateCard-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate",
+      "value": "2.99"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryTerm",
+      "value": "14"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee",
+      "value": "35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardInterestRate",
+      "value": "12.99"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardAnnualFee",
+      "value": "45"
+    }
+  },
+  {
+    "click": {
+      "id": "CardActivity-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_YearsCardToBeUsed",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "600"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "The rebate card will cost you $13,341 less over a 5 year period."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalCost_result_label",
+      "value": "Total net cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RebateTotalCost_result_value",
+      "value": "$37,687"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalCost_result_value",
+      "value": "$51,028"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

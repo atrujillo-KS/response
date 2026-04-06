@@ -1,0 +1,712 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "GeneralInfo",
+        "AboutYou",
+        "YourSpouse"
+      ],
+      "GeneralInfo": {
+        "tabLabel": "General Info",
+        "fields": [
+          "AcctType",
+          "FilingStatus"
+        ]
+      },
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "CurrAge",
+          "Income",
+          "MAGI",
+          "SETax",
+          "UserWorkPlanRetire02F",
+          "MaxPct"
+        ]
+      },
+      "YourSpouse": {
+        "tabLabel": "Your Spouse",
+        "fields": [
+          "SpsAge",
+          "SpsInc",
+          "SpouseMAGI",
+          "SETaxSp",
+          "SpouseWorkPlanRetire02F",
+          "SpouseMaxPct"
+        ]
+      }
+    },
+    "fields": {
+      "Income": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual income",
+        "defaultValue": "40000",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "(before taxes)",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Current Age",
+        "valueTextLabel": "years",
+        "defaultValue": "37",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "ariaLegendLabel": "My spouse's information",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "37",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsInc": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual income",
+        "defaultValue": "30000",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "(before taxes)",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "30000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "MAGI": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SETax": {
+        "fieldLabel": "Self-employment tax paid",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "151000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "MaxPct": {
+        "fieldLabel": "Employer cap on contributions",
+        "smallLabel": "(% of pay)",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "15.00",
+        "value": "15.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SpouseMAGI": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SETaxSp": {
+        "fieldLabel": "Self-employment tax-paid",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "151000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SpouseMaxPct": {
+        "fieldLabel": "Employer cap on contributions",
+        "smallLabel": "(% of pay)",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "AcctType": {
+        "showTooltip": "",
+        "dropdown": true,
+        "fieldLabel": "Retirement plan",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "2",
+            "optionText": "401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Traditional IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Roth IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "6",
+            "optionText": "Roth 401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Keogh"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "4",
+            "optionText": "Simple"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "5",
+            "optionText": "SEP"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "FilingStatus": {
+        "showTooltip": "",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "UserWorkPlanRetire02F": {
+        "showTooltip": "",
+        "dropdown": true,
+        "fieldLabel": "Participate in work retirement plan?",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Yes"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "No"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "SpouseWorkPlanRetire02F": {
+        "showTooltip": "",
+        "dropdown": true,
+        "fieldLabel": "Participate in work retirement plan?",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Yes"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "No"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "CurrAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Current age",
+        "valueTextLabel": "years",
+        "defaultValue": "37",
+        "inputType": "text",
+        "precision": 0,
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "ariaLegendLabel": "My information",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "empty": {
+        "fieldLabel": ""
+      },
+      "PenAdjOpt": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Payments to adjust for inflation",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "No payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "First payment"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Rest of payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "All payments"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "SpsPenAdjOpt": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Payments to adjust for inflation",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "No payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "First payment"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Rest of payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "All payments"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "AcctOwner": {
+        "showTooltip": "lf-hidden",
+        "taxOwnerLabelFor": "tax-advantaged-account-owner",
+        "selectName": "tax-advantaged-account-owner",
+        "selectId": "tax-advantaged-account-owner",
+        "selectClass": "",
+        "fieldLabel": "Owner",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-MTaxAdvantage",
+            "optionText": "You",
+            "display": "block"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-STaxAdvantage",
+            "optionText": "Your spouse",
+            "display": "block"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "MTaxAdvantage-account-type": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Type of Account",
+        "selectClass": "lf-MTaxAdvantage",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-individualAccount-type1",
+            "optionText": "401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type2",
+            "optionText": "Roth 401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type3",
+            "optionText": "Roth IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type4",
+            "optionText": "Traditional IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type5",
+            "optionText": "SEP"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type6",
+            "optionText": "SIMPLE"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type7",
+            "optionText": "Keogh"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type8",
+            "optionText": "Other"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "STaxAdvantage-account-type": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Type of Account",
+        "selectClass": "lf-MTaxAdvantage",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-spouseAccount-type1",
+            "optionText": "401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type2",
+            "optionText": "Roth 401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type3",
+            "optionText": "Roth IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type4",
+            "optionText": "Traditional IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type5",
+            "optionText": "SEP"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type6",
+            "optionText": "SIMPLE"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type7",
+            "optionText": "Keogh"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      }
+    },
+    "results_fields": {
+      "TotMaxDep": {
+        "fieldLabel": "Total maximum contribution"
+      },
+      "TotDepRetire02C": {
+        "fieldLabel": "Total amount contributed"
+      },
+      "TotTaxRetire02C": {
+        "fieldLabel": "Total income tax & penalties"
+      },
+      "TotIntRetire02C": {
+        "fieldLabel": "Total interest earnings"
+      },
+      "ContYr1": {
+        "fieldLabel": "2025"
+      },
+      "SpouseContYr1": {
+        "fieldLabel": ""
+      },
+      "ContYr2": {
+        "fieldLabel": "2026 (estimated)"
+      },
+      "SpouseContYr2": {
+        "fieldLabel": ""
+      },
+      "ContYr3": {
+        "fieldLabel": "2027 (estimated)"
+      },
+      "SpouseContYr3": {
+        "fieldLabel": ""
+      },
+      "CurrExp": {
+        "fieldLabel": "Current"
+      },
+      "EstExp": {
+        "fieldLabel": "During Retirement"
+      },
+      "EstExpAdj": {
+        "fieldLabel": "During Retirement"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "You",
+        "Your Spouse"
+      ],
+      "fields": [
+        [
+          "ContYr1",
+          "SpouseContYr1"
+        ]
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Year",
+    "title": "How much can I contribute to my retirement plan each year?",
+    "answer": "In %year%, you can contribute up to a maximum of <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Yearly Contribution Limits",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "you": "You",
+    "spouse": "Your Spouse",
+    "contributionLimit": "Contribution limit"
+  },
+  "glossaryItems": {
+    "regularira": {
+      "title": "Regular IRA",
+      "definition": "A regular IRA is also called a traditional IRA. It is a tax-deferred retirement account. For 2025, you are allowed to make a tax-deferred contribution of $7,000 to a regular IRA. This account grows tax-deferred until you begin to take distributions, which you may do without penalty after you turn age 59-1/2. For persons who are age 50 or older, a special catch-up provision of the 2001 tax law allows you to contribute an additional $1,000, or a total of $8,000."
+    },
+    "rothira": {
+      "title": "Roth IRA",
+      "definition": "A tax-advantaged retirement account that allows you to make an after-tax contribution of up to $7,000 for 2025, or up to $8,000 if you're age 50 or older. If you keep a Roth IRA for at least five years and are at least age 59-1/2 when you begin to withdraw from the account, the entire account may be distributed tax- and penalty-free."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "deductibleira": {
+      "title": "Deductible IRA",
+      "definition": "A deductible IRA is an individual retirement account that is funded with tax-deductible contributions. You can contribute up to either $7,000 or $8,000 (depending on age, income, and participation in an employer-sponsored retirement plan) in 2025."
+    },
+    "dcplan401k": {
+      "title": "401(k) plan",
+      "definition": "A 401(k) plan is a defined-contribution plan that permits employees to have a portion of their salary deducted from their paycheck and contributed to an account. Federal (and usually state) taxes on the employee contributions and investment earnings are deferred until the participant receives a distribution from the plan (typically at retirement). Employers may also contribute to the account of a participant. For 2025, you may contribute up to $23,500 to a 401(k) plan. If you are age 50 or older, you may contribute an additional $7,500, or a total of $31,000. If your employer makes contributions, the most that may be contributed to a 401(k) plan for 2025 is the lesser of $70,000 ($76,500 if age 50 or older) or 100% of your annual compensation."
+    },
+    "keoghplan": {
+      "title": "Keogh plan",
+      "definition": "A defined-contribution retirement plan for self-employed persons and their employees, including sole proprietorships and partnerships. Contribution limits vary depending on whether your Keogh plan is a defined-benefit, defined contribution, or qualified 401(k) plan."
+    },
+    "simple": {
+      "title": "SIMPLE plan",
+      "definition": "A Savings Incentive Match Plan for Employees (SIMPLE) plan is an employer-contribution retirement plan for self-employed persons or small businesses (100 or fewer employees). For 2025, you may contribute up to $16,500 to your SIMPLE-IRA, or if you are age 50 or older, up to $20,000."
+    },
+    "roth401k": {
+      "title": "Qualified Roth contribution programs",
+      "definition": "A tax-advantaged retirement account similar to a Roth IRA with one exception: there are no income limitations for those who want to participate."
+    },
+    "catchupprovisioniras": {
+      "title": "Catch-up provision for contributions to individual retirement accounts",
+      "definition": "The Economic Growth and Tax Relief Reconciliation Act of 2001 authorized higher yearly contribution limits to IRAs, 401(k) plans and other defined-contribution retirement plans. A catch-up provision of the new law authorized even higher limits for workers who are age 50 or older. For regular and Roth IRAs, this additional contribution amount is $1,000 for 2025. As a result, combined yearly contribution limits for persons aged 50 or older increase to $8,000 for 2025."
+    },
+    "sep": {
+      "title": "SEP plan",
+      "definition": "A Simplified Employee Pension (SEP) plan is an employer-contribution retirement plan for self-employed persons or small businesses (25 or fewer employees). For 2025, your employer may contribute up to the lesser of $70,000 or 25% of your annual compensation to your SEP-IRA."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your maximum tax-deductible or allowable contributions to a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DCPlan401K\">401(k)</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">Traditional IRA</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">Roth IRA</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#roth401K\">Roth 401(k)</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SEP\">SEP</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SIMPLE\">SIMPLE</a></span> or <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#KeoghPlan\">Keogh plan</a></span>. Please note that <b>the maximum contribution limits displayed for each plan are only applicable if you contribute to only one of the plans</b>. For example, a contribution to a Traditional IRA plan reduces the maximum you are allowed to contribute to a Roth IRA."
+    },
+    {
+      "textLabel": "The amount you are allowed to contribute to an IRA depends on your tax filing status, modified adjusted gross income (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MAGI\">MAGI</a></span>), and whether you (or a spouse) participate in an employer-sponsored retirement plan such as a 401(k) or 403(b) plan."
+    },
+    {
+      "textLabel": "At higher incomes, your tax-deductible contribution to a regular IRA phases out. Similarly, your allowable contributions to a Roth IRA phase out at higher incomes."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the maximum contribution limits for the retirement plan selected for the current year."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Maximum contribution limits for the retirement plan selected for the current year"
+    }
+  ]
+}

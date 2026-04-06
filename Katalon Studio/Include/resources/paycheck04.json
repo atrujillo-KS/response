@@ -1,0 +1,986 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much of my bonus do I keep after income taxes?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates how much of your bonus you keep after deducting federal income and FICA taxes, state taxes, and any deductions that you specify, including contributions to a 401(k) or similar employer-sponsored retirement plan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='contributions'])[1]/following::p[1]",
+      "value": "The U.S. Internal Revenue Service (IRS) considers bonus income as supplemental wages. The method that it uses to withhold taxes depends on whether the bonus is paid as part of your regular compensation. The method also depends on whether the bonus is a specified amount."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='supplemental wages.'])[1]/following::p[1]",
+      "value": "Because contributions to a 401(k) or other qualified retirement plan are deducted from gross income, you reduce the amount of income on which you owe taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates how much of your bonus you keep after deducting federal income and FICA taxes, state taxes, and any deductions that you specify, including contributions to a 401(k) or similar employer-sponsored retirement plan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='contributions'])[1]/following::p[1]",
+      "value": "The U.S. Internal Revenue Service (IRS) considers bonus income as supplemental wages. The method that it uses to withhold taxes depends on whether the bonus is paid as part of your regular compensation. The method also depends on whether the bonus is a specified amount."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='supplemental wages.'])[1]/following::p[1]",
+      "value": "Because contributions to a 401(k) or other qualified retirement plan are deducted from gross income, you reduce the amount of income on which you owe taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=bonus",
+      "value": "bonus"
+    }
+  },
+  {
+    "click": {
+      "id": "link=bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Bonus income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The IRS considers bonus income as supplemental income."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Bonus income'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=federal income",
+      "value": "federal income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=FICA taxes",
+      "value": "FICA taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=contributions",
+      "value": "contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=401(k)",
+      "value": "401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=supplemental wages.",
+      "value": "supplemental wages."
+    }
+  },
+  {
+    "click": {
+      "id": "link=supplemental wages."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Supplemental wages"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The IRS considers bonuses as supplemental wages."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Supplemental wages'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=gross income",
+      "value": "gross income"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will keep $385 of your bonus after taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bonus_result_label",
+      "value": "Gross bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bonus_result_value",
+      "value": "$500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CalcNetBonus_result_label",
+      "value": "Net bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CalcNetBonus_result_value",
+      "value": "$385"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Paycheck Details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Bonus-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Bonus information",
+      "value": "Bonus information"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Bonus information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Bonus income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The IRS considers bonus income as supplemental income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bonus_field_label",
+      "value": "Your bonus"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bonus",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bonus-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BonusType_field_label",
+      "value": "Taxed as"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BonusType",
+      "value": "Aggregate income Supplemental income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_BonusType",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Income-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-page-title']/h2",
+      "value": "Income information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_GrossIncome_field_label",
+      "value": "Gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_GrossIncome",
+      "value": "35,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_GrossIncome-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_GrossIncome_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_GrossIncome_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayPeriod_field_label",
+      "value": "Per"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayPeriod",
+      "value": "Year Pay period"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PayPeriod",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_GrossIncomeYTD_field_label",
+      "value": "Gross income (year to date)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_GrossIncomeYTD",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_GrossIncomeYTD-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_GrossIncomeYTD_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_GrossIncomeYTD_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Gross income (year-to-date)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Gross income (year-to-date) is your total income through the most recent pay period for the current calendar year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Taxes-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Taxes-page-title']/h2",
+      "value": "Tax information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FilingStatus_field_label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FilingStatus",
+      "value": "Single Married filing jointly Married filing single Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_FilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_FilingStatus_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Exemptions_field_label",
+      "value": "Total exemptions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Exemptions",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Exemptions-error-message",
+      "value": "Must be between 0 and 8"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Exemptions_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Total exemptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Either the number of exemptions from your individual income tax return (IRS 1040) or the number of allowances from your withholding allowance certificate (W-4 form)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyTitle": {
+      "value": "Leadfusion Paycheck Planning Calculator"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AddFedTax",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AddFedTax-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_AddFedTax_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Additional income withheld by the IRS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter any additional amounts that you have requested the IRS withhold from your pay."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxOpt_field_label",
+      "value": "State income taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxOpt",
+      "value": "% of gross pay % of federal taxes No state taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_StateTaxOpt",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_StateTaxOpt_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "State income taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The taxes you pay, if applicable, to the treasury or revenue board of the state of your legal domicile."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxRatePaycheck_field_label",
+      "value": "% of gross pay"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_StateTaxRatePaycheck",
+      "value": "3.40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxRatePaycheck-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-deductions-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-deductions-tab-legend']/h2",
+      "value": "Tax deductions\nEnter information for any item or expenditure subtracted from gross income to reduce your taxable income."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-addDeduction",
+      "value": "ADD DEDUCTION"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-addDeduction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_deduction1_label",
+      "value": "Deduction #1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_DeductionName_label2",
+      "value": "Purpose"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_DeductionName"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_DeductionAmount_label2",
+      "value": "Amount per pay period"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_DeductionAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_DeductionType_label2",
+      "value": "Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_DeductionType",
+      "value": "% $"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_DeductionType",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_DeductionList_0_DeductionAmount_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Amount per pay period for this tax deduction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Payroll deduction is an automated process that deducts pre-set amounts from the gross pay of employees for making employee contributions to retirement plans and cafeteria plans."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_DeductionType_label2",
+      "value": "Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Exempt from which taxes",
+      "value": "Exempt from which taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_FederalTaxExempt_label2",
+      "value": "Federal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_FederalTaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_FederalTaxExempt",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_StateTaxExempt_label2",
+      "value": "State"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_StateTaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_StateTaxExempt",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_MedicareTaxExempt_label2",
+      "value": "Medicare"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_MedicareTaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_MedicareTaxExempt",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_deduction1']/div[2]/div/div[2]/div[2]/div",
+      "value": "Exempt from which taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeductionList_0_FICATaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeductionList_0_FICATaxExempt",
+      "value": "true"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Bonus-tab-label"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Bonus",
+      "value": "1,500"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_BonusType",
+      "value": "label=Supplemental income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxSuppRate_field_label",
+      "value": "State supplemental tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxSuppRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_StateTaxSuppRate",
+      "value": "1.45"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Income-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_GrossIncome",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_GrossIncome",
+      "value": "75,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PayPeriod",
+      "value": "label=Pay period"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_GrossIncomeYTD",
+      "value": "45,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PayFreq",
+      "value": "label=Monthly"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Taxes-tab-label"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_FilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Exemptions",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AddFedTax",
+      "value": "150"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_StateTaxOpt",
+      "value": "label=% of federal taxes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_StateTaxRateFIT",
+      "value": "2.50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-deductions-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeductionList_0_DeductionName",
+      "value": "Test 1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeductionList_0_DeductionAmount",
+      "value": "2"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_DeductionList_0_StateTaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_DeductionList_0_FICATaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeductionList_1_DeductionName",
+      "value": "Test 2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeductionList_1_DeductionAmount",
+      "value": "50"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_DeductionList_1_DeductionType",
+      "value": "label=$"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_DeductionList_1_FederalTaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_DeductionList_1_MedicareTaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will keep $795 of your bonus after taxes"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-3']/tbody/tr/td",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-3']/tbody/tr/td[2]",
+      "value": "$20,420"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bonus_result_value",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CalcNetBonus_result_value",
+      "value": "$795"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

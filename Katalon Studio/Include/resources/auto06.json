@@ -1,0 +1,577 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which vehicle loan is better?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine which of two vehicle loans is the better deal. For two loans with the same interest rate, the monthly payment is larger for the loan with the shorter term. However, you pay off the loan sooner and have a chance to deposit the savings in an interest-paying account. If your savings rate of return is much higher than the auto loan interest rate, it might be better to invest the money and finance the car."
+    }
+  },
+    {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Loan 2 will cost you, in today's dollars, $18,161 less than Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Loan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto06_result_label",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto06_result_value",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmt2Auto06_result_value",
+      "value": "$570"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto06_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto06_result_value",
+      "value": "$4,005"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2Auto06_result_value",
+      "value": "$688"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Loan1-accordion",
+      "value": "Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-error-message",
+      "value": "Must be between $0 and $249,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_AutoDownPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_AutoDownPayment_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-small-label",
+      "value": "(months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_AutoLoanTerm_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_AutoLoanTerm_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Loan2-accordion",
+      "value": "Loan 2"
+    }
+  },
+  {
+    "click": {
+      "id": "Loan2-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanPurchasePrice-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanPurchasePrice",
+      "value": "15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanPurchasePrice-error-message",
+      "value": "Must be between $0 and $250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment-error-message",
+      "value": "Must be between $0 and $249,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Auto_SecondLoanDownPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Auto_SecondLoanDownPayment_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-label",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-small-label",
+      "value": "(months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Auto_SecondLoanTerm_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Auto_SecondLoanTerm_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Tax & Savings Rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "TaxSavingsRates-accordion",
+      "value": "Tax & Savings Rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state & federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_FederalAndStateTaxRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Your savings interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_SavingsInterestRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Loan 1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "55,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "60"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "4.59"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Loan 2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanPurchasePrice",
+      "value": "45,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanInterestRate",
+      "value": "5.23"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Tax & Savings Rates"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "30.12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.45"
+    }
+  },  
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "30.12"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Loan 2 will cost you, in today's dollars, $14,123 less than Loan 1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_MonPmtAuto06_result_value']/span",
+      "value": "$841"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_MonPmt2Auto06_result_value']/span",
+      "value": "$1,053"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto06_result_value",
+      "value": "$5,447"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_TotIntPaid2Auto06_result_value']/span",
+      "value": "$2,894"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

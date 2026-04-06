@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Years you will own vehicle</name>
+   <tag></tag>
+   <elementGuidId>8f08d172-4c6c-4252-8650-8aad80e456bb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_YearsOwned-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_YearsOwned-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_YearsOwned-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>48ad8502-6f9e-47aa-bfd3-74ed9aa1147f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_YearsOwned</value>
+      <webElementGuid>8f198391-725d-447f-832b-0524f972ffea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_YearsOwned-label</value>
+      <webElementGuid>8474a900-3b0f-434a-a145-e2ee67ce20af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>f26774e2-545a-4ced-a9ad-53373a9a07ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Years you will own vehicle
+                            
+                        </value>
+      <webElementGuid>a6c9857b-2f1a-4ebf-b34b-ddc7cdcc07cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_YearsOwned-label&quot;)</value>
+      <webElementGuid>2d1c0100-77a7-4ce2-b537-61d1bdabaac3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_YearsOwned-label']</value>
+      <webElementGuid>282cc679-bef7-472f-89d8-6c01aa97df35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_YearsOwned_container']/div/label</value>
+      <webElementGuid>9ba60a4f-b577-4559-82ce-230f43b17641</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vehicle age'])[1]/following::label[1]</value>
+      <webElementGuid>d520144c-81df-465f-97aa-be22716ea4c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0 and 30 years'])[1]/following::label[2]</value>
+      <webElementGuid>d158f1da-93fa-4fd5-b19c-ef2a10eeeea5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 30'])[1]/preceding::label[1]</value>
+      <webElementGuid>c8b14a3e-4439-40a9-ab6c-f161fc38b2d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Years you will own vehicle'])[2]/preceding::label[1]</value>
+      <webElementGuid>c1cccdc8-5515-4439-9562-9074e54225e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Years you will own vehicle']/parent::*</value>
+      <webElementGuid>cdf425a9-a649-42e5-9b42-aa14126dbbd3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/label</value>
+      <webElementGuid>d1a36f96-a963-4190-a557-a7a24a77bfa4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_YearsOwned-label' and (text() = 'Years you will own vehicle
+                            
+                        ' or . = 'Years you will own vehicle
+                            
+                        ')]</value>
+      <webElementGuid>b8f42719-681f-405d-940d-db3ce1303899</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

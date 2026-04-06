@@ -1,0 +1,485 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will taxes and inflation affect my savings?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the effect of inflation and income taxes on your savings plan. You enter how much you currently have saved, number of years to invest, and a savings interest rate. Additional contributions are ignored."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The future value of your savings is discounted by the inflation rate that you choose. For example, $1,000 today is worth only $971 a year from now if inflation is 3% a year."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "The calculator assumes you save with a taxable account. Income taxes on interest earned with a taxable account erode the future value of your savings plan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "If you want to simulate saving with a tax-advantaged account, enter a zero in the fields for federal and state income tax rates."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=inflation",
+      "value": "inflation"
+    }
+  },
+  {
+    "click": {
+      "id": "link=inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=income taxes",
+      "value": "income taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "link=income taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Income tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Income tax rates for 2025 are 37%, 35%, 32%, 24%, 22%, 12%, and 10%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=future value",
+      "value": "future value"
+    }
+  },
+  {
+    "click": {
+      "id": "link=future value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Future value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The amount to which your investment grows in the future. For example, the future value of $100 invested monthly at 8% is $1,245 after 12 months."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=discounted",
+      "value": "discounted"
+    }
+  },
+  {
+    "click": {
+      "id": "link=discounted"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=inflation rate",
+      "value": "inflation rate"
+    }
+  },
+  {
+    "click": {
+      "id": "link=inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=taxable",
+      "value": "taxable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=tax-advantaged",
+      "value": "tax-advantaged"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your savings will be worth $4,922 after taxes and inflation"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_None_result_label",
+      "value": "Ending balance before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_None_result_value",
+      "value": "$5,256"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_TaxOnly_result_label",
+      "value": "Ending balance after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_TaxOnly_result_value",
+      "value": "$5,173"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_Both_result_label",
+      "value": "Ending balance after taxes and inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_Both_result_value",
+      "value": "$4,922"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-label",
+      "value": "Current savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_YearsDeposited-label",
+      "value": "Years deposited"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_YearsDeposited-error-message",
+      "value": "Must be between 1 and 90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Annual rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InflationRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "16,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "4"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "19.78"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "12.12"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InflationRate",
+      "value": "3.50"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your savings will be worth $15,733 after taxes and inflation"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_None_result_value",
+      "value": "$19,149"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_TaxOnly_result_value",
+      "value": "$18,084"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_fv_Both_result_value",
+      "value": "$15,733"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

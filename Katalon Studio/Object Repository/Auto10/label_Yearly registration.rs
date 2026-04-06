@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Yearly registration</name>
+   <tag></tag>
+   <elementGuidId>d3c0ac50-71b3-4a77-86c5-b74bbf561a43</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_YearlyRegistrationIfKeep-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_YearlyRegistrationIfKeep-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_YearlyRegistrationIfKeep-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>6dc55c60-cdf7-4ce5-a6b5-f910a3e2d580</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyRegistrationIfKeep</value>
+      <webElementGuid>a756b808-adaf-4ed4-8210-7518387c653c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyRegistrationIfKeep-label</value>
+      <webElementGuid>f382b36b-fbc4-46f3-9dbd-501df177a1c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>433110dc-0d9f-4e05-8409-1cf225c36f0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yearly registration
+                                
+                        </value>
+      <webElementGuid>88507f27-2ef8-4ebd-b29f-c5f2b44d54f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_YearlyRegistrationIfKeep-label&quot;)</value>
+      <webElementGuid>9a6eda05-daff-41b3-a75d-595a57ca0cfa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_YearlyRegistrationIfKeep-label']</value>
+      <webElementGuid>8a221f52-22a2-4d5b-bedf-e583899e2437</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_YearlyRegistrationIfKeep-table']/div/label</value>
+      <webElementGuid>738f7dd4-c7ef-4d9c-8491-a2a2f97bcead</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly insurance'])[2]/following::label[1]</value>
+      <webElementGuid>2f149667-4c41-45f7-b23f-0515d2a651be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[2]/following::label[2]</value>
+      <webElementGuid>9f897ed3-f9fc-416f-a255-9697d788fa82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[3]/preceding::label[1]</value>
+      <webElementGuid>31a4117b-7051-44cf-9dd9-d2028b1991c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly registration'])[2]/preceding::label[1]</value>
+      <webElementGuid>1345b891-f417-4cf8-9252-35bad806908f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Yearly registration']/parent::*</value>
+      <webElementGuid>e7abdbad-a65a-4741-9380-b6461e546b4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[4]/div/label</value>
+      <webElementGuid>6cfa0407-ec59-4b7b-8eb0-94c957bd9408</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_YearlyRegistrationIfKeep-label' and (text() = 'Yearly registration
+                                
+                        ' or . = 'Yearly registration
+                                
+                        ')]</value>
+      <webElementGuid>645ac8b9-5ea2-4a4e-b6ca-5e470d2deb0a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

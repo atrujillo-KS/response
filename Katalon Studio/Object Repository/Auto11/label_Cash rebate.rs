@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Cash rebate</name>
+   <tag></tag>
+   <elementGuidId>d522dec4-bd47-419d-acbc-8d230334f2e5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_CashRebate-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_CashRebate-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_CashRebate-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>fac20632-6ac8-4c8a-85a4-a8e1fcef81d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_CashRebate</value>
+      <webElementGuid>6192b3d6-9a1e-4991-8a66-4cbb2b2c9fc8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_CashRebate-label</value>
+      <webElementGuid>859e0380-89f3-4fca-b9a6-4ca1bd695f9d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cash rebate
+                             
+                        </value>
+      <webElementGuid>8bba7cae-32b5-4e62-a27b-5320f484b087</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_CashRebate-label&quot;)</value>
+      <webElementGuid>f812ba32-4025-42c0-85c9-c3354de5d80f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_CashRebate-label']</value>
+      <webElementGuid>6ec60fed-bd1e-4735-8ba4-70fd7f04f74c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_CashRebate_container']/div/label</value>
+      <webElementGuid>4261a4e3-63c7-48e5-b8fd-486bba1eb4ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Advanced'])[2]/following::label[1]</value>
+      <webElementGuid>610d7e44-e151-4a32-8aab-cae7985b9a29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[2]/following::label[1]</value>
+      <webElementGuid>66a4fd06-99cd-41e1-8cb2-3c1ab25029ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $1,000,000'])[1]/preceding::label[1]</value>
+      <webElementGuid>46e7e06c-6e99-42bf-bad4-1a7aa9223742</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cash rebate'])[2]/preceding::label[1]</value>
+      <webElementGuid>36aa6d46-75a1-48b1-bcbe-6a8f9c26bdc4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cash rebate']/parent::*</value>
+      <webElementGuid>758ef277-b9d8-42dc-88b6-77736dec2280</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/fieldset/div/div/div/label</value>
+      <webElementGuid>d7b0dbd5-d2b9-4fc1-bc34-0bc4b2628bb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_CashRebate-label' and (text() = 'Cash rebate
+                             
+                        ' or . = 'Cash rebate
+                             
+                        ')]</value>
+      <webElementGuid>e8a12561-e08e-4fdf-8a16-6b2f5bede8b1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

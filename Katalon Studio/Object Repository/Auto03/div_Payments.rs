@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Payments</name>
+   <tag></tag>
+   <elementGuidId>45c08117-41c5-4394-9493-34d9802946f5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_graph_tabs_lf_container2 > div.lf-dot-holder.lf-dot-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='lf_graph_tabs_lf_container2']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tab[name=&quot;Payments&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>449afb7e-6315-4691-923f-f4b626455b6d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-dot-holder lf-dot-label</value>
+      <webElementGuid>db3d4b05-9605-41dc-b03d-e65d7574251e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Payments</value>
+      <webElementGuid>c246f2ba-4d3f-4bf4-8ad0-e17a7f12a361</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_graph_tabs_lf_container2&quot;)/div[@class=&quot;lf-dot-holder lf-dot-label&quot;]</value>
+      <webElementGuid>19c272c8-34b1-4d3d-b3ba-1f683ffd4d98</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='lf_graph_tabs_lf_container2']/div</value>
+      <webElementGuid>bacc6688-7372-4b40-938a-23c07a90dc86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Average Cost'])[1]/following::div[1]</value>
+      <webElementGuid>aaf30bf1-1715-4bc2-82aa-32858a6bda8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change views between Average Cost graph, and Payments graph'])[1]/following::div[3]</value>
+      <webElementGuid>de6f3d0d-69c7-42ce-b2b2-c383936a55c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[1]/preceding::div[3]</value>
+      <webElementGuid>4b7d070f-fc68-44fc-9f67-b56cebce438d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/preceding::div[3]</value>
+      <webElementGuid>bfc29820-e5bc-4df3-a657-9605eb5eae22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Payments']/parent::*</value>
+      <webElementGuid>6b1607af-d1d0-45da-bf96-bfae9c030975</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/div</value>
+      <webElementGuid>e7bbf7d4-e68d-41d1-8549-988ef7400479</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Payments' or . = 'Payments')]</value>
+      <webElementGuid>d08daf0a-b6b9-4b12-acec-6d15f6800495</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

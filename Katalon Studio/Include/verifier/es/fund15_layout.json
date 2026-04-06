@@ -1,0 +1,247 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "FeesTaxes": {
+        "tabLabel": "TASAS E IMPUESTOS"
+      },
+      "Income": {
+        "tabLabel": "INGRESOS"
+      }
+    },
+    "fields": {
+      "Fund_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Fund_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Fund_SharesPurchased": {
+        "fieldLabel": "Acciones que comprará"
+      },
+      "Fund_DesiredYearlySharePriceIncrease": {
+        "fieldLabel": "Aumento anual del precio de las acciones"
+      },
+      "Fund_AdditionalInvestment": {
+        "fieldLabel": "Inversión adicional"
+      },
+      "Fund_InvestmentFrequency": {
+        "fieldLabel": "Frecuencia de inversión",
+        "dropdownOptions": [
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Fund_FrontendLoad": {
+        "fieldLabel": "Cobro inicial"
+      },
+      "Fund_BackendLoad": {
+        "fieldLabel": "Comisión por cancelación anticipada"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Fund_LongTermYearlyGainsPerShare": {
+        "fieldLabel": "Ganancias anuales por acción",
+        "smallLabel": "(a largo plazo)"
+      },
+      "Fund_ShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Ganancias anuales por acción",
+        "smallLabel": "(a corto plazo)"
+      },
+      "Fund_TaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(imponibles)"
+      },
+      "Fund_YearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Aumento anual en dividendos y ganancias"
+      },
+      "Fund_FederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(exentos de impuestos exentos)"
+      },
+      "Fund_StateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(exentos de impuestos estatales)"
+      },
+      "Fund_NonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(no imponibles)"
+      },
+      "Fund_DividendsAndGainsReinvestmentOption": {
+        "fieldLabel": "Los dividendos y las ganancias",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en el fondo"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      }
+    },
+    "results_fields": {
+      "Fund_TotalFees": {
+        "fieldLabel": "Cargos totales"
+      },
+      "Fund_TotalTaxes": {
+        "fieldLabel": "Impuestos"
+      },
+      "Fund_LongTermGain": {
+        "fieldLabel": "Ganancias de capital a largo plazo"
+      },
+      "Fund_ShortTermGain": {
+        "fieldLabel": "Ganancias de capital a corto plazo"
+      },
+      "Fund_TotalDividends": {
+        "fieldLabel": "Total de dividendos recibidos"
+      },
+      "Fund_InterestEarned": {
+        "fieldLabel": "Intereses ganados"
+      }
+    },
+    "results1": {
+      "subtitle": "<span class='lf-bold'>Alternativamente, para recuperar sus costos de compra, venta e impuestos en los %months% %monthlabel% deseados</span>, el precio de su fondo debe aumentar $%increase% de un precio de venta de $%sell%, un aumento anual del %rate%%."
+    },
+    "results2": {
+      "subtitle": "<span class='lf-bold'>Los cargos e impuestos adeudados en el punto de rentabilidad deseado de %breakEven% %monthlabel%:</span>"
+    },
+    "results3": {
+      "subtitle": "<span class='lf-bold'>Ingresos en el punto de rentabilidad deseado de %breakEven% %monthlabel%:</span>"
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Número de meses",
+    "dataTableCategoryTitle2": "Meses",
+    "title": "¿Cuándo recuperaré los costos de mi fondo?",
+    "answer": "Recuperará todos los costos en <span class='lf-bold'>%months% %monthlabel%</span>",
+    "priceIncrease": "Suponiendo un aumento en el precio de la acción",
+    "noIncrease": "Suponiendo que no hay aumento",
+    "costAmt": "Costo",
+    "sellPrice": "Precio de venta",
+    "months": "Meses",
+    "income": "Ingresos",
+    "graphMonths": "mes(es)",
+    "selectors": [
+      {
+        "label": "Tiempo de recuperación",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Punto de rentabilidad",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "redemption": {
+      "title": "Rescate",
+      "definition": "El acto de vender su inversión a la empresa que emitió la inversión."
+    },
+    "load": {
+      "title": "Comisión inicial o cargo por cancelación anticipada",
+      "definition": "Un cargo por transacción, establecido en base a un porcentaje de su inversión, que usted paga cuando compra o redime acciones de un fondo mutuo."
+    },
+    "breakevenpoint": {
+      "title": "Punto de equilibrio",
+      "definition": "En el punto de rentabilidad, los ahorros que usted recibe de la refinanciación son iguales a los costos."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "growthratedividends": {
+      "title": "Tasa esperada de crecimiento de los dividendos",
+      "definition": "Ingrese la tasa de aumento anual que predice para los dividendos. Por definición, esta cifra será mucho mayor para un fondo de ingresos que para un fondo de crecimiento."
+    },
+    "backendload": {
+      "title": "Comisión por cancelación anticipada",
+      "definition": "Un cargo que usted paga cuando vende acciones de un fondo mutuo. El cargo se calcula como un porcentaje de la cantidad en dólares que está vendiendo."
+    },
+    "frontendload": {
+      "title": "Cobro inicial",
+      "definition": "Un cargo que usted paga cuando compra acciones de un fondo mutuo. El cargo se calcula como un porcentaje del monto en dólares que está invirtiendo."
+    },
+    "brokeragecommission": {
+      "title": "Comisión de corretaje",
+      "definition": "Los cargos que usted paga a un corredor por comprar o vender acciones, bonos u otros valores. También se denominan cargos de transacción, cargos de compraventa, cargos de corretaje o simplemente comisiones."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el precio de las acciones necesario para el equilibrio incluso cuando <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#redemption\">rescata </a></span> sus acciones de fondos mutuos. También calcula el aumento necesario del porcentaje en el precio de las acciones para alcanzar su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#breakEvenPoint\">punto de rentabilidad</a></span>."
+    },
+    {
+      "textLabel": "El punto de rentabilidad ocurre donde los ingresos por rescatar sus acciones pagan sus gastos de transacción. Estos costos incluyen impuestos,  <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#brokerageCommission\">cargos de corretaje</a></span>, y cualquier <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#load\">cargo de ventas</a></span>."
+    },
+    {
+      "textLabel": "Es posible que desee consultar a un asesor financiero antes de tomar la decisión de inversión."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas para la cantidad de meses que se necesitarán para recuperar los costos del fondo en dos escenarios: el precio de la acción del fondo aumenta a la tasa prevista por el usuario y el precio de la acción del fondo no aumenta."
+    },
+    {
+      "title": "Gráfico de líneas del tiempo necesario para recuperar su inversión y costos a varios precios de venta."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Cantidad de meses que se necesitarán para recuperar los costos del fondo en dos escenarios: el precio de la acción del fondo aumenta a la tasa prevista por el usuario y el precio de la acción del fondo no aumenta"
+    },
+    {
+      "title": "Tiempo necesario para recuperar su inversión y costos a varios precios de venta"
+    }
+  ]
+}

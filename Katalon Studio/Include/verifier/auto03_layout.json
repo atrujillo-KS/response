@@ -1,0 +1,541 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "purchase",
+        "purchaseAssumptions",
+        "lease",
+        "taxes"
+      ],
+      "purchase": {
+        "tabLabel": "Purchase",
+        "fields": [
+          "Global_AutoPurchasePrice",
+          "Global_AutoDownPayment",
+          "Global_AutoLoanTerm",
+          "Global_AutoInterestRate"
+        ]
+      },
+      "purchaseAssumptions": {
+        "tabLabel": "Purchase Assumptions",
+        "fields": [
+          "Global_SalesTaxRate",
+          "Auto_VehicleAgeInYears",
+          "Auto_CashRebate",
+          "Auto_OtherCosts"
+        ]
+      },
+      "lease": {
+        "tabLabel": "Lease",
+        "fields": [
+          "Auto_LeaseMonthlyPayment",
+          "Auto_LeaseDownPayment",
+          "Auto_LeaseTerm",
+          "Auto_LeaseSecurityDeposit",
+          "Auto_LeaseCashRebate"
+        ]
+      },
+      "taxes": {
+        "tabLabel": "Taxes & Depreciation",
+        "fields": [
+          "Global_FederalAndStateTaxRate",
+          "Auto_FutureDepreciation",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maxlength": "9",
+        "maximumValue": "1000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_AutoPurchasePrice",
+          "Global_AutoDownPayment"
+        ]
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "249999",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AutoLoanTerm": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "valueTextLabel": "months",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Loan term",
+        "defaultValue": "48",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "84",
+        "maxlength": "3",
+        "safeType": "number",
+        "smallLabel": "(months)",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "Global_AutoInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.00",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "widgetStep": "0.1",
+        "value": "",
+        "format": "percent"
+      },
+      "Global_SalesTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Sales tax rate",
+        "defaultValue": "8.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "widgetStep": "0.1",
+        "value": "5.0",
+        "format": "percent"
+      },
+      "Auto_VehicleAgeInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Vehicle age",
+        "defaultValue": "0",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "30",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Auto_CashRebate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cash rebate",
+        "defaultValue": "0",
+        "glossaryTerm": "cashrebate",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "0",
+        "format": "currency"
+      },
+      "Auto_OtherCosts": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Other upfront costs",
+        "defaultValue": "0",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "",
+        "format": "currency"
+      },
+      "Auto_LeaseMonthlyPayment": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly payment",
+        "defaultValue": "250",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "",
+        "format": "currency"
+      },
+      "Auto_LeaseDownPayment": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "2000",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "",
+        "format": "currency"
+      },
+      "Auto_LeaseTerm": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "valueTextLabel": "months",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Lease term",
+        "defaultValue": "24",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "84",
+        "maxlength": "3",
+        "safeType": "number",
+        "smallLabel": "(months)",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "Auto_LeaseSecurityDeposit": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Security deposit",
+        "defaultValue": "100",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "10",
+        "value": "",
+        "format": "currency"
+      },
+      "Auto_LeaseCashRebate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cash rebate",
+        "defaultValue": "0",
+        "glossaryTerm": "cashrebate",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "",
+        "format": "currency"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state & federal tax rate",
+        "defaultValue": "33.80",
+        "glossaryTerm": "taxrates",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "widgetStep": "1.00",
+        "value": "",
+        "format": "percent"
+      },
+      "Auto_FutureDepreciation": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Future depreciation",
+        "glossaryTerm": "depreciation",
+        "smallLabel": "",
+        "errorMessage": "Error message for dropdown list here",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "true",
+            "optionValue": "0",
+            "optionText": "Low"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "1",
+            "optionText": "Average"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "2",
+            "optionText": "High"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your savings interest rate",
+        "defaultValue": "1.00",
+        "glossaryTerm": "savingsinterestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "widgetStep": "1.00",
+        "value": "",
+        "format": "percent"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Purchase",
+        "Lease"
+      ],
+      "fields": [
+        [
+          "AveCostPerYrAuto03",
+          "AveCostPerYr2Auto03"
+        ],
+        [
+          "MonPmtAuto03",
+          "Auto_LeaseMonthlyPayment"
+        ],
+        [
+          "TotIntPaidAuto03",
+          "NA2"
+        ],
+        [
+          "TotDepAuto03",
+          "NA3"
+        ]
+      ]
+    },
+    "results_fields": {
+      "AveCostPerYrAuto03": {
+        "fieldLabel": "Average cost per year"
+        "value": "$6,796"
+      },
+      "AveCostPerYr2Auto03": {
+        "fieldLabel": "",
+        "value": "$3,980"
+      },
+      "MonPmtAuto03": {
+        "fieldLabel": "Monthly payment",
+        "value": "$875"
+      },      
+      "Auto_LeaseMonthlyPayment": {
+        "fieldLabel": "",
+        "value": "$250"
+      },
+      "TotIntPaidAuto03": {
+        "fieldLabel": "Total interest paid",
+        "value": "$4,005"
+      },
+      "NA2": {
+        "fieldLabel": "",
+        "value": "$"N/A
+      },
+      "TotDepAuto03": {
+        "fieldLabel": "Total depreciation",
+        "value": "$20,020"
+      },
+      "NA3": {
+        "fieldLabel": "",
+        "value": "N/A"}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Average Cost Per Year",
+    "dataTableCategory2": "Monthly Payment",
+    "title": "Should I lease or purchase a vehicle?",
+    "answer": "The Lease option will cost you $2,816 less on average each year.",
+    "same_answer": "<span class='lf-bold'>Both</span> options will cost you <span class='lf-bold'>the same</span> on average each year.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Average Cost",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payments",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "purchase": "Purchase",
+    "lease": "Lease"
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "depreciation": {
+      "title": "Depreciation",
+      "definition": "The decline in an asset's value over the course of its useful life due to wear and tear and obsolescence. "
+    },
+    "cashrebate": {
+      "title": "Cash rebate",
+      "definition": "An offer to consumers - as an incentive to buy - that reduces the purchase price of a good by the amount of the rebate."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle. "
+    },
+    {
+      "textLabel": "It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off."
+    },
+    {
+      "textLabel": "Your average yearly cost of owning a vehicle declines sharply after the first few years. This is due to smaller depreciation and financing expenses."
+    },
+    {
+      "textLabel": "Your first year of a lease term is the most expensive since you pay extra lease-financing charges. As a lessee, you do not incur depreciation expenses."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the average cost per year of the purchase option and the lease option."
+    },
+    {
+      "title": "Column chart comparing the monthly payment for the purchase option and the lease option."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Average cost per year of the purchase option and the lease option"
+    },
+    {
+      "title": "Monthly payment for the purchase option and the lease option"
+    }
+  ]
+}

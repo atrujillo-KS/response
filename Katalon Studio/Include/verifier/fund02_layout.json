@@ -1,0 +1,690 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Investment",
+        "FeesTaxes",
+        "Income"
+      ],
+      "Investment": {
+        "tabLabel": "Investment",
+        "fields": [
+          "Fund_SharePurchasePrice",
+          "Fund_SharesPurchased",
+          "Fund_AdditionalInvestment",
+          "Fund_InvestmentFrequency",
+          "Fund_MonthsOwned",
+          "Fund_SharePriceToday"
+        ]
+      },
+      "FeesTaxes": {
+        "tabLabel": "Fees & Taxes",
+        "fields": [
+          "Fund_FrontendLoad",
+          "Fund_BackendLoad",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      },
+      "Income": {
+        "tabLabel": "Income",
+        "fields": [
+          "Fund_LongTermYearlyGainsPerShare",
+          "Fund_ShortTermYearlyGainsPerShare",
+          "Fund_TaxableQuarterlyDividendsPerShare",
+          "Fund_YearlyIncreaseInDividendsAndGains",
+          "Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+          "Fund_StateTaxExemptQuarterlyDividendsPerShare",
+          "Fund_NonTaxableQuarterlyDividendsPerShare",
+          "Fund_DividendsAndGainsReinvestmentOption",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "subtitle": "By selling your current investment and reinvesting the proceeds in a new one, you'll incur the following costs:",
+      "fields": [
+        [
+          "Fund_TotalFees"
+        ],
+        [
+          "Fund_TotalTaxes"
+        ],
+        [
+          "Fund_TotalCost"
+        ],
+        [
+          "Fund_RateOfReturnBeforeTaxes"
+        ],
+        [
+          "Fund_RateOfReturnAfterTaxes"
+        ]
+      ]
+    },
+    "results2": {
+      "subtitle": "Minimum return needed on the new investment to cover the these costs and \"catch up\" to the value your current investment might have reached in %months% months:",
+      "fields": [
+        [
+          "Fund_RateOfReturnBeforeTaxes"
+        ],
+        [
+          "Fund_RateOfReturnAfterTaxes"
+        ]
+      ]
+    },
+    "fields": {
+      "Fund_SharePurchasePrice": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_SharesPurchased": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "300.00",
+        "value": "300.00",
+        "minimumValue": "1.00",
+        "maximumValue": "10000.00",
+        "maxlength": "9",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000.00",
+        "widgetStep": "100.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_AdditionalInvestment": {
+        "fieldLabel": "Additional investment ",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_InvestmentFrequency": {
+        "fieldLabel": "Investment Frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Biweekly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Monthly ",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Yearly ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_MonthsOwned": {
+        "fieldLabel": "Months owned",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_SharePriceToday": {
+        "fieldLabel": "Share price today",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "35.000",
+        "value": "35.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FrontendLoad": {
+        "fieldLabel": "Front-end load",
+        "smallLabel": "",
+        "glossaryTerm": "frontendload",
+        "format": "percent",
+        "defaultValue": "3.000",
+        "value": "3.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_BackendLoad": {
+        "fieldLabel": "Back-end load",
+        "smallLabel": "",
+        "glossaryTerm": "backendload",
+        "format": "percent",
+        "defaultValue": "1.500",
+        "value": "1.500",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_LongTermYearlyGainsPerShare": {
+        "fieldLabel": "Yearly gains per share ",
+        "smallLabel": "(long term)",
+        "glossaryTerm": "capgain",
+        "format": "currency",
+        "defaultValue": "0.50",
+        "value": "0.50",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_ShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Yearly gains per share ",
+        "smallLabel": "(short term)",
+        "glossaryTerm": "capgain",
+        "format": "currency",
+        "defaultValue": ".50",
+        "value": ".50",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_TaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Quarterly dividends per share",
+        "smallLabel": "(taxable)",
+        "glossaryTerm": "dividends",
+        "format": "currency",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_YearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Yearly increase in dividends & gains",
+        "smallLabel": "",
+        "glossaryTerm": "growthratedividends",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Quarterly dividends per share",
+        "smallLabel": "(fed tax-exempt)",
+        "glossaryTerm": "dividends",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_StateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Quarterly dividends per share",
+        "smallLabel": "(state tax-exempt)",
+        "glossaryTerm": "dividends",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_NonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Quarterly dividends per share",
+        "smallLabel": "(non-taxable)",
+        "glossaryTerm": "dividends",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_DividendsAndGainsReinvestmentOption": {
+        "fieldLabel": "Dividends & gains are",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "2",
+            "optionText": "Spent when received ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Reinvested in the fund",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Invested elsewhere ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Fund_TotalFees": {
+        "fieldLabel": "Brokerage fees"
+      },
+      "Fund_TotalTaxes": {
+        "fieldLabel": "Taxes upon sale"
+      },
+      "Fund_TotalCost": {
+        "fieldLabel": "Total cost to sell and reinvest:"
+      },
+      "Fund_RateOfReturnBeforeTaxes": {
+        "fieldLabel": "Return needed before taxes and fees"
+      },
+      "Fund_RateOfReturnAfterTaxes": {
+        "fieldLabel": "Return needed after taxes and fees"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Minimum Return",
+    "dataTableCategory2": "Cost",
+    "title": "Should I sell my fund now and invest the money elsewhere?",
+    "answer": "Minimum return needed on the new investment to justify selling: <span class='lf-bold'>%rate%</span>",
+    "beforeTaxes": "Before Taxes",
+    "afterTaxes": "After Taxes",
+    "fees": "Fees",
+    "taxes": "Taxes",
+    "return": "Return %",
+    "selectors": [
+      {
+        "label": "Return",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Costs In-curred",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "mutualfunds": {
+      "title": "Mutual fund",
+      "definition": "A mutual fund invests in a portfolio of stocks, bonds, or other investments and sells individual shares of the portfolio to investors."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "dividends": {
+      "title": "Dividends",
+      "definition": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    },
+    "capgain": {
+      "title": "Capital gain",
+      "definition": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    },
+    "backendload": {
+      "title": "Back-end load",
+      "definition": "A fee you pay when you sell shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are selling."
+    },
+    "capitalgainstaxes": {
+      "title": "Capital gains tax",
+      "definition": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    },
+    "growthratedividends": {
+      "title": "Expected rate of growth in dividends",
+      "definition": "Enter the annual rate of increase you predict for dividends. By definition, this figure will be much higher for an income fund than a growth fund."
+    },
+    "frontendload": {
+      "title": "Front-end load",
+      "definition": "A fee you pay when you buy shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are investing."
+    },
+    "reinvesting": {
+      "title": "Reinvesting",
+      "definition": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    },
+    "brokeragecommission": {
+      "title": "Brokerage commission",
+      "definition": "The fees that you pay a broker to buy or sell stocks, bonds, or other securities. They are also called transaction fees, trading fees, brokerage fees, or simply, commissions."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates how <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#brokerageCommission\">brokerage fees</a></span> and taxes affect a potential decision to replace shares of a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#mutualFunds\">mutual fund</a></span> you currently own with shares of another fund."
+    },
+    {
+      "textLabel": "Dividends and capital gains are <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#reinvesting\">reinvested</a></span> at the specified interest rate or spent. Reinvesting the income you receive on an investment may boost your <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#rateOfReturn\">rate of return</a></span>."
+    },
+    {
+      "textLabel": "You may pay brokerage fees to sell your current shares and buy new ones. You may also owe <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#capitalGainsTaxes\">capital gains taxes</a></span> on the sale of your shares. As a result, an investment in a new fund requires a higher rate of return to justify the transactions."
+    },
+    {
+      "textLabel": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the minimum return needed on the new investment, before and after taxes, to cover fees, taxes, and future value of current investment."
+    },
+    {
+      "title": "Pie chart of the breakdown of the cost to sell and reinvest by brokerage fees and taxes upon sale."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Minimum return needed on the new investment, before and after taxes, to cover fees, taxes, and future value of current investment"
+    },
+    {
+      "title": "Breakdown of the cost to sell and reinvest by brokerage fees and taxes upon sale"
+    }
+  ]
+}

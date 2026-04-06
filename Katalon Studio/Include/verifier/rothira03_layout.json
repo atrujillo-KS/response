@@ -1,0 +1,327 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "YourSpouse"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "CurrAge",
+          "MAGI",
+          "UserWorkPlanRothIRA03",
+          "FilingStatus"
+        ]
+      },
+      "YourSpouse": {
+        "tabLabel": "Your Spouse",
+        "fields": [
+          "SpsAge",
+          "SpouseMAGI",
+          "SpouseWorkPlanRothIRA03"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Traditional IRA",
+        "Roth IRA"
+      ],
+      "fields": [
+        [
+          "IRAContYr1",
+          "RothContYr1"
+        ]
+      ]
+    },
+    "fields": {
+      "CurrAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "MAGI": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "UserWorkPlanRothIRA03": {
+        "fieldLabel": "Participate in work retirement plan?",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "FilingStatus": {
+        "fieldLabel": "Tax filing status",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Married filing jointly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Married filing separately",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Head of household",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SpsAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SpouseMAGI": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SpouseWorkPlanRothIRA03": {
+        "fieldLabel": "Participate in work retirement plan?",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "IRAContYr1": {
+        "fieldLabel": "2025"
+      },
+      "RothContYr1": {
+        "fieldLabel": " "
+      },
+      "IRAContYr2": {
+        "fieldLabel": "2026 (estimated)"
+      },
+      "RothContYr2": {
+        "fieldLabel": " "
+      },
+      "IRAContYr3": {
+        "fieldLabel": "2027 (estimated)"
+      },
+      "RothContYr3": {
+        "fieldLabel": " "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Year",
+    "title": "How much can I contribute to an IRA?",
+    "answer": "In %year%, you can contribute up to a maximum of <span class='lf-bold'>%traditional%</span> (Traditional IRA) or <span class='lf-bold'>%roth%</span> (Roth IRA)",
+    "TraditionalIRA": "Traditional IRA",
+    "rothIRA": "Roth IRA",
+    "contributionLimit": "Contribution Limit",
+    "selectors": [
+      {
+        "label": "Contribution limits",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "regularira": {
+      "title": "Regular IRA",
+      "definition": "A regular IRA is also called a traditional IRA. It is a tax-deferred retirement account. For 2025, you are allowed to make a tax-deferred contribution of $7,000 to a regular IRA. This account grows tax-deferred until you begin to take distributions, which you may do without penalty after you turn age 59-1/2. For persons who are age 50 or older, a special catch-up provision of the 2001 tax law allows you to contribute an additional $1,000, or a total of $8,000."
+    },
+    "nondeductibleira": {
+      "title": "Nondeductible IRA",
+      "definition": "An individual retirement account whose contributions are either partially or fully funded with contributions that are not tax-deductible. You can contribute up to either $7,000 or $8,000 (depending on age, income limits and participation in an employer-sponsored retirement plan) in 2025. A nondeductible IRA benefits from tax-deferred compounded growth."
+    },
+    "taxdeductible": {
+      "title": "Tax-deductible",
+      "definition": "An item or expense subtracted from adjusted gross income to reduce the amount of income subject to tax."
+    },
+    "rothira": {
+      "title": "Roth IRA",
+      "definition": "A tax-advantaged retirement account that allows you to make an after-tax contribution of up to $7,000 for 2025, or up to $8,000 if you're age 50 or older. If you keep a Roth IRA for at least five years and are at least age 59-1/2 when you begin to withdraw from the account, the entire account may be distributed tax- and penalty-free."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "rmd": {
+      "title": "Required minimum distribution (RMD)",
+      "definition": "Required minimum distributions are the minimum amount you must take out in a year from a regular IRA. Required minimum distributions are called both RMDs and MRDs. You are required to begin receiving RMDs from a regular IRA in the year you reach age 73. Roth IRAs do not have required minimum distributions. Amounts for required minimum distributions are based on your age, IRA account balance, and life expectancy. To calculate an RMD, divide your year-end IRA account balance (adjusted for certain contributions and distributions) by the applicable divisor in Table III: Uniform Lifetime Table, found in Appendix B of IRS Pub. 590-B."
+    },
+    "irasingle": {
+      "title": "Single filer (IRA contributions)",
+      "definition": "You may make a tax-deductible contribution up to the amount of your earned income with a maximum of $7,000 ($8,000 if age 50 or older) to a regular IRA for 2025 if modified adjusted gross income is less than $77,000. Your tax-deductible contribution is phased out completely when income reaches $87,000. For Roth IRAs, you may contribute $7,000 ($8,000 if age 50 or older) if income is less than $150,000. Allowable contributions phase out completely when income reaches $165,000."
+    },
+    "distributions": {
+      "title": "Distribution",
+      "definition": "Distributions are the amount that you take from a retirement or other tax-advantaged account, such as a college savings plan, on a periodic basis. For regular IRAs and company-sponsored retirement plans, you are required to take minimum yearly distributions that are based on your life expectancy and account value. These are called required minimum distributions (RMDs). Roth IRAs and variable annuities do not have required minimum distributions. Amounts for required minimum distributions are based on your age and account balance. To calculate your RMD, divide your year-end account balance by the applicable divisor in Table III: Uniform Lifetime Table, found in Appendix B of IRS Pub. 590-B."
+    },
+    "deductibleira": {
+      "title": "Deductible IRA",
+      "definition": "A deductible IRA is an individual retirement account that is funded with tax-deductible contributions. You can contribute up to either $7,000 or $8,000 (depending on age, income, and participation in an employer-sponsored retirement plan) in 2025."
+    },
+    "iramarriedfilingjointly": {
+      "title": "Married filing jointly",
+      "definition": "You may make a tax-deductible contribution of $7,000 to each spousal IRA for 2025 if modified adjusted gross income is less than $126,000. Tax-deductible contributions phase out completely when income reaches $146,000. If you are age 50 or older, each spouse may contribute an additional $1,000 to their account. For Roth IRAs, you may contribute the same amounts, after taxes, to each spousal Roth IRA. Allowable contributions to a Roth IRA begin to phase out when income reaches $236,000. They phase out completely when income reaches $246,000."
+    },
+    "increasediracontributions": {
+      "title": "Increased contributions to individual retirement accounts",
+      "definition": "The Economic Growth and Tax Relief Reconciliation Act of 2001 authorizes higher yearly contribution limits to IRAs, 401(k) plans, and other defined-contribution retirement plans. For regular and Roth IRAs, the yearly limit is $7,000 in 2025. A catch-up provision of the new law authorizes even higher limits for those who are age 50 or older. For these investors, the yearly combined limit is $8,000 in 2025. Employees participating in a 401(k) plan can now open a regular 401(k) or a Roth 401(k) within the plan account."
+    },
+    "nondeductiblecontributions": {
+      "title": "Nondeductible contributions",
+      "definition": "A nondeductible contribution is the portion of a contribution to a regular IRA that is not tax-deductible. Your tax-deductible contributions phase out at higher incomes. Adding deductible and nondeductible contributions, you are still allowed to contribute up the yearly limit of $7,000 in 2025 ($8,000 if age 50 or higher)."
+    },
+    "catchupprovisioniras": {
+      "title": "Catch-up provision for contributions to individual retirement accounts",
+      "definition": "The Economic Growth and Tax Relief Reconciliation Act of 2001 authorized higher yearly contribution limits to IRAs, 401(k) plans and other defined-contribution retirement plans. A catch-up provision of the new law authorized even higher limits for workers who are age 50 or older. For regular and Roth IRAs, this additional contribution amount is $1,000 for 2025. As a result, combined yearly contribution limits for persons aged 50 or older increase to $8,000 for 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your maximum tax-deductible or allowable contributions to a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">traditional IRA</a></span> or <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">Roth IRA</a></span>. Please note that <b>the maximum contribution limits displayed for each plan are only applicable if you contribute to only one of the plans.</b> For example, a contribution to a Traditional IRA plan reduces the maximum you are allowed to contribute to a Roth IRA."
+    },
+    {
+      "textLabel": "The amount you are allowed to contribute to an IRA depends on your tax filing status, modified adjusted gross income (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MAGI\">MAGI</a></span>), and whether you (or a spouse) participate in an employer-sponsored retirement plan such as a 401(k) or 403(b) plan."
+    },
+    {
+      "textLabel": "At higher incomes, your tax-deductible contribution to a regular IRA phases out. Similarly, your allowable contributions to a Roth IRA phase out at higher incomes."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the maximum contribution limits for a Traditional IRA and Roth IRA for the current year."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Maximum contribution limits for a Traditional IRA and Roth IRA for the current year"
+    }
+  ]
+}

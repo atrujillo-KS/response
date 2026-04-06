@@ -1,0 +1,545 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "ExpensesTab",
+        "SavingsTab"
+      ],
+      "ExpensesTab": {
+        "tabLabel": "Essential Monthly Expenses",
+        "fields": [
+          "Global_CurrentMonthlyHousingExpenses",
+          "Global_CurrentUtilitiesExpenses",
+          "Global_CurrentMonthlyTransportationExpenses",
+          "Global_CurrentMonthlyFoodExpenses",
+          "Global_CurrentMonthlyHealthExpenses",
+          "Global_CurrentMonthlyDebtPayments",
+          "Budget_CurrentChildCareExpenses",
+          "Global_CurrentMonthlyEducationExpenses",
+          "Budget_CurrentAlimony",
+          "Global_CurrentMonthlyOtherExpenses"
+        ]
+      },
+      "SavingsTab": {
+        "tabLabel": "Income & Savings Info",
+        "fields": [
+          "Global_AnnualGrossIncome",
+          "Global_EssentialExpensesMonthsToCover",
+          "Global_CurrentEmergencyFundSavings",
+          "Global_MonthlyInvestment",
+          "Global_SavingsInterestRate",
+          "Global_FederalAndStateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "fields": [
+        [
+          "Global_MonthlyIncome"
+        ],
+        [
+          "Global_TotalEssentialMonthlyExpenses"
+        ],
+        [
+          "Global_AvailableMonthlyCash"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Global_MonthlyIncome": {
+        "fieldLabel": "Monthly after-tax income"
+      },
+      "Global_TotalEssentialMonthlyExpenses": {
+        "fieldLabel": "Essential monthly expenses"
+      },
+      "Global_AvailableMonthlyCash": {
+        "fieldLabel": "Available monthly cash"
+      }
+    },
+    "fields": {
+      "Global_CurrentMonthlyHousingExpenses": {
+        "fieldLabel": "Housing",
+        "smallLabel": "",
+        "glossaryTerm": "monthlyhousingexpenses",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentUtilitiesExpenses": {
+        "fieldLabel": "Utilities",
+        "smallLabel": "",
+        "glossaryTerm": "monthlyutilities",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyTransportationExpenses": {
+        "fieldLabel": "Transportation",
+        "smallLabel": "",
+        "glossaryTerm": "monthlytransportationexpenses",
+        "format": "currency",
+        "defaultValue": "800",
+        "value": "800",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyFoodExpenses": {
+        "fieldLabel": "Food",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "700",
+        "value": "700",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyHealthExpenses": {
+        "fieldLabel": "Health",
+        "smallLabel": "",
+        "glossaryTerm": "monthlyhealthexpenses",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyDebtPayments": {
+        "fieldLabel": "Non-mortgage debt payments",
+        "smallLabel": "",
+        "glossaryTerm": "debtpayments",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Budget_CurrentChildCareExpenses": {
+        "fieldLabel": "Childcare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyEducationExpenses": {
+        "fieldLabel": "Education",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Budget_CurrentAlimony": {
+        "fieldLabel": "Child support and alimony",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyOtherExpenses": {
+        "fieldLabel": "Other essential expenses",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Annual gross income",
+        "smallLabel": "",
+        "glossaryTerm": "grossincome",
+        "format": "currency",
+        "defaultValue": "70000",
+        "value": "70000",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_EssentialExpensesMonthsToCover": {
+        "fieldLabel": "Months of essential expenses to cover",
+        "smallLabel": "",
+        "glossaryTerm": "essentialexpensesmonths",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "1",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentEmergencyFundSavings": {
+        "fieldLabel": "Current emergency funds available",
+        "smallLabel": "",
+        "glossaryTerm": "currentemergencyfundbalance",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_MonthlyInvestment": {
+        "fieldLabel": "Amount you can save monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Rate you earn on savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Month",
+    "dataTableCategoryTitle2": "Category",
+    "dataTableCategory": "Total",
+    "title": "How much should I set aside for emergencies?",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Emergency Fund Growth",
+        "width": "33%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "index": 2,
+        "label": "Available Monthly Cash",
+        "width": "33%"
+      },
+      {
+        "label": "Growth Schedule",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Growth Schedule",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "setAside": "Set Aside",
+    "months_prefix": "amount in ",
+    "answerText1": "Congratulations! Your current savings are sufficient to cover the <span class='lf-bold'>$%emergencyFundGoal%</span> you need for emergencies.",
+    "answerText2": "Based on your inputs, it will take you more than 40 years to save for the <span class='lf-bold'>$%emergencyFundGoal%</span> you will need for an emergency fund. Please adjust your inputs.",
+    "answerText3": "The <span class='lf-bold'>$%amountSaveMonthly%</span> you can save monthly exceeds your available monthly cash (monthly income &minus; essential monthly expenses) of <span class='lf-bold'>$%availabelMonthlyCash%</span>. Please adjust your inputs.",
+    "answerText4": "You should set aside <span class='lf-bold'>$%emergencyFundGoal%</span> for emergencies. By saving <span class='lf-bold'>$%amountSaveMonthly%</span> of your <span class='lf-bold'>$%availabelMonthlyCash%</span> available monthly cash, you will reach your emergency fund goal in <span class='lf-bold'>%monthsToReachGoal% %monthlabel%</span>.",
+    "monthlyIncome": "Monthly after-tax income",
+    "essentialMonthlyExpenses": "Essential monthly expenses",
+    "availableMonthlyCash": "Available monthly cash",
+    "months": "Month",
+    "emergencyFundBalance": "Emergency Fund Balance"
+  },
+  "glossaryItems": {
+    "monthlyutilities": {
+      "title": "Monthly Utilities",
+      "definition": "Includes water and sewer, electricity, gas, television, internet and phone service."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "debtpayments": {
+      "title": "Monthly debt payments",
+      "definition": "Total monthly payments on all loans, credit cards and other debt obligations (not including mortgage loan payments)."
+    },
+    "monthlyhealthexpenses": {
+      "title": "Monthly Health Expenses",
+      "definition": "Includes out-of-pocket health insurance payments, doctor co-pays, prescriptions and life insurance payments."
+    },
+    "essentialexpensesmonths": {
+      "title": "Months of essential expenses to cover",
+      "definition": "Financial experts advise that you should have at least 3 to 6 months of living expenses in your emergency fund. Where you fall on that spectrum depends on a variety of factors such as your job stability, family size, how many earners are in your household, and how diversified your income is."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "currentemergencyfundbalance": {
+      "title": "Current emergency fund balance",
+      "definition": "How much do you currently have saved for your emergency fund?"
+    },
+    "monthlytransportationexpenses": {
+      "title": "Monthly Transportation Expenses",
+      "definition": "Includes car payments, car insurance, gasoline, mass transit, maintenance, parking and toll expenses."
+    },
+    "grossincome": {
+      "title": "Gross income",
+      "definition": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    },
+    "monthlyhousingexpenses": {
+      "title": "Monthly Housing Expenses",
+      "definition": "Includes rent or mortgage payments, property taxes, home or renter's insurance, condo or HOA fees, and any additional home equity loan payment obligations."
+    },
+    "combinedincometaxrate": {
+      "title": "Combined income tax rate",
+      "definition": "Enter your combined federal and state income tax rates. For example, if you are in the 25% income tax bracket for federal income-tax purposes, and pay a state income tax rate of 5%, enter 30%."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "An emergency fund is a separate savings account used to cover living expenses in the event of a financial surprise, such as a job loss, medical emergency, unexpected home repairs, or car trouble. It can provide you with peace of mind and is usually the wiser choice over other potentially costly methods of borrowing money, such as relying on your credit cards, taking out a personal loan, or withdrawing money from a retirement account."
+    },
+    {
+      "textLabel": "Financial experts advise that you should have at least 3 to 6 months of living expenses in your emergency fund. Where you fall on that spectrum depends on a variety of factors such as your job stability, family size, how many earners are in your household, and how diversified your income is. This tool helps you determine how much should have for your emergency fund, how much you can save monthly to build it, and how long it will take to reach your goal.  By setting automatic transfers from your bank account to your emergency fund or utilizing direct deposit, you won't need to think about making those monthly deposits."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart illustrating the growth in the emergency fund balance over the months needed to reach the emergency fund goal."
+    },
+    {
+      "title": "Column chart showing monthly income, essential monthly expenses, and available monthly cash."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Growth in the emergency fund balance over the months needed to reach the emergency fund goal"
+    },
+    {
+      "title": "Monthly income, essential monthly expenses, and available monthly cash"
+    }
+  ]
+}

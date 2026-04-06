@@ -1,0 +1,111 @@
+{
+  "layout": {
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de la acción hoy"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results_fields": {
+      "DivYieldBef": {
+        "fieldLabel": "Rendimiento actual de dividendos antes de impuestos"
+      },
+      "DivYieldAft": {
+        "fieldLabel": "Rendimiento actual de dividendos después de impuestos"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "title": "¿Cuál es mi rendimiento actual sobre los dividendos?",
+    "answer": "Su rendimiento actual después de impuestos es del <span class='lf-bold'>%result%%</span>",
+    "before": "Antes de impuestos",
+    "after": "Después de impuestos",
+    "returnPercent": "Rendimiento (%)",
+    "selectors": [
+      {
+        "label": "Rendimiento actual",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    },
+    "dividendyield": {
+      "title": "Rendimiento del dividendo",
+      "definition": "El monto de dividendos por acción dividido por el precio de la acción."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DividendYield\">rendimiento de los dividendos</a></span> de su valor, antes y después de impuestos, en base al precio actual de la acción y el monto de los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividend\">dividendos trimestrales promedio </a></span> que usted recibe. Los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">dividendos</a></span> se pueden <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvertir</a></span> o gastarse."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del precio de venta mínimo, antes de impuestos, necesario para obtener la tasa de rendimiento deseada."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Precio de venta mínimo, antes de impuestos, necesario para obtener la tasa de rendimiento deseada"
+    }
+  ]
+}

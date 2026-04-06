@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Amount owed on trade-in</name>
+   <tag></tag>
+   <elementGuidId>92633a41-2cda-4fd0-aa34-0c4e5ac86291</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_OutstandingLoanAmount-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_OutstandingLoanAmount-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_OutstandingLoanAmount-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>0157acbe-c46f-44f8-81b9-d4a463977a41</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_OutstandingLoanAmount</value>
+      <webElementGuid>eece4cc1-614a-48ca-aa31-9f776a2f0c08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_OutstandingLoanAmount-label</value>
+      <webElementGuid>09a2985e-1347-4135-baf5-d5378085adc8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>1be44506-7fd1-4b5c-9dd6-8144588e4665</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Amount owed on trade-in
+                            
+                        </value>
+      <webElementGuid>9a9d0a28-1a17-4e9f-a8e4-0ebd446f3f30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_OutstandingLoanAmount-label&quot;)</value>
+      <webElementGuid>1f20b0df-1af5-4744-ae76-26cfbeaa54c3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_OutstandingLoanAmount-label']</value>
+      <webElementGuid>d79b5ef1-61f1-45f2-9a0f-37f630d82ff1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_OutstandingLoanAmount_container']/div/label</value>
+      <webElementGuid>0dfab01a-7402-41d4-8599-f8d8886a30c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Trade-in value'])[2]/following::label[1]</value>
+      <webElementGuid>8712c021-dd84-4ee6-9499-c66458cf3db7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $200,000'])[1]/following::label[2]</value>
+      <webElementGuid>273afe10-eea6-431a-b351-f5518a21d6d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $200,000'])[2]/preceding::label[1]</value>
+      <webElementGuid>ab4fca08-e363-4f1d-95e3-6d9c455e0a0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Amount owed on trade-in'])[2]/preceding::label[1]</value>
+      <webElementGuid>a5cadeae-5f58-405b-bbf8-fe06f4acc6e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Amount owed on trade-in']/parent::*</value>
+      <webElementGuid>82822481-5b2d-4e33-b079-594962148f57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/fieldset/div/div[3]/div/label</value>
+      <webElementGuid>a0aec8cf-9e9b-436f-91e7-aea5b587165e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_OutstandingLoanAmount-label' and (text() = 'Amount owed on trade-in
+                            
+                        ' or . = 'Amount owed on trade-in
+                            
+                        ')]</value>
+      <webElementGuid>d2a33000-5cd9-40e3-893e-3f12bc2a014d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

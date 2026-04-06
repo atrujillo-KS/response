@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Total insurance and registration</name>
+   <tag></tag>
+   <elementGuidId>fc48ec85-c2b7-4d02-adaf-fe6ca79c0706</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_TotInsLic_result_label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='lf_TotInsLic_result_label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=rowheader[name=&quot;Total insurance and registration&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>c55f6db8-35b4-4ee4-bf29-9c18685a81fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_TotInsLic_result_label</value>
+      <webElementGuid>75414c30-17cb-4516-a645-1419f797e3bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA</value>
+      <webElementGuid>cca6f89d-afcb-4345-b078-31cb4a926e01</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>cd3830f7-7152-4ce2-95b0-0d0d530ec116</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Total insurance and registration
+                                        </value>
+      <webElementGuid>c593ae56-7bcd-44a8-9684-de2e53aa8716</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_TotInsLic_result_label&quot;)</value>
+      <webElementGuid>4a13b399-683e-44a3-9069-be74931d33b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@id='lf_TotInsLic_result_label']</value>
+      <webElementGuid>c4da331c-5130-4c62-84fc-33e6301d40e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='lf_TotInsLic_results']/th</value>
+      <webElementGuid>830e6ed1-16a6-4e2c-ad50-20b9738b0011</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$4,000'])[1]/following::th[1]</value>
+      <webElementGuid>a49b50c7-4582-4ffe-b998-9598e96ef1f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$6,000'])[1]/following::th[1]</value>
+      <webElementGuid>42b04355-1e8e-4df3-9855-f74cd11317d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$8,000'])[1]/preceding::th[1]</value>
+      <webElementGuid>45834f6c-5eba-4730-9262-f7b7a5acf547</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$12,000'])[1]/preceding::th[1]</value>
+      <webElementGuid>78cd633f-a063-4c0e-b577-849444e02db0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Total insurance and registration']/parent::*</value>
+      <webElementGuid>1800470e-ddf1-47c6-879a-c5ccdd35be9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/th</value>
+      <webElementGuid>38b3320a-4808-4fae-a27f-5e2e097c6f23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[@id = 'lf_TotInsLic_result_label' and (text() = '
+                                            Total insurance and registration
+                                        ' or . = '
+                                            Total insurance and registration
+                                        ')]</value>
+      <webElementGuid>ff11a648-cef9-4b16-b09b-d85ae8d2e88e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

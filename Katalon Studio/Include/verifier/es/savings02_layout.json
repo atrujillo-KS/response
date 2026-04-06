@@ -1,0 +1,145 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results_fields": {
+      "Savings_InitialBalance": {
+        "fieldLabel": "Saldo inicial"
+      },
+      "Savings_TotalFutureDeposits": {
+        "fieldLabel": "Depósitos futuros"
+      },
+      "Savings_CumulativeInterestEarned": {
+        "fieldLabel": "Interés obtenido"
+      },
+      "Savings_GrossSavings": {
+        "fieldLabel": "Ahorro total después de % años"
+      },
+      "Savings_SavingsAfterTaxes": {
+        "fieldLabel": "Ahorro después de impuestos"
+      },
+      "Savings_SavingsAfterTaxesAndInflation": {
+        "fieldLabel": "Ahorro después de impuestos e inflación"
+      }
+    },
+    "fields": {
+      "Global_CurrentSavings": {
+        "fieldLabel": "Ahorro actual "
+      },
+      "Savings_MonthlyInvestment": {
+        "fieldLabel": "Depósitos adicionales"
+      },
+      "Savings_DepositFrequencyOne": {
+        "fieldLabel": "Frecuencia de depósito",
+        "dropdownOptions": [
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Cuatro veces al año"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Años depositados"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto valdrán mis ahorros?",
+    "answer": "Sus ahorros valdrán $%beforeTax% antes de tener en cuenta los impuestos y la inflación. Ajustado por impuestos e inflación, el poder adquisitivo de sus ahorros será $%afterTaxAndInflation%.",
+    "selectors": [
+      {
+        "label": "A través del tiempo",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Impuestos e inflación",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Aumento porcentual anual de los precios. La tasa de inflación anual en los EE.UU. alcanzó un promedio de alrededor de 2- 3% en los últimos 10 años."
+    },
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora calcula el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FutureValue\">valor futuro</a></span> de su plan de ahorro en base a la información que proporcione de sus ahorros. "
+    },
+    {
+      "textLabel": "La calculadora supone que usted ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">tributable</a></span>. Si usted desea simular que ahorra con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>, ingrese cero en los campos correspondientes a las tasas del impuesto sobre la renta federal y estatal."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular que muestra el desglose de los ahorros totales acumulados, antes de tomar impuestos y la inflación, por saldo inicial, depósitos futuros e intereses devengados."
+    },
+    {
+      "title": "Gráfico de columnas que compara el ahorro bruto total acumulado, el ahorro después de impuestos y el ahorro después de impuestos y la inflación."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose de los ahorros totales acumulados, antes de tomar impuestos y la inflación, por saldo inicial, depósitos futuros e intereses devengados"
+    },
+    {
+      "title": "Ahorro bruto total acumulado, el ahorro después de impuestos y el ahorro después de impuestos y la inflación"
+    }
+  ]
+}

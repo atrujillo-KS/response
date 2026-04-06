@@ -1,0 +1,729 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "When will I recover my stock costs?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the share price necessary to break even on the sale of your shares. The break-even point occurs where the proceeds from the sale of your shares pay for taxes and brokerage fees."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='brokerage fees'])[1]/following::p[1]",
+      "value": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will recover all costs in 1 month"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total fees:'])[1]/preceding::span[1]",
+      "value": "Alternatively, to recover your purchase, selling, and tax costs in the desired 60 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total fees:'])[1]/preceding::div[1]",
+      "value": "Fees and taxes owed at desired break-even point of 60 months:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotFee2Stock11_result_label",
+      "value": "Total fees:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotFee2Stock11_result_value",
+      "value": "$16.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTax2Stock11_result_label",
+      "value": "Taxes:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTax2Stock11_result_value",
+      "value": "$4.25"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Recovery Time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Months stock owned']/parent::*",
+      "value": "Months stock owned"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Number of months that it will take to recover stock costs if the stock share price increases at the rate predicted"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Months stock owned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Recover all Costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Break-even Point"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis.highcharts-xaxis > text.highcharts-axis-title",
+      "value": "Months stock owned"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Investment-accordion",
+      "value": "Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-label",
+      "value": "Desired months to break even"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_YearlySharePriceIncrease-label",
+      "value": "Predicted yearly increase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_YearlySharePriceIncrease",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_YearlySharePriceIncrease-error-message",
+      "value": "Must be between 0.00% and 1,000.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-error-message",
+      "value": "Must be between 1 and 1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "IncomeTaxes-accordion",
+      "value": "Income & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-label",
+      "value": "Average quarterly dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Stock_AverageQuarterlyDividend_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Stock_AverageQuarterlyDividend_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Average quarterly dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Dividends earned on a lot of shares, on average during a quarter."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption-label",
+      "value": "Dividend income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatPurchase-accordion",
+      "value": "Fees at Purchase"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatSale-accordion",
+      "value": "Fees at Sale"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_YearlySharePriceIncrease",
+      "value": "10.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "15.123"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "250"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.12"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "150,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.60"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "0.12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "42"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.62"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "8"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will recover all costs in 74 months"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_answer_text']/div/span",
+      "value": "Alternatively, to recover your purchase, selling, and tax costs in the desired 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_answer_text']/div[2]",
+      "value": "Fees and taxes owed at desired break-even point of 12 months:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotFee2Stock11_result_value",
+      "value": "$18,239.18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTax2Stock11_result_value",
+      "value": "$1,343.89"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

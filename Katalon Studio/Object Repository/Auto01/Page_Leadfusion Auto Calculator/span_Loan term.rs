@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Loan term</name>
+   <tag></tag>
+   <elementGuidId>11b9dec9-834e-4f8a-97fe-4665577fbf31</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='lf-tooltip-term']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-term</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Loan term&quot;i] >> internal:label=&quot;Loan term&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2cf25fee-7d8a-4bea-8db6-4a9fcbe55347</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-term</value>
+      <webElementGuid>03c10647-cd4c-4aa6-824a-b38d9a98b6c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Loan term</value>
+      <webElementGuid>283da510-52d7-4af0-984d-952555e08a0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Loan term</value>
+      <webElementGuid>02c72b63-aa4d-4fbc-90ce-76340494e4a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-term&quot;)</value>
+      <webElementGuid>f091b7bf-d94c-43cb-9a46-e2330e73761c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='lf-tooltip-term']</value>
+      <webElementGuid>09d170ad-a7e5-4698-8626-653d605a49c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/dfn/h2/span</value>
+      <webElementGuid>130914b6-a675-429e-a826-882414555134</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[2]/following::span[2]</value>
+      <webElementGuid>1ecd437e-b840-4b77-946c-84a19f7b4f6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025 Leadfusion'])[1]/following::span[2]</value>
+      <webElementGuid>35168ba6-e4be-4c3a-9d90-8298aeca0466</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[3]/preceding::span[2]</value>
+      <webElementGuid>54177404-3c61-4a2e-8ee4-c452e79fb879</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[3]/preceding::span[3]</value>
+      <webElementGuid>ecd4124f-85e9-4cb2-a4f8-9426f79b7a9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dfn/h2/span</value>
+      <webElementGuid>6f62cdd9-d337-4a6b-b2e6-9980a982949f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'lf-tooltip-term' and (text() = 'Loan term' or . = 'Loan term')]</value>
+      <webElementGuid>20a72f43-cbd2-4853-8472-4417aa0c5abe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

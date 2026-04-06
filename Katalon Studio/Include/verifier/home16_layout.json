@@ -1,0 +1,718 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LoanInfo",
+        "ExtraPayments",
+        "TaxesInsurance"
+      ],
+      "LoanInfo": {
+        "tabLabel": "Loan Info",
+        "fields": [
+          "Home_ExtraPaymentsLoanType",
+          "Global_HomeAppraisedValue",
+          "Home_DownPaymentPercentage",
+          "Home_LoanTermInYears",
+          "Home_CurrentLoanAmount",
+          "Home_CurrentLoanPayment",
+          "Home_InterestRate",
+          "Home_ExistingPMIPayment"
+        ]
+      },
+      "ExtraPayments": {
+        "tabLabel": "Extra Payments",
+        "fields": [
+          "Home_ExtraPaymentType",
+          "Home_ExtraPaymentStartYear",
+          "Home_ExtraPaymentStartMonth",
+          "Home_ExtraPaymentFrequency",
+          "Home_ExtraPaymentsStartYear",
+          "Home_ExtraPaymentsStartMonth",
+          "Home_ExtraPaymentsEnd",
+          "Home_ExtraPaymentsEndYear",
+          "Home_ExtraPaymentsEndMonth",
+          "Home_AdditionalPayment"
+        ]
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Taxes & Insurance",
+        "fields": [
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance"
+        ]
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20.000",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20.000",
+        "format": "percent"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Home_ExtraPaymentsLoanType": {
+        "fieldLabel": "Loan type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "New",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Existing",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_CurrentLoanAmount": {
+        "fieldLabel": "Current loan balance",
+        "smallLabel": "",
+        "glossaryTerm": "loanprincipal",
+        "glossaryDefinition": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero.",
+        "glossaryTitle": "Loan principal",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_CurrentLoanPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "format": "currency",
+        "defaultValue": "900",
+        "value": "900",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExistingPMIPayment": {
+        "fieldLabel": "Private mortgage insurance (PMI)",
+        "smallLabel": "",
+        "glossaryTerm": "pmi",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentType": {
+        "fieldLabel": "Extra payment type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "2",
+            "optionText": "Lump sum",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Recurring",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentsStartYear": {
+        "fieldLabel": "Extra payments start - year",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "preValueTextLabel": "year",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "1",
+        "maximumValue": "39",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "39",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentsStartMonth": {
+        "fieldLabel": "Extra payments start - month",
+        "preValueTextLabel": "month",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "1",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentFrequency": {
+        "fieldLabel": "Payment frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Annual",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Monthly",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentStartYear": {
+        "fieldLabel": "Extra payment start - year",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "1",
+        "maximumValue": "39",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "39",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentStartMonth": {
+        "fieldLabel": "Extra payment start - month",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "1",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentsEnd": {
+        "fieldLabel": "Extra payments end",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "At end of loan term",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Before end of loan term",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentsEndYear": {
+        "fieldLabel": "Extra payments end - year",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "10",
+        "value": "10",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ExtraPaymentsEndMonth": {
+        "fieldLabel": "Extra payments end - month",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "1",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_AdditionalPayment": {
+        "fieldLabel": "Additional payment",
+        "smallLabel": "",
+        "glossaryTerm": "additionalmonthlypayments",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "No extra payments",
+        "Extra payments"
+      ],
+      "fields": [
+        [
+          "TotIntPaid",
+          "TotIntPaid2"
+        ],
+        [
+          "MonUntilPayoff",
+          "MonUntilPayoff2"
+        ],
+        [
+          "PrincAndInt",
+          "PrincAndInt2Home16"
+        ],
+        [
+          "TaxAndIns",
+          "TaxAndIns2"
+        ],
+        [
+          "MortIns",
+          "MortIns2Home16"
+        ],
+        [
+          "TotPay",
+          "TotPmt2Home16"
+        ],
+        [
+          "dummyAdditionalPrincipalPmt",
+          "AdditionalPrincipalPmt"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "TotIntPaid": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotIntPaid2": {},
+      "MonUntilPayoff": {
+        "fieldLabel": "Months until payoff"
+      },
+      "MonUntilPayoff2": {},
+      "PrincAndInt": {
+        "fieldLabel": "Principal and interest payment"
+      },
+      "PrincAndInt2Home16": {},
+      "MortIns": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "MortIns2Home16": {},
+      "TaxAndIns": {
+        "fieldLabel": "Property taxes and insurance"
+      },
+      "TaxAndIns2": {},
+      "TotPay": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "TotPmt2Home16": {},
+      "dummyAdditionalPrincipalPmt": {
+        "fieldLabel": "Additional principal payments"
+      },
+      "AdditionalPrincipalPmt": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Interest Paid",
+    "dataTableCategory2": "Months Until Payoff",
+    "title": "How advantageous are extra payments?",
+    "answer": "Making extra payments will save you <span class='lf-bold'>$%result%</span> in interest",
+    "selectors": [
+      {
+        "label": "Interest Paid",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Payoff in Months",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Without Extra Payments ",
+            "label": "Without Extra Payments "
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - With Extra Payments",
+            "label": "With Extra Payments"
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "Less Down",
+      "More Down"
+    ],
+    "TotIntPaid": "No Extra Payments",
+    "TotIntPaid2": "Extra Payments",
+    "MonUntilPayoff": "No Extra Payments",
+    "MonUntilPayoff2": "Extra Payments",
+    "err_invalid_extra_payment_start_date_end_date_combo": "The recurring extra payments are scheduled to end before they start.",
+    "err_invalid_lump_sum_start_date_greater_than_loan_term": "The start year for the lump sum extra payment must be during the loan term.",
+    "err_invalid_recurring_start_date_greater_than_loan_term": "The start year for the recurring extra payments must be during the loan term.",
+    "err_invalid_current_loan_balance_montly_payment_combo": "Based on your inputs, your loan cannot be paid off. Please adjust your inputs.",
+    "err_invalid_recurring_end_date_greater_than_loan_term": "The end year for the recurring extra payments must be during the loan term."
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "additionalmonthlypayments": {
+      "title": "Additional monthly payments",
+      "definition": "Most mortgage lenders let borrowers make additional payments. To be sure, check with your lender to make sure there are no prepayment penalties."
+    },
+    "mortgageinteresttaxdeduction": {
+      "title": "Mortgage interest tax deduction",
+      "definition": "A deduction for taxpayers who pay interest on home mortgage and home equity loan interest, allowed primarily to encourage home ownership."
+    },
+    "amortized": {
+      "title": "Amortization",
+      "definition": "The gradual reduction of loan principal that occurs as you make periodic loan payments."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "principal": {
+      "title": "Principal",
+      "definition": "Also called the loan balance, principal is the amount owed on a loan"
+    },
+    "prepaymentpenalty": {
+      "title": "Prepayment penalty",
+      "definition": "A penalty that a lender may charge if you make unscheduled, extra payments on your loan."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "prepayments": {
+      "title": "Prepayment",
+      "definition": "An amount that you pay on your mortgage or other loan that constitutes an additional, unscheduled payment. "
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the total mortgage interest paid with and without making <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#prepayments\">prepayments</a></span> for a given set of loan terms. It also calculates how many months it will take to pay off the loan with and without making extra payments. The entire amount of additional payments is applied to <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#amortized\">amortizing</a></span> the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#principal\">loan principal</a></span>."
+    },
+    {
+      "textLabel": "Some mortgage loans may have a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#prepaymentpenalty\">prepayment penalty</a></span>. Check with your lender to verify whether your loan has such a penalty."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference between the total interest paid on the loan with extra payments and the loan without extra payments."
+    },
+    {
+      "title": "Bar chart comparing the loan payoff schedules for the loan with extra payments and the loan without extra payments."
+    },
+    {
+      "title": "Amortization table for the loan without extra payments."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference between the total interest paid on the loan with extra payments and the loan without extra payments"
+    },
+    {
+      "title": "Loan payoff schedules for the loan with extra payments and the loan without extra payments"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "BÁSICO"
+      },
+      "advanced": {
+        "tabLabel": "AVANZADO"
+      }
+    },
+    "fields": {
+      "InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      },
+      "HSAAge": {
+        "fieldLabel": "¿Tiene 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "¿Tiene su cónyuge 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HealthPlanType": {
+        "fieldLabel": "Tipo de plan",
+        "dropdownOptions": [
+          {
+            "optionText": "Individual"
+          },
+          {
+            "optionText": "Familiar"
+          }
+        ]
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "Deducible del plan HDHP"
+      },
+      "HSAChangeCoverageType": {
+        "fieldLabel": "¿El tipo de cobertura cambia este año?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HealthPlanStartMonth": {
+        "fieldLabel": "Primer mes completo de cobertura",
+        "dropdownOptions": [
+          {
+            "optionText": "Enero"
+          },
+          {
+            "optionText": "Febrero"
+          },
+          {
+            "optionText": "Marzo"
+          },
+          {
+            "optionText": "Abril"
+          },
+          {
+            "optionText": "Mayo"
+          },
+          {
+            "optionText": "Junio"
+          },
+          {
+            "optionText": "Julio"
+          },
+          {
+            "optionText": "Agosto"
+          },
+          {
+            "optionText": "Septiembre"
+          },
+          {
+            "optionText": "Octubre"
+          },
+          {
+            "optionText": "Noviembre"
+          },
+          {
+            "optionText": "Diciembre"
+          }
+        ]
+      },
+      "NewHealthPlanType": {
+        "fieldLabel": "Tipo de plan",
+        "dropdownOptions": [
+          {
+            "optionText": "Individual"
+          },
+          {
+            "optionText": "Familiar"
+          }
+        ]
+      },
+      "NewHDHPDeductible": {
+        "fieldLabel": "Deducible del plan HDHP"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto puedo contribuir a mi HSA?",
+    "answer": "Puede contribuir un máximo de <span class='lf-bold'>$%amount%</span> para el año calendario actual.",
+    "contribute": "Contribución máxima"
+  },
+  "glossaryItems": {
+    "hsahealthplantype": {
+      "title": "Tipo de plan de salud de la HSA",
+      "definition": "El tipo de plan de salud que usted tiene influye sobre el deducible mínimo que debe cumplir para su plan de salud a fin de calificar como un plan médico de deducible alto."
+    },
+    "hsaage": {
+      "title": "Su edad",
+      "definition": "Su edad se utiliza para determinar el monto máximo que puede contribuir a su HSA. Si usted o su cónyuge son mayores de 55 años, hay un monto de actualización permitido. Consulte la Publicación 969 del IRS para obtener más información."
+    },
+    "hdhpdeductible": {
+      "title": "Beneficios de salud con deducible del plan médico de deducible alto",
+      "definition": "Un deducible es lo que usted paga de su bolsillo antes de que se aplique cualquier pago del seguro por su atención. Un plan médico de deducible alto o HDHP es aquel en el que el deducible es más de $1,650 para una cobertura individual ($3,300 para la cobertura familiar) en 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar el monto máximo que puede contribuir a su cuenta de ahorros para la salud durante el año fiscal actual."
+    },
+    {
+      "textLabel": "Para obtener asesoramiento del IRS sobre cuentas de ahorros para la salud, incluido qué constituye un gasto médico elegible, consulte la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">Publicación 969</a> y la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">Publicación 502 del IRS</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del máximo que puede contribuir a su HSA en el año calendario actual."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Máximo que puede contribuir a su HSA en el año calendario actual"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Enable color patterns</name>
+   <tag></tag>
+   <elementGuidId>e3fdc638-df21-414e-b470-2cedd2a08b33</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>label.lf-pattern-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='patterns_enabled_label']/label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Enable color patterns&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>beb02c7f-d8a9-455a-ba68-86127ad97802</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-pattern-label</value>
+      <webElementGuid>a6dc3fad-4514-44f4-8a24-14c879628105</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>patterns_enabled</value>
+      <webElementGuid>6e7ceab9-a552-4c40-9d53-69268084efcc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Enable color patterns</value>
+      <webElementGuid>0d1f5168-1eba-4c37-bd61-b0238e4220c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;patterns_enabled_label&quot;)/label[@class=&quot;lf-pattern-label&quot;]</value>
+      <webElementGuid>6a989a4f-b68a-48bc-b8ab-902b77463cf4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='patterns_enabled_label']/label</value>
+      <webElementGuid>565311b7-bdcd-4824-8393-6c4c34c27acc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[1]/following::label[1]</value>
+      <webElementGuid>5a71c3e4-0ed0-4e0e-ab02-677643a4a75d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Results details'])[1]/following::label[1]</value>
+      <webElementGuid>8c786d22-9452-409d-8e2d-1f9037651870</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bar chart with 2 data series.'])[1]/preceding::label[1]</value>
+      <webElementGuid>433f668b-9eb7-4740-be87-e4111cc4f85e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The chart has 1 X axis displaying categories.'])[1]/preceding::label[1]</value>
+      <webElementGuid>d79b3212-507e-4cc2-afb9-df9ea3305f43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Enable color patterns']/parent::*</value>
+      <webElementGuid>cba87439-4b02-4c38-bc63-a4f501ea91e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>f66f62f2-de7c-4b05-828b-2c22fdf31448</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Enable color patterns' or . = 'Enable color patterns')]</value>
+      <webElementGuid>bcafcf5e-7a63-4972-812d-981d699c7bce</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

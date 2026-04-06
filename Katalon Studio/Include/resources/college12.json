@@ -1,0 +1,533 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Is a meal plan a good deal?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine the average cost per meal for a meal plan. Many colleges and universities require students that reside on campus to register for a meal plan. Even if you are not required, it may be cheaper to buy a meal plan than to pay cash for your meals. Most sources of financial aid and tax-advantaged college savings plans consider meals a legitimate education-related expense."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Some of the questions you may ask about meal plans include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Can unused meals be rolled over and used in the next period?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "Are meal portions unlimited?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_4",
+      "value": "What are the dining hours and when are meal times?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_5",
+      "value": "What types and what merchants accept campus-cash?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_6",
+      "value": "Is sales tax levied on the plan?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_7",
+      "value": "Does the plan accommodate for special meals (e.g. ethnic or vegetarian)?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "The average cost per meal is $4.38 on the meal plan vs. $5.00 out-of-pocket"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Average cost per meal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgCostMax_result_label",
+      "value": "If no meals are missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgCostMax_result_value",
+      "value": "$4.38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgCostForfeit_result_label",
+      "value": "If 32 meals are missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgCostForfeit_result_value",
+      "value": "$5.05"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket_result_label",
+      "value": "If paid out-of-pocket"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket_result_value",
+      "value": "$5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "No meals missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "32 meals missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-2:nth-child(3)",
+      "value": "Pay out-of-pocket"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Table comparing the average cost per meal if no meals are missed, if the specified number of meals are missed, or all meals are paid for out-of-pocket."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "No meals missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "32 meals missed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[4]",
+      "value": "Pay out-of-pocket"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Average cost per meal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$4.38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$5.05"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[3]",
+      "value": "$5"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "MealPlan-accordion",
+      "value": "Meal Plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealPlanType-label",
+      "value": "Type of meal plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealPlanType",
+      "value": "Weekly Block"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_MealPlanType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeklyMealPlanCost-label",
+      "value": "Cost of meal plan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_WeeklyMealPlanCost",
+      "value": "1,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeklyMealPlanCost-error-message",
+      "value": "Must be between $1 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealsCoveredWeekly-label",
+      "value": "Number of meals covered weekly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_MealsCoveredWeekly",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealsCoveredWeekly-error-message",
+      "value": "Must be between 1 and 42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeklyMealPlanCampusCash-label",
+      "value": "Campus cash"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_WeeklyMealPlanCampusCash",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeklyMealPlanCampusCash-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_College_WeeklyMealPlanCampusCash_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Campus cash"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Campus cash is the extra amount you receive from your meal plan to spend freely. For example, if you buy a $1,000 plan, your school may charge $900 for the meals and give you $100 to spend in campus cash. Campus cash is often required to be spent within a network of on- and off-campus merchants. Campus cash is excluded from calculations of the per-meal cost."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealsMissedWeeklyInWeeklyMealPlan-label",
+      "value": "Estimated meals missed weekly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_MealsMissedWeeklyInWeeklyMealPlan",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_MealsMissedWeeklyInWeeklyMealPlan-error-message",
+      "value": "Must be between 0 and 20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeksIncludedInMealPlan-label",
+      "value": "Number of weeks included in plan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_WeeksIncludedInMealPlan",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_WeeksIncludedInMealPlan-error-message",
+      "value": "Must be between 1 and 52"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OutofPocket-accordion",
+      "value": "Out-of-Pocket"
+    }
+  },
+  {
+    "click": {
+      "id": "OutofPocket-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket-label",
+      "value": "Cost per meal if paid out-of-pocket"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket-error-message",
+      "value": "Must be between $1.00 and $50.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "TaxInfo-accordion",
+      "value": "Tax Info"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_IsMealPlanTaxable-label",
+      "value": "Is the meal plan taxable?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_College_IsMealPlanTaxable",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_College_IsMealPlanTaxable",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SalesTaxRate-label",
+      "value": "Sales tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SalesTaxRate-error-message",
+      "value": "Must be between 0.00% and 99.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "MealPlan-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_College_MealPlanType",
+      "value": "Block"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_College_BlockMealPlanCost",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_College_MealsIncludedInBlockMealPlan",
+      "value": "180"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_College_BlockMealPlanCampusCash",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_College_MealsMissedWeeklyInBlockMealPlan",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "OutofPocket-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_College_CostPerMealIfPaidOutOfPocket",
+      "value": "15.00"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxInfo-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_College_IsMealPlanTaxable",
+      "value": "Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "775.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "7.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "The average cost per meal is $5.74 on the meal plan vs. $15.00 out-of-pocket"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td",
+      "value": "$5.74"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td[2]",
+      "value": "$6.08"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td[3]",
+      "value": "$15"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+  ]

@@ -1,0 +1,181 @@
+{
+  "layout": {
+    "tabs": {
+      "CurrentStatus": {
+        "tabLabel": "SITUACIÓN ACTUAL"
+      },
+      "HigherEducation": {
+        "tabLabel": "EDUCACIÓN SUPERIOR"
+      }
+    },
+    "fields": {
+      "College_HighestEducationLevelCompleted": {
+        "fieldLabel": "Nivel educativo más alto completado",
+        "dropdownOptions": [
+          {
+            "optionText": "Diploma de escuela secundaria"
+          },
+          {
+            "optionText": "Título postsecundario de dos años"
+          },
+          {
+            "optionText": "Título universitario"
+          },
+          {
+            "optionText": "Título de maestría"
+          }
+        ]
+      },
+      "College_CurrentAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Edad de jubilación"
+      },
+      "College_AnnualIncomeCurrentEducationLevel": {
+        "fieldLabel": "Ingresos anuales",
+        "smallLabel": "(antes de impuestos)"
+      },
+      "Global_EstimatedAnnualIncreaseInIncome": {
+        "fieldLabel": "Aumento estimado de ingresos anuales"
+      },
+      "College_DesiredEducationLevel": {
+        "fieldLabel": "Nivel educativo deseado",
+        "dropdownOptions": [
+          {
+            "optionText": "Diploma de escuela secundaria"
+          },
+          {
+            "optionText": "Título postsecundario de dos años"
+          },
+          {
+            "optionText": "Título universitario"
+          },
+          {
+            "optionText": "Título de maestría"
+          }
+        ]
+      },
+      "College_AdditionalYearsOfEducation": {
+        "fieldLabel": "Años adicionales de educación"
+      },
+      "College_AnnualEducationExpenses": {
+        "fieldLabel": "Gastos anuales de educación"
+      },
+      "College_AnnualIncomeAtSchool": {
+        "fieldLabel": "Ingresos anuales estimados mientras estudia"
+      },
+      "College_AnnualIncomeAfterGraduation": {
+        "fieldLabel": "Ingresos anuales estimados después de graduarse"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación estimada"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Ganancias Totales",
+    "title": "¿Cuál es el valor de la educación superior?",
+    "answer": "Obtener un título <span class='lf-bold'>%education%</span> puede aumentar sus ganancias de por vida en <span class='lf-bold'>%earnings%</span>",
+    "selectors": [
+      {
+        "label": "Ganancias",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Valor neto anual",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Valor neto anual de la educación superior"
+          }
+        ]
+      }
+    ],
+    "currentEducation": "Nivel educativo actual",
+    "desiredEducation": "Nivel educativo deseado",
+    "totalEarnings": "<span class='lf-bold'>Ganancias totales a los</span> %age% años de edad",
+    "totalEarning": "Ganancias totales a los ",
+    "totalEarnedCE": "Con %education%",
+    "totalEarnedFE": "Con %education%",
+    "tableHeaders": [
+      [
+        "Edad",
+        "Ingreso actual",
+        "Ingreso después de graduarse",
+        "Gastos de educación",
+        "Ingresos mientras estudia",
+        "Valor neto",
+        "Valor neto total"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "estannualcostaddyrclg02": {
+      "title": "Coste anual estimado",
+      "definition": "Indique su estimación del costo total de cada año de educación continua."
+    },
+    "educationlevelcollege02": {
+      "title": "Highest education level completed",
+      "definition": "Enter the highest education level that you or the person has completed."
+    },
+    "noaddyrsclg02": {
+      "title": "Número de años adicionales",
+      "definition": "Ingrese el número de años necesarios para alcanzar el nivel de estudios deseado."
+    },
+    "estannualincreaseearnings": {
+      "title": "Su aumento anual estimado de ingresos",
+      "definition": "La tasa porcentual anual a la que espera que crezcan sus ingresos futuros. Por regla general, los ingresos suelen crecer a un ritmo cercano a la tasa anual de inflación. En los últimos 10 años, la inflación ha oscilado de promedio entre el 2% y el 3%."
+    },
+    "currentagecollege02": {
+      "title": "Current age",
+      "definition": "Enter your current age or the age of the person for whom you are doing the calculation."
+    },
+    "desirededucationlevelcollege02": {
+      "title": "Nivel de educación que desea alcanzar",
+      "definition": "Seleccione el nivel de educación superior que desea alcanzar."
+    },
+    "aveexpectedearningscollege02": {
+      "title": "Ganancias esperadas promedio",
+      "definition": "Según el College Board, las ganancias anuales promedio de una persona en 2021 por nivel educativo fueron las siguientes: escuela secundaria incompleta ($35,800), diploma de escuela secundaria ($44,300), título postsecundario de dos años ($52,100), título universitario ($73,700) y título de maestría ($87,300)."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    },
+    "estannearningsopportcost": {
+      "title": "Ingresos anuales estimados",
+      "definition": "Ingrese su estimación de cuánto ganará cada año que esté invirtiendo en una educación adicional."
+    },
+    "estannualcollegeexpinflationrate": {
+      "title": "Tasa de inflación estimada",
+      "definition": "Ingrese la tasa anual que cree que aumentará el costo total de la educación mientras busca una educación adicional."
+    },
+    "estannearningspostgrad": {
+      "title": "Ingresos anuales estimados tras la graduación",
+      "definition": "Según el College Board, las ganancias anuales promedio para un graduado de secundaria en 2021 fueron de $44,300. (Para los no graduados, las ganancias promedio fueron de $35,800). Para las personas con un título asociado, las ganancias promedio fueron de $52,100. Para las personas con un título de licenciatura, las ganancias promedio fueron de $73,700. Para las personas con un título de maestría, las ganancias promedio fueron de $87,300. Para obtener más datos, consulte el sitio web del College Board."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta muestra cómo cursar estudios superiores puede ser rentable durante toda su vida laboral. Si ya tiene un título universitario, ampliar sus estudios con un título avanzado también puede ser rentable. Esta herramienta no tiene en cuenta los impuestos adicionales que usted debe pagar por tener mayores ingresos o por tener mayores beneficios de jubilación y Seguro Social que usualmente provienen de ganancias más altas."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los ingresos acumulados obtenidos (hasta la jubilación) manteniendo el status quo y alcanzando un nivel de educación superior."
+    },
+    {
+      "title": "Tabla de valor neto anual de la educación superior."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ingresos acumulados obtenidos (hasta la jubilación) al mantener el status quo y alcanzar un nivel de educación superior"
+    }
+  ]
+}

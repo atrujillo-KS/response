@@ -1,0 +1,198 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo sobre el patrimonio inmobiliario",
+        "Línea de crédito sobre el patrimonio inmobiliario (HELOC)"
+      ]
+    },
+    "fields": {
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "CreditLine_MonthsToPayOff": {
+        "fieldLabel": "Cantidad de meses en que terminará de pagar "
+      },
+      "Global_HomeEquityUpfrontCosts": {
+        "fieldLabel": "Costos iniciales"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Cambio de tasa previsto ",
+        "dropdownOptions": [
+          {
+            "optionText": "Ninguno"
+          },
+          {
+            "optionText": "Aumentará 0.5% al año"
+          },
+          {
+            "optionText": "Disminuirá 0.5% al año"
+          }
+        ]
+      }
+    },
+    "results_fields": {
+      "TaxSavings105": {
+        "fieldLabel": "Ahorros fiscales totales"
+      },
+      "TaxSavings205": {
+        "fieldLabel": "Ahorros fiscales totales"
+      },
+      "TotInt1CreditLn05": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotInt2CreditLn05": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "Pmt1CreditLn05": {
+        "fieldLabel": "Pago mensual"
+      },
+      "Pmt2CreditLn05": {
+        "fieldLabel": "Pago mensual"
+      },
+      "OweAft301": {
+        "fieldLabel": "Cantidad adeudada después de X meses"
+      },
+      "OweAft302": {
+        "fieldLabel": "Cantidad adeudada después de X meses"
+      },
+      "EffInt1": {
+        "fieldLabel": "Tasa de interés efectiva"
+      },
+      "EffInt2": {
+        "fieldLabel": "Tasa de interés efectiva"
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Cuáles serán mis ahorros fiscales?",
+    "answer": "Sus ahorros fiscales serán de <span class='lf-bold'>$%res105%</span> para un préstamo sobre el patrimonio inmobiliario y de <span class='lf-bold'>$%res205%</span> para una línea de crédito sobre el patrimonio inmobiliario.",
+    "TaxSavings105": "Préstamo sobre el patrimonio inmobiliario",
+    "TaxSavings205": "Línea de crédito sobre el patrimonio inmobiliario (HELOC)",
+    "amountOwed": "Cantidad adeudada después de %months% meses",
+    "dataTableCategory": "Su ahorro fiscal será",
+    "dataTableCategory2": "Pago mensual",
+    "selectors": [
+      {
+        "label": "Ahorros fiscales",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo sobre el patrimonio inmobiliario",
+            "label": "Préstamo sobre el patrimonio inmobiliario"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Línea de crédito sobre el patrimonio inmobiliario",
+            "label": "Línea de crédito sobre el patrimonio inmobiliario (HELOC)"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "effectiveinterestrate": {
+      "title": "Tasa de interés efectiva",
+      "definition": "Costo verdadero de los intereses de su préstamo, expresado como una tasa anual. También incluye el interés compuesto, los cargos, los puntos y otros gastos de cierre."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "upfrontcosts": {
+      "title": "Costos abonados por adelantado",
+      "definition": "Denominados también costos de cierre, son los cargos y demás costos que usted paga al cierre de un préstamo."
+    },
+    "settlementcharges": {
+      "title": "Cargos por liquidación",
+      "definition": "También llamados costos de cierre, son los costos habituales por encima del precio de venta que deben pagarse para cubrir la transferencia de propiedad en la operación de cierre."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta de cálculo muestra los ahorros impositivos máximos que podrá obtener con un préstamo sobre el capital de una vivienda y con una línea de crédito sobre el capital de una vivienda. Se asume que los gastos por intereses en ambos casos se pueden deducir de sus ingresos para fines de declaración del impuesto sobre la renta."
+    },
+    {
+      "textLabel": "Dado que durante el período de préstamo no se salda el pago del capital del préstamo, la línea de crédito genera más gastos de interés y, de este modo, mayores ahorros impositivos. Como resultado de esto, el costo efectivo de préstamo para un línea de crédito sobre el capital de una vivienda es inferior que para un préstamo sobre el capital de una vivienda. El préstamo sobre el capital de una vivienda tiene una amortización regular del capital del préstamo que no es deducible de impuestos. En el caso en que la tasa de interés sea variable, la herramienta de cálculo le permite ingresar una proyección. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los ahorros fiscales totales para el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria durante los meses hasta la liquidación."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual del préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria."
+    },
+    {
+      "title": "Tabla de amortización del préstamo con garantía hipotecaria."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ahorros fiscales totales para el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria durante los meses hasta la liquidación"
+    },
+    {
+      "title": "Pago mensual del préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria"
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I sell my stock now and invest the money elsewhere?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the rate of return you'll need with the new investment in order to justify selling today and paying taxes and transaction fees."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "You may be tempted to sell stock you now own if you believe another investment will provide a higher rate of return. However, if you sell, you may incur transaction fees and income taxes that reduce both your return and the amount available for the new investment. Additionally, you may incur more fees with the new investment."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You'll need to earn at least 12.81% on the new investment, after taxes and fees, to justify selling"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_title",
+      "value": "By selling your current investment and reinvesting the proceeds in a new one, you'll incur the following costs:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotSellFee_result_label",
+      "value": "Selling fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotSellFee_result_value",
+      "value": "$8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTaxStock03_result_label",
+      "value": "Taxes upon sale"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTaxStock03_result_value",
+      "value": "$81"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotBuyFee_result_label",
+      "value": "Purchase fees (new investment)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotBuyFee_result_value",
+      "value": "$8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReInvestCostStock03_result_label",
+      "value": "Total cost to sell and reinvest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReInvestCostStock03_result_value",
+      "value": "$97"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Cost Incurred"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CurrentInvestment-accordion",
+      "value": "Current Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-error-message",
+      "value": "Must be between 1 and 1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-label",
+      "value": "Months you will own"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePriceToday-label",
+      "value": "Share price today"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePriceToday",
+      "value": "36.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePriceToday-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PredictionOfFutureMonths-label",
+      "value": "Your prediction for the future (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PredictionOfFutureMonths",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PredictionOfFutureMonths-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_FutureSharePrice-label",
+      "value": "Future share price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_FutureSharePrice",
+      "value": "40.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_FutureSharePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_FutureDividends-label",
+      "value": "Future dividends"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_FutureDividends",
+      "value": "45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_FutureDividends-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "IncomeTaxes-accordion",
+      "value": "Income & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption-label",
+      "value": "Dividend income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Stock_DividendIncomeSpendingOption"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='0']"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Investment rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_SavingsInterestRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_SavingsInterestRate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Stock_DividendIncomeSpendingOption"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "label=Spent when received"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='1']"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_TaxFilingStatus_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatPurchase-accordion",
+      "value": "Fees at Purchase"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatSale-accordion",
+      "value": "Fees at Sale"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "NewInvestment-accordion",
+      "value": "New Investment"
+    }
+  },
+  {
+    "click": {
+      "id": "NewInvestment-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_NewInvesmentSharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_NewInvesmentSharePurchasePrice",
+      "value": "50.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_NewInvesmentSharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_NewInvesmentAverageQuarterlyDividend-label",
+      "value": "Average quarterly dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_NewInvesmentAverageQuarterlyDividend",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_NewInvesmentAverageQuarterlyDividend-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentInvestment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "1.256"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "120"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePriceToday",
+      "value": "22.123"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PredictionOfFutureMonths",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_FutureSharePrice",
+      "value": "37.852"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_FutureDividends",
+      "value": "82"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "8.46"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing separately"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "175,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.49"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "0.10"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "NewInvestment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_NewInvesmentSharePurchasePrice",
+      "value": "14.452"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_NewInvesmentAverageQuarterlyDividend",
+      "value": "70"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "You'll need to earn at least 48.88% on the new investment, after taxes and fees, to justify selling"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotSellFee_result_value",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotTaxStock03_result_value",
+      "value": "$44,840"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotBuyFee_result_value",
+      "value": "$176"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReInvestCostStock03_result_value",
+      "value": "$45,017"
+    }
+  }
+]

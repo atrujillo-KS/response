@@ -1,0 +1,789 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What extra monthly payment is needed to reach my target Loan-to-Value (LTV) ratio by a specific date?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the additional monthly principal payment required to reach a target Loan-to-Value (LTV) ratio by a specific date and the resulting savings in total private mortgage insurance (PMI) paid."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "If the loan amount is more than 80% of the home's estimated value, the calculator estimates a monthly amount for PMI. Borrowers may ask their lender to cancel PMI when they have paid down the mortgage balance to 80 percent of the home’s original appraised value. When the balance drops to 78 percent, the mortgage service provider is required to eliminate PMI."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "The entire amount of additional payments is applied to amortizing the loan principal. Some mortgage loans may have a prepayment penalty. Check with your lender to verify whether your loan has such a penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "CustomDate1": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "3,1,0" 
+	}
+  },
+  {
+    "verifyDate": {
+      "id": "lf_answer",
+      "value": "An extra monthly payment of $206 is needed to reach your target 80% LTV by {{CustomDate1}}. You will save $4,791 in PMI."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Extra payments'])[1]/preceding::th[1]",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='No extra payments'])[1]/following::th[1]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid_result_label",
+      "value": "Total PMI paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid_result_value",
+      "value": "$12,850"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid2_result_value",
+      "value": "$8,058"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_label",
+      "value": "Months until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_value",
+      "value": "336"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff2_result_value",
+      "value": "315"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$1,218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home21_result_value",
+      "value": "$1,424"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Total PMI Paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div/span",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - With Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[335]/td[2]",
+      "value": "$1,218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[335]/td[3]",
+      "value": "$1,213"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[335]/td[4]",
+      "value": "$1,208"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[335]/td[5]",
+      "value": "$10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[335]/td[6]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[336]/td[2]",
+      "value": "$1,218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[336]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[336]/td[4]",
+      "value": "$1,213"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[336]/td[5]",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[336]/td[6]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[299]/td",
+      "value": "299"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[299]/td[2]",
+      "value": "$1,218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$219,699"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$301"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$917"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td",
+      "value": "315"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[2]",
+      "value": "$1,218"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[4]",
+      "value": "$1,217"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[5]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[6]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Estimated home value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OutstandingMortgagePrincipalHighLTV-label",
+      "value": "Current loan balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OutstandingMortgagePrincipalHighLTV-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OutstandingMortgagePrincipalHighLTV_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_OutstandingMortgagePrincipalHighLTV_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Loan principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginalTermInMonths-label",
+      "value": "Original term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_OriginalTermInMonths",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginalTermInMonths-error-message",
+      "value": "Must be between 1 and 600 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginalTermInMonths_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_OriginalTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_RemainingTermInMonths-label",
+      "value": "Remaining term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_RemainingTermInMonths",
+      "value": "336"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_RemainingTermInMonths-error-message",
+      "value": "Must be between 1 and 540 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_RemainingTermInMonths_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_RemainingTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_InterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ExtraPaymentStartDate-label",
+      "value": "Extra payment start date"
+    }
+  },
+    {
+    "CustomDate2": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,1,0" 
+	}
+  },
+  {
+    "verifyValue": {
+      "id": "Home_ExtraPaymentStartDate_date",
+      "value": "{{CustomDate2}}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ltv-accordion",
+      "value": "LOAN-TO-VALUE INFO"
+    }
+  },
+  {
+    "click": {
+      "id": "ltv-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TargetLTVRatio-label",
+      "value": "Target Loan-To-Value ratio"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_TargetLTVRatio",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TargetLTVRatio-error-message",
+      "value": "Must be between 1% and 99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TargetLTVRatio_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_TargetLTVRatio_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Loan-to-value ratio (LTV)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "LTV is a lending risk assessment ratio that lenders examine before approving a mortgage. It is calculated by dividing the mortgage loan amount by the fair market value of the home."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TargetLTVDate-label",
+      "value": "Target Loan-To-Value date"
+    }
+  },
+  {
+    "verifyDate": {
+      "id": "Home_TargetLTVDate_date",
+      "value": "{{CustomDate1}}"
+    }
+  },
+  {
+    "click": {
+      "id": "homeInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "260,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OutstandingMortgagePrincipalHighLTV",
+      "value": "210,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OriginalTermInMonths",
+      "value": "361"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_RemainingTermInMonths",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "4.123"
+    }
+  },
+  {
+    "click": {
+      "id": "ltv-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_TargetLTVRatio",
+      "value": "80"
+    }
+  },
+  {
+    "CustomDate3": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "4,1,0" 
+	}
+  },
+  {
+    "setDate": {
+      "id": "Home_TargetLTVDate_date",
+      "value": "{{CustomDate3}}"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_TargetLTVRatio",
+      "value": "70"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "An extra monthly payment of $127 is needed to reach your target 70% LTV by {{CustomDate3}}. You will save $0 in PMI."
+    }
+  },
+    {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid_result_label",
+      "value": "Total PMI paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid_result_value",
+      "value": "$754"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPMIPaid2_result_value",
+      "value": "$754"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_label",
+      "value": "Months until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_value",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff2_result_value",
+      "value": "287"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$1,123"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home21_result_value",
+      "value": "$1,250"
+    }
+  }
+]

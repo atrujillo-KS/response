@@ -1,0 +1,400 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is my current yield from dividends?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates your stock's dividend yield, before and after taxes, based on its current share price and the amount of average quarterly dividends you receive. Dividends can be reinvested or spent."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=dividend yield",
+      "value": "dividend yield"
+    }
+  },
+  {
+    "click": {
+      "id": "link=dividend yield"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Dividend yield"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The dividend amount per share divided by the share price."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Dividend yield'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=average quarterly dividends",
+      "value": "average quarterly dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "link=average quarterly dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Average quarterly dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Dividends earned on a lot of shares, on average during a quarter."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Average quarterly dividends'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Dividends",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=reinvested",
+      "value": "reinvested"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your current yield after taxes is 6.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_label",
+      "value": "Current yield from dividends before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_value",
+      "value": "6.84%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldAft_result_label",
+      "value": "Current yield from dividends after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldAft_result_value",
+      "value": "6.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-label",
+      "value": "Share price today"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-error-message",
+      "value": "Must be between 1 and 1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-label",
+      "value": "Average quarterly dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Stock_AverageQuarterlyDividend_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Stock_AverageQuarterlyDividend_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Average quarterly dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Dividends earned on a lot of shares, on average during a quarter."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "12.123"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "15.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Head of household"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "145,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "2.46"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your current yield after taxes is 0.04%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_value",
+      "value": "0.05%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldAft_result_value",
+      "value": "0.04%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

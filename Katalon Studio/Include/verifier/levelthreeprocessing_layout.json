@@ -1,0 +1,103 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Commercial_AnnualCardProcessingVolume",
+          "Commercial_CorporateFleetPurchaseCardVolume"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [],
+      "fields": [
+        [
+          "Commercial_AnnualLevelThreeProcessingSavings"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Commercial_AnnualLevelThreeProcessingSavings": {
+        "fieldLabel": "Estimated annual savings for level 3 processing"
+      }
+    },
+    "fields": {
+      "Commercial_AnnualCardProcessingVolume": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual card processing volume",
+        "defaultValue": "100000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "maxlength": "11",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "value": "100000",
+        "format": "currency"
+      },
+      "Commercial_CorporateFleetPurchaseCardVolume": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "% of volume that is corporate, fleet, and purchase cards",
+        "defaultValue": "50.00",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "100.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "100.00",
+        "widgetStep": "1",
+        "value": "50.00",
+        "format": "percent"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Principal & interest payment",
+    "title": "How much could I save with level 3 card processing?",
+    "answer": "Level 3 processing is estimated to save your business <span class='lf-bold'>$%amount%</span> annually",
+    "selectors": [
+      {
+        "label": "Annual savings with level 3 processing",
+        "width": "50%",
+        "first": true
+      }
+    ],
+    "savings": "Savings",
+    "total": "Total",
+    "averageDollarCostWithoutLevelThree": "Average cost without level 3",
+    "averageDollarCostWithLevelThree": "Average cost with level 3"
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the estimated annual savings with level 3 processing."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Estimated annual savings with level 3 processing"
+    }
+  ]
+}

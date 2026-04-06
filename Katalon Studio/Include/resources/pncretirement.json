@@ -1,0 +1,960 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.pnc.com/response/lf-pnc/calc/retire03?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much do I need to save for retirement?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Congratulations. Based on your inputs, you are on track for retirement. You will have an estimated surplus of $825,254.55 in savings."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Planned vs. Required Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Savings Over Time"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Balance']/parent::*",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Age']/parent::*",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Planned Savings"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//button[@id='lf_tables_links0']/span",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_tables_links0']/span"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Planned Savings - Balances By Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Investment Growth"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Retirement Expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-7",
+      "value": "Other Retirement Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-8",
+      "value": "Account Withdrawals"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-9",
+      "value": "Ending Balance"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td",
+      "value": "38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$14,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$6,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[7]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[8]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[9]",
+      "value": "$195,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[3]",
+      "value": "$24,419.20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[5]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[6]",
+      "value": "$156,473.27"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[7]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[8]",
+      "value": "$156,473.27"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[9]",
+      "value": "$1,088,905.86"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_input_fields fieldset#lf-tab-AboutYou div.lf-legend.lf-accordian-legend h3 a",
+      "value": "About You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-label",
+      "value": "Retirement age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_RetirementAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-error-message",
+      "value": "Must be between 2 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-label",
+      "value": "Annual household income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Gross household income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your pre-tax income, including your spouse's income, from salary and investments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-RetirementPlan div.lf-legend.lf-accordian-legend h3 a",
+      "value": "Retirement Plan"
+    }
+  },
+  {
+    "click": {
+      "id": "RetirementPlan-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings-label",
+      "value": "Current retirement savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_CurrentSavings",
+      "value": "175,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_CurrentSavings_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Current retirement savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Total amount that you currently have saved toward your retirement in accounts such as 401(k)s, IRAs and annuities."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave-label",
+      "value": "Percentage of income to save ($6K annually)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Retirement contribution percentage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "When saving for retirement, most experts recommend an annual retirement savings goal of 10% to 15% of your pre-tax income, including any employer match. This calculator assumes that you make one annual contribution at the end of each year, and any withdrawals happen once per year at the end of the year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement-label",
+      "value": "Investment style before retirement (8% assumed rate of return)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "Preservation Conservative Moderate Balanced Growth Aggressive"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An aggressive investment portfolio is more appropriate for those who have a higher risk tolerance, a longer time horizon, and an appetite for higher returns. Such a strategy would have an asset allocation with a substantial weighting in stocks and possibly little or no allocation to bonds or cash. A conservative investment strategy is best suited for those who have a lower risk tolerance, a shorter time horizon, and a desire for steady returns that prioritize preserving capital. In a conservative investing strategy more than half of a portfolio will generally be held in debt securities and cash equivalents rather than equities or other risky assets."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement-label",
+      "value": "Investment style during retirement (2% assumed rate of return)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "Preservation Conservative Moderate Balanced Growth Aggressive"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Investment style"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An aggressive investment portfolio is more appropriate for those who have a higher risk tolerance, a longer time horizon, and an appetite for higher returns. Such a strategy would have an asset allocation with a substantial weighting in stocks and possibly little or no allocation to bonds or cash. A conservative investment strategy is best suited for those who have a lower risk tolerance, a shorter time horizon, and a desire for steady returns that prioritize preserving capital. In a conservative investing strategy more than half of a portfolio will generally be held in debt securities and cash equivalents rather than equities or other risky assets."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Get quick estimate from ssa.gov",
+      "value": "Get quick estimate from ssa.gov"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Get quick estimate from ssa.gov"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Office of the Chief Actuary'])[1]/following::h1[1]",
+      "value": "Social Security Quick Calculator"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment-label",
+      "value": "Monthly pension benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_MonthlyPensionPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_MonthlyPensionPayment_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Pension"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An employer-sponsored retirement plan that pays retirees a fixed amount that is based on number of years of service and salary history."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome-label",
+      "value": "Other monthly retirement income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_OtherMonthlyIncome",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_OtherMonthlyIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Alternative retirement income sources"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Common retirement income sources besides investment accounts, Social Security benefits, and pensions include rental income, reverse mortgage, and part-time work."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-Assumptions.lf-open div.lf-legend.lf-accordian-legend.lf-open h3 a",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage-label",
+      "value": "Retirement spending (% of pre-retirement income)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_RetirementSpendingPercentage",
+      "value": "80.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage-error-message",
+      "value": "Must be between 0.00% and 200.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_RetirementSpendingPercentage_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Retirement spending"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Most experts agree that you will need 70-80% of your pre-retirement income to maintain your standard of living in retirement. This amount is based on the household income earned during the year immediately before your retirement."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-error-message",
+      "value": "Must be between 5 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LifeExpectancy_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your life expectancy is the number of years that you are expected to live, statistically. Your life expectancy is based on the actual life span of the same set of population that shares similar risk characteristics. These risk characteristics include smoking and drinking habits, level of exercise, and hereditary or congenital health problems. Life expectancy is used to calculate life insurance premiums and required minimum distributions from IRAs, among other reasons."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome-label",
+      "value": "Expected income growth rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Expected income growth rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage increase in household income you expect to receive until retirement."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "3.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InflationRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus-label",
+      "value": "Marital status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "Single Married"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_MaritalStatus_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Marital status and Social Security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Married couples have 1.5 times the maximum Social Security benefit than single wage earners. This calculator assumes that only one spouse works. If you are married and both you and your spouse work, it is recommended that you run the calculation twice - once for each spouse and their respective income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentAge",
+      "value": "45"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_RetirementAge",
+      "value": "60"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "120,000"
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf-tab-RetirementPlan div.lf-legend.lf-accordian-legend h3 a"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_CurrentSavings",
+      "value": "100,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave",
+      "value": "10.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "label=Aggressive"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "label=Aggressive"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits",
+      "value": "2,500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_MonthlyPensionPayment",
+      "value": "500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_OtherMonthlyIncome",
+      "value": "500"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage",
+      "value": "70.00"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "90"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome",
+      "value": "3.00"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InflationRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "label=Married"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Based on your inputs, your retirement savings is expected to run out at age 76. You will need to save an additional $298,433.98 to retire at age 60."
+    }
+  }
+]

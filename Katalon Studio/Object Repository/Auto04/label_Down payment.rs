@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Down payment</name>
+   <tag></tag>
+   <elementGuidId>446797ec-cb9c-4bb6-bc8e-3aa90b372c03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Global_AutoDownPayment-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Global_AutoDownPayment-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Global_AutoDownPayment-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>add86c0b-44d9-4baf-b360-af2dcf1bb8c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Global_AutoDownPayment</value>
+      <webElementGuid>19010b1a-f0dd-4a08-ba3f-1581c8f2dfeb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Global_AutoDownPayment-label</value>
+      <webElementGuid>5ac8163a-463f-4605-bcba-4a4493eec918</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Down payment
+                             
+                        </value>
+      <webElementGuid>ff5dffa3-ef86-402c-a460-f90a1d490670</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Global_AutoDownPayment-label&quot;)</value>
+      <webElementGuid>442c0459-d9e8-4f88-a910-3e605640e0df</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Global_AutoDownPayment-label']</value>
+      <webElementGuid>9703d793-6b29-4c85-8fb8-a54d94d24ea2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Global_AutoDownPayment_container']/div/label</value>
+      <webElementGuid>860c2c52-b759-4b7d-853d-5cd64658c06b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Purchase price'])[2]/following::label[1]</value>
+      <webElementGuid>b8329fe3-564a-48d0-815e-313dd421a165</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $1,000,000'])[1]/following::label[2]</value>
+      <webElementGuid>ae4d2a1d-2e7f-4386-be9f-6a9b1a38d957</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $249,999'])[1]/preceding::label[1]</value>
+      <webElementGuid>d568ff46-638d-4b02-b916-53ec16c3a4e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Down payment'])[2]/preceding::label[1]</value>
+      <webElementGuid>22fd8a07-553f-4701-9489-7241f78e2380</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Down payment']/parent::*</value>
+      <webElementGuid>84f0ce9f-c501-4429-a729-fb29907e93ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/label</value>
+      <webElementGuid>eeec106b-c1bc-4585-b83f-60381b7b6d59</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Global_AutoDownPayment-label' and (text() = 'Down payment
+                             
+                        ' or . = 'Down payment
+                             
+                        ')]</value>
+      <webElementGuid>8c06ac9a-388d-4a71-8303-8761b61fab2a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

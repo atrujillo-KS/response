@@ -1,0 +1,192 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc-sp/calc/fraudriskspanish?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//span[@id='lf_answer']/p",
+      "value": "Una empresa como la suya, en la industria de la Salud, tiene un costo promedio por registro de $408.00 si ocurre una filtración de datos. Con 5,000 clientes, esto significa que una filtración potencial podría costar hasta $2,040,000.00."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[2]",
+      "value": "Además de los costos monetarios de una filtración de datos, usted podría exponerse a perder una parte de sus clientes debido al daño de su reputación."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[3]",
+      "value": "La industria que seleccionó tiene una tasa promedio de rotación de clientes relacionada con el fraude del 6.70%."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[4]",
+      "value": "La cantidad potencial de clientes perdidos por el daño en la reputación debido a una filtración de datos es 335."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_NumberOfCustomers-label",
+      "value": "Cantidad de clientes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_NumberOfCustomers",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_NumberOfCustomers-error-message",
+      "value": "Debe ubicarse entre 1 y 100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_Industry-label",
+      "value": "Industria"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_Industry",
+      "value": "7"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[1]",
+      "value": "Promedio nacional"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[2]",
+      "value": "Comunicaciones"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[3]",
+      "value": "Productos de consumo"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[4]",
+      "value": "Educación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[5]",
+      "value": "Energía"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[6]",
+      "value": "Entretenimiento"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[7]",
+      "value": "Productos financieros"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[8]",
+      "value": "Salud"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[9]",
+      "value": "Hospitalidad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[10]",
+      "value": "Productos industriales"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[11]",
+      "value": "Medios de comunicación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_Commercial_Industry\"]/option[12]",
+      "value": "Productos farmacéuticos"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_NumberOfCustomers",
+      "value": "7,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_Industry"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Commercial_Industry",
+      "value": "label=Hospitalidad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p",
+      "value": "Una empresa como la suya, en la industria de la Hospitalidad, tiene un costo promedio por registro de $120.00 si ocurre una filtración de datos. Con 7,500 clientes, esto significa que una filtración potencial podría costar hasta $900,000.00."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[2]",
+      "value": "Además de los costos monetarios de una filtración de datos, usted podría exponerse a perder una parte de sus clientes debido al daño de su reputación."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[3]",
+      "value": "La industria que seleccionó tiene una tasa promedio de rotación de clientes relacionada con el fraude del 2.40%."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[4]",
+      "value": "La cantidad potencial de clientes perdidos por el daño en la reputación debido a una filtración de datos es 180."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Términos de uso"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "disclaimer_text",
+      "value": "PNC se complace en presentar las herramientas creadas por Leadfusion, quien asume la responsabilidad exclusiva de la operación de las herramientas. La exactitud de esta herramienta no está garantizada por ninguna parte y está destinada únicamente para fines educativos. Las herramientas y la información que se muestran no constituyen la asesoría de PNC Bank o sus compañéas afiliadas, ni representan productos, servicios, tasas o plazos reales disponibles de parte de estos, y ningún contenido de la herramienta constituirá una oferta o solicitud de un producto o servicio de PNC Bank o de sus compañías afiliadas. PNC y Leadfusion no brindan asesoría fiscal o legal al presentar la herramienta."
+    }
+  }
+]

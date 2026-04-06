@@ -1,0 +1,320 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will rate changes affect my bond's current value?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the effect of market rate changes to the bond value and the pre-tax gain/loss if sold today (prior to maturity)."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Bond prices and interest rates move in opposite directions: If the market interest rate for similar bonds increases, your bond value decreases. Investors are willing to pay less for your bond since they can earn a higher interest rate on similar bonds. If the market interest rate for similar bonds decreases, your bond value increases as investors are willing to pay more for your bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "If rates rise to 7%, your bond's value today will be $8,925"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Your bond's value today"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Pre-tax gain (loss) if sold today"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesDrop_result_label",
+      "value": "If rates drop to 3%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesDrop_result_value",
+      "value": "$10,684"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLossIfRatesDrop_result_value",
+      "value": "−$316"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValue_result_label",
+      "value": "If rates stay at 5%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValue_result_value",
+      "value": "$9,761"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLoss_result_value",
+      "value": "−$1,239"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesRise_result_label",
+      "value": "If rates rise to 7%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesRise_result_value",
+      "value": "$8,925"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLossIfRatesRise_result_value",
+      "value": "−$2,075"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Gain If Sold"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday-label",
+      "value": "Today's market rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "50.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "16,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "9.12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "8.56"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "45"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "If rates rise to 10.56%, your bond's value today will be $15,328"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesDrop_result_label",
+      "value": "If rates drop to 6.56%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesDrop_result_value",
+      "value": "$17,499"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLossIfRatesDrop_result_value",
+      "value": "$9,499"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValue_result_label",
+      "value": "If rates stay at 8.56%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValue_result_value",
+      "value": "$16,373"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLoss_result_value",
+      "value": "$8,373"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesRise_result_label",
+      "value": "If rates rise to 10.56%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketValueIfRatesRise_result_value",
+      "value": "$15,328"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PreTaxGainOrLossIfRatesRise_result_value",
+      "value": "$7,328"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

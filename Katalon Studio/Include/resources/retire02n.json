@@ -1,0 +1,469 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will Social Security provide after retirement?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you to project your Social Security benefits during retirement. It considers your age, expected length of retirement, and any additional income you expect to earn after you are eligible to receive benefits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Visit the Social Security Administration Fact Sheet for more information, including the average monthly benefit for retired workers."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Social Security Administration Fact Sheet",
+      "value": "Social Security Administration Fact Sheet"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Social Security Administration Fact Sheet"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your Social Security benefits during retirement are projected to be as follows:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0 > text",
+      "value": "You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container2']/div",
+      "value": "Yearly Social Security Benefits"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container2']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div/span",
+      "value": "Yearly Social Security Benefits"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_tables_links']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_amortization_title",
+      "value": "Yearly Social Security Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-1']/span",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-2']/span",
+      "value": "You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-3']/span",
+      "value": "Your Spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[31]/td",
+      "value": "97"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[31]/td[2]",
+      "value": "$39,804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[31]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-personal-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-tab-label",
+      "value": "Personal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-spouse-0",
+      "value": "Include spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div/div/div/label",
+      "value": "My information Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[2]/div/div/label",
+      "value": "Annual income (before taxes)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Income",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Income-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[3]/div/div/label",
+      "value": "Age at retirement"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetireAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetireAge-error-message",
+      "value": "Must be between 2 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[4]/div/div/label",
+      "value": "Monthly wages during retirement"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetireWage",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetireWage-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[5]/div/div/label",
+      "value": "For how many years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_WageYrs",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WageYrs-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-projections-tab-label",
+      "value": "Projections"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-projections-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-projections-lifeExpectancy']/table/tbody/tr/td/div/label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-projections-lifeExpectancy']/table/tbody/tr[2]/td/div/label",
+      "value": "Yearly rate of growth in Social Security benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnIncGrow",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnIncGrow-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-benefits-pensions-tab-label",
+      "value": "Social Security Benefits"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-benefits-pensions-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-spouse-1",
+      "value": "Include spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-social-security-benefits']/h2",
+      "value": "Social Security benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-benefits-pensions-details']/div[3]/div/fieldset/div[2]/div/div/label/span[2]",
+      "value": "Age you will claim Social Security benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SSAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SSAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-benefits-pensions-details']/div[3]/div/fieldset/div[3]/div/div/label/span",
+      "value": "Your monthly benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SSType",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-personal-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge-input-safe",
+      "value": "46"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Income-input-safe",
+      "value": "276000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetireAge-input-safe",
+      "value": "57"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetireWage-input-safe",
+      "value": "45000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_WageYrs-input-safe",
+      "value": "26"
+    }
+  },
+    {
+    "setTextAndWait": {
+      "id": "lf_WageYrs",
+      "value": "26"
+    }
+  },
+  {
+    "click": {
+      "id": "projections-link"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge-input-safe",
+      "value": "100"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_AnnIncGrow",
+      "value": "2.45"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-benefits-pensions-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SSAge",
+      "value": "69"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_SSType",
+      "value": "label=Ignore"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your Social Security benefits during retirement are projected to be as follows:"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

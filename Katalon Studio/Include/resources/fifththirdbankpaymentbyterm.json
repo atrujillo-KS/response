@@ -1,0 +1,139 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.53.com/response/lf-53/calc/paymentbyterm?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What will my Personal Loan monthly payments be?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr/th",
+      "value": "Number of Monthly Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr/th[2]",
+      "value": "APR/Interest Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr/th[3]",
+      "value": "Estimated Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[2]/td",
+      "value": "12 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[3]/td",
+      "value": "24 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[4]/td",
+      "value": "36 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[5]/td",
+      "value": "48 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[6]/td",
+      "value": "60 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FundsRequested-label",
+      "value": "Amount borrowed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_FundsRequested",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FundsRequested-error-message",
+      "value": "Must be between $2,000 and $25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NumOfMonthlyPmts-label",
+      "value": "Number of monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_NumOfMonthlyPmts",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NumOfMonthlyPmts-error-message",
+      "value": "Must be between 12 and 60"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_FundsRequested",
+      "value": "15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container1']/table/tbody/tr[2]/td",
+      "value": "12 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[3]/td",
+      "value": "24 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[4]/td",
+      "value": "36 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[5]/td",
+      "value": "48 Months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_container1']/table/tbody/tr[6]/td",
+      "value": "60 Months"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "link=Apply Now",
+      "value": "APPLY NOW"
+    }
+  }
+]

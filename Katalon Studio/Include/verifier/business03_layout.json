@@ -1,0 +1,248 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Business_CreditNeeded",
+          "Business_InterestRate",
+          "Business_MonthlyPayment",
+          "Business_AdditionalPrincipalPayment",
+          "Business_FrequencyOfAdditionalPrincipalPayments"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true
+    },
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "Loan Amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "loanratebus04",
+        "format": "percent",
+        "defaultValue": "8.125",
+        "value": "8.125",
+        "minimumValue": "1",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.0000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_MonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "532.24",
+        "value": "532.24",
+        "minimumValue": "1",
+        "maximumValue": "500000",
+        "maxlength": "7",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_AdditionalPrincipalPayment": {
+        "fieldLabel": "Additional principal payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "24",
+        "value": "24",
+        "minimumValue": "1",
+        "maximumValue": "5000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_FrequencyOfAdditionalPrincipalPayments": {
+        "fieldLabel": "Frequency of additional principal payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Bi-weekly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Semi-monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Quarterly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Semi-annually",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Annually",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How long will it take to repay my loan?",
+    "answer": "It will take <span class='lf-bold'>%years% %yearlabel%</span> and <span class='lf-bold'>%months% %monthlabel%</span> to repay your loan",
+    "balance": "Balance",
+    "month": "Month",
+    "interest": "Interest Paid",
+    "dataTableCategoryTitle": "Month",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Payoff",
+        "width": "33%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "index": 2,
+        "label": "Cumulative Interest",
+        "width": "33%",
+        "getTableData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ]
+  },
+  "glossaryItems": {
+    "costofcapital": {
+      "title": "Cost of capital",
+      "definition": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value. "
+    },
+    "paymentbus04": {
+      "title": "Monthly payment",
+      "definition": "Enter the amount of your monthly payment (Note: if the loan is partially repaid, the loan payment cannot be determined without a loan term.)"
+    },
+    "loanratebus04": {
+      "title": "Interest rate",
+      "definition": "Interest rate on the loan is assumed to be a fixed rate until maturity."
+    },
+    "aftertaxinterestratebus04": {
+      "title": "After-tax interest rate",
+      "definition": "The after-tax interest rate is the interest rate on a loan after you deduct tax expense. For example, if your loan rate is 6% and your income tax rate is 25%, your after-tax interest rate is 4.5%."
+    },
+    "addpaymentbus04": {
+      "title": "Additional principal payment",
+      "definition": "Enter the additional payment you intend to make. The full amount is applied toward reduction of loan principal."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "<b></b>"
+    },
+    {
+      "textLabel": "This tool shows the amount of time it takes to repay a loan. If you make <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AddPaymentBus04\">additional principal payments</a></span>, you shorten the repayment period. You also reduce interest expense. Generally, you make prepayments if you have surplus cash or if your current <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CostofCapital\">cost of capital</a></span> is lower. Since interest expense is tax-deductible, the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AfterTaxInterestRateBus04\">after-tax interest</a></span> rate should be considered when making a prepayment decision."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the amortization of loan principal over the term of the loan."
+    },
+    {
+      "title": "Column chart of the cumulative interest paid over the loan term."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Amortization of loan principal over the term of the loan"
+    },
+    {
+      "title": "Cumulative interest paid over the loan term"
+    }
+  ]
+}

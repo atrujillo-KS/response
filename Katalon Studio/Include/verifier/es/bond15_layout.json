@@ -1,0 +1,283 @@
+{
+  "layout": {
+    "tabs": {
+      "Bond1": {
+        "tabLabel": "BONO 1"
+      },
+      "Bond2": {
+        "tabLabel": "BONO 2"
+      },
+      "SharedBondInfo": {
+        "tabLabel": "INFORMACIÓN SOBRE EL BONO"
+      }
+    },
+    "fields": {
+      "Bond_FirstBondPurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FirstBondFaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_FirstBondCouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_FirstBondMonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_SecondBondType": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_MonthsUntilSale": {
+        "fieldLabel": "Meses hasta que usted venda"
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Tasa de interés del mercado actual"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Bono 1",
+        "Bono 2"
+      ],
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "subtitle": "Si vende en %months% meses",
+      "columnHeaders": [
+        "Bono 1",
+        "Bono 2"
+      ]
+    },
+    "results2": {
+      "subtitle": "Si lo mantiene hasta el vencimiento"
+    },
+    "results_fields": {
+      "Bond_SellingPrice": {
+        "fieldLabel": "Precio de venta"
+      },
+      "Bond_YieldBeforeTaxesIfSell": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_YieldAfterTaxesIfSell": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Bond_YieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_YieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "secondSubtitle": {
+        "fieldLabel": "Dummy subtitle"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Precio de venta",
+    "title": "¿Qué bono es mejor?",
+    "answer": "%tax% obtendrá un mayor rendimiento después de impuestos del <span class='lf-bold'>%rate%%</span>",
+    "Bond1": "Bono 1",
+    "Bond2": "Bono 2",
+    "categories": [
+      "Bono 1",
+      "Bono 2"
+    ],
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "En el momento de la venta",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Precio de venta",
+        "width": "33%"
+      },
+      {
+        "index": 3,
+        "label": "Al vencimiento",
+        "width": "33%",
+        "last": true
+      }
+    ],
+    "returnPercent": "Rendimiento (%)",
+    "return": "Rendimiento",
+    "sellingPrice": "Precio de venta"
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "corporatebonds": {
+      "title": "Corporate bond",
+      "definition": "Bonds issued by corporations to raise money for operations."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "ytm": {
+      "title": "Rendimiento al vencimiento",
+      "definition": "La tasa de interés, o tasa de rendimiento interna (IRR, por sus siglas en inglés), que hace que la entrada de efectivo sea igual al precio que se paga por el bono. Las entradas de efectivo consisten en el interés del cupón y el capital del bono cuando este llega a su vencimiento."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "treasurysecurities": {
+      "title": "Títulos del Tesoro",
+      "definition": "Obligaciones de deuda del gobierno de Estados Unidos con un vencimiento superior a 10 años. También llamado bono T."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara las <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasas de rendimiento</a></span>, antes y después de impuestos, para dos inversiones en bonos. Puede elegir un valor del Tesoro, un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CorporateBonds\">bono corporativo</a></span> o un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MuniBonds\">bono municipal</a></span>. Las tasas de rendimiento se proporcionan para dos períodos: 1) el plazo restante hasta el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Maturity\">vencimiento</a></span> (su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YTM\">rendimiento al vencimiento</a></span>) y 2) la cantidad de meses hasta que usted vende los bonos."
+    },
+    {
+      "textLabel": "Dependiendo del tipo de bonos que se comparen, los impuestos aplicados a los pagos de cupones variarán. Los valores del Tesoro están exentos de impuestos estatales sobre la renta. Los bonos municipales están exentos de impuestos federales sobre la renta. En algunos casos, los bonos municipales también están exentos de impuestos estatales sobre la renta."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la devolución del usuario, antes y después de impuestos, para cada tipo de bono en el momento de la venta."
+    },
+    {
+      "title": "Gráfico de columnas del precio de venta de cada bono en el momento de la venta\n."
+    },
+    {
+      "title": "Gráfico de columnas que compara el rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Devolución del usuario, antes y después de impuestos, para cada tipo de bono en el momento de la venta"
+    },
+    {
+      "title": "Precio de venta de cada bono en el momento de la venta"
+    },
+    {
+      "title": "Rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento"
+    }
+  ]
+}

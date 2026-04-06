@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Trade-in value and cash rebate are added _efdf5d</name>
+   <tag></tag>
+   <elementGuidId>5375ba2c-c129-452f-aa79-6130e7e45598</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_3']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Trade-in value and cash rebate are added to the down payment of the vehicle.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>6cdb6967-c002-4948-9eda-99d18c295874</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_3</value>
+      <webElementGuid>eb9fc8a9-6352-4bf1-b5a5-0cea87506afe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Trade-in value and cash rebate are added to the down payment of the vehicle.</value>
+      <webElementGuid>66ab55e3-269e-444e-8f7e-3f814a28da35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_3&quot;)</value>
+      <webElementGuid>4e918698-6011-46fe-b45a-abc3f71f1d91</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_3']</value>
+      <webElementGuid>e00e1214-a9f9-4292-8561-2a4d59953d42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[4]</value>
+      <webElementGuid>3fa47a90-367f-47d7-b55a-1db7003a6689</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[5]</value>
+      <webElementGuid>7482cc07-26a9-4cf8-a560-fbb8a6bba0f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[6]</value>
+      <webElementGuid>0cf75530-8b06-4c4b-afe9-0c79b22d4b18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>95f028c1-2f39-4c45-98a3-a08d4478a575</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>d366168c-cc7d-47c6-bd48-d90e17f6f9cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Trade-in value and cash rebate are added to the down payment of the vehicle.']/parent::*</value>
+      <webElementGuid>ab0bfee8-b31e-4324-be2f-b9bbf0efdc71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[4]</value>
+      <webElementGuid>66194157-4446-48eb-a1d7-72f16b8fd0f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_3' and (text() = 'Trade-in value and cash rebate are added to the down payment of the vehicle.' or . = 'Trade-in value and cash rebate are added to the down payment of the vehicle.')]</value>
+      <webElementGuid>89904be9-bba3-4aa7-b3fd-fa9a02de6811</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

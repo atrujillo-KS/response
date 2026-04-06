@@ -1,0 +1,122 @@
+{
+  "layout": {
+    "tabs": {
+      "AboutYou": {
+        "tabLabel": "Acerca de usted"
+      },
+      "action1": {
+        "tabLabel": "Acción 1"
+      },
+      "action2": {
+        "tabLabel": "Acción 2"
+      },
+      "action3": {
+        "tabLabel": "Acción 3"
+      }
+    },
+    "results": {
+      "text": "Si usted invierte esta cantidad, se le acumulan %tenYearSavings% en 10 años y %retireSavings% al momento del retiro"
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Edad de jubilación prevista"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Global_BudgetingActionOneAmount": {
+        "fieldLabel": "Puedo ahorrar",
+        "smallLabel": "(mensualmente)"
+      },
+      "Global_BudgetingActionTwoAmount": {
+        "fieldLabel": "Puedo ahorrar",
+        "smallLabel": "(mensualmente)"
+      },
+      "Global_BudgetingActionThreeAmount": {
+        "fieldLabel": "Puedo ahorrar",
+        "smallLabel": "(mensualmente)"
+      },
+      "Global_BudgetingActionOneName": {
+        "fieldLabel": "Por"
+      },
+      "Global_BudgetingActionTwoName": {
+        "fieldLabel": "Por"
+      },
+      "Global_BudgetingActionThreeName": {
+        "fieldLabel": "Por"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "dataTableCategory2": "Cantidad acumulada",
+    "title": "¿Qué importancia tiene reducir mis gastos?",
+    "answer": "Usted ahorrará <span class='lf-bold'>%result%</span> cada año",
+    "annualSavings": "Ahorros anuales",
+    "after10Years": "Después de 10 años",
+    "atRetirement": "Al momento de la jubilación",
+    "futureValue": "Valor futuro si se invierte ",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Ahorros",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Valor futuro",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "opportunitycost": {
+      "title": "Costo de oportunidad",
+      "definition": "El costo de oportunidad es la pérdida de beneficios respecto de la siguiente mejor alternativa que usted enfrenta cuando toma una decisión financiera o económica. Por ejemplo, usted tiene $1,000 para invertir. Podría invertirlos en un fondo mutualista con el cual podría obtener un retorno del 20% o más. Si usted toma esta decisión de inversión, sacrifica la oportunidad de obtener una tasa de retorno menor sobre una inversión sin riesgo. Esta podría ser un CD u otro depósito a plazo fijo con una tasa de retorno del 6%. Este retorno garantizado del 6% sería el costo de oportunidad de invertir en el fondo mutualista."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a determinar cuánto podrían valer sus reducciones de gastos si invierte los ahorros. Algunas ideas para restringir su presupuesto son: reducir la frecuencia con la que come fuera de casa, comprar menos ropa, hacer menos viajes, esperar para comprar un automóvil nuevo, ir menos al cine, preparar el café en casa, saldar las deudas de las tarjetas de crédito y compartir automóvil para ir al trabajo, entre otras."
+    },
+    {
+      "textLabel": "La calculadora también supone que usted efectúa la aportación a sus ahorros al inicio de cada mes y que ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">tributable</a></span>. Si quiere simular ahorros con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>, ingrese cero en el campo correspondiente a tasas de impuesto sobre la renta federal y estatal."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del ahorro anual al reducir el gasto."
+    },
+    {
+      "title": "Gráfico de columnas del los ahorros después de 10 años y al jubilarse"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ahorro anual al reducir el gasto"
+    },
+    {
+      "title": "Ahorros después de 10 años y al jubilarse"
+    }
+  ]
+}

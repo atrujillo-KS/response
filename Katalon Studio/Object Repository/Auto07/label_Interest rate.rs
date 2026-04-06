@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Interest rate</name>
+   <tag></tag>
+   <elementGuidId>16e187d2-a5c5-4c61-8755-d1f33d27c927</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Global_AutoInterestRate-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Global_AutoInterestRate-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Global_AutoInterestRate-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>710f93a6-56af-4496-9bb0-19d5878b7c59</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Global_AutoInterestRate</value>
+      <webElementGuid>2cbf140c-af1a-4b9b-b1d4-94dddfff5718</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Global_AutoInterestRate-label</value>
+      <webElementGuid>02106a3e-76c1-4a35-a4f2-0cfba63544c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>335da9da-a6f0-458a-ad5b-e6807c8e8c2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Interest rate
+                                
+                        </value>
+      <webElementGuid>16ff9765-9973-4df7-9269-dc4bd410182d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Global_AutoInterestRate-label&quot;)</value>
+      <webElementGuid>c297251b-b79f-4b0c-be99-8e7dcf8ed241</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Global_AutoInterestRate-label']</value>
+      <webElementGuid>4fa24434-abc8-4f63-ba22-4cafe080cc18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Global_AutoInterestRate-table']/div/label</value>
+      <webElementGuid>448e8283-8b98-463c-a111-cd16326c4a08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Down payment'])[2]/following::label[1]</value>
+      <webElementGuid>c474ec06-cfd6-4284-be37-29a78ed64399</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $249,999'])[1]/following::label[2]</value>
+      <webElementGuid>ce2d12dd-bf56-4ef6-9014-5d1e2b1a2e02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 50.00%'])[1]/preceding::label[1]</value>
+      <webElementGuid>7bd83d00-65b0-4a93-936a-ab7fcb6c5067</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[2]/preceding::label[1]</value>
+      <webElementGuid>5f06d228-48ca-411c-9780-396e27e35d58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Interest rate']/parent::*</value>
+      <webElementGuid>48614343-3f9b-4837-b8a9-dbc2d15641ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[3]/div/label</value>
+      <webElementGuid>0d07ea67-bfaa-4e57-a76d-d2e4b283b909</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Global_AutoInterestRate-label' and (text() = 'Interest rate
+                                
+                        ' or . = 'Interest rate
+                                
+                        ')]</value>
+      <webElementGuid>7bd80689-541b-4a8a-a707-8a892455eb38</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

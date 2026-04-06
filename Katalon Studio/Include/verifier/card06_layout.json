@@ -1,0 +1,615 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "FlightCard",
+        "FlightRewards",
+        "LowRateCard",
+        "CardActivity"
+      ],
+      "FlightCard": {
+        "tabLabel": "Flight Card",
+        "fields": [
+          "Card_FlightCardIntroductoryInterestRate",
+          "Card_FlightCardIntroductoryTerm",
+          "Card_FlightCardIntroAnnualFee",
+          "Card_FlightCardInterestRate",
+          "Card_FlightCardAnnualFee"
+        ]
+      },
+      "FlightRewards": {
+        "tabLabel": "Flight Rewards",
+        "fields": [
+          "Card_FlightCardMilesEarnedPerDollarSpent",
+          "Card_FlightCardMilesEarnedForApplying",
+          "Card_FlightCardMaximumMilesEarnedYearly",
+          "Card_FlightCardMilesRequiredForFreeTicket",
+          "Card_FlightCardRegularCostOfTicket"
+        ]
+      },
+      "LowRateCard": {
+        "tabLabel": "Low Rate Card",
+        "fields": [
+          "Card_FeeCardIntroductoryInterestRate",
+          "Card_FeeCardIntroductoryTerm",
+          "Card_FeeCardIntroductoryAnnualFee",
+          "Card_FeeCardInterestRate",
+          "Card_FeeCardAnnualFee"
+        ]
+      },
+      "CardActivity": {
+        "tabLabel": "Card Activity",
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_YearsCardToBeUsed",
+          "Global_FutureMonthlyChargesOnCard",
+          "Card_MonthlyPayment"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Flight card",
+        "Low rate card"
+      ],
+      "fields": [
+        [
+          "Card_FlightTotalCost",
+          "Card_LowRateTotalCost"
+        ],
+        [
+          "Card_FlightTotalInterestAndFees",
+          "Card_LowRateTotalInterestAndFees"
+        ],
+        [
+          "Card_FlightMilesEarned",
+          "Card_LowRateMilesEarned"
+        ],
+        [
+          "Card_FlightTicketsEarned",
+          "Card_LowRateTicketsEarned"
+        ],
+        [
+          "Card_FlightTotalTicketValue",
+          "Card_LowRateTotalTicketValue"
+        ]
+      ],
+      "refine": true
+    },
+    "fields": {
+      "Card_FlightCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "4",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardIntroAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardMilesEarnedPerDollarSpent": {
+        "fieldLabel": "Miles earned per dollar spent",
+        "valueTextLabel": "miles",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "10",
+        "widgetStep": ".25",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardMilesEarnedForApplying": {
+        "fieldLabel": "Miles earned for applying",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "miles",
+        "format": "number",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardMaximumMilesEarnedYearly": {
+        "fieldLabel": "Maximum miles earned yearly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "miles",
+        "format": "number",
+        "defaultValue": "60000",
+        "value": "60000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardMilesRequiredForFreeTicket": {
+        "fieldLabel": "Miles required for free ticket",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "miles",
+        "format": "number",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FlightCardRegularCostOfTicket": {
+        "fieldLabel": "Regular cost of ticket",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "1",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "9.00",
+        "value": "9.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Card balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_YearsCardToBeUsed": {
+        "fieldLabel": "Years you'll use card",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "1",
+        "maximumValue": "30",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Future monthly charges",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlycharges",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Future monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Card_FlightTotalCost": {
+        "fieldLabel": "Total net cost"
+      },
+      "Card_LowRateTotalCost": {
+        "fieldLabel": "Total net cost"
+      },
+      "Card_FlightTotalInterestAndFees": {
+        "fieldLabel": "Interest and fees paid"
+      },
+      "Card_LowRateTotalInterestAndFees": {
+        "fieldLabel": "Interest and fees paid"
+      },
+      "Card_FlightMilesEarned": {
+        "fieldLabel": "Flight miles earned"
+      },
+      "Card_LowRateMilesEarned": {
+        "fieldLabel": "Flight miles earned"
+      },
+      "Card_LowRateTicketsEarned": {
+        "fieldLabel": "Number of tickets earned"
+      },
+      "Card_FlightTicketsEarned": {
+        "fieldLabel": "Number of tickets earned"
+      },
+      "Card_FlightTotalTicketValue": {
+        "fieldLabel": "Value of tickets"
+      },
+      "Card_LowRateTotalTicketValue": {
+        "fieldLabel": "Value of tickets"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Net Cost",
+    "title": "Which is better: flight card or low rate card?",
+    "answer": "The <span class='lf-bold'>%card%</span> will cost you <span class='lf-bold'>%amount% less</span> over a <span class='lf-bold'>%years% year</span> period.",
+    "same_as_answer": "<span class='lf-bold'>Both cards</span> will cost you <span class='lf-bold'>the same</span> over a <span class='lf-bold'>%years% year</span> period.",
+    "lowRate": "Low Rate Card",
+    "flight": "Flight Card",
+    "lowRateCard": "low rate card",
+    "flightCard": "flight card",
+    "years_prefix": " a ",
+    "years_suffix": " year period",
+    "selectors": [
+      {
+        "label": "Total net cost",
+        "width": "50%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "introrate": {
+      "title": "Introductory rate",
+      "definition": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    },
+    "introperiod": {
+      "title": "Introductory period",
+      "definition": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months. "
+    },
+    "frequentfliermilescard": {
+      "title": "Frequent flier miles card",
+      "definition": "A rewards card where you earn miles, or points, for each dollar in purchases.  When you earn enough points, you redeem them for a free airline ticket or upgrade with the participating airline. Terms vary across reward programs. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine which is the better deal: a credit card that earns flight mileage or a regular credit card. Frequent-flier reward cards allow you to accumulate miles when you make purchases. Often, the reward card comes with a higher annual fee than an ordinary credit card and may have a higher interest rate."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference in total net cost over the years of usage for the low rate card and the flight card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference in total net cost over the years of usage for the low rate card and the flight card"
+    }
+  ]
+}

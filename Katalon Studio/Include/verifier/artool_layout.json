@@ -1,0 +1,214 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basicTab"
+      ],
+      "basicTab": {
+        "fields": [
+          "ExpertAR_MonthlyPayments",
+          "ExpertAR_FTEsWorkingExceptions",
+          "ExpertAR_PercentageOfFTETimeWorkingExceptions",
+          "ExpertAR_AverageAnnualSalaryOneReceivablesFTE"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Current State",
+        "Expert AR Receivables Matching",
+        "Annual Savings"
+      ],
+      "fields": [
+        [
+          "ExpertAR_TotalAnnualSalaryCurrentState",
+          "ExpertAR_TotalAnnualSalary",
+          "ExpertAR_SavingsInTotalAnnualSalary"
+        ],
+        [
+          "ExpertAR_TotalHoursWorkingPaymentsCurrentState",
+          "ExpertAR_TotalHoursWorkingPayments",
+          "ExpertAR_SavingsInTotalHoursWorkingPayments"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "ExpertAR_TotalAnnualSalaryCurrentState": {
+        "fieldLabel": "Total annual salary dedicated to working payment exceptions",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "ExpertAR_TotalAnnualSalary": {
+        "fieldLabel": "Total annual salary dedicated to working payment exceptions",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "ExpertAR_SavingsInTotalAnnualSalary": {
+        "fieldLabel": "Total annual salary dedicated to working payment exceptions",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "ExpertAR_TotalHoursWorkingPaymentsCurrentState": {
+        "fieldLabel": "Total hours dedicated to working payments",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "ExpertAR_TotalHoursWorkingPayments": {
+        "fieldLabel": "Total hours dedicated to working payments",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "ExpertAR_SavingsInTotalHoursWorkingPayments": {
+        "fieldLabel": "Total hours dedicated to working payments",
+        "dataFormat": "currency",
+        "format": "currency"
+      }
+    },
+    "fields": {
+      "ExpertAR_MonthlyPayments": {
+        "fieldLabel": "Monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "monthlyarpayments",
+        "valueTextLabel": "payments",
+        "format": "number",
+        "defaultValue": "900",
+        "value": "900",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExpertAR_FTEsWorkingExceptions": {
+        "fieldLabel": "FTEs working exceptions",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "exemptions",
+        "format": "number",
+        "defaultValue": "10",
+        "value": "10",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExpertAR_PercentageOfFTETimeWorkingExceptions": {
+        "fieldLabel": "% of FTE time working exceptions",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10",
+        "value": "10",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExpertAR_AverageAnnualSalaryOneReceivablesFTE": {
+        "fieldLabel": "Average annual salary of 1 Receivables FTE",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much can my business save by using Expert AR Receivables Matching?",
+    "answer": "Expert AR Receivables Matching is estimated to save your business <span class='lf-bold'>%result_hours%</span> hours annually resulting in approximately <span class='lf-bold'>$%result_salary%</span> in reallocated salary cost savings.",
+    "selectors": [
+      {
+        "label": "Savings in Salary",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Savings in Hours",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "chart_current_state": "Current State",
+    "chart_expert_ar": "Expert AR Receivables Matching"
+  },
+  "glossaryItems": {
+    "averageftebenefitscost": {
+      "title": "Average FTE Benefits Cost",
+      "definition": "Based on 2024 data from the U.S. Bureau of Labor Statistics (BLS) for private industry employees, the average cost of employee benefits for employers as a percentage of wages is 29.7%."
+    },
+    "monthlyarpayments": {
+      "title": "Monthly Payments",
+      "definition": "Monthly payments include all ACH, LBX, and Wire payments."
+    }
+  },
+  "help": [
+    {
+      "textLabel": ""
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference between the total salary cost of processing payments with the current state and with Expert AR Receivables Matching."
+    },
+    {
+      "title": "Column chart comparing the difference between the total salary hours it takes to process payments with the current state and with Expert AR Receivables Matching."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference between the total salary cost of processing payments with the current state and with Expert AR Receivables Matching."
+    },
+    {
+      "title": "Difference between the total salary hours it takes to process payments with the current state and with Expert AR Receivables Matching."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Car insurance is higher for newer cars</name>
+   <tag></tag>
+   <elementGuidId>a7c4c911-7386-42f7-9d2a-328a5e5cec7f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_5</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_5']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Car insurance is higher for newer cars.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>9b3aeca4-91f4-4e07-987e-52bea45ef92a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_5</value>
+      <webElementGuid>0cb8818a-36f8-4c8d-a9a3-77b9a914027a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Car insurance is higher for newer cars.</value>
+      <webElementGuid>7a0f8613-cdd0-4132-9436-835c98f42d26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_5&quot;)</value>
+      <webElementGuid>fef88d17-c106-4af5-a352-69921aef812b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_5']</value>
+      <webElementGuid>dabc946d-a74b-4f34-933e-afc63dad4d48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[6]</value>
+      <webElementGuid>5493b79e-a4d6-43e0-b66a-6911953d1536</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[7]</value>
+      <webElementGuid>5a439d61-15d1-46b0-afd2-a3a832cbd9bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[7]</value>
+      <webElementGuid>41d325c7-a7e8-427d-80ab-bb452d7f3391</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[3]</value>
+      <webElementGuid>cc1a62dc-354d-44e6-b3a1-fa27dca7ec76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[3]</value>
+      <webElementGuid>8b046d8f-b0ab-4023-b645-f32e969b270b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Car insurance is higher for newer cars.']/parent::*</value>
+      <webElementGuid>b4138eb3-62fa-4390-95a2-6fa27283e69b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[6]</value>
+      <webElementGuid>f86f8621-f552-4432-bde5-71b49662ccb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_5' and (text() = 'Car insurance is higher for newer cars.' or . = 'Car insurance is higher for newer cars.')]</value>
+      <webElementGuid>2b4d0123-d974-411c-946a-f73e05c47caf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

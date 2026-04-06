@@ -1,0 +1,434 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will rate changes affect my balance?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "The tool shows the change in your credit card balance after one year, based on current use and the card's interest rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "If you charge more than you pay, your card balance increases. If your monthly payment is less than the periodic interest owed, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your balance changes as follows after 1 year for a range of rates:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Balance vs. Rate"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Monthly Statement"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div/span",
+      "value": "Monthly statement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Monthly statement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Month'])[1]/following::span[1]",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monthly payment'])[1]/following::span[1]",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance'])[2]/following::span[1]",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Principal paid'])[1]/following::span[1]",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest paid'])[1]/following::span[1]",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$300'])[1]/following::td[1]",
+      "value": "$5,011"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$5,011'])[1]/following::td[1]",
+      "value": "$249"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$249'])[1]/following::td[1]",
+      "value": "$51"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,171'])[2]/following::td[1]",
+      "value": "76"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,171'])[2]/following::td[2]",
+      "value": "$292"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$292'])[2]/following::td[1]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[1]/following::td[1]",
+      "value": "$291"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$291'])[2]/following::td[1]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1'])[1]/following::td[1]",
+      "value": "$2,172"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-label",
+      "value": "Card balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CardInterestRate",
+      "value": "12.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardAnnualFee-label",
+      "value": "Annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-label",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-label",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Card_MonthlyPayment_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Card_MonthlyPayment_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "8,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CardInterestRate",
+      "value": "15.49"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CardAnnualFee",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "1,200"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your balance changes as follows after 1 year for a range of rates:"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "800"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your balance changes as follows after 1 year for a range of rates:"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "500"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your balance changes as follows after 1 year for a range of rates:"
+    }
+  }
+]

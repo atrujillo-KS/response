@@ -1,0 +1,361 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "HSAInfo",
+        "TaxesInflation"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "HSAAge",
+          "HSASpouseAge",
+          "HSARetire",
+          "MonthlyMedical",
+          "HDHPDeductible"
+        ]
+      },
+      "HSAInfo": {
+        "tabLabel": "HSA Info",
+        "fields": [
+          "HealthPlanType",
+          "HSABalance",
+          "HSADeposit",
+          "HSAReturnRate"
+        ]
+      },
+      "TaxesInflation": {
+        "tabLabel": "Taxes & Inflation",
+        "fields": [
+          "FedTaxRate",
+          "InflationRate"
+        ]
+      }
+    },
+    "fields": {
+      "HSAAge": {
+        "fieldLabel": "Are you 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "Is spouse 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSARetire": {
+        "fieldLabel": "Years until retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "MonthlyMedical": {
+        "fieldLabel": "Expected monthly health care expenses",
+        "smallLabel": "",
+        "glossaryTerm": "healthcareexpenses",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "50000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "HDHP plan deductible",
+        "smallLabel": "",
+        "glossaryTerm": "hdhpdeductible",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HealthPlanType": {
+        "fieldLabel": "Plan type",
+        "smallLabel": "",
+        "glossaryTerm": "hsahealthplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Family ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSABalance": {
+        "fieldLabel": "Current HSA balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSADeposit": {
+        "fieldLabel": "Monthly HSA deposit amount",
+        "smallLabel": "",
+        "glossaryTerm": "hsamonthlydeposit",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "700",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "700",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAReturnRate": {
+        "fieldLabel": "Annual HSA rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "hsaannualrateofreturn",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflationrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "After %years% Years",
+    "title": "What is the future value of my HSA?",
+    "answer": "After <span class='lf-bold'>%years% years</span>, your HSA will be worth an estimated <span class='lf-bold'>$%amount%</span>",
+    "worth": "Worth",
+    "selectors": [
+      {
+        "label": "Future value",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "fitrate": {
+      "title": "Federal income tax (FIT) rate",
+      "definition": "The seven federal income tax rates for 2023 are 10%, 12%, 22%, 24%, 32%, 35% and 37%. These are also called tax brackets. If asked for your federal and state tax rates, add your state income tax rate to calculate a combined rate. For example, if you pay federal income taxes at the 22% tax bracket, and your state income tax rate is 8%, your combined tax rate is 30%."
+    },
+    "hsaage": {
+      "title": "Your Age",
+      "definition": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    },
+    "hsahealthplantype": {
+      "title": "HSA Health Plan Type",
+      "definition": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    },
+    "healthcareexpenses": {
+      "title": "Qualified Medical Expenses",
+      "definition": "Qualified medical expenses are defined by IRS Publication 502."
+    },
+    "inflationrate": {
+      "title": "Inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    },
+    "hsaannualrateofreturn": {
+      "title": "Annual Rate of Return on your HSA account",
+      "definition": "The return you expect to earn on the money in your HSA."
+    },
+    "hdhpdeductible": {
+      "title": "High Deductible Health Plan Deductible",
+      "definition": "A deductible is what you pay out of pocket before any insurance payments are applied to your care. A high deductible health plan is one where the deductible is over $1,650 for single coverage ($3,300 for family coverage) in 2025."
+    },
+    "hsamonthlydeposit": {
+      "title": "HSA Monthly Deposit Amount",
+      "definition": "Your annual allowable contribution is influenced by your plan type, your age, and your spouse's age if married. Refer to IRS Publication 969 for more information."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool computes the expected value of your health savings account at retirement."
+    },
+    {
+      "textLabel": "For IRS help concerning health savings accounts including what constitutes an eligible health care expense, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the value of the HSA at retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Value of the HSA at retirement"
+    }
+  ]
+}

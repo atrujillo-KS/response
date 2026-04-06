@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Trade-in value</name>
+   <tag></tag>
+   <elementGuidId>8e66df37-0635-4c90-8970-801d447305e4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_TradeInValue-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_TradeInValue-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_TradeInValue-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>2536da59-f2ea-4315-a965-0a8d876947ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_TradeInValue</value>
+      <webElementGuid>a3c991ff-a724-4cf0-896f-5f3f30e67b8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_TradeInValue-label</value>
+      <webElementGuid>0c4c291d-1b39-432f-98fa-dff0ee4dbb82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Trade-in value
+                             
+                        </value>
+      <webElementGuid>5f955345-9229-42e5-bc83-0bfe005dfca0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_TradeInValue-label&quot;)</value>
+      <webElementGuid>a05d5ec6-4e73-44e9-889c-3517c0f50373</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_TradeInValue-label']</value>
+      <webElementGuid>60be30d8-420c-4caf-8780-17c8a3119e98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_TradeInValue_container']/div/label</value>
+      <webElementGuid>ad20d7fd-e661-4983-8b1a-2e4fe18dfb5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cash rebate'])[2]/following::label[1]</value>
+      <webElementGuid>19f0cce0-3b42-4483-b926-dfbdad013cda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $1,000,000'])[2]/following::label[2]</value>
+      <webElementGuid>d6dd7825-3b2a-4d6c-90a6-e7e07d34876c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $200,000'])[1]/preceding::label[1]</value>
+      <webElementGuid>dd761747-ed5d-4e48-bcef-a05b58c2acca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Trade-in value'])[2]/preceding::label[1]</value>
+      <webElementGuid>df7111e0-3107-4275-a3fb-fb8998f3a242</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Trade-in value']/parent::*</value>
+      <webElementGuid>53b6a86d-8d4b-4b0f-ab4e-1b13e6497c11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/fieldset/div/div[2]/div/label</value>
+      <webElementGuid>18a7c11b-88ed-481a-9e18-440e63e55fbd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_TradeInValue-label' and (text() = 'Trade-in value
+                             
+                        ' or . = 'Trade-in value
+                             
+                        ')]</value>
+      <webElementGuid>b57319b9-9444-4120-a650-279d78098f53</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

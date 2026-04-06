@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Average Cost Per Year (1)</name>
+   <tag></tag>
+   <elementGuidId>c2a1b0b6-e700-4a0b-9c82-bccf529a9693</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>tbody > tr > th.highcharts-text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='highcharts-data-table-0']/tbody/tr/th</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>a63fb8bf-4b76-47c9-97bf-ad1fe22c1cdc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>highcharts-text</value>
+      <webElementGuid>7b4d02e9-8f10-441b-9274-e95897569b81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>c088d7f8-0c66-44b0-8efc-0014e978776b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Average Cost Per Year</value>
+      <webElementGuid>e96f18f3-b055-4609-90aa-303ff6731def</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;highcharts-data-table-0&quot;)/tbody[1]/tr[1]/th[@class=&quot;highcharts-text&quot;]</value>
+      <webElementGuid>ac12eda0-d05a-48d2-9a06-4ad1472c221e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='highcharts-data-table-0']/tbody/tr/th</value>
+      <webElementGuid>e1cf59bc-d566-4b8b-abbf-8a2d5ebecb92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Used'])[3]/following::th[1]</value>
+      <webElementGuid>c659022d-ef21-4c79-81b4-512375ac4e01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New'])[3]/following::th[2]</value>
+      <webElementGuid>9b8da2ad-f6eb-43b9-9029-8006240a797e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$7,735'])[2]/preceding::th[1]</value>
+      <webElementGuid>002be744-5ae1-4c38-9d0e-5bf39187d6e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$3,193'])[3]/preceding::th[1]</value>
+      <webElementGuid>060c6166-85db-44a7-aded-8450fdd1bc7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/table/tbody/tr/th</value>
+      <webElementGuid>21ec26b8-7235-4268-82ae-d73841646e87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Average Cost Per Year' or . = 'Average Cost Per Year')]</value>
+      <webElementGuid>dc4cfff0-53f4-4344-a71f-92d3355d31c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

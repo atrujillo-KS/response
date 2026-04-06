@@ -1,0 +1,717 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will my home equity loan payments be?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates monthly payments for an amortizing loan and interest-only payments on a line of credit."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The home equity loan option amortizes the loan balance over the loan term, resulting in a loan payoff at maturity. The line of credit assumes the user only makes interest payments on the full line of credit. At the end of the term, the amount owed on the line of credit will be exactly the same as the amount borrowed."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your initial payment will be $351 for a home equity loan and $33 for a HELOC"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Home Equity Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "HELOC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Pmt1CreditLn04_result_label",
+      "value": "Starting monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Pmt1CreditLn04_result_value",
+      "value": "$351"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Pmt2CreditLn04_result_value",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotEnd1_result_label",
+      "value": "Ending monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotEnd1_result_value",
+      "value": "$353"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotEnd2_result_value",
+      "value": "$42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotInt1CreditLn04_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotInt1CreditLn04_result_value",
+      "value": "$553"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotInt2CreditLn04_result_value",
+      "value": "$1,100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OweAft301_result_label",
+      "value": "Amount owed after 30 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OweAft301_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OweAft302_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Month"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Payment Schedule - Home Equity Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Home Equity Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$351"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$9,683"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$317"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[2]",
+      "value": "$353"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[4]",
+      "value": "$351"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[5]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[6]",
+      "value": "$553"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - HELOC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - HELOC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=td.tableCellADA.lf-graphs-table-col-1",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=td.tableCellADA.lf-graphs-table-col-2",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[2]",
+      "value": "$42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[4]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[5]",
+      "value": "$42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[6]",
+      "value": "$1,100"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-label",
+      "value": "Loan amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-error-message",
+      "value": "Must be between $1 and $2,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeEquityLoanInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeEquityLoanInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeEquityLoanInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_MonthsToPayOff-label",
+      "value": "Months to pay off"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_MonthsToPayOff",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_MonthsToPayOff-error-message",
+      "value": "Must be between 1 and 480"
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf_CreditLine_MonthsToPayOff_tooltip > div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf-tooltip-close > span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state & federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_FederalAndStateTaxRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf-tooltip-close > span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InterestRateChangePrediction-label",
+      "value": "Predicted rate change"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "None Increase 0.5% per year Decrease 0.5% per year"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InterestRateChangePrediction_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InterestRateChangePrediction_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future interest rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "20,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeEquityLoanInterestRate",
+      "value": "5.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_MonthsToPayOff",
+      "value": "25"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.45"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "label=None"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your initial payment will be $848 for a home equity loan and $91 for a HELOC"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Pmt1CreditLn04_result_value",
+      "value": "$848"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Pmt2CreditLn04_result_value",
+      "value": "$91"
+    }
+  }
+]

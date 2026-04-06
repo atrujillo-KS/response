@@ -1,0 +1,692 @@
+{
+  "layout": {
+    "mobileWidth": 606,
+    "tabs": {
+      "tabOrder": [
+        "HomeInfo",
+        "InterestOnly",
+        "Traditional",
+        "TaxesInsurance"
+      ],
+      "HomeInfo": {
+        "tabLabel": "Home Info",
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Home_DownPaymentPercentage",
+          "Home_ExpectedYearsInHome"
+        ]
+      },
+      "InterestOnly": {
+        "tabLabel": "Interest-only",
+        "fields": [
+          "Home_LoanTermInYears",
+          "Home_InterestOnlyPeriodInYears",
+          "Home_InterestRate",
+          "Home_OriginationCharge",
+          "Home_DiscountPoints",
+          "Home_OtherClosingCosts"
+        ]
+      },
+      "Traditional": {
+        "tabLabel": "Traditional",
+        "fields": [
+          "Home_SecondLoanTermInYears",
+          "Home_SecondLoanInterestRate",
+          "Home_SecondLoanOriginationCharge",
+          "Home_SecondLoanDiscountPoints",
+          "Home_SecondLoanOtherClosingCosts"
+        ]
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Taxes & Insurance",
+        "fields": [
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance",
+          "Global_FederalAndStateTaxRate",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Expected years in home",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "7",
+        "value": "7",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state + federal tax rate",
+        "defaultValue": "33.80",
+        "glossaryTerm": "taxrates",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "40",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "90",
+        "widgetStep": "1",
+        "value": "33.80",
+        "format": "percent"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Your savings rate",
+        "smallLabel": "",
+        "glossaryTerm": "savingsinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_InterestOnlyPeriodInYears": {
+        "fieldLabel": "Interest-only period",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "interestonlyperiod",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "0",
+        "maximumValue": "39",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Origination charge",
+        "smallLabel": "",
+        "glossaryTerm": "origchargeamount",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Discount points",
+        "smallLabel": "",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "format": "percent",
+        "defaultValue": "1.000",
+        "value": "1.000",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Other settlement services",
+        "smallLabel": "",
+        "glossaryTerm": "othersettlementservices",
+        "format": "currency",
+        "defaultValue": " 1000",
+        "value": " 1000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Term",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "term",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "5.000",
+        "value": "5.000",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanOriginationCharge": {
+        "fieldLabel": "Origination charge",
+        "smallLabel": "",
+        "glossaryTerm": "origchargeamount",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanDiscountPoints": {
+        "fieldLabel": "Discount points",
+        "smallLabel": "",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "format": "percent",
+        "defaultValue": "1.000",
+        "value": "1.000",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanOtherClosingCosts": {
+        "fieldLabel": "Other settlement services",
+        "smallLabel": "",
+        "glossaryTerm": "othersettlementservices",
+        "format": "currency",
+        "defaultValue": " 1000",
+        "value": " 1000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Interest-only period",
+        "Remaining term on I/O loan",
+        "Traditional"
+      ],
+      "fields": [
+        [
+          "IntOnlyPay",
+          "PrincAndInt",
+          "PrincAndInt2"
+        ],
+        [
+          "TaxAndIns",
+          "TaxAndIns2",
+          "TaxAndIns3"
+        ],
+        [
+          "MortIns",
+          "MortIns2",
+          "MortIns3"
+        ],
+        [
+          "TotIntOnlyPay",
+          "TotPmt",
+          "TotPmt2"
+        ]
+      ]
+    },
+    "results_fields": {
+      "IntOnlyPay": {
+        "fieldLabel": "Principal and interest"
+      },
+      "PrincAndInt": {},
+      "PrincAndInt2": {},
+      "MortIns": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "MortIns2": {},
+      "MortIns3": {},
+      "TaxAndIns": {
+        "fieldLabel": "Property taxes and insurance"
+      },
+      "TaxAndIns2": {},
+      "TaxAndIns3": {},
+      "TotIntOnlyPay": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "TotPmt": {},
+      "TotPmt2": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "Which is better: interest-only or traditional?",
+    "answer": "The <span class='lf-bold'>%WHICHLOAN% loan</span> will <span class='lf-bold'>%savecost%</span> you <span class='lf-bold'>%result% %which%</span> than the <span class='lf-bold'>%WHICHLOAN2% loan</span>",
+    "same_as_answer": "<span class='lf-bold'>Both loans</span> will <span class='lf-bold'>cost</span> you <span class='lf-bold'>the same</span>",
+    "selectors": [
+      {
+        "label": "Cost Difference",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Monthly Payments",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Interest-only Loan",
+            "label": "Interest-only Loan"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Traditional Loan",
+            "label": "Traditional Loan"
+          }
+        ]
+      }
+    ],
+    "moreThan": "more",
+    "lessThan": "less",
+    "sameAs": "the same as",
+    "categories": [
+      "Interest-only period",
+      "Remaining term",
+      "Traditional"
+    ],
+    "TotIntOnlyPay": "Interest-only",
+    "TotPmt2": "Traditional",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest",
+        "Max tax savings"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest",
+        "Max tax savings"
+      ]
+    ],
+    "costDifference": "Cost Difference",
+    "save": "save",
+    "cost": "cost",
+    "more_prefix": " more ",
+    "less_prefix": " less ",
+    "principalInterest": "Principal & Interest",
+    "pmi": "PMI",
+    "taxesInsurance": "Taxes & Insurance"
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "interestonlyperiod": {
+      "title": "Interest-only Period",
+      "definition": "For interest-only loans, the period of time early in the loan term where you are not required to make payments towards the loan principal.  "
+    },
+    "costanalysis": {
+      "title": "Cost-benefit analysis",
+      "definition": "An analysis of the cost effectiveness of different alternatives in order to see whether the benefits outweigh the costs."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "origchargeamount": {
+      "title": "Origination Charges",
+      "definition": "The sum of all fees and charges from origination-related services. This represents all compensation to the lender and/or broker for originating the loan."
+    },
+    "othersettlementservices": {
+      "title": "Other settlement services",
+      "definition": "Fees paid for services associated with the purchase of a home that do not represent compensation to the lender and/or the broker for originating the loan."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "discountpoints": {
+      "title": "Discount points",
+      "definition": "Discount points are also called points, mortgage points, loan discount points, loan origination fees, and maximum loan charges. A point is equal to 1 percent of the loan amount. For example, one point on a loan of $150,000 is $1,500. Lenders consider mortgage points as interest that you pay in advance. As a result, the more points you pay when you close the loan, the lower your interest rate. If you qualify, you may be able to deduct mortgage points in the year you close the loan for tax purposes. Otherwise, you will have to amortize the points paid over the term of the loan."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares a traditional, fixed rate mortgage loan to an interest-only loan. The difference between the two is shown in terms of overall <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#costanalysis\">cost difference</a></span> for the years you expect to be paying the mortgage, as well as a comparison of the monthly payments. Monthly payments for the interest-only loan are shown both during and after the initial, interest-only period. "
+    },
+    {
+      "textLabel": "An interest-only loan might be advantageous if the borrower has an uneven stream of income (commissions), if the borrower expects to have an increase in income before the payments increase, or if the borrower intends to sell the house in a short time and home values are increasing. Also, an interest-only loan allows someone to qualify for a more expensive home. "
+    },
+    {
+      "textLabel": "On the other hand, the actual amount of interest paid over the term of the loan is higher with an interest-only loan and during a period of stagnant or falling real estate prices, it is easy to get into a position where the value of the property is less than the loan balance. In cases where the interest-only loan is also an adjustable rate mortgage, the payment increase at the end of the interest-only period can be dramatic."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart comparing the difference in total cost, in today's dollars of both loans over the expected years in home."
+    },
+    {
+      "title": "Stacked column chart of the breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance for both the interest-only loan and the traditional loan."
+    },
+    {
+      "title": "Amortization table for the interest-only loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference in total cost, in today's dollars of both loans over the expected years in home"
+    },
+    {
+      "title": "Breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance for both the interest-only loan and the traditional loan"
+    }
+  ]
+}

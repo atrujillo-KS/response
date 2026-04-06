@@ -1,0 +1,348 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "CreditLine_CashNeededFromEquity",
+          "Global_HomeEquityLoanInterestRate",
+          "CreditLine_MonthsToPayOff",
+          "Global_HomeEquityUpfrontCosts"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Global_FederalAndStateTaxRate",
+          "Global_InterestRateChangePrediction"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Home Equity Loan",
+        "HELOC"
+      ],
+      "fields": [
+        [
+          "TaxSavings105",
+          "TaxSavings205"
+        ],
+        [
+          "TotInt1CreditLn05",
+          "TotInt2CreditLn05"
+        ],
+        [
+          "Pmt1CreditLn05",
+          "Pmt2CreditLn05"
+        ],
+        [
+          "OweAft301",
+          "OweAft302"
+        ],
+        [
+          "EffInt1",
+          "EffInt2"
+        ]
+      ]
+    },
+    "fields": {
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Loan amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_MonthsToPayOff": {
+        "fieldLabel": "Months to pay off",
+        "smallLabel": "",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeEquityUpfrontCosts": {
+        "fieldLabel": "Upfront costs",
+        "smallLabel": "",
+        "glossaryTerm": "upfrontcosts",
+        "format": "currency",
+        "defaultValue": "375",
+        "value": "375",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2500",
+        "widgetStep": "25",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state & federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Predicted rate change",
+        "smallLabel": "",
+        "glossaryTerm": "futureinterestrates",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "None",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase 0.5% per year",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease 0.5% per year",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "TaxSavings105": {
+        "fieldLabel": "Total tax savings"
+      },
+      "TaxSavings205": {
+        "fieldLabel": "Total tax savings"
+      },
+      "TotInt1CreditLn05": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotInt2CreditLn05": {
+        "fieldLabel": "Total interest paid"
+      },
+      "Pmt1CreditLn05": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Pmt2CreditLn05": {
+        "fieldLabel": "Monthly payment"
+      },
+      "EffInt1": {
+        "fieldLabel": "Effective interest rate"
+      },
+      "EffInt2": {
+        "fieldLabel": "Effective interest rate"
+      },
+      "OweAft301": {
+        "fieldLabel": "Amount owed after X months"
+      },
+      "OweAft302": {
+        "fieldLabel": "Amount owed after X months"
+      }
+    }
+  },
+  "labels": {
+    "title": "What will my tax savings be?",
+    "answer": "Your tax savings will be <span class='lf-bold'>$%res105%</span> for a home equity loan and <span class='lf-bold'>$%res205%</span> for a HELOC",
+    "dataTableCategory": "Your Tax Savings Will Be",
+    "dataTableCategory2": "Monthly Payment",
+    "selectors": [
+      {
+        "label": "Tax Savings",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Payments",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Home Equity Loan",
+            "label": "Home Equity Loan"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - HELOC",
+            "label": "HELOC"
+          }
+        ]
+      }
+    ],
+    "TaxSavings105": "Home Equity Loan",
+    "TaxSavings205": "HELOC",
+    "amountOwed": "Amount owed after %months% months",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "effectiveinterestrate": {
+      "title": "Effective interest rate",
+      "definition": "Your true interest-rate cost of borrowing stated as an annual rate. It loan includes compounded interest, fees, points and other closing costs. "
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "upfrontcosts": {
+      "title": "Upfront costs",
+      "definition": "Also called closing costs, these are fees and any other costs that you pay at a loan closing."
+    },
+    "settlementcharges": {
+      "title": "Settlement Charges",
+      "definition": "Also known as closing costs, these are the customary costs above and beyond the sales price that must be paid to cover the transfer of ownership at closing."
+    },
+    "futureinterestrates": {
+      "title": "Future interest rates",
+      "definition": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the maximum tax savings you may be able to take advantage of on a home equity loan and a home equity line of credit. It is assumed that the interest expense for both loans can be deducted from your income for income tax-reporting purposes."
+    },
+    {
+      "textLabel": "Since no loan principal is repaid during the borrowing period on the line of credit, it generates more interest expense and, thus, larger tax savings. As a result, the effective borrowing cost for a home equity line of credit is lower than for a home equity loan. The home equity loan has regular amortization of loan principal, which is not tax-deductible. In case the interest rate is variable, the calculator allows you to enter a forecast. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the total tax savings for the home equity loan and home equity line of credit over the months to payoff."
+    },
+    {
+      "title": "Column chart comparing the monthly payment of the home equity loan and home equity line of credit."
+    },
+    {
+      "title": "Amortization table for the home equity loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total tax savings for the home equity loan and home equity line of credit over the months to payoff"
+    },
+    {
+      "title": "Monthly payment of the home equity loan and home equity line of credit"
+    }
+  ]
+}

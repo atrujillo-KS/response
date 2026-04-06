@@ -1,0 +1,790 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is the return of my stock if I sell now?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the annual rate of return, before and after taxes, you earn if you sell your shares of stock today. Brokerage fees are deducted."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Shares held longer than one year are taxed at the long-term capital gains tax rate. Dividends that you receive on the shares are reinvested at the specified interest rate or spent."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "click": {
+      "id": "link=rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Brokerage fees",
+      "value": "Brokerage fees"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Brokerage fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Brokerage commission"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The fees that you pay a broker to buy or sell stocks, bonds, or other securities. They are also called transaction fees, trading fees, brokerage fees, or simply, commissions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=capital gains tax rate",
+      "value": "capital gains tax rate"
+    }
+  },
+  {
+    "click": {
+      "id": "link=capital gains tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Capital gains tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=reinvested",
+      "value": "reinvested"
+    }
+  },
+  {
+    "click": {
+      "id": "link=reinvested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Reinvesting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your return after taxes is 9.47%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "After taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FMRRBefStock01_result_label",
+      "value": "Your return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FMRRBefStock01_result_value",
+      "value": "10.14%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FMRRAftStock01_result_value",
+      "value": "9.47%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SaleGainBefStock01_result_label",
+      "value": "Gain or loss on sale of stock"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SaleGainBefStock01_result_value",
+      "value": "$1,184"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SaleGainAftStock01_result_value",
+      "value": "$1,103"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDivBef_result_label",
+      "value": "Total dividends received"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDivBef_result_value",
+      "value": "$2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDivAftStock01_result_value",
+      "value": "$1,864"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_label",
+      "value": "Current yield on dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_value",
+      "value": "6.84%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldAft_result_value",
+      "value": "6.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Gain/Loss"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Investment-accordion",
+      "value": "Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-error-message",
+      "value": "Must be between 1 and 1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-label",
+      "value": "Months you will own"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePriceToday-label",
+      "value": "Share price today"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePriceToday",
+      "value": "36.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePriceToday-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+    {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "IncomeTaxes-accordion",
+      "value": "Income & Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-label",
+      "value": "Average quarterly dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption-label",
+      "value": "Dividend income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_TaxFilingStatus_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_ModifiedAdjustedGrossIncome_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatPurchase-accordion",
+      "value": "Fees at Purchase"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatSale-accordion",
+      "value": "Fees at Sale"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Stock_SharePurchasePrice"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "25.789"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePriceToday",
+      "value": "24.159"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "150"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "10.22"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "185,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.89"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "1.20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your return after taxes is −13.73%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FMRRBefStock01_result_value",
+      "value": "−12.97%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FMRRAftStock01_result_value",
+      "value": "−13.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SaleGainBefStock01_result_value",
+      "value": "−$19,419"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SaleGainAftStock01_result_value",
+      "value": "−$19,419"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDivBef_result_value",
+      "value": "$2,400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDivAftStock01_result_value",
+      "value": "$1,879"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldBef_result_value",
+      "value": "1.56%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DivYieldAft_result_value",
+      "value": "1.22%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

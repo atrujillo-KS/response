@@ -1,0 +1,1274 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Investment",
+        "Fees",
+        "Income",
+        "results"
+      ],
+      "Investment": {
+        "selected": true,
+        "tabLabel": "Investment",
+        "pageTitle": "Investment information",
+        "custom": "new-standard-3col",
+        "sectionLabel": "",
+        "sections": [
+          "fund1",
+          "fund2",
+          "shared"
+        ],
+        "fund1": {
+          "sectionLabel": "Initial Investment",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Share purchase price",
+              "fields": [
+                "Fund_SharePurchasePrice"
+              ]
+            },
+            {
+              "rowLabel": "Shares you will purchase",
+              "fields": [
+                "Fund_SharesPurchased"
+              ]
+            },
+            {
+              "rowLabel": "Yearly share price increase",
+              "fields": [
+                "Fund_YearlySharePriceIncrease"
+              ]
+            }
+          ]
+        },
+        "fund2": {
+          "sectionLabel": "",
+          "fieldSets": "2 double-set",
+          "rows": [
+            {
+              "rowLabel": "Share purchase price",
+              "fields": [
+                "Fund_FundTwoSharePurchasePrice"
+              ]
+            },
+            {
+              "rowLabel": "Shares you will purchase",
+              "fields": [
+                "Fund_FundTwoSharesPurchased"
+              ]
+            },
+            {
+              "rowLabel": "Yearly share price increase",
+              "fields": [
+                "Fund_FundTwoYearlySharePriceIncrease"
+              ]
+            }
+          ]
+        },
+        "shared": {
+          "sectionLabel": "Shared fund information",
+          "fieldSets": "1 lf-print-relocate-1",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Fund_AdditionalInvestment",
+                "Fund_InvestmentFrequency",
+                "Fund_MonthsOwned",
+                "Global_TaxFilingStatus",
+                "Global_ModifiedAdjustedGrossIncome",
+                "Global_StateTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "Fees": {
+        "tabLabel": "Fees",
+        "pageTitle": "Fee information",
+        "custom": "new-standard-3col",
+        "sections": [
+          "fund1",
+          "fund2"
+        ],
+        "fund1": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Front-end load",
+              "fields": [
+                "Fund_FrontendLoad"
+              ]
+            },
+            {
+              "rowLabel": "Yearly management fees",
+              "fields": [
+                "Fund_Annual12b1Fees"
+              ]
+            },
+            {
+              "rowLabel": "Back-end load",
+              "fields": [
+                "Fund_BackendLoad"
+              ]
+            }
+          ]
+        },
+        "fund2": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Front-end load",
+              "fields": [
+                "Fund_FundTwoFrontendLoad"
+              ]
+            },
+            {
+              "rowLabel": "Yearly management fees",
+              "fields": [
+                "Fund_FundTwoAnnual12b1Fees"
+              ]
+            },
+            {
+              "rowLabel": "Back-end load",
+              "fields": [
+                "Fund_FundTwoBackendLoad"
+              ]
+            }
+          ]
+        }
+      },
+      "Income": {
+        "tabLabel": "Income",
+        "pageTitle": "Dividends and gains",
+        "custom": "new-standard-3col",
+        "sections": [
+          "fund1",
+          "fund2",
+          "shared"
+        ],
+        "fund1": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Yearly gains per share (long term)",
+              "fields": [
+                "Fund_LongTermYearlyGainsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Yearly gains per share (short term)",
+              "fields": [
+                "Fund_ShortTermYearlyGainsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Yearly increase in dividends",
+              "fields": [
+                "Fund_YearlyIncreaseInDividendsAndGains"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (taxable)",
+              "fields": [
+                "Fund_TaxableQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (fed tax-exempt)",
+              "fields": [
+                "Fund_FederalTaxExemptQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (state tax-exempt)",
+              "fields": [
+                "Fund_StateTaxExemptQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (non-taxable)",
+              "fields": [
+                "Fund_NonTaxableQuarterlyDividendsPerShare"
+              ]
+            }
+          ]
+        },
+        "fund2": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Yearly gains per share (long term)",
+              "fields": [
+                "Fund_FundTwoLongTermYearlyGainsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Yearly gains per share (short term)",
+              "fields": [
+                "Fund_FundTwoShortTermYearlyGainsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Yearly increase in dividends",
+              "fields": [
+                "Fund_FundTwoYearlyIncreaseInDividendsAndGains"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (taxable)",
+              "fields": [
+                "Fund_FundTwoTaxableQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (fed tax-exempt)",
+              "fields": [
+                "Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (state tax-exempt)",
+              "fields": [
+                "Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare"
+              ]
+            },
+            {
+              "rowLabel": "Quarterly dividends per share (non-taxable)",
+              "fields": [
+                "Fund_FundTwoNonTaxableQuarterlyDividendsPerShare"
+              ]
+            }
+          ]
+        },
+        "shared": {
+          "sectionLabel": "Shared fund information",
+          "fieldSets": "1 lf-print-relocate-2",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Fund_DividendsAndGainsReinvestmentOption",
+                "Global_SavingsInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Fund 1",
+        "Fund 2"
+      ],
+      "fields": [
+        [
+          "Fund_RateOfReturnBeforeTaxesFundOne",
+          "Fund_RateOfReturnBeforeTaxesFundTwo"
+        ],
+        [
+          "Fund_RateOfReturnAfterTaxesFundOne",
+          "Fund_RateOfReturnAfterTaxesFundTwo"
+        ],
+        [
+          "Fund_SellingPriceFundOne",
+          "Fund_SellingPriceFundTwo"
+        ],
+        [
+          "Fund_TotalFeesFundOne",
+          "Fund_TotalFeesFundTwo"
+        ],
+        [
+          "Fund_TotalTaxesFundOne",
+          "Fund_TotalTaxesFundTwo"
+        ]
+      ]
+    },
+    "fields": {
+      "Fund_SharePurchasePrice": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "20.000",
+        "value": "20.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 1"
+      },
+      "Fund_SharesPurchased": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "450.00",
+        "value": "450.00",
+        "minimumValue": "1.00",
+        "maximumValue": "10000.00",
+        "maxlength": "9",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000.00",
+        "widgetStep": "100.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_YearlySharePriceIncrease": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoSharePurchasePrice": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 2",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "Fund_FundTwoSharesPurchased": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "300.00",
+        "value": "300.00",
+        "minimumValue": "1.00",
+        "maximumValue": "10000.00",
+        "maxlength": "9",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000.0",
+        "widgetStep": "100.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoYearlySharePriceIncrease": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_AdditionalInvestment": {
+        "fieldLabel": "Additional investment ",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Fund_InvestmentFrequency": {
+        "fieldLabel": "Investment Frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Biweekly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Monthly ",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Yearly ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Fund_MonthsOwned": {
+        "fieldLabel": "Months owned",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Fund_FrontendLoad": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "frontendload",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "3.000",
+        "value": "3.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 1"
+      },
+      "Fund_BackendLoad": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "backendload",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "1.500",
+        "value": "1.500",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoFrontendLoad": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "frontendload",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "3.000",
+        "value": "3.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 2",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "Fund_Annual12b1Fees": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoAnnual12b1Fees": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoBackendLoad": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "backendload",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0",
+        "maximumValue": "25.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "25.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_LongTermYearlyGainsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "capgain",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1 ",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 1"
+      },
+      "Fund_FundTwoLongTermYearlyGainsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "capgain",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1 ",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Fund 2",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "Fund_ShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "capgain",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "capgain",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_YearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "growthratedividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "currencyInput": "lf-double-line"
+      },
+      "Fund_FundTwoYearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "growthratedividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "percent",
+        "defaultValue": "5.00 ",
+        "value": "5.00 ",
+        "minimumValue": "0 ",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "currencyInput": "lf-double-line"
+      },
+      "Fund_TaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0 ",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_StateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_NonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 1",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_FundTwoNonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fund 2",
+        "smallLabel": "",
+        "glossaryTerm": "dividends",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Fund_DividendsAndGainsReinvestmentOption": {
+        "fieldLabel": "Dividends & gains are",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "2",
+            "optionText": "Spent when received ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Reinvested in the fund",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Invested elsewhere ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputLabelIdClass": "label-single-double-set",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "Fund_RateOfReturnBeforeTaxesFundOne": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Fund_RateOfReturnBeforeTaxesFundTwo": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Fund_RateOfReturnAfterTaxesFundOne": {
+        "fieldLabel": "Return after taxes"
+      },
+      "Fund_RateOfReturnAfterTaxesFundTwo": {
+        "fieldLabel": "Return after taxes"
+      },
+      "Fund_SellingPriceFundOne": {
+        "fieldLabel": "Selling price per share"
+      },
+      "Fund_SellingPriceFundTwo": {
+        "fieldLabel": "Selling price per share"
+      },
+      "Fund_TotalFeesFundOne": {
+        "fieldLabel": "Total fees"
+      },
+      "Fund_TotalFeesFundTwo": {
+        "fieldLabel": "Total fees"
+      },
+      "Fund_TotalTaxesFundOne": {
+        "fieldLabel": "Total taxes"
+      },
+      "Fund_TotalTaxesFundTwo": {
+        "fieldLabel": "Total taxes"
+      }
+    }
+  },
+  "labels": {
+    "title": "Which fund is better?",
+    "answer": "<span class='lf-bold'>%which%</span> will earn a higher return after taxes of <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Rate of return",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "fund1": "Fund 1",
+    "fund2": "Fund 2",
+    "yAxisLabel": "Return (%)",
+    "beforeTaxes": "Before Taxes",
+    "afterTaxes": "After Taxes"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "mutualfunds": {
+      "title": "Mutual fund",
+      "definition": "A mutual fund invests in a portfolio of stocks, bonds, or other investments and sells individual shares of the portfolio to investors."
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "dividends": {
+      "title": "Dividends",
+      "definition": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    },
+    "capgain": {
+      "title": "Capital gain",
+      "definition": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    },
+    "annualizedreturn": {
+      "title": "Annualized rate of return",
+      "definition": "An annualized rate of return converts to an annual percentage rate the rate of return that you earn on an investment held for more or less than one year, allowing you to compare investment performance for the same period of time."
+    },
+    "backendload": {
+      "title": "Back-end load",
+      "definition": "A fee you pay when you sell shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are selling."
+    },
+    "growthratedividends": {
+      "title": "Expected rate of growth in dividends",
+      "definition": "Enter the annual rate of increase you predict for dividends. By definition, this figure will be much higher for an income fund than a growth fund."
+    },
+    "frontendload": {
+      "title": "Front-end load",
+      "definition": "A fee you pay when you buy shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are investing."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#rateOfReturn\">rates of return</a></span>, before and after taxes, for two <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#mutualFunds\">mutual funds</a></span>. Mutual fund returns are <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#annualizedReturn\">annualized</a></span>, which means that returns for holding periods of more or less than one year are stated as a yearly percentage."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the return for fund 1 and fund 2, before and after taxes."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Return for fund 1 and fund 2, before and after taxes."
+    }
+  ]
+}

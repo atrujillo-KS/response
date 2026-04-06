@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Interest rate_1</name>
+   <tag></tag>
+   <elementGuidId>567a747b-5599-42b8-99fb-13dc2076fa0a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_SecondLoanInterestRate-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_SecondLoanInterestRate-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_SecondLoanInterestRate-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>e3b490e4-bdce-4ee6-8c3e-6d335cf613a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_SecondLoanInterestRate</value>
+      <webElementGuid>19f8b7aa-adfd-4265-85af-ecd35b137461</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_SecondLoanInterestRate-label</value>
+      <webElementGuid>089dd957-4a0f-4837-bde3-90afde00b880</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>8e628890-2b5a-4654-bc50-cf0f5bbee1bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Interest rate
+                                
+                        </value>
+      <webElementGuid>d4efbb37-270a-4933-bb5c-b39060920d56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_SecondLoanInterestRate-label&quot;)</value>
+      <webElementGuid>3e2e423c-b937-460c-a0b0-228b82c04d91</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_SecondLoanInterestRate-label']</value>
+      <webElementGuid>63a447d0-0f66-4766-9e46-22bf8e41a745</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_SecondLoanInterestRate-table']/div/label</value>
+      <webElementGuid>5f51a33a-c232-4313-a96b-ee0415496acf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loan term'])[2]/following::label[1]</value>
+      <webElementGuid>7d5cdef9-69a3-4846-8a45-c6c9be6dcf28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 360'])[2]/following::label[2]</value>
+      <webElementGuid>977c6122-9db7-46c2-828d-07ab794921b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 50.00%'])[2]/preceding::label[1]</value>
+      <webElementGuid>cab0f58c-8150-44af-8acd-1d603aa24544</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[4]/preceding::label[1]</value>
+      <webElementGuid>8477887e-e94d-49c1-bee4-dc74ac8f4dee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[4]/div/label</value>
+      <webElementGuid>d4c34433-2df4-4360-a42f-4cd2b42b7d68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_SecondLoanInterestRate-label' and (text() = 'Interest rate
+                                
+                        ' or . = 'Interest rate
+                                
+                        ')]</value>
+      <webElementGuid>10f4d2ac-0524-4072-9908-75e61f2fe63f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

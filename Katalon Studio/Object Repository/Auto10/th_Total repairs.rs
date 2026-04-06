@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Total repairs</name>
+   <tag></tag>
+   <elementGuidId>15fa9cef-edbe-4ef7-9493-730b18515355</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_TotRep_result_label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='lf_TotRep_result_label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=rowheader[name=&quot;Total repairs&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>8a1a6519-e2ad-48b2-9137-4338a41a716b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_TotRep_result_label</value>
+      <webElementGuid>ec2345a0-a851-4a26-9be6-f3d3e0565de0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA</value>
+      <webElementGuid>f10ac6ca-3fe7-4617-8ba3-87b6ab2edd3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>1c137437-a0a8-4b0b-83a9-2f8c0968c2d6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Total repairs
+                                        </value>
+      <webElementGuid>a0916ef2-6e75-4e6c-ad30-047d41a2b1ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_TotRep_result_label&quot;)</value>
+      <webElementGuid>14f7967c-2721-4cf2-bb1c-2edb1e36e2ac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@id='lf_TotRep_result_label']</value>
+      <webElementGuid>503eb156-edfb-4168-a9b8-7311727cb4cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='lf_TotRep_results']/th</value>
+      <webElementGuid>c035074d-3d3b-4c40-b616-3b125fb2d51b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$53,641'])[1]/following::th[1]</value>
+      <webElementGuid>b7322800-f13b-4df9-af10-6962a45a9518</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$31,731'])[1]/following::th[1]</value>
+      <webElementGuid>215aacbf-69c4-44bd-8796-f6812467e5e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$6,000'])[1]/preceding::th[1]</value>
+      <webElementGuid>513d6c26-3c85-4144-aea6-10fcbffd40e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$4,000'])[1]/preceding::th[1]</value>
+      <webElementGuid>53850843-a06f-4ac5-a8c5-38c86e967bd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Total repairs']/parent::*</value>
+      <webElementGuid>6c37ddb4-8ce6-4d15-ac3f-4db607ce7de1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/th</value>
+      <webElementGuid>a29bee56-2bc1-4334-8d5e-158f857bd5d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[@id = 'lf_TotRep_result_label' and (text() = '
+                                            Total repairs
+                                        ' or . = '
+                                            Total repairs
+                                        ')]</value>
+      <webElementGuid>b70ef2ba-cc11-4325-a194-bb63452d0ede</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

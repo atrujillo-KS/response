@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Generally, if the interest rate you earn _ee7113</name>
+   <tag></tag>
+   <elementGuidId>b222e833-ad61-435e-8cf0-bb7b19d2b3d9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Generally, if the interest rate you earn on your savings is lower than the after&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>8f1233ea-8630-4eb2-82a7-ff8c66de702e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_1</value>
+      <webElementGuid>bd8bef31-3c00-47ae-8469-f58266a4e21f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Generally, if the interest rate you earn on your savings is lower than the after-tax cost of borrowing, it is cheaper to pay cash.</value>
+      <webElementGuid>6fdbc547-9cbb-4f9f-b62c-fd0c9791b867</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_1&quot;)</value>
+      <webElementGuid>586a3a03-35eb-4904-bdf2-94591d7b4ec5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_1']</value>
+      <webElementGuid>3e09f394-c27e-4fda-a82f-9b4675d06a0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[2]</value>
+      <webElementGuid>c5945107-130c-46ba-a89a-74606e8ca9f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[3]</value>
+      <webElementGuid>4dadabd1-f55b-4902-94e0-ed76f536a670</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[4]</value>
+      <webElementGuid>3fd1424b-fb8a-4a91-b025-d82f529f2025</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[2]</value>
+      <webElementGuid>be47c9e9-1621-4597-9085-dfea3350fbec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[2]</value>
+      <webElementGuid>45b9045f-3570-4b7d-aba8-697c7962c40a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Generally, if the interest rate you earn on your savings is lower than the after-tax cost of borrowing, it is cheaper to pay cash.']/parent::*</value>
+      <webElementGuid>75596260-6df5-4e55-9221-59728cff4e4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[2]</value>
+      <webElementGuid>60635fe0-eec4-4f52-9c4e-7fb41da5d7c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_1' and (text() = 'Generally, if the interest rate you earn on your savings is lower than the after-tax cost of borrowing, it is cheaper to pay cash.' or . = 'Generally, if the interest rate you earn on your savings is lower than the after-tax cost of borrowing, it is cheaper to pay cash.')]</value>
+      <webElementGuid>16cb1b3e-4cb8-4fd9-8091-b29d61ff7685</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,216 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_InterestRateOnDebt",
+          "Budget_TermOfDebtInMonths",
+          "Global_MonthlyInvestment",
+          "Global_SavingsInterestRate"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Global_FederalAndStateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "text": "If you use the $150 per month to pay off debt, you'll avoid paying $524 in interest charges over 12 months. If you invest the $150 instead, you'll earn $5 after you pay taxes."
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Amount you owe",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateOnDebt": {
+        "fieldLabel": "Interest rate on debt",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Budget_TermOfDebtInMonths": {
+        "fieldLabel": "Term of debt",
+        "smallLabel": "(in months)",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_MonthlyInvestment": {
+        "fieldLabel": "Amount you can save monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2500",
+        "widgetStep": "25",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Rate you earn on savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Federal & state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "Should I pay off debt or invest in savings?",
+    "answer": "Paying off debt will save you $518 more in interest",
+    "dataTableCategory": "Interest",
+    "selectors": [
+      {
+        "label": "Interest",
+        "width": "100%"
+      }
+    ],
+    "interestReduction": "Interest Reduction on Debt",
+    "interestEarned": "Interest Earned on Savings",
+    "same_prefix": "same",
+    "earn_prefix": "earn",
+    "months_prefix": " over "
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine if paying off debt or investing the same amount is the better financial decision. "
+    },
+    {
+      "textLabel": "When you pay off debt, you eliminate interest expense. During the time you make debt payments, you sacrifice interest income that you could have earned if you had invested the same amount. However, once you pay off the debt, you can begin to earn interest income on the money you would have spent each month on debt payments."
+    },
+    {
+      "textLabel": "<b>Note:</b> This tool is not appropriate for decisions regarding home loans or investment loans. It is intended for decisions regarding credit card, auto, and other personal loans."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the reduction in interest charges by paying down debt and the interest earned by investing in savings."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Reduction in interest charges by paying down debt and the interest earned by investing in savings"
+    }
+  ]
+}

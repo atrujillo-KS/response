@@ -1,0 +1,357 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "action1",
+        "action2",
+        "action3"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge",
+          "Global_SavingsInterestRate",
+          "Global_FederalAndStateTaxRate"
+        ]
+      },
+      "action1": {
+        "tabLabel": "1st Action",
+        "fields": [
+          "Global_BudgetingActionOneName",
+          "Global_BudgetingActionOneAmount"
+        ]
+      },
+      "action2": {
+        "tabLabel": "2nd Action",
+        "fields": [
+          "Global_BudgetingActionTwoName",
+          "Global_BudgetingActionTwoAmount"
+        ]
+      },
+      "action3": {
+        "tabLabel": "3rd Action",
+        "fields": [
+          "Global_BudgetingActionThreeName",
+          "Global_BudgetingActionThreeAmount"
+        ]
+      }
+    },
+    "results": {
+      "result": "Table1_Row0Col0",
+      "text": "If you invest this amount, you'll accumulate %tenYearSavings% in 10 years and %retireSavings% at retirement."
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Expected retirement age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "67",
+        "value": "67",
+        "minimumValue": "2",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Annual rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1",
+        "value": "1",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state + federal tax rate",
+        "defaultValue": "33.80",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "90",
+        "widgetStep": ".1",
+        "value": "33.80",
+        "format": "percent"
+      },
+      "Global_BudgetingActionOneName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "eating out less",
+        "value": "eat out less",
+        "minimumValue": "0",
+        "maximumValue": "0",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeChar": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionOneAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionTwoName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "buying fewer clothes",
+        "value": "buy fewer clothes",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeChar": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionTwoAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionThreeName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "brewing coffee at home",
+        "value": "brew coffee at homes",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeChar": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionThreeAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "dataTableCategory2": "Amount Accumulated",
+    "title": "What's it worth to reduce my spending?",
+    "answer": "You will save <span class='lf-bold'>%result%</span> each year",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Savings",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Future Value",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "annualSavings": "Annual Savings",
+    "after10Years": "After 10 Years",
+    "atRetirement": "At Retirement",
+    "futureValue": "Future value if invested"
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Taxable account",
+      "definition": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive. "
+    },
+    "opportunitycost": {
+      "title": "Opportunity cost",
+      "definition": "Opportunity cost is the sacrifice of benefits from the next-best alternative that you face when you make a financial or economic decision. For example, say you had $1,000 to invest. You could invest it in a stock mutual fund that might return 20% or more. If you make this investment decision, you sacrifice the opportunity to earn a lower rate of return on an investment that has no risk. This might be a CD or other fixed-term deposit that had a 6% rate of return. This 6% guaranteed return would be the opportunity cost of investing in the mutual fund instead."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "taxadvantagedaccount": {
+      "title": "Tax-advantaged account",
+      "definition": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine how much reductions in spending may be worth if you invest the savings. Budget tightening ideas include eating out less, buying fewer clothes, taking fewer trips, waiting to buy a new car, going to fewer movies, brewing coffee at home, paying off credit cards, and carpooling to work, among others."
+    },
+    {
+      "textLabel": "The tool assumes you contribute at the beginning of each month and that you save with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">taxable</a></span> account. If you want to simulate saving with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">tax-advantaged</a></span> account, enter a zero in the field for your state and federal tax rate."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the annual savings by reducing spending."
+    },
+    {
+      "title": "Column chart of the savings after 10 years and at retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Annual savings by reducing spending"
+    },
+    {
+      "title": "Savings after 10 years and at retirement"
+    }
+  ]
+}

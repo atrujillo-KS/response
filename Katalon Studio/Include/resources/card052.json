@@ -1,0 +1,284 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I consolidate my debts?"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneAmountOwed",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "570"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthsLeft",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoAmountOwed",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthsLeft",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeAmountOwed",
+      "value": "25,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthsLeft",
+      "value": "26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourAmountOwed",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthlyPayment",
+      "value": "800"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthsLeft",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthsLeft",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='%'])[15]/following::button[1]"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneAmountOwed",
+      "value": "4,600"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneInterestRate",
+      "value": "12.345"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoAmountOwed",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoInterestRate",
+      "value": "18.111"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeAmountOwed",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeInterestRate",
+      "value": "9.234"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFourAmountOwed",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFourInterestRate",
+      "value": "13.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveAmountOwed",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveInterestRate",
+      "value": "2.123"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ConsolidationLoan-tab-label"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_ConsolidationLoanType",
+      "value": "label=Home equity loan"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanInterestRate",
+      "value": "4.650"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts",
+      "value": "499"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints",
+      "value": "0.255"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $1,213 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtMonthlyPayment_result_value",
+      "value": "$2,835"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationMonthlyPayment_result_value",
+      "value": "$1,622"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalInterest_result_value",
+      "value": "$11,703"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalInterest_result_value",
+      "value": "$3,988"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTaxSavings_result_value",
+      "value": "$1,395"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalCost_result_value",
+      "value": "$66,103"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalCost_result_value",
+      "value": "$57,631"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

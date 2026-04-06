@@ -1,0 +1,536 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How can I benefit from a CD ladder?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "CD laddering is an investment strategy that involves spreading funds across multiple certificates of deposit (CDs) with different maturity dates. Compared to investing in a single short term CD and rolling it over at maturity, CD laddering provides increased returns while creating access to funds periodically to reinvest or withdraw if funds are needed for an unexpected or planned expense."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (FDIC). Because CDs are federally insured, they are considered relatively conservative investments. As a result, they pay a lower interest rate -- stated as an annual percentage yield (APY) -- than non-insured investments such as stocks and bonds."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "This financial tool assumes that the short and medium term CDs are reinvested in the long term CD at maturity, with no changes to the interest rates specified."
+    }
+  },
+    {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-CDInfo-tab-label",
+      "value": "CD Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf-CDInfo-details']/div/div/div/div/fieldset/legend",
+      "value": "Short term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CDInfo-details']/div/div[2]/div/div/fieldset/legend",
+      "value": "Medium term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CDInfo-details']/div/div[3]/div/div/fieldset/legend",
+      "value": "Long term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Savings_FirstCDInitialDeposit_label']/span[2]",
+      "value": "Initial Deposit"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id='lf-CDInfo-details']/div[1]/div[1]/div/div/fieldset/div[1]/div/div[1]/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Savings_FirstCDTermInMonths_label']/span",
+      "value": "Deposit term (in months)"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf-CDInfo-details']/div/div/div/div/fieldset/div[2]/div/div/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDTermInMonths",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-assumptions-tab-label",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-assumptions-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_YearsDeposited_label",
+      "value": "Investment timeframe (in years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate_label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate_label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CDInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "16,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "18,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDTermInMonths",
+      "value": "45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDTermInMonths",
+      "value": "52"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "1.90"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInterestRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInterestRate",
+      "value": "3.12"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "label=Daily"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency",
+      "value": "label=Quarterly"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency",
+      "value": "label=Yearly"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-assumptions-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "28.46"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.86"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Over 10 years, the CD ladder is estimated to grow to $59,719, which is $4,099 more than investing in a single short term CD and rolling it over"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$59,719'])[2]/following::span[1]",
+      "value": "$4,099 more"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-1",
+      "value": "Term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-2",
+      "value": "APY"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-3",
+      "value": "Balance After 10 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CDLadderLabel1_result_label",
+      "value": "CD Ladder"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths_result_label",
+      "value": "Short Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths_result_value",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDAPY_result_value",
+      "value": "1.28%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDBal_result_value",
+      "value": "$18,268"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths_result_label",
+      "value": "Medium Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths_result_value",
+      "value": "45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MediumTermCDAPY_result_value",
+      "value": "1.68%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MediumTermCDBal_result_value",
+      "value": "$19,356"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths_result_label",
+      "value": "Long Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths_result_value",
+      "value": "52"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WeightedAvgTerm_result_value",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDAPY_result_value",
+      "value": "2.07%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDBal_result_value",
+      "value": "$22,094"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CDLadderTotal_result_label",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotalBal_result_value",
+      "value": "$59,719"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WeightedAvgTerm_result_label",
+      "value": "Weighted Average"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WeightedAvgTerm_result_value",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WeightedAvgAPY_result_value",
+      "value": "1.70%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SingleShortTermCDAPYLabel_result_label",
+      "value": "Single Short Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SingleShortTermCDAPY_result_value",
+      "value": "1.28%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SingleShortTermCDBal_result_value",
+      "value": "$55,620"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BalDifferenceLabel_result_label",
+      "value": "Difference"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BalDifference_result_value",
+      "value": "$4,099"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

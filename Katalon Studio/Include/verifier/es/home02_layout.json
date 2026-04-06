@@ -1,0 +1,171 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results_fields": {
+      "PrincAndInt": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado "
+      },
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "amount": "Cantidad",
+    "title": "¿De cuánto serán los pagos de mi hipoteca?",
+    "answer": "Su pago total será de <span class='lf-bold'>%result%</span>.",
+    "payments_over_time": "Ver sus pagos anuales en el tiempo.",
+    "PrincAndInt": "Capital e intereses",
+    "MortIns": "Seguro hipotecario privado ",
+    "TaxAndIns": "Impuestos y seguro",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "payment_portion": "Parte de pago ",
+    "year_1": "1 año",
+    "year_2": "2 años",
+    "year_3": "3 años",
+    "year_4": "4 años",
+    "year_5": "5 años",
+    "year_10": "10 años",
+    "year_15": "15 años",
+    "year_20": "20 años",
+    "year_30": "30 años",
+    "year": "Año",
+    "selectors": [
+      {
+        "label": "Desglose",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "En el tiempo",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "Siglas que designan el capital del préstamo, los interés, los impuestos sobre la propiedad y el seguro del propietario de vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa su pago hipotecario mensual para un monto de préstamo, un pago inicial, una tasa de interés y un plazo de préstamo dados."
+    },
+    {
+      "textLabel": "Si usted ingresa un monto del préstamo superior al 80% del valor de tasación de la vivienda, la calculadora estima un monto mensual para el seguro hipotecario privado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#pmi\">PMI</a></span>). Por lo general, los prestamistas hipotecarios requieren que obtenga un seguro hipotecario si su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Downpayment\">pago inicial</a></span> es inferior al 20% del precio de compra de la vivienda."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro de propietarios."
+    },
+    {
+      "title": "Gráfico de columnas apiladas de los montos pagados al capital e intereses en diferentes intervalos durante el transcurso del plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos prediales y seguros de vivienda"
+    },
+    {
+      "title": "Importes pagados al principal y los intereses en diferentes intervalos durante el transcurso del plazo del préstamo"
+    }
+  ]
+}

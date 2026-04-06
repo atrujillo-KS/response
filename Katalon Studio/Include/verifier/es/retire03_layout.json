@@ -1,0 +1,296 @@
+{
+  "layout": {
+    "tabs": {
+      "AboutYou": {
+        "tabLabel": "Acerca de usted"
+      },
+      "RetirementPlan": {
+        "tabLabel": "Plan de retiro"
+      },
+      "Assumptions": {
+        "tabLabel": "Presunciones"
+      },
+      "Hidden": {
+        "tabLabel": "Hidden"
+      }
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años"
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Edad de retiro",
+        "valueTextLabel": "años"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Ingreso anual del hogar"
+      },
+      "Retirement_CurrentSavings": {
+        "fieldLabel": "Ahorro actual para el retiro"
+      },
+      "Retirement_PercentageOfIncomeToSave": {
+        "fieldLabel": "Porcentaje de ingresos a ahorrar",
+        "smallLabel": " (#AMOUNT# anuales)"
+      },
+      "Retirement_InvestmentStyleBeforeRetirement": {
+        "fieldLabel": "Estilo de inversión antes de la jubilación",
+        "smallLabel": " (#PERCENT#% tasa de rendimiento supuesta)",
+        "dropdownOptions": [
+          {
+            "optionText": "Preservación"
+          },
+          {
+            "optionText": "Conservador"
+          },
+          {
+            "optionText": "Moderado"
+          },
+          {
+            "optionText": "Equilibrado"
+          },
+          {
+            "optionText": "Crecimiento"
+          },
+          {
+            "optionText": "Agresivo"
+          }
+        ]
+      },
+      "Retirement_InvestmentStyleDuringRetirement": {
+        "fieldLabel": "Estilo de inversión durante la jubilación",
+        "smallLabel": " (#PERCENT#% tasa de rendimiento supuesta)",
+        "dropdownOptions": [
+          {
+            "optionText": "Preservación"
+          },
+          {
+            "optionText": "Conservador"
+          },
+          {
+            "optionText": "Moderado"
+          },
+          {
+            "optionText": "Equilibrado"
+          },
+          {
+            "optionText": "Crecimiento"
+          },
+          {
+            "optionText": "Agresivo"
+          }
+        ]
+      },
+      "Retirement_ExpectedMonthlySocialSecurityBenefits": {
+        "fieldLabel": "Beneficios mensuales del Seguro Social",
+        "link": "<div class='lf-field-link'><a target=\"_blank\" href='https://www.ssa.gov/OACT/quickcalc/index.html' target='_blank' title='Get quick estimate from ssa.gov'>Obtenga un presupuesto rápido de ssa.gov</a></div>"
+      },
+      "Retirement_MonthlyPensionPayment": {
+        "fieldLabel": "Beneficios de pensión mensuales"
+      },
+      "Retirement_OtherMonthlyIncome": {
+        "fieldLabel": "Otros ingresos mensuales de jubilación"
+      },
+      "Retirement_RetirementSpendingPercentage": {
+        "fieldLabel": "Gastos de jubilación",
+        "smallLabel": "(% de los ingresos previos a la jubilación)"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "Global_EstimatedAnnualIncreaseInIncome": {
+        "fieldLabel": "Tasa de crecimiento de ingresos esperada"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      },
+      "Global_MaritalStatus": {
+        "fieldLabel": "Estado civil",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a)"
+          }
+        ]
+      },
+      "Global_PreservationInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Preservation investment style rate of return"
+      },
+      "Global_ConservativeInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Conservative investment style rate of return"
+      },
+      "Global_ModerateInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Moderate investment style rate of return"
+      },
+      "Global_BalancedInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Balanced investment style rate of return"
+      },
+      "Global_GrowthInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Growth investment style rate of return"
+      },
+      "Global_AggressiveInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Aggressive investment style rate of return"
+      }
+    },
+    "results_fields": {
+      "Retirement_AgeSavingsRunsOut": {
+        "fieldLabel": "Expected age retirement savings will run out"
+      },
+      "Retirement_AdditionalSavingsNeeded": {
+        "fieldLabel": "Additional savings needed to fully fund retirement"
+      },
+      "Retirement_SurplusSavings": {
+        "fieldLabel": "Surplus of retirement savings"
+      },
+      "Retirement_PlannedSavings": {
+        "fieldLabel": "Planned retirement savings"
+      },
+      "Retirement_RequiredSavings": {
+        "fieldLabel": "Required retirement savings"
+      },
+      "Retirement_SuggestedRetirementAge": {
+        "fieldLabel": "Delay your retirement until age"
+      },
+      "Retirement_SuggestedContributionAmount": {
+        "fieldLabel": "Suggested retirement contribution amount"
+      },
+      "Retirement_SuggestedContributionPercentage": {
+        "fieldLabel": "Suggested retirement contribution percentage"
+      },
+      "Retirement_SuggestedRateOfReturn": {
+        "fieldLabel": "Suggested rate of return before retirement"
+      },
+      "Retirement_SuggestedRetirementSpendingPercentage": {
+        "fieldLabel": "Suggested retirement spending percentage"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [
+        [
+          "Retirement_SuggestedRetirementAge"
+        ]
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "dataTableCategoryTitle2": "Edad",
+    "answerDetails": "<div class='lf-answer-details-custom'><div class='lf-answer-details-custom-header'>Algunas formas posibles de ponerse en marcha:</div><ul><li class='lf-delay-retirement'>Retrasar su jubilación hasta la edad #Retirement_SuggestedRetirementAge#</li><li class='lf-row-annual-contrib'>Aumente su contribución anual de jubilación a $#Retirement_SuggestedContributionAmount# (#Retirement_SuggestedContributionPercentage#% de los ingresos)</li><li class='lf-row-rate-before-retirement'>Aumente su tasa de rendimiento antes de la jubilación al #Retirement_SuggestedRateOfReturn#%</li><li>Disminuya sus gastos de jubilación</li></ul></div>",
+    "title": "¿Cuánto necesito ahorrar para la jubilación?",
+    "answer": "Felicidades. Según sus aportes, está en camino de jubilarse. Tendrá un excedente estimado de <span class='lf-bold'>$#Retirement_SurplusSavings#</span> en ahorros.",
+    "answer2": "Según sus entradas, se espera que sus ahorros para la jubilación se agoten a la edad <span class='lf-bold'>%RUN_OUT_AGE%</span>. Necesitará ahorrar <span class='lf-bold'>$%ADD_SAVINGS%</span> adicionales para jubilarse a la edad <span class='lf-bold'>%RETIRE_AGE%</span>.",
+    "selectors": [
+      {
+        "label": "Ahorros planeados vs. requeridos"
+      },
+      {
+        "label": "Ahorros a lo largo del tiempo"
+      },
+      {
+        "label": "Ahorros planeados",
+        "table": true,
+        "tables": [
+          {
+            "title": "Ahorros planeados - Saldos por año"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Edad",
+        "Balance",
+        "Crecimiento de inversión",
+        "Ingresos",
+        "Contribuciones",
+        "Gastos de jubilación",
+        "Otros ingresos de jubilación",
+        "Retiros de cuenta",
+        "Balance final"
+      ]
+    ],
+    "plannedSavings": "Ahorros planeados",
+    "requiredSavings": "Ahorros requeridos",
+    "balance": "Balance"
+  },
+  "glossaryItems": {
+    "grosshouseholdincome": {
+      "title": "Ingreso bruto del hogar",
+      "definition": "Sus ingresos antes de impuestos, incluidos los ingresos de su cónyuge, provenientes de salarios e inversiones."
+    },
+    "currentretirementsavings": {
+      "title": "Ahorro actual para el retiro",
+      "definition": "Monto total que actualmente tiene ahorrado para su jubilación en cuentas como 401(k), IRA y anualidades."
+    },
+    "retirementcontributionpercentage": {
+      "title": "Porcentaje de aporte al retiro",
+      "definition": "Al ahorrar para la jubilación, la mayoría de los expertos recomiendan una meta anual de ahorro para la jubilación del 10 % al 15 % de sus ingresos antes de impuestos, incluida cualquier contribución equivalente del empleador. Esta calculadora asume que usted hace una contribución anual al final de cada año, y cualquier retiro se realiza una vez al año al final del año."
+    },
+    "investmentstyle": {
+      "title": "Estilo de inversión",
+      "definition": "Una cartera de inversión agresiva es más apropiada para aquellos que tienen una mayor tolerancia al riesgo, un horizonte de tiempo más largo y un apetito por mayores rendimientos. Tal estrategia tendría una asignación de activos con una ponderación sustancial en acciones y posiblemente poca o ninguna asignación en bonos o efectivo. Una estrategia de inversión conservadora es más adecuada para aquellos que tienen una menor tolerancia al riesgo, un horizonte de tiempo más corto y un deseo de rendimientos constantes que priorizan la preservación del capital. En una estrategia de inversión conservadora, más de la mitad de una cartera generalmente se mantendrá en títulos de deuda y equivalentes de efectivo en lugar de acciones u otros activos de riesgo."
+    },
+    "socialsecurity": {
+      "title": "Seguro Social",
+      "definition": "El programa federal de seguridad de ingresos para la jubilación en los EE. UU. Si es elegible, puede comenzar a recibir beneficios cuando cumpla 62 años. La edad mínima para recibir todos los beneficios aumenta gradualmente de 65 a 67."
+    },
+    "pension": {
+      "title": "Pensión",
+      "definition": "Un plan de jubilación patrocinado por el empleador que paga a los jubilados una cantidad fija que se basa en la cantidad de años de servicio y el historial de salarios."
+    },
+    "alternativeretirementincomesources": {
+      "title": "Fuentes alternativas de ingresos para la jubilación",
+      "definition": "Las fuentes comunes de ingresos para la jubilación, además de las cuentas de inversión, los beneficios del Seguro Social y las pensiones, incluyen ingresos por alquileres, hipotecas inversas y trabajo a tiempo parcial."
+    },
+    "retirementspending": {
+      "title": "Gastos de jubilación",
+      "definition": "La mayoría de los expertos están de acuerdo en que necesitará entre el 70 y el 80 % de sus ingresos previos a la jubilación para mantener su nivel de vida durante la jubilación. Esta cantidad se basa en los ingresos del hogar ganados durante el año inmediatamente anterior a su jubilación."
+    },
+    "lifeexpectancy": {
+      "title": "Esperanza de vida",
+      "definition": "Tu esperanza de vida es el número de años que se espera que vivas, estadísticamente. Su esperanza de vida se basa en la esperanza de vida real del mismo grupo de población que comparte características de riesgo similares. Estas características de riesgo incluyen hábitos de fumar y beber, nivel de ejercicio y problemas de salud hereditarios o congénitos. La expectativa de vida se usa para calcular las primas de seguro de vida y las distribuciones mínimas requeridas de las cuentas IRA, entre otras razones."
+    },
+    "expectedincomegrowthrate": {
+      "title": "Tasa de crecimiento de ingresos esperada",
+      "definition": "El porcentaje de aumento en los ingresos del hogar que espera recibir hasta la jubilación."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Un aumento general en los precios que paga por bienes y servicios, expresado como una tasa anual. Una medida común de la inflación en los EE. UU. es el índice de precios al consumidor (IPC)."
+    },
+    "maritalstatusandsocialsecurity": {
+      "title": "Estado civil y Seguro Social",
+      "definition": "Las parejas casadas tienen 1,5 veces el beneficio máximo del Seguro Social que los solteros asalariados. Esta calculadora asume que solo trabaja un cónyuge. Si está casado y tanto usted como su cónyuge trabajan, se recomienda que realice el cálculo dos veces: una para cada cónyuge y sus respectivos ingresos."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta lo ayuda a determinar si está encaminado hacia la jubilación que desea y trazar diferentes caminos para alcanzar su objetivo. Todas las proyecciones son de naturaleza hipotética, no reflejan resultados de inversión reales y no son garantías de resultados futuros. Debe consultar con su asesor sobre su situación individual."
+    },
+    {
+      "textLabel": "Esta herramienta asume que usted hace una contribución anual a sus ahorros para la jubilación al final de cada año y que el año en que se jubila no hace ninguna contribución. Cualquier retiro durante la jubilación ocurrió una vez al año al final del año."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los ahorros totales planificados al momento de la jubilación con los ahorros necesarios para financiar completamente su jubilación."
+    },
+    {
+      "title": "Gráfico de áreas que ilustra la acumulación de ahorros planificados y requeridos (si corresponde) hasta la jubilación y la disposición de los saldos durante la jubilación."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ahorros totales planificados al momento de la jubilación con los ahorros necesarios para financiar completamente su jubilación"
+    },
+    {
+      "title": "Acumulación de ahorros planificados y requeridos (si corresponde) hasta la jubilación y la disposición de los saldos durante la jubilación"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-truist/calc/truistpersonalloan?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Truist Custom Calculator",
+      "value": "Truist Custom Calculator"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your estimated monthly payment is $419 - $482 based on an interest rate range of 9.44% - 15.59% APR. Your total loan cost is estimated to be $25,167 - $28,921."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PersonalLoan_AmountNeeded-label",
+      "value": "Amount needed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PersonalLoan_AmountNeeded",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PersonalLoan_AmountNeeded-error-message",
+      "value": "Must be between $3,500 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PersonalLoan_LoanTermInMonths-label",
+      "value": "Loan term in months"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PersonalLoan_LoanTermInMonths",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_State-label",
+      "value": "State"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_State",
+      "value": "0"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_PersonalLoan_AmountNeeded",
+      "value": "100,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PersonalLoan_LoanTermInMonths",
+      "value": "label=48"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_State"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_State",
+      "value": "label=New Jersey"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your estimated monthly payment is $2,488 - $2,790 based on an interest rate range of 8.99% - 15.14% APR. Your total loan cost is estimated to be $119,425 - $133,928."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_meter_container']/span",
+      "value": "Estimated monthly payment range is based on the interest rate range. Maximum interest rates may vary in accordance with state law. Exact interest rate within the range is determined by credit profile at time of application. Advertised rates and terms are subject to change without notice."
+    }
+  }
+]

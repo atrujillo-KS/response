@@ -1,0 +1,333 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "ExchangeRates",
+        "Investment",
+        "Income"
+      ],
+      "ExchangeRates": {
+        "tabLabel": "Exchange Rates",
+        "fields": [
+          "Stock_ExchangeRateAtPurchase",
+          "Stock_ExchangeRateAtSale"
+        ]
+      },
+      "Investment": {
+        "tabLabel": "Investment",
+        "fields": [
+          "Stock_SharePurchasePrice",
+          "Stock_SharesPurchased",
+          "Stock_MonthsOwned",
+          "Stock_SharePriceToday"
+        ]
+      },
+      "Income": {
+        "tabLabel": "Income",
+        "fields": [
+          "Stock_AverageQuarterlyDividend",
+          "Stock_DividendIncomeSpendingOption",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "At time of sale"
+      ],
+      "fields": [
+        [
+          "PriceNewStock09"
+        ],
+        [
+          "GainNewStock09"
+        ]
+      ]
+    },
+    "fields": {
+      "Stock_ExchangeRateAtPurchase": {
+        "fieldLabel": "Exchange rate to $1 at purchase",
+        "smallLabel": "",
+        "glossaryTerm": "exchangerate",
+        "format": "number",
+        "defaultValue": "200.00",
+        "value": "200.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100000.00",
+        "maxlength": "10",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000.00",
+        "widgetStep": "100.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_ExchangeRateAtSale": {
+        "fieldLabel": "Exchange rate to $1 today",
+        "smallLabel": "",
+        "glossaryTerm": "exchangerate",
+        "format": "number",
+        "defaultValue": "210.00",
+        "value": "210.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100000.00",
+        "maxlength": "10",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000.00",
+        "widgetStep": "100.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Months you will own",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharePriceToday": {
+        "fieldLabel": "Share price today",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "36.000",
+        "value": "36.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Dividend income is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Spent when received ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Invested elsewhere ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "SavingsInterestRate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "PriceNewStock09": {
+        "fieldLabel": "Share price, adjusted for exchange rates"
+      },
+      "GainNewStock09": {
+        "fieldLabel": "Gain per share"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Return",
+    "title": "How do exchange rates affect my foreign stock?",
+    "yAxisLabel": "Return (%)",
+    "answer": "At sale, your dollar-denominated return is <span class='lf-bold'>%result%%</span> after taxes and fees",
+    "selectors": [
+      {
+        "label": "Rate of return",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "purchase": "At Purchase Exchange Rate",
+    "sale": "At Sale Exchange Rate"
+  },
+  "glossaryItems": {
+    "foreignstock": {
+      "title": "Foreign stock",
+      "definition": "A stock that is issued by a company not registered in the U.S."
+    },
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "exchangerate": {
+      "title": "Exchange rate",
+      "definition": "The relationship of values between the currencies of two countries."
+    },
+    "currencyrisk": {
+      "title": "Currency risk",
+      "definition": "The risk that the value of your investment that is denominated in the currency of another country will rise or fall with the changes in the exchange rate between the countries."
+    },
+    "dividend": {
+      "title": "Average quarterly dividends",
+      "definition": "Dividends earned on a lot of shares, on average during a quarter."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows how a change in the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ExchangeRate\">exchange rate</a></span> of two countries affects the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">rate of return</a></span>, either positively or adversely, that you earn from investing in shares of stock of that country."
+    },
+    {
+      "textLabel": "This risk of exchange rates potentially increasing or reducing the value of your foreign investment is called <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CurrencyRisk\">currency risk</a></span>."
+    },
+    {
+      "textLabel": "To buy shares of a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ForeignStock\">foreign stock</a></span>, you need to pay for them in the local currency. Start by calculating the exchange rate between the currency and the dollar on the day you buy the shares."
+    },
+    {
+      "textLabel": "When the amount of the foreign currency required to be exchanged for local currency increases, your profits on an investment decrease if you sell. If the amount required decreases, your profits increase. In other words, when the dollar becomes more valuable, your return decreases. If the dollar weakens in relation to the foreign currency, your return increases."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the return, after taxes and fees, at the original exchange rate and at today's exchange rate."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Return, after taxes and fees, at the original exchange rate and at today's exchange rate"
+    }
+  ]
+}

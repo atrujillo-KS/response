@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Monthly payment</name>
+   <tag></tag>
+   <elementGuidId>ed4105bf-20f7-4f13-b103-e08f3647d5f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='lf_MonPmtAuto01_result_label']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_MonPmtAuto01_result_label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=rowheader[name=&quot;Monthly payment&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>789b8fb8-4e86-4580-b308-e6a3f47b89f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_MonPmtAuto01_result_label</value>
+      <webElementGuid>e0a546c2-f38b-4bf2-be9a-276ba5d600c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA</value>
+      <webElementGuid>07095943-2950-4692-92e7-2b533fdc61c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>184a4952-8e76-4bbd-8a1d-05c5d0b15cf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Monthly payment
+                                        </value>
+      <webElementGuid>f1e91118-1505-43a7-b12b-9d28b6949995</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_MonPmtAuto01_result_label&quot;)</value>
+      <webElementGuid>10739b53-65e8-4564-9b51-3ccf3451b51d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@id='lf_MonPmtAuto01_result_label']</value>
+      <webElementGuid>f9ae1a27-03bc-4072-ab62-de7cf3b329ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='lf_MonPmtAuto01_results']/th</value>
+      <webElementGuid>fff1cafe-a96c-4055-92d9-d657a71d0ef5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$3,193'])[1]/following::th[1]</value>
+      <webElementGuid>2b4fe8c5-b092-4151-9d42-4e863607ae99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$7,735'])[1]/following::th[1]</value>
+      <webElementGuid>0bfb2d1c-c32d-4b30-83ad-963d2035e743</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$875'])[1]/preceding::th[1]</value>
+      <webElementGuid>e3e8ea98-80b9-4f0a-a553-f02bb9dc50fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$233'])[1]/preceding::th[1]</value>
+      <webElementGuid>fe37b08f-ff2d-4769-8378-5c3341e2c9de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Monthly payment']/parent::*</value>
+      <webElementGuid>b1d5277c-8629-4716-bf2a-3df3c421a159</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/th</value>
+      <webElementGuid>a1bc15d8-ec58-41ef-b663-546abac749af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[@id = 'lf_MonPmtAuto01_result_label' and (text() = '
+                                            Monthly payment
+                                        ' or . = '
+                                            Monthly payment
+                                        ')]</value>
+      <webElementGuid>0f5da1ec-4635-444d-b351-e725b3aba44c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

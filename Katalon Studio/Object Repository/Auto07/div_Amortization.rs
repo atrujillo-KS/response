@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Amortization</name>
+   <tag></tag>
+   <elementGuidId>25eee96c-c3c4-4a4d-9a95-3ae6b9925576</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_graph_tabs_lf_container3 > div.lf-dot-holder.lf-dot-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='lf_graph_tabs_lf_container3']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tab[name=&quot;Amortization&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a41c672b-2ebf-4a8e-89fd-393325894326</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-dot-holder lf-dot-label</value>
+      <webElementGuid>3b468b32-2ad0-449e-b8a7-a7f2f2426e5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Amortization</value>
+      <webElementGuid>a6b6ba6d-bc18-4a32-bf35-9e29ca56f22d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_graph_tabs_lf_container3&quot;)/div[@class=&quot;lf-dot-holder lf-dot-label&quot;]</value>
+      <webElementGuid>9e71b78e-a3c7-4231-92a4-945af4f78e6c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='lf_graph_tabs_lf_container3']/div</value>
+      <webElementGuid>b4633f17-8b0c-4db0-a450-93acc970dee4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Payments'])[1]/following::div[1]</value>
+      <webElementGuid>d048783b-5650-441a-96c0-b47093f2ad90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Cost'])[2]/following::div[2]</value>
+      <webElementGuid>aecad0a3-8c72-4b5b-9edf-97c1fc1f3b00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[1]/preceding::div[3]</value>
+      <webElementGuid>5f2ee025-89b6-42c5-b3fd-1922c1d47349</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/preceding::div[3]</value>
+      <webElementGuid>89923318-038b-4443-a2c8-b477971b015c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Amortization']/parent::*</value>
+      <webElementGuid>7e331da7-7a5e-4edd-a276-b4ac0a3d0d0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[3]/div</value>
+      <webElementGuid>697bcbbd-bb67-4ec3-8496-828fd37f0038</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Amortization' or . = 'Amortization')]</value>
+      <webElementGuid>d1603f78-9e49-48ba-8484-87e8125ef03d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

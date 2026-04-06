@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Loan term                            _ce3e10</name>
+   <tag></tag>
+   <elementGuidId>c2a70582-7c41-49eb-891a-058793e7552b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Global_AutoLoanTerm-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Global_AutoLoanTerm-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Loan term (months)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>dc3f7d69-08ea-4995-a612-90a4ef4553cc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Global_AutoLoanTerm</value>
+      <webElementGuid>4ecbd2f6-f5aa-4e4d-ab02-852b9c6b5630</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Global_AutoLoanTerm-label</value>
+      <webElementGuid>e992bdcd-4a74-4973-aac2-abaf504b2929</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Loan term
+                             (months)
+                        </value>
+      <webElementGuid>3ecbe4d6-2d8d-4536-929d-292521cf9615</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Global_AutoLoanTerm-label&quot;)</value>
+      <webElementGuid>17e8d288-205e-49da-bf84-03974d2da3a8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Global_AutoLoanTerm-label']</value>
+      <webElementGuid>47c9ff41-fa34-4ca5-8a02-650048409206</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Global_AutoLoanTerm_container']/div/label</value>
+      <webElementGuid>2a9add73-942b-4a07-90a3-bbfbc675ed07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Down payment'])[2]/following::label[1]</value>
+      <webElementGuid>f72f8681-96a7-45bd-9529-6b27075c8fe5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $249,999'])[1]/following::label[2]</value>
+      <webElementGuid>d646e557-4140-4fe6-8cad-921538abc308</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 360 months'])[1]/preceding::label[1]</value>
+      <webElementGuid>a469cd3d-7612-4a94-a7e2-9840b912a98d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Loan term']/parent::*</value>
+      <webElementGuid>fe7a5ae6-af6f-4a44-82e2-00546dece3f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/label</value>
+      <webElementGuid>a482fc5a-6a7a-4b03-bae2-408e7d0ea670</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Global_AutoLoanTerm-label' and (text() = 'Loan term
+                             (months)
+                        ' or . = 'Loan term
+                             (months)
+                        ')]</value>
+      <webElementGuid>c294b6a4-ea68-4716-a864-b3d283f29b1c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

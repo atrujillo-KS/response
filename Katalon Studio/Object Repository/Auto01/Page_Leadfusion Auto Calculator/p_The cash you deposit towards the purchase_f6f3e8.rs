@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_The cash you deposit towards the purchase_f6f3e8</name>
+   <tag></tag>
+   <elementGuidId>53dfd993-c890-4367-9b85-b344817b0b19</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf-tooltip-text']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;The cash you deposit towards the purchase of home, car, etc. The larger the down&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>240c8e98-f081-4430-bb94-ef3cb914860b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-text</value>
+      <webElementGuid>083c6844-26a5-4951-9c9f-3fbe67a56c6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow.</value>
+      <webElementGuid>e0805cfb-643f-4a15-81cb-274a219649f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-text&quot;)</value>
+      <webElementGuid>74396bd8-0799-4494-92b9-5cf4bcf1adab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf-tooltip-text']</value>
+      <webElementGuid>9f967c0e-95af-45f4-ada4-aa7147483229</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/p</value>
+      <webElementGuid>36158a54-3193-4616-87f9-2cb91adee51e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Down payment'])[5]/following::p[1]</value>
+      <webElementGuid>e0204624-e91e-4c08-b13f-f5e5b3bca099</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[2]/following::p[1]</value>
+      <webElementGuid>bb2102b7-d018-41f4-8b40-48b0dfd18494</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[3]/preceding::p[1]</value>
+      <webElementGuid>a0a7b786-206d-4ae0-a6d6-9c5234eb380c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[3]/preceding::p[1]</value>
+      <webElementGuid>f63c7fc8-dd5e-4ba2-aa6a-c71f19cbbbac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow.']/parent::*</value>
+      <webElementGuid>08a368c6-c5c3-4a11-955e-5eea658cf4a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/p</value>
+      <webElementGuid>e8b8daf8-0069-448a-aafd-671a17b543cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf-tooltip-text' and (text() = 'The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow.' or . = 'The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow.')]</value>
+      <webElementGuid>99739c4d-2d8a-43f2-bd4a-f57e68fcc5be</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

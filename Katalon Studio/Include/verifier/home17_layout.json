@@ -1,0 +1,517 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LoanAndBorrowInfo",
+        "TaxesAndInsurance",
+        "Assumptions"
+      ],
+      "LoanAndBorrowInfo": {
+        "tabLabel": "LOAN & BORROWER INFO",
+        "fields": [
+          "Home_AffordabilityCalculationOption",
+          "Global_AnnualGrossIncome",
+          "Global_CurrentMonthlyDebtPayments",
+          "Home_MaximumMortgagePayment",
+          "Home_DownPaymentAmount",
+          "Home_LoanTermInYears",
+          "Home_InterestRate"
+        ]
+      },
+      "TaxesAndInsurance": {
+        "tabLabel": "TAXES & INSURANCE",
+        "fields": [
+          "Home_IncludeTaxesInsuranceHOA",
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance",
+          "Home_MonthlyHOA"
+        ]
+      },
+      "Assumptions": {
+        "tabLabel": "ASSUMPTIONS",
+        "fields": [
+          "Home_DebtRatio",
+          "Home_HousingRatio"
+        ]
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          "PrincAndIntHome17"
+        ],
+        [
+          "PropTax"
+        ],
+        [
+          "PropIns"
+        ],
+        [
+          "MonthlyHOA"
+        ],
+        [
+          "MortInsHome17"
+        ],
+        [
+          "TotPmtHome17"
+        ]
+      ]
+    },
+    "results_fields": {
+      "PrincAndIntHome17": {
+        "fieldLabel": "Principal and interest"
+      },
+      "PropTax": {
+        "fieldLabel": "Property taxes"
+      },
+      "PropIns": {
+        "fieldLabel": "Homeowners insurance"
+      },
+      "MonthlyHOA": {
+        "fieldLabel": "HOA fees"
+      },
+      "MortInsHome17": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "TotPmtHome17": {
+        "fieldLabel": "Total monthly payment"
+      }
+    },
+    "fields": {
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Home_AffordabilityCalculationOption": {
+        "fieldLabel": "Calculate affordability by",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Income",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Payment",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Annual gross income",
+        "smallLabel": "",
+        "glossaryTerm": "grossincome",
+        "format": "currency",
+        "defaultValue": "70000",
+        "value": "70000",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "250",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentMonthlyDebtPayments": {
+        "fieldLabel": "Monthly debt payments",
+        "smallLabel": "",
+        "glossaryTerm": "monthlydebtpayments",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_MaximumMortgagePayment": {
+        "fieldLabel": "Maximum payment",
+        "smallLabel": "",
+        "glossaryTerm": "maximumpayment",
+        "format": "currency",
+        "defaultValue": "1850",
+        "value": "1850",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_DownPaymentAmount": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_IncludeTaxesInsuranceHOA": {
+        "fieldLabel": "Taxes, insurance & HOA",
+        "smallLabel": "",
+        "glossaryTerm": "taxesinsurancehoa",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Include",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Do not include",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_MonthlyHOA": {
+        "fieldLabel": "Monthly HOA fee",
+        "smallLabel": "",
+        "glossaryTerm": "hoafee",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_DebtRatio": {
+        "fieldLabel": "Debt-to-income ratio",
+        "smallLabel": "",
+        "glossaryTerm": "debtratio",
+        "format": "percent",
+        "defaultValue": "36.00",
+        "value": "36.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_HousingRatio": {
+        "fieldLabel": "Housing ratio",
+        "smallLabel": "",
+        "glossaryTerm": "housingratio",
+        "format": "percent",
+        "defaultValue": "28.00",
+        "value": "28.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much home can I afford?",
+    "answer": "You can afford a home worth up to <span class='lf-bold'>%home%</span> with a %total% monthly payment of <span class='lf-bold'>%payment%</span>",
+    "selectors": [
+      {
+        "label": "Payment Breakdown",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "PrincAndIntHome17": "Principal & Interest",
+    "PropTax": "Property taxes",
+    "PropIns": "Homeowners insurance",
+    "MonthlyHOA": "HOA",
+    "MortInsHome17": "Private mortgage insurance (PMI)",
+    "amountPrefix": "$",
+    "amountSuffix": " with",
+    "dataTableTitle": "Amount",
+    "dot": "."
+  },
+  "glossaryItems": {
+    "monthlydebtpayments": {
+      "title": "Monthly debt payments",
+      "definition": "All of you and your co-borrower's monthly debts, including minimum monthly required credit card payments, car payments, student loans, alimony/child support payments, any house payments (rent or mortgage) other than the new mortgage you are seeking, rental property maintenance, and other personal loans with periodic payments."
+    },
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "debtratio": {
+      "title": "Debt ratio",
+      "definition": "Used by lenders to approve loan applicants. Debt ratio equals combined monthly debt payments divided by gross monthly income. "
+    },
+    "maximumpayment": {
+      "title": "Maximum payment",
+      "definition": "The maximum mortgage payment that you can afford."
+    },
+    "totalmonthlypayment": {
+      "title": "Total Monthly Payment",
+      "definition": "The total monthly payment that you can afford for a mortgage, including principal, interest, taxes, and insurance."
+    },
+    "grossincome": {
+      "title": "Gross income",
+      "definition": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "taxesinsurancehoa": {
+      "title": "Taxes, insurance and HOA",
+      "definition": "Includes property taxes, homeowners insurance, homeowners association dues and private mortgage insurance (if applicable) in the affordability calculation."
+    },
+    "hoafee": {
+      "title": "Homeowners association fee",
+      "definition": "Homeowner association (HOA) fees are monthly dues that condo owners - and homeowners in some single family neighborhoods - pay to cover the costs of maintaining common areas or shared amenities such as clubhouses, pools, landscaping, security, etc."
+    },
+    "housingratio": {
+      "title": "Housing ratio",
+      "definition": "Used by lenders to approve loan applicants. Housing ratio equals combined monthly mortgage payment divided by gross monthly income. "
+    },
+    "ltv": {
+      "title": "Loan-to-value ratio (LTV)",
+      "definition": "LTV is a lending risk assessment ratio that lenders examine before approving a mortgage. It is calculated by dividing the mortgage loan amount by the fair market value of the home."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "An acronym for the principal and interest that you pay on a mortgage loan."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The mortgage you can afford depends on many factors, including your total monthly payment, income, debt obligations, and down payment amount. Two ratios are commonly used by lenders to determine whether a mortgage applicant can afford a mortgage loan: </br></br>The housing ratio, or \"front-end ratio\", measures the amount of your total monthly housing payment (including principal, interest, property taxes, homeowners insurance, mortgage insurance, and HOA fees) as a percentage of your monthly gross income. Lenders typically prefer to see a housing ratio of 28% or less.</br></br>The debt-to-income (DTI) ratio, or \"back-end ratio\", measures the amount of total monthly payments you are required to make for all outstanding debt as a percentage of your monthly income. Generally your DTI ratio should be 36% or lower to qualify for a mortgage. </br></br>Loan approvals are possible with housing and DTI ratios that are higher than the conventional 28% and 36% limits. Government loan programs such as FHA, VA, and USDA allow for higher ratios. Also, mortgage applicants with elevated ratios may still be approved based on strengths in other aspects of the application, e.g. large down payment, exceptionally high credit score, or large reserves in bank accounts and investments."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of the maximum home price that you can afford by loan amount and down payment."
+    },
+    {
+      "title": "Pie chart of the breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the maximum home price that you can afford by loan amount and down payment"
+    },
+    {
+      "title": "Breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_This tool helps you determine the price o_aff119</name>
+   <tag></tag>
+   <elementGuidId>08a1ebce-cb44-40a2-897d-423230560369</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_0']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This tool helps you determine the price of a vehicle you can afford, based on yo&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>b8d3667e-64f1-4e2c-889b-3e741a075bde</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_0</value>
+      <webElementGuid>f4b2a58c-7e76-4242-94f3-6ac81563ffca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This tool helps you determine the price of a vehicle you can afford, based on your down payment, value of your trade-in, cash rebates available, and loan terms. </value>
+      <webElementGuid>0fd9d8e2-6a32-4bcb-a7a7-8318f4b11db9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_0&quot;)</value>
+      <webElementGuid>03c25817-23ad-49e6-a6a3-2aa8104ecdfd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_0']</value>
+      <webElementGuid>17430d74-bb18-4a81-a41b-06f0716198ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p</value>
+      <webElementGuid>47280d40-88c6-4827-9670-f11415c25c54</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[2]</value>
+      <webElementGuid>43e2cf7b-15a0-4d52-a4fe-f398b33c94e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[3]</value>
+      <webElementGuid>db78e824-1685-4951-99f5-9f7538118bb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[4]</value>
+      <webElementGuid>f56a966b-b32e-477f-bcf9-9a089dc56c6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[4]</value>
+      <webElementGuid>a8934a9a-a0c0-49b3-8657-4b575683c1f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This tool helps you determine the price of a vehicle you can afford, based on your down payment, value of your trade-in, cash rebates available, and loan terms.']/parent::*</value>
+      <webElementGuid>8e8d3cd4-02d2-425e-afd3-5b0a33658349</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/p</value>
+      <webElementGuid>677e2c37-6a5e-40c1-8544-0112de7a8ae1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_0' and (text() = 'This tool helps you determine the price of a vehicle you can afford, based on your down payment, value of your trade-in, cash rebates available, and loan terms. ' or . = 'This tool helps you determine the price of a vehicle you can afford, based on your down payment, value of your trade-in, cash rebates available, and loan terms. ')]</value>
+      <webElementGuid>ea0dc11b-aeea-4226-abf6-f240efd60411</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

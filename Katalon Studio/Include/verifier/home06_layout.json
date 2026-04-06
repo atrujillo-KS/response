@@ -1,0 +1,497 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "HomeInfo",
+        "ShorterTerm",
+        "LongerTerm",
+        "TaxesInsurance"
+      ],
+      "HomeInfo": {
+        "tabLabel": "Home Info",
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Home_DownPaymentPercentage"
+        ]
+      },
+      "ShorterTerm": {
+        "tabLabel": "Shorter Term",
+        "fields": [
+          "Home_FifteenYearLoanTermInYears",
+          "Home_ShorterTermInterestRate"
+        ]
+      },
+      "LongerTerm": {
+        "tabLabel": "Longer Term",
+        "fields": [
+          "Home_SecondLoanTermInYears",
+          "Home_SecondLoanInterestRate"
+        ]
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Taxes & Insurance",
+        "fields": [
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance",
+          "Home_MonthlyHOA"
+        ]
+      }
+    },
+    "fields": {
+      "Home_FifteenYearLoanTermInYears": {
+        "fieldLabel": "Term",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "term",
+        "format": "number",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "enclosingButtonSecondLabel": true,
+        "crossFields": [
+          "Home_SecondLoanTermInYears",
+          "Home_FifteenYearLoanTermInYears"
+        ],
+        "crossFieldError": "err_yrs_shorter_and_longer_term",
+        "enclosingButtonID": "ShorterTerm-accordion"
+      },
+      "Home_ShorterTermInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "4.750",
+        "value": "4.750",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "50.000",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Term",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "term",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "enclosingButtonSecondLabel": true,
+        "crossFields": [
+          "Home_SecondLoanTermInYears",
+          "Home_FifteenYearLoanTermInYears"
+        ],
+        "crossFieldError": "err_yrs_shorter_and_longer_term",
+        "enclosingButtonID": "LongerTerm-accordion"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "5.000",
+        "value": "5.000",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Home_MonthlyHOA": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly HOA fee",
+        "defaultValue": "0",
+        "glossaryTerm": "hoafee",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "widgetStep": "10",
+        "value": "0",
+        "format": "currency"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Shorter term",
+        "Longer term"
+      ],
+      "fields": [
+        [
+          "Home_TotalInterestShorterTermLoan",
+          "Home_TotalInterestLongerTermLoan"
+        ],
+        [
+          "Home_PrincipalAndInterestPaymentShorterTermLoan",
+          "Home_PrincipalAndInterestPaymentLongerTermLoan"
+        ],
+        [
+          "Home_TaxesAndInsuranceShorterTermLoan",
+          "Home_TaxesAndInsuranceLongerTermLoan"
+        ],
+        [
+          "Home_HOAFeesShorterTermLoan",
+          "Home_HOAFeesLongerTermLoan"
+        ],
+        [
+          "Home_PMIShorterTermLoan",
+          "Home_PMILongerTermLoan"
+        ],
+        [
+          "Home_TotalMonthlyPaymentShorterTermLoan",
+          "Home_TotalMonthlyPaymentLongerTermLoan"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Home_TotalInterestShorterTermLoan": {
+        "fieldLabel": "Total interest"
+      },
+      "Home_TotalInterestLongerTermLoan": {
+        "fieldLabel": "Total interest"
+      },
+      "Home_PrincipalAndInterestPaymentShorterTermLoan": {
+        "fieldLabel": "Principal and interest"
+      },
+      "Home_PrincipalAndInterestPaymentLongerTermLoan": {
+        "fieldLabel": "Principal and interest"
+      },
+      "Home_TaxesAndInsuranceShorterTermLoan": {
+        "fieldLabel": "Taxes & insurance"
+      },
+      "Home_TaxesAndInsuranceLongerTermLoan": {
+        "fieldLabel": "Taxes & insurance"
+      },
+      "Home_HOAFeesShorterTermLoan": {
+        "fieldLabel": "HOA fees"
+      },
+      "Home_HOAFeesLongerTermLoan": {
+        "fieldLabel": "HOA fees"
+      },
+      "Home_PMIShorterTermLoan": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "Home_PMILongerTermLoan": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "Home_TotalMonthlyPaymentShorterTermLoan": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "Home_TotalMonthlyPaymentLongerTermLoan": {
+        "fieldLabel": "Total monthly payment"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total interest",
+    "title": "Which is better: 15- or 30-year loan term?",
+    "answer": "The <span class='lf-bold'>%xyear% year loan</span> will <span class='lf-bold'>%costsave1% you $%result1%</span> more monthly and <span class='lf-bold'>%costsave2% you $%result2%</span> in total interest compared to the <span class='lf-bold'>%yyear% year loan</span>.",
+    "same_as_answer": "<span class='lf-bold'>Both loans</span> will cost you <span class='lf-bold'>the same</span> monthly and save you <span class='lf-bold'>the same</span> in total interest.",
+    "selectors": [
+      {
+        "label": "Payments",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Total Interest",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Shorter Term Loan",
+            "label": "Shorter Term Loan"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Longer Term Loan",
+            "label": "Longer Term Loan"
+          }
+        ]
+      }
+    ],
+    "principalInterest": "Principal & Interest",
+    "pmi": "Private mortgage insurance (PMI)",
+    "hoa": "HOA fees",
+    "taxesInsurance": "Taxes & Insurance",
+    "categories": [
+      "Shorter Term",
+      "Longer Term"
+    ],
+    "sameAs": "the same",
+    "more": "more",
+    "less": "less",
+    "cost": "cost",
+    "save": "save",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ],
+    "more_prefix": " more ",
+    "less_prefix": " less "
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "costanalysis": {
+      "title": "Cost-benefit analysis",
+      "definition": "An analysis of the cost effectiveness of different alternatives in order to see whether the benefits outweigh the costs."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "hoafee": {
+      "title": "Homeowners association fee",
+      "definition": "Homeowner association (HOA) fees are monthly dues that condo owners - and homeowners in some single family neighborhoods - pay to cover the costs of maintaining common areas or shared amenities such as clubhouses, pools, landscaping, security, etc."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "othersettlementservices": {
+      "title": "Other settlement services",
+      "definition": "Fees paid for services associated with the purchase of a home that do not represent compensation to the lender and/or the broker for originating the loan."
+    },
+    "origchargeamount": {
+      "title": "Origination Charges",
+      "definition": "The sum of all fees and charges from origination-related services. This represents all compensation to the lender and/or broker for originating the loan."
+    },
+    "originationfees": {
+      "title": "Origination fee",
+      "definition": "A lender may charge an origination fee that is additional to any mortgage points you pay. Origination fees are the lender's charge for funding your mortgage with a mortgage broker. The process of funding your loan is called origination."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates total cost and monthly payments for two fixed-rate mortgage loans of different terms and helps you determine which loan is the best option. Loan terms do not have to be 15 or 30 years. Since these are the two most popular fixed-rate mortgage terms, they are used as defaults."
+    },
+    {
+      "textLabel": "Both types of mortgages have their advantages and disadvantages. With a 15-year mortgage, you will pay higher monthly payments but significantly less total interest over the life of the loan. In addition, your mortgage will be paid off in half the time. Deciding between the two depends on your financial situation, including your credit score and history, your down payment and how much monthly cash you have on hand."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart that compares the estimated monthly payments for the shorter term loan and longer term loan, broken down by principal and interest, taxes and insurance, HOA fees, and PMI."
+    },
+    {
+      "title": "Column chart that compares the remaining interest for the shorter term loan and longer term loan."
+    },
+    {
+      "title": "Amortization table for the longer term loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the total monthly payment by principal and interest, property taxes and insurance, and PMI for both the shorter term and longer term loans"
+    },
+    {
+      "title": "Difference in total interest, in today's dollars, for both the shorter term and longer term loans over the expected years in home"
+    }
+  ]
+}

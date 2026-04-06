@@ -1,0 +1,795 @@
+{
+  "layout": {
+    "hasSpouseFields": true,
+    "tabs": {
+      "tabOrder": [
+        "personal",
+        "projections",
+        "benefits-pensions",
+        "results"
+      ],
+      "personal": {
+        "selected": true,
+        "custom": true,
+        "tabLabel": "Personal",
+        "toggleQuestion": "Include spouse",
+        "firstLabel": "My information",
+        "secondLabel": "My spouse's information",
+        "personalSpouseNo": {
+          "fields": [
+            "CurrAge",
+            "Income",
+            "RetireAge",
+            "RetireWage",
+            "WageYrs"
+          ]
+        },
+        "personalSpouseYes": {
+          "fields": [
+            "SpsAge",
+            "SpsInc",
+            "SpsRetireAge",
+            "SpsRetireWage",
+            "SpsWageYrs"
+          ]
+        }
+      },
+      "projections": {
+        "custom": true,
+        "tabLabel": "Projections",
+        "lifeExpectancy": {
+          "fields": [
+            "DeathAge",
+            "AnnIncGrow"
+          ]
+        }
+      },
+      "benefits-pensions": {
+        "custom": true,
+        "tabLabel": "Social Security Benefits ",
+        "initTabName": "Personal",
+        "toggleQuestion": "Include spouse",
+        "firstLabel": "My information",
+        "secondLabel": "My spouse's information",
+        "socialSecurityBenefits": "Social Security benefits",
+        "socialSecSpouseNo": {
+          "fields": [
+            "SSAge",
+            "SSType"
+          ]
+        },
+        "socialSecSpouseYes": {
+          "fields": [
+            "SpsSSAge",
+            "empty"
+          ]
+        },
+        "socialSecDDLSpouseNo": {
+          "fields": [
+            "SSPmt"
+          ]
+        },
+        "socialSecDDLSpouseYes": {
+          "fields": [
+            "SpsSSPmt"
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "You",
+        "Your Spouse"
+      ],
+      "fields": []
+    },
+    "fields": {
+      "SSType": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Your monthly benefits",
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Estimate for me"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Ignore"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Expected to be"
+          }
+        ]
+      },
+      "Income": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual income",
+        "defaultValue": "40000",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "(before taxes)",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "RetireAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Age at retirement",
+        "valueTextLabel": "years",
+        "defaultValue": "67",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "2",
+        "maximumValue": "120",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "RetireWage": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly wages during retirement",
+        "defaultValue": "2000",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "WageYrs": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "For how many years",
+        "valueTextLabel": "years",
+        "defaultValue": "5",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Current Age",
+        "valueTextLabel": "years",
+        "defaultValue": "37",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "ariaLegendLabel": "My spouse's information",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "37",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsInc": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual income",
+        "defaultValue": "30000",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "(before taxes)",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "30000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsRetireAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Age at retirement",
+        "valueTextLabel": "years",
+        "defaultValue": "67",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "widgetStep": "1",
+        "value": "67",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsRetireWage": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly wages during retirement ",
+        "defaultValue": "0",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "maxlength": "10",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "1000",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsWageYrs": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "For how many years",
+        "valueTextLabel": "years",
+        "defaultValue": "0",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "DeathAge": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Life expectancy",
+        "valueTextLabel": "years",
+        "defaultValue": "98",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "AnnIncGrow": {
+        "cellClass": "lf-percent",
+        "dataHighlight": "true",
+        "fieldLabel": "Yearly rate of growth in Social Security benefits",
+        "defaultValue": "1.00",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "widgetStep": "1.00",
+        "precision": 2,
+        "value": "0",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SSAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Age you will claim Social Security benefits",
+        "defaultValue": "67",
+        "valueTextLabel": "years",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "ariaLegendLabel": "My information"
+      },
+      "SSPmt": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "dataElementName": "lf_SSPmt",
+        "fieldLabel": "Your monthly benefits expected to be",
+        "defaultValue": "0",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "SpsSSAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Age spouse will claim Social Security benefits",
+        "defaultValue": "67",
+        "valueTextLabel": "years",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "67",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "ariaLegendLabel": "My spouse's information"
+      },
+      "SpsSSPmt": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "dataElementName": "lf_SpsSSPmt",
+        "fieldLabel": "Your monthly benefits expected to be",
+        "defaultValue": "0",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "showDollar": "lf-before-input",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "0",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "CurrAge": {
+        "cellClass": "row",
+        "dataHighlight": "true",
+        "fieldLabel": "Current age",
+        "valueTextLabel": "years",
+        "defaultValue": "37",
+        "inputType": "text",
+        "precision": 0,
+        "showTooltip": "lf-hidden",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-hidden",
+        "safeType": "number",
+        "smallLabel": "",
+        "smallLabelClass": "lf-small-label",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "ariaLegendLabel": "My information",
+        "widgetStep": "1",
+        "value": "0",
+        "format": "number",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "empty": {
+        "fieldLabel": ""
+      },
+      "PenAdjOpt": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Payments to adjust for inflation",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "No payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "First payment"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Rest of payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "All payments"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "SpsPenAdjOpt": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Payments to adjust for inflation",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "No payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "First payment"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Rest of payments"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "All payments"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "AcctOwner": {
+        "showTooltip": "lf-hidden",
+        "taxOwnerLabelFor": "tax-advantaged-account-owner",
+        "selectName": "tax-advantaged-account-owner",
+        "selectId": "tax-advantaged-account-owner",
+        "selectClass": "",
+        "fieldLabel": "Owner",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-MTaxAdvantage",
+            "optionText": "You",
+            "display": "block"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-STaxAdvantage",
+            "optionText": "Your spouse",
+            "display": "block"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "MTaxAdvantage-account-type": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Type of Account",
+        "selectClass": "lf-MTaxAdvantage",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-individualAccount-type1",
+            "optionText": "401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type2",
+            "optionText": "Roth 401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type3",
+            "optionText": "Roth IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type4",
+            "optionText": "Traditional IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type5",
+            "optionText": "SEP"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type6",
+            "optionText": "SIMPLE"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type7",
+            "optionText": "Keogh"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-individualAccount-type8",
+            "optionText": "Other"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "STaxAdvantage-account-type": {
+        "showTooltip": "lf-hidden",
+        "dropdown": true,
+        "fieldLabel": "Type of Account",
+        "selectClass": "lf-MTaxAdvantage",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "lf-spouseAccount-type1",
+            "optionText": "401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type2",
+            "optionText": "Roth 401(k)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type3",
+            "optionText": "Roth IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type4",
+            "optionText": "Traditional IRA"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type5",
+            "optionText": "SEP"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type6",
+            "optionText": "SIMPLE"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "lf-spouseAccount-type7",
+            "optionText": "Keogh"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      }
+    },
+    "results_fields": {
+      "TotMaxDep": {
+        "fieldLabel": "Total maximum contribution"
+      },
+      "TotDepRetire02C": {
+        "fieldLabel": "Total amount contributed"
+      },
+      "TotTaxRetire02C": {
+        "fieldLabel": "Total income tax & penalties"
+      },
+      "TotIntRetire02C": {
+        "fieldLabel": "Total interest earnings"
+      },
+      "ContYr1": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr1": {
+        "fieldLabel": ""
+      },
+      "ContYr2": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr2": {
+        "fieldLabel": ""
+      },
+      "ContYr3": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr3": {
+        "fieldLabel": ""
+      },
+      "CurrExp": {
+        "fieldLabel": "Current"
+      },
+      "EstExp": {
+        "fieldLabel": "During Retirement"
+      },
+      "EstExpAdj": {
+        "fieldLabel": "During Retirement"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Age",
+    "title": "How much will Social Security provide after retirement?",
+    "answer": "Your Social Security benefits during retirement are projected to be as follows:",
+    "selectors": [
+      {
+        "label": "Benefits",
+        "width": "50%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "label": "Yearly Social Security Benefits",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Yearly Social Security Benefits",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "you": "You",
+    "spouse": "Your Spouse",
+    "age": "Age",
+    "annualBenefits": "Annual Benefits",
+    "tableHeaders": [
+      [
+        "Age",
+        "You",
+        "Your Spouse"
+      ]
+    ]
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "This tool helps you to project your Social Security benefits during retirement. It considers your age, expected length of retirement, and any additional income you expect to earn after you are eligible to receive benefits."
+    },
+    {
+      "textLabel": "Visit the <a target=\"_blank\" href=\"https://www.ssa.gov/news/press/factsheets/basicfact-alt.pdf\">Social Security Administration Fact Sheet</a> for more information, including the average monthly benefit for retired workers."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the annual Social Security benefits during retirement."
+    },
+    {
+      "title": "Table."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Annual Social Security benefits during retirement"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Hipotecas que debe"
+      },
+      "CreditLine_LTVOne": {
+        "fieldLabel": "Coeficiente del préstamo en función del valor 1"
+      },
+      "CreditLine_LTVTwo": {
+        "fieldLabel": "Coeficiente del préstamo en función del valor 2"
+      },
+      "CreditLine_LTVThree": {
+        "fieldLabel": "Coeficiente del préstamo en función del valor 3"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Valor tasado de la vivienda"
+      },
+      "Global_MaximumLTVRatio": {
+        "fieldLabel": "Coeficiente máximo del préstamo en función del valor "
+      }
+    },
+    "results_fields": {
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Menos préstamos existentes"
+      },
+      "ApprUsr": {
+        "fieldLabel": "Importe máximo posible de los préstamos "
+      },
+      "CreditLimitUsr": {
+        "fieldLabel": "Su límite de crédito"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Por cuánto puedo obtener una línea de crédito?",
+    "answer": "Usted puede solicitar una línea de crédito de hasta <span class='lf-bold'>$%result%</span>",
+    "ApprUsr": "Importe del préstamo combinado máximo ",
+    "Global_OutstandingMortgagePrincipal": "Préstamos existentes",
+    "CreditLimitUsr": "Su límite de crédito",
+    "dataTableCategory": "Cantidad",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "cltvratio": {
+      "title": "Relación préstamo-valor combinada (CLTV)",
+      "definition": "Relación que usan los prestamistas para determinar el riesgo de incumplimiento cuando la vivienda se usa como garantía colateral para más de un préstamo. Se calcula dividiendo el valor total de la suma de las hipotecas entre el valor del inmueble."
+    },
+    "mortgagebalance": {
+      "title": "Saldo de la hipoteca",
+      "definition": "Capital impago de hipoteca de primer grado, más los capitales impagos de las segundas hipotecas y los préstamos sobre el valor neto de la vivienda que usted tenga."
+    },
+    "ltv": {
+      "title": "Relación préstamo-valor (LTV)",
+      "definition": "La relación préstamo-valor (LTV) es un factor clave que los prestamistas examinan antes de aprobar un préstamo hipotecario. Se calcula dividiendo el monto del préstamo hipotecario por el valor justo de mercado de la vivienda."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta muestra la máxima línea de crédito hipotecario que puede obtener con base en el valor neto de la vivienda , los préstamos hipotecarios que tiene actualmente y la relación préstamo-valor combinada máxima (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cltvratio\">CLTV</a></span>) que el prestamista está dispuesto a considerar. Los préstamos son la suma del monto de la línea de crédito propuesta más el saldo de cualquier deuda hipotecaria pendiente. El valor es generalmente el valor de tasación, que es la valuación del valor actual de mercado de la vivienda realizada por un tasador independiente. Cuanto mayor sea el valor de su vivienda o los requisitos de la relación préstamo-valor establecidos por el prestamista, mayor será la línea de crédito que usted puede obtener."
+    },
+    {
+      "textLabel": "Por ejemplo, un prestamista dispuesto a considerar una CLTV del 90 por ciento ofrecerá un monto de línea de crédito tal que, sumado a cualquier otra deuda hipotecaria, equivalga al 90 por ciento del valor de tasación de la vivienda."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del monto máximo combinado del préstamo, el monto de los préstamos existentes y su límite de crédito."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Monto máximo de préstamo combinado, monto de préstamos existentes y su límite de crédito"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "layout": {
+    "tabs": {
+      "LowRateCard": {
+        "tabLabel": "Tarjeta con baja tasa de interés"
+      },
+      "OtherCard": {
+        "tabLabel": "Otra tarjeta"
+      },
+      "CardActivity": {
+        "tabLabel": "Actividad de la tarjeta"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Tarjeta con baja tasa de interés",
+        "Otra tarjeta"
+      ]
+    },
+    "fields": {
+      "Card_FeeCardIntroductoryInterestRate": {
+        "fieldLabel": "Tasa de interés introductoria"
+      },
+      "Card_FeeCardIntroductoryTerm": {
+        "fieldLabel": "Plazo introductorio ",
+        "smallLabel": "(meses)"
+      },
+      "Card_FeeCardIntroductoryAnnualFee": {
+        "fieldLabel": "Comisión anual introductoria"
+      },
+      "Card_FeeCardInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Card_FeeCardAnnualFee": {
+        "fieldLabel": "Comisión anual fija"
+      },
+      "Card_RateCardIntroductoryInterestRate": {
+        "fieldLabel": "Tasa de interés introductoria"
+      },
+      "Card_RateCardIntroductoryTerm": {
+        "fieldLabel": "Plazo introductorio ",
+        "smallLabel": "(meses)"
+      },
+      "Card_RateCardIntroductoryAnnualFee": {
+        "fieldLabel": "Comisión anual introductoria"
+      },
+      "Card_RateCardInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Card_RateCardAnnualFee": {
+        "fieldLabel": "Comisión anual fija"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Saldo de la tarjeta"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Cargos mensuales futuros"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Pagos mensuales futuros"
+      }
+    },
+    "results_fields": {
+      "Card_LowRateTotalCost": {
+        "fieldLabel": "Pagos mensuales totales"
+      },
+      "Card_OtherTotalCost": {
+        "fieldLabel": "Pagos mensuales totales"
+      },
+      "Card_LowRateTotalFees": {
+        "fieldLabel": "Comisiones totales"
+      },
+      "Card_OtherTotalFees": {
+        "fieldLabel": "Comisiones totales"
+      },
+      "Card_LowRateTotalInterest": {
+        "fieldLabel": "Intereses totales"
+      },
+      "Card_OtherTotalInterest": {
+        "fieldLabel": "Intereses totales"
+      },
+      "Card_LowRateTerm": {
+        "fieldLabel": "Cantidad de meses en que terminará de pagar "
+      },
+      "Card_OtherTerm": {
+        "fieldLabel": "Cantidad de meses en que terminará de pagar "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Pagos mensuales totales",
+    "dataTableCategoryTitle": "Mes",
+    "title": "¿Vale la pena pagar la comisión anual por una tasa más baja?",
+    "answer1": "La %lowercard% le <span class='lf-bold'>ahorrará %amount% más</span> que la %highercard%. ",
+    "answer2": "Teniendo en cuenta los cargos y pagos futuros, parece que nunca podrá liquidar el saldo de su tarjeta de crédito.",
+    "same_as_answer": "La tarjeta de tasa baja de interes le <span class='lf-bold'>costará lo mismo que</span> la otra tarjeta.",
+    "cost": "costo",
+    "save": "ahorrará",
+    "lowRateCard": "Tarjeta con baja tasa de interés",
+    "otherCard": "Otra tarjeta",
+    "months": "mes",
+    "balance": "Saldo",
+    "month": "Mes",
+    "xAxisTitle": "Mes",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Pagos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Saldos",
+        "width": "33%"
+      },
+      {
+        "label": "Estado de cuenta mensual",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Otra tarjeta",
+            "label": "Otra tarjeta"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Tarjeta con baja tasa de interés",
+            "label": "Tarjeta con baja tasa de interés"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ],
+    "repay_prefix": "nunca podrá cancelar",
+    "same_text": "exactamente lo mismo"
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Pagos mensuales futuros",
+      "definition": "Monto que usted paga mensualmente sobre el saldo de su tarjeta de crédito. Si sus pagos son menores que los gastos por intereses para el período, los intereses impagos se suman al saldo de su tarjeta."
+    },
+    "introrate": {
+      "title": "La tasa introductoria",
+      "definition": "Tasa de interés con descuento, denominada a veces tasas tentadora, que se ofrece a veces durante el período de presentación de una tarjeta crédito."
+    },
+    "futuremonthlycharges": {
+      "title": "Cargos mensuales futuros",
+      "definition": "Monto neto que usted gasta mensualmente con su tarjeta de crédito, descontando cualquier retorno que se acredite en el saldo de su tarjeta."
+    },
+    "introperiod": {
+      "title": "El período de presentación",
+      "definition": "Período de aplicación de la tasa introductoria o tasa \"tentadora\" de una tarjeta de crédito; con frecuencia, su duración es de tres a seis meses."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora muestra las ventajas y desventajas de tener una tarjeta sin comisión anual con una tasa de interés más alta o de tener una tarjeta con una comisión anual con una tasa de interés más baja. Usted también puede ingresar todas las tasas introductorias más bajas y el período por el cual se ofrecen."
+    },
+    {
+      "textLabel": "Su decisión depende en su mayor parte del uso que usted le dé a la tarjeta de crédito. Si usted paga los saldos en forma puntual, no incurre en gastos por intereses de la tarjeta de crédito. No hay motivo para pagar una comisión anual por el privilegio de pagarle a la empresa de la tarjeta de crédito en forma puntual."
+    },
+    {
+      "textLabel": "Si usted suele arrastrar el saldo de la tarjeta, debe apuntar a minimizar los gastos por intereses usando una tarjeta de crédito con tasa de interés baja. Usted tal vez deba pagar una comisión anual a cambio de la tasa baja pero tal vez pueda ahorrar más en gastos por intereses durante el año que lo que deberá pagar por la comisión anual."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la diferencia en los pagos mensuales acumulativos realizados hasta el pago de la tarjeta de tasa baja y la otra tarjeta."
+    },
+    {
+      "title": "Gráfico de líneas que compara los saldos de la tarjeta de tasa baja y la otra tarjeta a lo largo del tiempo."
+    },
+    {
+      "title": "Calendario de amortización de la otra tarjeta de crédito."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en los pagos mensuales acumulativos realizados hasta el pago de la tarjeta de tasa baja y la otra tarjeta"
+    },
+    {
+      "title": "Saldos de la tarjeta de tarifa reducida y la otra tarjeta a lo largo del tiempo"
+    }
+  ]
+}

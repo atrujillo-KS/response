@@ -1,0 +1,133 @@
+{
+  "layout": {
+    "tabs": {
+      "CollegeInfo": {
+        "tabLabel": "Información sobre estudios universitarios"
+      },
+      "SavingsPlan": {
+        "tabLabel": "Plan de ahorro"
+      }
+    },
+    "results": {
+      "text": "La cantidad total que tendrá que haber salvado cuando comienza la universidad es %startAmount%. Tu plan de ahorro actual proporcionará %savings%. Para acumular %accumulate% en %years% año que necesitará para:<br><br><ul>    <li>%direction1% la cantidad que usted invierte ahora %investNow%, o</li>    <li>%direction2% su inversión mensual para %investMonthly%, o</li>    <li>Gane una tasa de retorno de %rateOfReturn%</li></ul>"
+    },
+    "fields": {
+      "Global_AnnualCollegeCost": {
+        "fieldLabel": "Costo anual de los estudios universitarios",
+        "smallLabel": "(en dólares actuales)"
+      },
+      "Global_YearsUntilCollege": {
+        "fieldLabel": "Años hasta que empiece los estudios universitarios "
+      },
+      "Global_YearsInCollege": {
+        "fieldLabel": "Años en la universidad"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      },
+      "Global_CurrentCollegeSavings": {
+        "fieldLabel": "Ahorro actual para estudios universitarios"
+      },
+      "Savings_MonthlyInvestmentForCollege": {
+        "fieldLabel": "Ahorros para invertir mensualmente"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      },
+      "DownPmtSavings04": {
+        "fieldLabel": "Ahorro actual para estudios universitarios"
+      },
+      "PmtSavings04": {
+        "fieldLabel": "Ahorros para invertir mensualmente"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Qué debo hacer para ahorrar para los estudios universitarios?",
+    "answer": "Su meta de ahorro para el pago de estudios universitarios es de <span class='lf-bold'>%goal%</span>",
+    "collegeSavings": "Meta de ahorro para pagar estudios universitarios",
+    "actualSavings": "Ahorros reales para estudios universitarios",
+    "increase": "Aumentar",
+    "decrease": "Disminuir",
+    "startAmount_prefix": "necesario será ",
+    "savings_prefix": " de ahorro actual obtendrá ",
+    "accumulate_prefix": " Para acumular ",
+    "years_prefix": " en ",
+    "investNow_suffix": ", o",
+    "direction_prefix": "Aumentar",
+    "rateOfReturn_prefix": "retorno del ",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "coverdellesa": {
+      "title": "Cuenta de ahorro para la educación Coverdell (ESA)",
+      "definition": "Una cuenta de inversión con ventajas impositivas diseñada para fomentar los ahorros para cubrir futuros gastos de educación primaria, secundaria o universitaria."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Aumento porcentual anual de los precios. La tasa de inflación anual en los EE.UU. alcanzó un promedio de alrededor de 2- 3% en los últimos 10 años."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "section529plan": {
+      "title": "Planes de la Sección 529",
+      "definition": "Un plan especial con ventajas impositivas, administrado por un gobierno estatal o una institución educativa, utilizado para ahorrar para la educación universitaria de un hijo, nieto u otro dependiente."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    },
+    "lumpsuminvestment": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora calcula diferentes combinaciones para ahorrar una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#LumpSumInvestment\">suma global</a></span> para pagar los gastos de universidad de un hijo o de otra persona. La calculadora computa el costo futuro de los gastos de universidad sobre la base de la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#InflationRate\">tasa de inflación</a></span> que usted designe."
+    },
+    {
+      "textLabel": "Dado que usted ingresa tasas de impuesto sobre la renta, la calculadora supone que usted ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">tributable</a></span>. Si quiere simular ahorros con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>, ingrese cero en los campos correspondientes a tasas de impuesto sobre la renta federal y estatal."
+    },
+    {
+      "textLabel": "Las cuentas con ventajas impositivas para ahorrar los costos de matrículas y otros gastos universitarios incluyen los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Section529Plan\">Planes Artículo 529</a></span> y las cuentas de ahorro para educación <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CoverdellESA\">Coverdell</a></span> (anteriormente denominadas cuentas IRA para educación)."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la diferencia entre los ahorros reales para el momento en que comienza la universidad y los ahorros universitarios requeridos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia entre los ahorros reales para cuando comienza la universidad y los ahorros universitarios requeridos"
+    }
+  ]
+}

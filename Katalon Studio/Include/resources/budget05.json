@@ -1,0 +1,645 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What will it take to pay off my credit card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool estimates the amount of time to pay off a credit card balance based on a desired monthly payment or the payment required to pay off a balance by a desired timeframe. Regardless of payoff plan desired, the tool will also estimate the total interest paid and present additional monthly payment options for consideration."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "A $444 monthly payment and no further charges will pay off your credit card in 12 months. Over that time you will pay $331 in total interest."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_PayoffPlan"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_PayoffPlan",
+      "value": "label=Desired monthly payment"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "It will take you 16 months to pay off your credit card with a fixed payment of $350 and no further charges. Over that time you will pay $423 in total interest."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selector-table-container']/table/caption",
+      "value": "Additional payment options:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selector-table-container']/table/thead/tr/th[2]",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selector-table-container']/table/thead/tr/th[3]",
+      "value": "Payoff (in months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selector-table-container']/table/thead/tr/th[4]",
+      "value": "Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOneMonthlyPayment_result_value",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOnePayoffInMonths_result_value",
+      "value": "19"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOneInterest_result_value",
+      "value": "$497"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoMonthlyPayment_result_value",
+      "value": "$325"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoPayoffInMonths_result_value",
+      "value": "17"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoInterest_result_value",
+      "value": "$457"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanMonthlyPayment_result_value",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanMonths_result_value",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanInterest_result_value",
+      "value": "$423"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreeMonthlyPayment_result_value",
+      "value": "$375"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreePayoffInMonths_result_value",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreeInterest_result_value",
+      "value": "$394"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourMonthlyPayment_result_value",
+      "value": "$400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourPayoffInMonths_result_value",
+      "value": "14"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourInterest_result_value",
+      "value": "$368"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Additional Payment Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Total Interest Paid"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis.highcharts-yaxis > text.highcharts-axis-title",
+      "value": "Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=caption.highcharts-table-caption",
+      "value": "Total interest you will pay for each monthly payment option"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payoff Schedule"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Ending balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td[2]",
+      "value": "$173"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td[3]",
+      "value": "$171"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td[4]",
+      "value": "$2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td[5]",
+      "value": "$423"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[16]/td[6]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CreditCardInfo-accordion",
+      "value": "CREDIT CARD INFO"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-label",
+      "value": "Amount you owe"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CardInterestRate",
+      "value": "12.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlan-label",
+      "value": "Payoff plan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_PayoffPlan",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_DesiredMonthlyCardPayment-label",
+      "value": "Desired monthly payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_DesiredMonthlyCardPayment",
+      "value": "350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_DesiredMonthlyCardPayment-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_DesiredMonthlyCardPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_DesiredMonthlyCardPayment_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Projections-accordion",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "Projections-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MinimumPaymentPercentage-label",
+      "value": "Minimum payment percentage"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MinimumPaymentPercentage",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MinimumPaymentFloor-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MinimumPaymentFloor-label",
+      "value": "Minimum payment floor"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MinimumPaymentFloor",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MinimumPaymentFloor-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "CreditCardInfo-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_TotalCardDebt"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "7,800"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_cross_field_error_title",
+      "value": "Please fix the following errors:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_cross_field_error_label",
+      "value": "Desired monthly payment is less than the minimum required. Please enter a payment that is at least 5% of the amount you owe."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_cross_field_error_field_count",
+      "value": "You can resolve this by changing one or more of the following 3 fields:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "crossfield_button_4",
+      "value": "Amount you owe"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "crossfield_button_1",
+      "value": "Desired monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "crossfield_button_2",
+      "value": "Minimum payment percentage"
+    }
+  },
+  {
+    "click": {
+      "id": "crossfield_button_1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_DesiredMonthlyCardPayment",
+      "value": "550"
+    }
+  },
+    {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "7,800"
+    }
+  },
+  {
+    "click": {
+      "id": "Projections-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_MinimumPaymentPercentage",
+      "value": "4.79"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_MinimumPaymentFloor",
+      "value": "35"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "It will take you 16 months to pay off your credit card with a fixed payment of $550 and no further charges. Over that time you will pay $654 in total interest."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOneMonthlyPayment_result_value",
+      "value": "$500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOnePayoffInMonths_result_value",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanOneInterest_result_value",
+      "value": "$723"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoMonthlyPayment_result_value",
+      "value": "$525"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoPayoffInMonths_result_value",
+      "value": "17"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanTwoInterest_result_value",
+      "value": "$687"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanMonthlyPayment_result_value",
+      "value": "$550"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanMonths_result_value",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PayoffPlanInterest_result_value",
+      "value": "$654"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreeMonthlyPayment_result_value",
+      "value": "$575"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreePayoffInMonths_result_value",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanThreeInterest_result_value",
+      "value": "$625"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourMonthlyPayment_result_value",
+      "value": "$600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourPayoffInMonths_result_value",
+      "value": "14"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AlternativePlanFourInterest_result_value",
+      "value": "$597"
+    }
+  }
+]

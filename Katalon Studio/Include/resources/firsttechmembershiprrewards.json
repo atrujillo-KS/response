@@ -1,0 +1,425 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-firsttech/calc/membershiprewards?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How much could I earn with First Tech Rewards?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "HELP"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/p[2]",
+      "value": "This tool will help you estimate your monthly First Tech Rewards earnings and see how those benefits compare to what you are projected to earn with offerings from other financial institutions. If you have any questions about First Tech Rewards please call us at 855.855.8805."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You could earn a total of $46 monthly with First Tech Rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='0']/parent::*",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='20']/parent::*",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageCheckingAccountBalance-label",
+      "value": "Checking account balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AverageCheckingAccountBalance",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageSavingsAccountBalance-label",
+      "value": "Savings account balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageCheckingAccountBalance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AverageCheckingAccountBalance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Average checking account balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "At any given time, what is your typical checking account balance?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageSavingsAccountBalance-label",
+      "value": "Savings account balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AverageSavingsAccountBalance",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageSavingsAccountBalance-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AverageSavingsAccountBalance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AverageSavingsAccountBalance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Average savings account balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "At any given time, what is your typical savings account balance?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FutureMonthlyCharges-label",
+      "value": "First Tech credit card spend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FutureMonthlyCharges",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FutureMonthlyCharges-error-message",
+      "value": "Must be between $0 and $500,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FutureMonthlyCharges_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Card_FutureMonthlyCharges_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Monthly card spending"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "First Tech Rewards provides 1% cash back on all posted credit card purchases made on your First Tech credit card account, up to a maximum of $30 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_worksheet_button",
+      "value": "Itemize loan payments"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_worksheet_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_worksheet_modal_title",
+      "value": "Itemize Loan Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_worksheet_title",
+      "value": "Enter the minimum monthly payment amounts for each of your First Tech consumer and/or home equity line of credit loans and we will calculate the total."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_labels_container']/div",
+      "value": "Loan name"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_labels_container']/div[2]",
+      "value": "Minimum monthly payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanOneName",
+      "value": "Loan A"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "375"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanTwoName",
+      "value": "Loan B"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_addDebt_button",
+      "value": "Add Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_button",
+      "value": "Calculate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_workSheet_dialog_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AverageCheckingAccountBalance"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AverageCheckingAccountBalance",
+      "value": "11,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AverageSavingsAccountBalance",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FutureMonthlyCharges",
+      "value": "4,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_worksheet_button"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneName",
+      "value": "Home 1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoName",
+      "value": "Home 2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeName",
+      "value": "Home 3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "780"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_use_amount_container']/span",
+      "value": "Total itemized loan payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_use_amount_container']/span[2]",
+      "value": "$981"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_use_amount_button",
+      "value": "Use This Amount"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_use_amount_button"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalMinimumLoanPayments",
+      "value": "981"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You could earn a total of $73 monthly with First Tech Rewards"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AverageCheckingAccountBalance",
+      "value": "2,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AverageSavingsAccountBalance",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalMinimumLoanPayments",
+      "value": "600"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FutureMonthlyCharges",
+      "value": "800"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You could earn a total of $12 monthly with First Tech Rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//p[@id='lf-next-steps-zoneB1-content']/div/div/div/div[2]/h3",
+      "value": "Savings.\n Pure and Simple."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "TERMS OF USE"
+    }
+  }
+]

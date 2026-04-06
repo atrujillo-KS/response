@@ -1,0 +1,256 @@
+{
+  "layout": {
+    "tabs": {
+      "GrowthStock": {
+        "tabLabel": "ACCIÓN DE CRECIMIENTO"
+      },
+      "IncomeStock": {
+        "tabLabel": "ACCIÓN DE INGRESOS"
+      },
+      "AssumptionsTaxes": {
+        "tabLabel": "SUPUESTOS E IMPUESTOS"
+      },
+      "FeesPurchase": {
+        "tabLabel": "CARGOS DE COMPRA"
+      },
+      "FeesSale": {
+        "tabLabel": "TASAS DE VENTA"
+      }
+    },
+    "fields": {
+      "Stock_SharePurchasePriceGrowthStock": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchasedGrowthStock": {
+        "fieldLabel": "Acciones que comprará"
+      },
+      "Stock_YearlySharePriceIncreaseGrowthStock": {
+        "fieldLabel": "Aumento anual en el precio de las acciones"
+      },
+      "Stock_AverageQuarterlyDividendGrowthStock": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_YearlyIncreaseInDividendsGrowthStock": {
+        "fieldLabel": "Aumento anual en dividendos"
+      },
+      "Stock_SharePurchasePriceIncomeStock": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchasedIncomeStock": {
+        "fieldLabel": "Acciones que comprará"
+      },
+      "Stock_YearlySharePriceIncreaseIncomeStock": {
+        "fieldLabel": "Aumento anual en el precio de las acciones"
+      },
+      "Stock_AverageQuarterlyDividendIncomeStock": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_YearlyIncreaseInDividendsIncomeStock": {
+        "fieldLabel": "Aumento anual en dividendos"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Fondos de crecimiento",
+        "Ingresos"
+      ]
+    },
+    "results_fields": {
+      "FMRR1Bef": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "FMRR2Bef": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "FMRR1Aft": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "FMRR2Aft": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "PriceFutStock07": {
+        "fieldLabel": "Precio de venta por acción"
+      },
+      "PriceFut2Stock07": {
+        "fieldLabel": "Precio de venta por acción"
+      },
+      "QDivFut": {
+        "fieldLabel": "Dividendos trimestrales por acción"
+      },
+      "QDivFut2": {
+        "fieldLabel": "Dividendos trimestrales por acción"
+      },
+      "TotDiv1Aft": {
+        "fieldLabel": "Dividendos recibidos"
+      },
+      "TotDiv2Aft": {
+        "fieldLabel": "Dividendos recibidos"
+      },
+      "SaleGain1Aft": {
+        "fieldLabel": "Ganancia en el momento de venta"
+      },
+      "SaleGain2Aft": {
+        "fieldLabel": "Ganancia en el momento de venta"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Ganancia o pérdida",
+    "title": "¿Qué es mejor: las acciones de ingresos o las acciones de crecimiento?",
+    "answer": "La acción <span class='lf-bold'>%which% </span> obtendrá un mayor rendimiento después de impuestos del <span class='lf-bold'>%result%</span>",
+    "same_as_answer": "<span class='lf-bold'>Ambas acciones</span> obtendrán la misma rentabilidad después de impuestos del <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Ganancia o pérdida",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "categories": [
+      "Fondos de crecimiento",
+      "Ingresos "
+    ],
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "growth": "de crecimiento",
+    "income": "de ingresos "
+  },
+  "glossaryItems": {
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "investreturn": {
+      "title": "Rendimiento de la inversión",
+      "definition": "La ganancia o pérdida de una inversión, establecida como una tasa de porcentaje anual."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "growthstock": {
+      "title": "Acción de crecimiento",
+      "definition": "Las acciones de una empresa que se enfoca en aumentar los ingresos y las ganancias. Las acciones de crecimiento tienden a no pagar dividendos. En cambio, retienen cualquier ganancia e invierten en oportunidades de crecimiento adicionales. Las acciones de crecimiento tienden a tener una mayor volatilidad que las acciones de ingresos o valor, lo que las convierte en inversiones más riesgosas."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    },
+    "capitalgainstaxes": {
+      "title": "Impuesto sobre las ganancias de capital",
+      "definition": "Impuestos que usted debe sobre ganancias de capital. La tasa de impuestos sobre las ganancias de capital que se aplica sobre activos que se han mantenido durante menos de un año es igual a la tasa para ingresos ordinarios. Para las ganancias de capital a largo plazo (activos que se han mantenido durante al menos un año), la tasa de impuestos para contribuyentes solteros es del 0 % sobre los ingresos imponibles hasta $47,025 del 15 % sobre los ingresos imponibles entre $47,026 y $518,900 y del 20 % sobre los ingresos imponibles de más de $518,901. Para los contribuyentes casados que presentan una declaración conjunta, la tasa de impuestos es del 0 % sobre los ingresos imponibles hasta $94,050, del 15 % sobre los ingresos imponibles entre $94,051 y $583,750 y del 20 % sobre los ingresos imponibles de más de $583,751."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "incomestock": {
+      "title": "Acción de ingresos",
+      "definition": "La acción de una compañía que se enfoca en pagar dividendos constantes o crecientes a los accionistas. Las acciones de ingresos tienden a tener una volatilidad menor que las acciones de crecimiento, lo que las convierte en inversiones menos riesgosas."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara el rendimiento <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#InvestReturn\">de la inversión</a></span>, antes y después de impuestos, para una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#IncomeStock\">acción de ingresos</a></span> y una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#GrowthStock\">acción de crecimiento</a></span>."
+    },
+    {
+      "textLabel": "Una acción de crecimiento suele obtener la mayor parte de su tasa de rendimiento de sus <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapGain\">ganancias de capital</a></span>. Una acción de ingresos suele obtener la mayor parte de su tasa de rendimiento de los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">dividendos</a></span>."
+    },
+    {
+      "textLabel": "Las ganancias de capital sobre activos que se mantienen durante más de un año y los dividendos son imponibles a una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">tasa preferencial</a></span>."
+    },
+    {
+      "textLabel": "Es posible que desee consultar a un asesor financiero antes de tomar la decisión de inversión."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el rendimiento del las acciones de crecimiento y las acciones de ingresos, antes y después de impuestos."
+    },
+    {
+      "title": "Gráfico de columnas que compara la ganancia o pérdida del las acciones de crecimiento y las acciones de ingresos si se venden hoy."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento del las acciones de crecimiento y las acciones de ingresos, antes y después de impuestos"
+    },
+    {
+      "title": "Ganancia o pérdida del las acciones de crecimiento y las acciones de ingresos si se venden hoy"
+    }
+  ]
+}

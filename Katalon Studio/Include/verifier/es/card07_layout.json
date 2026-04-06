@@ -1,0 +1,194 @@
+{
+  "layout": {
+    "tabs": {
+      "RebateCard": {
+        "tabLabel": "Tarjeta de reembolso"
+      },
+      "RebateInfo": {
+        "tabLabel": "Tasas de reembolso"
+      },
+      "RebateLimits": {
+        "tabLabel": "Límites de reembolso"
+      },
+      "LowRateCard": {
+        "tabLabel": "Tarjeta con baja tasa de interés"
+      },
+      "CardActivity": {
+        "tabLabel": "Actividad de la tarjeta"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Tarjeta de reembolso",
+        "Tarjeta con baja tasa de interés"
+      ]
+    },
+    "fields": {
+      "Card_RebateCardIntroductoryInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Card_RebateCardIntroductoryTerm": {
+        "fieldLabel": "Plazo introductorio ",
+        "smallLabel": "(meses)"
+      },
+      "Card_RebateCardIntroductoryAnnualFee": {
+        "fieldLabel": "Comisión anual introductoria"
+      },
+      "Card_RebateCardInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Card_RebateCardAnnualFee": {
+        "fieldLabel": "Comisión anual fija"
+      },
+      "Card_RebateCardRebateRateOnRegularPurchases": {
+        "fieldLabel": "% devengado sobre las compras habituales"
+      },
+      "Card_RebateRateOnBalanceOwed": {
+        "fieldLabel": "% devengado sobre el saldo deudor"
+      },
+      "Card_RebateCardRebateRateOnBalanceTransfer": {
+        "fieldLabel": "% devengado sobre la transferencia de saldo"
+      },
+      "Card_RebateCardRebateOnSpecificBrandPurchases": {
+        "fieldLabel": "% devengado sobre compras de marcas específicas"
+      },
+      "Card_RebateCardSpecificBrandPurchasesMonthly": {
+        "fieldLabel": "Compras de marcas específicas ",
+        "smallLabel": "(mensual)"
+      },
+      "Card_RebateCardMaximumYearlyRebate": {
+        "fieldLabel": "Reembolso máximo obtenido ",
+        "smallLabel": "(anual)"
+      },
+      "Card_RebateCardMaximumTotalRebate": {
+        "fieldLabel": "Reembolso total máximo"
+      },
+      "Card_RebateCardRebatePayoutType": {
+        "fieldLabel": "Pago de reembolso cada año",
+        "dropdownOptions": [
+          {
+            "optionText": "En efectivo"
+          },
+          {
+            "optionText": "Pagar"
+          }
+        ]
+      },
+      "Card_FeeCardIntroductoryInterestRate": {
+        "fieldLabel": "Tasa de interés introductoria"
+      },
+      "Card_FeeCardIntroductoryTerm": {
+        "fieldLabel": "Plazo introductorio ",
+        "smallLabel": "(meses)"
+      },
+      "Card_FeeCardIntroductoryAnnualFee": {
+        "fieldLabel": "Comisión anual introductoria"
+      },
+      "Card_FeeCardInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Card_FeeCardAnnualFee": {
+        "fieldLabel": "Comisión anual fija"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Saldo de la tarjeta"
+      },
+      "Global_YearsCardToBeUsed": {
+        "fieldLabel": "Años que utilizará la tarjeta"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Cargos mensuales futuros"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Pagos mensuales futuros"
+      }
+    },
+    "results_fields": {
+      "TotalRebateCardCost": {
+        "fieldLabel": "Costo neto total"
+      },
+      "TotalLowRateCost": {
+        "fieldLabel": "Costo neto total"
+      },
+      "RebateCardTotalInterestAndFees": {
+        "fieldLabel": "Intereses y comisiones pagados"
+      },
+      "TotalIntAndFees_RateCard": {
+        "fieldLabel": "Intereses y comisiones pagados"
+      },
+      "RebateCardRebateEarned": {
+        "fieldLabel": "Reembolso ganado"
+      },
+      "NA": {
+        "fieldLabel": "Reembolso ganado"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo neto total",
+    "title": "¿Qué es mejor: una tarjeta de reembolso o una tarjeta con baja tasa de interés?",
+    "answer": "La <span class='lf-bold'>%CARDTYPE%</span> le costará <span class='lf-bold'>%AMOUNT% menos</span> en un plazo de <span class='lf-bold'>%YEARS% años</span>.",
+    "same_as_answer": "<span class='lf-bold'>Ambas tarjetas</span> le costarán <span class='lf-bold'>lo mismo</span> en un plazo de <span class='lf-bold'>%YEARS% años</span>.",
+    "moreThan": "más",
+    "lessThan": "menos",
+    "sameAs": "lo mismo",
+    "lowRate": "tasa baja",
+    "rebateCard": "Tarjeta de reembolso",
+    "more_prefix": " tasa baja ",
+    "less_prefix": " reembolso ",
+    "years_prefix": " de ",
+    "years_suffix": " años.",
+    "selectors": [
+      {
+        "label": "",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Pagos mensuales futuros",
+      "definition": "Monto que usted paga mensualmente sobre el saldo de su tarjeta de crédito. Si sus pagos son menores que los gastos por intereses para el período, los intereses impagos se suman al saldo de su tarjeta."
+    },
+    "introrate": {
+      "title": "La tasa introductoria",
+      "definition": "Tasa de interés con descuento, denominada a veces tasas tentadora, que se ofrece a veces durante el período de presentación de una tarjeta crédito."
+    },
+    "futuremonthlycharges": {
+      "title": "Cargos mensuales futuros",
+      "definition": "Monto neto que usted gasta mensualmente con su tarjeta de crédito, descontando cualquier retorno que se acredite en el saldo de su tarjeta."
+    },
+    "introperiod": {
+      "title": "El período de presentación",
+      "definition": "Período de aplicación de la tasa introductoria o tasa \"tentadora\" de una tarjeta de crédito; con frecuencia, su duración es de tres a seis meses."
+    },
+    "rebaterateforbrands": {
+      "title": "% devengado sobre compras de marcas específicas",
+      "definition": "El porcentaje devengado sobre compras de marcas especificas es el porcentaje usado para acumular puntos cuando usa la tarjeta para compras de marcas especificas."
+    },
+    "rebaterate": {
+      "title": "Rebate rate on rebate card",
+      "definition": "The rebate rate on a rebate card is the percentage rate at which you can earn rewards using the card. "
+    },
+    "rebatespecificcardmonthlypurchases": {
+      "title": "Compras de marcas específicas (mensual)",
+      "definition": "Si usa una tarjeta de reembolso para bienes de una marca especifica, especifique los cargos futuros mensuales que se harán sobre estos bienes. Por ejemplo, si espera que los cargos mensuales en el futuro dean $300, y $50 de estos cargos vienen de marcas especificas, especifique $300 como cargos futuros mensuales y $50 como cantidad mensual comprado (para marcas especificas). La cantidad mensual comprado se incluye en cargos mensuales futuros pero se especifique aparte para calcular el reembolso."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara una tarjeta que otorga reembolsos cuando realiza compras y una tarjeta de crédito con una tasa de interés baja. Las tarjetas que otorgan reembolsos cuando realiza compras le permiten acumular puntos o créditos que luego podrá canjear por productos. Habitualmente, dichas tarjetas tienen una comisión anual más alta que la tarjeta de crédito común y es posible que tengan una tasa de interés más alta."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas para el valor acumulado del reembolso a lo largo de los años de uso de la tarjeta de reembolso."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Valor acumulado del reembolso a lo largo de los años de uso de la tarjeta de reembolso"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "layout": {
+    "tabs": {
+      "SpousesEstIncome": {
+        "tabLabel": "Ingreso estimado del cónyuge"
+      },
+      "GoingtoWork": {
+        "tabLabel": "Desplazamiento al trabajo",
+        "tabDesc": "Gastos extras mensuales"
+      },
+      "StayingatHome": {
+        "tabLabel": "Quedarse en casa",
+        "tabDesc": "Gastos extras mensuales"
+      }
+    },
+    "results_fields": {
+      "Global_SpouseMonthlyGrossIncome": {
+        "fieldLabel": "Ingreso bruto mensual"
+      },
+      "MonthlyExtraExp_AtHome": {
+        "fieldLabel": "Más gastos adicionales si se queda en casa"
+      },
+      "MonthlyExtraExpenses": {
+        "fieldLabel": "Menos gastos adicionales si va a trabajar"
+      },
+      "MonthlyIncomeTaxes": {
+        "fieldLabel": "Menos impuestos sobre la renta"
+      },
+      "MonthlyEmploymentTaxes": {
+        "fieldLabel": "Menos impuestos laborales"
+      },
+      "MonthlyGain": {
+        "fieldLabel": ""
+      }
+    },
+    "fields": {
+      "Global_SpouseMonthlyGrossIncome": {
+        "fieldLabel": "Ingreso bruto mensual"
+      },
+      "Global_MonthlyNontaxableIncome": {
+        "fieldLabel": "Ingresos no gravables mensuales "
+      },
+      "Global_SelfEmployed": {
+        "fieldLabel": "Situación laboral",
+        "dropdownOptions": [
+          {
+            "optionText": "Empleado(a)"
+          },
+          {
+            "optionText": "Trabaja por cuenta propia"
+          }
+        ]
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Tasa impositiva estatal"
+      },
+      "Global_ExtraChildCareCosts": {
+        "fieldLabel": "Cuidado infantil"
+      },
+      "Global_ExtraWorkTransportationCosts": {
+        "fieldLabel": "Transporte para ir al trabajo"
+      },
+      "Global_ExtraWorkClothingCosts": {
+        "fieldLabel": "Vestimenta apropiada para el trabajo"
+      },
+      "Global_ExtraHousekeepingCosts": {
+        "fieldLabel": "Quehaceres domésticos"
+      },
+      "Global_ExtraChildrensEntertainmentCosts": {
+        "fieldLabel": "Entretenimiento de los hijos"
+      },
+      "Global_ExtraEatingOutCosts": {
+        "fieldLabel": "Comer fuera de casa"
+      },
+      "Global_ExtraOtherCostsGoingToWorkStayingAtHome": {
+        "fieldLabel": "Otro(a)"
+      },
+      "Global_ExtraMedicalInsuranceCosts": {
+        "fieldLabel": "Seguro médico"
+      },
+      "Global_ExtraLifeInsuranceCosts": {
+        "fieldLabel": "Seguro de vida"
+      },
+      "Global_ExtraOtherCostsStayingAtHome": {
+        "fieldLabel": "Otro(a)"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Mi cónyuge debe trabajar también?",
+    "answer": "%which% mensual neto del trabajo del cónyuge: <span class='lf-bold'>%amount%</span>",
+    "benefits": "Beneficios vinculados al trabajo",
+    "costs": "Costo vinculado al trabajo",
+    "gain": "Ganancia",
+    "loss": "pérdida",
+    "netMonthly": "%which% mensual neto del trabajo del cónyuge",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a determinar los beneficios financieros netos de tener un cónyuge que devenga un ingreso."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el beneficio total del trabajo y el costo total del trabajo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Beneficio total del trabajo y costo total del trabajo"
+    }
+  ]
+}

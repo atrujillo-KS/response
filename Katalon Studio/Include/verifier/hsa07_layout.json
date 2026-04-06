@@ -1,0 +1,761 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Medical",
+        "Dental",
+        "Vision",
+        "Other",
+        "results"
+      ],
+      "Medical": {
+        "selected": true,
+        "tabLabel": "Medical",
+        "pageTitle": "Medical expense information ",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "AnnualDoctorVisits",
+                "HDHPMDVisit",
+                "MonthlyPrescriptions",
+                "PrescriptionCopay",
+                "otcDrugs",
+                "MedicalDeductible"
+              ]
+            }
+          ]
+        }
+      },
+      "Dental": {
+        "tabLabel": "Dental",
+        "pageTitle": "Dental expense information ",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DentalDeductible",
+                "DentalOop",
+                "BracesDown",
+                "OrthoMonthly",
+                "OrthoPayments",
+                "OrthoCovered"
+              ]
+            }
+          ]
+        }
+      },
+      "Vision": {
+        "tabLabel": "Vision",
+        "pageTitle": "Out-of pocket vision expenses",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "ContactsOop",
+                "EyeSurgeryOop",
+                "SunglassesOop",
+                "EyeGlassesOop"
+              ]
+            }
+          ]
+        }
+      },
+      "Other": {
+        "tabLabel": "Other",
+        "pageTitle": "Other health-related expenses",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "AnnualTherapy",
+                "TherapyCopay",
+                "AnnualChiropractor",
+                "ChiropractorCopay",
+                "AnnualAcupuncture",
+                "AccupunctureCopay"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          "MedicalTotal"
+        ],
+        [
+          "DentalTotal"
+        ],
+        [
+          "VisionTotal"
+        ],
+        [
+          "OtherTotal"
+        ],
+        [
+          "GrandTotal"
+        ]
+      ]
+    },
+    "fields": {
+      "AnnualDoctorVisits": {
+        "fieldLabel": "Yearly doctor visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "yearlyVISITs",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "HDHPMDVisit": {
+        "fieldLabel": "Doctor visit co-pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "MonthlyPrescriptions": {
+        "fieldLabel": "Prescriptions filled monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "PrescriptionCopay": {
+        "fieldLabel": "Prescription co-pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "otcDrugs": {
+        "fieldLabel": "Yearly over-the-counter medical expenses",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "MedicalDeductible": {
+        "fieldLabel": "Yearly medical deductible",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DentalDeductible": {
+        "fieldLabel": "Yearly dental deductible",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "2000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DentalOop": {
+        "fieldLabel": "Out-of-pocket dental fillings & crown costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "700",
+        "value": "700",
+        "minimumValue": "0",
+        "maximumValue": "15000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "BracesDown": {
+        "fieldLabel": "New braces down payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "OrthoMonthly": {
+        "fieldLabel": "Monthly orthodontia costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "OrthoPayments": {
+        "fieldLabel": "# of monthly orthodontia payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "0",
+        "maximumValue": "72",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "72",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "OrthoCovered": {
+        "fieldLabel": "Orthodontia covered by dental plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "ContactsOop": {
+        "fieldLabel": "Contact lenses & supplies expenses",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "2000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000",
+        "widgetStep": "20",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "EyeSurgeryOop": {
+        "fieldLabel": "Corrective eye surgery expenses",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "SunglassesOop": {
+        "fieldLabel": "Prescription sunglasses expense",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "2000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000",
+        "widgetStep": "20",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "EyeGlassesOop": {
+        "fieldLabel": "Prescription eyeglasses expense",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "2000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000",
+        "widgetStep": "20",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "AnnualTherapy": {
+        "fieldLabel": "Yearly mental health professional visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "52",
+        "value": "52",
+        "minimumValue": "0",
+        "maximumValue": "365",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "TherapyCopay": {
+        "fieldLabel": "Mental health professional visit co-pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "35",
+        "value": "35",
+        "minimumValue": "0",
+        "maximumValue": "250",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "AnnualChiropractor": {
+        "fieldLabel": "Yearly chiropractor visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "52",
+        "value": "52",
+        "minimumValue": "0",
+        "maximumValue": "365",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "ChiropractorCopay": {
+        "fieldLabel": "Chiropractor visit co-pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "35",
+        "value": "35",
+        "minimumValue": "0",
+        "maximumValue": "250",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "AnnualAcupuncture": {
+        "fieldLabel": "Yearly acupuncture visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "52",
+        "value": "52",
+        "minimumValue": "0",
+        "maximumValue": "365",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "AccupunctureCopay": {
+        "fieldLabel": "Acupuncture visit co-pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "35",
+        "value": "35",
+        "minimumValue": "0",
+        "maximumValue": "250",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "MedicalTotal": {
+        "fieldLabel": "Medical"
+      },
+      "DentalTotal": {
+        "fieldLabel": "Dental"
+      },
+      "VisionTotal": {
+        "fieldLabel": "Vision"
+      },
+      "OtherTotal": {
+        "fieldLabel": "Other"
+      },
+      "GrandTotal": {
+        "fieldLabel": "Total"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Spent",
+    "title": "How much will I spend on HSA-eligible health care?",
+    "answer": "You will spend <span class='lf-bold'>$%result%</span> on health related expenses a year",
+    "selectors": [
+      {
+        "label": "Annual health care expenses",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "medical": "Medical",
+    "dental": "Dental",
+    "vision": "Vision",
+    "other": "Other"
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "This tool helps you figure out how much you will spend on HSA eligible health related expenses in a given year."
+    },
+    {
+      "textLabel": "For IRS help concerning health savings accounts including what constitutes an eligible health care expense, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of the total spent on health related expenses by medical, dental, vision and other expenses."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the total spent on health related expenses by medical, dental, vision and other expenses"
+    }
+  ]
+}

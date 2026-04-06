@@ -1,0 +1,111 @@
+{
+  "layout": {
+    "results": {
+      "columnHeaders": [
+        "Loan 1"
+      ]
+    },
+    "fields": {
+      "Business_DaysToMakeFullPayment": {
+        "fieldLabel": "Días para hacer el pago completo"
+      },
+      "Business_DaysToMakeEarlyPayment": {
+        "fieldLabel": "Días para hacer el pago anticipado"
+      },
+      "Business_TradeDiscount": {
+        "fieldLabel": "Descuento comercial"
+      },
+      "Business_TotalYearlyTradeInvoice": {
+        "fieldLabel": "Factura comercial anual total",
+        "smallLabel": "(estimación)"
+      },
+      "Business_LOCInterestRate": {
+        "fieldLabel": "Factura comercial anual total"
+      }
+    },
+    "results_fields": {
+      "AnnualInterestRate": {
+        "fieldLabel": "Tasa de interés anual sobre el descuento comercial"
+      },
+      "LoanInterestRate": {
+        "fieldLabel": "Tasa de interés del préstamo (costo del préstamo)"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Pagos de facturas",
+    "title": "¿Debería aprovechar los descuentos comerciales?",
+    "answer": "Aprovechar los descuentos comerciales reducirá los pagos anuales de facturas en <span class='lf-bold'>%amount%</span>",
+    "answer2": "Aprovechar los descuentos comerciales no reducirá los pagos anuales de facturas",
+    "withDiscount": "Con descuentos comerciales",
+    "withoutDiscount": "Sin descuentos comerciales",
+    "selectors": [
+      {
+        "label": "Pagos anuales de facturas",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "earlypaymentdays": {
+      "title": "Días para hacer el pago anticipado",
+      "definition": "Si su proveedor le proporciona crédito comercial, es posible que le ofrezca un descuento comercial si usted paga la factura anticipadamente. En general, la cantidad de días para el pago anticipado es 10 y el descuento es del 2 % al 3 % del monto de la factura."
+    },
+    "tradefinancing": {
+      "title": "Financiación comercial",
+      "definition": "El proceso de usar el crédito comercial para pagar facturas adeudadas a proveedores y abastecedores."
+    },
+    "annualinterestrateontradediscount": {
+      "title": "Tasa de interés anual sobre el descuento comercial",
+      "definition": "La tasa de interés que usted le ahorra a su proveedor por pagarle anticipadamente."
+    },
+    "paymentduedays": {
+      "title": "Días para hacer el pago completo",
+      "definition": "Si su proveedor le proporciona crédito comercial, usted tiene cierta cantidad de días para efectuar el pago sin penalización. En general, la cantidad de días es 30 y la fecha de vencimiento de pago comienza en la fecha de vencimiento de la factura."
+    },
+    "tradecredit": {
+      "title": "Crédito comercial",
+      "definition": "El privilegio de tomar dinero prestado de un proveedor. Un proveedor puede ofrecer términos de crédito comercial que le permitan recibir un descuento en su factura para pagar antes de la fecha de vencimiento."
+    },
+    "tradeinvoice": {
+      "title": "Factura comercial",
+      "definition": "La notificación de facturación que usted recibe de un proveedor que le ofrece crédito comercial. La factura detalla el monto adeudado, los artículos enviados y las instrucciones de pago específicas."
+    },
+    "tradediscount": {
+      "title": "Descuento comercial",
+      "definition": "El porcentaje de descuento que usted recibe de un proveedor o abastecedor si hace un pago anticipado. A menudo, un proveedor le ofrecerá un descuento de 2 o 3 puntos porcentuales del precio de la factura si usted paga anticipadamente."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Cuando compra productos con crédito, un proveedor puede ofrecerle un descuento si paga anticipadamente. Este incentivo se llama un descuento sobre el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeCredit\">crédito comercial</a></span>. Por ejemplo, un proveedor puede ofrecerle términos comerciales de \"un pago neto a 30 días con 2 % de descuento si se paga dentro de 10 días\". Estos términos de crédito le ofrecen un 2 % de descuento si usted paga en un plazo de 10 días a partir de la fecha de la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeInvoice\">factura</a></span>. De lo contrario, el pago del saldo adeudado debe realizarse en un plazo de 30 días a partir de la fecha de la factura."
+    },
+    {
+      "textLabel": "Usted debería aprovechar el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#tradeDiscount\">descuento comercial</a></span> si la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#annualInterestRateOnTradeDiscount\">tasa de interés anual sobre el descuento comercial</a></span> es más alta que su costo de pedir un préstamo."
+    },
+    {
+      "textLabel": "El <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeFinancing\">financiamiento comercial</a></span> es el proceso de utilizar <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#tradeCredit\">crédito comercial</a></span> para pagar a sus proveedores y abastecedores. Si la tasa de interés vigente es más alta que el costo de pedir un préstamo y el flujo de efectivo es limitado, es posible que desee pedir un préstamo para pagar anticipadamente en lugar de usar dinero en efectivo."
+    },
+    {
+      "textLabel": "Las tasas de interés se basan en un año de 360 días."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la diferencia en el total anual de pagos de facturas con y sin el descuento comercial."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el total anual de pagos de facturas con y sin el descuento comercial"
+    }
+  ]
+}

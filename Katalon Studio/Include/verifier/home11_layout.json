@@ -1,0 +1,436 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CurrentLoan",
+        "NewLoan"
+      ],
+      "CurrentLoan": {
+        "tabLabel": "Current Loan",
+        "fields": [
+          "Home_CurrentLoanAmount",
+          "Home_LoanTermInYears",
+          "Home_YearsAlreadyPaid",
+          "Home_CurrentLoanInterestRate"
+        ]
+      },
+      "NewLoan": {
+        "tabLabel": "New Loan",
+        "fields": [
+          "Home_SecondLoanTermInYears",
+          "Home_RefinanceInterestRate",
+          "Home_ClosingCostsPercentage",
+          "Home_FinanceClosingCosts",
+          "Home_CashOutAmount"
+        ]
+      }
+    },
+    "fields": {
+      "Home_CurrentLoanAmount": {
+        "fieldLabel": "Original loan amount",
+        "smallLabel": "",
+        "glossaryTerm": "breakevenpoint",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_YearsAlreadyPaid": {
+        "fieldLabel": "Years already paid",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Home_LoanTermInYears",
+          "Home_YearsAlreadyPaid"
+        ]
+      },
+      "Home_CurrentLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "6.500",
+        "value": "6.500",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Term",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "term",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_ClosingCostsPercentage": {
+        "fieldLabel": "Closing costs (% of new loan amount)",
+        "smallLabel": "",
+        "glossaryTerm": "closingcosts",
+        "format": "percent",
+        "defaultValue": "3.500",
+        "value": "3.500",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_FinanceClosingCosts": {
+        "fieldLabel": "Finance closing costs",
+        "smallLabel": "",
+        "glossaryTerm": "financeclosingcosts",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number",
+        "crossFields": [
+          "Home_LoanTermInYears",
+          "Home_YearsAlreadyPaid"
+        ]
+      },
+      "Home_RefinanceInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "3.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_CashOutAmount": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cash-out amount",
+        "defaultValue": "0",
+        "glossaryTerm": "cashoutamount",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "maxlength": "8",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "10000",
+        "value": "0",
+        "format": "currency"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Current Loan",
+        "Refi"
+      ],
+      "fields": [
+        [
+          "Home_RemainingLoanAmountCurrentLoan",
+          "Home_RemainingLoanAmountRefinanceLoan"
+        ],
+        [
+          "Home_MonthlyPaymentCurrentLoan",
+          "Home_MonthlyPaymentRefinanceLoan"
+        ],
+        [
+          "Home_RemainingInterestCurrentLoan",
+          "Home_RemainingInterestRefinanceLoan"
+        ],
+        [
+          "Home_YearsUntilPayoffCurrentLoan",
+          "Home_YearsUntilPayoffRefinanceLoan"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "Home_RemainingLoanAmountCurrentLoan": {
+        "fieldLabel": "Remaining loan amount"
+      },
+      "Home_MonthlyPaymentCurrentLoan": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Home_RemainingInterestCurrentLoan": {
+        "fieldLabel": "Remaining interest"
+      },
+      "Home_YearsUntilPayoffCurrentLoan": {
+        "fieldLabel": "Years until payoff"
+      },
+      "Home_RemainingLoanAmountRefinanceLoan": {
+        "fieldLabel": "Remaining loan amount"
+      },
+      "Home_MonthlyPaymentRefinanceLoan": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Home_RemainingInterestRefinanceLoan": {
+        "fieldLabel": "Remaining interest"
+      },
+      "Home_YearsUntilPayoffRefinanceLoan": {
+        "fieldLabel": "Years until payoff"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Monthly payment",
+    "dataTableCategory2": "Remaining interest",
+    "title": "Am I better off refinancing?",
+    "answer": "Refinancing is estimated to %lowerincrease% your monthly payment by <span class='lf-bold'>$%result%</span> and <span class='lf-bold'>%savecost%</span> you <span class='lf-bold'>$%result1%</span> in total interest.%breakeven%",
+    "selectors": [
+      {
+        "label": "Payments",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Remaining Interest",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Current Loan",
+            "label": "Current Loan"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Refinanced Loan",
+            "label": "Refinanced Loan"
+          }
+        ]
+      }
+    ],
+    "breakEvenPoint": "break even point",
+    "CurrentLoan": "Current Loan",
+    "RefiLoan": "Refinanced Loan",
+    "save": "save",
+    "cost": "cost",
+    "lower": "lower",
+    "increase": "increase",
+    "currentLoan": "Current Loan",
+    "existingLoan": "Current Loan",
+    "refinancedLoan": "Refinanced Loan",
+    "outOfPocketExpenses": "Out-of-pocket expenses",
+    "yearsInHome": "Years in home",
+    "year": "Year",
+    "TotIntPaid": "Total interest paid",
+    "breakeven": " Your break-even point is approximately %breakeven% months. <span class='lf_AnswerTooltip'></span>",
+    "tableHeaders": [
+      [
+        "Remaining month",
+        "Monthly payment",
+        "Ending Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Ending Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "cashoutamount": {
+      "title": "Cash-out amount",
+      "definition": "If you have enough equity in your home, you may be able to take cash out during a refinance to spend on things like home improvement or paying off other high-interest debt. In a cash-out refinance, you borrow more than you owe on your previous mortgage and pocket the difference. The amount of cash you can receive depends on a number of factors, including the loan type, your lender's standards, your property's loan-to-value ratio, and your credit worthiness."
+    },
+    "breakevenpoint": {
+      "title": "Break-even point",
+      "definition": "The length of time it will take to recoup your refinance closing costs in monthly payment savings. If you stay in your house beyond the break-even point, you save on the loan."
+    },
+    "refinancing": {
+      "title": "Refinancing",
+      "definition": "Replacing an older loan with a new loan offering better terms, e.g. a lower interest rate, fixed vs. variable rate (or vice versa), or no balloon payment."
+    },
+    "costanalysis": {
+      "title": "Cost-benefit analysis",
+      "definition": "An analysis of the cost effectiveness of different alternatives in order to see whether the benefits outweigh the costs."
+    },
+    "closingcosts": {
+      "title": "Closing costs",
+      "definition": "The total expenses that the buyer pays at the time a real estate transaction is completed, e.g. application fees, underwriting and loan-origination fees, etc. Average refinance closing costs range between 2 percent to 5 percent of the refinance loan amount."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "financeclosingcosts": {
+      "title": "Finance closing costs",
+      "definition": "If you want to avoid any upfront costs of refinancing, you may be able to \"roll\" or include them in your new loan amount. This strategy will cost more in the long run since you end up paying interest on your closing costs."
+    },
+    "settlementcharges": {
+      "title": "Settlement Charges",
+      "definition": "Also known as closing costs, these are the customary costs above and beyond the sales price that must be paid to cover the transfer of ownership at closing."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates whether the decision to <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#refinancing\">refinance</a></span> your mortgage loan is a good one based on the terms you enter for your current loan and for the refinance loan that you are considering. The most common reasons for refinancing include lowering the interest rate, switching your mortgage type,  paying off your loan faster, and withdrawing cash from your home equity."
+    },
+    {
+      "textLabel": "Refinancing generally makes sense if you can lower your monthly payment by enough to cover the associated <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#settlementcharges\">closing costs</a></span> before selling your home or paying off the loan."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the payments for both the current loan and the refinanced loan."
+    },
+    {
+      "title": "Column chart of the remaining interest for both the current loan and the refinanced loan."
+    },
+    {
+      "title": "Amortization table for the current loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Payments for both the current loan and the refinanced loan"
+    },
+    {
+      "title": "Remaining Interest for both the current loan and the refinanced loan"
+    }
+  ]
+}

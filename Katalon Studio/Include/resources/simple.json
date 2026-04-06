@@ -1,0 +1,210 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I convert my IRA into a Roth IRA?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=#lf-next-steps-zoneA-content > div.webMessagingContentContainer",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Convert All Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "Invest Only Future Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-2:nth-child(3)",
+      "value": "Do Not Convert"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Convert All Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "Invest Only Future Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-2:nth-child(3)",
+      "value": "Do Not Convert"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyVisible": {
+      "id": "lf_save_print_share"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_print_share"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Save, print and share your results"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_enter_email_label",
+      "value": "Enter your email address to:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_save_label",
+      "value": "Save your results by emailing a link to this page"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_print_label",
+      "value": "Print your results from a print-friendly version"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_share_label",
+      "value": "Share your results in an email to your friends or family"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_address_label",
+      "value": "Enter your email address:"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_privacy_policy_label",
+      "value": "Privacy Policy"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_privacy_policy_label"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='post-3']/div/div/div/div/div/div/p",
+      "value": "Your privacy is important to us. This On-line Privacy Policy explains how we collect and use information."
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_local"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf-email-address",
+      "value": "RothIRA0@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-submit"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-email-message",
+      "value": "Thank You. Your report will be sent shortly."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_print_share_dialog_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-next-steps-zoneB1",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  }
+]

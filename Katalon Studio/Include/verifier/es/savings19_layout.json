@@ -1,0 +1,151 @@
+{
+  "layout": {
+    "tabs": {
+      "First_CD": {
+        "tabLabel": "Primer CD"
+      },
+      "Second_CD": {
+        "tabLabel": "Segundo CD"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Intereses Devengados",
+        "Valor al vencimiento"
+      ]
+    },
+    "results_fields": {
+      "Savings_FirstCDInterestEarned_Output": {
+        "fieldLabel": "Primer CD"
+      },
+      "Savings_FirstCDValueAtMaturity_Output": {
+        "fieldLabel": "Primer CD"
+      },
+      "Savings_SecondCDInterestEarned_Output": {
+        "fieldLabel": "Segundo CD"
+      },
+      "Savings_SecondCDValueAtMaturity_Output": {
+        "fieldLabel": "Segundo CD"
+      }
+    },
+    "fields": {
+      "Savings_FirstCDInitialDeposit": {
+        "fieldLabel": "Importe del depósito",
+        "smallLabel": ""
+      },
+      "Savings_SecondCDInitialDeposit": {
+        "fieldLabel": "Importe del depósito",
+        "smallLabel": ""
+      },
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "Plazo del depósito",
+        "smallLabel": "(en meses)",
+        "valueTextLabel": "months"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "Plazo del depósito",
+        "smallLabel": "(en meses)",
+        "valueTextLabel": "months"
+      },
+      "Savings_FirstCDInterestRate": {
+        "fieldLabel": "Tasa de interés",
+        "smallLabel": ""
+      },
+      "Savings_SecondCDInterestRate": {
+        "fieldLabel": "Tasa de interés",
+        "smallLabel": ""
+      },
+      "Savings_FirstCDCompoundingFrequency": {
+        "fieldLabel": "Frecuencia del interés compuesto",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_SecondCDCompoundingFrequency": {
+        "fieldLabel": "Frecuencia del interés compuesto",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Qué CD ganará más?",
+    "answer1": "El <span class='lf-bold'>%moreCD%</span> devengará <span class='lf-bold'>$%moreCDInterestEarned%</span> de intereses, <span class='lf-bold'>$%Savings_AbsoluteCDInterestDifference_Output%</span> <span class='lf-bold'>más</span> que el <span class='lf-bold'>%lessCD%</span>.",
+    "answer2": "<span class='lf-bold'>Ambos CDs</span> devengarán <span class='lf-bold'>$%Savings_FirstCDInterestEarned_Output%</span> de intereses.",
+    "selectors": [
+      {
+        "label": "Intereses Devengados"
+      },
+      {
+        "label": "Valor al vencimiento"
+      }
+    ],
+    "FIRST_CD": "Primer CD",
+    "SECOND_CD": "Segundo CD"
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "Monto del CD",
+      "definition": "El monto del certificado de depósito es el monto que deposita para comprar un CD. Usted deposita el valor nominal de un certificado de depósito y recibe ese el valor nominal a su vencimiento. Durante el plazo del certificado de depósito, usted cobra intereses a una tasa de interés fija o variable. Los CD se venden en denominaciones de $500 a $250,000."
+    },
+    "cdinterestrate": {
+      "title": "Tasa de interés del CD",
+      "definition": "Ingrese la tasa de interés anual de sus CD. Esta tasa se denomina tasa de interés simple. Si el interés es compuesto, usted obtendrá un porcentaje de rendimiento anual (APY, por sus siglas en inglés) que es mayor que el índice indicado."
+    },
+    "cdcompoundingfrequency": {
+      "title": "Frecuencia de aplicación de interés compuesto sobre el CD",
+      "definition": "Ingrese la cantidad de veces al año que recibe interés compuesto sobre su CD. El interés compuesto aumenta la cantidad de intereses que usted gana en un certificado de depósito. Por ejemplo, si la institución otorga intereses compuestos cada tres meses (trimestralmente) sobre un CD con una tasa simple del 10 %, su porcentaje de rendimiento anual (APY) es del 10,38 %. Si otorga intereses compuestos mensualmente, usted gana 10.47 %. Si otorga intereses compuestos diariamente, usted gana 10.52%. Para un depósito de $10,000, los intereses compuestos diarios se suman a un interés adicional de $52 que usted gana sobre el rendimiento simple."
+    },
+    "cddepositterm": {
+      "title": "Plazo del depósito del CD",
+      "definition": "Es el período para el cual usted deposita dinero en un certificado de depósito (CD). La mayoría de los plazos de depósito comunes son 3, 6 y 12 meses. Si desea vender su CD antes de su fecha de vencimiento, la institución financiera que lo mantiene probablemente le cobrará una penalidad por rescate anticipado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar qué CD generará más intereses, así como al valor de cada CD al vencimiento."
+    },
+    {
+      "textLabel": "Los CD son depósitos a plazo que están garantizados hasta $250,000 dólares por depositante y entidad por la Corporación Federal de Seguros de Depósitos (FDIC) de Estados Unidos o la Administración Nacional de Cooperativas de Crédito (NCUA) en el caso de las cooperativas de crédito. Como los CD están asegurados por el gobierno federal, se consideran inversiones relativamente seguras."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el interés devengado por cada uno de los dos CD."
+    },
+    {
+      "title": "Gráfico de columnas que compara el valor al vencimiento de cada uno de los dos CD."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Interés devengado por cada uno de los dos CD"
+    },
+    {
+      "title": "Valor al vencimiento de cada uno de los dos CD"
+    }
+  ]
+}

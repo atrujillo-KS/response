@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Tax rates</name>
+   <tag></tag>
+   <elementGuidId>82550018-abd3-4582-b2c4-1222d32d8137</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-term</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='lf-tooltip-term']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cd17d154-af1c-4258-8439-99475b10bd9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-term</value>
+      <webElementGuid>93513a12-ab84-4f94-b25e-5200e8f36e37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Tax rates</value>
+      <webElementGuid>8e5c8eba-55cb-4f29-9a95-685860973b93</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tax rates</value>
+      <webElementGuid>5be7b720-d2e7-498c-8b0b-d49c103e9d70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-term&quot;)</value>
+      <webElementGuid>a0a8d626-1218-4613-99b3-6f3a31818bfe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='lf-tooltip-term']</value>
+      <webElementGuid>3f5b573d-246f-4f28-a9cb-38b2325161f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/dfn/h2/span</value>
+      <webElementGuid>071bb852-2409-43c0-9c3f-ec9342fad196</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[2]/following::span[2]</value>
+      <webElementGuid>622c9032-d8e1-48db-b358-4b654dbda819</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025 Leadfusion'])[1]/following::span[2]</value>
+      <webElementGuid>94de03c8-edb6-4045-8049-ad8826ffcfd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[3]/preceding::span[2]</value>
+      <webElementGuid>7d6fd3f8-0622-4afe-856f-95840aa4e908</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[3]/preceding::span[3]</value>
+      <webElementGuid>ff37713e-db42-4e78-8a42-927f8d64641f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tax rates']/parent::*</value>
+      <webElementGuid>d37a7c42-ab41-4363-8d3c-adc984aedfd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dfn/h2/span</value>
+      <webElementGuid>53ae0a3e-c8e6-4db9-be75-d0e524d6fdef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'lf-tooltip-term' and (text() = 'Tax rates' or . = 'Tax rates')]</value>
+      <webElementGuid>6cdbdca5-ed75-4e52-9231-6f634976202f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

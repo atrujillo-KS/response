@@ -1,0 +1,304 @@
+{
+  "layout": {
+    "tabs": {
+      "LoanInfo": {
+        "tabLabel": "Información del préstamo"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      },
+      "OriginationFees": {
+        "tabLabel": "Comisiones por originación"
+      },
+      "OtherSettlementServices": {
+        "tabLabel": "Otros servicios de liquidación "
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_AppraisalFee": {
+        "fieldLabel": "Evaluación"
+      },
+      "Home_CreditReportFee": {
+        "fieldLabel": "Informe de crédito"
+      },
+      "Home_FloodCertificationFee": {
+        "fieldLabel": "Certificación de Inundaciones"
+      },
+      "Home_TaxServiceFee": {
+        "fieldLabel": "Servicio de Impuestos"
+      },
+      "Home_TitleServicesFee": {
+        "fieldLabel": "Servicios de Título"
+      },
+      "Home_OwnersTitleInsuranceFee": {
+        "fieldLabel": "Seguro de título del propietario"
+      },
+      "Home_GovernmentRecordingFees": {
+        "fieldLabel": "Gastos de registro del Gobierno"
+      },
+      "Home_TransferTaxes": {
+        "fieldLabel": "Los impuestos de transferencia"
+      },
+      "Home_SurveyFee": {
+        "fieldLabel": "Estudio"
+      },
+      "Home_PestInspectionFee": {
+        "fieldLabel": "Inspección de plagas"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Cuáles serán mis gastos de otorgamiento del préstamo?",
+    "answer": "Sus gastos de otorgamiento del préstamo estimados totales serán de <span class='lf-bold'>%result%</span>.",
+    "princAndInt": "Capital e intereses",
+    "taxAndIns": "Impuestos y seguro",
+    "mortIns": "Seguro hipotecario privado ",
+    "selectors": [
+      {
+        "label": "Gastos de otorgamiento del préstamo",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pago",
+        "width": "33%"
+      },
+      {
+        "label": "Desglose",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Desglose de los gastos de otorgamiento del préstamo"
+          }
+        ]
+      }
+    ],
+    "resultTable": [
+      {
+        "label": "Total de cargos de creaciones Ajustado",
+        "dataElementName": "AdjOrigCharges"
+      },
+      {
+        "label": "Originación de carga",
+        "dataElementName": "LenderOrigCharge"
+      },
+      {
+        "label": "Cargo por puntos de descuento",
+        "dataElementName": "ChargeAmountForSpecificInterestRate"
+      },
+      {
+        "label": "Total Otros servicios de liquidación",
+        "dataElementName": "ChargesForAllSettlementServices"
+      },
+      {
+        "label": "Evaluación",
+        "dataElementName": "Home_AppraisalFee"
+      },
+      {
+        "label": "Informe de crédito",
+        "dataElementName": "Home_CreditReportFee"
+      },
+      {
+        "label": "Certificación de Inundaciones",
+        "dataElementName": "Home_FloodCertificationFee"
+      },
+      {
+        "label": "Servicio de Impuestos",
+        "dataElementName": "Home_TaxServiceFee"
+      },
+      {
+        "label": "Servicios de Título",
+        "dataElementName": "Home_TitleServicesFee"
+      },
+      {
+        "label": "Seguro de título del propietario",
+        "dataElementName": "Home_OwnersTitleInsuranceFee"
+      },
+      {
+        "label": "Gastos de registro del Gobierno",
+        "dataElementName": "Home_GovernmentRecordingFees"
+      },
+      {
+        "label": "Los impuestos de transferencia",
+        "dataElementName": "Home_TransferTaxes"
+      },
+      {
+        "label": "Estudio",
+        "dataElementName": "Home_SurveyFee"
+      },
+      {
+        "label": "Inspección de plagas",
+        "dataElementName": "Home_PestInspectionFee"
+      },
+      {
+        "label": "Depósito de cuenta de garantía inicial",
+        "dataElementName": "InitDepositForEscrow"
+      },
+      {
+        "label": "Intereses anticipados",
+        "dataElementName": "DailyInterestCharge"
+      },
+      {
+        "label": "Seguro de vivienda",
+        "dataElementName": "HomeownerIns"
+      },
+      {
+        "label": "Total de costos estimados de cierre",
+        "dataElementName": "TotEstimatedSettlementCharges"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "requiredservicesselectedbylender": {
+      "title": "Servicios obligatorios seleccionados por el prestamista",
+      "definition": "Cargos por servicios necesarios para completar la liquidación de su hipoteca cuando el prestador de los servicios es elegido por el prestamista."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "fees": {
+      "title": "Comisiones (puntos de hipoteca y comisiones varias)",
+      "definition": "Las comisiones incluyen los puntos de hipoteca y los gastos de suscripción y originación de un préstamo hipotecario. Un punto equivale al 1% del monto del préstamo. El IRS considera que los puntos son una forma de intereses anticipados. Los gastos incluyen comisiones de tasación, investigación de título, registro de documentos e impuestos a la transferencia. Los gastos totales de cierre de la operación incluyen estas comisiones, intereses anticipados al primer pago de la hipoteca, y los pagos anticipados para el seguro del propietario de vivienda y los impuestos sobre la propiedad."
+    },
+    "settlementcharges": {
+      "title": "Cargos por liquidación",
+      "definition": "También llamados costos de cierre, son los costos habituales por encima del precio de venta que deben pagarse para cubrir la transferencia de propiedad en la operación de cierre."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "points": {
+      "title": "Puntos",
+      "definition": "Los puntos también se denominan puntos de descuento, puntos hipotecarios, puntos de descuento del préstamo, comisiones de apertura del préstamo y gastos máximos del préstamo. Un punto equivale al 1% del importe del préstamo. Por ejemplo, un punto sobre un préstamo de $150,000 es $1,500. Los prestamistas consideran los puntos hipotecarios como intereses que usted paga por adelantado. Por lo tanto, cuantos más puntos pague al cerrar el préstamo, más bajo será el tipo de interés. Si reúne los requisitos, es posible que pueda deducir los puntos hipotecarios a efectos fiscales el año en que cierre el préstamo. De lo contrario, tendrá que amortizar los puntos pagados a lo largo del plazo del préstamo."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "initdepositforescrow": {
+      "title": "Depósito inicial para su cuenta de depósito en garantía",
+      "definition": "Pagos que usted realiza por adelantado para primas de seguro de propietarios de vivienda e impuestos sobre los bienes raíces."
+    },
+    "dailyinterestcharge": {
+      "title": "Cargos por intereses diarios",
+      "definition": "Los cargos por intereses diarios, o interés prepago, es el interés que usted paga al prestamista por adelantado, a menudo cuando cierra un préstamo."
+    },
+    "requiredservicesyoucanshopfor": {
+      "title": "Servicios necesarios que puede comparar",
+      "definition": "Gastos por servicios necesarios para completar la liquidación de la hipoteca que el prestatario puede comparar."
+    },
+    "prepaidinterest": {
+      "title": "Intereses anticipados",
+      "definition": "Los intereses anticipados son el interés que tú pagas al prestamista por anticipado, a menudo cuando cierra un préstamo. Si tú cierras un préstamo antes del fin del mes, el prestamista te requerirá que pagues los intereses que corresponden a la cantidad de días hasta el fin del mes. Esta es una forma de intereses anticipados. Los analistas que calculan los intereses anticipados suponen que la fecha de cierre del préstamo es el punto medio de un mes de 30 días. Como resultado, los intereses anticipados se calculan para 15 días. El IRS reconoce los puntos que tú pagas al cierre del préstamo como intereses anticipados. Un punto equivale al 1% del monto del préstamo. Si tú cumples con una lista de requerimientos, el IRS te permite deducir estos puntos en el primer año de tu préstamo hipotecario."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "appraisal": {
+      "title": "Tasación",
+      "definition": "La tasación es el proceso de estimación del justo valor de mercado de un activo. Para las transacciones con bienes inmuebles se requieren tasaciones de rutina.  Un tasador debe ser un profesional certificado. Debe ser una parte independiente en la transacción a fin de evitar posibles conflictos de intereses. Los tasadores de bienes inmuebles utilizan métodos que son prácticas habituales en el ámbito local. El método de ventas comparables está sumamente difundido para la tasación de bienes inmuebles."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "Siglas que designan el capital del préstamo, los interés, los impuestos sobre la propiedad y el seguro del propietario de vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta de cálculo calcula los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#settlementcharges\">cargos por liquidación</a></span> (o costos de cierre) de su hipoteca para un conjunto dado de términos del préstamo. La herramienta de cálculo agrupa los cargos por liquidación en dos categorías: <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#origchargeamount\">cargos por originación</a></span> y <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#othersettlementservices\">otros servicios de liquidación</a></span>."
+    },
+    {
+      "textLabel": "Si ingresa un monto de préstamo superior al 80% del precio de compra de la vivienda, la herramienta de cálculo estima un monto mensual para el seguro hipotecario privado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#pmi\">PMI</a></span>). Los prestamistas hipotecarios generalmente le exigen que obtenga un seguro hipotecario si su pago inicial es inferior al 20% del precio de compra de la vivienda."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose de los costos de cierre totales estimados por el total de cargos de originación ajustados y el total de otros cargos de liquidación."
+    },
+    {
+      "title": "Gráfico circular del desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro de propietarios."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose de los costos de cierre totales estimados por el total de cargos de originación ajustados y el total de otros cargos de liquidación"
+    },
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro de propietarios"
+    }
+  ]
+}

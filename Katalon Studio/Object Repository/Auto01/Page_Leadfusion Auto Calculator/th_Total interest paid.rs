@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Total interest paid</name>
+   <tag></tag>
+   <elementGuidId>0e6671cf-094a-4a10-b413-bd9f0e0fe027</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='lf_TotIntPaidAuto01_result_label']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_TotIntPaidAuto01_result_label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=rowheader[name=&quot;Total interest paid&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>c8e9f8c3-46e4-4a73-95b6-8d9422ca1547</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_TotIntPaidAuto01_result_label</value>
+      <webElementGuid>38e75f47-729c-4ae5-9654-7d1947df377f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA</value>
+      <webElementGuid>30f4bee7-9544-4790-a226-babff472cacc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>95d8dfde-cab1-4d29-b363-1509e5eda17a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Total interest paid
+                                        </value>
+      <webElementGuid>f650f843-317c-46ab-88bb-6fc16755ba95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_TotIntPaidAuto01_result_label&quot;)</value>
+      <webElementGuid>86bfd2e4-6e56-417a-a34e-54deea7aeecd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@id='lf_TotIntPaidAuto01_result_label']</value>
+      <webElementGuid>7cad6e1d-588f-4f90-b462-604e09aedf27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='lf_TotIntPaidAuto01_results']/th</value>
+      <webElementGuid>4256d43d-e70c-4d5d-80ab-06130e13491a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$233'])[1]/following::th[1]</value>
+      <webElementGuid>2bfec1e1-6a8c-4a35-80ed-7b05ab02ff6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$875'])[1]/following::th[1]</value>
+      <webElementGuid>6db76ae8-c1ca-466b-8f3b-fa0a45caa8d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$4,005'])[1]/preceding::th[1]</value>
+      <webElementGuid>54f98a34-59d2-46d1-9fa5-9d5974f1ac14</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$1,163'])[1]/preceding::th[1]</value>
+      <webElementGuid>51975081-d23e-45ce-b144-f84cba0c4c19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Total interest paid']/parent::*</value>
+      <webElementGuid>eccc2be4-194c-487b-8546-f4b450e62950</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/th</value>
+      <webElementGuid>4f0893ff-9797-4d13-9cc1-d38ddf70fea8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[@id = 'lf_TotIntPaidAuto01_result_label' and (text() = '
+                                            Total interest paid
+                                        ' or . = '
+                                            Total interest paid
+                                        ')]</value>
+      <webElementGuid>85fe0ad8-ed44-4a40-b437-2a5cce5a635a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

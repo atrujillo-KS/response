@@ -1,0 +1,686 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.pnc.com/response/lf-pnc/calc/heloc?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The PNC Choice Home Equity Line of Credit could cost you approximately $9,300 more overall, $2,300 more after 5 years, and $20 more monthly on average."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "PNC Choice HELOC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Other Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalPrincipalPaidNoTeaserRate_result_label",
+      "value": "Total principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalPrincipalPaidNoTeaserRate_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalPrincipalPaidOtherLoan_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalInterestPaidNoTeaserRate_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalInterestPaidNoTeaserRate_result_value",
+      "value": "$19,946"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalInterestPaidOtherLoan_result_value",
+      "value": "$10,261"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalFeesPaidNoTeaserRate_result_label",
+      "value": "Total fees (Annual + Origination) i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalFeesPaidNoTeaserRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditLine_TotalFeesPaidNoTeaserRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Total fees (Annual + Origination)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//p[@id='lf-tooltip-text']/p",
+      "value": "Annual fee (during draw period): $50. The annual fee is charged by the second billing cycle following account opening and each year thereafter on the anniversary date of the client's line of credit during the draw period."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//p[@id='lf-tooltip-text']/p[2]",
+      "value": "The draw period for a PNC CHELOC is 10 years; For this comparison, the Annual fee is multiplied times ten for each year of the draw period ($50 x 10years = $500)."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//p[@id='lf-tooltip-text']/p[3]",
+      "value": "Origination Fee: This is a one-time fee payable with the first monthly billing statement after account opening."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalFeesPaidNoTeaserRate_result_value",
+      "value": "$699"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalFeesPaidOtherLoan_result_value",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalCostNoTeaserRate_result_label",
+      "value": "Total cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_TotalCostOtherLoan_result_value",
+      "value": "$20,361"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_3YearCostNoTeaserRate_result_label",
+      "value": "Cost after 3 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_3YearCostOtherLoan_result_value",
+      "value": "$2,768"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_5YearCostNoTeaserRate_result_label",
+      "value": "Cost after 5 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_5YearCostOtherLoan_result_value",
+      "value": "$4,404"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_10YearCostNoTeaserRate_result_label",
+      "value": "Cost after 10 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_10YearCostOtherLoan_result_value",
+      "value": "$8,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AverageMonthlyPaymentNoTeaserRate_result_label",
+      "value": "Average payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AverageMonthlyPaymentOtherLoan_result_value",
+      "value": "$56"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_EffectiveInterestRateNoTeaserRate_result_label",
+      "value": "Effective interest rate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-CommonLoan div.lf-legend.lf-accordian-legend.lf-open h3 a",
+      "value": "Information Common to Both"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ZipCode-label",
+      "value": "ZIP Code"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-label",
+      "value": "Total line amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-error-message",
+      "value": "Must be between $1.00 and $2,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_InitialDrawAmount-label",
+      "value": "Initial draw amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_InitialDrawAmount",
+      "value": "10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_InitialDrawAmount-error-message",
+      "value": "Must be between $NaN and $1,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_PropertyUse-label",
+      "value": "Home use"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_PropertyUse",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-label",
+      "value": "Amount owed on home"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "150,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-error-message",
+      "value": "Must be between $0.00 and $100,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Value of home"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "300,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1.00 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "PNC-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-PNC.lf-open div.lf-legend.lf-accordian-legend.lf-open h3 a",
+      "value": "PNC Choice HELOC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOCInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOCAnnualFee-label",
+      "value": "Annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNC_LOCAnnualFee",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOCAnnualFee-error-message",
+      "value": "Must be between $0.00 and $10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOCTypeOfPayments-label",
+      "value": "Type of payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOCTypeOfPayments",
+      "value": "Principal and interest Interest only"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNC_LOCTypeOfPayments",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNC_LOC_HasIntroductoryRate-label",
+      "value": "Has introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_PNC_LOC_Apr-Discount > label",
+      "value": "Apply 0.25% automatic payment discount"
+    }
+  },
+  {
+    "click": {
+      "id": "OtherLoan-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_input_fields fieldset#lf-tab-OtherLoan div.lf-legend.lf-accordian-legend h3 a",
+      "value": "Other Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_LoanType-label",
+      "value": "Loan type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_LoanType",
+      "value": "Line of credit Interest only line of credit Term loan Credit card"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_LoanType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_HasIntroductoryRate-label",
+      "value": "Has introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_HasIntroductoryRate",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_HasIntroductoryRate",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditLine_HasIntroductoryRate"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_CreditLine_HasIntroductoryRate",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_IntroductoryRate-label",
+      "value": "Introductory rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_IntroductoryRate",
+      "value": "3.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_IntroductoryRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_IntroductoryTerm-label",
+      "value": "Introductory term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_IntroductoryTerm",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_IntroductoryTerm-error-message",
+      "value": "Must be between 1 and 480"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_RegularInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_RegularInterestRate",
+      "value": "6.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_RegularInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AnnualFee-label",
+      "value": "Annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_AnnualFee",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AnnualFee-error-message",
+      "value": "Must be between $0.00 and $10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_RepaymentPeriod-label",
+      "value": "Repayment period (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_RepaymentPeriod",
+      "value": "240"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_RepaymentPeriod-error-message",
+      "value": "Must be between 1 and 480"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_ClosingCosts-label",
+      "value": "Closing costs/one-time fees"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_ClosingCosts",
+      "value": "100.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_ClosingCosts-error-message",
+      "value": "Must be between $0.00 and $10,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "CommonLoan-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_InitialDrawAmount",
+      "value": "20,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_PropertyUse"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_PropertyUse",
+      "value": "label=Second home"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "250,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "750,000"
+    }
+  },
+  {
+    "click": {
+      "id": "PNC-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNC_LOC_HasIntroductoryRate"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PNC_LOC_HasIntroductoryRate",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PNC_LOC_IntroductoryRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PNC_LOC_IntroductoryTerm",
+      "value": "18"
+    }
+  },
+  {
+    "click": {
+      "id": "OtherLoan-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_RegularInterestRate",
+      "value": "5.68"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_AnnualFee",
+      "value": "28"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_DrawPeriod",
+      "value": "60"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_RepaymentPeriod",
+      "value": "180"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The PNC Choice Home Equity Line of Credit could cost you approximately $20,000 more overall, $2,100 more after 5 years, and $0 more monthly on average."
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

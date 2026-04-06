@@ -1,0 +1,411 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How important is the interest rate?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows how credit card interest rates affect the amount of finance charges and therefore, the number of months it takes to pay off credit card debt. Higher interest rates can dramatically increase your credit card debt. Comparing credit card rates to find a good deal and learning how the card companies charge interest on card balances is essential."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "After 6 years and 4 months, your credit card debt will be $0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payoff vs. Rate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Monthly Statement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Monthly Statement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$5,011"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$249"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$51"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$51"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td",
+      "value": "76"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td[2]",
+      "value": "$292"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td[4]",
+      "value": "$291"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td[5]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[76]/td[6]",
+      "value": "$2,172"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-label",
+      "value": "Card balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CardInterestRate",
+      "value": "12.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardAnnualFee-label",
+      "value": "Annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-label",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-label",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Global_FutureMonthlyChargesOnCard_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Global_FutureMonthlyChargesOnCard_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Card_MonthlyPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Card_MonthlyPayment_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly payments'])[3]/following::span[1]"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "8,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CardInterestRate",
+      "value": "15.49"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CardAnnualFee",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "1,200"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "After 11 months, your credit card debt will be $0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "800"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "After 2 years, your credit card debt will be $0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "500"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "After 40 years, your credit card debt will be $127,119"
+    }
+  }
+]

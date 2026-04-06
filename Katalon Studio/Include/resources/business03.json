@@ -1,0 +1,409 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How long will it take to repay my loan?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "This tool shows the amount of time it takes to repay a loan. If you make additional principal payments, you shorten the repayment period. You also reduce interest expense. Generally, you make prepayments if you have surplus cash or if your current cost of capital is lower. Since interest expense is tax-deductible, the after-tax interest rate should be considered when making a prepayment decision."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=additional principal payments",
+      "value": "additional principal payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=cost of capital",
+      "value": "cost of capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=after-tax interest",
+      "value": "after-tax interest"
+    }
+  },
+  {
+    "click": {
+      "id": "link=additional principal payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Additional principal payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Enter the additional payment you intend to make. The full amount is applied toward reduction of loan principal."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "link=cost of capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Cost of capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "link=after-tax interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "After-tax interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The after-tax interest rate is the interest rate on a loan after you deduct tax expense. For example, if your loan rate is 6% and your income tax rate is 25%, your after-tax interest rate is 4.5%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "It will take 12 years and 7 months to repay your loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Cumulative Interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$99,608"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$656"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$656"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$1,048"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$392"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[151]/td",
+      "value": "151"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[151]/td[2]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[151]/td[3]",
+      "value": "$3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[151]/td[4]",
+      "value": "$57,638"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[151]/td[5]",
+      "value": "$438"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_CreditNeeded-label",
+      "value": "Loan Amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Business_CreditNeeded",
+      "value": "100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_CreditNeeded-error-message",
+      "value": "Must be between $1 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_InterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Business_InterestRate",
+      "value": "7.875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_MonthlyPayment-label",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Business_MonthlyPayment",
+      "value": "1,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_MonthlyPayment-error-message",
+      "value": "Must be between $1.00 and $500,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_AdditionalPrincipalPayment-label",
+      "value": "Additional principal payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Business_AdditionalPrincipalPayment",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_FrequencyOfAdditionalPrincipalPayments-label",
+      "value": "Frequency of additional principal payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Business_FrequencyOfAdditionalPrincipalPayments",
+      "value": "Weekly Bi-weekly Semi-monthly Monthly Quarterly Semi-annually Annually"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Business_FrequencyOfAdditionalPrincipalPayments",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_CreditNeeded",
+      "value": "30,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_InterestRate",
+      "value": "5.125"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_MonthlyPayment",
+      "value": "458.43"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_AdditionalPrincipalPayment",
+      "value": "30"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_FrequencyOfAdditionalPrincipalPayments",
+      "value": "label=Semi-monthly"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "It will take 5 years and 7 months to repay your loan"
+    }
+  }
+]

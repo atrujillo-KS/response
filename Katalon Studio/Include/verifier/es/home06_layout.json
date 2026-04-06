@@ -1,0 +1,256 @@
+{
+  "layout": {
+    "tabs": {
+      "HomeInfo": {
+        "tabLabel": "Información de la vivienda"
+      },
+      "ShorterTerm": {
+        "tabLabel": "Plazo más corto"
+      },
+      "LongerTerm": {
+        "tabLabel": "Plazo más largo"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      }
+    },
+    "fields": {
+      "Home_FifteenYearLoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)"
+      },
+      "Home_ShorterTermInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Home_MonthlyHOA": {
+        "fieldLabel": "Tarifas de HOA"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Plazo más corto ",
+        "Plazo más largo"
+      ]
+    },
+    "results_fields": {
+      "Home_TotalInterestShorterTermLoan": {
+        "fieldLabel": "Interés total"
+      },
+      "Home_TotalInterestLongerTermLoan": {
+        "fieldLabel": "Interés total"
+      },
+      "Home_PrincipalAndInterestPaymentShorterTermLoan": {
+        "fieldLabel": "Capital e interés"
+      },
+      "Home_PrincipalAndInterestPaymentLongerTermLoan": {
+        "fieldLabel": "Capital e interés"
+      },
+      "Home_TaxesAndInsuranceShorterTermLoan": {
+        "fieldLabel": "Impuestos y seguros"
+      },
+      "Home_TaxesAndInsuranceLongerTermLoan": {
+        "fieldLabel": "Impuestos y seguros"
+      },
+      "Home_HOAFeesShorterTermLoan": {
+        "fieldLabel": "Tarifas de HOA"
+      },
+      "Home_HOAFeesLongerTermLoan": {
+        "fieldLabel": "Tarifas de HOA"
+      },
+      "Home_PMIShorterTermLoan": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "Home_PMILongerTermLoan": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "Home_TotalMonthlyPaymentShorterTermLoan": {
+        "fieldLabel": "Pago total"
+      },
+      "Home_TotalMonthlyPaymentLongerTermLoan": {
+        "fieldLabel": "Pago total"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Interés total",
+    "title": "¿Qué es mejor: un préstamo con un plazo de 15 o de 30 años?",
+    "answer": "El préstamo a <span class='lf-bold'>%xyear% años</span> le <span class='lf-bold'>%costsave1% $%result1%</span> más mensuales y le <span class='lf-bold'>%costsave2% $%result2%</span> en intereses totales en comparación con <span class='lf-bold'>el préstamo de %yyear% años</span>.",
+    "same_as_answer": "<span class='lf-bold'>Ambos préstamos</span> le costarán <span class='lf-bold'>lo mismo</span> mensualmente y le ahorrarán <span class='lf-bold'>lo mismo</span> en intereses totales.",
+    "principalInterest": "Capital e intereses",
+    "pmi": "Seguro hipotecario privado ",
+    "hoa": "Tarifas de HOA",
+    "taxesInsurance": "Impuestos y seguro",
+    "sameAs": "lo mismo que",
+    "more_prefix": " más ",
+    "less_prefix": " menos ",
+    "cost": "costará",
+    "save": "ahorrará",
+    "categories": [
+      "Plazo más corto",
+      "Plazo más largo"
+    ],
+    "selectors": [
+      {
+        "label": "Pago",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Diferencia de interés",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo con plazo menor",
+            "label": "Préstamo con un plazo más corto "
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo con plazo mayor",
+            "label": "Préstamo de plazo más largo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "hoafee": {
+      "title": "Cuota de asociación de propietarios",
+      "definition": "Las tarifas de la asociación de propietarios de viviendas son cuotas mensuales que los propietarios de condominios, y los propietarios de algunos vecindarios unifamiliares, pagan para cubrir los costos de mantenimiento de áreas comunes o servicios compartidos, como casas club, piscinas, jardines, seguridad, etc."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el costo total y los pagos mensuales de dos préstamos hipotecarios de tasa fija de diferentes plazos y lo ayuda a determinar qué préstamo es la mejor opción. Los términos del préstamo no tienen que ser de 15 o 30 años. Dado que estos son los dos términos hipotecarios de tasa fija más populares, se utilizan como valores predeterminados."
+    },
+    {
+      "textLabel": "Ambos tipos de hipotecas tienen sus ventajas y desventajas. Con una hipoteca a 15 años, pagará pagos mensuales más altos pero un interés total significativamente menor durante la vigencia del préstamo. Además, su hipoteca se pagará en la mitad del tiempo. Decidir entre las dos depende de su situación financiera, incluido su puntaje e historial de crédito, su pago inicial y cuánto efectivo mensual tiene disponible."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de la diferencia en el costo total, en dólares de hoy, tanto para los préstamos a más corto como a más largo plazo durante los años esperados en el hogar."
+    },
+    {
+      "title": "Gráfico de columnas apiladas que incluye un desglose del pago mensual total por capital e intereses, impuestos sobre la propiedad y seguro, y PMI para préstamos a corto y largo plazo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo a más largo plazo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo total, en dólares de hoy, tanto para los préstamos a más corto como a más largo plazo durante los años esperados en el hogar"
+    },
+    {
+      "title": "Desglose del pago mensual total por capital e intereses, impuestos sobre la propiedad y seguro, y PMI para préstamos a corto y largo plazo"
+    }
+  ]
+}

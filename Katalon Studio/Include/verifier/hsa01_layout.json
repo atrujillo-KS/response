@@ -1,0 +1,220 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "HealthPlanType",
+          "HSAAge",
+          "HSASpouseAge",
+          "HSAContribution",
+          "FedTaxRate",
+          "StateTaxRate"
+        ]
+      }
+    },
+    "fields": {
+      "HealthPlanType": {
+        "fieldLabel": "Plan type",
+        "smallLabel": "",
+        "glossaryTerm": "hsahealthplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Family ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAAge": {
+        "fieldLabel": "Are you 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "Is spouse 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAContribution": {
+        "fieldLabel": "Yearly HSA contributions",
+        "smallLabel": "",
+        "glossaryTerm": "hsaannualcontributions",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "7600",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "7600",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.8",
+        "value": "6.8",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Amount",
+    "title": "How much will I save on my taxes by using a HSA?",
+    "answer": "Your tax savings will be <span class='lf-bold'>$%amount%</span>",
+    "save": "Savings",
+    "selectors": [
+      {
+        "label": "Tax Savings",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "fitrate": {
+      "title": "Federal income tax (FIT) rate",
+      "definition": "The seven federal income tax rates for 2023 are 10%, 12%, 22%, 24%, 32%, 35% and 37%. These are also called tax brackets. If asked for your federal and state tax rates, add your state income tax rate to calculate a combined rate. For example, if you pay federal income taxes at the 22% tax bracket, and your state income tax rate is 8%, your combined tax rate is 30%."
+    },
+    "hsahealthplantype": {
+      "title": "HSA Health Plan Type",
+      "definition": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    },
+    "stateincometaxrate": {
+      "title": "State income tax rate",
+      "definition": "Enter the average percentage of your income that you must pay to your state government. If you also pay local taxes, add that amount to your state income taxes."
+    },
+    "hsaage": {
+      "title": "Your Age",
+      "definition": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    },
+    "amt": {
+      "title": "Alternative Minimum Tax (AMT)",
+      "definition": "The Alternative Minimum Tax was created in 1969 as a means of ensuring that wealthier taxpayers pay some income taxes. For married persons filing jointly, the first $232,600 (for 2025) of AMT income (AMTI) is taxed at 26%. Additional AMTI is taxed at 28%."
+    },
+    "hsaannualcontributions": {
+      "title": "HSA Annual contribution Amount",
+      "definition": "Your annual allowable contribution is influenced by your plan type, your age, and your spouse's age if married. Refer to IRS Publication 969 for more information."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates tax savings based on your annual contributions to a Health Savings account. Contributions to a health savings account that are below the allowable contribution amount are exempt from federal income tax and most state income taxes. However, Alabama, California, and New Jersey do not provide that same exemption. "
+    },
+    {
+      "textLabel": "If your high-deductible health plan coverage begins after January 1, contribution limits are pro-rated based on the number of full months the health plan is effective."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the tax savings by using a HSA."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tax savings by using a HSA"
+    }
+  ]
+}

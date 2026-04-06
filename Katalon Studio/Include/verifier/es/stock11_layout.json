@@ -1,0 +1,169 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "IncomeTaxes": {
+        "tabLabel": "INGRESOS E IMPUESTOS"
+      },
+      "FeesatPurchase": {
+        "tabLabel": "CARGOS DE COMPRA"
+      },
+      "FeesatSale": {
+        "tabLabel": "TASAS DE VENTA"
+      }
+    },
+    "fields": {
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses en la que se desea alcanzar el punto de rentabilidad"
+      },
+      "Stock_YearlySharePriceIncrease": {
+        "fieldLabel": "Aumento anual previsto"
+      },
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones que comprará"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      }
+    },
+    "results": {
+      "text": "<div class='tableCellADA'><span class='lf-bold'>Alternativamente, para recuperar sus costos de compra, venta e impuestos en los %desired_months% %monthlabel%</span>, deseados, el precio de su valor debe aumentar $%increase_price%, de un precio de venta de $%selling_price%.</div></br><div style='font-weight:bold' class='tableCellADA'>Los cargos e impuestos adeudados en el punto de rentabilidad deseado de %break_even% %monthlabel%:</div><table class='lf-results-table'><tbody><tr id='lf_TotFee2Stock11_results'><th id='lf_TotFee2Stock11_result_label' class='tableCellADA'>Cargos totales:</th><td id='lf_TotFee2Stock11_result_value' class='tableCellADA'>$%TotFee2Stock11%</td></tr><tr id='lf_TotTax2Stock11_results'><th id='lf_TotTax2Stock11_result_label' class='tableCellADA'>Impuestos:</th><td id='lf_TotTax2Stock11_result_value' class='tableCellADA'>$%TotTax2Stock11%</td></tr></tbody></table>"
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Recuperará todos los costos",
+    "dataTableCategoryTitle2": "Meses de posesión de acciones",
+    "title": "¿Cuándo recuperaré los costos de mi valor?",
+    "answer": "Recuperará todos los costos en <span class='lf-bold'>%months% %monthlabel%</span>",
+    "months": "Meses de posesión de acciones",
+    "recover": "Recuperará todos los costos en ",
+    "costAmt": "Costo de venta",
+    "sellPrice": "Cantidad",
+    "income": "Ingresos por venta",
+    "graphMonths": "mes(es)",
+    "selectors": [
+      {
+        "label": "Tiempo de recuperación",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Punto de rentabilidad",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "brokeragecommission": {
+      "title": "Comisión de corretaje",
+      "definition": "Los cargos que usted paga a un corredor por comprar o vender acciones, bonos u otros valores. También se denominan cargos de transacción, cargos de compraventa, cargos de corretaje o simplemente comisiones."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el precio de la acción necesario para alcanzar el punto de rentabilidad en la venta de sus acciones. El punto de rentabilidad ocurre cuando los ingresos de la venta de sus acciones pagan impuestos y <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#BrokerageCommission\">cargos de corretaje</a></span>."
+    },
+    {
+      "textLabel": "Es posible que desee consultar a un asesor financiero antes de tomar la decisión de inversión."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del número de meses que se necesitarán para recuperar los costos de las acciones si el precio de las acciones aumenta a la tasa prevista."
+    },
+    {
+      "title": "Gráfico de líneas de ingresos y costos de acciones a lo largo del tiempo, que muestra si recupera o no los costos de transacción en el período de tiempo deseado en el que posee las acciones."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Número de meses que se necesitarán para recuperar los costos de las acciones si el precio de las acciones aumenta a la tasa prevista"
+    },
+    {
+      "title": "Ingresos y costos de acciones a lo largo del tiempo, que muestra si recupera o no los costos de transacción en el período de tiempo deseado en el que posee las acciones"
+    }
+  ]
+}

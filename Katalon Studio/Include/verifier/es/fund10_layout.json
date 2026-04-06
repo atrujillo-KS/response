@@ -1,0 +1,388 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN",
+        "pageTitle": "Información de la inversión",
+        "fund1": {
+          "sectionLabel": "Inversión inicial",
+          "rows": [
+            {
+              "rowLabel": "Precio de compra de la acción"
+            },
+            {
+              "rowLabel": "Acciones que comprará"
+            },
+            {
+              "rowLabel": "Aumento anual del precio de las acciones"
+            }
+          ]
+        },
+        "fund2": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "Precio de compra de la acción"
+            },
+            {
+              "rowLabel": "Acciones que comprará"
+            },
+            {
+              "rowLabel": "Aumento anual del precio de las acciones"
+            }
+          ]
+        },
+        "shared": {
+          "sectionLabel": "Información sobre las acciones del fondo mutuo"
+        }
+      },
+      "Fees": {
+        "tabLabel": "Cargos",
+        "pageTitle": "Información de cargos",
+        "fund1": {
+          "rows": [
+            {
+              "rowLabel": "Cobro inicial"
+            },
+            {
+              "rowLabel": "Cargos de administración anuales"
+            },
+            {
+              "rowLabel": "Comisión por cancelación anticipada"
+            }
+          ]
+        },
+        "fund2": {
+          "rows": [
+            {
+              "rowLabel": "Cobro inicial"
+            },
+            {
+              "rowLabel": "Cargos de administración anuales"
+            },
+            {
+              "rowLabel": "Comisión por cancelación anticipada"
+            }
+          ]
+        }
+      },
+      "Income": {
+        "tabLabel": "Ingresos",
+        "pageTitle": "Dividendos y ganancias",
+        "fund1": {
+          "rows": [
+            {
+              "rowLabel": "Ganancias anuales por acción (a largo plazo)"
+            },
+            {
+              "rowLabel": "Ganancias anuales por acción (a corto plazo)"
+            },
+            {
+              "rowLabel": "Aumento anual en dividendos"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (imponibles)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (exentos de impuestos exentos)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (exentos de impuestos estatales)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (no imponibles)"
+            }
+          ]
+        },
+        "fund2": {
+          "rows": [
+            {
+              "rowLabel": "Ganancias anuales por acción (a largo plazo)"
+            },
+            {
+              "rowLabel": "Ganancias anuales por acción (a corto plazo)"
+            },
+            {
+              "rowLabel": "Aumento anual en dividendos"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (imponibles)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (exentos de impuestos exentos)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (exentos de impuestos estatales)"
+            },
+            {
+              "rowLabel": "Dividendos trimestrales por acción (no imponibles)"
+            }
+          ]
+        },
+        "shared": {
+          "sectionLabel": "Información sobre las acciones del fondo mutuo"
+        }
+      },
+      "results": {
+        "tabLabel": "RESULTADOS"
+      }
+    },
+    "fields": {
+      "Fund_SharePurchasePrice": {
+        "fieldLabel": "Fondo 1",
+        "ariaLegendLabel": "Fondo 1"
+      },
+      "Fund_FundTwoSharePurchasePrice": {
+        "fieldLabel": "Fondo 2",
+        "ariaLegendLabel": "Fondo 2"
+      },
+      "Fund_SharesPurchased": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoSharesPurchased": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_YearlySharePriceIncrease": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoYearlySharePriceIncrease": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_AdditionalInvestment": {
+        "fieldLabel": "Inversión adicional"
+      },
+      "Fund_InvestmentFrequency": {
+        "fieldLabel": "Frecuencia de inversión",
+        "dropdownOptions": [
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Fund_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Fund_FrontendLoad": {
+        "fieldLabel": "Fondo 1",
+        "ariaLegendLabel": "Fondo 1"
+      },
+      "Fund_FundTwoFrontendLoad": {
+        "fieldLabel": "Fondo 2",
+        "ariaLegendLabel": "Fondo 2"
+      },
+      "Fund_Annual12b1Fees": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoAnnual12b1Fees": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_BackendLoad": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoBackendLoad": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_LongTermYearlyGainsPerShare": {
+        "fieldLabel": "Fondo 1",
+        "ariaLegendLabel": "Fondo 1"
+      },
+      "Fund_FundTwoLongTermYearlyGainsPerShare": {
+        "fieldLabel": "Fondo 2",
+        "ariaLegendLabel": "Fondo 2"
+      },
+      "Fund_ShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_YearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoYearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_TaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_FederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_StateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_NonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 1"
+      },
+      "Fund_FundTwoNonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Fondo 2"
+      },
+      "Fund_DividendsAndGainsReinvestmentOption": {
+        "fieldLabel": "Los dividendos y las ganancias",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en el fondo"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Fondo 1",
+        "Fondo 2"
+      ]
+    },
+    "results_fields": {
+      "Fund_RateOfReturnBeforeTaxesFundOne": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Fund_RateOfReturnBeforeTaxesFundTwo": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Fund_RateOfReturnAfterTaxesFundOne": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Fund_RateOfReturnAfterTaxesFundTwo": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Fund_SellingPriceFundOne": {
+        "fieldLabel": "Precio de venta por acción"
+      },
+      "Fund_SellingPriceFundTwo": {
+        "fieldLabel": "Precio de venta por acción"
+      },
+      "Fund_TotalFeesFundOne": {
+        "fieldLabel": "Cargos totales"
+      },
+      "Fund_TotalFeesFundTwo": {
+        "fieldLabel": "Cargos totales"
+      },
+      "Fund_TotalTaxesFundOne": {
+        "fieldLabel": "Impuestos totales"
+      },
+      "Fund_TotalTaxesFundTwo": {
+        "fieldLabel": "Impuestos totales"
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Qué fondo es mejor?",
+    "answer": "<span class='lf-bold'>%which%</span> obtendrá un mayor rendimiento después de impuestos del <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Tasa de rendimiento",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "fund1": "Fondo 1",
+    "fund2": "Fondo 2",
+    "beforeTaxes": "Antes de impuestos",
+    "yAxisLabel": "Ganancia (%)",
+    "afterTaxes": "Después de impuestos"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "mutualfunds": {
+      "title": "Fondo mutuo",
+      "definition": "Un fondo mutuo invierte en una cartera de acciones, bonos u otras inversiones y vende acciones individuales de la cartera a los inversores."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "annualizedreturn": {
+      "title": "Tasa de rendimiento anualizada",
+      "definition": "Una tasa de rendimiento anualizada convierte en una tasa de porcentaje anual a la tasa de rendimiento que usted gana sobre una inversión que ha mantenido durante más o menos un año, lo que le permite comparar el desempeño de la inversión durante el mismo período de tiempo."
+    },
+    "backendload": {
+      "title": "Comisión por cancelación anticipada",
+      "definition": "Un cargo que usted paga cuando vende acciones de un fondo mutuo. El cargo se calcula como un porcentaje de la cantidad en dólares que está vendiendo."
+    },
+    "growthratedividends": {
+      "title": "Tasa esperada de crecimiento de los dividendos",
+      "definition": "Ingrese la tasa de aumento anual que predice para los dividendos. Por definición, esta cifra será mucho mayor para un fondo de ingresos que para un fondo de crecimiento."
+    },
+    "frontendload": {
+      "title": "Cobro inicial",
+      "definition": "Un cargo que usted paga cuando compra acciones de un fondo mutuo. El cargo se calcula como un porcentaje del monto en dólares que está invirtiendo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara las <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#rateOfReturn\">tasas de rendimiento</a></span>, antes y despuós de impuestos, para dos <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#mutualFunds\">fondos mutuos</a></span>. Los rendimientos de fondos mutuos se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#annualizedReturn\">anualizan</a></span>, lo que significa que el rendimiento para períodos de tenencia de más o menos de un año se establece como un porcentaje anual."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de el rendimiento del fondo 1 y del fondo 2, antes y después de impuestos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento del fondo 1 y del fondo 2, antes y después de impuestos"
+    }
+  ]
+}

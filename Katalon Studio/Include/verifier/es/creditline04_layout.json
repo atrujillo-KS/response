@@ -1,0 +1,180 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo sobre el patrimonio inmobiliario",
+        "Línea de crédito sobre el patrimonio inmobiliario (HELOC)"
+      ]
+    },
+    "fields": {
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Cambio de tasa previsto ",
+        "dropdownOptions": [
+          {
+            "optionText": "Ninguno"
+          },
+          {
+            "optionText": "Aumentará 0.5% al año"
+          },
+          {
+            "optionText": "Disminuirá 0.5% al año"
+          }
+        ]
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "CreditLine_MonthsToPayOff": {
+        "fieldLabel": "Cantidad de meses en que terminará de pagar "
+      }
+    },
+    "results_fields": {
+      "OweAft301": {
+        "fieldLabel": "Cantidad adeudada después de X meses"
+      },
+      "OweAft302": {
+        "fieldLabel": "Cantidad adeudada después de X meses"
+      },
+      "Pmt1CreditLn04": {
+        "fieldLabel": "Pago mensual inicial "
+      },
+      "Pmt2CreditLn04": {
+        "fieldLabel": "Pago mensual inicial "
+      },
+      "TotEnd1": {
+        "fieldLabel": "Pago mensual final "
+      },
+      "TotEnd2": {
+        "fieldLabel": "Pago mensual final "
+      },
+      "TotInt1CreditLn04": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotInt2CreditLn04": {
+        "fieldLabel": "Intereses totales pagados"
+      }
+    }
+  },
+  "labels": {
+    "title": "¿De cuánto serán los pagos de mi préstamo sobre el patrimonio inmobiliario?",
+    "answer": "Su pago inicial será de <span class='lf-bold'>%Pmt1CreditLn04%</span> para un préstamo sobre el patrimonio inmobiliario y de <span class='lf-bold'>%Pmt2CreditLn04%</span> para una línea de crédito sobre el patrimonio inmobiliario.",
+    "start_values": "Inicial",
+    "end_values": "Final ",
+    "month": "Mes",
+    "Home_Equity_Loan": "Préstamo sobre el patrimonio inmobiliario",
+    "HELOC": "Línea de crédito sobre el patrimonio inmobiliario (HELOC)",
+    "balance": "Saldo",
+    "amountOwed": "Cantidad adeudada después de %months% meses",
+    "dataTableCategoryTitle2": "Mes",
+    "categories": [
+      "Préstamo sobre el patrimonio inmobiliario",
+      "Línea de crédito sobre el patrimonio inmobiliario (HELOC)"
+    ],
+    "selectors": [
+      {
+        "label": "Pagos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Intereses pagados",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo sobre el patrimonio inmobiliario",
+            "label": "Préstamo sobre el patrimonio inmobiliario"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Línea de crédito sobre el patrimonio inmobiliario",
+            "label": "Línea de crédito sobre el patrimonio inmobiliario (HELOC)"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa los pagos mensuales para un préstamo amortizable y los pagos de interés solamente sobre una línea de crédito. Se asume que los gastos por intereses de ambos préstamos se pueden deducir de sus ingresos para fines de declaración del impuesto sobre la renta."
+    },
+    {
+      "textLabel": "La opción del préstamo sobre el valor neto de una vivienda amortiza el saldo del préstamo a lo largo del plazo del préstamo, razón por la cual el préstamo termina de pagarse al vencimiento. Con la línea de crédito se asume que el usuario hace pagos de solo intereses sobre la totalidad de la línea de crédito. Al finalizar el plazo, el monto adeudado sobre la línea de crédito será exactamente el mismo que el monto tomado en préstamo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los pagos mensuales iniciales y finales para el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria."
+    },
+    {
+      "title": "Gráfico de líneas que compara los intereses pagados a lo largo del tiempo por el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria."
+    },
+    {
+      "title": "Tabla de amortización del préstamo con garantía hipotecaria."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Pagos mensuales iniciales y finales para el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria"
+    },
+    {
+      "title": "Intereses pagados a lo largo del tiempo por el préstamo con garantía hipotecaria y la línea de crédito con garantía hipotecaria"
+    }
+  ]
+}

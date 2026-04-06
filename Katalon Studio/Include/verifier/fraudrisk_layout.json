@@ -1,0 +1,192 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Commercial_NumberOfCustomers",
+          "Commercial_Industry"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [],
+      "fields": [
+        [
+          "Commercial_AnnualReturnNextDayCardPaymentFunding"
+        ]
+      ]
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "Commercial_IndustrySelectedPerRecordCost": {
+        "fieldLabel": "Average per record cost for industry selected"
+      },
+      "Commercial_IndustrySelectedChurnRate": {
+        "fieldLabel": "Average fraud-related client churn rate for industry selected"
+      },
+      "Commercial_ClientsLostDueToDataBreach": {
+        "fieldLabel": "Potential clients lost due to data breach"
+      }
+    },
+    "fields": {
+      "Commercial_NumberOfCustomers": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Number of customers",
+        "valueTextLabel": "customers",
+        "defaultValue": "5000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "widgetStep": "1000",
+        "value": "5000",
+        "format": "number"
+      },
+      "Commercial_Industry": {
+        "fieldLabel": "Industry",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "National Average",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Communication",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Consumer",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Education",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Energy",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Entertainment",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Financial",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Health",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "8",
+            "optionText": "Hospitality",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "9",
+            "optionText": "Industrial",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "10",
+            "optionText": "Media",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "11",
+            "optionText": "Pharmaceuticals",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "12",
+            "optionText": "Public",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "13",
+            "optionText": "Research",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "14",
+            "optionText": "Retail",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "15",
+            "optionText": "Services",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "16",
+            "optionText": "Technology",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "17",
+            "optionText": "Transportation",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much could a data breach cost my business?",
+    "answer": "<p class='lf-fr-tb'>A business like yours, in the <span style='font-weight:600'>%result5%</span> industry, has an average per record cost of <span style='font-weight:600'>$%result%</span> if a data breach happens. With <span style='font-weight:600'>%result6%</span> clients, that means a potential breach of your business could cost up to <span style='font-weight:600'>$%result4%</span>.</p>",
+    "answer2": "<p class='lf-fr-tb-p'>In addition to the monetary costs of a data breach, you could stand to lose a portion of your customers due to reputational risk.</p>",
+    "answer3": "<p class='lf-fr-tb-p'>The industry you selected has an average fraud-related client churn rate of <span>%result2%%</span>.</p>",
+    "answer4": "<p class='lf-fr-tb'>The potential number of clients lost to the reputational damage of a data breach is <span>%result3%</span>.</p>",
+    "selectors": [
+      {
+        "label": "Depreciation",
+        "width": "50%",
+        "first": true
+      }
+    ],
+    "firstYear": "First Year",
+    "total": "Total"
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the first year's depreciation cost and total depreciation cost."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table of the first year's depreciation cost and total depreciation cost."
+    }
+  ]
+}

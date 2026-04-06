@@ -1,0 +1,187 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Savings_Goal",
+          "Global_CurrentSavings",
+          "Savings_RecurringDeposits",
+          "Savings_DepositFrequencyTwo",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "fields": {
+      "Savings_Goal": {
+        "fieldLabel": "Savings goal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100000",
+        "value": "100000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CurrentSavings": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "0",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Initial deposit",
+        "defaultValue": "50000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "widgetStep": "1000",
+        "value": "50000",
+        "format": "currency"
+      },
+      "Savings_RecurringDeposits": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "4",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Recurring deposits",
+        "defaultValue": "200",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": "0",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "value": "200",
+        "format": "currency"
+      },
+      "Savings_DepositFrequencyTwo": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Deposit frequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Weekly"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual rate of return",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Savings Goal Reached",
+    "title": "How long will it take to reach my savings goal?",
+    "answer": "It will take you <span class='lf-bold'>%years% %yearlabel%</span> and <span class='lf-bold'>%months% %monthlabel%</span> to reach your goal",
+    "months": "Months",
+    "months_label": "months",
+    "years_prefix": "take you ",
+    "selectors": [
+      {
+        "label": "Months to reach Savings Goal",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "futurevalue": {
+      "title": "Future value",
+      "definition": "The amount to which your investment grows in the future. For example, the future value of $100 invested monthly at 8% is $1,245 after 12 months. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "taxadvantagedaccount": {
+      "title": "Tax-advantaged account",
+      "definition": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses. "
+    },
+    "lumpsuminvestments": {
+      "title": "Lump-sum investments",
+      "definition": "An investment that you make to open an investment or savings account. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the length of time you will need to save in order to meet a savings goal. Because you do not enter income tax rates, the calculator assumes you save with a tax-advantaged account."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the length of time in months it will take to reach the savings goal."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Length of time in months it will take to reach the savings goal"
+    }
+  ]
+}

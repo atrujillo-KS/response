@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Yearly insurance</name>
+   <tag></tag>
+   <elementGuidId>31c6f220-de1d-4210-b0f5-ff96954a8071</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_YearlyInsuranceIfKeep-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_YearlyInsuranceIfKeep-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_YearlyInsuranceIfKeep-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>ba0eb61f-5520-44b3-bcf1-fe87e9f4d495</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyInsuranceIfKeep</value>
+      <webElementGuid>6dadded7-bc6a-430c-942d-6f67182b0efe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyInsuranceIfKeep-label</value>
+      <webElementGuid>bb07858c-0335-491d-858e-da7495031feb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>2603149b-0e73-4d78-b38e-8fd721f2a5e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yearly insurance
+                                
+                        </value>
+      <webElementGuid>99a88c01-5932-433e-ac0f-bf7966b07068</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_YearlyInsuranceIfKeep-label&quot;)</value>
+      <webElementGuid>6dc37f1e-6b42-4c38-93e5-e4ba191d5a6c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_YearlyInsuranceIfKeep-label']</value>
+      <webElementGuid>fdea38e1-901f-4c91-8114-8e3f17fda85b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_YearlyInsuranceIfKeep-table']/div/label</value>
+      <webElementGuid>d87cd649-a84c-440d-850c-2eec8067177f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly repairs'])[2]/following::label[1]</value>
+      <webElementGuid>8722e67a-9478-4ef8-8dbd-a55293dabe27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[1]/following::label[2]</value>
+      <webElementGuid>e663bfab-b506-4a1c-9fe4-a22a6762a273</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[2]/preceding::label[1]</value>
+      <webElementGuid>015ab192-30ef-4410-b5a1-303520703fa4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly insurance'])[2]/preceding::label[1]</value>
+      <webElementGuid>92f46243-cc11-41ee-9fd6-df4c80dd768d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Yearly insurance']/parent::*</value>
+      <webElementGuid>1a59cbe3-8610-4c18-ab34-e62d16aaffcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[3]/div/label</value>
+      <webElementGuid>9ed8108a-c97e-49a3-830b-22edd45ce7fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_YearlyInsuranceIfKeep-label' and (text() = 'Yearly insurance
+                                
+                        ' or . = 'Yearly insurance
+                                
+                        ')]</value>
+      <webElementGuid>6ac988c4-e181-4d72-b580-11f4e61025e8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

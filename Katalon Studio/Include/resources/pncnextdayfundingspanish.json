@@ -1,0 +1,289 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc-sp/calc/nextdayfundingspanish?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "¿Cuál es mi rendimiento anual estimado con la provisión de fondos de la tarjeta de pago al día siguiente?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Su rendimiento anual estimado es $750"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Chart"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Categoría"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Costo de capital anual con provisión de fondos al día siguiente"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Costo de capital anual con provisión de fondos a los 4 días"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_DailyCardProcessingSales-label",
+      "value": "Ventas diarias procesadas con tarjeta"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_DailyCardProcessingSales",
+      "value": "2,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_DailyCardProcessingSales-error-message",
+      "value": "Debe ubicarse entre $1 y $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Commercial_DailyCardProcessingSales_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Commercial_DailyCardProcessingSales_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Ventas diarias procesadas con tarjeta"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El monto total en dólares de los pagos con tarjeta que recibe la empresa todos los días."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays-label",
+      "value": "Cantidad actual de días para la provisión de fondos de pagos de tarjetas"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays-error-message",
+      "value": "Debe ubicarse entre 1 y 90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Commercial_CurrentCardPaymentFundingDays_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Commercial_CurrentCardPaymentFundingDays_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Días para la provisión de fondos de los pagos con tarjeta"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "La cantidad de días que lleva el procesamiento de la venta con tarjeta para que se acredite el pago en la cuenta comercial."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCostOfCapital-label",
+      "value": "Costo de capital anual"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCostOfCapital",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCostOfCapital-error-message",
+      "value": "Debe ubicarse entre 1.00% y 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Commercial_AnnualCostOfCapital_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Commercial_AnnualCostOfCapital_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Costo de capital anual"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El promedio ponderado del costo de la deuda de una empresa y el costo de sus activos netos."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/div[4]/span",
+      "value": "NOTA: Si no aceptas tarjetas, aún puedes calcular cuál podría ser el posible aumento en tu flujo de caja si aceptaras tarjetas y contaras con fondos al día siguiente de PNC Merchant Services®. Para hacerlo, simplemente indica tus plazos de pago actuales (por ejemplo, neto a 30, 60, 90 días) como número actual de días para el financiamiento de pago con tarjeta."
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_DailyCardProcessingSales",
+      "value": "25,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays",
+      "value": "15"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_AnnualCostOfCapital",
+      "value": "12.45"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Su rendimiento anual estimado es $43,575"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-3']/tbody/tr/td",
+      "value": "3,112.5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-3']/tbody/tr/td[2]",
+      "value": "46,687.5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Términos de uso"
+    }
+  },
+  {
+    "click": {
+      "id": "//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/div[4]/span",
+      "value": "NOTA: Si no aceptas tarjetas, aún puedes calcular cuál podría ser el posible aumento en tu flujo de caja si aceptaras tarjetas y contaras con fondos al día siguiente de PNC Merchant Services®. Para hacerlo, simplemente indica tus plazos de pago actuales (por ejemplo, neto a 30, 60, 90 días) como número actual de días para el financiamiento de pago con tarjeta."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

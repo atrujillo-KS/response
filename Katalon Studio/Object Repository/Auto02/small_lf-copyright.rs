@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>small_lf-copyright</name>
+   <tag></tag>
+   <elementGuidId>77c5d44b-68ce-4933-ab03-8503cf6868c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>small.lf-copyright</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='lf_meter_container']/div[6]/div/small[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;© 2025 Leadfusion&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>small</value>
+      <webElementGuid>4be666cd-9892-4d0a-8c90-8332ecc0fb8e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-copyright</value>
+      <webElementGuid>80fbc90b-55ea-4052-a479-5cecf0d19d8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>© 2025 Leadfusion</value>
+      <webElementGuid>e2e2b0b0-f7db-45b4-89fa-98da83616ee4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_meter_container&quot;)/div[@class=&quot;lf-footer&quot;]/div[@class=&quot;lf-terms&quot;]/small[@class=&quot;lf-copyright&quot;]</value>
+      <webElementGuid>9f6264e0-d961-4c29-b27b-c70c3caa675f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_meter_container']/div[6]/div/small[2]</value>
+      <webElementGuid>b1d849f3-58b0-416a-aa9c-791da4b9b3c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Terms of use'])[1]/following::small[1]</value>
+      <webElementGuid>7c3589b0-b202-47bb-9b5b-4238cedab4a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[2]/following::small[2]</value>
+      <webElementGuid>76e3d227-e3ff-4016-93c2-bafb71f45195</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/preceding::small[1]</value>
+      <webElementGuid>3a9ce108-126f-4b6d-8603-f3eb92b1167b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Depreciation'])[2]/preceding::small[1]</value>
+      <webElementGuid>d26394d0-7c30-48c7-a761-94207345bda2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='© 2025 Leadfusion']/parent::*</value>
+      <webElementGuid>16ea18cb-054d-4d53-8b43-1704d62d24f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//small[2]</value>
+      <webElementGuid>17c2a8ba-767a-4df5-b4a5-fa84e314c5cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//small[(text() = '© 2025 Leadfusion' or . = '© 2025 Leadfusion')]</value>
+      <webElementGuid>9d233623-41e2-423b-8ef8-16ba95c67926</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

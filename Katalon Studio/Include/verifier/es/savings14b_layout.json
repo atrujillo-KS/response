@@ -1,0 +1,82 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Savings_Goal": {
+        "fieldLabel": "Meta de ahorro"
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Depósito inicial "
+      },
+      "Savings_RecurringDeposits": {
+        "fieldLabel": "Depósitos recurrentes"
+      },
+      "Savings_DepositFrequencyTwo": {
+        "fieldLabel": "Frecuencia de depósito",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Invertido(a) durante años",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Savings_MonthsInvested": {
+        "fieldLabel": "y meses",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Porciento",
+    "title": "¿Qué tasa de rendimiento necesito para alcanzar mi meta de ahorro? ",
+    "answer": "Usted deberá ganar un rendimiento de <span class='lf-bold'>%result%</span>",
+    "rate": "Tasa de rendimiento"
+  },
+  "glossaryItems": {
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar la tasa de rendimiento anual que necesitará para cumplir con un objetivo de ahorro. Debido a que no ingresa tasas de impuestos sobre la renta, la calculadora supone que usted ahorra con una cuenta con ventajas de impuestos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de la tasa de rendimiento necesaria para alcanzar la meta de ahorro."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tasa de retorno necesaria para alcanzar la meta de ahorro"
+    }
+  ]
+}

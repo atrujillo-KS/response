@@ -1,0 +1,869 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-truist/calc/truistextrapaymentsavings?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Truist Custom Calculator",
+      "value": "Truist Custom Calculator"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $35,188.00 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$149,209"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$114,021"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_label",
+      "value": "Years until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "23"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Total initial payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$859"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$859"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_label",
+      "value": "Additional principal payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPrincipalPmt_result_value",
+      "value": "$28,600"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Interest Paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='0']/parent::*",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Years Until Payoff"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-2']/span",
+      "value": "Principal & Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-3']/span",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-4']/span",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-5']/span",
+      "value": "Ending Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$858.91"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$192.25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$666.67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$159,807.75"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[2]",
+      "value": "$858.91"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[3]",
+      "value": "$855.35"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[4]",
+      "value": "$3.56"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[5]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - With Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - With Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-1']/span",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-2']/span",
+      "value": "Principal & Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-3']/span",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-4']/span",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-5']/span",
+      "value": "Ending Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$958.91"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$292.25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$666.67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$159,707.75"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[286]/td[2]",
+      "value": "$730.64"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[286]/td[3]",
+      "value": "$727.61"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[286]/td[4]",
+      "value": "$3.03"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[286]/td[5]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LoanInfo-accordion",
+      "value": "Loan Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtsLoanType-label",
+      "value": "Loan type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtsLoanType\"]/option[1]",
+      "value": "New"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtsLoanType\"]/option[2]",
+      "value": "Existing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExtraPmtsLoanType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AppVal-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AppVal_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_AppVal_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AppVal",
+      "value": "200,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AppVal-error-message",
+      "value": "Must be between $1.00 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DownPmtPct-label",
+      "value": "Down payment ($40K)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DownPmtPct_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DownPmtPct_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DownPmtPct-label",
+      "value": "Down payment ($40K)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DownPmtPct-small-label",
+      "value": "($40K)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DownPmtPct",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DownPmtPct-error-message",
+      "value": "Must be between 0% and 99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermYrs-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermYrs-small-label",
+      "value": "(years)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermYrs_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TermYrs_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TermYrs",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermYrs-error-message",
+      "value": "Must be between 1 and 40 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_IntRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IntRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ExtraPayments-accordion",
+      "value": "Extra Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "ExtraPayments-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtType-label",
+      "value": "Extra payment type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtType\"]/option[1]",
+      "value": "Lump sum"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtType\"]/option[2]",
+      "value": "Recurring"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExtraPmtType",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtFreq-label",
+      "value": "Payment frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtFreq\"]/option[1]",
+      "value": "Annual"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtFreq\"]/option[2]",
+      "value": "Monthly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExtraPmtFreq",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtsStartDate-label",
+      "value": "Extra payment start date"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "ExtraPmtsStartDate_date",
+      "value": "${var d = new Date(); var day = d.getDate(); if(day < 10){day = '0' + day;} var month = d.getMonth()+2; if(month < 10){month = '0' + month;} var year = d.getYear()+1900; if(year < 10){year = '0' + year;} timestamp = ''+ month+'/'+ day + '/'+year}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtsEnd-label",
+      "value": "Extra payments end"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtsEnd\"]/option[1]",
+      "value": "At end of loan term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"lf_ExtraPmtsEnd\"]/option[2]",
+      "value": "Before end of loan term"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExtraPmtsEnd",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPmt-label",
+      "value": "Additional payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_AdditionalPmt_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_AdditionalPmt_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-tooltip']/dfn/h2",
+      "value": "Additional monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Most mortgage lenders let borrowers make additional payments. To be sure, check with your lender to make sure there are no prepayment penalties."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPmt-error-message",
+      "value": "Must be between $0.00 and $100,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AppVal",
+      "value": "500,000.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DownPmtPct",
+      "value": "33"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TermYrs",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IntRate",
+      "value": "2.222"
+    }
+  },
+  {
+    "click": {
+      "id": "ExtraPayments-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ExtraPmtType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ExtraPmtType",
+      "value": "label=Lump sum"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtLumpSumDate-label",
+      "value": "Lump sum extra payment date"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ExtraPmtType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ExtraPmtType",
+      "value": "label=Recurring"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "ExtraPmtsStartDate_date",
+      "value": "${var d = new Date(); var day = d.getDate(); if(day < 10){day = '0' + day;} var month = d.getMonth()+3; if(month < 10){month = '0' + month;} var year = d.getYear()+1900; if(year < 10){year = '0' + year;} timestamp = ''+ month+'/'+ day + '/'+year}"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ExtraPmtsEnd",
+      "value": "label=Before end of loan term"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AdditionalPmt",
+      "value": "400.26"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $10,249.00 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$59,230"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$48,981"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$2,190"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$2,190"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPrincipalPmt_result_value",
+      "value": "$43,628"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

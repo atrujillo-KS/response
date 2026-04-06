@@ -1,0 +1,184 @@
+{
+  "layout": {
+    "tabs": {
+      "CurrentInvestment": {
+        "tabLabel": "INVERSIÓN ACTUAL"
+      },
+      "IncomeTaxes": {
+        "tabLabel": "INGRESOS E IMPUESTOS"
+      },
+      "FeesatPurchase": {
+        "tabLabel": "CARGOS DE COMPRA"
+      },
+      "FeesatSale": {
+        "tabLabel": "TASAS DE VENTA"
+      },
+      "NewInvestment": {
+        "tabLabel": "NUEVA INVERSIÓN"
+      }
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Stock_SharePriceToday": {
+        "fieldLabel": "Precio de la acción hoy"
+      },
+      "Stock_PredictionOfFutureMonths": {
+        "fieldLabel": "Tu predicción para el futuro ",
+        "smallLabel": "(meses)"
+      },
+      "Stock_FutureSharePrice": {
+        "fieldLabel": "Precio futuro de la acción"
+      },
+      "Stock_FutureDividends": {
+        "fieldLabel": "Dividendos futuros"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Tasa de rendimiento de una inversión",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_NewInvesmentSharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_NewInvesmentAverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      }
+    },
+    "results": {
+      "title": "Al vender su inversión actual y reinvertir las ganancias en una nueva inversión, usted incurrirá en los siguientes costos:"
+    },
+    "results_fields": {
+      "TotSellFee": {
+        "fieldLabel": "Cargos por venta"
+      },
+      "TotTaxStock03": {
+        "fieldLabel": "Impuestos sobre la venta"
+      },
+      "TotBuyFee": {
+        "fieldLabel": "Cargos por compra (nueva inversión)"
+      },
+      "ReInvestCostStock03": {
+        "fieldLabel": "Costo total de vender y reinvertir"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Mínimo necesario",
+    "dataTableCategory2": "Costo",
+    "title": "¿Debo vender mi valor ahora e invertir el dinero en otro lugar?",
+    "answer": "Necesitará al menos el <span class='lf-bold'>%result%</span> sobre la nueva inversión, después de impuestos y cargos, para justificar la venta.",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Gastos incurridos",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "sellingFees": "Cargos por venta",
+    "taxes": "Impuestos",
+    "purchaseFees": "Cargos de compra",
+    "minimum": "Rendimiento mínimo necesario",
+    "returnPercent": "Rendimiento (%)"
+  },
+  "glossaryItems": {
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula la tasa de rendimiento que necesitará con la nueva inversión para justificar vender hoy y pagar impuestos y cargos de transacción."
+    },
+    {
+      "textLabel": "Puede atraerle la idea de vender su valor ahora si cree que otra inversión ofrecerá una tasa de rendimiento más alta. Sin embargo, si vende, puede incurrir en cargos por transacciones e impuestos sobre la renta que reducen tanto su rendimiento como el monto disponible para la nueva inversión. Además, puede incurrir en más cargos con la nueva inversión."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del rendimiento mínimo necesario para la nueva inversión después de impuestos, para cubrir las tarifas, los impuestos y el valor futuro de la inversión actual."
+    },
+    {
+      "title": "Gráfico circular de los costos de venta y reinversión, desglosados ​​por tarifas de venta, impuestos sobre la venta y tarifas de compra."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento mínimo necesario para la nueva inversión después de impuestos, para cubrir las tarifas, los impuestos y el valor futuro de la inversión actual"
+    },
+    {
+      "title": "Costos de venta y reinversión, desglosados ​​por tarifas de venta, impuestos sobre la venta y tarifas de compra"
+    }
+  ]
+}

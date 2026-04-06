@@ -1,0 +1,195 @@
+{
+  "layout": {
+    "tabs": {
+      "ExpensesTab": {
+        "tabLabel": "GASTOS MENSUALES ESENCIALES"
+      },
+      "SavingsTab": {
+        "tabLabel": "INFORMACIÓN DE INGRESOS Y AHORROS"
+      }
+    },
+    "results_fields": {
+      "Global_MonthlyIncome": {
+        "fieldLabel": "Ingresos mensuales después de impuestos"
+      },
+      "Global_TotalEssentialMonthlyExpenses": {
+        "fieldLabel": "Gastos mensuales esenciales"
+      },
+      "Global_AvailableMonthlyCash": {
+        "fieldLabel": "Efectivo mensual disponible"
+      }
+    },
+    "fields": {
+      "Global_CurrentMonthlyHousingExpenses": {
+        "fieldLabel": "Alojamiento"
+      },
+      "Global_CurrentUtilitiesExpenses": {
+        "fieldLabel": "Utilidades"
+      },
+      "Global_CurrentMonthlyTransportationExpenses": {
+        "fieldLabel": "Transporte"
+      },
+      "Global_CurrentMonthlyFoodExpenses": {
+        "fieldLabel": "Comida"
+      },
+      "Global_CurrentMonthlyHealthExpenses": {
+        "fieldLabel": "Salud"
+      },
+      "Global_CurrentMonthlyDebtPayments": {
+        "fieldLabel": "Pagos de deudas no hipotecarias"
+      },
+      "Budget_CurrentChildCareExpenses": {
+        "fieldLabel": "Cuidado de niños"
+      },
+      "Global_CurrentMonthlyEducationExpenses": {
+        "fieldLabel": "Educación"
+      },
+      "Budget_CurrentAlimony": {
+        "fieldLabel": "Manutención de niños y pensión alimenticia"
+      },
+      "Global_CurrentMonthlyOtherExpenses": {
+        "fieldLabel": "Otros gastos esenciales"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Ingresos brutos anuales"
+      },
+      "Global_EssentialExpensesMonthsToCover": {
+        "fieldLabel": "Meses de gastos esenciales a cubrir"
+      },
+      "Global_CurrentEmergencyFundSavings": {
+        "fieldLabel": "Fondos de emergencia actuales disponibles"
+      },
+      "Global_MonthlyInvestment": {
+        "fieldLabel": "Cantidad que puede ahorrar mensualmente"
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Tasa de interés que gana con sus ahorros"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Tu tasa de impuestos"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Mes",
+    "dataTableCategoryTitle2": "Categoría",
+    "dataTableCategory": "Total",
+    "title": "¿Cuánto debo reservar para emergencias?",
+    "selectors": [
+      {
+        "index": 1,
+        "label": " Crecimiento del fondo de emergencia",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Efectivo mensual disponible",
+        "width": "33%"
+      },
+      {
+        "label": "Programa de crecimiento",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Programa de crecimiento"
+          }
+        ]
+      }
+    ],
+    "answerText1": "¡Felicidades! Sus ahorros actuales son suficientes para cubrir los <span class='lf-bold'>$%emergencyFundGoal%</span> lo que necesita para emergencias.",
+    "answerText2": "Según sus aportes, le llevará más de 40 años ahorrar por los <span class='lf-bold'>$%emergencyFundGoal%</span> que necesitará para un fondo de emergencia. Ajuste sus entradas.",
+    "answerText3": "Los <span class='lf-bold'>$%amountSaveMonthly%</span> que puede ahorrar mensualmente exceden su efectivo mensual disponible (ingreso mensual - total de gastos esenciales mensuales) de <span class='lf-bold'>$%availabelMonthlyCash%</span>. Ajuste sus entradas.",
+    "answerText4": "Debe reservar <span class='lf-bold'>$%emergencyFundGoal%</span> para emergencias. Al ahorrar <span class='lf-bold'>$%amountSaveMonthly%</span> de su efectivo mensual disponible de <span class='lf-bold'>$%availabelMonthlyCash%</span>, alcanzará su meta de fondos de emergencia en <span class='lf-bold'>%monthsToReachGoal% %monthlabel%</span>.",
+    "monthlyIncome": "Ingresos mensuales después de impuestos",
+    "essentialMonthlyExpenses": "Gastos mensuales esenciales",
+    "availableMonthlyCash": "Efectivo mensual disponible",
+    "months": "Mes",
+    "emergencyFundBalance": "Crecimiento del fondo de emergencia",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Balance inicial",
+        "Deposito",
+        "Interés obtenido",
+        "Balance final"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "grossincome": {
+      "title": "Ingreso bruto",
+      "definition": "El IRS define el ingreso bruto como todo ingreso que no está exento de impuestos. Los ingresos brutos se pueden recibir como dinero, bienes, propiedades o servicios."
+    },
+    "combinedincometaxrate": {
+      "title": "Tasa combinada de impuesto sobre la renta",
+      "definition": "Ingrese sus tasas combinadas de impuesto sobre la renta federal y estatal. Por ejemplo, si usted está en la escala del impuesto sobre la renta del 27% a efectos del impuesto federal sobre la renta, y paga una tasa de impuesto estatal sobre la renta del 5%, ingrese 32%."
+    },
+    "monthlyhousingexpenses": {
+      "title": "Gastos mensuales de vivienda",
+      "definition": "Incluye pagos de alquiler o hipoteca, impuestos a la propiedad, seguro de vivienda o de inquilino, cuotas de condominio o HOA y cualquier obligación adicional de pago de préstamo con garantía hipotecaria."
+    },
+    "monthlyutilities": {
+      "title": "Utilidades Mensuales",
+      "definition": "Incluye servicios de agua y alcantarillado, luz, gas, televisión, internet y teléfono."
+    },
+    "monthlytransportationexpenses": {
+      "title": "Gastos Mensuales de Transporte",
+      "definition": "Incluye pagos de auto, seguro de auto, gasolina, transporte público, mantenimiento, estacionamiento y gastos de peaje."
+    },
+    "monthlyhealthexpenses": {
+      "title": "Gastos Mensuales de Salud",
+      "definition": "Incluye pagos de desembolso de seguro de salud, copagos de médicos, recetas y pagos de seguro de vida."
+    },
+    "debtpayments": {
+      "title": "Pagos mensuales de la deuda",
+      "definition": "Pagos mensuales totales de todos los préstamos, tarjetas de crédito y otras obligaciones de deuda (sin incluir los pagos de préstamos hipotecarios)."
+    },
+    "essentialexpensesmonths": {
+      "title": "Meses de gastos esenciales a cubrir",
+      "definition": "Los expertos financieros aconsejan que debe tener al menos de 3 a 6 meses de gastos de manutención en su fondo de emergencia. El lugar que ocupa en ese espectro depende de una variedad de factores, como la estabilidad laboral, el tamaño de la familia, cuántas personas ganan dinero en su hogar y qué tan diversificado es su ingreso."
+    },
+    "currentemergencyfundbalance": {
+      "title": "Saldo actual del fondo de emergencia",
+      "definition": "¿Cuánto tiene ahorrado actualmente para su fondo de emergencia?"
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Un fondo de emergencia es una cuenta de ahorros separada que se usa para cubrir los gastos de subsistencia en caso de una sorpresa financiera, como la pérdida del trabajo, una emergencia médica, reparaciones inesperadas en el hogar o problemas con el automóvil. Puede brindarle tranquilidad y, por lo general, es la opción más inteligente que otros métodos potencialmente costosos para pedir dinero prestado, como confiar en sus tarjetas de crédito, obtener un préstamo personal o retirar dinero de una cuenta de jubilación."
+    },
+    {
+      "textLabel": "Los expertos financieros aconsejan que tenga al menos de 3 a 6 meses de gastos de manutención en su fondo de emergencia. El lugar en el que se encuentre en ese espectro depende de una variedad de factores, como la estabilidad laboral, el tamaño de la familia, la cantidad de personas que ganan en su hogar y la diversificación de sus ingresos. Esta herramienta le ayuda a determinar cuánto debe tener para su fondo de emergencia, cuánto puede ahorrar mensualmente para construirlo y cuánto tiempo le llevará alcanzar su meta. Al configurar transferencias automáticas desde su cuenta bancaria a su fondo de emergencia o utilizar el depósito directo, no tendrá que pensar en hacer esos depósitos mensuales."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que ilustra el crecimiento en el saldo del fondo de emergencia durante los meses necesarios para alcanzar la meta del fondo de emergencia."
+    },
+    {
+      "title": "Gráfico de columnas que muestra los ingresos mensuales, los gastos mensuales esenciales y el efectivo mensual disponible."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Crecimiento en el saldo del fondo de emergencia durante los meses necesarios para alcanzar la meta del fondo de emergencia"
+    },
+    {
+      "title": "Ingresos mensuales, gastos mensuales esenciales y efectivo mensual disponible"
+    }
+  ]
+}

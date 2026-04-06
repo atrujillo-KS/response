@@ -1,0 +1,249 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_CurrentSavings",
+          "Savings_RateOne",
+          "Savings_RateTwo",
+          "Savings_RateThree",
+          "Savings_RateFour",
+          "Savings_YearsDeposited"
+        ]
+      }
+    },
+    "results": {
+      "result": "Savings_RateOne",
+      "columnHeaders": [
+        "Rate",
+        "Interest earned"
+      ],
+      "fields": [
+        [
+          "Savings_RateOne",
+          "Savings_RateOneInterestEarned"
+        ],
+        [
+          "Savings_RateTwo",
+          "Savings_RateTwoInterestEarned"
+        ],
+        [
+          "Savings_RateThree",
+          "Savings_RateThreeInterestEarned"
+        ],
+        [
+          "Savings_RateFour",
+          "Savings_RateFourInterestEarned"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Savings_RateOne": {},
+      "Savings_RateTwo": {},
+      "Savings_RateThree": {},
+      "Savings_RateFour": {},
+      "Savings_RateOneInterestEarned": {},
+      "Savings_RateTwoInterestEarned": {},
+      "Savings_RateThreeInterestEarned": {},
+      "Savings_RateFourInterestEarned": {}
+    },
+    "fields": {
+      "Global_CurrentSavings": {
+        "fieldLabel": "Current savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_RateOne": {
+        "fieldLabel": "Annual rate of return 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "1",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_RateTwo": {
+        "fieldLabel": "Annual rate of return 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "1",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_RateThree": {
+        "fieldLabel": "Annual rate of return 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "1",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_RateFour": {
+        "fieldLabel": "Annual rate of return 4",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "1",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Years deposited",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "1",
+        "maximumValue": "90",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "90",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Interest Earned",
+    "dataTableCategoryTitle": "Rate",
+    "title": "How much of a difference will the rate make?",
+    "answer": "The rate you earn makes a significant difference over time",
+    "selectors": [
+      {
+        "label": "Savings at various rates",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "yAxisLabel": "Interest earned"
+  },
+  "glossaryItems": {
+    "compounding": {
+      "title": "Compounding",
+      "definition": "Compounding adds the interest you earn on an investment and invests it, plus the original investment, for another period. The result is that you earn more interest and a higher rate of return. "
+    },
+    "futurevalue": {
+      "title": "Future value",
+      "definition": "The amount to which your investment grows in the future. For example, the future value of $100 invested monthly at 8% is $1,245 after 12 months. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "taxadvantagedaccount": {
+      "title": "Tax-advantaged account",
+      "definition": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses. "
+    },
+    "compoundingfrequency": {
+      "title": "Compounding frequency",
+      "definition": "The frequency that a bank compounds interest on your deposit (e.g. daily, monthly, quarterly). The higher the frequency, the higher the interest rate. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the benefits of <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Compounding\">compounding</a></span> over a range of saving periods. You enter an interest rate that you expect to earn on your deposits. The calculator assumes you are using a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">tax-advantaged</a></span> account and that interest is compounded monthly. "
+    },
+    {
+      "textLabel": "Compounding is the process of adding interest to your original deposit and contributing the sum for another identical period. The more <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CompoundingFrequency\">frequent</a></span> the compounding is, the greater the future value. Similarly, the higher your <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SavingsInterestRate\">savings interest rate</a></span>, the greater the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FutureValue\">future value</a></span> of your savings."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total interest earned for each rate over the years deposited."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total interest earned for each rate over the years deposited"
+    }
+  ]
+}

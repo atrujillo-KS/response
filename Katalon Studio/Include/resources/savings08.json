@@ -1,0 +1,501 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much of a difference will the rate make?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the benefits of compounding over a range of saving periods. You enter an interest rate that you expect to earn on your deposits. The calculator assumes you are using a tax-advantaged account and that interest is compounded monthly."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='tax-advantaged'])[1]/following::p[1]",
+      "value": "Compounding is the process of adding interest to your original deposit and contributing the sum for another identical period. The more frequent the compounding is, the greater the future value. Similarly, the higher your savings interest rate, the greater the future value of your savings."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=compounding",
+      "value": "compounding"
+    }
+  },
+  {
+    "click": {
+      "id": "link=compounding"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Compounding"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Compounding adds the interest you earn on an investment and invests it, plus the original investment, for another period. The result is that you earn more interest and a higher rate of return."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Compounding'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=tax-advantaged",
+      "value": "tax-advantaged"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=frequent",
+      "value": "frequent"
+    }
+  },
+  {
+    "click": {
+      "id": "link=frequent"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The frequency that a bank compounds interest on your deposit (e.g. daily, monthly, quarterly). The higher the frequency, the higher the interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "link=savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=future value",
+      "value": "future value"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The rate you earn makes a significant difference over time"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Interest earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOne_result_value",
+      "value": "3.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOneInterestEarned_result_value",
+      "value": "$808"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwo_result_value",
+      "value": "4.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwoInterestEarned_result_value",
+      "value": "$1,105"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThree_result_value",
+      "value": "6.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThreeInterestEarned_result_value",
+      "value": "$1,744"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFour_result_value",
+      "value": "10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFourInterestEarned_result_value",
+      "value": "$3,227"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-next-steps-zoneA-content",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-label",
+      "value": "Current savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOne-label",
+      "value": "Annual rate of return 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_RateOne",
+      "value": "3.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOne-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwo-label",
+      "value": "Annual rate of return 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_RateTwo",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwo-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThree-label",
+      "value": "Annual rate of return 3"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_RateThree",
+      "value": "6.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThree-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFour-label",
+      "value": "Annual rate of return 4"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_RateFour",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFour-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },  
+  {
+    "verifyText": {
+      "id": "lf_Savings_YearsDeposited-label",
+      "value": "Years deposited"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_YearsDeposited-error-message",
+      "value": "Must be between 1 and 90"
+    }
+  },
+  
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_CompoundingFrequency_tooltip"
+    }
+  },
+  
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },    
+  {
+    "setText": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "8,500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_RateOne",
+      "value": "3.55"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_RateTwo",
+      "value": "4.79"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_RateThree",
+      "value": "6.89"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_RateFour",
+      "value": "15.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },  
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_YearsDeposited",
+      "value": "8"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The rate you earn makes a significant difference over time"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOne_result_value",
+      "value": "3.55%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateOneInterestEarned_result_value",
+      "value": "$2,787"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwo_result_value",
+      "value": "4.79%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateTwoInterestEarned_result_value",
+      "value": "$3,960"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThree_result_value",
+      "value": "6.89%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateThreeInterestEarned_result_value",
+      "value": "$6,227"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFour_result_value",
+      "value": "15.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_RateFourInterestEarned_result_value",
+      "value": "$19,512"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

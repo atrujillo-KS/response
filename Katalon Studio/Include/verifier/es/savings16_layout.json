@@ -1,0 +1,171 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results_fields": {
+      "AnnPerYield": {
+        "fieldLabel": "Porcentaje de rendimiento anual "
+      },
+      "AvgMonInt": {
+        "fieldLabel": "Interés mensual promedio"
+      },
+      "TotIntErn": {
+        "fieldLabel": "Intereses totales devengados"
+      },
+      "TaxOwe": {
+        "fieldLabel": "Impuestos que adeudará"
+      },
+      "IntAftTax": {
+        "fieldLabel": "Intereses después de impuestos"
+      }
+    },
+    "fields": {
+      "Savings_DepositAmount": {
+        "fieldLabel": "Depósito inicial "
+      },
+      "Savings_CDTermNumber": {
+        "fieldLabel": "Plazo del depósito",
+        "smallLabel": "(número)"
+      },
+      "Savings_CDTermType": {
+        "fieldLabel": "Plazo del depósito",
+        "smallLabel": "(tipo)",
+        "dropdownOptions": [
+          {
+            "optionText": "Días"
+          },
+          {
+            "optionText": "Meses"
+          },
+          {
+            "optionText": "Trimestres"
+          },
+          {
+            "optionText": "Años"
+          }
+        ]
+      },
+      "Savings_CDInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Savings_CompoundingFrequency": {
+        "fieldLabel": "Frecuencia de capitalización ",
+        "dropdownOptions": [
+          {
+            "optionText": "Diariamente"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Cuatro veces al año"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto valdrá mi certificado de depósito en la fecha de vencimiento?",
+    "answer": "Su certificado de depósito valdrá <span class='lf-bold'>$%finalVal%</span> a la fecha de vencimiento el <span class='lf-bold'>%maturityDate%</span>.",
+    "deposit": "Importe del depósito ",
+    "interestEarned": "Intereses devengados",
+    "maturityDate_prefix": "vencerá el ",
+    "finalVal_prefix": "valor final de ",
+    "selectors": [
+      {
+        "label": "Certificado de deposito",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "cdvalueatmaturity": {
+      "title": "Valor del CD al vencimiento",
+      "definition": "El valor del CD al vencimiento es igual a la suma del valor nominal del CD (devuelto al vencimiento) más cualquier interés devengado que se adeude."
+    },
+    "cd": {
+      "title": "Certificado de depósito (CD)",
+      "definition": "Depósito a plazo que usted realiza en un banco. Los montos de este tipo de depósitos generalmente van de $500 a $250,000. La Corporación Federal de Seguros de Depósitos (Federal Deposit Insurance Corporation, FDIC) garantiza los certificados de depósito hasta un límite de $250,000 por depositante y por institución."
+    },
+    "cdamount": {
+      "title": "Monto del CD",
+      "definition": "El monto del certificado de depósito es el monto que deposita para comprar un CD. Usted deposita el valor nominal de un certificado de depósito y recibe ese el valor nominal a su vencimiento. Durante el plazo del certificado de depósito, usted cobra intereses a una tasa de interés fija o variable. Los CD se venden en denominaciones de $500 a $250,000."
+    },
+    "cdinterestrate": {
+      "title": "Tasa de interés del CD",
+      "definition": "Ingrese la tasa de interés anual de sus CD. Esta tasa se denomina tasa de interés simple. Si el interés es compuesto, usted obtendrá un porcentaje de rendimiento anual (APY, por sus siglas en inglés) que es mayor que el índice indicado."
+    },
+    "cdavemonthlyinterest": {
+      "title": "Interés mensual promedio del CD",
+      "definition": "El interés mensual promedio del CD es el monto promedio de interés que usted recibe mensualmente por un CD. Si se aplica el interés compuesto, usted recién recibe efectivamente este interés cuando el CD llega a su vencimiento. Durante el plazo del CD, se aplica el interés compuesto para obtener intereses adicionales. El interés compuesto tiene el beneficio de aumentar el interés mensual promedio."
+    },
+    "apy": {
+      "title": "Retorno porcentual anual (APY)",
+      "definition": "El retorno porcentual anual (APY) es la tasa de interés que usted obtiene sobre un certificado de depósito (CD) u otro depósito a plazo fijo. El cálculo de la APY supone que usted mantendrá la inversión hasta su vencimiento. La APY es mayor que la tasa consignada sobre el depósito si el interés es compuesto. Por ejemplo, un banco puede estar vendiendo un CD a un año a una tasa consignada del 10%. Si el CD aplica el interés compuesto trimestralmente, la APY aumenta al 10.38%. Si se aplica el interés compuesto diariamente, la APY aumenta al 10.52%."
+    },
+    "cddepositterm": {
+      "title": "Plazo del depósito del CD",
+      "definition": "Es el período para el cual usted deposita dinero en un certificado de depósito (CD). La mayoría de los plazos de depósito comunes son 3, 6 y 12 meses. Si desea vender su CD antes de su fecha de vencimiento, la institución financiera que lo mantiene probablemente le cobrará una penalidad por rescate anticipado."
+    },
+    "compoundingfrequency": {
+      "title": "Frecuencia de aplicación de interés compuesto",
+      "definition": "Frecuencia con la que un banco aplica el interés compuesto sobre su depósito. Cuanto mayor sea la frecuencia, mayor será la tasa de interés."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "cddepositdate": {
+      "title": "Fecha de depósito del CD",
+      "definition": "La fecha de depósito de un certificado de depósito (CD) es la fecha en la que usted compra un certificado de depósito. Introduzca la fecha con el siguiente formato: \"MM/DD/AAAA\"."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "cdcompoundingfrequency": {
+      "title": "Frecuencia de aplicación de interés compuesto sobre el CD",
+      "definition": "Ingrese la cantidad de veces al año que recibe interés compuesto sobre su CD. El interés compuesto aumenta la cantidad de intereses que usted gana en un certificado de depósito. Por ejemplo, si la institución otorga intereses compuestos cada tres meses (trimestralmente) sobre un CD con una tasa simple del 10 %, su porcentaje de rendimiento anual (APY) es del 10,38 %. Si otorga intereses compuestos mensualmente, usted gana 10.47 %. Si otorga intereses compuestos diariamente, usted gana 10.52%. Para un depósito de $10,000, los intereses compuestos diarios se suman a un interés adicional de $52 que usted gana sobre el rendimiento simple."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa el valor de vencimiento de su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CD\">certificado de depósito</a></span> (CD). Los CD son depósitos a plazo garantizados por hasta $250,000 por depositante por institución por la U.S. Federal Deposit Insurance Corporation (<a target=\"_blank\" href=\"https://www.fdic.gov/\">FDIC</a>). Debido a que los CD tienen un seguro federal, se los considera inversiones relativamente conservadoras. En consecuencia, pagan una tasa de interés más baja, expresada como un rendimiento porcentual anual (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#APY\">APY</a></span>), que las inversiones no aseguradas como las acciones y los bonos."
+    },
+    {
+      "textLabel": "Los factores que aumentan el rendimiento de un CD son: una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#interestrate\">tasa de interés</a></span> más alta sobre el depósito, una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CompoundingFrequency\">aplicación del interés compuesto más frecuente</a></span> y un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cddepositterm\">plazo de depósito </a></span> más largo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del valor del CD al vencimiento por el monto del depósito y los intereses devengados."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del valor del CD al vencimiento por el monto del depósito y los intereses devengados"
+    }
+  ]
+}

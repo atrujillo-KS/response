@@ -1,0 +1,375 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What's it worth to reduce my spending?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine how much reductions in spending may be worth if you invest the savings. Budget tightening ideas include eating out less, buying fewer clothes, taking fewer trips, waiting to buy a new car, going to fewer movies, brewing coffee at home, paying off credit cards, and carpooling to work, among others."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The tool assumes you contribute at the beginning of each month and that you save with a taxable account. If you want to simulate saving with a tax-advantaged account, enter a zero in the field for your state and federal tax rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will save $2,400 each year"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_text",
+      "value": "If you invest this amount, you'll accumulate $24,805 in 10 years and $79,624 at retirement."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Future Value"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-label",
+      "value": "Expected retirement age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_RetirementAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-error-message",
+      "value": "Must be between 2 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Annual rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=1st Action",
+      "value": "1ST ACTION"
+    }
+  },
+  {
+    "click": {
+      "id": "link=1st Action"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionOneName-label",
+      "value": "By"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionOneName",
+      "value": "eating out less"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionOneAmount-small-label",
+      "value": "(monthly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionOneAmount",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionOneAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=2nd Action",
+      "value": "2ND ACTION"
+    }
+  },
+  {
+    "click": {
+      "id": "link=2nd Action"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionTwoName-label",
+      "value": "By"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionTwoName",
+      "value": "buying fewer clothes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionTwoAmount-small-label",
+      "value": "(monthly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionTwoAmount",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionTwoAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=3rd Action",
+      "value": "3RD ACTION"
+    }
+  },
+  {
+    "click": {
+      "id": "link=3rd Action"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionThreeName-label",
+      "value": "By"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionThreeName",
+      "value": "brewing coffee at home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionThreeAmount-small-label",
+      "value": "(monthly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_BudgetingActionThreeAmount",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_BudgetingActionThreeAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "link=About You"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentAge",
+      "value": "45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_RetirementAge",
+      "value": "55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "15.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.55"
+    }
+  },
+  {
+    "click": {
+      "id": "link=1st Action"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_BudgetingActionOneAmount-table"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_BudgetingActionOneAmount",
+      "value": "75"
+    }
+  },
+  {
+    "click": {
+      "id": "link=2nd Action"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_BudgetingActionTwoAmount",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "link=3rd Action"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_BudgetingActionThreeAmount",
+      "value": "200"
+    }
+  },
+  {
+    "click": {
+      "id": "link=About You"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will save $5,100 each year"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer_text",
+      "value": "If you invest this amount, you'll accumulate $93,126 in 10 years and $93,126 at retirement."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

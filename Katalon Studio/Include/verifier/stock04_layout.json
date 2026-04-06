@@ -1,0 +1,529 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Investment",
+        "IncomeTaxes",
+        "FeesatPurchase",
+        "FeesatSale"
+      ],
+      "Investment": {
+        "tabLabel": "Investment",
+        "fields": [
+          "Stock_SharePurchasePrice",
+          "Stock_SharesPurchased",
+          "Stock_MonthsOwned"
+        ]
+      },
+      "IncomeTaxes": {
+        "tabLabel": "Income & Taxes",
+        "fields": [
+          "Stock_AnnualizedReturnDesired",
+          "Stock_ReturnTaxOption",
+          "Stock_AverageQuarterlyDividend",
+          "Stock_DividendIncomeSpendingOption",
+          "Global_SavingsInterestRate",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      },
+      "FeesatPurchase": {
+        "tabLabel": "Fees at Purchase",
+        "fields": [
+          "Stock_PurchaseFeesFixedAmount",
+          "Stock_PurchaseFeesPercentage",
+          "Stock_PurchaseFeesAmountPerShare"
+        ]
+      },
+      "FeesatSale": {
+        "tabLabel": "Fees at Sale",
+        "fields": [
+          "Stock_SaleFeesFixedAmount",
+          "Stock_SaleFeesPercentage",
+          "Stock_SaleFeesAmountPerShare"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [],
+      "refine": false
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Months you will own",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AnnualizedReturnDesired": {
+        "fieldLabel": "Annualized return desired",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "00.00",
+        "maximumValue": "100.00",
+        "maxlength": "7",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_ReturnTaxOption": {
+        "fieldLabel": "Desired return is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Before taxes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "After taxes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Dividend income is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Spent when received ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Invested elsewhere ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "SavingsInterestRate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "As fixed dollar amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "8",
+        "value": "8",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "As % of total amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "25.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "25.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "As dollar amount per share",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "As fixed dollar amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "8",
+        "value": "8",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "As % of total amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "25.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "25.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "As dollar amount per share",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "What stock price achieves my target rate of return?",
+    "answer": "A sale price of <span class='lf-bold'>$%sale%</span> or higher will earn a return of %rate%% before taxes",
+    "selectors": [
+      {
+        "label": "Minimum sale price",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "salePrice": "Minimum Sale Price"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "dividends": {
+      "title": "Dividends",
+      "definition": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    },
+    "dividend": {
+      "title": "Average quarterly dividends",
+      "definition": "Dividends earned on a lot of shares, on average during a quarter."
+    },
+    "capitalgainstaxes": {
+      "title": "Capital gains tax",
+      "definition": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "reinvesting": {
+      "title": "Reinvesting",
+      "definition": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the price at which you will have to sell shares of stock to realize your desired <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">rate of return</a></span>. You select whether you want your return to be calculated before or after income and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">capital gains taxes</a></span>."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">Dividends</a></span> that you receive on shares are <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvested</a></span> at the specified interest rate or spent."
+    },
+    {
+      "textLabel": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the minimum sale price, before taxes, needed to earn the desired rate of return."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Minimum sale price, before taxes, needed to earn the desired rate of return"
+    }
+  ]
+}

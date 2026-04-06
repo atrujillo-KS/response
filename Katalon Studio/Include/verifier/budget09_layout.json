@@ -1,0 +1,482 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "SpousesEstIncome",
+        "GoingtoWork",
+        "StayingatHome"
+      ],
+      "SpousesEstIncome": {
+        "tabLabel": "Spouse's Est. Income",
+        "fields": [
+          "Global_SpouseMonthlyGrossIncome",
+          "Global_MonthlyNontaxableIncome",
+          "Global_SelfEmployed",
+          "Global_FederalTaxRate",
+          "Global_StateTaxRate"
+        ]
+      },
+      "GoingtoWork": {
+        "tabLabel": "Going to Work",
+        "tabDesc": "Extra monthly expenses",
+        "fields": [
+          "Global_ExtraChildCareCosts",
+          "Global_ExtraWorkTransportationCosts",
+          "Global_ExtraWorkClothingCosts",
+          "Global_ExtraHousekeepingCosts",
+          "Global_ExtraChildrensEntertainmentCosts",
+          "Global_ExtraEatingOutCosts",
+          "Global_ExtraOtherCostsGoingToWorkStayingAtHome"
+        ]
+      },
+      "StayingatHome": {
+        "tabLabel": "Staying at Home",
+        "tabDesc": "Extra monthly expenses",
+        "fields": [
+          "Global_ExtraMedicalInsuranceCosts",
+          "Global_ExtraLifeInsuranceCosts",
+          "Global_ExtraOtherCostsStayingAtHome"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Global_SpouseMonthlyGrossIncome"
+        ],
+        [
+          "MonthlyExtraExp_AtHome"
+        ],
+        [
+          "MonthlyExtraExpenses"
+        ],
+        [
+          "MonthlyIncomeTaxes"
+        ],
+        [
+          "MonthlyEmploymentTaxes"
+        ],
+        [
+          "MonthlyGain"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Global_SpouseMonthlyGrossIncome": {
+        "fieldLabel": "Monthly gross income"
+      },
+      "MonthlyExtraExp_AtHome": {
+        "fieldLabel": "Plus extra expenses if staying at home"
+      },
+      "MonthlyExtraExpenses": {
+        "fieldLabel": "Less extra expenses if going to work"
+      },
+      "MonthlyIncomeTaxes": {
+        "fieldLabel": "Less income taxes"
+      },
+      "MonthlyEmploymentTaxes": {
+        "fieldLabel": "Less employment taxes"
+      },
+      "MonthlyGain": {
+        "fieldLabel": ""
+      }
+    },
+    "fields": {
+      "Global_SpouseMonthlyGrossIncome": {
+        "fieldLabel": "Monthly gross income",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "6000",
+        "value": "6000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "25000",
+        "widgetStep": "250",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_SpouseMonthlyGrossIncome",
+          "Global_MonthlyNontaxableIncome"
+        ]
+      },
+      "Global_MonthlyNontaxableIncome": {
+        "fieldLabel": "Monthly non-taxable income",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "25000",
+        "widgetStep": "250",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_SpouseMonthlyGrossIncome",
+          "Global_MonthlyNontaxableIncome"
+        ]
+      },
+      "Global_SelfEmployed": {
+        "fieldLabel": "Employment status",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Employed ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Self-employed",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Federal tax rate",
+        "defaultValue": "25",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "80",
+        "widgetStep": "1",
+        "value": "25",
+        "format": "percent"
+      },
+      "Global_StateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "State tax rate",
+        "defaultValue": "6.80",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20",
+        "widgetStep": ".1",
+        "value": "6.80",
+        "format": "percent"
+      },
+      "Global_ExtraChildCareCosts": {
+        "fieldLabel": "Child care",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraWorkTransportationCosts": {
+        "fieldLabel": "Work transportation",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "80",
+        "value": "80",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraWorkClothingCosts": {
+        "fieldLabel": "Work-related attire",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraHousekeepingCosts": {
+        "fieldLabel": "Housekeeping",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraChildrensEntertainmentCosts": {
+        "fieldLabel": "Children's entertainment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraEatingOutCosts": {
+        "fieldLabel": "Eating out",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraOtherCostsGoingToWorkStayingAtHome": {
+        "fieldLabel": "Other",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraMedicalInsuranceCosts": {
+        "fieldLabel": "Medical insurance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraLifeInsuranceCosts": {
+        "fieldLabel": "Life insurance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ExtraOtherCostsStayingAtHome": {
+        "fieldLabel": "Other",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "Should my spouse work too?",
+    "answer": "Net monthly %which% from spouse working: <span class='lf-bold'>%amount%</span>",
+    "selectors": [
+      {
+        "label": "Spouse Working",
+        "width": "100%"
+      }
+    ],
+    "benefits": "Benefit from working",
+    "costs": "Cost from working",
+    "gain": "gain",
+    "loss": "loss",
+    "netMonthly": "Net monthly %which% from spouse working",
+    "ariaBenefit": "Benefit chart, benefit from working $%benefit%, cost from working $%cost%"
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the net financial benefits of having a spouse who earns an income."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total benefit from working and the total cost from working."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total benefit from working and the total cost from working"
+    }
+  ]
+}

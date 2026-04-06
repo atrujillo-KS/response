@@ -1,0 +1,352 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Home_DownPaymentPercentage",
+          "Home_LoanTermInYears",
+          "Home_InterestOnlyPeriodInYears",
+          "Home_InterestRate"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance"
+        ]
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number",
+        "crossFields": [
+          "Home_LoanTermInYears",
+          "Home_InterestOnlyPeriodInYears"
+        ]
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Home_InterestOnlyPeriodInYears": {
+        "fieldLabel": "Interest-only period",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "glossaryTerm": "interestonlyperiod",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "0",
+        "maximumValue": "39",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Home_LoanTermInYears",
+          "Home_InterestOnlyPeriodInYears"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "columnHeaders": [
+        "Interest-only period",
+        "Remaining term"
+      ],
+      "fields": [
+        [
+          "IntOnlyPay",
+          "PrincAndInt"
+        ],
+        [
+          "TaxAndIns",
+          "TaxAndIns2"
+        ],
+        [
+          "MortIns",
+          "MortIns2"
+        ],
+        [
+          "TotIntOnlyPay",
+          "TotPay"
+        ]
+      ]
+    },
+    "results_fields": {
+      "IntOnlyPay": {
+        "fieldLabel": "Principal and interest"
+      },
+      "PrincAndInt": {},
+      "MortIns": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "MortIns2": {},
+      "TaxAndIns": {
+        "fieldLabel": "Property taxes and insurance"
+      },
+      "TaxAndIns2": {},
+      "TotIntOnlyPay": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "TotPay": {}
+    }
+  },
+  "labels": {
+    "amount": "Amount",
+    "title": "How much will my interest-only payment be?",
+    "answer": "Your total payment is <span class='lf-bold'>$%result%</span> for the interest-only period",
+    "selectors": [
+      {
+        "label": "Breakdown",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Over Time",
+        "width": "33%",
+        "getTableData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "intOnlyPay": "Principal & Interest",
+    "taxAndIns": "Taxes & Insurance",
+    "mortIns": "PMI",
+    "principal": "Principal",
+    "interest": "Interest",
+    "year_1": "1 Year",
+    "year_2": "2 Years",
+    "year_3": "3 Years",
+    "year_4": "4 Years",
+    "year_5": "5 Years",
+    "year_10": "10 Years",
+    "year_15": "15 Years",
+    "year_20": "20 Years",
+    "year_30": "30 Years",
+    "year": "Years"
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "interestonlyperiod": {
+      "title": "Interest-only Period",
+      "definition": "For interest-only loans, the period of time early in the loan term where you are not required to make payments towards the loan principal.  "
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool estimates your monthly mortgage payment for an interest-only loan. An interest-only loan is a loan in which the borrower pays only interest payments and doesn't pay off any of the loan balance at the beginning of the loan. After the interest-only period, payments are increased to repay the principal fully in the remaining time. The longer the interest-only period lasts, the sharper the monthly payment will jump once the interest-only period ends."
+    },
+    {
+      "textLabel": "Monthly payments are shown both during and after the initial, interest-only period. The interest-only loan used in this tool is assumed to have a fixed rate."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of the total monthly payment in the interest-only period by principal and interest, private mortgage insurance, and property taxes and homeowners insurance."
+    },
+    {
+      "title": "Stacked column chart of the amounts applied to principal and interest at different intervals over the course of the loan term."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the total monthly payment in the interest-only period by principal and interest, private mortgage insurance, and property taxes and homeowners insurance"
+    },
+    {
+      "title": "Amounts applied to principal and interest at different intervals over the course of the loan term"
+    }
+  ]
+}

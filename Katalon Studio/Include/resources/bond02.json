@@ -1,0 +1,315 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is my current yield on coupon income received?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool computes the current yield of a bond, before and after taxes. Current yield equals the bond's annual interest payment divided by the bond's current price. Depending on the type of bond owned, the taxes applied might vary."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your current yield after taxes is 3.36%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldBeforeTaxes_result_label",
+      "value": "Current yield before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldBeforeTaxes_result_value",
+      "value": "4.09%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldAfterTaxes_result_label",
+      "value": "Current yield after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldAfterTaxes_result_value",
+      "value": "3.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Before Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "After Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Bond price (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_PurchasePrice"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "120.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "8.12"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Municipal: not state tax-exempt"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Municipal: state tax-exempt"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing separately"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "75,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.15"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your current yield after taxes is 6.49%."
+    }
+  },
+    {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldBeforeTaxes_result_value",
+      "value": "6.77%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponYieldAfterTaxes_result_value",
+      "value": "6.49%"
+    }
+  }
+]

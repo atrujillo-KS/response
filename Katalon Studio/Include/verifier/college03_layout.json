@@ -1,0 +1,206 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_ModifiedAdjustedGrossIncome",
+          "College_PeriodicSavings",
+          "College_SavingsFrequency",
+          "Global_TaxFilingStatus"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "refine": false
+    },
+    "fields": {
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income ",
+        "smallLabel": "(MAGI)",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_PeriodicSavings": {
+        "fieldLabel": "Periodic savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "125",
+        "value": "125",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_SavingsFrequency": {
+        "fieldLabel": "Savings frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Bi-weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Semi-monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Monthly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Quarterly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Semi-annually",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Annually",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Tax filing status",
+        "smallLabel": "",
+        "glossaryTerm": "taxfilingstatus",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Head of household",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Married filing jointly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Married filing separately",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "What investments can I use to save for college?",
+    "answer": "",
+    "selectors": [
+      {
+        "label": "",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "magi_notFound": "<div class='lf-container-text'><p class='lf-college03-ans'>You can contribute to one or more of the following investment options:</p><ul><li>Section 529 plan</li><li>Coverdell ESA up to $2,000 yearly</li><li>UGMA/UTMA account</li><li>Taxable account</li></ul></div>",
+    "magi_found": "<div class='lf-container-text'><p class='lf-college03-ans'>You can contribute to one or more of the following investment options:</p><ul><li>Section 529 plan</li><li>UGMA/UTMA account</li><li>Taxable account</li></ul><p class='lf-college03-ans'>It appears as if you will not be able to contribute to a Coverdell ESA because your MAGI exceeds the income limitations for your tax filing status.</p></div>"
+  },
+  "glossaryItems": {
+    "ugmautma": {
+      "title": "UGMA/UTMA accounts",
+      "definition": "Custodial accounts with limited tax advantages that are used for giving to a child or other beneficiary under the age of 18 or 21. UGMA stands for Uniform Gifts to Minors Act and UTMA is an acronym for Uniform Transfers to Minors Act. "
+    },
+    "taxableaccount": {
+      "title": "Taxable account",
+      "definition": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive. "
+    },
+    "coverdellesa": {
+      "title": "Coverdell education savings account (ESA)",
+      "definition": "A tax-advantaged investment account designed to encourage savings to cover future elementary, secondary or college education expenses."
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "section529plan": {
+      "title": "Section 529 plans",
+      "definition": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    },
+    "savingfrequencycollege03": {
+      "title": "Saving frequency",
+      "definition": "How often that you estimate you will be able to contribute to a Section 529 plan, Coverdell education savings account or other tax-advantaged account for future college expenses."
+    },
+    "qtp": {
+      "title": "Qualified tuition plan (QTP)",
+      "definition": "A qualified tuition plan (QTP) is also called a Section 529 plan after the section of tax code that governs it. Qualified tuition plans include prepaid tuition plans and college savings plans. Currently, qualified tuition plans are state-sponsored savings plans for college expenses of a child, grandchild or other dependent. The 2001 tax law expands their benefits by allowing tax-exempt distributions to pay for qualified higher education expenses. State-sponsored plans may also offer exemptions from state income taxes. Check with your plan administrator."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool explains some of the options you have to save for college based on your income, tax filing status, and intended savings. Options may include tax-advantaged accounts like <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Section529Plan\">Section 529 plans</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CoverdellESA\">Coverdell ESAs</a></span>."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

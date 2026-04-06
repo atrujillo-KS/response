@@ -1,0 +1,658 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will changes in my tax rate affect the decision?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares the retirement monthly income (after taxes) from four investment alternatives: a traditional IRA, Roth IRA, nondeductible IRA, and depositing into a taxable account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[1]",
+      "value": "Based on your before- and after-retirement income tax rates, one IRA option might provide a significantly higher monthly income than others might provide. If your tax rate remains constant, a traditional IRA and a Roth IRA will provide approximately the same return. If you anticipate that your tax rates will rise, you will likely benefit from paying taxes on the funds before they are contributed to the account. If you suspect that your tax rate will be lower during retirement, it is probably in your interest to defer payment of your taxes with a traditional IRA."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[2]",
+      "value": "Key assumptions of this tool include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[3]",
+      "value": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[4]",
+      "value": "Deposits are compounded monthly"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=traditional IRA",
+      "value": "traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Roth IRA",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=nondeductible IRA",
+      "value": "nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=taxable account",
+      "value": "taxable account"
+    }
+  },
+  {
+    "click": {
+      "id": "link=taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxable account'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Monthly income provided by four investment options at various tax rates during retirement:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Monthly income']/parent::*",
+      "value": "Monthly income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Retirement tax rate (%)']/parent::*",
+      "value": "Retirement tax rate (%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='0']/parent::*",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='50']/parent::*",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Retirement tax rate (%)']/parent::*",
+      "value": "Retirement tax rate (%)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "How higher tax rates during retirement will affect monthly income provided by the Traditional IRA, Roth IRA, Nondeductible IRA and Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Retirement Tax Rate (%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[4]",
+      "value": "Nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[5]",
+      "value": "Taxable Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "0%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$2,782"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$1,838"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[3]",
+      "value": "$1,838"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[4]",
+      "value": "$161"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[11]/th",
+      "value": "50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[11]/td",
+      "value": "$1,385"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[11]/td[2]",
+      "value": "$1,838"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[11]/td[3]",
+      "value": "$913"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[11]/td[4]",
+      "value": "$142"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Contributions-accordion",
+      "value": "Contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-label",
+      "value": "Annual contribution"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribAmt",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt-label",
+      "value": "Contributions are invested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt",
+      "value": "After taxes Before taxes Disregarding taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-label",
+      "value": "Age to begin withdrawing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-error-message",
+      "value": "Must be between 60 and 71"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-label",
+      "value": "Your state + federal tax rate (before retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateBef_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft-label",
+      "value": "Your state + federal tax rate (after retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateAft",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateAft_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-label",
+      "value": "Funds you wish to leave at death"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathFunds",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+     {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+    {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Returns-accordion",
+      "value": "Returns"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-label",
+      "value": "Estimated rate of return on IRA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IRARateRothIRA",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-label",
+      "value": "Estimated return on other assets"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRARateRothIRA",
+      "value": "7.48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SavRate",
+      "value": "3.45"
+    }
+  },
+    {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge",
+      "value": "63"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetAge",
+      "value": "70"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge",
+      "value": "85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateAft",
+      "value": "15.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathFunds",
+      "value": "25,000"
+    }
+  },
+   {
+    "click": {
+      "id": "Contributions-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ContribAmt",
+      "value": "25,000"
+    }
+  },
+
+     {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Monthly income provided by four investment options at various tax rates during retirement:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/th",
+      "value": "0%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td",
+      "value": "$1,240"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td[2]",
+      "value": "$1,087"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td[3]",
+      "value": "$1,087"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td[4]",
+      "value": "$795"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr[11]/th",
+      "value": "50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr[11]/td",
+      "value": "$785"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr[11]/td[2]",
+      "value": "$1,026"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr[11]/td[3]",
+      "value": "$650"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr[11]/td[4]",
+      "value": "$677"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Home Equity Loan</name>
+   <tag></tag>
+   <elementGuidId>46753062-a284-48e7-80ab-ff71b6b8c63d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>th.lf-results-header.tableCellADA</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='lf-results-table-main']/thead/tr/th</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=columnheader[name=&quot;Home Equity Loan&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>d2a054df-e1aa-4009-976d-95f17f823073</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-results-header tableCellADA</value>
+      <webElementGuid>66c6bdfb-1051-40f6-a2ea-711c1697bdde</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>col</value>
+      <webElementGuid>183870fe-7cf0-4f6a-bcac-8e48259c14fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Home Equity Loan</value>
+      <webElementGuid>fac807c9-26b0-44ec-91fb-840f57e46771</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-results-table-main&quot;)/thead[1]/tr[1]/th[@class=&quot;lf-results-header tableCellADA&quot;]</value>
+      <webElementGuid>51dbda62-2a0d-4c5a-a220-17c333e29a5a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='lf-results-table-main']/thead/tr/th</value>
+      <webElementGuid>ed303151-f820-4d97-8946-be1df2b68674</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Results details'])[1]/following::th[1]</value>
+      <webElementGuid>9914fad5-594d-4e8c-b9bf-e5ecd661e5af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Show details'])[1]/following::th[1]</value>
+      <webElementGuid>c78d6ad3-6359-4aa6-b470-0d9c4230d73c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Loan'])[1]/preceding::th[1]</value>
+      <webElementGuid>bf84e9cc-496d-464d-8b27-de64ae9480c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly payment'])[1]/preceding::th[2]</value>
+      <webElementGuid>338dbb1b-7f61-45b2-ab68-1dc8f0cb84a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Home Equity Loan']/parent::*</value>
+      <webElementGuid>e44bdf82-6c34-4e02-b760-a68ebcd09f60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th</value>
+      <webElementGuid>aaf30ed2-9341-45c3-ba5a-9c5431ae625d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Home Equity Loan' or . = 'Home Equity Loan')]</value>
+      <webElementGuid>83f60a63-1ba5-4635-b922-fba7366fb1f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

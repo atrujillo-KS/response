@@ -1,0 +1,1263 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.pnc.com/response/lf-pnc-sp/calc/retire03?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Según sus aportes, se espera que sus ahorros para la jubilación se agoten a los 80 años de edad. Necesitará ahorrar $106,472.94 adicionales para jubilarse a los 67 años de edad."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/div",
+      "value": "Algunas formas posibles de reencaminarse."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/div",
+      "value": "Algunas formas posibles de reencaminarse."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[2]",
+      "value": "Aumentar su contribución anual de jubilación a $7,104.00 (9 % de los ingresos)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[3]",
+      "value": "Aumentar su tasa de rendimiento antes de la jubilación al 9 %"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[4]",
+      "value": "Disminuir sus gastos de jubilación"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Ahorros planeados vs. requeridos"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Ahorros totales planificados al momento de la jubilación con los ahorros necesarios para financiar completamente su jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Categoría"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Ahorros planeados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Ahorros requeridos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$1,452,938.64"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$1,559,411.58"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Ahorros a lo largo del tiempo"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Edad']/parent::*",
+      "value": "Edad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Balance']/parent::*",
+      "value": "Balance"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/caption",
+      "value": "Acumulación de ahorros planificados y requeridos (si corresponde) hasta la jubilación y la disposición de los saldos durante la jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th",
+      "value": "Edad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th[2]",
+      "value": "Ahorros planeados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th[3]",
+      "value": "Ahorros requeridos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/th",
+      "value": "38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "$87,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td[2]",
+      "value": "$88,104"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[43]/th",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[43]/td",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[43]/td[2]",
+      "value": "$42,605.15"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Ahorros planeados"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "VER TABLA"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Ahorros planeados - Saldos por año"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Edad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Crecimiento de inversión"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Contribuciones"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Gastos de jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-7",
+      "value": "Otros ingresos de jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-8",
+      "value": "Retiros de cuenta"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-9",
+      "value": "Balance final"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td",
+      "value": "38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$6,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$6,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[7]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[8]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[9]",
+      "value": "$87,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[3]",
+      "value": "$313.42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[5]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[6]",
+      "value": "$156,473.27"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[7]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[8]",
+      "value": "$15,984.49"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[43]/td[9]",
+      "value": "$0.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_input_fields fieldset#lf-tab-AboutYou div.lf-legend.lf-accordian-legend h3 a",
+      "value": "Acerca de usted"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-label",
+      "value": "Edad actual"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Debe ubicarse entre 1 y 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-label",
+      "value": "Edad de retiro"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_RetirementAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-error-message",
+      "value": "Debe ubicarse entre 2 y 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-label",
+      "value": "Ingreso anual del hogar"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-error-message",
+      "value": "Debe ubicarse entre $0 y $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Ingreso bruto del hogar"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Sus ingresos antes de impuestos, incluidos los ingresos de su cónyuge, provenientes de salarios e inversiones."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-RetirementPlan div.lf-legend.lf-accordian-legend h3 a",
+      "value": "Plan de retiro"
+    }
+  },
+  {
+    "click": {
+      "id": "RetirementPlan-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings-label",
+      "value": "Ahorro actual para el retiro"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_CurrentSavings",
+      "value": "75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings-error-message",
+      "value": "Debe ubicarse entre $0 y $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_CurrentSavings_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Ahorro actual para el retiro"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Monto total que actualmente tiene ahorrado para su jubilación en cuentas como 401(k), IRA y anualidades."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave-label",
+      "value": "Porcentaje de ingresos a ahorrar ($6K anuales)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave-error-message",
+      "value": "Debe ubicarse entre 0.00% y 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Porcentaje de aporte para la jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Al ahorrar para la jubilación, la mayoría de los expertos recomiendan una meta anual de ahorro para la jubilación del 10 % al 15 % de sus ingresos antes de impuestos, incluyendo cualquier contribución equivalente del empleador. Esta calculadora asume que usted hace una contribución anual al final de cada año y cualquier retiro se realiza una vez al año a finales de año."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement-label",
+      "value": "Estilo de inversión antes de la jubilación (tasa de rendimiento supuesta del 8 %)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "Preservación Conservador Moderado Equilibrado Crecimiento Agresivo"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Estilo de inversión"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Una cartera de inversión agresiva es más apropiada para aquellos que tienen una mayor tolerancia al riesgo, un horizonte temporal más largo y un apetito por mayores rendimientos. Tal estrategia tendría una asignación de activos con una ponderación sustancial en acciones y posiblemente poca o ninguna asignación en bonos o efectivo. Una estrategia de inversión conservadora es más adecuada para aquellos que tienen una menor tolerancia al riesgo, un horizonte temporal más corto y un deseo de rendimientos constantes que priorizan la preservación de capital. En una estrategia de inversión conservadora, más de la mitad de una cartera generalmente se mantendrá en títulos de deuda y equivalentes al efectivo en lugar de acciones u otros activos de riesgo."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement-label",
+      "value": "Estilo de inversión durante la jubilación (tasa de rendimiento supuesta del 2 %)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "Preservación Conservador Moderado Equilibrado Crecimiento Agresivo"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Estilo de inversión"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Una cartera de inversión agresiva es más apropiada para aquellos que tienen una mayor tolerancia al riesgo, un horizonte temporal más largo y un apetito por mayores rendimientos. Tal estrategia tendría una asignación de activos con una ponderación sustancial en acciones y posiblemente poca o ninguna asignación en bonos o efectivo. Una estrategia de inversión conservadora es más adecuada para aquellos que tienen una menor tolerancia al riesgo, un horizonte temporal más corto y un deseo de rendimientos constantes que priorizan la preservación de capital. En una estrategia de inversión conservadora, más de la mitad de una cartera generalmente se mantendrá en títulos de deuda y equivalentes al efectivo en lugar de acciones u otros activos de riesgo."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits-label",
+      "value": "Beneficios mensuales del Seguro Social"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits-error-message",
+      "value": "Debe ubicarse entre $0 y $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Seguro Social"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El programa federal de seguridad de ingresos para jubilación en los EE.UU. Si es elegible, puede comenzar a recibir beneficios cuando cumpla 62 años. La edad mínima para recibir los beneficios completos es 66 años si nació entre 1943 y 1954. La edad de jubilación completa aumenta gradualmente si nació entre 1955 y 1960 hasta que llegue a los 67 años. Para cualquier persona nacida en 1960 o después, los beneficios de jubilación completos se pagan a los 67 años de edad."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "link=Obtenga un estimado rápido en ssa.gov",
+      "value": "Obtenga un estimado rápido en ssa.gov"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Obtenga un estimado rápido en ssa.gov"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "title=Quick Calculator"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Office of the Chief Actuary'])[1]/following::h1[1]",
+      "value": "Social Security Quick Calculator"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment-label",
+      "value": "Beneficios de pensión mensuales"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_MonthlyPensionPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment-error-message",
+      "value": "Debe ubicarse entre $0 y $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_MonthlyPensionPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_MonthlyPensionPayment_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Pensión"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Un plan de jubilación patrocinado por el empleador que paga a los jubilados una cantidad fija que se basa en la cantidad de años de servicio y el historial de salarios."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome-label",
+      "value": "Otros ingresos mensuales de jubilación"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_OtherMonthlyIncome",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome-error-message",
+      "value": "Debe ubicarse entre $0 y $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_OtherMonthlyIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_OtherMonthlyIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Fuentes alternativas de ingresos para la jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Las fuentes comunes de ingresos para la jubilación, además de las cuentas de inversión, los beneficios del Seguro Social y las pensiones, incluyen ingresos por alquileres, hipotecas inversas y trabajo a medio tiempo."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-tab-Assumptions.lf-open div.lf-legend.lf-accordian-legend.lf-open h3 a",
+      "value": "Presunciones"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage-label",
+      "value": "Gastos de jubilación (% de los ingresos previos a la jubilación)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_RetirementSpendingPercentage",
+      "value": "80.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage-error-message",
+      "value": "Debe ubicarse entre 0.00% y 200.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Retirement_RetirementSpendingPercentage_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Gastos de jubilación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "La mayoría de los expertos están de acuerdo en que necesitará entre el 70 y el 80 % de sus ingresos previos a la jubilación para mantener su nivel de vida durante la jubilación. Esta cantidad se basa en los ingresos del hogar ganados durante el año inmediatamente anterior a su jubilación."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-label",
+      "value": "Expectativa de vida"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-error-message",
+      "value": "Debe ubicarse entre 5 y 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LifeExpectancy_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Expectativa de vida"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Su expectativa de vida es el número de años que se espera que viva, estadísticamente. Su expectativa de vida se basa en la esperanza de vida real del mismo grupo de población que comparte características de riesgo similares. Estas características de riesgo incluyen hábitos de fumar y beber, nivel de ejercicio y problemas de salud hereditarios o congénitos. La expectativa de vida se utiliza para calcular las primas del seguro de vida y las distribuciones mínimas requeridas de las cuentas IRA, entre otras razones."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome-label",
+      "value": "Tasa de crecimiento de ingresos esperada"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome-error-message",
+      "value": "Debe ubicarse entre 0.00% y 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Tasa de crecimiento de ingresos esperada"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El porcentaje de aumento en los ingresos del hogar que espera recibir hasta la jubilación."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Tasa de inflación"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "3.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Debe ubicarse entre 0.00% y 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InflationRate_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Tasa de inflación"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Un aumento general en los precios que paga por bienes y servicios, expresado como una tasa anual. Una medida común de la inflación en los EE. UU. es el índice de precios al consumidor (IPC)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus-label",
+      "value": "Estado civil"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "Soltero(a) Casado(a)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaritalStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_MaritalStatus_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Estado civil y Seguro Social"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Las parejas casadas tienen 1.5 veces el beneficio máximo del Seguro Social que los solteros asalariados. Esta calculadora asume que solo trabaja un cónyuge. Si está casado y tanto usted como su cónyuge trabajan, se recomienda que realice el cálculo dos veces: una vez para cada cónyuge y sus respectivos ingresos."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentAge",
+      "value": "45"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_RetirementAge",
+      "value": "60"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "120,000"
+    }
+  },
+  {
+    "click": {
+      "id": "RetirementPlan-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_CurrentSavings",
+      "value": "100,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_PercentageOfIncomeToSave",
+      "value": "10.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Retirement_InvestmentStyleBeforeRetirement",
+      "value": "label=Agresivo"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Retirement_InvestmentStyleDuringRetirement",
+      "value": "label=Agresivo"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_ExpectedMonthlySocialSecurityBenefits",
+      "value": "2,500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_MonthlyPensionPayment",
+      "value": "500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_OtherMonthlyIncome",
+      "value": "500"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Retirement_RetirementSpendingPercentage",
+      "value": "70.00"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "90"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_EstimatedAnnualIncreaseInIncome",
+      "value": "3.00"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InflationRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_MaritalStatus",
+      "value": "label=Casado(a)"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Según sus aportes, se espera que sus ahorros para la jubilación se agoten a los 76 años de edad. Necesitará ahorrar $298,433.98 adicionales para jubilarse a los 60 años de edad."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/div",
+      "value": "Algunas formas posibles de reencaminarse."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li",
+      "value": "Retrasar su jubilación hasta los 63 años de edad"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[2]",
+      "value": "Aumentar su contribución anual de jubilación a $20,526.00 (17 % de los ingresos)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[3]",
+      "value": "Aumentar su tasa de rendimiento antes de la jubilación al 14 %"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-more-info-table-placeholder']/div/ul/li[4]",
+      "value": "Disminuir sus gastos de jubilación"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-17']/tbody/tr/td",
+      "value": "$771,448.45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-17']/tbody/tr/td[2]",
+      "value": "$1,069,882.43"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_main']/div/div[3]/div[6]/div/small[2]",
+      "value": "© 2025 Leadfusion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "Términos de uso"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "title=Terms of Use"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_2"
+    }
+  }
+]

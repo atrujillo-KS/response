@@ -1,0 +1,136 @@
+{
+  "layout": {
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "Monto del préstamo"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_MonthlyPayment": {
+        "fieldLabel": "Pago mensual"
+      },
+      "Business_AdditionalPrincipalPayment": {
+        "fieldLabel": "Pago de capital adicional"
+      },
+      "Business_FrequencyOfAdditionalPrincipalPayments": {
+        "fieldLabel": "Frecuencia de los pagos de capital adicional",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Quincenal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Semestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuánto tiempo llevará pagar el préstamo?",
+    "answer": "Llevará <span class='lf-bold'>%years% %yearlabel%</span> y <span class='lf-bold'>%months% %monthlabel%</span> para pagar su préstamo",
+    "balance": "Saldo",
+    "month": "Mes",
+    "dataTableCategoryTitle": "Mes",
+    "interest": "Interés pagado",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Liquidación",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Interés acumulativo",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Su pages en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Saldo",
+        "Interés pagado",
+        "Interés acumulativo",
+        "Pago mensual",
+        "Capital pagado"
+      ],
+      [
+        "Mes",
+        "Saldo",
+        "Interés pagado",
+        "Interés acumulativo",
+        "Pago mensual",
+        "Capital pagado"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "loanratebus04": {
+      "title": "Tasa de interés",
+      "definition": "Se supone que la tasa de interés del préstamo es una tasa fija hasta el vencimiento."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "<b></b>"
+    },
+    {
+      "textLabel": "Esta herramienta muestra la cantidad de tiempo que lleva pagar un préstamo. Si usted hace <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AddPaymentBus04\">pagos de capital adicionales</a></span>, acorta el período de pago. También reduce los gastos por intereses. Generalmente, usted realiza pagos anticipados si tiene efectivo excedente o si su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CostofCapital\">costo actual de capital</a></span> es más bajo. Dado que los gastos por intereses son deducibles de impuestos, la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AfterTaxInterestRateBus04\">tasa de interés después de impuestos</a></span> debería considerarse al momento de tomar una decisión de pago anticipado."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la amortización del principal del préstamo durante el plazo del préstamo."
+    },
+    {
+      "title": "Gráfico de columnas de los intereses acumulados pagados durante el plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Amortización del principal del préstamo durante el plazo del préstamo"
+    },
+    {
+      "title": "Intereses acumulados pagados durante el plazo del préstamo"
+    }
+  ]
+}

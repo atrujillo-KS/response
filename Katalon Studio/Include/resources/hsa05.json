@@ -1,0 +1,444 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much should I contribute to my HSA to reach my retirement goal?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you figure out how much you should contribute to your HSA to meet a specific goal amount at retirement."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The return on your HSA is influenced by the investment decisions you make."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "For IRS help concerning health savings accounts, refer to IRS Publication 969 and IRS Publication 502."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Saving $258 per month should help you reach your goal"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "How much you should contribute monthly to the HSA to reach your retirement goal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Saving Per Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$258"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAAge-label",
+      "value": "Are you 55 years of age or older?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAAge",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAAge",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSAAge_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Your Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSASpouseAge-label",
+      "value": "Is spouse 55 years of age or older?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSASpouseAge",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSASpouseAge",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSASpouseAge_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Your Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyMedical-label",
+      "value": "Expected monthly health care expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyMedical",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyMedical-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MonthlyMedical_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Qualified Medical Expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Qualified medical expenses are defined by IRS Publication 502."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductible-label",
+      "value": "HDHP plan deductible"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPDeductible",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductible-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HDHPDeductible_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "High Deductible Health Plan Deductible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A deductible is what you pay out of pocket before any insurance payments are applied to your care. A high deductible health plan is one where the deductible is over $1,650 for single coverage ($3,300 for family coverage) in 2025."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "HSAInfo-accordion",
+      "value": "HSA Info"
+    }
+  },
+  {
+    "click": {
+      "id": "HSAInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPlanType-label",
+      "value": "Plan type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPlanType",
+      "value": "Single Family"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HealthPlanType",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HealthPlanType_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "HSA Health Plan Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSABalance-label",
+      "value": "Current HSA balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSABalance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSABalance-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAReturnRate-label",
+      "value": "Annual HSA rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAReturnRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAReturnRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSAReturnRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Annual Rate of Return on your HSA account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The return you expect to earn on the money in your HSA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSAAge",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSASpouseAge",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSARetire",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_MonthlyMedical",
+      "value": "440"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPDeductible",
+      "value": "3,500"
+    }
+  },
+  {
+    "click": {
+      "id": "HSAInfo-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HealthPlanType",
+      "value": "label=Family"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSABalance",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSAReturnRate",
+      "value": "3.45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Saving $294 per month should help you reach your goal"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-8']/tbody/tr/td",
+      "value": "$294"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

@@ -1,0 +1,292 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "tabLabel": "Basic",
+        "selected": true,
+        "fields": [
+          "Global_AutoPurchasePrice",
+          "Global_AutoDownPayment",
+          "Global_AutoLoanTerm",
+          "Global_AutoInterestRate"
+        ]
+      },
+      "advanced": {
+        "tabLabel": "Advanced",
+        "fields": [
+          "Auto_CashRebate",
+          "Auto_TradeInValue",
+          "Auto_OutstandingLoanAmount"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "PrincipalAuto05"
+        ],
+        [
+          "Auto_TotalInterestPaid"
+        ]
+      ],
+      "refine": true
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maxlength": "9",
+        "maximumValue": "1000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "249999",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AutoLoanTerm": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Loan term",
+        "defaultValue": "48",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "84",
+        "maxlength": "3",
+        "safeType": "number",
+        "smallLabel": "(months)",
+        "valueTextLabel": "months",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "Global_AutoInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.00",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "widgetStep": "0.1",
+        "value": "",
+        "format": "percent"
+      },
+      "Auto_CashRebate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cash rebate",
+        "defaultValue": "0",
+        "glossaryTerm": "cashrebate",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "0",
+        "format": "currency"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Trade-in value",
+        "smallLabel": "",
+        "glossaryTerm": "tradeinvalue",
+        "format": "currency",
+        "defaultValue": "4000",
+        "value": "4000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "200000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_OutstandingLoanAmount": {
+        "fieldLabel": "Amount owed on trade-in",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "1",
+        "maxlength": "7",
+        "maximumValue": "200000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "PrincipalAuto05": {
+        "fieldLabel": "Loan amount",
+        "value": "$38,000"
+      },
+      "Auto_TotalInterestPaid": {
+        "fieldLabel": "Total interest paid",
+        "value": "$4,005"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Year",
+    "dataTableCategoryTitle2": "Loan Term (months)",
+    "title": "How much will my vehicle payments be?",
+    "answer": "Monthly payment: $875",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Over Time",
+        "width": "33%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "index": 2,
+        "label": "Various Terms",
+        "width": "33%",
+        "getGraphData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "principal": "Principal",
+    "interest": "Interest",
+    "year": "Year",
+    "payment": "Payment",
+    "loanTermMonths": "Loan term (months)",
+    "loanTerm": "Loan term",
+    "months": "months",
+    "xAxisLabelForChartOptions1": "Year"
+  },
+  "glossaryItems": {
+    "tradeinvalue": {
+      "title": "Trade-in value",
+      "definition": "The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "cashrebate": {
+      "title": "Cash rebate",
+      "definition": "An offer to consumers - as an incentive to buy - that reduces the purchase price of a good by the amount of the rebate."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Stacked column chart of the amounts applied to principal and interest at different intervals over the course of the loan term."
+    },
+    {
+      "title": "Stacked column chart showing how the monthly payment declines as the loan term increases."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table of the amounts applied to principal and interest at different intervals over the course of the loan term"
+    },
+    {
+      "title": "Table showing how the monthly payment declines as the loan term increases"
+    },
+    {
+      "title": "Amortization table for the loan"
+    }
+  ]
+}

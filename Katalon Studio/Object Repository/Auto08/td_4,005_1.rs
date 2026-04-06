@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_4,005_1</name>
+   <tag></tag>
+   <elementGuidId>545d395d-d7da-40e5-8d1d-d2935ae5f67f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tbody[@id='lf-table-rows']/tr[48]/td[6]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;$4,005&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>3c8ba320-a4c9-46ca-b0ae-c9455ec2fecf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA lf-graphs-table-col-6</value>
+      <webElementGuid>5b677205-54f5-4912-9573-4b2093d9c16f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>$4,005</value>
+      <webElementGuid>a7ae6309-d3a2-4340-ab90-b475b0cf9a07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-table-rows&quot;)/tr[@class=&quot;light-color-row&quot;]/td[@class=&quot;tableCellADA lf-graphs-table-col-6&quot;]</value>
+      <webElementGuid>3a7a52bd-c11d-467f-87a8-c0a85d57df04</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tbody[@id='lf-table-rows']/tr[48]/td[6]</value>
+      <webElementGuid>cdd52c8f-1d9b-4520-9893-6ccc1a71a399</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$4'])[1]/following::td[1]</value>
+      <webElementGuid>1d622514-ae9f-4c50-8f01-d1efbdbc9c1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$871'])[1]/following::td[2]</value>
+      <webElementGuid>ed62c3fc-7577-4182-a26e-0cbc17f2e463</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Payment Schedule - Home Equity Loan'])[7]/preceding::td[1]</value>
+      <webElementGuid>2080d32e-02bc-414d-8f15-fdbdb54f82db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter your email address to:'])[1]/preceding::td[1]</value>
+      <webElementGuid>4c62e0f6-7908-454b-bfa4-28fdfea0bc05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[48]/td[6]</value>
+      <webElementGuid>56d09d86-7980-485c-922f-7ed14223d302</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '$4,005' or . = '$4,005')]</value>
+      <webElementGuid>9bbb4209-bede-4512-8144-5441b27daef2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

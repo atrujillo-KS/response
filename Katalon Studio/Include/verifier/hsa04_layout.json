@@ -1,0 +1,392 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "HealthPlanStartMonth",
+          "HSAAge",
+          "HSASpouseAge",
+          "HealthPlanType",
+          "HDHPDeductible"
+        ],
+        "selected": true,
+        "tabLabel": "Basic"
+      },
+      "advanced": {
+        "fields": [
+          "HSAChangeCoverageType",
+          "NewHealthPlanStartMonth",
+          "NewHealthPlanType",
+          "NewHDHPDeductible"
+        ],
+        "tabLabel": "Advanced"
+      }
+    },
+    "fields": {
+      "HealthPlanStartMonth": {
+        "fieldLabel": "First full month of coverage",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Jan",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Feb",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Mar",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Apr",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "May",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Jun",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Jul",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Aug",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "8",
+            "optionText": "Sep",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "9",
+            "optionText": "Oct",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "110",
+            "optionText": "Nov",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "11",
+            "optionText": "Dec",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAAge": {
+        "fieldLabel": "Are you 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "Is spouse 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HealthPlanType": {
+        "fieldLabel": "Plan type",
+        "smallLabel": "",
+        "glossaryTerm": "hsahealthplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Family ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "HDHP plan deductible",
+        "smallLabel": "",
+        "glossaryTerm": "hdhpdeductible",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAChangeCoverageType": {
+        "fieldLabel": "Coverage type change this year?",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "NewHealthPlanStartMonth": {
+        "fieldLabel": "First full month of new coverage",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Jan",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Feb",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Mar",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Apr",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "May",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Jun",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Jul",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Aug",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "8",
+            "optionText": "Sep",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "9",
+            "optionText": "Oct",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "10",
+            "optionText": "Nov",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "11",
+            "optionText": "Dec",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "NewHealthPlanType": {
+        "fieldLabel": "Plan type",
+        "smallLabel": "",
+        "glossaryTerm": "hsahealthplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Family ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "NewHDHPDeductible": {
+        "fieldLabel": "HDHP plan deductible",
+        "smallLabel": "",
+        "glossaryTerm": "hdhpdeductible",
+        "format": "currency",
+        "defaultValue": "1600",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "11200",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "11200",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Amount",
+    "title": "How much can I contribute to my HSA?",
+    "answer": "You can contribute a maximum of <span class='lf-bold'>$%amount%</span> for the current calendar year",
+    "contribute": "Maximum Contribution",
+    "selectors": [
+      {
+        "label": "Max contribution",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "hsahealthplantype": {
+      "title": "HSA Health Plan Type",
+      "definition": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    },
+    "hsaage": {
+      "title": "Your Age",
+      "definition": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    },
+    "hdhpdeductible": {
+      "title": "High Deductible Health Plan Deductible",
+      "definition": "A deductible is what you pay out of pocket before any insurance payments are applied to your care. A high deductible health plan is one where the deductible is over $1,650 for single coverage ($3,300 for family coverage) in 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the maximum amount you can contribute to your health savings account during the current tax year."
+    },
+    {
+      "textLabel": "For IRS help concerning health savings accounts including what constitutes an eligible health care expense, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the maximum you can contribute to your HSA in the current calendar year."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Maximum you can contribute to your HSA in the current calendar year"
+    }
+  ]
+}

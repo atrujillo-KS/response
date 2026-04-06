@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_However, you face a potential loss of fin_7eda2a</name>
+   <tag></tag>
+   <elementGuidId>f00180db-ac84-48b4-a7ef-d4505b9b1a33</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_2</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_2']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;However, you face a potential loss of financial flexibility if you pay cash. For&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>f2cc5cc2-6f8a-4e1c-ae0e-a46fdf56f76f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_2</value>
+      <webElementGuid>6d97b88f-f4cb-413e-b4ee-fe777725b4c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>However, you face a potential loss of financial flexibility if you pay cash. For example, you may have to deplete your rainy-day funds. The risk of not having an adequate emergency fund may be one you are not willing to accept in exchange for paying cash.</value>
+      <webElementGuid>d23c60e1-bbb3-46b8-9697-b413f503c3f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_2&quot;)</value>
+      <webElementGuid>aa636783-318f-43fd-aeaa-8f49f37827cd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_2']</value>
+      <webElementGuid>de7a3b3d-b4e7-46ac-a7d1-4f06fd0b8782</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[3]</value>
+      <webElementGuid>b43d778a-e358-4ea6-8e27-5ef7701781a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[4]</value>
+      <webElementGuid>c1108253-3494-430f-92af-3bc6347dcbbb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[5]</value>
+      <webElementGuid>56ee04ff-aa0d-4b85-8a7f-59a4772824ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>a4123c7e-0683-4b31-a36b-2f6c9549ad27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>6f79ff50-56ef-4f0e-a51d-7f19127dac19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='However, you face a potential loss of financial flexibility if you pay cash. For example, you may have to deplete your rainy-day funds. The risk of not having an adequate emergency fund may be one you are not willing to accept in exchange for paying cash.']/parent::*</value>
+      <webElementGuid>c6cbcf45-7f2c-45e1-86db-537b6027171c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[3]</value>
+      <webElementGuid>12254520-2eeb-4cf5-846f-f5cf8dc27bbd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_2' and (text() = 'However, you face a potential loss of financial flexibility if you pay cash. For example, you may have to deplete your rainy-day funds. The risk of not having an adequate emergency fund may be one you are not willing to accept in exchange for paying cash.' or . = 'However, you face a potential loss of financial flexibility if you pay cash. For example, you may have to deplete your rainy-day funds. The risk of not having an adequate emergency fund may be one you are not willing to accept in exchange for paying cash.')]</value>
+      <webElementGuid>44036c02-c4be-4479-b48a-068f658bb73b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,338 @@
+{
+  "layout": {
+    "tabs": {
+      "CDInfo": {
+        "tabLabel": "INFORMACIÓN DEL CD",
+        "shortterm": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "Depósito inicial"
+            },
+            {
+              "rowLabel": "Plazo del depósito (en meses)"
+            },
+            {
+              "rowLabel": "Tasa de interés"
+            },
+            {
+              "rowLabel": "Frecuencia del interés compuesto"
+            }
+          ]
+        },
+        "medterm": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "Depósito inicial"
+            },
+            {
+              "rowLabel": "Plazo del depósito (en meses)"
+            },
+            {
+              "rowLabel": "Tasa de interés"
+            },
+            {
+              "rowLabel": "Frecuencia del interés compuesto"
+            }
+          ]
+        },
+        "longterm": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "Depósito inicial"
+            },
+            {
+              "rowLabel": "Plazo del depósito (en meses)"
+            },
+            {
+              "rowLabel": "Tasa de interés"
+            },
+            {
+              "rowLabel": "Frecuencia del interés compuesto"
+            }
+          ]
+        }
+      },
+      "assumptions": {
+        "tabLabel": "PRESUNCIONES"
+      },
+      "results": {
+        "tabLabel": "RESULTADOS"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Plazo (meses)",
+        "APY",
+        "Saldo después de %years% años"
+      ]
+    },
+    "results1": {
+      "columnHeaders": [
+        "Plazo (meses)",
+        "APY",
+        "Saldo después de %years% años"
+      ],
+      "subtitle": "CD Ladder"
+    },
+    "results2": {
+      "columnHeaders": [
+        "Plazo (meses)",
+        "APY",
+        "Saldo después de %years% años"
+      ],
+      "subtitle": "",
+      "fields": []
+    },
+    "resultsAll": {
+      "columnHeaders": [
+        "Plazo (meses)",
+        "APY",
+        "Saldo después de %years% años"
+      ]
+    },
+    "fields": {
+      "Savings_FirstCDInitialDeposit": {
+        "fieldLabel": "CD a corto plazo",
+        "ariaLegendLabel": "CD a corto plazo"
+      },
+      "Savings_SecondCDInitialDeposit": {
+        "fieldLabel": "CD a mediano plazo",
+        "ariaLegendLabel": "CD a mediano plazo"
+      },
+      "Savings_ThirdCDInitialDeposit": {
+        "fieldLabel": "CD a largo plazo",
+        "ariaLegendLabel": "CD a largo plazo"
+      },
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "CD a corto plazo"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "CD a mediano plazo"
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "fieldLabel": "CD a largo plazo"
+      },
+      "Savings_FirstCDInterestRate": {
+        "fieldLabel": "CD a corto plazo"
+      },
+      "Savings_SecondCDInterestRate": {
+        "fieldLabel": "CD a mediano plazo"
+      },
+      "Savings_ThirdCDInterestRate": {
+        "fieldLabel": "CD a largo plazo"
+      },
+      "Savings_FirstCDCompoundingFrequency": {
+        "fieldLabel": "CD a corto plazo",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_SecondCDCompoundingFrequency": {
+        "fieldLabel": "CD a mediano plazo",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_ThirdCDCompoundingFrequency": {
+        "fieldLabel": "CD a largo plazo",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Tiempo de inversión",
+        "smallLabel": "(en años)"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      }
+    },
+    "results_fields": {
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "CD a corto plazo"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "CD a mediano plazo"
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "fieldLabel": "CD a largo plazo"
+      },
+      "ShortTermCDAPY": {
+        "fieldLabel": " "
+      },
+      "ShortTermCDBal": {
+        "fieldLabel": "CD a corto plazo"
+      },
+      "MediumTermCDAPY": {
+        "format": "percent",
+        "fieldLabel": " "
+      },
+      "MediumTermCDBal": {
+        "fieldLabel": " "
+      },
+      "LongTermCDAPY": {
+        "fieldLabel": " "
+      },
+      "LongTermCDBal": {
+        "fieldLabel": "CD a largo plazo"
+      },
+      "CDLadderTotal": {
+        "fieldLabel": "Total"
+      },
+      "CDLadderTotal2": {
+        "fieldLabel": " "
+      },
+      "TotalBal": {
+        "fieldLabel": " "
+      },
+      "WeightedAvgTerm": {
+        "fieldLabel": "Promedio ponderado"
+      },
+      "WeightedAvgAPY": {
+        "fieldLabel": " "
+      },
+      "SingleShortTermCDAPYLabel": {
+        "fieldLabel": "CD a corto plazo individual"
+      },
+      "SingleShortTermCDAPY": {
+        "fieldLabel": " "
+      },
+      "SingleShortTermCDBal": {
+        "fieldLabel": " "
+      },
+      "BalDifferenceLabel": {
+        "fieldLabel": "Diferencia"
+      },
+      "BalDifference": {
+        "fieldLabel": " "
+      },
+      "CDLadderLabel1": {
+        "fieldLabel": "Escalera del CD"
+      },
+      "CDLadderLabel2": {
+        "fieldLabel": " "
+      },
+      "CDLadderLabel3": {
+        "fieldLabel": " "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Año",
+    "dataTableCategoryTitle2": "Año",
+    "title": "¿Cómo puedo beneficiarme de una escalera de certificado de depósito (CD)?",
+    "answer1": "A lo largo de <span class='lf-bold'>%years%</span> años, se estima que la escalera del CD crecerá a <span class='lf-bold'>$%totalBalance%</span>, es decir <span class='lf-bold'>$%result% %which% que</span> la inversión en un único CD a corto plazo y se lo transfiere.",
+    "answer2": "A lo largo de <span class='lf-bold'>%years%</span> años, se estima que la escalera del CD crecerá a <span class='lf-bold'>$%totalBalance%</span>, es decir <span class='lf-bold'>lo mismo que</span> la inversión en un único CD a corto plazo y se lo transfiere.",
+    "selectors": [
+      {
+        "label": "Escalera del CD",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Transferencia de CD a corto plazo",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "short": "Corto",
+    "medium": "Mediano",
+    "long": "Largo",
+    "shortRenewal": "Renovación a corto plazo",
+    "mediumRenewal": "Renovación a mediano plazo",
+    "rollingShortTermCD": "Transferencia de CD a corto plazo",
+    "year": "Año calendario",
+    "interestEarned": "Interés acumulativo ganado",
+    "balance": "Balance",
+    "more": "más",
+    "less": "menos"
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "Monto del CD",
+      "definition": "El monto del certificado de depósito es el monto que deposita para comprar un CD. Usted deposita el valor nominal de un certificado de depósito y recibe ese el valor nominal a su vencimiento. Durante el plazo del certificado de depósito, usted cobra intereses a una tasa de interés fija o variable. Los CD se venden en denominaciones de $500 a $250,000."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "cdinterestrate": {
+      "title": "Tasa de interés del CD",
+      "definition": "Ingrese la tasa de interés anual de sus CD. Esta tasa se denomina tasa de interés simple. Si el interés es compuesto, usted obtendrá un porcentaje de rendimiento anual (APY, por sus siglas en inglés) que es mayor que el índice indicado."
+    },
+    "cdcompoundingfrequency": {
+      "title": "Frecuencia de aplicación de interés compuesto sobre el CD",
+      "definition": "Ingrese la cantidad de veces al año que recibe interés compuesto sobre su CD. El interés compuesto aumenta la cantidad de intereses que usted gana en un certificado de depósito. Por ejemplo, si la institución otorga intereses compuestos cada tres meses (trimestralmente) sobre un CD con una tasa simple del 10 %, su porcentaje de rendimiento anual (APY) es del 10,38 %. Si otorga intereses compuestos mensualmente, usted gana 10.47 %. Si otorga intereses compuestos diariamente, usted gana 10.52%. Para un depósito de $10,000, los intereses compuestos diarios se suman a un interés adicional de $52 que usted gana sobre el rendimiento simple."
+    },
+    "cddepositterm": {
+      "title": "Plazo del depósito del CD",
+      "definition": "Es el período para el cual usted deposita dinero en un certificado de depósito (CD). La mayoría de los plazos de depósito comunes son 3, 6 y 12 meses. Si desea vender su CD antes de su fecha de vencimiento, la institución financiera que lo mantiene probablemente le cobrará una penalidad por rescate anticipado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El sistema escalonado del CD es una estrategia de inversión que involucra dispersar los fondos en varios certificados de depósito (CD) con diferentes fechas de vencimiento. En comparación con la inversión en un único CD a corto plazo y renovarlo a su vencimiento, el sistema escalonado de CD ofrece un mayor rendimiento al tiempo que otorga acceso a fondos periódicamente para reinvertir o retirar si los fondos se necesitan para un gasto imprevisto o planeado.  "
+    },
+    {
+      "textLabel": "Los CD son depósitos a plazo que están garantizados por hasta $250,000 por depositante por institución por la Corporación Federal de Seguro de Depósitos (FDIC) de Estados Unidos. Debido a que los certificados de depósito están asegurados por el gobierno federal, se consideran inversiones relativamente conservadoras. Por consiguiente, pagan una tasa de interés más baja, establecida como porcentaje de rendimiento anual (APY), que otras inversiones no aseguradas como acciones y bonos."
+    },
+    {
+      "textLabel": "Esta herramienta financiera supone que los CD a corto y mediano plazo se reinvierten en el CD a largo plazo en su vencimiento, sin cambios en las tasas de interés especificadas."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas apiladas del interés anual acumulado ganado por cada CD en la escalera durante cada año del período de tiempo de la inversión, comenzando por el monto total del depósito inicial."
+    },
+    {
+      "title": "Gráfico de columnas del interés anual acumulado devengado por el CD renovable a corto plazo durante el período de la inversión, a partir del monto total del depósito inicial."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Interés anual acumulado ganado por cada CD en la escalera durante cada año del período de tiempo de la inversión, comenzando por el monto total del depósito inicial"
+    },
+    {
+      "title": "Interés anual acumulado devengado por el CD renovable a corto plazo durante el período de la inversión, a partir del monto total del depósito inicial"
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "MonthlyIncome",
+        "MonthlyPayments",
+        "LoanInfo"
+      ],
+      "MonthlyIncome": {
+        "tabLabel": "Monthly Income",
+        "fields": [
+          "Global_MonthlyGrossIncome",
+          "Home_InvestmentIncomeBeforeTaxes",
+          "Home_MonthlyIncomeFromRentalProperties",
+          "Global_OtherMonthlyIncome"
+        ]
+      },
+      "MonthlyPayments": {
+        "tabLabel": "Monthly Payments",
+        "fields": [
+          "Home_AutoLoanPayments",
+          "Home_MonthlyStudentLoanPayments",
+          "Home_CreditCardPayments",
+          "Home_AlimonyPayment",
+          "Home_MonthlyRentalPropertyLoanPayments",
+          "Home_OtherMonthlyPayments"
+        ]
+      },
+      "LoanInfo": {
+        "tabLabel": "Loan Info",
+        "fields": [
+          "Home_InterestRate",
+          "Home_LoanTermInYears",
+          "Home_DownPaymentPercentage",
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Conservative Estimate",
+        "Aggressive Estimate"
+      ],
+      "fields": [
+        [
+          "ConsPrice4",
+          "AggrPrice4"
+        ],
+        [
+          "ConsDownPmt4",
+          "AggrDownPmt4"
+        ],
+        [
+          "ConsLoanAmt4",
+          "AggrLoanAmt4"
+        ],
+        [
+          "ConsPrincAndInt4",
+          "AggrPrincAndInt4"
+        ],
+        [
+          "ConsTaxAndIns4",
+          "AggrTaxAndIns4"
+        ],
+        [
+          "ConsMortIns4",
+          "AggrMortIns4"
+        ],
+        [
+          "ConsTotPmt4",
+          "AggrTotPmt4"
+        ]
+      ],
+      "refine": true
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Wages before taxes and deductions",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "4000",
+        "value": "4000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "errorMessage": "Must be between $1 and $%maximumValue%"
+      },
+      "Home_InvestmentIncomeBeforeTaxes": {
+        "fieldLabel": "Investment income before taxes",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_MonthlyIncomeFromRentalProperties": {
+        "fieldLabel": "Income from rental properties",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_OtherMonthlyIncome": {
+        "fieldLabel": "Other income",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_AutoLoanPayments": {
+        "fieldLabel": "Auto loans",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_MonthlyStudentLoanPayments": {
+        "fieldLabel": "Student loans",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_CreditCardPayments": {
+        "fieldLabel": "Credit card",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_AlimonyPayment": {
+        "fieldLabel": "Alimony & child support",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_MonthlyRentalPropertyLoanPayments": {
+        "fieldLabel": "Rental property loans",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Other payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      }
+    },
+    "results_fields": {
+      "ConsPrice4": {
+        "fieldLabel": "Home price"
+      },
+      "AggrPrice4": {},
+      "ConsDownPmt4": {
+        "fieldLabel": "Down payment"
+      },
+      "AggrDownPmt4": {},
+      "ConsLoanAmt4": {
+        "fieldLabel": "Loan amount"
+      },
+      "AggrLoanAmt4": {},
+      "ConsPrincAndInt4": {
+        "fieldLabel": "Principal and interest"
+      },
+      "AggrPrincAndInt4": {},
+      "ConsTaxAndIns4": {
+        "fieldLabel": "Property taxes and insurance"
+      },
+      "AggrTaxAndIns4": {},
+      "ConsMortIns4": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "AggrMortIns4": {},
+      "ConsTotPmt4": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "AggrTotPmt4": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Loan Amount",
+    "title": "How much can I borrow?",
+    "answer": "You may qualify for a loan amount ranging from <span class='lf-bold'>%result1%</span> (conservative) to <span class='lf-bold'>%result2%</span> (aggressive)",
+    "selectors": [
+      {
+        "label": "Loan Amount",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Payment",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "categories": [
+      "Conservative",
+      "Aggressive"
+    ],
+    "ConsLoanAmt": "Conservative",
+    "AggrLoanAmt": "Aggressive",
+    "principalInterest": "Principal & Interest",
+    "pmi": "PMI",
+    "taxesInsurance": "Taxes & Insurance"
+  },
+  "glossaryItems": {
+    "debtratio": {
+      "title": "Debt ratio",
+      "definition": "Used by lenders to approve loan applicants. Debt ratio equals combined monthly debt payments divided by gross monthly income. "
+    },
+    "conservativequalificationestimate": {
+      "title": "Conservative qualification estimate",
+      "definition": "When the economy is weak, mortgage lenders are more conservative and tend to raise their loan qualification requirements."
+    },
+    "housingratio": {
+      "title": "Housing ratio",
+      "definition": "Used by lenders to approve loan applicants. Housing ratio equals combined monthly mortgage payment divided by gross monthly income. "
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "aggressivequalificationestimate": {
+      "title": "Aggressive qualification estimate",
+      "definition": "When the economy is strong, mortgage lenders are more aggressive and tend to lower their loan qualification requirements."
+    },
+    "underwriting": {
+      "title": "Underwriting",
+      "definition": "The process a mortgage lender undertakes to evaluate a loan prospect to see if they have the financial capacity to repay the loan."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "An acronym for the principal and interest that you pay on a mortgage loan."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "An acronym for loan principal, interest, property taxes and homeowner's insurance."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates loan amounts and mortgage payments for two <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#underwriting\">underwriting</a></span> scenarios: one that uses <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#aggressivequalificationestimate\">aggressive</a></span> underwriting guidelines and one that uses <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#conservativequalificationestimate\">conservative</a></span> guidelines."
+    },
+    {
+      "textLabel": "The calculator uses the lower of two ratios for each set of results: payment-to-income ratio (also called <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#housingratio\">housing ratio</a></span>) and debt-to-income ratio (also called <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#debtratio\">debt ratio</a></span>)."
+    },
+    {
+      "textLabel": "When the economy is strong, lenders are more aggressive and raise these ratios to compete for business. When the economy is weak, lenders are more conservative and lower their ratios."
+    },
+    {
+      "textLabel": "The following housing ratios are used for conservative results: 29% for down payments of less than 20% and 30% for down payments of 20% or more. A debt ratio of 36% is used for all down payments."
+    },
+    {
+      "textLabel": "The following ratios are used for aggressive results: housing and debt ratios of 31% and 38%, respectively, for down payments of less than 10%; housing and debt ratios of 32% and 40%, respectively, for down payments of 10% or more but less than 20%; and housing and debt ratios of 33% and 41%, respectively, for down payments of 20% or more."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the loan amount for both the conservative and the aggressive estimate."
+    },
+    {
+      "title": "Stacked column chart that includes a breakdown of the total monthly payment by principal and interest, property taxes and insurance, and PMI for both the conservative and the aggressive estimate."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table comparing the loan amount for both the conservative and the aggressive estimate"
+    },
+    {
+      "title": "Table that includes a breakdown of the total monthly payment by principal and interest, PMI, and property taxes and insurance for both the conservative and the aggressive estimate"
+    }
+  ]
+}

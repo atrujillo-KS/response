@@ -1,0 +1,545 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "SingleParticipants",
+        "FamilyParticipants",
+        "Taxes"
+      ],
+      "SingleParticipants": {
+        "tabLabel": "SINGLE PARTICIPANTS",
+        "fields": [
+          "Business_HDHPWithHSASingleCoverageEmployees",
+          "Business_HDHPWithHSASingleCoverageDeductible",
+          "Business_HDHPWithHSASingleCoveragePremium",
+          "Business_SingleCoverageNormalPremium",
+          "Business_AverageHSAEmployeeContributionSingle",
+          "Business_AverageHSAEmployerContributionSingle"
+        ]
+      },
+      "FamilyParticipants": {
+        "tabLabel": "FAMILY PARTICIPANTS",
+        "fields": [
+          "Business_HDHPWithHSAFamilyCoverageEmployees",
+          "Business_HDHPWithHSAFamilyCoverageDeductible",
+          "Business_HDHPWithHSAFamilyCoveragePremium",
+          "Business_FamilyCoverageNormalPremium",
+          "Business_AverageHSAEmployeeContributionFamily",
+          "Business_AverageHSAEmployerContributionFamily"
+        ]
+      },
+      "Taxes": {
+        "tabLabel": "TAXES",
+        "fields": [
+          "Business_MarginalTaxRate",
+          "Business_FUTAStateUnemploymentTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "HDHP with HSA",
+        "Traditional Plan"
+      ],
+      "fields": [
+        [
+          "HDHPWithHSATotalCostOfPremiums",
+          "ExistingHealthPlanTotalCostOfPremiums"
+        ],
+        [
+          "HDHPWithHSATotalCostOfEmployerContributions",
+          "ExistingHealthPlanTotalCostOfEmployerContributions"
+        ],
+        [
+          "HDHPWithHSATotalFICATaxSavings",
+          "ExistingHealthPlanTotalFICATaxSavings"
+        ],
+        [
+          "HDHPWithHSATotalFUTAStateUnemploymentTaxSavings",
+          "ExistingHealthPlanTotalFUTAStateUnemploymentTaxSavings"
+        ],
+        [
+          "HDHPWithHSATotalBusinessExpenseTaxSavings",
+          "ExistingHealthPlanTotalBusinessExpenseTaxSavings"
+        ],
+        [
+          "HDHPWithHSANetTotalAnnualCost",
+          "ExistingHealthPlanNetTotalAnnualCost"
+        ],
+        [
+          "HDHPWithHSANetTotalAnnualCostPerEmployee",
+          "ExistingHealthPlanNetTotalAnnualCostPerEmployee"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_HDHPWithHSASingleCoverageEmployees": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "valueTextLabel": "employees",
+        "fieldLabel": "Number of single coverage employees",
+        "defaultValue": "10",
+        "glossaryTerm": "hdhpwithhsasinglecoverageemployees",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "widgetStep": "10",
+        "value": "10",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% employee(s)",
+        "format": "number"
+      },
+      "Business_HDHPWithHSASingleCoverageDeductible": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "HDHP deductible",
+        "defaultValue": "2170",
+        "glossaryTerm": "hdhpwithhsasinglecoveragedeductible",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1350",
+        "sliderMaxVal": "6750",
+        "widgetStep": "50",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1350",
+        "maximumValue": "6750",
+        "value": "2170",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_HDHPWithHSASingleCoveragePremium": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly HDHP premium",
+        "defaultValue": "415",
+        "glossaryTerm": "hdhpwithhsasinglecoveragepremium",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "415",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_SingleCoverageNormalPremium": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly normal premium",
+        "defaultValue": "475",
+        "glossaryTerm": "singlecoveragenormalpremium",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "475",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_AverageHSAEmployeeContributionSingle": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Average employee contribution per account",
+        "defaultValue": "500",
+        "glossaryTerm": "averagehsaemployeecontributionsingle",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "500",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_AverageHSAEmployerContributionSingle": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Average employer contribution per account",
+        "defaultValue": "475",
+        "glossaryTerm": "averagehsaemployercontributionsingle",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "475",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_HDHPWithHSAFamilyCoverageEmployees": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "valueTextLabel": "employees",
+        "dataHighlight": "true",
+        "fieldLabel": "Number of family coverage employees",
+        "defaultValue": "10",
+        "glossaryTerm": "hdhpwithhsafamilycoverageemployees",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "widgetStep": "10",
+        "value": "10",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% employee(s)",
+        "format": "number"
+      },
+      "Business_HDHPWithHSAFamilyCoverageDeductible": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "HDHP deductible",
+        "defaultValue": "2700",
+        "glossaryTerm": "hdhpwithhsafamilycoveragedeductible",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "2700",
+        "sliderMaxVal": "13500",
+        "widgetStep": "100",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "2700",
+        "maximumValue": "13500",
+        "value": "2700",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_HDHPWithHSAFamilyCoveragePremium": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly HDHP premium",
+        "defaultValue": "1080",
+        "glossaryTerm": "hdhpwithhsafamilycoveragepremium",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "1080",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_FamilyCoverageNormalPremium": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly normal premium",
+        "defaultValue": "1120",
+        "glossaryTerm": "familycoveragenormalpremium",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "1120",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_AverageHSAEmployeeContributionFamily": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Average employee contribution per account",
+        "defaultValue": "100",
+        "glossaryTerm": "averagehsaemployeecontributionfamily",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "100",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_AverageHSAEmployerContributionFamily": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Average employer contribution per account",
+        "defaultValue": "800",
+        "glossaryTerm": "averagehsaemployercontributionfamily",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "20000",
+        "value": "800",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue%",
+        "format": "currency"
+      },
+      "Business_MarginalTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Income tax rate for business expenses",
+        "defaultValue": "3.70",
+        "glossaryTerm": "marginaltaxratebusiness",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "0.5",
+        "value": "3.70",
+        "format": "percent"
+      },
+      "Business_FUTAStateUnemploymentTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "FUTA & state unemployment tax rate",
+        "defaultValue": "10.00",
+        "glossaryTerm": "futastateunemploymentaxrate",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "25.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "25.00",
+        "widgetStep": "0.5",
+        "value": "10.00",
+        "format": "percent"
+      }
+    },
+    "results_fields": {
+      "HDHPWithHSATotalCostOfPremiums": {
+        "fieldLabel": "Total cost of premiums"
+      },
+      "HDHPWithHSATotalCostOfEmployerContributions": {
+        "fieldLabel": "Total cost of employer HSA contributions"
+      },
+      "ExistingHealthPlanNetTotalAnnualCost": {
+        "fieldLabel": ""
+      },
+      "HDHPWithHSATotalFUTAStateUnemploymentTaxSavings": {
+        "fieldLabel": "Total FUTA & State unemployment tax savings"
+      },
+      "ExistingHealthPlanTotalBusinessExpenseTaxSavings": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalCostOfEmployerContributions": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalCostOfPremiums": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalFUTAStateUnemploymentTaxSavings": {
+        "fieldLabel": ""
+      },
+      "HDHPWithHSATotalFICATaxSavings": {
+        "fieldLabel": "Total FICA tax savings"
+      },
+      "HDHPWithHSANetTotalAnnualCost": {
+        "fieldLabel": "Net total annual cost"
+      },
+      "HDHPWithHSANetTotalAnnualCostPerEmployee": {
+        "fieldLabel": "Net total annual cost per employee"
+      },
+      "HDHPWithHSATotalBusinessExpenseTaxSavings": {
+        "fieldLabel": "Total business expense tax savings"
+      },
+      "ExistingHealthPlanTotalFICATaxSavings": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanNetTotalAnnualCostPerEmployee": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Net Cost",
+    "title": "How much can my business save by offering my employees a HDHP with a HSA?",
+    "answer": "An HDHP with a HSA will <span class='lf-bold'>%WHICH%</span> your business <span class='lf-bold'>%VALUE%</span> annually.",
+    "same_as_answer": "An HDHP with a HSA will <span class='lf-bold'>cost the same</span> annually.",
+    "selectors": [
+      {
+        "label": "Total net cost",
+        "width": "100%"
+      }
+    ],
+    "withHSA": "HDHP with HSA",
+    "traditional": "Traditional Plan"
+  },
+  "glossaryItems": {
+    "hdhpwithhsasinglecoveragepremium": {
+      "title": "Single coverage HDHP premium",
+      "definition": "The monthly premium you pay, per employee, for your High Deductible Health Plan (HDHP) single person coverage."
+    },
+    "averagehsaemployeecontributionfamily": {
+      "title": "Average employee contribution to family coverage HSA",
+      "definition": "The portion of the employee's deductible that the employee will be contributing to their Health Savings Account (HSA) with a family coverage High Deductible Health Plan (HDHP)."
+    },
+    "futastateunemploymentaxrate": {
+      "title": "FUTA & state unemployment tax rate",
+      "definition": "Under the Federal Unemployment Tax Act (FUTA) employers are required to pay federal and/or state unemployment taxes which are used for unemployment compensation payment to workers who have lost their jobs."
+    },
+    "averagehsaemployeecontributionsingle": {
+      "title": "Average employee contribution to single coverage HSA",
+      "definition": "The portion of the employee's deductible that the employee will be contributing to their Health Savings Account (HSA) with a single person coverage High Deductible Health Plan (HDHP)."
+    },
+    "hdhpwithhsafamilycoveragedeductible": {
+      "title": "Family coverage HDHP deductible",
+      "definition": "Your deductible for your High Deductible Health Plan (HDHP) family coverage. In 2025, the minimum deductible amount is $3,300 and the maximum out-of-pocket expense is $16,600 for family coverage."
+    },
+    "averagehsaemployercontributionfamily": {
+      "title": "Average employer contribution to family coverage HSA",
+      "definition": "The portion of the employee's deductible that the employer will be contributing to their Health Savings Account (HSA) with a family coverage High Deductible Health Plan (HDHP)."
+    },
+    "hdhpwithhsasinglecoveragedeductible": {
+      "title": "Single coverage HDHP deductible",
+      "definition": "Your deductible for your High Deductible Health Plan (HDHP) single person coverage. In 2025, the minimum deductible amount is $1,650 and the maximum out-of-pocket expense is $8,300 for self-only coverage."
+    },
+    "hdhpwithhsafamilycoverageemployees": {
+      "title": "Family coverage employees",
+      "definition": "How many married employees would participate in the High Deductible Health Plan (HDHP) and Health Savings Accounts (HSA)?"
+    },
+    "hdhpwithhsafamilycoveragepremium": {
+      "title": "Family coverage HDHP premium",
+      "definition": "The monthly premium you pay, per employee, for your High Deductible Health Plan (HDHP) family coverage."
+    },
+    "hdhpwithhsasinglecoverageemployees": {
+      "title": "Single coverage employees",
+      "definition": "How many single coverage employees would participate in the High Deductible Health Plan (HDHP) and Health Savings Accounts (HSA)?"
+    },
+    "averagehsaemployercontributionsingle": {
+      "title": "Average employer contribution to single coverage HSA",
+      "definition": "The portion of the employee's deductible that the employer will be contributing to their Health Savings Account (HSA) with a single person coverage High Deductible Health Plan (HDHP)."
+    },
+    "singlecoveragenormalpremium": {
+      "title": "Traditional health plan single coverage premium",
+      "definition": "The monthly premium you pay, per employee, for traditional health insurance single person coverage."
+    },
+    "familycoveragenormalpremium": {
+      "title": "Traditional health plan family coverage premium",
+      "definition": "The monthly premium you pay, per employee, for traditional health insurance family coverage."
+    },
+    "marginaltaxratebusiness": {
+      "title": "Income tax rate for business expenses",
+      "definition": "The marginal income tax rate for your business."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This calculator helps estimate the value of offering a High Deductible Health Plan (HDHP) with Health Savings Accounts (HSA) for your employees. Providing such a plan not only allows your employees to pay for certain medical expenses with money free from federal taxes, it can reduce the premium costs for your business."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the net total cost of the HDHP with HSA and the traditional plan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Net total cost of the HDHP with HSA and the traditional plan"
+    }
+  ]
+}

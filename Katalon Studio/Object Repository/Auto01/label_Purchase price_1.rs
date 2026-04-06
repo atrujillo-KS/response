@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Purchase price_1</name>
+   <tag></tag>
+   <elementGuidId>99f2ecfe-8580-4d43-9408-20a22b6682df</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_UsedVehiclePurchasePrice-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_UsedVehiclePurchasePrice-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>1321fd97-6711-4d0b-8f5a-6853cb46487e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_UsedVehiclePurchasePrice</value>
+      <webElementGuid>9c46a778-e244-478f-97c5-1f6772432125</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_UsedVehiclePurchasePrice-label</value>
+      <webElementGuid>c8db1c39-c96d-4057-9852-668fa6a37b65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>8b8a40bf-6f7a-4302-91a1-126da7d56528</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Purchase price
+                                
+                        </value>
+      <webElementGuid>67ecc86e-c3d2-461f-adbe-fa914fb3c9f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_UsedVehiclePurchasePrice-label&quot;)</value>
+      <webElementGuid>4070f5dc-d55b-4c03-875c-3c0adb8c7142</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_UsedVehiclePurchasePrice-label']</value>
+      <webElementGuid>6db41b85-eca1-4fc7-afe5-8a14f7771b1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_UsedVehiclePurchasePrice-table']/div/label</value>
+      <webElementGuid>5a9682f9-575c-41c9-b49b-8947c6003db9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Used Vehicle Loan'])[1]/following::label[1]</value>
+      <webElementGuid>ad83d0c9-4c75-4af8-ab1d-2cb362b142d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Registration costs'])[2]/following::label[1]</value>
+      <webElementGuid>70614950-bfb8-4804-824d-18c46af9ea77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $250,000'])[1]/preceding::label[1]</value>
+      <webElementGuid>0173d4fb-8f38-4fa4-b403-68a4473b192e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Purchase price'])[4]/preceding::label[1]</value>
+      <webElementGuid>41069487-18cc-4272-a622-7cd948f50c39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[3]/div[3]/div/div/label</value>
+      <webElementGuid>ee4cac23-39ca-4ef8-8534-6bd599c3eb6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_UsedVehiclePurchasePrice-label' and (text() = 'Purchase price
+                                
+                        ' or . = 'Purchase price
+                                
+                        ')]</value>
+      <webElementGuid>e94888a2-9d79-4bd6-8b48-52a4bd41239e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

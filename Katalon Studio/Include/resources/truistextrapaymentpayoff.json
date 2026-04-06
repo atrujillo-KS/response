@@ -1,0 +1,613 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-truist/calc/truistextrapaymentpayoff?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Truist Custom Calculator",
+      "value": "Truist Custom Calculator"
+    }
+  },  
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+    {
+    "targetPayoffDate": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "20,0,0" 
+	}
+  },
+	{
+	  "waitForText": {
+	    "id": "lf_answer",
+	    "value": "An extra monthly payment of $155 will pay off your loan by {{targetPayoffDate}} and save you $36,972.00 in interest."
+	  }
+	},
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$139,153"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$102,181"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_label",
+      "value": "Years until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "26"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Principal & interest payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$1,155"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Interest Paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='0']/parent::*",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div/span",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Without Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-1']/span",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-2']/span",
+      "value": "Principal & Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-3']/span",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-4']/span",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-5']/span",
+      "value": "Ending Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$271"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$729"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$174,729"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[2]",
+      "value": "$153"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[3]",
+      "value": "$153"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[4]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[315]/td[5]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - With Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Payment Schedule - With Extra Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$1,155"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$426"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$729"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$174,574"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[240]/td[2]",
+      "value": "$1,155"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[240]/td[3]",
+      "value": "$1,150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[240]/td[4]",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[240]/td[5]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanBalance-label",
+      "value": "Current loan balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanBalance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CurrentLoanBalance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Loan principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrentLoanBalance",
+      "value": "175,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanBalance-error-message",
+      "value": "Must be between $1.00 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RemainingTerm-label",
+      "value": "Remaining term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RemainingTerm",
+      "value": "336"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RemainingTerm-error-message",
+      "value": "Must be between 1 and 540 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_IntRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IntRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanPayment-label",
+      "value": "Principal & interest payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrentLoanPayment",
+      "value": "1,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanPayment-error-message",
+      "value": "Must be between $0.00 and $1,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtStartDate-label",
+      "value": "Extra payment start date"
+    }
+  },
+      {
+    "ExtraPmtStartDate": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,1,0" 
+	}
+  },
+  {
+    "verifyValue": {
+      "id": "ExtraPmtStartDate_date",
+      "value": "{{ExtraPmtStartDate}}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TargetPayoffDate-label",
+      "value": "Target payoff date"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "TargetPayoffDate_date",
+      "value": "{{targetPayoffDate}}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NextPmtDueDate-label",
+      "value": "Next payment due date"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "NextPmtDueDate_date",
+      "value": "{{ExtraPmtStartDate}}"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrentLoanBalance",
+      "value": "255,000.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrentLoanPayment",
+      "value": "2,000.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RemainingTerm",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IntRate",
+      "value": "4.785"
+    }
+  },
+   {
+    "ExtraPmtStartDateChange": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,3,0" 
+	}
+  },
+  {
+    "setTextAndWait": {
+      "id": "ExtraPmtStartDate_date",
+      "value": "{{ExtraPmtStartDateChange}}"
+    }
+  },
+   {
+    "ExtraPmtStartDateChange": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,3,0" 
+	}
+  },
+  {
+    "setTextAndWait": {
+      "id": "TargetPayoffDate_date",
+      "value": "${var d = new Date(); var day = d.getDate(); if(day < 10){day = '0' + day;} var month = d.getMonth()+1; if(month < 10){month = '0' + month;} var year = d.getYear()+1910; if(year < 10){year = '0' + year;} timestamp = ''+ month+'/'+ day + '/'+year}"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "NextPmtDueDate_date",
+      "value": "${var d = new Date(); var day = d.getDate(); if(day < 10){day = '0' + day;} var month = d.getMonth()+3; if(month < 10){month = '0' + month;} var year = d.getYear()+1900; if(year < 10){year = '0' + year;}  {year = year + 1} timestamp = ''+ month+'/'+ day + '/'+year}"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$101,875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$64,943"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "14"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$2,696"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "An extra monthly payment of $696 will pay off your loan by ${var d = new Date(); var day = d.getDate(); if(day < 10){day = '0' + day;} var month = d.getMonth(); if(month < 10){month = '0' + month;} var year = d.getYear()+1910; if(year < 10){year = '0' + year;} timestamp = ''+ month+'/'+ day + '/'+year} and save you $36,932.00 in interest."
+    }
+  }
+]

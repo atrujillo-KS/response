@@ -1,0 +1,797 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CDInfo",
+        "assumptions",
+        "results"
+      ],
+      "CDInfo": {
+        "selected": true,
+        "tabLabel": "CD Info",
+        "sections": [
+          "shortterm",
+          "medterm",
+          "longterm"
+        ],
+        "pageDesc": "The following monthly expenses are typically lower during retirement.",
+        "custom": "new-standard-3col",
+        "shortterm": {
+          "sectionLabel": "",
+          "fieldSets": "3",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial Deposit",
+              "tooltipAriaLabel": "Show tooltip for ",
+              "fields": [
+                "Savings_FirstCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term (in months)",
+              "fields": [
+                "Savings_FirstCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest Rate",
+              "fields": [
+                "Savings_FirstCDInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "Compounding frequency",
+              "fields": [
+                "Savings_FirstCDCompoundingFrequency"
+              ]
+            }
+          ]
+        },
+        "medterm": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial Deposit",
+              "tooltipAriaLabel": "Show tooltip for ",
+              "fields": [
+                "Savings_SecondCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term (in months)",
+              "fields": [
+                "Savings_SecondCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest Rate",
+              "fields": [
+                "Savings_SecondCDInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "Compounding frequency",
+              "fields": [
+                "Savings_SecondCDCompoundingFrequency"
+              ]
+            }
+          ]
+        },
+        "longterm": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial Deposit",
+              "tooltipAriaLabel": "Show tooltip for ",
+              "fields": [
+                "Savings_ThirdCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term (in months)",
+              "fields": [
+                "Savings_ThirdCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest Rate",
+              "fields": [
+                "Savings_ThirdCDInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "Compounding frequency",
+              "fields": [
+                "Savings_ThirdCDCompoundingFrequency"
+              ]
+            }
+          ]
+        }
+      },
+      "assumptions": {
+        "tabLabel": "Assumptions",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "columns": [
+            {
+              "fields": [
+                "Savings_YearsDeposited",
+                "Global_FederalTaxRate",
+                "Global_StateTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Term (months)",
+        "APY",
+        "Balance After %years% Years"
+      ],
+      "fields": [
+        [
+          "CDLadderLabel1",
+          "Blank",
+          "Blank"
+        ],
+        [
+          "Savings_FirstCDTermInMonths",
+          "ShortTermCDAPY",
+          "ShortTermCDBal"
+        ],
+        [
+          "Savings_SecondCDTermInMonths",
+          "MediumTermCDAPY",
+          "MediumTermCDBal"
+        ],
+        [
+          "Savings_ThirdCDTermInMonths",
+          "LongTermCDAPY",
+          "LongTermCDBal"
+        ]
+      ]
+    },
+    "results1": {
+      "columnHeaders": [
+        "Term (months)",
+        "APY",
+        "Balance After %years% Years"
+      ],
+      "subtitle": "CD Ladder",
+      "fields": [
+        [
+          "CDLadderLabel1",
+          "CDLadderLabel2",
+          "CDLadderLabel3"
+        ],
+        [
+          "Savings_FirstCDTermInMonths",
+          "ShortTermCDAPY",
+          "ShortTermCDBal"
+        ],
+        [
+          "Savings_SecondCDTermInMonths",
+          "MediumTermCDAPY",
+          "MediumTermCDBal"
+        ],
+        [
+          "Savings_ThirdCDTermInMonths",
+          "LongTermCDAPY",
+          "LongTermCDBal"
+        ],
+        [
+          "BalDifferenceLabel",
+          null,
+          "BalDifference"
+        ]
+      ]
+    },
+    "results2": {
+      "columnHeaders": [
+        "Term (months)",
+        "APY",
+        "Balance After %years% Years"
+      ],
+      "subtitle": "",
+      "fields": []
+    },
+    "resultsAll": {
+      "columnHeaders": [
+        "Term (months)",
+        "APY",
+        "Balance After %years% Years"
+      ],
+      "fields": [
+        [
+          "CDLadderLabel1",
+          "CDLadderLabel2",
+          "CDLadderLabel3"
+        ],
+        [
+          "Savings_FirstCDTermInMonths",
+          "ShortTermCDAPY",
+          "ShortTermCDBal"
+        ],
+        [
+          "Savings_SecondCDTermInMonths",
+          "MediumTermCDAPY",
+          "MediumTermCDBal"
+        ],
+        [
+          "Savings_ThirdCDTermInMonths",
+          "LongTermCDAPY",
+          "LongTermCDBal"
+        ],
+        [
+          "CDLadderTotal",
+          "CDLadderTotal2",
+          "TotalBal"
+        ],
+        [
+          "WeightedAvgTerm",
+          "WeightedAvgAPY"
+        ],
+        [
+          "SingleShortTermCDAPYLabel",
+          "SingleShortTermCDAPY",
+          "SingleShortTermCDBal"
+        ],
+        [
+          "BalDifferenceLabel",
+          null,
+          "BalDifference"
+        ]
+      ]
+    },
+    "fields": {
+      "Savings_FirstCDInitialDeposit": {
+        "fieldLabel": "Short term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Short term CD",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_SecondCDInitialDeposit": {
+        "fieldLabel": "Medium term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Medium term CD",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_ThirdCDInitialDeposit": {
+        "fieldLabel": "Long term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Long term CD",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "Short term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cddepositterm",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "24",
+        "value": "24",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "Medium term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cddepositterm",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "fieldLabel": "Long term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cddepositterm",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_FirstCDInterestRate": {
+        "fieldLabel": "Short term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "1.50",
+        "value": "1.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_SecondCDInterestRate": {
+        "fieldLabel": "Medium term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_ThirdCDInterestRate": {
+        "fieldLabel": "Long term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "2.50",
+        "value": "2.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Savings_FirstCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "inputTypeText": false,
+        "solverEditable": false,
+        "fieldLabel": "Short term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ],
+        "selectClass": "lf-triple-input-select"
+      },
+      "Savings_SecondCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Medium term CD",
+        "smallLabel": "",
+        "inputTypeText": false,
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ],
+        "inputClass": "label-visually-hidden",
+        "selectClass": "lf-triple-input-select"
+      },
+      "Savings_ThirdCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "inputTypeText": false,
+        "solverEditable": false,
+        "fieldLabel": "Long term CD",
+        "smallLabel": "",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ],
+        "inputClass": "label-visually-hidden",
+        "selectClass": "lf-triple-input-select"
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Investment timeframe",
+        "smallLabel": "(in years)",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "0",
+        "maximumValue": "10",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "Short Term CD"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "Medium Term CD"
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "fieldLabel": "Long Term CD"
+      },
+      "ShortTermCDAPY": {
+        "fieldLabel": " "
+      },
+      "ShortTermCDBal": {
+        "fieldLabel": "Short Term CD"
+      },
+      "MediumTermCDAPY": {
+        "format": "percent",
+        "fieldLabel": " "
+      },
+      "MediumTermCDBal": {
+        "fieldLabel": " "
+      },
+      "LongTermCDBal": {
+        "fieldLabel": "Long Term CD"
+      },
+      "LongTermCDAPY": {
+        "fieldLabel": " "
+      },
+      "CDLadderTotal": {
+        "fieldLabel": "Total"
+      },
+      "WeightedAvgTerm": {
+        "fieldLabel": "Weighted Average"
+      },
+      "SingleShortTermCDAPYLabel": {
+        "fieldLabel": "Single Short Term CD"
+      },
+      "BalDifferenceLabel": {
+        "fieldLabel": "Difference"
+      },
+      "CDLadderLabel1": {
+        "fieldLabel": "CD Ladder"
+      },
+      "Blank": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Year",
+    "dataTableCategoryTitle2": "Year",
+    "title": "How can I benefit from a CD ladder?",
+    "answer1": "Over <span class='lf-bold'>%years%</span> years, the CD ladder is estimated to grow to <span class='lf-bold'>$%totalBalance%</span>, which is <span class='lf-bold'>$%result% %which%</span> than investing in a single short term CD and rolling it over",
+    "answer2": "Over <span class='lf-bold'>%years%</span> years, the CD ladder is estimated to grow to <span class='lf-bold'>$%totalBalance%</span>, which is the same as in a single short term CD and rolling it over.",
+    "selectors": [
+      {
+        "label": "CD Ladder",
+        "width": "50%",
+        "first": true,
+        "getGraphData": true
+      },
+      {
+        "label": "Rolling Short Term CD",
+        "width": "50%",
+        "last": true,
+        "getGraphData": true
+      }
+    ],
+    "short": "Short",
+    "medium": "Medium",
+    "long": "Long",
+    "shortRenewal": "Short Renewal",
+    "mediumRenewal": "Medium Renewal",
+    "rollingShortTermCD": "Rolling Short Term CD",
+    "year": "Year",
+    "interestEarned": "Cumulative Interest Earned",
+    "balance": "Balance",
+    "more": "more",
+    "less": "less"
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "CD amount",
+      "definition": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "cdinterestrate": {
+      "title": "CD interest rate",
+      "definition": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    },
+    "cdcompoundingfrequency": {
+      "title": "CD compounding frequency",
+      "definition": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    },
+    "cddepositterm": {
+      "title": "CD deposit term",
+      "definition": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "CD laddering is an investment strategy that involves spreading funds across multiple certificates of deposit (CDs) with different maturity dates.  Compared to investing in a single short term CD and rolling it over at maturity, CD laddering provides increased returns while creating access to funds periodically to reinvest or withdraw if funds are needed for an unexpected or planned expense.  "
+    },
+    {
+      "textLabel": "CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (FDIC). Because CDs are federally insured, they are considered relatively conservative investments. As a result, they pay a lower interest rate -- stated as an annual percentage yield (APY) -- than non-insured investments such as stocks and bonds."
+    },
+    {
+      "textLabel": "This financial tool assumes that the short and medium term CDs are reinvested in the long term CD at maturity, with no changes to the interest rates specified. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Stacked column chart of the cumulative annual interest earned for each CD in the ladder over each year of the investment timeframe, starting from the total initial deposit amount."
+    },
+    {
+      "title": "Column chart of the cumulative annual interest earned for the rolling short term CD over the investment timeframe, starting from the total initial deposit amount."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Cumulative annual interest earned for each CD in the ladder over each year of the investment timeframe, starting from the total initial deposit amount"
+    },
+    {
+      "title": "Cumulative annual interest earned for the rolling short term CD over the investment timeframe, starting from the total initial deposit amount"
+    }
+  ]
+}

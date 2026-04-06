@@ -1,0 +1,263 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Stock_SharePurchasePrice",
+          "Stock_SharesPurchased",
+          "Stock_YearlySharePriceIncrease",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Taxes paid",
+        "Return"
+      ],
+      "fields": [
+        [
+          "TotTaxBefStock02",
+          "FMRRBefStock02"
+        ],
+        [
+          "TotTaxAftStock02",
+          "FMRRAftStock02"
+        ]
+      ]
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_YearlySharePriceIncrease": {
+        "fieldLabel": "Stock price growth per year",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "9",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "TotTaxBefStock02": {
+        "fieldLabel": "If you sell one day before 12 months"
+      },
+      "TotTaxAftStock02": {
+        "fieldLabel": "If you sell one day after 12 months"
+      },
+      "FMRRBefStock02": {
+        "fieldLabel": ""
+      },
+      "FMRRAftStock02": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Return",
+    "dataTableCategory2": "Taxes Paid",
+    "title": "Should I wait a year to sell my stock?",
+    "answer": "Selling your stock after a year will earn you <span class='lf-bold'>%return% return</span>",
+    "selectors": [
+      {
+        "label": "Return",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Taxes Paid",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "yAxisLabel": "Return (%)",
+    "before": "Sell Day Before 12 Months",
+    "after": "Sell Day After 12 Months",
+    "higher": "a higher",
+    "lower": "a lower",
+    "same": "the same"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "capitalgainstaxes": {
+      "title": "Capital gains tax",
+      "definition": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the difference in your annual <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">rate of return</a></span> if you hold your shares long enough to qualify for the long-term <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">capital gains tax rate</a></span>."
+    },
+    {
+      "textLabel": "Gains on taxable investments held for more than one year are taxed at a lower rate than short-term gains, which are taxed at the same rate as ordinary income. Dividends are ignored in the calculation."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the return if the stock is sold one day before 12 months and one day after 12 months."
+    },
+    {
+      "title": "Column chart comparing the taxes paid if the stock is sold one day before 12 months and one day after 12 months"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Return if the stock is sold one day before 12 months and one day after 12 months"
+    },
+    {
+      "title": "Taxes paid if the stock is sold one day before 12 months and one day after 12 months"
+    }
+  ]
+}

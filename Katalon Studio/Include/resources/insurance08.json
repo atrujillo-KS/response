@@ -1,0 +1,443 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is the present value of my future earnings?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "Human Life Value (HLV) is the present value of all future income you would expect to earn for your loved ones. It is an indicator of the the economic loss your family would suffer in the unfortunate event of your early death. This tool helps you calculate HLV, an important factor in determining the life insurance coverage amount you need to financially protect your family's future. For further information, please consult an insurance professional."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The present value of your future earnings is $1,721,941"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Earnings']/parent::*",
+      "value": "Earnings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Age']/parent::*",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Annual Earnings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "Present Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Annual Earnings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Annual earnings and their present value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Annual earnings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Present value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[2]",
+      "value": "66"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[3]",
+      "value": "$133,188"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[30]/td[4]",
+      "value": "$42,707"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-label",
+      "value": "Current annual income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "75,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AnnualGrossIncome_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-label",
+      "value": "Retirement age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_RetirementAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_RetirementAge-error-message",
+      "value": "Must be between 2 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_IncomeGrowthRate-label",
+      "value": "Estimated income growth rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_IncomeGrowthRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_IncomeGrowthRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_IncomeGrowthRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_IncomeGrowthRate_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Income growth rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Annual percent increase you expect in your annual income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InvestmentRate-label",
+      "value": "Investment rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InvestmentRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InvestmentRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InvestmentRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InvestmentRate_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentAge",
+      "value": "67"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_cross_field_error_title",
+      "value": "Please fix the following errors:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_cross_field_error_label",
+      "value": "Current age must be less than retirement age."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_cross_field_error_count",
+      "value": "You can resolve this by changing one or more of the following 2 fields:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "crossfield_button_Global_CurrentAge",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "crossfield_button_Global_RetirementAge",
+      "value": "Retirement age"
+    }
+  },
+  {
+    "click": {
+      "id": "crossfield_button_Global_CurrentAge"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AnnualGrossIncome"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AnnualGrossIncome",
+      "value": "120,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentAge",
+      "value": "45"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_RetirementAge",
+      "value": "60"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_IncomeGrowthRate",
+      "value": "4.55"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InvestmentRate",
+      "value": "5.77"
+    }
+  },
+      {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The present value of your future earnings is $1,661,685"
+    }
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "layout": {
+    "tabs": {
+      "homeInfo": {
+        "tabLabel": "INFORMACIÓN SOBRE LA VIVIENDA Y EL PRÉSTAMO"
+      },
+      "ltv": {
+        "tabLabel": "INFORMACIÓN SOBRE EL PRÉSTAMO-VALOR"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Sin pagos adicionales",
+        "Con pagos adicionales"
+      ]
+    },
+    "results_fields": {
+      "TotPMIPaid": {
+        "fieldLabel": "Total de seguro hipotecario privado pagado"
+      },
+      "TotPMIPaid2": {},
+      "MonUntilPayoff": {
+        "fieldLabel": "Meses hasta la cancelación"
+      },
+      "MonUntilPayoff2": {},
+      "TotPay": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPmt2Home21": {}
+    },
+    "fields": {
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Valor estimado de la vivienda"
+      },
+      "Home_OutstandingMortgagePrincipalHighLTV": {
+        "fieldLabel": "Saldo actual del préstamo"
+      },
+      "Home_OriginalTermInMonths": {
+        "fieldLabel": "Plazo original",
+        "smallLabel": "(en meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Home_RemainingTermInMonths": {
+        "fieldLabel": "Plazo restante",
+        "smallLabel": "(en meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Home_ExtraPaymentStartDate": {
+        "fieldLabel": "Fecha de inicio de pago adicional"
+      },
+      "Home_TargetLTVRatio": {
+        "fieldLabel": "Coeficiente préstamo-valor objetivo"
+      },
+      "Home_TargetLTVDate": {
+        "fieldLabel": "Fecha préstamo-valor objetivo"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total de Seguro Hipotecario Privado Pagado",
+    "title": "¿Qué pago mensual adicional se necesita para alcanzar mi proporción préstamo-valor (LTV) objetivo en una fecha específica?",
+    "answer": "Un pago mensual adicional de <span class='lf-bold'>$%result%</span> es necesario para alcanzar su préstamo-valor objetivo del <span class='lf-bold'>%target%% LTV</span> en la fecha <span class='lf-bold'>%date%</span>. Usted ahorrará  <span class='lf-bold'>$%PMI%</span> en seguro hipotecario privado.",
+    "selectors": [
+      {
+        "label": "Total de seguro hipotecario privado pagado",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos – Sin pagos adicionales",
+            "label": "Sin pagos adicionales"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos – Con pagos adicionales",
+            "label": "Con pagos adicionales"
+          }
+        ]
+      }
+    ],
+    "TotPMIPaid": "Sin pagos adicionales",
+    "TotPMIPaid2": "Con pagos adicionales",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Seguro hipotecario privado"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Seguro hipotecario privado"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "loanprincipal": {
+      "title": "Capital del préstamo",
+      "definition": "La parte no pagada del monto del préstamo. El capital del préstamo se amortiza a lo largo del plazo del préstamo de modo que el capital al final del plazo sea cero."
+    },
+    "ltv": {
+      "title": "Relación préstamo-valor (LTV)",
+      "definition": "La relación préstamo-valor (LTV) es un factor clave que los prestamistas examinan antes de aprobar un préstamo hipotecario. Se calcula dividiendo el monto del préstamo hipotecario por el valor justo de mercado de la vivienda."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el pago mensual de capital adicional requerido para llegar a un coeficiente de préstamo-valor objetivo en una fecha específica y los ahorros resultantes en el seguro hipotecario privado total (PMI) pagado.</br></br> Si el monto del préstamo es superior al 80 % del valor estimado de la vivienda, la calculadora computa una cantidad mensual del seguro hipotecario privado. Los prestatarios pueden pedir a su prestamista que cancele el seguro hipotecario privado cuando hayan pagado el saldo de la hipoteca hasta el 80 % del valor de tasación inicial de la vivienda. Cuando el saldo cae al 78 %, el proveedor de servicios hipotecarios debe eliminar el seguro hipotecario privado.</br></br> La cantidad total de pagos adicionales se aplica a la amortización del capital del préstamo. Algunos préstamos hipotecarios pueden tener una penalidad por cancelación anticipada. Consulte a su prestamista para verificar si su préstamo tiene dicha penalidad."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la diferencia entre el seguro hipotecario privado total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia entre el seguro hipotecario privado total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales"
+    }
+  ]
+}

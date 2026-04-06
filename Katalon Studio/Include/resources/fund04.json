@@ -1,0 +1,825 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much do fees affect my fund's rate of return?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the impact of brokerage fees, loads and fund operating expenses on a mutual fund's investment returns. Returns are shown before and after taxes. All of these expenses, as well as taxes, drag down a fund's investment return."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "You pay brokerage fees when you buy and sell shares of a mutual fund. A front-end load is paid when you buy the shares. A back-end load (also called a deferred sales charge ) is paid when you redeem shares. Funds typically levy one or the other but not both. A no-load mutual fund does not charge either a front-end or a back-end load."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Fund operating expenses include 12(b)-1 fees and are paid annually from the assets of the mutual fund. Operating expenses for many mutual funds typically range from 1.00 to 1.75 percent of fund assets each year. This ratio is called a fund's operating expense ratio."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=brokerage fees",
+      "value": "brokerage fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=loads",
+      "value": "loads"
+    }
+  },
+  {
+    "click": {
+      "id": "link=loads"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A transaction fee, stated as a percentage of your investment, that you pay when you buy or redeem shares of a mutual fund."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=investment returns",
+      "value": "investment returns"
+    }
+  },
+  {
+    "click": {
+      "id": "link=investment returns"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Investment return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The gain or loss on an investment, stated as an annual percentage rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=front-end load",
+      "value": "front-end load"
+    }
+  },
+  {
+    "click": {
+      "id": "link=front-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A fee you pay when you buy shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are investing."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=back-end load",
+      "value": "back-end load"
+    }
+  },
+  {
+    "click": {
+      "id": "link=back-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A fee you pay when you sell shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are selling."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=deferred sales charge",
+      "value": "deferred sales charge"
+    }
+  },
+  {
+    "click": {
+      "id": "link=deferred sales charge"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Deferred sales charge"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A sales charge when you sell an investment. For mutual funds, these charges are also called back-end loads. For annuities and life insurance policies, these charges are also called surrender charges."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=redeem",
+      "value": "redeem"
+    }
+  },
+  {
+    "click": {
+      "id": "link=redeem"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Redemption"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The act of you selling back your investment to the company that issued the investment."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=no-load",
+      "value": "no-load"
+    }
+  },
+  {
+    "click": {
+      "id": "link=no-load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "No-load mutual fund"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A mutual fund that does not charge an initial fee, or load, when you buy shares."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=12(b)-1 fees",
+      "value": "12(b)-1 fees"
+    }
+  },
+  {
+    "click": {
+      "id": "link=12(b)-1 fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "12(b)-1 fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Named for the SEC rule that permits them, 12(b)-1 fees are paid every year to the mutual fund for marketing and distribution costs. They are generally between 0.25% and 1% of the value of your fund."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=operating expense ratio",
+      "value": "operating expense ratio"
+    }
+  },
+  {
+    "click": {
+      "id": "link=operating expense ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Operating expense ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The yearly cost, stated as a percentage of fund assets, that you pay a mutual fund. A fund's operating expenses include a yearly management fee paid to the investment adviser, 12(b)-1 marketing and distribution fees, and any other miscellaneous fees."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Fees reduce your after-tax rate of return by 1.63%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='With fees'])[1]/preceding::th[1]",
+      "value": "Without fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Without fees'])[1]/following::th[1]",
+      "value": "With fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesBeforeFees_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesBeforeFees_result_value",
+      "value": "18.55%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesAfterFees_result_value",
+      "value": "16.86%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesBeforeFees_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesBeforeFees_result_value",
+      "value": "16.23%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesAfterFees_result_value",
+      "value": "14.60%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_emptyField04_result_label",
+      "value": "Total fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_emptyField04_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFees_result_value",
+      "value": "$620"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment-label",
+      "value": "Additional investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_InvestmentFrequency-label",
+      "value": "Investment Frequency"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_MonthsOwned-label",
+      "value": "Months owned"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceToday-label",
+      "value": "Share price today"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePriceToday",
+      "value": "35.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesTaxes-accordion",
+      "value": "Fees & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FrontendLoad-label",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_BackendLoad-label",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Income-accordion",
+      "value": "Income"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (long term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (short term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains-label",
+      "value": "Yearly increase in dividends & gains"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (fed tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (state tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (non-taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption-label",
+      "value": "Dividends & gains are"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "18.459"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "1,500.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "200"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Biweekly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePriceToday",
+      "value": "10.236"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "1.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "3.444"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "100,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "12.56"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "0.36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "0.25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "1.26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "4"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Fees reduce your after-tax rate of return by 2.53%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesBeforeFees_result_value",
+      "value": "100.03%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesAfterFees_result_value",
+      "value": "97.42%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesBeforeFees_result_value",
+      "value": "95.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesAfterFees_result_value",
+      "value": "93.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_emptyField04_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFees_result_value",
+      "value": "$1,355"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,274 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "HSAInfo"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "HSAAge",
+          "HSASpouseAge",
+          "HSARetire",
+          "MonthlyMedical",
+          "HDHPDeductible"
+        ]
+      },
+      "HSAInfo": {
+        "tabLabel": "HSA Info",
+        "fields": [
+          "HealthPlanType",
+          "HSABalance",
+          "HSAReturnRate"
+        ]
+      }
+    },
+    "fields": {
+      "HSAAge": {
+        "fieldLabel": "Are you 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "Is spouse 55 years of age or older?",
+        "smallLabel": "",
+        "glossaryTerm": "hsaage",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSARetire": {
+        "fieldLabel": "Years until retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "MonthlyMedical": {
+        "fieldLabel": "Expected monthly health care expenses",
+        "smallLabel": "",
+        "glossaryTerm": "healthcareexpenses",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "50000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "HDHP plan deductible",
+        "smallLabel": "",
+        "glossaryTerm": "hdhpdeductible",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HealthPlanType": {
+        "fieldLabel": "Plan type",
+        "smallLabel": "",
+        "glossaryTerm": "hsahealthplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Family ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSABalance": {
+        "fieldLabel": "Current HSA balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSAReturnRate": {
+        "fieldLabel": "Annual HSA rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "hsaannualrateofreturn",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "How much should I contribute to my HSA to reach my retirement goal?",
+    "answer": "Saving <span class='lf-bold'>$%amount%</span> per month should help you reach your goal",
+    "contribute": "Saving Per Month",
+    "selectors": [
+      {
+        "label": "HSA Contribution",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "hsahealthplantype": {
+      "title": "HSA Health Plan Type",
+      "definition": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    },
+    "hsaage": {
+      "title": "Your Age",
+      "definition": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    },
+    "healthcareexpenses": {
+      "title": "Qualified Medical Expenses",
+      "definition": "Qualified medical expenses are defined by IRS Publication 502."
+    },
+    "hsaannualrateofreturn": {
+      "title": "Annual Rate of Return on your HSA account",
+      "definition": "The return you expect to earn on the money in your HSA."
+    },
+    "hdhpdeductible": {
+      "title": "High Deductible Health Plan Deductible",
+      "definition": "A deductible is what you pay out of pocket before any insurance payments are applied to your care. A high deductible health plan is one where the deductible is over $1,650 for single coverage ($3,300 for family coverage) in 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you figure out how much you should contribute to your HSA to meet a specific goal amount at retirement."
+    },
+    {
+      "textLabel": "The return on your HSA is influenced by the investment decisions you make."
+    },
+    {
+      "textLabel": "For IRS help concerning health savings accounts, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of how much you should contribute monthly to the HSA to reach your retirement goal."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "How much you should contribute monthly to the HSA to reach your retirement goal"
+    }
+  ]
+}

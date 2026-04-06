@@ -1,0 +1,779 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much cash back will I earn with a cash rewards card?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine the cash back you can accrue with a cash rewards credit card based on your spending habits and the card's attributes."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "if": {
+      "id": "lf_answer",
+      "Value": "You will earn $150 in cash back after 3 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Cash Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackRestaurants_result_label",
+      "value": "Restaurants"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackRestaurants_result_value",
+      "value": "$17"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGas_result_label",
+      "value": "Gas"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGas_result_value",
+      "value": "$12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGroceryStores_result_label",
+      "value": "Grocery stores"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGroceryStores_result_value",
+      "value": "$15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackDrugStores_result_label",
+      "value": "Drug stores"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackDrugStores_result_value",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackOthers_result_label",
+      "value": "All other purchases"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackOthers_result_value",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackSignupBonus_result_label",
+      "value": "One-time signup bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackSignupBonus_result_value",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_label",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "elseIf": {
+      "id": "lf_answer",
+      "Value": "You will earn $163 in cash back after 3 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Cash Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackRestaurants_result_label",
+      "value": "Restaurants"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackRestaurants_result_value",
+      "value": "$22"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGas_result_label",
+      "value": "Gas"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGas_result_value",
+      "value": "$15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGroceryStores_result_label",
+      "value": "GroceryStores"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGroceryStores_result_value",
+      "value": "$19"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackDrugStores_result_label",
+      "value": "Drug stores"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackDrugStores_result_value",
+      "value": "$2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackOthers_result_label",
+      "value": "All other purchases"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackOthers_result_value",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackSignupBonus_result_label",
+      "value": "One-time signup bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackSignupBonus_result_value",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_label",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_value",
+      "value": "$163"
+    }
+  },
+    {
+    "endIf": {
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-pie-series.highcharts-color-1 > text",
+      "value": "Gas"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "YourSpendings-accordion",
+      "value": "YOUR SPENDING"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingPeriod-label",
+      "value": "How much do you spend every"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingPeriod",
+      "value": "1 month 3 months 1 year"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingPeriod",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryOneAmount-label",
+      "value": "At restaurants"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryOneAmount",
+      "value": "750"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryOneAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryTwoAmount-label",
+      "value": "On gas"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryTwoAmount",
+      "value": "750"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryTwoAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryThreeAmount-label",
+      "value": "At grocery stores"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryThreeAmount",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryThreeAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFourAmount-label",
+      "value": "At drug stores"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryFourAmount",
+      "value": "75"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFourAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFiveAmount-label",
+      "value": "All other purchases"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryFiveAmount",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFiveAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "CashBackRates-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryOneCashBackRate-label",
+      "value": "Restaurant"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryOneCashBackRate",
+      "value": "3.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryOneCashBackRate-error-message",
+      "value": "Must be between 0.00% and 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryTwoCashBackRate-label",
+      "value": "Gas"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryTwoCashBackRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryTwoCashBackRate-error-message",
+      "value": "Must be between 0.00% and 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryThreeCashBackRate-label",
+      "value": "Grocery stores"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryThreeCashBackRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryThreeCashBackRate-error-message",
+      "value": "Must be between 0.00% and 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFourCashBackRate-label",
+      "value": "Drug stores"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryFourCashBackRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFourCashBackRate-error-message",
+      "value": "Must be between 0.00% and 1,000.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFiveCashBackRate-label",
+      "value": "All other purchases"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_SpendingCategoryFiveCashBackRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_SpendingCategoryFiveCashBackRate-error-message",
+      "value": "Must be between 0.00% and 1,000.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CashBackLimits-accordion",
+      "value": "CASH BACK LIMITS"
+    }
+  },
+  {
+    "click": {
+      "id": "CashBackLimits-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackLimitAmount-label",
+      "value": "Rates apply for spending up to"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_CashBackLimitAmount",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackLimitAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackLimitPeriod-label",
+      "value": "For each calendar"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackLimitPeriod",
+      "value": "Quarter Year"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_CashBackLimitPeriod",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RateAfterCashBackLimitReached-label",
+      "value": "Rate after limit reached"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_RateAfterCashBackLimitReached",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_RateAfterCashBackLimitReached-error-message",
+      "value": "Must be between 0.00% and 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OneTimeSignupBonus-accordion",
+      "value": "ONE-TIME SIGNUP BONUS"
+    }
+  },
+  {
+    "click": {
+      "id": "OneTimeSignupBonus-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusAmount-label",
+      "value": "Cash bonus"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_CashBonusAmount",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusSpendingThreshold-label",
+      "value": "After you spend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_CashBonusSpendingThreshold",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusSpendingThreshold-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusSpendingPeriod-label",
+      "value": "Within (number of months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_CashBonusSpendingPeriod",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBonusSpendingPeriod-error-message",
+      "value": "Must be between 1 and 12"
+    }
+  },
+  {
+    "click": {
+      "id": "YourSpendings-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Card_SpendingPeriod",
+      "value": "label=1 month"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryOneAmount",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryTwoAmount",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryThreeAmount",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryFourAmount",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryFiveAmount",
+      "value": "200"
+    }
+  },
+  {
+    "click": {
+      "id": "CashBackRates-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryOneCashBackRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryTwoCashBackRate",
+      "value": "3.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryThreeCashBackRate",
+      "value": "2.60"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryFourCashBackRate",
+      "value": "4.90"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_SpendingCategoryFiveCashBackRate",
+      "value": "2.90"
+    }
+  },
+  {
+    "click": {
+      "id": "CashBackLimits-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CashBackLimitAmount",
+      "value": "2,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Card_CashBackLimitPeriod",
+      "value": "label=Year"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Card_CashBackLimitPeriod",
+      "value": "label=Year"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_RateAfterCashBackLimitReached",
+      "value": "10.00"
+    }
+  },
+  {
+    "click": {
+      "id": "OneTimeSignupBonus-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CashBonusAmount",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CashBonusSpendingThreshold",
+      "value": "3,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CashBonusSpendingPeriod",
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will earn $32 in cash back after 1 month"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_Card_CashBackRestaurants_result_value",
+      "value": "$10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGas_result_value",
+      "value": "$6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackGroceryStores_result_value",
+      "value": "$8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackDrugStores_result_value",
+      "value": "$2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackOthers_result_value",
+      "value": "$6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackSignupBonus_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_label",
+      "value": "Total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_CashBackTotal_result_value",
+      "value": "$32"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

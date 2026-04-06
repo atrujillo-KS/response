@@ -1,0 +1,220 @@
+{
+  "layout": {
+    "tabs": {
+      "CurrentLoan": {
+        "tabLabel": "Préstamo al día"
+      },
+      "NewLoan": {
+        "tabLabel": "Préstamo nuevo"
+      }
+    },
+    "fields": {
+      "Home_CurrentLoanAmount": {
+        "fieldLabel": "Importe original del préstamo",
+        "glossaryTerm": "breakevenpoint"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo original ",
+        "smallLabel": "(años)"
+      },
+      "Home_YearsAlreadyPaid": {
+        "fieldLabel": "Años ya pagados"
+      },
+      "Home_CurrentLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)"
+      },
+      "Home_RefinanceInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_ClosingCostsPercentage": {
+        "fieldLabel": "Costos de cierre"
+      },
+      "Home_FinanceClosingCosts": {
+        "fieldLabel": "Costos de cierre financiero"
+      },
+      "Home_CashOutAmount": {
+        "fieldLabel": "Monto de retiro"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo al día",
+        "Refinanciado(a)"
+      ]
+    },
+    "results_fields": {
+      "Home_MonthlyPaymentDifference": {
+        "fieldLabel": "Diferencia de pago mensual"
+      },
+      "Home_TotalInterestDifference": {
+        "fieldLabel": "Diferencia de interés total"
+      },
+      "Home_BreakevenPoint": {
+        "fieldLabel": "Punto de equilibrio"
+      },
+      "Home_RemainingLoanAmountCurrentLoan": {
+        "fieldLabel": "Monto restante del préstamo (préstamo al día)"
+      },
+      "Home_MonthlyPaymentCurrentLoan": {
+        "fieldLabel": "Pago mensual (préstamo al día)"
+      },
+      "Home_RemainingInterestCurrentLoan": {
+        "fieldLabel": "Interés restante (préstamo al día)"
+      },
+      "Home_YearsUntilPayoffCurrentLoan": {
+        "fieldLabel": "Años hasta la cancelación (préstamo al día)"
+      },
+      "Home_RemainingLoanAmountRefinanceLoan": {
+        "fieldLabel": "Monto restante del préstamo (refinanciado)"
+      },
+      "Home_MonthlyPaymentRefinanceLoan": {
+        "fieldLabel": "Pago mensual (refinanciado)"
+      },
+      "Home_RemainingInterestRefinanceLoan": {
+        "fieldLabel": "Interés restante (refinanciado)"
+      },
+      "Home_YearsUntilPayoffRefinanceLoan": {
+        "fieldLabel": "Años hasta la cancelación (refinanciada)"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Pago mensual",
+    "dataTableCategory2": "Interés restante",
+    "breakEvenPoint": "punto de equilibrio",
+    "title": "¿Me conviene más refinanciar?",
+    "answer": "Se estima que el refinanciamiento %lowerincrease% su pago mensual en <span class='lf-bold'>$%result%</span> y <span class='lf-bold'>%savecost%</span> <span class='lf-bold'>$%result1%</span> en intereses totales.%breakeven%",
+    "PrincAndInt": "Préstamo al día",
+    "TotPmt2Home11": "Préstamo refinanciado",
+    "save": "le permitirá ahorrará",
+    "cost": "le costará",
+    "currentLoan": "Préstamo al día",
+    "CurrentLoan": "Préstamo al día",
+    "existingLoan": "Préstamo al día",
+    "refinancedLoan": "Préstamo refinanciado",
+    "RefiLoan": "Préstamo refinanciado",
+    "lower": "reducirá",
+    "increase": "aumentará",
+    "year": "Año",
+    "TotIntPaid": "Intereses totales pagados",
+    "breakeven": " Su punto de equilibrio es de aproximadamente %breakeven% meses. <span class='lf_AnswerTooltip'></span>",
+    "selectors": [
+      {
+        "label": "Pagos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Interés restante",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo al día",
+            "label": "Préstamo al día"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo refinanciado ",
+            "label": "Préstamo refinanciado"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes restante",
+        "Pago mensual",
+        "Balance final",
+        "Capital pagado",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Balance final",
+        "Capital pagado",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "financeclosingcosts": {
+      "title": "Costos de cierre de finanzas",
+      "definition": "Si desea evitar cualquier costo inicial de refinanciamiento, puede \"transferir\" o incluirlos en el monto de su nuevo préstamo. Esta estrategia costará más a largo plazo ya que terminará pagando intereses sobre los costos de cierre."
+    },
+    "cashoutamount": {
+      "title": "Cantidad de retiro",
+      "definition": "Si tiene suficiente capital en su casa, es posible que pueda sacar dinero en efectivo durante un refinanciamiento para gastar en cosas como mejoras en el hogar o pagar otras deudas con intereses altos. En un refinanciamiento con retiro de efectivo, pide prestado más de lo que debe en su hipoteca anterior y se queda con la diferencia. La cantidad de efectivo que puede recibir depende de varios factores, incluido el tipo de préstamo, los estándares de su prestamista, la relación préstamo-valor de su propiedad y su solvencia crediticia."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "breakevenpoint": {
+      "title": "Punto de equilibrio",
+      "definition": "En el punto de rentabilidad, los ahorros que usted recibe de la refinanciación son iguales a los costos."
+    },
+    "refinancing": {
+      "title": "Refinanciación",
+      "definition": "Sustitución de una préstamo anterior por uno nuevo que ofrece mejores condiciones, como por ejemplo una tasa de interés menor, una tasa fija en lugar de una variable (o viceversa), o sin pago global."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "closingcosts": {
+      "title": "Gastos de cierre de la operación",
+      "definition": "Gastos totales que el comprador paga cuando se completa una transacción de bienes inmuebles; por ejemplo: comisiones de solicitud, evaluación y originación del préstamo."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "settlementcharges": {
+      "title": "Cargos por liquidación",
+      "definition": "También llamados costos de cierre, son los costos habituales por encima del precio de venta que deben pagarse para cubrir la transferencia de propiedad en la operación de cierre."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula si la decisión de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#refinancing\">refinanciar</a></span> su préstamo hipotecario es buena en función de los términos que ingrese para su préstamo actual y para el préstamo de refinanciamiento que está considerando. Las razones más comunes para refinanciar incluyen bajar la tasa de interés, cambiar el tipo de hipoteca, liquidar su préstamo más rápido y retirar efectivo del valor acumulado de la vivienda."
+    },
+    {
+      "textLabel": "Por lo general, la refinanciación tiene sentido si puede reducir su pago mensual lo suficiente como para cubrir los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#settlementcharges\">costos de cierre</a></span> asociados antes de vender su casa o cancelar el préstamo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Cuadro de columnas de los pagos tanto del préstamo actual como del préstamo refinanciado."
+    },
+    {
+      "title": "Gráfico de columnas de los pagos tanto del préstamo actual como del préstamo refinanciado."
+    },
+    {
+      "title": "Tabla de amortización del préstamo actual."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Pagos tanto del préstamo actual como del préstamo refinanciado"
+    },
+    {
+      "title": "Intereses restantes tanto para el préstamo actual como para el préstamo refinanciado"
+    }
+  ]
+}

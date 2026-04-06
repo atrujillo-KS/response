@@ -1,0 +1,1540 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much life insurance do I need?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool estimates how much life insurance coverage your family may need to cover future expenses in the event of your untimely death."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "A life insurance policy is used to supplement income that your family may earn from:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Nonrecurring events, such as the sale of assets to pay outstanding debts or expenses."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "Income from Social Security, pensions, investments, or salaries."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_4",
+      "value": "Key assumptions of this tool include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_5",
+      "value": "The results shown are after inflation and taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_5",
+      "value": "The results shown are after inflation and taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_6",
+      "value": "Available assets (including home equity, savings, and other investments) are treated as a source of income. It is assumed that they are sold at the time of unexpected death and therefore become available as a cash resource."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You'll need $63,777 in life insurance to cover expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Expenses_result_label",
+      "value": "Total amount necessary today to cover expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Expenses_result_value",
+      "value": "$370,784"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowAssets_result_label",
+      "value": "Assets you own today which you may convert to cash"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowAssets_result_value",
+      "value": "$46,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutAssets_result_label",
+      "value": "Amount of expenses your family will be able to cover"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutAssets_result_value",
+      "value": "$260,507"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InsNeeded_result_label",
+      "value": "Shortfall (life insurance you'll need)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InsNeeded_result_value",
+      "value": "$63,777"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Current Assets']/parent::*",
+      "value": "Current Assets"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Future Assets']/parent::*",
+      "value": "Future Assets"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Insurance Needed']/parent::*",
+      "value": "Insurance Needed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Assets-tab-label",
+      "value": "Assets"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Assets-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Assets-page-title']/h2",
+      "value": "Assets to cover family expenses after death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ReasonForNeed_label",
+      "value": "Insurance needed for"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//*[@id=\"lf_Insurance_ReasonForNeed\"]/option[1]",
+      "value": "A given time period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//*[@id=\"lf_Insurance_ReasonForNeed\"]/option[2]",
+      "value": "All expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_ReasonForNeed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsNeeded_label",
+      "value": "Years needed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_YearsNeeded",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsNeeded-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CashAndSavings_label",
+      "value": "Cash and savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CashAndSavings",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CashAndSavings-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeEquity_label",
+      "value": "Home equity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_HomeEquity",
+      "value": "30,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeEquity-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_Investments_label",
+      "value": "Investments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_Investments",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_Investments-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_OtherAssets_label",
+      "value": "Other assets"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherAssets",
+      "value": "4,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_OtherAssets-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-ExpensesatDeath-tab-label",
+      "value": "Expenses at Death"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ExpensesatDeath-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-ExpensesatDeath-page-title']/h2",
+      "value": "One-time expenses at death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_EstateTaxPercentage_field_label",
+      "value": "Estate taxes"
+    }
+  },
+  {
+    "verifyText": {
+       "id": "xpath=//div[@id='lf_Insurance_EstateTaxPercentage_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_EstateTaxPercentage_label']/a",
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Estate taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Taxes that are levied on the assets of an estate. For 2025, the maximum amount of income that is excluded from estate taxes is $13.99 million. The maximum estate and gift tax rate in 2025 is 40%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_EstateTaxPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_EstateTaxPercentage-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ProbateCosts_field_label",
+      "value": "Probate costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_ProbateCosts_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_ProbateCosts_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Probate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A legal procedure settled by a state court of law that identifies the heirs to your estate and determines their legally entitled share."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_ProbateCosts",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ProbateCosts-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FuneralCosts_field_label",
+      "value": "Funeral costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_FuneralCosts",
+      "value": "6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FuneralCosts-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_UninsuredMedicalCosts_field_label",
+      "value": "Uninsured medical costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_UninsuredMedicalCosts",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_UninsuredMedicalCosts-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DebtRepayment_field_label",
+      "value": "Debt repayment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_DebtRepayment",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DebtRepayment-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildOne_field_label",
+      "value": "College fund, child 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildOne_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildOne_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "College savings plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CollegeFundChildOne",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildTwo-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildTwo_field_label",
+      "value": "College fund, child 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildTwo_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildTwo_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "College savings plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CollegeFundChildTwo",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildTwo-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildThree_field_label",
+      "value": "College fund, child 3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildThree_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_CollegeFundChildThree_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "College savings plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CollegeFundChildThree",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CollegeFundChildThree-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-FutureIncome-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-FutureIncome-tab-label",
+      "value": "Future Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-page-title']/h2",
+      "value": "Your family's estimated future monthly income, in today's dollars"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Amount (monthly)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Years until start"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Duration"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_SpouseGrossMonthlyIncomeAmount_label']/span[2]",
+      "value": "Spouse's gross income from work"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeAmount",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeYearsUntilStart-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeDuration",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeDuration-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount_label']/span",
+      "value": "Social Security survivor benefits (children at home)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount",
+      "value": "225"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div/div/div/fieldset/div[2]/div/div/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div/div/div/fieldset/div[2]/div/div/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Survivors insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Social Security survivors insurance pays an additional benefit, called a survivors benefit, to the surviving spouse or dependent of a deceased person who was eligible to receive or was receiving Social Security retirement benefits."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeYearsUntilStart-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeDuration",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeDuration-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount_label']/span",
+      "value": "Social Security survivor benefits (children gone)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div/div/div/fieldset/div[3]/div/div/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf-FutureIncome-details']/div[3]/div/div/div/fieldset/div[3]/div/div/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Survivors insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Social Security survivors insurance pays an additional benefit, called a survivors benefit, to the surviving spouse or dependent of a deceased person who was eligible to receive or was receiving Social Security retirement benefits."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount",
+      "value": "225"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneYearsUntilStart",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneYearsUntilStart-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneDuration",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneDuration-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_OtherMonthlyIncomeAmount_label']/span",
+      "value": "Other income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyIncomeAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_OtherMonthlyIncomeAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyIncomeYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_OtherMonthlyIncomeYearsUntilStart-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyIncomeDuration",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_OtherMonthlyIncomeDuration-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-FutureExpenses-tab-label",
+      "value": "Future Expenses"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-FutureExpenses-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureExpenses-page-title']/h2",
+      "value": "Your family's estimated future monthly expenses, in today's dollars"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureExpenses-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Amount (monthly)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureExpenses-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Years until start"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-FutureExpenses-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Duration"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyChildCareExpensesAmount_label']/span[2]",
+      "value": "Child care expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesAmount",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesDuration",
+      "value": "6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyLivingExpensesChildrenAtHomeAmount_label']/span",
+      "value": "Living expenses (children at home)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenAtHomeAmount",
+      "value": "2,600"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenAtHomeYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenAtHomeDuration",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyLivingExpensesChildrenGoneAmount_label']/span",
+      "value": "Living expenses (children gone)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneAmount",
+      "value": "1,900"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneYearsUntilStart",
+      "value": "12"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneDuration",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyCollegeExpensesAmount_label']/span",
+      "value": "Children's college expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesAmount",
+      "value": "500"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesYearsUntilStart",
+      "value": "8"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesDuration",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlySpouseEducationExpensesAmount_label']/span",
+      "value": "Retraining or education expenses for spouse"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesAmount",
+      "value": "200"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesYearsUntilStart",
+      "value": "2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesDuration",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_OtherMonthlyExpensesAmount_label']/span",
+      "value": "Other expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyExpensesAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyExpensesYearsUntilStart",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_OtherMonthlyExpensesDuration",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-TaxesInflation-tab-label",
+      "value": "Taxes & Inflation"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-TaxesInflation-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-TaxesInflation-page-title']/h2",
+      "value": "Tax, inflation, and savings rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_field_label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate_field_label",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_InflationRate_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate_field_label",
+      "value": "Your savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Assets-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_ReasonForNeed"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_ReasonForNeed",
+      "value": "label=All expenses"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_ReasonForNeed"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CashAndSavings",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_HomeEquity",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_Investments",
+      "value": "4,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherAssets",
+      "value": "12,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ExpensesatDeath-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_EstateTaxPercentage",
+      "value": "1.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_ProbateCosts",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_FuneralCosts",
+      "value": "7,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_UninsuredMedicalCosts",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_DebtRepayment",
+      "value": "4,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CollegeFundChildOne",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CollegeFundChildTwo",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CollegeFundChildThree",
+      "value": "5,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-FutureIncome-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeAmount",
+      "value": "4,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeYearsUntilStart",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SpouseGrossMonthlyIncomeDuration",
+      "value": "20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeDuration",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneYearsUntilStart",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SocialSecuritySurvivorBenefitsChildrenGoneDuration",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyIncomeAmount",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyIncomeYearsUntilStart",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyIncomeDuration",
+      "value": "20"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-FutureExpenses-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesAmount",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesYearsUntilStart",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyChildCareExpensesDuration",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenAtHomeAmount",
+      "value": "3,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenAtHomeDuration",
+      "value": "20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneAmount",
+      "value": "2,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneYearsUntilStart",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyLivingExpensesChildrenGoneDuration",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesAmount",
+      "value": "450"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesYearsUntilStart",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyCollegeExpensesDuration",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesAmount",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesYearsUntilStart",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlySpouseEducationExpensesDuration",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyExpensesAmount",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyExpensesYearsUntilStart",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_OtherMonthlyExpensesDuration",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-TaxesInflation-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.77"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.55"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You'll need $750,098 in life insurance to cover expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Expenses_result_value",
+      "value": "$1,836,697"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowAssets_result_value",
+      "value": "$71,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutAssets_result_value",
+      "value": "$1,015,599"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InsNeeded_result_value",
+      "value": "$750,098"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

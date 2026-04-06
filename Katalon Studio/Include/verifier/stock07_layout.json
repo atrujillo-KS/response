@@ -1,0 +1,773 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "GrowthStock",
+        "IncomeStock",
+        "AssumptionsTaxes",
+        "FeesPurchase",
+        "FeesSale"
+      ],
+      "GrowthStock": {
+        "tabLabel": "Growth Stock",
+        "fields": [
+          "Stock_SharePurchasePriceGrowthStock",
+          "Stock_SharesPurchasedGrowthStock",
+          "Stock_YearlySharePriceIncreaseGrowthStock",
+          "Stock_AverageQuarterlyDividendGrowthStock",
+          "Stock_YearlyIncreaseInDividendsGrowthStock"
+        ]
+      },
+      "IncomeStock": {
+        "tabLabel": "Income Stock",
+        "fields": [
+          "Stock_SharePurchasePriceIncomeStock",
+          "Stock_SharesPurchasedIncomeStock",
+          "Stock_YearlySharePriceIncreaseIncomeStock",
+          "Stock_AverageQuarterlyDividendIncomeStock",
+          "Stock_YearlyIncreaseInDividendsIncomeStock"
+        ]
+      },
+      "AssumptionsTaxes": {
+        "tabLabel": "Assumptions & Taxes",
+        "fields": [
+          "Stock_MonthsOwned",
+          "Stock_AverageQuarterlyDividend",
+          "Stock_DividendIncomeSpendingOption",
+          "Global_SavingsInterestRate",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      },
+      "FeesPurchase": {
+        "tabLabel": "Fees at Purchase",
+        "fields": [
+          "Stock_PurchaseFeesFixedAmount",
+          "Stock_PurchaseFeesPercentage",
+          "Stock_PurchaseFeesAmountPerShare"
+        ]
+      },
+      "FeesSale": {
+        "tabLabel": "Fees at Sale",
+        "fields": [
+          "Stock_SaleFeesFixedAmount",
+          "Stock_SaleFeesPercentage",
+          "Stock_SaleFeesAmountPerShare"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Growth",
+        "Income"
+      ],
+      "fields": [
+        [
+          "FMRR1Bef",
+          "FMRR2Bef"
+        ],
+        [
+          "FMRR1Aft",
+          "FMRR2Aft"
+        ],
+        [
+          "PriceFutStock07",
+          "PriceFut2Stock07"
+        ],
+        [
+          "QDivFut",
+          "QDivFut2"
+        ],
+        [
+          "TotDiv1Aft",
+          "TotDiv2Aft"
+        ],
+        [
+          "SaleGain1Aft",
+          "SaleGain2Aft"
+        ]
+      ]
+    },
+    "fields": {
+      "Stock_SharePurchasePriceGrowthStock": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchasedGrowthStock": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_YearlySharePriceIncreaseGrowthStock": {
+        "fieldLabel": "Yearly increase in share price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividendGrowthStock": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_YearlyIncreaseInDividendsGrowthStock": {
+        "fieldLabel": "Yearly increase in dividends",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharePurchasePriceIncomeStock": {
+        "fieldLabel": "Share purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "40.000",
+        "value": "40.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchasedIncomeStock": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_YearlySharePriceIncreaseIncomeStock": {
+        "fieldLabel": "Yearly increase in share price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividendIncomeStock": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_YearlyIncreaseInDividendsIncomeStock": {
+        "fieldLabel": "Yearly increase in dividends",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "minimumValue": "0",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Months you will own",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6`",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Dividend income is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Spent when received ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Invested elsewhere ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "SavingsInterestRate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "As fixed dollar amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "8",
+        "value": "8",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "As % of total amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "25.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "25.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "As dollar amount per share",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "As fixed dollar amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "8",
+        "value": "8",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "As % of total amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "25.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "25.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "As dollar amount per share",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "FMRR1Bef": {
+        "fieldLabel": "Return before taxes"
+      },
+      "FMRR2Bef": {
+        "fieldLabel": ""
+      },
+      "FMRR1Aft": {
+        "fieldLabel": "Return after taxes"
+      },
+      "FMRR2Aft": {
+        "fieldLabel": ""
+      },
+      "PriceFutStock07": {
+        "fieldLabel": "Selling price per share"
+      },
+      "PriceFut2Stock07": {
+        "fieldLabel": ""
+      },
+      "QDivFut": {
+        "fieldLabel": "Quarterly dividends per share"
+      },
+      "QDivFut2": {
+        "fieldLabel": ""
+      },
+      "TotDiv1Aft": {
+        "fieldLabel": "Dividends received"
+      },
+      "TotDiv2Aft": {
+        "fieldLabel": ""
+      },
+      "SaleGain1Aft": {
+        "fieldLabel": "Gain at sale of stock"
+      },
+      "SaleGain2Aft": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Gain or Loss",
+    "title": "Which is better: income or growth stock?",
+    "answer": "The <span class='lf-bold'>%which% stock</span> will earn a higher return after taxes of <span class='lf-bold'>%result%</span>",
+    "same_as_answer": "<span class='lf-bold'>Both stocks</span> will earn the same return after taxes of <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Return",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Gain/Loss",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "categories": [
+      "Growth",
+      "Income"
+    ],
+    "beforeTaxes": "Before Taxes",
+    "afterTaxes": "After Taxes",
+    "growth": "growth",
+    "yAxisLabel": "Return (%)",
+    "income": "income"
+  },
+  "glossaryItems": {
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "investreturn": {
+      "title": "Investment return",
+      "definition": "The gain or loss on an investment, stated as an annual percentage rate."
+    },
+    "dividends": {
+      "title": "Dividends",
+      "definition": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    },
+    "capgain": {
+      "title": "Capital gain",
+      "definition": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    },
+    "growthstock": {
+      "title": "Growth stock",
+      "definition": "The stock of a company that focuses on increasing revenues and earnings. Growth stocks tend to not pay dividends. Instead, they retain any earnings and invest them in additional growth opportunities. Growth stocks tend to have higher volatility than income or value stocks, making them riskier investments."
+    },
+    "dividend": {
+      "title": "Average quarterly dividends",
+      "definition": "Dividends earned on a lot of shares, on average during a quarter."
+    },
+    "capitalgainstaxes": {
+      "title": "Capital gains tax",
+      "definition": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "incomestock": {
+      "title": "Income stock",
+      "definition": "The stock of a company that focuses on paying steady or increasing dividends to shareholders. Income stocks tend to have lower volatility than growth stocks, making them less-risky investments."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#InvestReturn\">investment returns</a></span>, before and after taxes, for a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#GrowthStock\">growth</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#IncomeStock\">income stock</a></span>."
+    },
+    {
+      "textLabel": "A growth stock typically earns most of its rate of return from <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapGain\">capital gains</a></span>. An income stock typically earns more of its return from <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">dividends</a></span>."
+    },
+    {
+      "textLabel": "Capital gains on assets held for longer than one year and dividends are taxed at a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">preferential rate</a></span>."
+    },
+    {
+      "textLabel": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the return for the growth stock and income stock, before and after taxes."
+    },
+    {
+      "title": "Column chart comparing the gain or loss for the growth stock and income stock if they are sold today."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Return for the growth stock and income stock, before and after taxes"
+    },
+    {
+      "title": "Gain or loss for the growth stock and income stock if they are sold today"
+    }
+  ]
+}

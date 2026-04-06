@@ -1,0 +1,759 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "GeneralInfo",
+        "PlanInfo",
+        "results"
+      ],
+      "GeneralInfo": {
+        "selected": true,
+        "tabLabel": "General Info",
+        "pageTitle": "General information",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "AnnualPrescriptions",
+                "AnnualDoctorVisits",
+                "FedTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "PlanInfo": {
+        "tabLabel": "Plan Info",
+        "pageTitle": "Plan information",
+        "custom": "new-standard-3col",
+        "sections": [
+          "HDHP",
+          "traditional"
+        ],
+        "HDHP": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Monthly premium",
+              "fields": [
+                "HDHPPremium"
+              ]
+            },
+            {
+              "rowLabel": "Yearly deductible",
+              "fields": [
+                "HDHPDeductible"
+              ]
+            },
+            {
+              "rowLabel": "Yearly maximum out-of-pocket expense",
+              "fields": [
+                "HDHPOOP"
+              ]
+            },
+            {
+              "rowLabel": "Prescription co-pay ",
+              "fields": [
+                "HDHPPrescriptionCopay"
+              ]
+            },
+            {
+              "rowLabel": "Doctor visit co-pay",
+              "fields": [
+                "HDHPMDVisit"
+              ]
+            },
+            {
+              "rowLabel": "Average cost of doctor visit ",
+              "fields": [
+                "HDHPMDAvgCost"
+              ]
+            },
+            {
+              "rowLabel": "Other estimated medical expenses",
+              "fields": [
+                "HDHPEstMedExp"
+              ]
+            },
+            {
+              "rowLabel": "Co-insurance rate",
+              "fields": [
+                "HDHPCoins"
+              ]
+            },
+            {
+              "rowLabel": "Monthly HSA contribution",
+              "fields": [
+                "HDHPContribution"
+              ]
+            }
+          ]
+        },
+        "traditional": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Monthly premium",
+              "fields": [
+                "TradPremium"
+              ]
+            },
+            {
+              "rowLabel": "Yearly deductible",
+              "fields": [
+                "TradDeductible"
+              ]
+            },
+            {
+              "rowLabel": "Yearly maximum out-of-pocket expense",
+              "fields": [
+                "TradOOP"
+              ]
+            },
+            {
+              "rowLabel": "Prescription co-pay ",
+              "fields": [
+                "TradPrescriptionCopay"
+              ]
+            },
+            {
+              "rowLabel": "Doctor visit co-pay",
+              "fields": [
+                "TradMDVisit"
+              ]
+            },
+            {
+              "rowLabel": "Average cost of doctor visit ",
+              "fields": [
+                "TradMDAvgCost"
+              ]
+            },
+            {
+              "rowLabel": "Other estimated medical expenses",
+              "fields": [
+                "TradEstMedExp"
+              ]
+            },
+            {
+              "rowLabel": "Co-insurance rate",
+              "fields": [
+                "TradCoins"
+              ]
+            },
+            {
+              "rowLabel": "Monthly HSA contribution",
+              "fields": [
+                ""
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "HDHP with HSA",
+        "Traditional plan"
+      ],
+      "fields": [
+        [
+          "HDHPCoinsuranceCosts",
+          "TradCoinsuranceCosts"
+        ],
+        [
+          "HDHPDeductibleMet",
+          "TradDeductibleMet"
+        ],
+        [
+          "HDHPInsCost",
+          "TradInsCost"
+        ],
+        [
+          "HDHPDoctorCopay",
+          "TradDoctorCopay"
+        ],
+        [
+          "HDHPTotalGross",
+          "TradTotalGross"
+        ],
+        [
+          "HDHPTaxSavings",
+          "TradTaxSavings"
+        ],
+        [
+          "HDHPNetCost",
+          "TradNetCost"
+        ]
+      ]
+    },
+    "fields": {
+      "AnnualPrescriptions": {
+        "fieldLabel": "Annual prescriptions filled",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "PRESCRIPTIONs",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "AnnualDoctorVisits": {
+        "fieldLabel": "Yearly doctor visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "yearlyVISITs",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "HDHPPremium": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "currencyInput": "lf-double-line",
+        "ariaLegendLabel": "HDHP qualified plan"
+      },
+      "TradPremium": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "800",
+        "value": "800",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Traditional health plan",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradDeductible": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPOOP": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradOOP": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2500",
+        "value": "2500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPPrescriptionCopay": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradPrescriptionCopay": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPMDVisit": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradMDVisit": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPMDAvgCost": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradMDAvgCost": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPEstMedExp": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradEstMedExp": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPCoins": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "70.00",
+        "value": "70.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TradCoins": {
+        "fieldLabel": "Traditional health plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "90.00",
+        "value": "90.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HDHPContribution": {
+        "fieldLabel": "HDHP qualified plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "HDHPCoinsuranceCosts": {
+        "fieldLabel": "Insurance cost"
+      },
+      "TradCoinsuranceCosts": {
+        "fieldLabel": ""
+      },
+      "HDHPDeductibleMet": {
+        "fieldLabel": "Deductible cost"
+      },
+      "TradDeductibleMet": {
+        "fieldLabel": ""
+      },
+      "HDHPInsCost": {
+        "fieldLabel": "Co-insurance"
+      },
+      "TradInsCost": {
+        "fieldLabel": ""
+      },
+      "HDHPDoctorCopay": {
+        "fieldLabel": "Co-pays"
+      },
+      "TradDoctorCopay": {
+        "fieldLabel": ""
+      },
+      "HDHPTotalGross": {
+        "fieldLabel": "Gross cost"
+      },
+      "TradTotalGross": {
+        "fieldLabel": ""
+      },
+      "HDHPTaxSavings": {
+        "fieldLabel": "Tax savings"
+      },
+      "TradTaxSavings": {
+        "fieldLabel": ""
+      },
+      "HDHPNetCost": {
+        "fieldLabel": "Net cost"
+      },
+      "TradNetCost": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Net Cost",
+    "title": "How does a HDHP with a HSA compare to a traditional plan?",
+    "answer": "An HDHP with an HSA would %result% you <span class='lf-bold'>$%amount%</span>",
+    "save": "save",
+    "cost": "cost",
+    "selectors": [
+      {
+        "label": "Plan costs",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "withHSA": "HDHP with HSA",
+    "traditional": "Traditional plan"
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "This tool compares the cost of a high-deductible health plan with a health savings account to a traditional health plan."
+    },
+    {
+      "textLabel": "For IRS help concerning health savings accounts, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total cost of the HDHP with HSA and the traditional health plan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Net cost of the HDHP with HSA and the traditional health plan"
+    }
+  ]
+}

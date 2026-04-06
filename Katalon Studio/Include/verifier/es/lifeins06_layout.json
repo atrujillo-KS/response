@@ -1,0 +1,332 @@
+{
+  "layout": {
+    "tabs": {
+      "Personal": {
+        "tabLabel": "Personal",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Información personal"
+        }
+      },
+      "TermLife": {
+        "tabLabel": "Seguro de vida a término",
+        "pageTitle": "",
+        "default": {
+          "sectionLabelH2": "Información de la póliza de seguro de vida a término",
+          "sectionLabel": ""
+        }
+      },
+      "UniversalLifePremiums": {
+        "tabLabel": "Primas del seguro de vida universal ",
+        "monthly1": {
+          "sectionLabel": "Primas mensuales"
+        },
+        "monthly2": {
+          "sectionLabel": ""
+        },
+        "lumpSum1": {
+          "sectionLabel": "Primas en un solo pago total"
+        },
+        "lumpSum2": {
+          "sectionLabel": ""
+        },
+        "pageTitle": "Información de primera calidad",
+        "pageDesc": "Con una póliza de vida universal, usted tiene la flexibilidad para cambiar la cantidad y la frecuencia de los pagos de primas dentro de los límites especificados en la póliza. Usted puede introducir hasta tres pagos mensuales de la prima y / o sumas globales diferentes."
+      },
+      "UniversalLifeFees": {
+        "tabLabel": "Comisiones del seguro de vida universal ",
+        "pageTitle": "",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Información sobre las tarifas de vida"
+        }
+      },
+      "UniversalLifePayout": {
+        "tabLabel": "Pago del seguro de vida universal",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Informacion sobre los pagos de vida"
+        },
+        "cash": {
+          "sectionLabelH2": "Valor en efectivo",
+          "sectionDesc": "Usted puede desear o necesitar para sacar provecho de su póliza de seguro de vida en algún momento antes de la muerte. Introduzca la siguiente información para incluir este escenario en los resultados."
+        },
+        "pageTitle": ""
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Al final de la póliza de seguro de vida a término",
+        "Si la póliza de seguro de vida universal se cobra después de 25 años",
+        "Al momento del fallecimiento"
+      ]
+    },
+    "results_fields": {
+      "TInvCashOutRate": {
+        "fieldLabel": "Plazo + inversión de los ahorros en primas "
+      },
+      "TermCashOutRate": {
+        "fieldLabel": "Plazo solamente"
+      },
+      "TermEndRate": {
+        "fieldLabel": "Plazo solamente"
+      },
+      "TInvEndRate": {
+        "fieldLabel": "Plazo + inversión de los ahorros en primas "
+      },
+      "ULEndRate": {
+        "fieldLabel": "Seguro de vida universal"
+      }
+    },
+    "fields": {
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Interés promedio que espera devengar"
+      },
+      "Insurance_SurrenderCharge": {
+        "fieldLabel": "Cargo de rescate"
+      },
+      "Insurance_YearsUntilCashInPolicy": {
+        "fieldLabel": "Años hasta que retira el valor en efectivo ",
+        "valueTextLabel": "años"
+      },
+      "Insurance_ExpectedInterestRate": {
+        "fieldLabel": "Interés promedio que espera devengar"
+      },
+      "Insurance_DeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_DeathBenefitPayoutOption": {
+        "fieldLabel": "Opción de pago del beneficio por muerte",
+        "dropdownOptions": [
+          {
+            "optionText": "Recibir el monto de la póliza solamente "
+          },
+          {
+            "optionText": "Recibir también el valor en efectivo "
+          }
+        ]
+      },
+      "Insurance_UpfrontFees": {
+        "fieldLabel": "Comisiones iniciales"
+      },
+      "Insurance_PercentageOfPremiumsAppliedToFees": {
+        "fieldLabel": "% de las primas aplicadas a las comisiones"
+      },
+      "Insurance_RecurringFeeType": {
+        "fieldLabel": "Se cobra comisión recurrente",
+        "dropdownOptions": [
+          {
+            "optionText": "Mensual "
+          },
+          {
+            "optionText": "Anual (% del monto de la póliza)"
+          },
+          {
+            "optionText": "Anual (% de valor en efectivo)"
+          }
+        ]
+      },
+      "Insurance_MonthlyFees": {
+        "fieldLabel": "Comisiones mensuales"
+      },
+      "Insurance_AnnualFeePercentageofPolicyAmount": {
+        "fieldLabel": "Comisión anual",
+        "smallLabel": "(% del monto de la póliza)"
+      },
+      "Insurance_AnnualFeePercentageofCashValue": {
+        "fieldLabel": "Comisión anual",
+        "smallLabel": "(% de valor en efectivo)"
+      },
+      "Insurance_MonthlyPremiumOneAmount": {
+        "fieldLabel": "Prima mensual 1",
+        "ariaLegendLabel": "Cantidad"
+      },
+      "Insurance_MonthlyPremiumOneYearsPaid": {
+        "fieldLabel": "Prima mensual 1",
+        "smallLabel": "",
+        "ariaLegendLabel": "Años pagados",
+        "valueTextLabel": "años"
+      },
+      "Insurance_MonthlyPremiumTwoAmount": {
+        "fieldLabel": "Prima mensual 2"
+      },
+      "Insurance_MonthlyPremiumTwoYearsPaid": {
+        "fieldLabel": "Prima mensual 2",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_MonthlyPremiumThreeAmount": {
+        "fieldLabel": "Prima mensual 3"
+      },
+      "Insurance_MonthlyPremiumThreeYearsPaid": {
+        "fieldLabel": "Prima mensual 3",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_LumpSumPremiumOneAmount": {
+        "fieldLabel": "Prima 1 en un solo pago total",
+        "ariaLegendLabel": "Cantidad"
+      },
+      "Insurance_LumpSumPremiumOneYearsPaid": {
+        "fieldLabel": "Prima 2 en un solo pago total",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "Años pagados"
+      },
+      "Insurance_LumpSumPremiumTwoAmount": {
+        "fieldLabel": "Prima 2 en un solo pago total"
+      },
+      "Insurance_LumpSumPremiumThreeAmount": {
+        "fieldLabel": "Prima 3 en un solo pago total"
+      },
+      "Insurance_LumpSumPremiumTwoYearsPaid": {
+        "fieldLabel": "Prima 2 en un solo pago total",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_LumpSumPremiumThreeYearsPaid": {
+        "fieldLabel": "Prima 3 en un solo pago total",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_TermLifeYearsToRemainCovered": {
+        "fieldLabel": "Años para quedar amparado(a)",
+        "valueTextLabel": "años"
+      },
+      "Insurance_TermLifeDeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_PolicyTermInYears": {
+        "fieldLabel": "Plazo de la póliza ",
+        "smallLabel": "(años)",
+        "valueTextLabel": "años"
+      },
+      "Insurance_TermLifePremium": {
+        "fieldLabel": "Monto de la prima"
+      },
+      "Insurance_TermLifePremiumPaymentsPerYear": {
+        "fieldLabel": "Pagos de prima al año ",
+        "valueTextLabel": "pagos"
+      },
+      "Insurance_PremiumIncreasePerRenewal": {
+        "fieldLabel": "Aumento de la prima por renovación"
+      },
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Tasas de rendimiento después de impuestos",
+    "Premiums_MonthlyPremium1": "Prima mensual 1",
+    "Premiums_MonthlyPremium2": "Prima mensual 2",
+    "Premiums_MonthlyPremium3": "Prima mensual 3",
+    "lumpSum_Premium1": "Prima 1 en un solo pago total",
+    "lumpSum_Premium2": "Prima 2 en un solo pago total",
+    "lumpSum_Premium3": "Prima 3 en un solo pago total",
+    "title": "¿Qué es mejor: un seguro de vida a término o un seguro de vida universal?",
+    "answer": "La %rateLabel% proporciona la mejor tasa de rendimiento después de impuestos al momento del fallecimiento a <span class='lf-bold'>%rate%%</span> ",
+    "termOnly": "Póliza de seguro de vida a término",
+    "termInvestment": "Póliza de seguro de vida a término + inversión de los ahorros en primas",
+    "universalLife": "Póliza de seguro de vida universal",
+    "term": "Plazo",
+    "termInv": "Plazo + Inversión",
+    "universal": "Universal",
+    "endOfTerm": "Dentro de %years% años",
+    "endOfPolicy": "Dentro de %years% años",
+    "endOfLife": "Al momento del fallecimiento",
+    "rateOfReturn": "Tasa de rendimiento %",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "termlife": {
+      "title": "Seguro de vida a término",
+      "definition": "Una póliza de seguro de vida a término proporciona una indemnización por fallecimiento durante un plazo específico, generalmente medido en años. A diferencia del seguro de vida permanente, no se acumula valor en efectivo. Cuando vence el plazo de cobertura, el tomador adquiere un nuevo plazo que se ajuste a sus necesidades de seguro. Como el tomador es mayor, pagará una prima mayor para reflejar su menor esperanza de vida."
+    },
+    "surrendercharge": {
+      "title": "Cargo de rescate",
+      "definition": "Comisión que usted paga para cancelar una póliza de seguro de vida o un contrato de anualidad. El cargo de rescate también se denomina cargo de venta diferida o comisión de salida."
+    },
+    "premium": {
+      "title": "Prima",
+      "definition": "Seguros: El monto que paga el titular de la póliza de seguro periódicamente para mantener la cobertura del seguro. Prima: Un precio superior al valor nominal del bono."
+    },
+    "cashvalue": {
+      "title": "Valor en efectivo",
+      "definition": "Valor en dólares que se devuelve al tomador de un seguro si se cancela la póliza."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "deathbenefit": {
+      "title": "Beneficio por muerte",
+      "definition": "Monto que se paga al beneficiario de una póliza de seguro de vida al momento del fallecimiento del titular de la póliza. El monto puede ser una suma global o una anualidad."
+    },
+    "universallife": {
+      "title": "Seguro de vida universal",
+      "definition": "Un tipo de seguro permanente que le permite cambiar sus primas y beneficios por fallecimiento según sus necesidades e ingresos. Por lo general, se garantiza un rendimiento mínimo en el valor acumulado en efectivo basado en los rendimientos del mercado monetario, pero no puede seleccionar sus inversiones como puede hacerlo con una póliza de seguro de vida variable."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara las tasas de retorno de las pólizas de seguro de vida de término fijo o de vida universal para tres períodos:"
+    },
+    {
+      "textLabel": "Entre ahora y el momento en el que venza su póliza de seguro de vida de término fijo."
+    },
+    {
+      "textLabel": "Entre ahora y el momento en que usted reciba el valor en efectivo total de su póliza de seguro de vida universal."
+    },
+    {
+      "textLabel": "Entre ahora y el momento de su fallecimiento."
+    },
+    {
+      "textLabel": "Se brindan los retornos después de deducir los impuestos para lo siguiente:"
+    },
+    {
+      "textLabel": "La póliza de seguro de vida universal."
+    },
+    {
+      "textLabel": "La póliza de seguro de vida de término o temporal."
+    },
+    {
+      "textLabel": "La póliza de seguro de vida de término fijo, con los ahorros por primas invertidos en una cuenta tributable."
+    },
+    {
+      "textLabel": "Dado que las primas de las pólizas de seguro de vida universal son más altas, se invierte la diferencia de las primas (el monto de la prima anual ahorrado con una póliza de seguro de vida de término fijo)."
+    },
+    {
+      "textLabel": "En general, las primas de las pólizas de seguro de vida de término fijo son inicialmente más bajas que las primas de los seguros de vida universal, que habitualmente son constantes. Las primas de los seguros de vida de término fijo superan, sin embargo, el monto de las primas de las pólizas de vida universal a medida que usted envejece y debe renovar su póliza de vida de término fijo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de las tasas de rendimiento después de impuestos de la póliza de vida a término, la póliza a término con ahorros de prima invertidos en una cuenta imponible y la póliza de seguro universal al fallecimiento."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "tasas de rendimiento después de impuestos de la póliza de vida a término, la póliza a término con ahorros de prima invertidos en una cuenta imponible y la póliza de seguro universal al fallecimiento"
+    }
+  ]
+}

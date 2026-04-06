@@ -1,0 +1,251 @@
+{
+  "layout": {
+    "tabs": {
+      "Renting": {
+        "tabLabel": "Alquiler"
+      },
+      "HomePurchase": {
+        "tabLabel": "Compra de vivienda "
+      },
+      "LoanInfo": {
+        "tabLabel": "Información del préstamo"
+      },
+      "OtherAssumptions": {
+        "tabLabel": "Otros supuestos"
+      }
+    },
+    "fields": {
+      "Home_MonthlyRent": {
+        "fieldLabel": "Alquiler mensual"
+      },
+      "Home_MonthlyRentersInsurance": {
+        "fieldLabel": "Seguro mensual del arrendatario "
+      },
+      "Home_YearlyRentChange": {
+        "fieldLabel": "Aumento anual del alquiler",
+        "smallLabel": "(disminución)"
+      },
+      "Home_YearlyMaintenance": {
+        "fieldLabel": "Mantenimiento",
+        "smallLabel": "(anual)"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Home_YearlyHomeValueChange": {
+        "fieldLabel": "Tasa de apreciación",
+        "smallLabel": "(depreciación)"
+      },
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Años que espera vivir en la vivienda"
+      },
+      "Home_SellingCosts": {
+        "fieldLabel": "Costos de venta",
+        "smallLabel": "(% del precio de venta)"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa sobre sus ahorros "
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Compra",
+        "Alquiler"
+      ]
+    },
+    "results_fields": {
+      "PrincAndIntHome10": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "NA1": {},
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado "
+      },
+      "NA2": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "NA3": {},
+      "TotPmtHome10": {
+        "fieldLabel": "Pago inicial total"
+      },
+      "TotRentPmt": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo Total",
+    "dataTableCategory2": "Pago inicial total",
+    "title": "¿Me conviene más alquilar?",
+    "answer": "Usted ahorrará <span class='lf-bold'>%result%</span> al comprar en lugar de alquilar en el plazo de los %years% años",
+    "answer1": "Usted ahorrará <span class='lf-bold'>%result%</span> al alquilar en lugar de comprar en el plazo de los %years% años",
+    "answer2": "Alquilar costará <span class='lf-bold'>lo mismo que</span> comprar en el plazo de los %years% años",
+    "TotPmtHome10": "Compra",
+    "TotRentPmt": "Alquiler",
+    "savings": "Ahorros",
+    "rent": "Alquiler",
+    "own": "Compra",
+    "year": "Año",
+    "categories": [
+      "Cuota inicial menor",
+      "Cuota inicial mayor"
+    ],
+    "selectors": [
+      {
+        "label": "Ahorros",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Pagos",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "mortgageinteresttaxdeduction": {
+      "title": "Deducción impositiva de intereses hipotecarios",
+      "definition": "Deducción autorizada a los contribuyentes que pagan intereses sobre un préstamo hipotecario de vivienda e intereses sobre un préstamo sobre el valor neto de la vivienda. El principal objetivo de esta deducción es fomentar el acceso a la vivienda en propiedad."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "appreciationrate": {
+      "title": "Tasa de revaluación",
+      "definition": "Tasa porcentual anual según la cual aumenta (se revalúa) o disminuye (se devalúa) el valor de un activo."
+    },
+    "cashoutflows": {
+      "title": "Salidas de efectivo",
+      "definition": "Las salidas de efectivo son dólares (o la moneda que corresponda) que tú gastas o inviertes a fin de obtener una tasa de retorno. Las salidas de efectivo son las utilizaciones de efectivo. Las entradas de efectivo, por el contrario, son dólares (o la moneda que corrresponda) que tú recibes sobre una inversión. Las entradas de efectivo son un retorno o un ingreso de efectivo sobre una inversión. La tasa de interés que equipara las salidas y entradas de efectivo de un proyecto, incluso en proyectos que se extiendan por muchos años, se denomina tasa de retorno interna."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "equity": {
+      "title": "Valor neto",
+      "definition": "Valor de propiedad acumulado en una vivienda. Equivale al valor de mercado actual de la vivienda, menos cualquier deuda hipotecaria impaga."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "sellingcostshome": {
+      "title": "Costos de venta de una vivienda",
+      "definition": "Comisión del agente, con frecuencia en el rango del 3 al 6 por ciento del precio de venta, y cargos secundarios que usted paga cuando vende su vivienda."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "personalnetworth": {
+      "title": "Patrimonio neto personal",
+      "definition": "Patrimonio neto, también llamado liquidez total, es igual a los activos menos los pasivos."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "Siglas que designan el capital del préstamo, los interés, los impuestos sobre la propiedad y el seguro del propietario de vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a determinar si le conviene más comprar una vivienda en lugar de alquilarla. La decisión depende de muchos factores, incluyendo el tiempo que pretende conservar la vivienda, el canon de alquiler y la tasa de revalorización de la vivienda, el interés que usted obtiene por sus ahorros, los impuestos y los gastos de mantenimiento."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo total, en dólares de hoy, de alquilar y comprar durante los años esperados en el hogar."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago total del alquiler mensual con el pago mensual total de la hipoteca."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total, en dólares de hoy, de alquilar y comprar durante los años esperados en el hogar"
+    },
+    {
+      "title": "Pago total del alquiler mensual con el pago mensual total de la hipoteca"
+    }
+  ]
+}

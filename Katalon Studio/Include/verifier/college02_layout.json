@@ -1,0 +1,444 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CurrentStatus",
+        "HigherEducation"
+      ],
+      "CurrentStatus": {
+        "tabLabel": "Current Status",
+        "fields": [
+          "College_HighestEducationLevelCompleted",
+          "College_CurrentAge",
+          "Global_RetirementAge",
+          "College_AnnualIncomeCurrentEducationLevel",
+          "Global_EstimatedAnnualIncreaseInIncome"
+        ]
+      },
+      "HigherEducation": {
+        "tabLabel": "Higher Education",
+        "fields": [
+          "College_DesiredEducationLevel",
+          "College_AdditionalYearsOfEducation",
+          "College_AnnualEducationExpenses",
+          "College_AnnualIncomeAtSchool",
+          "College_AnnualIncomeAfterGraduation",
+          "Global_InflationRate"
+        ]
+      }
+    },
+    "fields": {
+      "College_HighestEducationLevelCompleted": {
+        "fieldLabel": "Highest education level completed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "High school diploma ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Associates degree",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Bachelors degree",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Masters degree",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "18",
+        "value": "18",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "College_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Retirement age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "67",
+        "value": "67",
+        "minimumValue": "2",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "2",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "College_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "College_AnnualIncomeCurrentEducationLevel": {
+        "fieldLabel": "Annual income",
+        "smallLabel": "(before taxes)",
+        "glossaryTerm": "aveexpectedearningscollege02",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "250000",
+        "widgetStep": "2500",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_EstimatedAnnualIncreaseInIncome": {
+        "fieldLabel": "Estimated annual increase in income",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_DesiredEducationLevel": {
+        "fieldLabel": "Education level desired",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "High school diploma ",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Associates degree",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Bachelors degree",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Masters degree",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_AdditionalYearsOfEducation": {
+        "fieldLabel": "Additional years of education",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_AnnualEducationExpenses": {
+        "fieldLabel": "Annual education expenses",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_AnnualIncomeAtSchool": {
+        "fieldLabel": "Est. annual income at school",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15000",
+        "value": "15000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "250000",
+        "widgetStep": "2500",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_AnnualIncomeAfterGraduation": {
+        "fieldLabel": "Est. annual income after graduation",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "42000",
+        "value": "42000",
+        "minimumValue": "0",
+        "maximumValue": "5000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "250000",
+        "widgetStep": "2500",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Est. inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "TotEarn_CE"
+        ],
+        [
+          "TotEarn_FE"
+        ]
+      ]
+    },
+    "results_fields": {
+      "TotEarn_CE": {
+        "fieldLabel": "With [Highest education level completed]"
+      },
+      "TotEarn_FE": {
+        "fieldLabel": "With [Education level desired]"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Earnings",
+    "title": "What is the value of higher education?",
+    "answer": "Earning a <span class='lf-bold'>%education%</span> may increase your lifetime earnings by <span class='lf-bold'>%earnings%</span>",
+    "selectors": [
+      {
+        "label": "Earnings",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Annual Net Value",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Annual Net Value of Higher Education",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "currentEducation": "Current Education Level",
+    "desiredEducation": "Desired Education Level",
+    "totalEarnings": "<span class='lf-bold'>Total earnings</span> at age %age%",
+    "totalEarnedCE": "With %education%",
+    "totalEarnedFE": "With %education%",
+    "tableHeaders": [
+      [
+        "Age",
+        "Current income",
+        "Post grad income",
+        "Education expenses",
+        "Income in school",
+        "Net value",
+        "Total net value"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "estannualcostaddyrclg02": {
+      "title": "Estimated annual cost",
+      "definition": "Enter your estimate of the total cost for each year of further education."
+    },
+    "educationlevelcollege02": {
+      "title": "Highest education level completed",
+      "definition": "Enter the highest education level that you or the person has completed."
+    },
+    "noaddyrsclg02": {
+      "title": "Number of additional years",
+      "definition": "Enter the number of years required to attain the desired level of education."
+    },
+    "estannualincreaseearnings": {
+      "title": "Your estimated annual increase in earnings",
+      "definition": "The annual percentage rate at which you expect your future earnings to grow. As a rule, earnings typically grow at a rate that is close to the annual rate of inflation. Inflation has averaged between 2 and 3 percent over the last 10 years."
+    },
+    "currentagecollege02": {
+      "title": "Current age",
+      "definition": "Enter your current age or the age of the person for whom you are doing the calculation."
+    },
+    "desirededucationlevelcollege02": {
+      "title": "Education level you wish to attain",
+      "definition": "Select the level of higher education that you wish to attain."
+    },
+    "aveexpectedearningscollege02": {
+      "title": "Average expected earnings",
+      "definition": "According to The College Board, the median annual earnings for a person in 2021 by education level was as follows: high school dropouts ($35,800), high school diploma ($44,300), associate degree ($52,100), bachelor degree ($73,700), a master degree ($87,300)."
+    },
+    "estannearningsopportcost": {
+      "title": "Estimated annual earnings",
+      "definition": "Enter your estimate of how much you will earn each year that you are investing in further education."
+    },
+    "inflation": {
+      "title": "Inflation",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. "
+    },
+    "estannualcollegeexpinflationrate": {
+      "title": "Estimated inflation rate",
+      "definition": "Enter the annual rate that you think the total cost of education will increase while you pursue further education."
+    },
+    "estannearningspostgrad": {
+      "title": "Estimated annual earnings after graduation",
+      "definition": "According to The College Board, the median annual earnings for a high school graduate in 2021 were $44,300. (For non-graduates, average earnings were $35.800.) For persons with an associate degree, average earnings were $52,100. For persons with a bachelor degree, average earnings were $73.700. For persons with a master degree, average earnings were $87,300. For more data, see the Web site of The College Board."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows how pursuing a higher education may pay off financially during your earning lifetime. If you already have a college degree, furthering your education with an advanced degree may also pay off financially. The tool does not factor in additional taxes you owe on higher incomes, or higher retirement and Social Security benefits that usually accompany higher earnings."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the cumulative income earned (until retirement) by maintaining the status quo and attaining a higher education level."
+    },
+    {
+      "title": "Table of annual net value of higher education."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Cumulative income earned (until retirement) by maintaining the status quo and attaining a higher education level"
+    }
+  ]
+}

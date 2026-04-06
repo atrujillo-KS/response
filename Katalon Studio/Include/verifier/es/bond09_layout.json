@@ -1,0 +1,203 @@
+{
+  "layout": {
+    "tabs": {
+      "OriginalInfo": {
+        "tabLabel": "INFORMACIÓN ORIGINAL"
+      },
+      "CurrentInfo": {
+        "tabLabel": "INFORMACIÓN ACTUAL"
+      },
+      "Assumptions": {
+        "tabLabel": "PRESUNCIONES"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Impuestos pagados",
+        "Rendimiento"
+      ]
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Tasa de interés del mercado actual"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results_fields": {
+      "Bond_TaxesPaidIfSellBeforeOneYear": {
+        "fieldLabel": "Si vende un día antes de los 12 meses"
+      },
+      "Bond_YieldBeforeTaxesIfSellBeforeOneYear": {
+        "fieldLabel": "Si vende un día antes de los 12 meses"
+      },
+      "Bond_TaxesPaidIfSellAfterOneYear": {
+        "fieldLabel": "Si vende un día después de los 12 meses"
+      },
+      "Bond_YieldAfterTaxesIfSellAfterOneYear": {
+        "fieldLabel": "Si vende un día después de los 12 meses"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "dataTableCategory2": "Impuestos pagados",
+    "title": "¿Debería esperar un año para vender mi bono?",
+    "answer": "Vender su bono después de un año le hará ganar <span class='lf-bold'>%compare%</span> rendimiento.",
+    "FMRRBef_Bond09": "Vender el día antes de los 12 meses",
+    "FMRRAft_Bond09": "Vender el día después de 12 meses",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Impuestos pagados",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "capitalgainstaxes": {
+      "title": "Impuesto sobre las ganancias de capital",
+      "definition": "Impuestos que usted debe sobre ganancias de capital. La tasa de impuestos sobre las ganancias de capital que se aplica sobre activos que se han mantenido durante menos de un año es igual a la tasa para ingresos ordinarios. Para las ganancias de capital a largo plazo (activos que se han mantenido durante al menos un año), la tasa de impuestos para contribuyentes solteros es del 0 % sobre los ingresos imponibles hasta $47,025 del 15 % sobre los ingresos imponibles entre $47,026 y $518,900 y del 20 % sobre los ingresos imponibles de más de $518,901. Para los contribuyentes casados que presentan una declaración conjunta, la tasa de impuestos es del 0 % sobre los ingresos imponibles hasta $94,050, del 15 % sobre los ingresos imponibles entre $94,051 y $583,750 y del 20 % sobre los ingresos imponibles de más de $583,751."
+    },
+    "marketinterestrate": {
+      "title": "Tasa de interés del mercado",
+      "definition": "La tasa de interés para los bonos con características de riesgo y plazos de vencimiento similares a los del bono que usted vende."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara los impuestos pagados y las tasas de rendimiento de un bono si se vende después de haberlo mantenido durante un año o menos o si se vende después de haberlo mantenido durante más de un año."
+    },
+    {
+      "textLabel": "Si vende un bono después de haberlo mantenido durante más de un año, la ganancia de capital es imponible a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#capitalgainstaxes\">la tasa de impuesto sobre ganancias de capital a largo plazo</a></span>. Las ganancias de capital sobre bonos que se han mantenido durante un año o menos son imponibles como ingresos ordinarios."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el rendimiento del usuario si vende un día antes de los 12 meses y un día después de los 12 meses."
+    },
+    {
+      "title": "Gráfico de columnas que compara los impuestos pagados si vende un día antes de los 12 meses y un día después de los 12 meses."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rentabilidad del usuario si vende un día antes de los 12 meses y un día después de los 12 meses"
+    },
+    {
+      "title": "Impuestos pagados si vende un día antes de los 12 meses y un día después de los 12 meses"
+    }
+  ]
+}

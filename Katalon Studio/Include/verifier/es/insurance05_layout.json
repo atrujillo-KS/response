@@ -1,0 +1,174 @@
+{
+  "layout": {
+    "tabs": {
+      "Personal": {
+        "tabLabel": "Personal",
+        "pageTitle": "Información personal"
+      },
+      "TermLife": {
+        "tabLabel": "Seguro de vida a término",
+        "pageTitle": "Información de la póliza de seguro de vida a término"
+      },
+      "WholeLife": {
+        "tabLabel": "Seguro de vida integral",
+        "cash": {
+          "sectionLabel": "Valor en efectivo",
+          "sectionDesc": "Usted puede desear o necesitar para sacar provecho de su póliza de seguro de vida en algún momento antes de la muerte. Introduzca la siguiente información para incluir este escenario en los resultados."
+        },
+        "pageTitle": "Información de la póliza de seguro de vida entera"
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Dentro de %years% años",
+        "Al momento del fallecimiento"
+      ]
+    },
+    "results_fields": {
+      "Insurance_FutureRateOfReturnTermLife": {
+        "fieldLabel": "Plazo solamente"
+      },
+      "Insurance_FutureRateOfReturnTermInvestment": {
+        "fieldLabel": "Plazo + inversión de los ahorros en primas "
+      },
+      "Insurance_FutureRateOfReturnWholeLife": {
+        "fieldLabel": "Seguro de vida integral"
+      }
+    },
+    "fields": {
+      "Insurance_FutureCashValue": {
+        "fieldLabel": "Valor en efectivo estimado en ese momento"
+      },
+      "Insurance_YearsUntilCashInPolicy": {
+        "fieldLabel": "Años hasta que retira el valor en efectivo ",
+        "valueTextLabel": "años"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      },
+      "Insurance_DividendIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por dividendos es de",
+        "dropdownOptions": [
+          {
+            "optionText": "Aplicado a las primas futuras"
+          },
+          {
+            "optionText": "Invertido(a) en otra parte "
+          },
+          {
+            "optionText": "Gastado en el plazo de 2 meses "
+          }
+        ]
+      },
+      "Insurance_Premium": {
+        "fieldLabel": "Monto de la prima"
+      },
+      "Insurance_PremiumPaymentsPerYear": {
+        "fieldLabel": "Pagos de prima al año "
+      },
+      "Insurance_AverageAnnualDividend": {
+        "fieldLabel": "Dividendo anual promedio"
+      },
+      "Insurance_DeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_TermLifeDeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_PolicyTermInYears": {
+        "fieldLabel": "Plazo de la póliza ",
+        "smallLabel": "(años)",
+        "valueTextLabel": "años"
+      },
+      "Insurance_TermLifePremium": {
+        "fieldLabel": "Monto de la prima"
+      },
+      "Insurance_TermLifePremiumPaymentsPerYear": {
+        "fieldLabel": "Pagos de prima al año ",
+        "valueTextLabel": "payments"
+      },
+      "Insurance_PremiumIncreasePerRenewal": {
+        "fieldLabel": "Aumento de la prima por renovación"
+      },
+      "Insurance_ExpectedInterestRate": {
+        "fieldLabel": "Interés promedio que espera devengar"
+      },
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Tasas de rendimiento después de impuestos",
+    "title": "¿Qué es mejor: un seguro de vida integral o a término?",
+    "answer": "La %rateLabel% proporciona la mejor tasa de rendimiento después de impuestos al momento del fallecimiento a <span class='lf-bold'>%rate%%</span> ",
+    "termOnly": "Póliza de seguro de vida a término",
+    "termInvestment": "Póliza de seguro de vida a término + inversión",
+    "term": "Plazo",
+    "termInv": "Plazo + Inversión",
+    "whole": "Integral",
+    "wholeLife": "Póliza de seguro de vida integral",
+    "endOfPolicy": "Dentro de %years% años",
+    "atDeath": "Al momento del fallecimiento",
+    "rateOfReturn": "Tasa de rendimiento %",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "premium": {
+      "title": "Prima",
+      "definition": "Seguros: El monto que paga el titular de la póliza de seguro periódicamente para mantener la cobertura del seguro. Prima: Un precio superior al valor nominal del bono."
+    },
+    "cashvalue": {
+      "title": "Valor en efectivo",
+      "definition": "Valor en dólares que se devuelve al tomador de un seguro si se cancela la póliza."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "deathbenefit": {
+      "title": "Beneficio por muerte",
+      "definition": "Monto que se paga al beneficiario de una póliza de seguro de vida al momento del fallecimiento del titular de la póliza. El monto puede ser una suma global o una anualidad."
+    },
+    "dividendsinsurancepolicy": {
+      "title": "Dividendos (poliza de seguro)",
+      "definition": "Retorno sobre las primas del seguro que percibe el titular de la póliza. Si las inversiones realizadas por una compañía de seguros superan las expectativas, el asegurador devuelve parte de las primas pagadas previamente."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara las tasas de retorno de pólizas de seguro de vida de término fijo o de vida entera para dos períodos:<div class=\"lf-help-ul-container\"><ul><li>Entre ahora y el momento en que usted reciba el valor en efectivo total de su póliza de seguro de vida entera.</li><li>Entre ahora y el momento de su fallecimiento.</li></ul></div>Se brindan los retornos después de deducir los impuestos para lo siguiente:</br></br><div class=\"lf-help-ul-container\"><ul><li>La póliza de seguro de vida entera.</li><li>La póliza de seguro de vida de término o temporal.</li><li>La póliza de seguro de vida de término fijo, con los ahorros por primas invertidos en una cuenta tributable.</li></ul></div>Dado que las primas de las pólizas de seguro de vida entera son más altas, se invierte la diferencia de las primas (el monto de la prima anual ahorrado con una póliza de seguro de vida de término fijo).</br></br>En general, las primas de las pólizas de seguro de vida de término fijo son inicialmente más bajas que las primas de los seguros de vida entera, que habitualmente son constantes. Las primas de los seguros de vida de término fijo superan, sin embargo, el monto de las primas de las pólizas de vida entera a medida que usted envejece y debe renovar su póliza de vida de término fijo.</br>"
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara las tasas de rendimiento después de impuestos de la póliza de vida a término, la póliza a término con los ahorros de prima invertidos en una cuenta imponible y la póliza de seguro de vida completa al momento de la muerte."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tasas de rendimiento después de impuestos de la póliza de vida a término, la póliza a término con los ahorros de prima invertidos en una cuenta imponible y la póliza de seguro de vida completa al momento de la muerte"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Home_InterestOnlyPeriodInYears": {
+        "fieldLabel": "Período de pago de intereses solamente ",
+        "smallLabel": "(años)"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Período de pago de intereses solamente ",
+        "Plazo restante"
+      ]
+    },
+    "results_fields": {
+      "IntOnlyPay": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PrincAndInt": {},
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "MortIns2": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TaxAndIns2": {},
+      "TotIntOnlyPay": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPay": {}
+    }
+  },
+  "labels": {
+    "amount": "Cantidad",
+    "title": "¿De cuánto será mi pago de intereses solamente?",
+    "answer": "Su pago total es de <span class='lf-bold'>$%result%</span> para el período de pago de intereses solamente.",
+    "intOnlyPay": "Capital e intereses",
+    "taxAndIns": "Impuestos y seguro",
+    "mortIns": "Seguro hipotecario privado ",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "year_1": "1 año",
+    "year_2": "2 años",
+    "year_3": "3 años",
+    "year_4": "4 años",
+    "year_5": "5 años",
+    "year_10": "10 años",
+    "year_15": "15 años",
+    "year_20": "20 años",
+    "year_30": "30 años",
+    "year": "Año",
+    "selectors": [
+      {
+        "label": "Desglose",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "En el tiempo",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestonlyperiod": {
+      "title": "Período de pago de intereses solamente",
+      "definition": "Para préstamos de interes solamente, el período de tiempo al principio de los terminos del préstamo cuando no tiene que hacer pagos sobre el principal del préstamo."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa el monto de su pago hipotecario mensual en el caso de un préstamo sólo a intereses. Un préstamo sólo a intereses es un préstamo en el que el tomador del préstamo al principio solamente paga el interés y no amortiza nada del saldo de la deuda. Una vez que termina el período de pago de sólo intereses, el monto de los pagos aumenta para cancelar la totalidad del capital durante lo que resta del plazo. Cuanto más largo sea el período de sólo intereses, mayor será el incremento que sufran los pagos mensuales una vez que termine dicho período."
+    },
+    {
+      "textLabel": "La calculadora indica cuál sería el monto de los pagos mensuales durante el período inicial cuando solamente se paga el interés y cuál sería el monto de los pagos mensuales una vez que finalice este período. Con el fin de hacer estos cálculos, la herramienta parte del supuesto de que el préstamo sólo a intereses tiene una tasa de interés fija."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular con el desglose del pago mensual total en el período de solo interés por principal e interés, seguro hipotecario privado e impuestos sobre la propiedad y seguro para propietarios de viviendas."
+    },
+    {
+      "title": "Gráfico de columnas apiladas de los montos aplicados al principal y los intereses en diferentes intervalos durante el transcurso del plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Dsglose del pago mensual total en el período de interés únicamente por principal e intereses, seguro hipotecario privado e impuestos sobre la propiedad y seguro para propietarios"
+    },
+    {
+      "title": "Importes aplicados al principal y los intereses en diferentes intervalos durante el plazo del préstamo"
+    }
+  ]
+}

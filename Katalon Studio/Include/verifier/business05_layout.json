@@ -1,0 +1,606 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "SharedLoanInfo",
+        "Loan",
+        "LineofCredit",
+        "Assumptions "
+      ],
+      "SharedLoanInfo": {
+        "tabLabel": "Shared Loan Info",
+        "fields": [
+          "Business_CreditNeeded",
+          "Business_LoanTerm",
+          "Business_ClosingCosts"
+        ]
+      },
+      "Loan": {
+        "tabLabel": "Loan",
+        "fields": [
+          "Business_InterestRate",
+          "Business_InterestRateType",
+          "Business_LoanAnnualFee"
+        ]
+      },
+      "LineofCredit": {
+        "tabLabel": "Line of Credit",
+        "fields": [
+          "Business_LOCInterestRate",
+          "Business_LOCInterestRateType",
+          "Business_LOCAnnualFee"
+        ]
+      },
+      "Assumptions ": {
+        "tabLabel": "Assumptions ",
+        "fields": [
+          "Business_FederalTaxRate",
+          "Business_StateTaxRate",
+          "Business_SavingsRate",
+          "Global_InterestRateChangePrediction",
+          "Global_InterestRateChangePredictionAmount"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Loan",
+        "Line of Credit"
+      ],
+      "fields": [
+        [
+          "TotalPmts1Business05",
+          "TotalPmts2Business05"
+        ],
+        [
+          "TaxSavings1Business05",
+          "TaxSavings2Business05"
+        ],
+        [
+          "NetPaid1Business05",
+          "NetPaid2Business05"
+        ],
+        [
+          "NPVLoan",
+          "NPVLOC"
+        ],
+        [
+          "TotalInterest1Business05",
+          "TotalInterest2Business05"
+        ],
+        [
+          "TotalFees1",
+          "TotalFees2"
+        ],
+        [
+          "MonthlyPmt1Business05",
+          "MonthlyPmt2Business05"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "Cash you need",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LoanTerm": {
+        "fieldLabel": "Loan term",
+        "smallLabel": "(months)",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "240",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_ClosingCosts": {
+        "fieldLabel": "Loan closing costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "500000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "7.880",
+        "value": "7.880",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_InterestRateType": {
+        "fieldLabel": "Interest rate is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Variable",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LoanAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "500000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LOCInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "7.500",
+        "value": "7.500",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LOCInterestRateType": {
+        "fieldLabel": "Interest rate is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Variable",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LOCAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "500000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "34.00",
+        "value": "34.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "State tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.50",
+        "value": "5.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_SavingsRate": {
+        "fieldLabel": "Savings interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Predicted change in variable interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No Change",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateChangePredictionAmount": {
+        "fieldLabel": "Rate change you predict",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.50",
+        "value": "0.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "TotalPmts1Business05": {
+        "fieldLabel": "Total payments"
+      },
+      "TotalPmts2Business05": {
+        "fieldLabel": "Total payments"
+      },
+      "TaxSavings1Business05": {
+        "fieldLabel": "- Tax savings"
+      },
+      "TaxSavings2Business05": {
+        "fieldLabel": "- Tax savings"
+      },
+      "NetPaid1Business05": {
+        "fieldLabel": "Net amount paid"
+      },
+      "NetPaid2Business05": {
+        "fieldLabel": "Net amount paid"
+      },
+      "NPVLoan": {
+        "fieldLabel": "Total cost in today's dollars"
+      },
+      "NPVLOC": {
+        "fieldLabel": "Total cost in today's dollars"
+      },
+      "TotalInterest1Business05": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotalInterest2Business05": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotalFees1": {
+        "fieldLabel": "Total fees paid"
+      },
+      "TotalFees2": {
+        "fieldLabel": "Total fees paid"
+      },
+      "MonthlyPmt1Business05": {
+        "fieldLabel": "Initial monthly payment"
+      },
+      "MonthlyPmt2Business05": {
+        "fieldLabel": "Initial monthly payment"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Cost",
+    "dataTableCategory2": "Monthly Payment",
+    "title": "Should I get a loan or a line of credit?",
+    "answer": "The %lessOption% will cost you, in today's dollars, <span class='lf-bold'>$%amount% %which%</span> the %moreOption%",
+    "morethan": "more than",
+    "lessthan": "less than",
+    "sameas": "the same as",
+    "loan": "Loan",
+    "LineofCredit": "Line of Credit",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Total Cost",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payments",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Net Payment Schedule - Loan",
+            "label": "Loan"
+          },
+          {
+            "index": "1",
+            "title": "Net Payment Schedule - Line of Credit",
+            "label": "Line of Credit"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Month",
+        "Balance",
+        "Int rate",
+        "Interest",
+        "Tax savings",
+        "Net payments"
+      ],
+      [
+        "Month",
+        "Int rate",
+        "Amount paid",
+        "Fees",
+        "Tax savings",
+        "Net payment"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "costofcapital": {
+      "title": "Cost of capital",
+      "definition": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value. "
+    },
+    "loanterm": {
+      "title": "Loan term",
+      "definition": "The length, or period, of a loan. It is usually measured in years. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "taxsavings": {
+      "title": "Tax savings",
+      "definition": "The amount you may save in taxes from a tax deduction or tax credit."
+    },
+    "amortized": {
+      "title": "Amortization",
+      "definition": "The gradual reduction of loan principal that occurs as you make periodic loan payments."
+    },
+    "disbursment": {
+      "title": "Disbursment",
+      "definition": "The process of providing funds to the borrower. A credit line that is fully disbursed is one where the borrower has borrowed all that he or she is authorized to borrow."
+    },
+    "cashflows": {
+      "title": "Cash flows",
+      "definition": "The revenue or expense stream that changes a cash account for you or your business. Cash flow is crucial to an entity's survival. Having ample cash on hand will ensure that creditors, employees, and others can be paid on time."
+    },
+    "principal": {
+      "title": "Principal",
+      "definition": "Also called the loan balance, principal is the amount owed on a loan"
+    },
+    "discountfactor": {
+      "title": "Discount factor",
+      "definition": "The inverse of one minus the discount rate.  To determine the present value of a cash flow, divide the future cash flow by the discount factor."
+    },
+    "lineofcredit": {
+      "title": "Line of credit",
+      "definition": "A form of revolving credit whereby the borrower can draw down only the amount needed, up to the amount of the credit limit. The borrower only pays interest on the amount drawn, or disbursed."
+    },
+    "presentvalue": {
+      "title": "Present value",
+      "definition": "The value of a future payment, or series of payments, discounted at the appropriate interest rate to determine the value in today's dollars. "
+    },
+    "futureinterestrates": {
+      "title": "Future interest rates",
+      "definition": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    },
+    "cleanupperiod": {
+      "title": "Cleanup period",
+      "definition": "A personal or home-equity line of credit may specify a cleanup period in the borrowing agreement. A cleanup period requires the borrower to periodically pay down the credit line to zero in order to maintain the lending agreement."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you to evaluate the better source of financing: an <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Amortized\">amortizing</a></span> loan or <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#LineOfCredit\">line of credit</a></span>."
+    },
+    {
+      "textLabel": "An amortizing loan is fully <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Disbursment\">disbursed</a></span> when you close the loan. It is an ideal product for financing if you prefer the discipline and concept of consistent, regular payments to meet your debt obligations. Additionally, you often have the ability to lock in an interest rate. However, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Principal\">principal</a></span> and interest payments may not match the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CashFlows\">cash flows</a></span> of your business. Another item to consider is you may have to obtain another loan if you need additional funds. Another loan may require another approval process and additional loan fees."
+    },
+    {
+      "textLabel": "A line of credit is a form of revolving credit that gives you flexibility to draw on the line repeatedly if you pay down the balance. You can also make interest-only payments on the credit line to match the cash flows of your business."
+    },
+    {
+      "textLabel": "This tool assumes minimum monthly payments are made over the course of the loan and line of credit respectively. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total cost, in today's dollars, of the loan and the line of credit."
+    },
+    {
+      "title": "Column chart comparing the monthly payment for Loan 1 and Loan 2."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total cost, in today's dollars, of the loan and the line of credit"
+    },
+    {
+      "title": "Monthly payment for Loan 1 and Loan 2"
+    }
+  ]
+}

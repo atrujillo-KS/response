@@ -1,0 +1,1210 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which lender has the better loan?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine which of two mortgage loans is the better deal. The loans may both be fixed- or adjustable-rate ( ARMs ) loans."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=ARMs",
+      "value": "ARMs"
+    }
+  },
+  {
+    "click": {
+      "id": "link=ARMs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Adjustable-rate mortgage (ARM)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A type of mortgage loan in which the interest rate paid on the outstanding balance varies according to a specific benchmark."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Loan 1 will cost you, in today's dollars, $4,428 more than Loan 2 over the 7 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Loan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome14_result_label",
+      "value": "Principal and interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome14_result_value",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt2Home14_result_value",
+      "value": "$1,013"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_label",
+      "value": "Property taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns2_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome14_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome14_result_value",
+      "value": "$1,428"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home14_result_value",
+      "value": "$1,368"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-pattern-label",
+      "value": "Enable color patterns"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Cost Difference"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis-labels.highcharts-xaxis-labels > text",
+      "value": "Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Principal & Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "Taxes & Insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Payment Schedule - Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links0",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Loan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Max tax savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$199,760"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$240"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$833"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td",
+      "value": "84"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[2]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[4]",
+      "value": "$339"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[5]",
+      "value": "$66,076"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[6]",
+      "value": "$4,108"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - Loan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Loan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td",
+      "value": "84"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[2]",
+      "value": "$1,013"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[4]",
+      "value": "$359"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[5]",
+      "value": "$59,176"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[6]",
+      "value": "$3,781"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-SharedLoanInfo-tab-label",
+      "value": "Shared Loan Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-SharedLoanInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue_field_label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_HomeAppraisedValue_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_HomeAppraisedValue_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage_field_label",
+      "value": "Down payment ($50K)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "20.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-error-message",
+      "value": "Must be between 0.000% and 99.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_DownPaymentPercentage_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_DownPaymentPercentage_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears_field_label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_LoanTermInYears_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_LoanTermInYears_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ExpectedYearsInHome_field_label",
+      "value": "Expected years in home"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_ExpectedYearsInHome",
+      "value": "7"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-SharedLoanInfo-details']/div[2]/button",
+      "value": "NEXT >"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Loan1-tab-label",
+      "value": "Loan 1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Loan1-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRateType_field_label",
+      "value": "Loan Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRateType",
+      "value": "Fixed Adjustable"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRateType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate_field_label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_InterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_InterestRate_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginationCharge_field_label",
+      "value": "Origination charge"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_OriginationCharge",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginationCharge-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_OriginationCharge_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_OriginationCharge_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Origination Charges"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The sum of all fees and charges from origination-related services. This represents all compensation to the lender and/or broker for originating the loan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DiscountPoints_field_label",
+      "value": "Discount points"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DiscountPoints",
+      "value": "1.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DiscountPoints-error-message",
+      "value": "Must be between 0.000% and 100.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_DiscountPoints_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_DiscountPoints_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Charge for specific interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loan1-details']/div[3]/button",
+      "value": "< PREVIOUS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loan1-details']/div[3]/button[2]",
+      "value": "NEXT >"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Loan2-tab-label",
+      "value": "Loan 2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Loan2-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRateType_field_label",
+      "value": "Loan Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRateType",
+      "value": "Fixed Adjustable"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanInterestRateType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRate_field_label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanInterestRate",
+      "value": "4.500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_SecondLoanInterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_Home_SecondLoanOriginationCharge_field_label",
+      "value": "Origination charge"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanOriginationCharge",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanOriginationCharge-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_SecondLoanOriginationCharge_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanDiscountPoints_field_label",
+      "value": "Discount points"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanDiscountPoints",
+      "value": "1.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanDiscountPoints-error-message",
+      "value": "Must be between 0.000% and 100.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_SecondLoanDiscountPoints_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanOtherClosingCosts_field_label",
+      "value": "Other settlement services"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanOtherClosingCosts",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanOtherClosingCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_SecondLoanOtherClosingCosts_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-TaxesInsurance-tab-label",
+      "value": "Taxes & Insurance"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-TaxesInsurance-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax_field_label",
+      "value": "Property tax (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "3,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_YearlyPropertyTax_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_YearlyPropertyTax_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Property tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance_field_label",
+      "value": "Homeowners insurance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Home_YearlyHomeownersInsurance_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Home_YearlyHomeownersInsurance_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Homeowner's insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_field_label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate_field_label",
+      "value": "Your savings rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-SharedLoanInfo-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "555,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "35.445"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_DownPaymentPercentage"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "35.445"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "40"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ExpectedYearsInHome",
+      "value": "20"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf-SharedLoanInfo-details']/div[2]/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_InterestRateType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Home_InterestRateType",
+      "value": "label=Adjustable"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "4.759"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OriginationCharge",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DiscountPoints",
+      "value": "4.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OtherClosingCosts",
+      "value": "4,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ARMMonthsBeforeFirstAdjustment",
+      "value": "12"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Loan 1 will cost you, in today's dollars, $114,978 more than Loan 2 over the 20 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome14_result_value",
+      "value": "$1,671"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt2Home14_result_value",
+      "value": "$1,611"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns2_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome14_result_value",
+      "value": "$2,025"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home14_result_value",
+      "value": "$1,965"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

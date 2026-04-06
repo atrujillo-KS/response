@@ -1,0 +1,262 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basicTab"
+      ],
+      "basicTab": {
+        "fields": [
+          "MonthlyPayablesSpend",
+          "MonthlyInvoices",
+          "NumberOfMonthlyPayments",
+          "PercentageOfPaymentsElectronic",
+          "FullTimeAPEmployees"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Current State",
+        "Expert AP",
+        "Savings"
+      ],
+      "fields": [
+        [
+          "InvoiceCostPerMonthCurrentState",
+          "InvoiceCostPerMonthExpertAP",
+          "SavingsInInvoiceCostPerMonth"
+        ],
+        [
+          "PaymentCostPerMonthCurrentState",
+          "PaymentCostPerMonthExpertAP",
+          "SavingsInPaymentCostPerMonth"
+        ],
+        [
+          "TotalCostCurrentState",
+          "TotalCostExpertAP",
+          "SavingsInTotalCost"
+        ],
+        [
+          "AnnualCostCurrentState",
+          "AnnualCostExpertAP",
+          "SavingsInAnnualCost"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "InvoiceCostPerMonthCurrentState": {
+        "fieldLabel": "Invoice cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "PaymentCostPerMonthCurrentState": {
+        "fieldLabel": "Payment cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "TotalCostCurrentState": {
+        "fieldLabel": "Total cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "AnnualCostCurrentState": {
+        "fieldLabel": "Annual cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "InvoiceCostPerMonthExpertAP": {
+        "fieldLabel": "Invoice cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "PaymentCostPerMonthExpertAP": {
+        "fieldLabel": "Payment cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "TotalCostExpertAP": {
+        "fieldLabel": "Total cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "AnnualCostExpertAP": {
+        "fieldLabel": "Annual cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "SavingsInInvoiceCostPerMonth": {
+        "fieldLabel": "Invoice cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "SavingsInPaymentCostPerMonth": {
+        "fieldLabel": "Payment cost per month",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "SavingsInTotalCost": {
+        "fieldLabel": "Total cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      },
+      "SavingsInAnnualCost": {
+        "fieldLabel": "Annual cost",
+        "dataFormat": "currency",
+        "format": "currency"
+      }
+    },
+    "fields": {
+      "MonthlyPayablesSpend": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly payables spend",
+        "defaultValue": "2000000",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000000",
+        "maxlength": "11",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "widgetStep": "100000",
+        "value": "2000000",
+        "format": "currency"
+      },
+      "MonthlyInvoices": {
+        "fieldLabel": "Monthly invoices",
+        "valueTextLabel": "invoices",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "glossaryDefinition": "",
+        "glossaryTitle": "",
+        "format": "number",
+        "defaultValue": "700",
+        "value": "700",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "NumberOfMonthlyPayments": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly payments",
+        "valueTextLabel": "payments",
+        "defaultValue": "500",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "number"
+      },
+      "PercentageOfPaymentsElectronic": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "% of payments electronic",
+        "defaultValue": "10",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "4",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "10",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "FullTimeAPEmployees": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Full time AP employees",
+        "valueTextLabel": "employees",
+        "defaultValue": "2",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "maxlength": "3",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "widgetStep": "1",
+        "value": "2",
+        "format": "number"
+      }
+    }
+  },
+  "labels": {
+    "calculator_title_override": "Fifth Third Bank | Expert Accounts Payable Calculator",
+    "title": "How much can my business save by using Expert AP?",
+    "answer": "Expert AP is estimated to <span class='lf-bold'>%result_token%</span> your business <span class='lf-bold'>$%result_amt%</span> annually for a <span class='lf-bold'>%percent_improvement%</span>% improvement in AP processing cost",
+    "answer_same": "Expert AP will neither save nor cost your business any money annually",
+    "selectors": [
+      {
+        "label": "Annual Cost",
+        "width": "100%",
+        "last": true
+      }
+    ],
+    "result_save": " save ",
+    "result_cost": " cost ",
+    "chart_title": "Annual Cost",
+    "chart_current_state": "Current State",
+    "chart_expert_ap": "Expert AP",
+    "chart_savings": "Savings"
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the estimated annual cost for the current state and Expert AP."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Estimated annual cost for the current state and Expert AP."
+    }
+  ]
+}

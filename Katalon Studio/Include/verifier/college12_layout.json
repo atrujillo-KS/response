@@ -1,0 +1,463 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "MealPlan",
+        "OutofPocket",
+        "TaxInfo"
+      ],
+      "MealPlan": {
+        "tabLabel": "Meal Plan",
+        "fields": [
+          "College_MealPlanType",
+          "College_WeeklyMealPlanCost",
+          "College_MealsCoveredWeekly",
+          "College_WeeklyMealPlanCampusCash",
+          "College_MealsMissedWeeklyInWeeklyMealPlan",
+          "College_BlockMealPlanCost",
+          "College_MealsIncludedInBlockMealPlan",
+          "College_BlockMealPlanCampusCash",
+          "College_MealsMissedWeeklyInBlockMealPlan",
+          "College_WeeksIncludedInMealPlan"
+        ]
+      },
+      "OutofPocket": {
+        "tabLabel": "Out-of-Pocket",
+        "fields": [
+          "College_CostPerMealIfPaidOutOfPocket"
+        ]
+      },
+      "TaxInfo": {
+        "tabLabel": "Tax Info",
+        "fields": [
+          "College_IsMealPlanTaxable",
+          "Global_SalesTaxRate"
+        ]
+      }
+    },
+    "fields": {
+      "College_MealPlanType": {
+        "fieldLabel": "Type of meal plan",
+        "smallLabel": "",
+        "glossaryTerm": "mealplantype",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Block",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_WeeklyMealPlanCost": {
+        "fieldLabel": "Cost of meal plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1200",
+        "value": "1200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MealsCoveredWeekly": {
+        "fieldLabel": "Number of meals covered weekly ",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "weeks",
+        "format": "number",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "1",
+        "maximumValue": "21",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "21",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_WeeklyMealPlanCampusCash": {
+        "fieldLabel": "Campus cash",
+        "smallLabel": "",
+        "glossaryTerm": "campuscash",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MealsMissedWeeklyInWeeklyMealPlan": {
+        "fieldLabel": "Estimated meals missed weekly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "weeks",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "20",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "20",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_BlockMealPlanCost": {
+        "fieldLabel": "Cost of meal plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "960",
+        "value": "960",
+        "minimumValue": "1",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MealsIncludedInBlockMealPlan": {
+        "fieldLabel": "Number of meals in block plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "160",
+        "value": "160",
+        "minimumValue": "1",
+        "maximumValue": "1200",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_BlockMealPlanCampusCash": {
+        "fieldLabel": "Campus cash",
+        "smallLabel": "",
+        "glossaryTerm": "campuscash",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MealsMissedWeeklyInBlockMealPlan": {
+        "fieldLabel": "Estimated meals missed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "1999",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_WeeksIncludedInMealPlan": {
+        "fieldLabel": "Number of weeks included in plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "weeks",
+        "format": "number",
+        "defaultValue": "16",
+        "value": "16",
+        "minimumValue": "1",
+        "maximumValue": "52",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "52",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_CostPerMealIfPaidOutOfPocket": {
+        "fieldLabel": "Cost per meal if paid out-of-pocket",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_IsMealPlanTaxable": {
+        "fieldLabel": "Is the meal plan taxable?",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SalesTaxRate": {
+        "fieldLabel": "Sales tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "7.00",
+        "value": "7.00",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Average cost per meal"
+      ],
+      "fields": [
+        [
+          "AvgCostMax"
+        ],
+        [
+          "AvgCostForfeit"
+        ],
+        [
+          "College_CostPerMealIfPaidOutOfPocket"
+        ]
+      ]
+    },
+    "results_fields": {
+      "AvgCostMax": {
+        "fieldLabel": "If no meals are missed"
+      },
+      "AvgCostForfeit": {
+        "fieldLabel": "If X meals are missed"
+      },
+      "College_CostPerMealIfPaidOutOfPocket": {
+        "fieldLabel": "If paid out-of-pocket"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Average cost per meal",
+    "title": "Is a meal plan a good deal?",
+    "answer": "The average cost per meal is <span class='lf-bold'>%mealPlan%</span> on the meal plan vs. <span class='lf-bold'>%outOfPocket%</span> out-of-pocket",
+    "selectors": [
+      {
+        "label": "Average cost per meal",
+        "width": "100%"
+      }
+    ],
+    "noMealsMissed": "No meals missed",
+    "mealsMissed": "%count% meals missed",
+    "mealsMissedDef": "%count% meals missed",
+    "outOfPocket": "Pay out-of-pocket",
+    "missedMeals": "If %count% meals are missed"
+  },
+  "glossaryItems": {
+    "weeklymealcount": {
+      "title": "Number of meals covered each week",
+      "definition": "Enter the number of meals the weekly plan entitles you to eat each week."
+    },
+    "estweeklymealsmissed": {
+      "title": "Estimated meals missed weekly",
+      "definition": "Enter the number of meals you estimate you will miss each week. Each meal that you miss increases the per-meal cost of the meal plan. The analyzer assumes the meals you miss are paid with cash."
+    },
+    "weeklymealplan": {
+      "title": "Weekly meal plan",
+      "definition": "A weekly meal plan assumes you pay for a fixed number of meals each week for a certain period."
+    },
+    "mealplancost": {
+      "title": "Cost of meal plan",
+      "definition": "Enter the total cost of the plan."
+    },
+    "forfeitedmealcount": {
+      "title": "Estimated number of meals missed",
+      "definition": "Enter the number of meals you estimate you will miss over the life of the block plan. Each meal that you miss increases the per-meal cost of the meal plan. The analyzer assumes the meals you miss are paid with cash."
+    },
+    "mealplanweeks": {
+      "title": "Number of weeks of plan",
+      "definition": "Enter the number of weeks that are included in the weekly meal plan."
+    },
+    "blockperiodmealcount": {
+      "title": "Number of meals in block period",
+      "definition": "Enter the number of meals the block plan entitles you to eat."
+    },
+    "campuscash": {
+      "title": "Campus cash",
+      "definition": "Campus cash is the extra amount you receive from your meal plan to spend freely. For example, if you buy a $1,000 plan, your school may charge $900 for the meals and give you $100 to spend in campus cash. Campus cash is often required to be spent within a network of on- and off-campus merchants. Campus cash is excluded from calculations of the per-meal cost."
+    },
+    "blockmealplan": {
+      "title": "Block meal plan",
+      "definition": "A block meal plan assumes you pay for a fixed number of meals."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the average cost per meal for a meal plan. Many colleges and universities require students that reside on campus to register for a meal plan. Even if you are not required, it may be cheaper to buy a meal plan than to pay cash for your meals. Most sources of financial aid and tax-advantaged college savings plans consider meals a legitimate education-related expense."
+    },
+    {
+      "textLabel": "Some of the questions you may ask about meal plans include:"
+    },
+    {
+      "textLabel": "Can unused meals be rolled over and used in the next period?"
+    },
+    {
+      "textLabel": "Are meal portions unlimited?"
+    },
+    {
+      "textLabel": "What are the dining hours and when are meal times?"
+    },
+    {
+      "textLabel": "What types and what merchants accept campus-cash?"
+    },
+    {
+      "textLabel": "Is sales tax levied on the plan?"
+    },
+    {
+      "textLabel": "Does the plan accommodate for special meals (e.g. ethnic or vegetarian)?"
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the average cost per meal if no meals are missed, if the specified number of meals are missed, or all meals are paid for out-of-pocket."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table comparing the average cost per meal if no meals are missed, if the specified number of meals are missed, or all meals are paid for out-of-pocket."
+    }
+  ]
+}

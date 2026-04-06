@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Yearly registration_1</name>
+   <tag></tag>
+   <elementGuidId>a84ea906-f742-4086-85fc-3f56b36c4e85</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_YearlyRegistrationIfSellOften-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_YearlyRegistrationIfSellOften-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_YearlyRegistrationIfSellOften-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>d2f1894f-88ba-45b2-8560-71e25f50c38c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyRegistrationIfSellOften</value>
+      <webElementGuid>0b7f8ba7-eda0-4a03-a22d-717a61430007</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_YearlyRegistrationIfSellOften-label</value>
+      <webElementGuid>17fd7b33-8ed5-46b1-a139-f320c6ef3608</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>4a824f89-90e3-44aa-b058-701d860658de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yearly registration
+                                
+                        </value>
+      <webElementGuid>f0719650-7c2c-4434-8b1a-df9e2cbf87cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_YearlyRegistrationIfSellOften-label&quot;)</value>
+      <webElementGuid>b5402e8d-7f0d-4b04-a5e9-0a2e6811c3ea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_YearlyRegistrationIfSellOften-label']</value>
+      <webElementGuid>a14cc6e7-b3aa-4adb-966e-11dddeb2420d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_YearlyRegistrationIfSellOften-table']/div/label</value>
+      <webElementGuid>b9100ac1-d06c-4b70-89d4-098c38bcd919</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly insurance'])[4]/following::label[1]</value>
+      <webElementGuid>16fe3b9c-5da1-4d18-8b4e-0517ca057d9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[5]/following::label[2]</value>
+      <webElementGuid>1667b2de-3af9-4109-b9a2-668035260256</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[6]/preceding::label[1]</value>
+      <webElementGuid>2a16c9c5-e8a0-40b5-bc7e-1e0c5a944207</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly registration'])[4]/preceding::label[1]</value>
+      <webElementGuid>18ac2a0b-9e88-4d8f-aba2-d445e89907d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[3]/div[3]/div[4]/div/label</value>
+      <webElementGuid>25d9ccdf-551c-4144-80ca-d067c6bdb917</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_YearlyRegistrationIfSellOften-label' and (text() = 'Yearly registration
+                                
+                        ' or . = 'Yearly registration
+                                
+                        ')]</value>
+      <webElementGuid>2c7446f0-8c32-4054-8915-2c9ce7c9fcd1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

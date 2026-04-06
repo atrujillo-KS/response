@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_The size of your monthly payment depends _941d26</name>
+   <tag></tag>
+   <elementGuidId>b1022db9-5bba-4afe-ada5-1a26bb071116</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_0']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;The size of your monthly payment depends on loan amount, loan term, and interest&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>c95497f1-cec5-46bb-ab04-50a31880f22e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_0</value>
+      <webElementGuid>78b56a7e-cd89-46b3-9b71-4e18eac31371</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle.</value>
+      <webElementGuid>d8ec59a4-7350-4e61-91db-580f776cfc4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_0&quot;)</value>
+      <webElementGuid>29400a3b-d9bd-4dfc-ad17-560d32cbe553</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_0']</value>
+      <webElementGuid>821f35eb-4c74-4b9f-aa1a-1189f8e02999</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p</value>
+      <webElementGuid>b2f7c6e0-b694-4522-802f-c29a4c3e1a53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[2]</value>
+      <webElementGuid>dd74d1e0-921f-4012-961a-60de76b4f09a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[3]</value>
+      <webElementGuid>a7d2300c-9e48-474d-86fb-f20fad4d3fc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>bbea0003-7bb3-4ef9-8f7a-076a4d4f04e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>3826751f-1164-43ae-8e16-b56e4a67ff0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle.']/parent::*</value>
+      <webElementGuid>bc36b952-57bb-406d-8f23-535edcb5ce62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/p</value>
+      <webElementGuid>59a89a05-8552-4a82-80a8-448222b8104d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_0' and (text() = 'The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle.' or . = 'The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle.')]</value>
+      <webElementGuid>f287fe00-e031-4dfe-8e8c-c643fb0cea19</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

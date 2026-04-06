@@ -1,0 +1,701 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I convert my IRA into a Roth IRA?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you to determine whether it is a good decision to convert a regular individual retirement account (IRA) to a Roth IRA."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Roth IRA'])[1]/following::p[1]",
+      "value": "When you convert to a Roth IRA, you owe income taxes for that year on the amount you are converting. However, if you made the conversion in 2010, you could pay one-half of the taxes due on the conversion in 2011 and the other half in 2012. You do not owe income taxes on any nondeductible amounts that you convert. The amount of annual contributions that you are allowed to make to a deductible or Roth IRA phases out at higher incomes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='contributions'])[1]/following::p[1]",
+      "value": "Key assumptions of this tool include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='contributions'])[1]/following::p[2]",
+      "value": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='contributions'])[1]/following::p[3]",
+      "value": "Deposits are compounded monthly"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=convert",
+      "value": "convert"
+    }
+  },
+  {
+    "click": {
+      "id": "link=convert"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Conversion taxes on a Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "If you decide to convert your regular IRA to a Roth IRA, you will have to pay income taxes on the money that you have already contributed. This is because your contributions to the regular IRA were tax-deductible (unless you earn too much, in which case your contributions are taxed) and contributions to a Roth IRA are made after you pay income taxes. The IRS generally requires you to complete a Roth conversion within 60 days. The Roth conversion analyzer lets you pay taxes from one of five options: 1) cash, accounting for any tax savings from the Roth conversion; 2) cash, ignoring any tax savings from the Roth conversion; 3) borrowings; 4) an early withdrawal from the regular IRA and paying the 10% penalty; or 5) a withdrawal from a regular IRA that does not require paying the penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Conversion taxes on a Roth IRA'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=(IRA)",
+      "value": "(IRA)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Roth IRA",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=nondeductible",
+      "value": "nondeductible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=contributions",
+      "value": "contributions"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Remaining in current IRA will provide the most retirement income at $2,699 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,699'])[2]/following::th[1]",
+      "value": "Monthly retirement income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monthly retirement income'])[1]/following::th[1]",
+      "value": "Lump sum at retirement before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncRothRothIRA02_result_label",
+      "value": "Converting all funds (existing and future) into a Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncRothRothIRA02_result_value",
+      "value": "$2,086"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LumpSumRothRothIRA02_result_value",
+      "value": "$290,117"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTaxedRothIRA02_result_label",
+      "value": "Investing only future contributions into a Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTaxedRothIRA02_result_value",
+      "value": "$2,162"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LumpSumTaxedRothIRA02_result_value",
+      "value": "$310,447"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTradRothIRA02_result_label",
+      "value": "Remaining in current IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTradRothIRA02_result_value",
+      "value": "$2,699"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LumpSumTradRothIRA02_result_value",
+      "value": "$441,035"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Lump Sum"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::caption[1]",
+      "value": "Monthly retirement income provided by converting all funds, investing only future funds, and not converting at all"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::th[1]",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/following::th[1]",
+      "value": "Convert All Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Convert All Funds'])[2]/following::th[1]",
+      "value": "Invest Only Future Funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Invest Only Future Funds'])[2]/following::th[1]",
+      "value": "Do Not Convert"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Do Not Convert'])[2]/following::th[1]",
+      "value": "Monthly Retirement Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Do Not Convert'])[2]/following::td[1]",
+      "value": "$2,086"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,086'])[2]/following::td[1]",
+      "value": "$2,162"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,086'])[2]/following::td[2]",
+      "value": "$2,699"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CurrentIRA-accordion",
+      "value": "Current IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrIRA-label",
+      "value": "Amount in current IRA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrIRA",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrIRA-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpPortion-label",
+      "value": "Portion already taxed or tax-exempt"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxExpPortion",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpPortion-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxPmtFund-label",
+      "value": "Pay taxes due at conversion from"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxPmtFund",
+      "value": "IRA funds Outside source"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxPmtFund",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FutureContributions-accordion",
+      "value": "Future Contributions"
+    }
+  },
+  {
+    "click": {
+      "id": "FutureContributions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-label",
+      "value": "Annual contribution"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribAmt",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt-label",
+      "value": "Contributions are invested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt",
+      "value": "After taxes Before taxes Disregarding taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-label",
+      "value": "Age to begin withdrawing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-error-message",
+      "value": "Must be between 60 and 71"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-label",
+      "value": "Your state + federal tax rate (before retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateBef_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft-label",
+      "value": "Your state + federal tax rate (after retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateAft",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateAft_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-label",
+      "value": "Funds you wish to leave at death"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathFunds",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Returns-accordion",
+      "value": "Returns"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-label",
+      "value": "Estimated rate of return on IRA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IRARateRothIRA",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-label",
+      "value": "Estimated return on other assets"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentIRA-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrIRA",
+      "value": "118,345"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxExpPortion",
+      "value": "5,555"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_TaxPmtFund",
+      "value": "label=Outside source"
+    }
+  },
+  {
+    "click": {
+      "id": "FutureContributions-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ContribAmt",
+      "value": "25,000"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CurrAge"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge",
+      "value": "63"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetAge",
+      "value": "70"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DeathAge"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge",
+      "value": "85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateAft",
+      "value": "15.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathFunds",
+      "value": "25,000"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRARateRothIRA",
+      "value": "7.48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SavRate",
+      "value": "3.45"
+    }
+  }
+]

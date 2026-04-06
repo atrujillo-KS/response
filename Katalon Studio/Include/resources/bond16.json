@@ -1,0 +1,192 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is my tax-equivalent yield?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates what the pre-tax rate of return would have to be on a taxable investment to equal the rate of return earned on a tax-exempt investment. The difference in the two rates of return will increase as the user's tax rate increases."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "It is assumed that your state income tax is deductible for federal tax purposes."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Tax-equivalent yield: 6.62%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxFreeYield-label",
+      "value": "Tax-free yield"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxFreeYield-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxFreeYield",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FederalTaxExempt-label",
+      "value": "Federal tax-exempt"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FederalTaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FederalTaxExempt",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_StateTaxExempt-label",
+      "value": "State tax-exempt"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_StateTaxExempt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_StateTaxExempt",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_StateTaxRate-label",
+      "value": "State tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_StateTaxRate",
+      "value": "Alabama 5% Alaska 0% Arkansas 3.9% Arizona 2.5% California 13.3% Colorado 4.4% Connecticut 6.99% Delaware 6.6% Dist. of Columbia 10.75% Florida 0% Georgia 5.39% Hawaii 11% Idaho 5.695% Illinois 4.95% Indiana 3% Iowa 3.8% Kansas 5.58% Kentucky 4% Louisiana 3% Maine 7.15% Maryland 5.75% Massachusetts 9% Michigan 4.25% Minnesota 9.85% Mississippi 4.4% Missouri 4.7% Montana 5.9% Nebraska 5.2% Nevada 0% New Hampshire 0% New Jersey 10.75% New Mexico 5.9% New York 10.9% North Carolina 4.25% North Dakota 2.5% Ohio 3.5% Oklahoma 4.75% Oregon 9.9% Pennsylvania 3.07% Rhode Island 5.99% South Carolina 6.2% South Dakota 0% Tennessee 0% Texas 0% Utah 4.55% Vermont 8.75% Virginia 5.75% Washington 0% West Virginia 4.82% Wisconsin 7.65% Wyoming 0%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_StateTaxRate",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FederalTaxRate-label",
+      "value": "Federal tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FederalTaxRate",
+      "value": "10% 12% 22% 24% 32% 35% 37%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FederalTaxRate",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxFreeYield",
+      "value": "8.55"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_FederalTaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_StateTaxExempt",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_StateTaxRate",
+      "value": "label=Colorado 4.4%"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_StateTaxRate",
+      "value": "label=California 13.3%"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_FederalTaxRate",
+      "value": "label=24%"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_FederalTaxRate",
+      "value": "label=32%"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_FederalTaxRate",
+      "value": "label=35%"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Tax-equivalent yield: 8.55%"
+    }
+  }
+]

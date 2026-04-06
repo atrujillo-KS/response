@@ -1,0 +1,245 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Stock_SharePurchasePrice",
+          "Stock_SharesPurchased",
+          "Stock_AverageQuarterlyDividend",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "DivYieldBef"
+        ],
+        [
+          "DivYieldAft"
+        ]
+      ]
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Share price today",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30.000",
+        "value": "30.000",
+        "minimumValue": "0.100",
+        "maximumValue": "1000.000",
+        "maxlength": "9",
+        "precision": 3,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000.000",
+        "widgetStep": "10.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Shares purchased",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SHAREs",
+        "format": "number",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Average quarterly dividend",
+        "smallLabel": "",
+        "glossaryTerm": "dividend",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "DivYieldBef": {
+        "fieldLabel": "Current yield from dividends before taxes"
+      },
+      "DivYieldAft": {
+        "fieldLabel": "Current yield from dividends after taxes"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Return",
+    "title": "What is my current yield from dividends?",
+    "answer": "Your current yield after taxes is <span class='lf-bold'>%result%%</span>",
+    "before": "Before Taxes",
+    "after": "After Taxes",
+    "returnPercent": "Return (%)",
+    "selectors": [
+      {
+        "label": "Current yield",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "dividends": {
+      "title": "Dividends",
+      "definition": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    },
+    "dividend": {
+      "title": "Average quarterly dividends",
+      "definition": "Dividends earned on a lot of shares, on average during a quarter."
+    },
+    "dividendyield": {
+      "title": "Dividend yield",
+      "definition": "The dividend amount per share divided by the share price."
+    },
+    "reinvesting": {
+      "title": "Reinvesting",
+      "definition": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your stock's <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DividendYield\">dividend yield</a></span>, before and after taxes, based on its current share price and the amount of <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividend\">average quarterly dividends</a></span> you receive. <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">Dividends</a></span> can be <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvested</a></span> or spent."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the minimum sale price, before taxes, needed to earn the desired rate of return."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Minimum sale price, before taxes, needed to earn the desired rate of return"
+    }
+  ]
+}

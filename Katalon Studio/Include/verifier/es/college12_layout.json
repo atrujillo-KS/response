@@ -1,0 +1,119 @@
+{
+  "layout": {
+    "tabs": {
+      "MealPlan": {
+        "tabLabel": "PLAN DE COMIDAS"
+      },
+      "OutofPocket": {
+        "tabLabel": "GASTOS DE BOLSILLO"
+      },
+      "TaxInfo": {
+        "tabLabel": "INFORMACIÓN DE IMPUESTOS"
+      }
+    },
+    "fields": {
+      "College_MealPlanType": {
+        "fieldLabel": "Tipo de plan de comidas",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "En bloque"
+          }
+        ]
+      },
+      "College_WeeklyMealPlanCost": {
+        "fieldLabel": "Costo del plan de comidas"
+      },
+      "College_MealsCoveredWeekly": {
+        "fieldLabel": "Cantidad de comidas cubiertas por semana"
+      },
+      "College_WeeklyMealPlanCampusCash": {
+        "fieldLabel": "Efectivo del campus"
+      },
+      "College_MealsMissedWeeklyInWeeklyMealPlan": {
+        "fieldLabel": "Cantidad estimada de comidas perdidas por semana"
+      },
+      "College_WeeksIncludedInMealPlan": {
+        "fieldLabel": "Cantidad de semanas incluidas en el plan"
+      },
+      "College_CostPerMealIfPaidOutOfPocket": {
+        "fieldLabel": "Costo por comida si la paga de su bolsillo"
+      },
+      "College_IsMealPlanTaxable": {
+        "fieldLabel": "¿El plan de comidas está sujeto a impuestos?",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "Global_SalesTaxRate": {
+        "fieldLabel": "Tasa de impuestos sobre las ventas"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Costo promedio por comida"
+      ]
+    },
+    "results_fields": {
+      "AvgCostMax": {
+        "fieldLabel": "Si no se pierden comidas"
+      },
+      "College_CostPerMealIfPaidOutOfPocket": {
+        "fieldLabel": "Si paga de su bolsillo"
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Conviene tener un plan de comidas?",
+    "answer": "El costo promedio por comida es de <span class='lf-bold'>%mealPlan%</span> en el plan de comidas y de <span class='lf-bold'>%outOfPocket%</span> si la paga de su bolsillo",
+    "noMealsMissed": "No se pierde ninguna comida",
+    "mealsMissedDef": "%count% comidas perdidas",
+    "outOfPocket": "Pago de su bolsillo",
+    "missedMeals": "Si se pierden %count% comidas"
+  },
+  "glossaryItems": {
+    "weeklymealcount": {
+      "title": "Número de comidas semanales",
+      "definition": "Ingrese el número de comidas a las que tiene derecho a comer cada semana según el plan semanal."
+    },
+    "estweeklymealsmissed": {
+      "title": "Estimación de comidas que faltará semanalmente",
+      "definition": "Ingrese el número de comidas que estima que se perderá cada semana. Cada comida que se pierda aumenta el costo por comida del plan de comidas. El analizador asume que las comidas que se pierden se pagan con efectivo."
+    },
+    "mealplancost": {
+      "title": "Costo del plan de comidas",
+      "definition": "Ingrese el costo total del plan."
+    },
+    "forfeitedmealcount": {
+      "title": "Número estimado de comidas faltadas",
+      "definition": "Ingrese el número de comidas que estima que perderá durante la vigencia del plan de bloques. Cada comida que pierda aumenta el costo por comida del plan de comidas. El analizador asume que las comidas que pierda se pagarán en efectivo."
+    },
+    "mealplanweeks": {
+      "title": "Número de semanas del plan",
+      "definition": "Ingrese el número de semanas que están incluidas en el plan de comidas semanal."
+    },
+    "blockperiodmealcount": {
+      "title": "Número de comidas en el período de bloque",
+      "definition": "Ingrese el número de comidas a las que tiene derecho en el plan de bloque."
+    },
+    "campuscash": {
+      "title": "Efectivo del campus",
+      "definition": "El efectivo del campus es el monto adicional que usted recibe de su plan de comidas para gastar libremente. Por ejemplo, si compra un plan de $1,000, su universidad puede cobrar $900 por las comidas y darle $100 para gastar en efectivo en el campus. A menudo, se requiere que el efectivo del campus se gaste dentro de una red de comerciantes dentro y fuera del campus. El efectivo del campus está excluido de los cálculos del costo por comida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar el costo promedio por comida para un plan de comidas. Muchas universidades requieren que los estudiantes que residen en el campus se inscriban en un plan de comidas. Incluso si no es un requisito, puede ser más económico comprar un plan de comidas que pagar sus comidas en efectivo. La mayoría de las fuentes de ayuda financiera y planes de ahorro para la universidad con ventajas impositivas consideran las comidas como un gasto legítimo relacionado con la educación.</br></br>Algunas preguntas que debería hacer sobre los planes de comidas incluyen:</br></br>¿Se pueden transferir las comidas no utilizadas y usarlas en el próximo período?</br></br>¿Las porciones de comida son ilimitadas?</br></br>¿Cuáles son los horarios para comer y cuáles son los horarios de las comidas?</br></br>¿Qué tipos y qué comerciantes aceptan efectivo del campus?</br></br>¿Se aplica al plan un impuesto sobre las ventas?</br></br>¿El plan se adapta a comidas especiales (por ejemplo, étnicas o vegetarianas)?"
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

@@ -1,0 +1,409 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "Bond_PurchasePrice",
+          "Bond_FaceValue",
+          "Bond_CouponRate",
+          "Bond_MonthsToMaturity"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Bond_CouponIncomeSpendingOption",
+          "Global_SavingsInterestRate",
+          "Bond_Type",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "fields": [
+        [
+          "Bond_RateOfReturnBeforeTaxes"
+        ],
+        [
+          "Bond_RateOfReturnAfterTaxes"
+        ]
+      ]
+    },
+    "fields": {
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Price you paid",
+        "smallLabel": "(% of face value)",
+        "glossaryTerm": "bondprice",
+        "format": "percent",
+        "defaultValue": "110.00",
+        "value": "110.00",
+        "minimumValue": "1.00",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "4.50",
+        "value": "4.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Months to maturity",
+        "smallLabel": "",
+        "glossaryTerm": "maturity",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Your coupon income is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Spent when received",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Invested elsewhere",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Type of bond",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Corporate or other",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Municipal: not state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Municipal: state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Treasury security",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Bond_RateOfReturnBeforeTaxes": {
+        "fieldLabel": "Yield to maturity before taxes",
+        "value": "2.38%"
+      },
+      "Bond_RateOfReturnAfterTaxes": {
+        "fieldLabel": "Yield to maturity after taxes",
+        "value": "1.61%"
+      }
+    }
+  },
+  "labels": {
+    "title": "What is my yield to maturity?",
+    "answer": "Your yield to maturity after taxes is <span class='lf-bold'>1.61%.</span>",
+    "dataTableCategoryTitle2": "Purchase Price (% of face value)",
+    "dataTableCategory": "Yield",
+    "Bond_RateOfReturnBeforeTaxes": "Before Taxes",
+    "Bond_RateOfReturnAfterTaxes": "After Taxes",
+    "price": "Price",
+    "Yield": "Yield",
+    "selectors": [
+      {
+        "label": "Yield",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Yield vs. Price",
+        "width": "50%",
+        "last": true,
+        "getGraphData": true
+      }
+    ],
+    "yAxisLabelForChartOptions1": "Yield to maturity (%)",
+    "xAxisLabelForChartOptions2": "Purchase price (% of face value)",
+    "yAxisLabelForChartOptions2": "Yield to maturity (%)"
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Bond price",
+      "definition": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    },
+    "couponinterest": {
+      "title": "Coupon interest",
+      "definition": "Coupon interest is the interest income you earn a bond. Annual coupon interest is equal to the bond coupon rate times its face value. For example, coupon interest on a 6% $1,000 bond is $60. Most bonds pay coupons on a semi-annual basis. This means that, instead of receiving one payment of $60 a year, you receive two payments of $30 a year."
+    },
+    "couponrate": {
+      "title": "Coupon rate",
+      "definition": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "maturity": {
+      "title": "Maturity",
+      "definition": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    },
+    "corporatebonds": {
+      "title": "Corporate bond",
+      "definition": "Bonds issued by corporations to raise money for operations."
+    },
+    "munibonds": {
+      "title": "Municipal bond",
+      "definition": "States and municipalities issue municipal bonds, or muni bonds for short. Investors often buy muni bonds issued by the state or municipality in which they reside to derive the greatest income tax benefit."
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "ytm": {
+      "title": "Yield-to-maturity",
+      "definition": "The interest rate, or internal rate of return (IRR), that makes the cash inflows equal to the price you pay for the bond. Cash inflows are made up of coupon interest and the bond principal when the bond matures."
+    },
+    "bondtypes": {
+      "title": "Bond types",
+      "definition": "The four major types of bonds, as defined by category of issuers, are U.S. government, corporate, agency, and municipal bonds. U.S. government bonds include U.S. Treasury securities. Corporate bonds include those sold by private companies to raise funds. Agency bonds include those sold by government-sponsored enterprises, such as Ginnie Mae, Fannie Mae, and Freddie Mac. Municipal bonds include those sold by state and local governments."
+    },
+    "treasurysecurities": {
+      "title": "Treasury securities",
+      "definition": "Debt obligations of the U.S. government with a maturity of longer than 10 years. Also called a T-bond."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YTM\">yield to maturity</a></span>, or the rate of return, before and after taxes, you earn on a bond if you hold the bond to maturity. Yield to maturity assumes that the interest coupons you receive on the bond can be reinvested at the same rate. "
+    },
+    {
+      "textLabel": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary. Treasury securities are exempt from state income taxes. Municipal bonds are exempt from federal income taxes. In some cases, they are also exempt from state income taxes."
+    },
+    {
+      "textLabel": "After-tax rates of return are estimates that are based on current tax laws."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the bond's yield to maturity before and after taxes."
+    },
+    {
+      "title": "Stacked column chart of the inverse relationship of a bond's yield to maturity and price. As bond prices rise, yields fall. As bond prices fall, yields rise."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Bond's yield to maturity before and after taxes"
+    },
+    {
+      "title": "Inverse relationship of a bond's yield to maturity and price. As bond prices rise, yields fall. As bond prices fall, yields rise"
+    }
+  ]
+}

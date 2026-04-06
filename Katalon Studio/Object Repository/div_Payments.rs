@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Payments</name>
+   <tag></tag>
+   <elementGuidId>60d34869-3b5f-4560-ba65-7c1c8b2466f1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_graph_tabs_lf_container2 > div.lf-dot-holder.lf-dot-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='lf_graph_tabs_lf_container2']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a278c4a5-2841-4430-85fa-5d4a4695e1e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-dot-holder lf-dot-label</value>
+      <webElementGuid>c9a91dec-01f3-46ad-a5cd-3f85ec22f918</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Payments</value>
+      <webElementGuid>36922bda-cd97-46e5-9bae-682a63dcb57f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_graph_tabs_lf_container2&quot;)/div[@class=&quot;lf-dot-holder lf-dot-label&quot;]</value>
+      <webElementGuid>387b59b1-0710-451a-991f-c0bd40bdc63e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='lf_graph_tabs_lf_container2']/div</value>
+      <webElementGuid>84c82d23-4020-4d18-88f0-3c870b43ce91</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Average Cost'])[1]/following::div[1]</value>
+      <webElementGuid>5f9b4c1b-73c2-4ce4-8657-2195381c45e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change views between Average Cost graph, and Payments graph'])[1]/following::div[3]</value>
+      <webElementGuid>394652c6-d618-4a1a-ac3f-45060f2bcbab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[1]/preceding::div[3]</value>
+      <webElementGuid>6abdb618-b7c5-44d6-aa69-7caca0919e11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/preceding::div[3]</value>
+      <webElementGuid>b1e8ec4c-0891-4bea-9b2e-81da32a8da31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Payments']/parent::*</value>
+      <webElementGuid>5f46552f-9e4e-4a8a-aa31-dc56bf6da8a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/div</value>
+      <webElementGuid>56b6f6a0-c906-4e63-b978-b63bf1f15535</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Payments' or . = 'Payments')]</value>
+      <webElementGuid>0251b457-4349-4c9d-bbba-006f51a03d57</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

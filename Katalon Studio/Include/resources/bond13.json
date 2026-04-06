@@ -1,0 +1,708 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: discount or high coupon rate?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates rates of return, before and after taxes, for a discounted bond and high-coupon bond. Rates of return are shown for two scenarios: holding the bond to maturity and selling before maturity."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Generally, you pay a price below par value ( discount ) for a bond that has a low coupon rate relative to market interest rates. You pay a price above par value ( premium ) for a bond that has a high coupon rate relative to market rates."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The high rate bond will earn a higher return after taxes of −1.96%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-1",
+      "value": "Discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-2",
+      "value": "High rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle1",
+      "value": "If you sell in 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondSellingPrice_result_label",
+      "value": "Selling price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondSellingPrice_result_value",
+      "value": "$9,266"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondSellingPrice_result_value",
+      "value": "$9,804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfSell_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−3.48%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−1.96%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle2",
+      "value": "If you hold to maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "0.82%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "0.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "0.76%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "0.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "At Sale"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Sale Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "At Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Return (%)']/parent::*",
+      "value": "Return (%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis-labels.highcharts-xaxis-labels > text",
+      "value": "Discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='High Rate']/parent::*",
+      "value": "High Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Before Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "After Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "DiscountBond-accordion",
+      "value": "Discount Bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondPurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_DiscountBondPurchasePrice",
+      "value": "96.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondPurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondFaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_DiscountBondFaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondFaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondCouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_DiscountBondCouponRate",
+      "value": "3.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondCouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondMonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_DiscountBondMonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondMonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondType-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondType",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "HighRateBond-accordion",
+      "value": "High Rate Bond"
+    }
+  },
+  {
+    "click": {
+      "id": "HighRateBond-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondPurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_HighRateBondPurchasePrice",
+      "value": "100.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondPurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondFaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_HighRateBondFaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondFaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondCouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_HighRateBondCouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondCouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondMonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_HighRateBondMonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondMonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondType-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondType",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "SharedBondInfo-accordion",
+      "value": "Shared Bond Info"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsSincePurchase-label",
+      "value": "Months until you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday-label",
+      "value": "Market rate when you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption-label",
+      "value": "Your coupon income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "DiscountBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_DiscountBondPurchasePrice",
+      "value": "85.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_DiscountBondFaceValue",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_DiscountBondCouponRate",
+      "value": "6.13"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_DiscountBondMonthsToMaturity",
+      "value": "48"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_DiscountBondType",
+      "value": "label=Municipal: not state tax-exempt"
+    }
+  },
+  {
+    "click": {
+      "id": "HighRateBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_HighRateBondPurchasePrice",
+      "value": "110.87"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_HighRateBondFaceValue",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_HighRateBondCouponRate",
+      "value": "5.98"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_HighRateBondMonthsToMaturity",
+      "value": "48"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_HighRateBondType",
+      "value": "label=Municipal: not state tax-exempt"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_HighRateBondType",
+      "value": "label=Municipal: state tax-exempt"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "6.31"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "7.89"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "105,444"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The discount bond will earn a higher return after taxes of 13.24%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondSellingPrice_result_value",
+      "value": "$4,355"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondSellingPrice_result_value",
+      "value": "$4,466"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfSell_result_value",
+      "value": "14.76%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldBeforeTaxesIfSell_result_value",
+      "value": "0.48%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldAfterTaxesIfSell_result_value",
+      "value": "13.24%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldAfterTaxesIfSell_result_value",
+      "value": "0.14%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "10.68%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "3.57%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_HighRateBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "3.11%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

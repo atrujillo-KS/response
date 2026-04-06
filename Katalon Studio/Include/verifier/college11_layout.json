@@ -1,0 +1,552 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Educational",
+        "Communication",
+        "Personal",
+        "Transportation",
+        "InsuranceMisc"
+      ],
+      "Educational": {
+        "tabLabel": "Educational Costs",
+        "fields": [
+          "College_MonthsInCollegeYear",
+          "College_YearlyBooksExpense",
+          "College_YearlyLabOtherFees"
+        ]
+      },
+      "Communication": {
+        "tabLabel": "Communication Costs",
+        "fields": [
+          "College_MonthlyInternetExpense",
+          "College_MonthlyTVExpense",
+          "College_MonthlyPhoneExpense",
+          "College_MonthlyCellPhoneExpense"
+        ]
+      },
+      "Personal": {
+        "tabLabel": "Personal Costs",
+        "fields": [
+          "College_MonthlyLaundryExpense",
+          "College_MonthlyFoodExpense",
+          "College_MonthlyEntertainmentExpense",
+          "College_MonthlyClothingExpense",
+          "College_MonthlyPersonalItemsExpense"
+        ]
+      },
+      "Transportation": {
+        "tabLabel": "Transportation Costs",
+        "fields": [
+          "College_MonthlyGasExpense",
+          "College_MonthlyAutoPayments",
+          "College_MonthlyAutoInsurance",
+          "College_MonthlyTransportationExpense"
+        ]
+      },
+      "InsuranceMisc": {
+        "tabLabel": "Insurance & Misc. Costs",
+        "fields": [
+          "College_MonthlyHealthInsuranceExpense",
+          "College_MonthlyOtherExpenses"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "columnHeaders": [
+        ""
+      ],
+      "fields": []
+    },
+    "fields": {
+      "College_MonthsInCollegeYear": {
+        "fieldLabel": "Months in school year",
+        "smallLabel": "",
+        "glossaryTerm": "numberofmonths",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "9",
+        "value": "9",
+        "minimumValue": "0",
+        "maximumValue": "12",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_YearlyBooksExpense": {
+        "fieldLabel": "Books ",
+        "smallLabel": "(yearly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "750",
+        "value": "750",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_YearlyLabOtherFees": {
+        "fieldLabel": "Lab & other fees",
+        "smallLabel": "(yearly)",
+        "glossaryTerm": "labfees",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyInternetExpense": {
+        "fieldLabel": "Internet",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "ispexpenses",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyTVExpense": {
+        "fieldLabel": "Cable TV",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyPhoneExpense": {
+        "fieldLabel": "Telephone",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyCellPhoneExpense": {
+        "fieldLabel": "Cell phone",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyLaundryExpense": {
+        "fieldLabel": "Laundry",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyFoodExpense": {
+        "fieldLabel": "Food",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "foodexpense",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "65",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyEntertainmentExpense": {
+        "fieldLabel": "Entertainment",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "entertainmentexpenses",
+        "format": "currency",
+        "defaultValue": "160",
+        "value": "160",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyClothingExpense": {
+        "fieldLabel": "Clothing",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyPersonalItemsExpense": {
+        "fieldLabel": "Personal items",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "personalandhouseholdexpenses",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyGasExpense": {
+        "fieldLabel": "Gasoline",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "40",
+        "value": "40",
+        "minimumValue": "0",
+        "maximumValue": "500",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyAutoPayments": {
+        "fieldLabel": "Auto payments",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "120",
+        "value": "120",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyAutoInsurance": {
+        "fieldLabel": "Auto insurance",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "120",
+        "value": "120",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyTransportationExpense": {
+        "fieldLabel": "Travel",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "transportationexpenses",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyHealthInsuranceExpense": {
+        "fieldLabel": "Health insurance",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "healthinsuranceexpense",
+        "format": "currency",
+        "defaultValue": "125",
+        "value": "125",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "College_MonthlyOtherExpenses": {
+        "fieldLabel": "Other expenses",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "otherexpenses",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "amount": "Amount",
+    "title": "How much should I budget for college living expenses?",
+    "answer": "You should budget a total of <span class='lf-bold'>%totalExpenses%</span>, or <span class='lf-bold'>%monthlyExpense%</span> for <span class='lf-bold'>%months%</span> months",
+    "selectors": [
+      {
+        "label": "College Living Expenses",
+        "width": "100%",
+        "first": true,
+        "getGraphData": true
+      }
+    ],
+    "educational": "Educational",
+    "communications": "Communications",
+    "personal": "Personal",
+    "transportation": "Transportation",
+    "insurance": "Insurance & Misc"
+  },
+  "glossaryItems": {
+    "labfees": {
+      "title": "Lab & other fees",
+      "definition": "Enter your estimate of annual expenses for laboratory fees, supplies,  or other expenses that are not included in tuition, room and board, or fees that you pay when you register for school."
+    },
+    "otherexpenses": {
+      "title": "Other expenses",
+      "definition": "Enter your estimated  monthly average for expenses not entered elsewhere in this analyzer."
+    },
+    "transportationexpenses": {
+      "title": "Transportation and travel expenses",
+      "definition": "Enter the amount you spend monthly, on average, for transportation expenses. If you own a car, your monthly expenses include fuel, repairs, and loan payments. You can leave out the depreciation expense. If you buy a bike with cash, divide the purchase price by the number of months in the school year. If you ride the bus or other form of mass transit, enter the cost of a monthly pass. If you travel to and from school to visit family, add the average monthly cost of this travel to your total monthly transportation expense."
+    },
+    "foodexpense": {
+      "title": "Food",
+      "definition": "In case you live off campus or do not use a meal plan, you can use this analyzer to calculate your food expenses. Enter your estimated monthly average bill for food."
+    },
+    "personalandhouseholdexpenses": {
+      "title": "Personal and household-item expenses",
+      "definition": "Enter the amount you spend monthly, on average, for personal and household items. Exclude food, clothing, laundry, cell phone, and Internet expenses. Examples of expenses to include: cosmetics, personal-hygiene items, linens, and cleaning products."
+    },
+    "healthinsuranceexpense": {
+      "title": "Health insurance",
+      "definition": "Enter your estimated monthly premium for student health insurance. The student health office of your college or university may offer competitively priced premiums."
+    },
+    "numberofmonths": {
+      "title": "Number of months",
+      "definition": "Enter the number of months that you wish to compare living costs. If you sign a lease rental agreement, you may want to compare costs over the longer of the two periods. A lease generally obligates you to pay rent for a certain period."
+    },
+    "ispexpenses": {
+      "title": "Internet service (ISP) expenses",
+      "definition": "Enter the amount you spend monthly for Internet service. Internet service may be provided by your cable, telephone, or satellite provider or may alternatively be offered by an independent Internet Service Provider (ISP)."
+    },
+    "entertainmentexpenses": {
+      "title": "Entertainment expenses",
+      "definition": "Enter the amount you spend monthly, on average, for entertainment expenses such as shows, movies, sports events, and beer."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you to budget for living expenses for one year of college. To help pay for these expenses, you may wish to consider taking a part-time job, or obtaining an additional amount of financial aid. Most sources of financial aid and tax-advantaged college savings plans consider living expenses a legitimate education-related expense. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of total annual college living expenses by category."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of total monthly college living expenses by category"
+    }
+  ]
+}

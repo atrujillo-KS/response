@@ -1,0 +1,129 @@
+{
+  "layout": {
+    "results": {
+      "columnHeaders": [
+        "Sin pagos adicionales",
+        "Con pagos adicionales"
+      ]
+    },
+    "results_fields": {
+      "TotIntPaid": {
+        "fieldLabel": "Total de intereses pagados"
+      },
+      "TotIntPaid2": {},
+      "MonUntilPayoff": {
+        "fieldLabel": "Meses hasta la cancelación"
+      },
+      "MonUntilPayoff2": {},
+      "TotPay": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPmt2Home20": {}
+    },
+    "fields": {
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Saldo actual del préstamo"
+      },
+      "Home_RemainingTermInMonths": {
+        "fieldLabel": "Plazo restante",
+        "smallLabel": "(en meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Home_ExtraPaymentStartDate": {
+        "fieldLabel": "Fecha de inicio de pago adicional"
+      },
+      "Home_TargetPayoffDate": {
+        "fieldLabel": "Fecha de cancelación objetivo"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Intereses totales pagados",
+    "title": "¿Qué pago mensual adicional se necesita para cancelar mi préstamo en una fecha específica?",
+    "answer": "Un pago mensual adicional de <span class='lf-bold'>$%result%</span> liquidará su préstamo antes del <span class='lf-bold'>%date%</span> y le ahorrará <span class='lf-bold'>$%interest%</span> en intereses.",
+    "selectors": [
+      {
+        "label": "Interés Pagado",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos – Sin pagos adicionales",
+            "label": "Sin pagos adicionales"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos – Con pagos adicionales",
+            "label": "Con pagos adicionales"
+          }
+        ]
+      }
+    ],
+    "TotIntPaid": "Sin pagos adicionales",
+    "TotIntPaid2": "Con pagos adicionales",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Interés acumulativo"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Interés acumulativo"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "loanprincipal": {
+      "title": "Capital del préstamo",
+      "definition": "La parte no pagada del monto del préstamo. El capital del préstamo se amortiza a lo largo del plazo del préstamo de modo que el capital al final del plazo sea cero."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el pago de capital mensual adicional requerido para cancelar un préstamo a más tardar en una fecha específica y los ahorros de intereses resultantes. La cantidad total de pagos adicionales se aplica a la amortización del capital del préstamo. Algunos préstamos hipotecarios pueden tener una penalidad por cancelación anticipada. Consulte a su prestamista para verificar si su préstamo tiene dicha penalidad."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la diferencia entre el interés total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales."
+    },
+    {
+      "title": "Amortization table for the loan without extra payments."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia entre el interés total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales"
+    }
+  ]
+}

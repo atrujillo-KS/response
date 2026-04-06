@@ -1,0 +1,737 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Am I better off renting?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine whether buying a home is a better deal than renting. The decision depends on many factors, including the time you expect to stay in your new home, rent and home appreciation rates, the rate you earn on savings, taxes, and maintenance costs."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will save $41,662 by renting instead of buying over the 7 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Buying"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Buying'])[1]/following::th[1]",
+      "value": "Renting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome10_result_label",
+      "value": "Principal and interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome10_result_value",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA1_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_label",
+      "value": "Private mortgage insurance (PMI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[1]/following::td[1]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_label",
+      "value": "Property taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$354'])[1]/following::td[1]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome10_result_label",
+      "value": "Total initial payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome10_result_value",
+      "value": "$1,428"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotRentPmt_result_value",
+      "value": "$715"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container1']/div",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyTitle": {
+      "value": "Leadfusion Home Calculator"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container2']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRent-label",
+      "value": "Monthly rent"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyRent",
+      "value": "700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRent-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRentersInsurance-label",
+      "value": "Monthly renter's insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyRentersInsurance",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRentersInsurance-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyRentChange-label",
+      "value": "Yearly rent increase (decrease)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyRentChange",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyRentChange-error-message",
+      "value": "Must be between -99.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "HomePurchase-accordion",
+      "value": "Home Purchase"
+    }
+  },
+  {
+    "click": {
+      "id": "HomePurchase-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_HomeAppraisedValue_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-label",
+      "value": "Down payment ($50K)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "20.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-error-message",
+      "value": "Must be between 0.000% and 99.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_DownPaymentPercentage_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-label",
+      "value": "Property tax (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "3,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_YearlyPropertyTax_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-label",
+      "value": "Homeowners insurance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_YearlyHomeownersInsurance_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyMaintenance-label",
+      "value": "Maintenance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyMaintenance",
+      "value": "700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyMaintenance-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LoanInfo-accordion",
+      "value": "Loan Info"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-error-message",
+      "value": "Must be between 1 and 40 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_LoanTermInYears_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_InterestRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginationCharge-label",
+      "value": "Origination charge"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_OriginationCharge",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OriginationCharge-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_OriginationCharge_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OtherAssumptions-accordion",
+      "value": "Other Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "OtherAssumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeValueChange-label",
+      "value": "Appreciation rate (depreciation)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeValueChange",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeValueChange-error-message",
+      "value": "Must be between -99.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_YearlyHomeValueChange_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ExpectedYearsInHome-label",
+      "value": "Expected years in home"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_ExpectedYearsInHome",
+      "value": "7"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ExpectedYearsInHome-error-message",
+      "value": "Must be between 1 and 40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SellingCosts-label",
+      "value": "Selling costs (% of selling price)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SellingCosts",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SellingCosts-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Home_SellingCosts_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_FederalAndStateTaxRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Your savings rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_SavingsInterestRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "Renting-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_MonthlyRent",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_MonthlyRentersInsurance",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyRentChange",
+      "value": "4.00"
+    }
+  },
+  {
+    "click": {
+      "id": "HomePurchase-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "500,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "18"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "650"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyMaintenance",
+      "value": "1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "4.250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OriginationCharge",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DiscountPoints",
+      "value": "2.000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OtherClosingCosts",
+      "value": "950"
+    }
+  },
+  {
+    "click": {
+      "id": "OtherAssumptions-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeValueChange",
+      "value": "0.20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ExpectedYearsInHome",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_SellingCosts",
+      "value": "15.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "28.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You will save $3,750 by buying instead of renting over the 15 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$3,750'])[1]/following::span[2]",
+      "value": "$3,750"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndIntHome10_result_value",
+      "value": "$3,084"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$471"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$86"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA1_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA3_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA2_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmtHome10_result_value",
+      "value": "$3,641"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotRentPmt_result_value",
+      "value": "$1,525"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,253 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "tabLabel": "Basic",
+        "fields": [
+          "Commercial_AnnualChecksWritten",
+          "Commercial_AnnualCheckPayments"
+        ]
+      },
+      "advanced": {
+        "tabLabel": "Advanced",
+        "fields": [
+          "Commercial_PostageAndEnvelopeCostPerCheckPayment",
+          "Commercial_OtherVariableUnitCostsFromBank",
+          "Commercial_CostOfCapital"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [
+        [
+          "Commercial_TotalAnnualBenefits"
+        ],
+        [
+          "Commercial_ValueOfCardRewardsEarned"
+        ],
+        [
+          "Commercial_TransactionCostReduction"
+        ],
+        [
+          "Commercial_ValueOfExtendedFloatOnCapital"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Commercial_NewCardAnnualSpend": {
+        "fieldLabel": "New card annual spend"
+      },
+      "Commercial_AnnualChecksConvertedToCard": {
+        "fieldLabel": "Annual checks converted to card"
+      },
+      "Commercial_ValueOfCardRewardsEarned": {
+        "fieldLabel": "Rewards earned"
+      },
+      "Commercial_TransactionCostReduction": {
+        "fieldLabel": "Savings from reduced check usage"
+      },
+      "Commercial_ValueOfExtendedFloatOnCapital": {
+        "fieldLabel": "Value of extended payment terms"
+      },
+      "Commercial_TotalAnnualBenefits": {
+        "fieldLabel": "Total annual benefits"
+      }
+    },
+    "fields": {
+      "Commercial_AnnualChecksWritten": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "How many checks do you write a year?",
+        "defaultValue": "2000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50000",
+        "maxlength": "7",
+        "safeType": "number",
+        "valueTextLabel": "checks",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "50000",
+        "widgetStep": "500",
+        "value": "2000",
+        "format": "number"
+      },
+      "Commercial_AnnualCheckPayments": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "What is the amount?",
+        "defaultValue": "2500000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000000",
+        "widgetStep": "100000",
+        "maxlength": "11",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "value": "2500000",
+        "format": "currency"
+      },
+      "Commercial_CostOfCapital": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cost of capital",
+        "defaultValue": "5.00",
+        "glossaryTerm": "costofcapital",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "10.00",
+        "widgetStep": "1.00",
+        "value": "5.00",
+        "format": "percent"
+      },
+      "Commercial_PostageAndEnvelopeCostPerCheckPayment": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Postage & envelope cost per check payment",
+        "defaultValue": ".67",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": ".50",
+        "sliderMaxVal": "1.50",
+        "widgetStep": ".1",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": ".50",
+        "maximumValue": "1.50",
+        "value": ".67",
+        "format": "currency"
+      },
+      "Commercial_OtherVariableUnitCostsFromBank": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Bank costs per check payment",
+        "defaultValue": ".25",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1.00",
+        "widgetStep": ".1",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "1.00",
+        "value": ".25",
+        "format": "currency"
+      },
+      "Commercial_CardRewardsEarnRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Rewards earn rate",
+        "defaultValue": "1.50",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "100.00",
+        "widgetStep": "1.00",
+        "value": "1.50",
+        "format": "percent"
+      }
+    }
+  },
+  "labels": {
+    "total": "Total",
+    "dataTableCategoryTitle2": "Año",
+    "title": "How much can I save <span class='pcard-and'>and</span> earn by switching to the PNC Commercial Rewards Card℠?",
+    "answer": "Hello",
+    "selectors": [
+      {
+        "label": "Savings breakdown",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "rewardsEarned": "Rewards earned",
+    "savings": "Savings from reduced check usage",
+    "value": "Value of extended payment terms",
+    "conversion": "Results based on  %CONVERSION% check conversation rate"
+  },
+  "glossaryItems": {
+    "costofcapital": {
+      "title": "Cost of capital",
+      "definition": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value. "
+    },
+    "customloanamount": {
+      "title": "Loan Amount",
+      "definition": "Minimum amount is $1,000. Choose the portion of your estimated line of credit that you'd like to draw."
+    },
+    "custominterestrate": {
+      "title": "Current Interest Rate",
+      "definition": "Variable interest rate, base prime rate‌[1] plus 5.49%."
+    },
+    "custommonthlypayment": {
+      "title": "Monthly Payment",
+      "definition": "Minimum payment is $100 or 1.5% of outstanding debt, whichever is greater. Choose a payment amount to see how it impacts the pay-off time."
+    }
+  },
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Pie chart that provides an itemized breakdown of the total annual benefits into rewards earned, savings from reduced check usage, and value of extended payment terms."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Itemized breakdown of the total annual benefits into rewards earned, savings from reduced check usage, and value of extended payment terms"
+    }
+  ]
+}

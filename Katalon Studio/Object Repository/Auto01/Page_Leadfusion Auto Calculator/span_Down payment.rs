@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Down payment</name>
+   <tag></tag>
+   <elementGuidId>83ae9ed7-2a80-44f1-a272-2f34a6416a62</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='lf-tooltip-term']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-term</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Down payment&quot;i] >> internal:label=&quot;Down payment&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dc017191-cf12-478d-885d-c25a1de9b1e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-term</value>
+      <webElementGuid>931ddbe4-0954-4b1e-8dbd-f9ee07fafcf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Down payment</value>
+      <webElementGuid>97fcd641-4b3c-43e6-9ee7-f2d35120669d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Down payment</value>
+      <webElementGuid>9b772afe-e168-4955-a82d-775aa09b5414</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-term&quot;)</value>
+      <webElementGuid>bd0d4c5b-656a-4726-ae80-7a19879edfef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='lf-tooltip-term']</value>
+      <webElementGuid>5779f2d2-a97c-4f12-b30e-e38594382830</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/dfn/h2/span</value>
+      <webElementGuid>b8867947-f23e-4589-af41-b2f8b3336ce1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[2]/following::span[2]</value>
+      <webElementGuid>7c9b1867-54dd-4eee-a288-93e790e720c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025 Leadfusion'])[1]/following::span[2]</value>
+      <webElementGuid>0475d79c-80f3-418d-9373-0fab183d50f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[3]/preceding::span[2]</value>
+      <webElementGuid>0022904b-7a75-46b8-a7b5-09eccbb14494</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[3]/preceding::span[3]</value>
+      <webElementGuid>b3421170-3490-4d28-9e94-4ecfc8cbc5ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dfn/h2/span</value>
+      <webElementGuid>9efb75a9-0c21-4a58-b536-45b301dde6cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'lf-tooltip-term' and (text() = 'Down payment' or . = 'Down payment')]</value>
+      <webElementGuid>6b394d69-f37e-45f2-8c60-050d2b0363e8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

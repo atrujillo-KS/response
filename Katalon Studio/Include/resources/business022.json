@@ -1,0 +1,199 @@
+[
+  {
+    "click": {
+      "id": "lf-EquipmentInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentPurchasePrice",
+      "value": "27,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "7.85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentUsefulLifeInYears",
+      "value": "15"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_MACRSDepreciationYears",
+      "value": "label=7"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_AverageAnnualMaintenanceCosts",
+      "value": "1,500"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_MonthEquipmentBoughtOrLeased",
+      "value": "label=March"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentFairMarketValueAtEndOfLease",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentFairMarketValueAtEndOfUsefulLife",
+      "value": "3,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-BuyOption-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentDownPaymentPercentage",
+      "value": "20.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentLoanTerm",
+      "value": "72"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentLoanInterestRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-LeaseOption-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentLeaseSecurityDeposit",
+      "value": "3,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_IsEquipmentLeaseSecurityDepositRefunded",
+      "value": "label=No"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentLeaseTerm",
+      "value": "72"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_EquipmentLeasePayment",
+      "value": "450"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_EquipmentLeasePaymentFrequency",
+      "value": "label=Semi-monthly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_OtherEquipmentLeaseFees",
+      "value": "200"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_ResponsibleForEquipmentMaintenance",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Business_OptionToBuyEquipment",
+      "value": "label=No"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CompanyInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_FederalTaxRate",
+      "value": "25.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_StateTaxRate",
+      "value": "4.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Business_SavingsRate",
+      "value": "0.50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$17,168 less than'])[1]/following::span[2]",
+      "value": "$17,168 less than"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Buying will cost you $17,168 less than leasing, in today's dollars, over the lease term."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVBuyEOLT_result_label",
+      "value": "Net cost, in today's dollars"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVBuyEOLT_result_value",
+      "value": "$30,252"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVLeaseEOLT_result_value",
+      "value": "$47,420"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,529 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "YourSpendings",
+        "CashBackRates",
+        "CashBackLimits",
+        "OneTimeSignupBonus"
+      ],
+      "YourSpendings": {
+        "tabLabel": "YOUR SPENDING",
+        "fields": [
+          "Card_SpendingPeriod",
+          "Card_SpendingCategoryOneAmount",
+          "Card_SpendingCategoryTwoAmount",
+          "Card_SpendingCategoryThreeAmount",
+          "Card_SpendingCategoryFourAmount",
+          "Card_SpendingCategoryFiveAmount"
+        ]
+      },
+      "CashBackRates": {
+        "tabLabel": "CASH BACK RATES",
+        "fields": [
+          "Card_SpendingCategoryOneCashBackRate",
+          "Card_SpendingCategoryTwoCashBackRate",
+          "Card_SpendingCategoryThreeCashBackRate",
+          "Card_SpendingCategoryFourCashBackRate",
+          "Card_SpendingCategoryFiveCashBackRate"
+        ]
+      },
+      "CashBackLimits": {
+        "tabLabel": "CASH BACK LIMITS",
+        "fields": [
+          "Card_CashBackLimitAmount",
+          "Card_CashBackLimitPeriod",
+          "Card_RateAfterCashBackLimitReached"
+        ]
+      },
+      "OneTimeSignupBonus": {
+        "tabLabel": "ONE-TIME SIGNUP BONUS",
+        "fields": [
+          "Card_CashBonusAmount",
+          "Card_CashBonusSpendingThreshold",
+          "Card_CashBonusSpendingPeriod"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Cash Back"
+      ],
+      "fields": [
+        [
+          "Card_CashBackRestaurants"
+        ],
+        [
+          "Card_CashBackGas"
+        ],
+        [
+          "Card_CashBackGroceryStores"
+        ],
+        [
+          "Card_CashBackDrugStores"
+        ],
+        [
+          "Card_CashBackOthers"
+        ],
+        [
+          "Card_CashBackSignupBonus"
+        ],
+        [
+          "Card_CashBackTotal"
+        ]
+      ]
+    },
+    "fields": {
+      "Card_SpendingPeriod": {
+        "fieldLabel": "How much do you spend every",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "1 month",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "3 months",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "12",
+            "optionText": "1 year",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryOneAmount": {
+        "fieldLabel": "At restaurants",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "750",
+        "value": "750",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryTwoAmount": {
+        "fieldLabel": "On gas",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "750",
+        "value": "750",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryThreeAmount": {
+        "fieldLabel": "At grocery stores",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryFourAmount": {
+        "fieldLabel": "At drug stores",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "75",
+        "value": "75",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryFiveAmount": {
+        "fieldLabel": "All other purchases",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryOneCashBackRate": {
+        "fieldLabel": "Restaurant",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryTwoCashBackRate": {
+        "fieldLabel": "Gas",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryThreeCashBackRate": {
+        "fieldLabel": "Grocery stores",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryFourCashBackRate": {
+        "fieldLabel": "Drug stores",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_SpendingCategoryFiveCashBackRate": {
+        "fieldLabel": "All other purchases",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_CashBackLimitAmount": {
+        "fieldLabel": "Rates apply for spending up to",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_CashBackLimitPeriod": {
+        "fieldLabel": "For each calendar",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Quarter",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "12",
+            "optionText": "Year",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateAfterCashBackLimitReached": {
+        "fieldLabel": "Rate after limit reached",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "10.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_CashBonusAmount": {
+        "fieldLabel": "Cash bonus",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_CashBonusSpendingThreshold": {
+        "fieldLabel": "After you spend",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_CashBonusSpendingPeriod": {
+        "fieldLabel": "Within",
+        "smallLabel": "(number of months)",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "1",
+        "maximumValue": "12",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "12",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Card_CashBackRestaurants": {
+        "fieldLabel": "Restaurants"
+      },
+      "Card_CashBackGas": {
+        "fieldLabel": "Gas"
+      },
+      "Card_CashBackGroceryStores": {
+        "fieldLabel": "Grocery stores"
+      },
+      "Card_CashBackDrugStores": {
+        "fieldLabel": "Drug stores"
+      },
+      "Card_CashBackOthers": {
+        "fieldLabel": "All other purchases"
+      },
+      "Card_CashBackSignupBonus": {
+        "fieldLabel": "One-time signup bonus"
+      },
+      "Card_CashBackTotal": {
+        "fieldLabel": "Total"
+      }
+    }
+  },
+  "labels": {
+    "cashBack": "Cash back",
+    "title": "How much cash back will I earn with a cash rewards card?",
+    "answer": "You will earn <span class='lf-bold'>%amount%</span> in cash back after <span class='lf-bold'>%period%</span>",
+    "selectors": [
+      {
+        "label": "Cash back by category",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the cash back you can accrue with a cash rewards credit card based on your spending habits and the card's attributes. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart showing the breakdown of total cash back earned for each spending category and the one-time signup bonus if applicable."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of total cash back earned for each spending category and the one-time signup bonus if applicable"
+    }
+  ]
+}

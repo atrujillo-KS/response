@@ -1,0 +1,621 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What fund share price achieves my target rate of return?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the price at which you will have to sell shares of a mutual fund to realize your desired rate of return. Returns are calculated before and after taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The calculator deducts brokerage fees and taxes (for after-tax returns) and calculates your return on an annualized basis."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Dividends and capital gains are reinvested at the specified interest rate or spent. Reinvesting the income you receive on an investment may boost your rate of return."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=annualized",
+      "value": "annualized"
+    }
+  },
+  {
+    "click": {
+      "id": "link=annualized"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Annualized rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An annualized rate of return converts to an annual percentage rate the rate of return that you earn on an investment held for more or less than one year, allowing you to compare investment performance for the same period of time."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Dividends",
+      "value": "Dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=reinvested",
+      "value": "reinvested"
+    }
+  },
+  {
+    "click": {
+      "id": "link=reinvested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Reinvesting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//p[@id='lf_help_2']/span[3]/a",
+      "value": "rate of return"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling today at a share price of $30 will provide a 8.00% return after taxes and fees"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceBeforeTaxes_result_label",
+      "value": "Selling price per share to achieve a 8.00% return before taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceBeforeTaxes_result_value",
+      "value": "$30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceAfterTaxes_result_label",
+      "value": "Selling price per share to achieve a 8.00% return after taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceAfterTaxes_result_value",
+      "value": "$30"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DesiredYearlySharePriceIncrease-label",
+      "value": "Return you desire"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DesiredYearlySharePriceIncrease",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DesiredYearlySharePriceIncrease-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment-label",
+      "value": "Additional investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_InvestmentFrequency-label",
+      "value": "Investment Frequency"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_MonthsOwned-label",
+      "value": "Months owned"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesTaxes-accordion",
+      "value": "Fees & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FrontendLoad-label",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_BackendLoad-label",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Income-accordion",
+      "value": "Income"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (long term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (short term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains-label",
+      "value": "Yearly increase in dividends & gains"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (fed tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (state tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (non-taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption-label",
+      "value": "Dividends & gains are"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_DesiredYearlySharePriceIncrease"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_DesiredYearlySharePriceIncrease",
+      "value": "10.46"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "18.459"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "1,500.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "200"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Biweekly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "24"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "1.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "3.444"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "100,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "12.56"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "0.36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "0.25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "1.26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "4"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling today at a share price of $18 will provide a 10.46% return after taxes and fees"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceBeforeTaxes_result_label",
+      "value": "Selling price per share to achieve a 10.46% return before taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceBeforeTaxes_result_value",
+      "value": "$18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceAfterTaxes_result_label",
+      "value": "Selling price per share to achieve a 10.46% return after taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SalePriceAfterTaxes_result_value",
+      "value": "$18"
+    }
+  }
+]

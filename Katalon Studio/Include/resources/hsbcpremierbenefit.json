@@ -1,0 +1,987 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.us.hsbc.com/response/lf-hsbc/calc/premierbenefits?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/following::div[4]",
+      "value": "Value of an HSBC Premier RelationshipPremier clients also have access to a Premier Relationship Manager and preferred rates on lending (including mortgage) and deposit products Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/p",
+      "value": "This Premier calculator is designed to show you the potential dollar amount saved with an HSBC Premier relationship, while providing you with all of your everyday banking needs."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your total annual HSBC Premier benefit may be up to $342.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CheckbookBenefit_result_label",
+      "value": "Checkbooks"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CheckbookBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CashierCheckBenefit_result_label",
+      "value": "Cashier checks"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CashierCheckBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawalBenefit_result_label",
+      "value": "Domestic non-HSBC ATM withdrawals"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawalBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawalBenefit_result_label",
+      "value": "International emergency cash withdrawals"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawalBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransferBenefit_result_label",
+      "value": "Incoming wire transfer"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransferBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransferBenefit_result_label",
+      "value": "Outbound wire transfer"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransferBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OverdraftBenefit_result_label",
+      "value": "Overdrafts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OverdraftBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_ForexDebitBenefit_result_label",
+      "value": "Forex debit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_ForexDebitBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_BankingBenefit_result_label",
+      "value": "Savings on Everyday Banking Activities"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_BankingBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CardsBenefit_result_label",
+      "value": "Credit Card Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CardsBenefit_result_value",
+      "value": "$342.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_TotalBenefit_result_label",
+      "value": "Total benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_TotalBenefit_result_value",
+      "value": "$342.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=CHECKS & TRANSACTIONS",
+      "value": "CHECKS & TRANSACTIONS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CHECKS & TRANSACTIONS'])[1]/following::div[1]",
+      "value": "How many of each would you need per year?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks-label",
+      "value": "Checkbooks($22.95 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Checkbooks"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A check is a document that orders a bank to pay a specific amount of money from a person's account to the person in whose name the check has been issued. Checkbooks are free of charge with HSBC Premier. The normal charge per checkbook is $22.95."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks-label",
+      "value": "Cashier checks($12.00 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_CashierChecks_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_CashierChecks_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Cashier checks benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Cashiers checks are free of charge with HSBC Premier. The normal charge per cashier check is $12."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals-label",
+      "value": "Domestic non-HSBC ATM withdrawals($5.50 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Domestic non-HSBC ATM withdrawals"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "HSBC Premier will rebate all third party ATM fees averaging $3 per transaction as well as waive all HSBC ATM fees with your Premier Debit card, valued at $2.50 per transaction."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals-label",
+      "value": "International emergency cash withdrawals($20.00 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "International emergency cash withdrawals"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "$20 withdrawal fee is waived should your wallet be lost or stolen and you need emergency cash, up to $10,000 at any HSBC branch worldwide. Encashment is dependent on your available balance; local country limitations may apply."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransfers-label",
+      "value": "Incoming wire transfers($15.00 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransfers",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransfers-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_IncomingWireTransfers_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_IncomingWireTransfers_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Incoming wire transfers benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Incoming wire transfers are free of charge with HSBC Premier, a value of $15 per wire. Incoming wire transfers may be subject to fees from non-HSBC financial institutions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransfers-label",
+      "value": "Outbound wire transfers($35.00 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransfers",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransfers-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_OutboundWireTransfers_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_OutboundWireTransfers_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Outbound wire transfers benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Outbound wire transfers are free of charge with HSBC Premier, a value of $35 per wire."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OTHERTRANSACTIONS-accordion",
+      "value": "OTHER TRANSACTIONS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//fieldset[@id='lf-tab-OTHERTRANSACTIONS']/div[2]",
+      "value": "How many of each would you need per year?"
+    }
+  },
+  {
+    "click": {
+      "id": "OTHERTRANSACTIONS-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_Overdrafts-label",
+      "value": "Overdrafts($35.00 per)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_Overdrafts",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_Overdrafts-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_Overdrafts_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_Overdrafts_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Overdrafts benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Overdrafts are free of charge with HSBC Premier, a value of $35 per overdraft."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_ForexDebit-label",
+      "value": "Forex debit(3.00% fee)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_ForexDebit",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_ForexDebit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_ForexDebit_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_ForexDebit_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Forex debit benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Forex debit fees of 3% of total transaction are waived for HSBC Premier clients."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=CREDIT",
+      "value": "CREDIT"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CREDIT'])[1]/following::div[1]",
+      "value": "Are you interested in the following products?"
+    }
+  },
+  {
+    "click": {
+      "id": "CREDITMORTGAGE-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard-label",
+      "value": "HSBC Premier World Mastercard® credit card($342.00 value)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_InterestInWorldMastercard_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_InterestInWorldMastercard_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "To learn more about our credit cards, including terms and fees, please click here. Actual value may vary based on usage"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard-label",
+      "value": "HSBC Premier World Elite Mastercard® credit card($675.00 value)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_HSBCPremierBenefit_InterestInWorldEliteMastercard_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "To learn more about our credit cards, including terms and fees, please click here. Actual value may vary based on usage"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInMortgage-label",
+      "value": "Mortgage($0.00 closing costs credit)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InterestInMortgage",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSBCPremierBenefit_InterestInMortgage",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_HSBCPremierBenefit_InterestInMortgage_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_HSBCPremierBenefit_InterestInMortgage_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Mortgage benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "HSBC Premier customers can enjoy up to a $1,500 on mortgage closing cost credits."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "CHECKSTRANSACTIONS-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransfers",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransfers",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "OTHERTRANSACTIONS-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_Overdrafts",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_ForexDebit",
+      "value": "100"
+    }
+  },
+  {
+    "click": {
+      "id": "CREDITMORTGAGE-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard",
+      "value": "label=No"
+    }
+  },
+  {
+    "click": {
+      "id": "//option[@value='1']"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(//option[@value='1'])[2]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your total annual HSBC Premier benefit may be up to $333.75"
+    }
+  },
+  {
+    "click": {
+      "id": "link=CHECKS & TRANSACTIONS"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_Checkbooks",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_CashierChecks",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals",
+      "value": "6"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawals",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransfers",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransfers",
+      "value": "5"
+    }
+  },
+  {
+    "click": {
+      "id": "link=OTHER TRANSACTIONS"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_Overdrafts",
+      "value": "9"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSBCPremierBenefit_ForexDebit",
+      "value": "9,000"
+    }
+  },
+  {
+    "click": {
+      "id": "link=CREDIT"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldMastercard",
+      "value": "label=No"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSBCPremierBenefit_InterestInWorldEliteMastercard",
+      "value": "label=No"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your total annual HSBC Premier benefit may be up to $1,006.90"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CheckbookBenefit_result_value",
+      "value": "$45.90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CashierCheckBenefit_result_value",
+      "value": "$48.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_DomesticNonHSBCATMWithdrawalBenefit_result_value",
+      "value": "$33.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_InternationalEmergencyCashWithdrawalBenefit_result_value",
+      "value": "$60.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_IncomingWireTransferBenefit_result_value",
+      "value": "$60.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OutboundWireTransferBenefit_result_value",
+      "value": "$175.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_OverdraftBenefit_result_value",
+      "value": "$315.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_ForexDebitBenefit_result_value",
+      "value": "$270.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_BankingBenefit_result_value",
+      "value": "$1,006.90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_CardsBenefit_result_value",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSBCPremierBenefit_TotalBenefit_result_value",
+      "value": "$1,006.90"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

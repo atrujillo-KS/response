@@ -1,0 +1,300 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "Bond_PurchasePrice",
+          "Bond_FaceValue",
+          "Bond_CouponRate"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Bond_Type",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "fields": [
+        [
+          "Bond_CouponYieldBeforeTaxes"
+        ],
+        [
+          "Bond_CouponYieldAfterTaxes"
+        ]
+      ]
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Bond price",
+        "smallLabel": "(% of face value)",
+        "glossaryTerm": "bondprice",
+        "format": "percent",
+        "defaultValue": "110.00",
+        "value": "110.00",
+        "minimumValue": "1.00",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "4.50",
+        "value": "4.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Type of bond",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Corporate or other",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Municipal: not state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Municipal: state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Treasury security",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Bond_CouponYieldBeforeTaxes": {
+        "fieldLabel": "Current yield before taxes",
+        "value": "4.09%"
+      },
+      "Bond_CouponYieldAfterTaxes": {
+        "fieldLabel": "Current yield after taxes",
+        "value": "3.36%"
+      }
+    }
+  },
+  "labels": {
+    "title": "What is my current yield on coupon income received?",
+    "answer": "Your current yield after taxes is <span class='lf-bold'>3.36%</span>.",
+    "Bond_CouponYieldBeforeTaxes": "Before Taxes",
+    "Bond_CouponYieldAfterTaxes": "After Taxes",
+    "dataTableCategory": "Yield",
+    "price": "Price",
+    "Yield": "Yield",
+    "selectors": [
+      {
+        "label": "Current yield",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Bond price",
+      "definition": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "currentyield": {
+      "title": "Current yield",
+      "definition": "A bond's coupon rate divided by its current price."
+    },
+    "bondtypes": {
+      "title": "Bond types",
+      "definition": "The four major types of bonds, as defined by category of issuers, are U.S. government, corporate, agency, and municipal bonds. U.S. government bonds include U.S. Treasury securities. Corporate bonds include those sold by private companies to raise funds. Agency bonds include those sold by government-sponsored enterprises, such as Ginnie Mae, Fannie Mae, and Freddie Mac. Municipal bonds include those sold by state and local governments."
+    },
+    "couponrate": {
+      "title": "Coupon rate",
+      "definition": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "treasurysecurities": {
+      "title": "Treasury securities",
+      "definition": "Debt obligations of the U.S. government with a maturity of longer than 10 years. Also called a T-bond."
+    },
+    "corporatebonds": {
+      "title": "Corporate bond",
+      "definition": "Bonds issued by corporations to raise money for operations."
+    },
+    "munibonds": {
+      "title": "Municipal bond",
+      "definition": "States and municipalities issue municipal bonds, or muni bonds for short. Investors often buy muni bonds issued by the state or municipality in which they reside to derive the greatest income tax benefit."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool computes the current yield of a bond, before and after taxes. Current yield equals the bond's annual interest payment divided by the bond's current price. Depending on the type of bond owned, the taxes applied might vary."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the bond's current yield before and after taxes."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Bond's current yield before and after taxes"
+    }
+  ]
+}

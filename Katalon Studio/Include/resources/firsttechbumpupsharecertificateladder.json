@@ -1,0 +1,803 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-firsttech/calc/firsttechbumpupladder?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How can I benefit from a bump up share certificate ladder?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "HELP"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "Share certificate laddering is an investment strategy that involves spreading funds across multiple share certificates with different maturity dates. Compared to investing in a single short term certificate and rolling it over at maturity, certificate laddering provides increased returns while creating access to funds periodically to reinvest or withdraw if funds are needed for an unexpected or planned expense."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "This tool assumes that the first certificate value is rolled into the next certificate in the ladder upon maturity, with no changes to the dividend rates specified."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Annual percentage yield (APY) factors in both dividends you earn as well as your stated tax rates."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Over 3 years, the bump up share certificate ladder is estimated to grow to $37,915 and earn a total of $2,915 dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Certificate Ladder"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[3]",
+      "value": "APY"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[4]",
+      "value": "Balance at maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[5]",
+      "value": "Additional Deposits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/th",
+      "value": "First Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td",
+      "value": "13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[2]",
+      "value": "3.56%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[3]",
+      "value": "$5,193"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[4]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/th",
+      "value": "Second Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[2]",
+      "value": "3.04%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[3]",
+      "value": "$15,955"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[4]",
+      "value": "$5,193 (First certificate's matured balance)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/th",
+      "value": "Third Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[2]",
+      "value": "2.53%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[3]",
+      "value": "$37,915"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[4]",
+      "value": "$15,955 (Second certificate's matured balance)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/tfoot/tr/th",
+      "value": "Total balance after 3 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Cumulative dividends earned']/parent::*",
+      "value": "Cumulative dividends earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Year']/parent::*",
+      "value": "Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='1']/parent::*",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='2']/parent::*",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Cumulative dividends earned from each certificate for each year in the certificate ladder"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "3rd Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "2nd Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[4]",
+      "value": "1st Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/th",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/th",
+      "value": "3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-CertInfo-tab-label",
+      "value": "Certificate Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CertInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_FirstTechBumpUpLadder_CDsInLadder_label']/span",
+      "value": "Number of certificates in the ladder"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FirstTechBumpUpLadder_CDsInLadder",
+      "value": "Two Three"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_FirstTechBumpUpLadder_CDsInLadder",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CertInfo-details']/div[2]/div/div/div/fieldset/legend",
+      "value": "First Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CertInfo-details']/div[2]/div[2]/div/div/fieldset/legend",
+      "value": "Second Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CertInfo-details']/div[2]/div[3]/div/div/fieldset/legend",
+      "value": "Third Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='First Certificate'])[2]/following::span[1]",
+      "value": "Initial deposit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-CertInfo-details']/div[2]/div[1]/div/div/fieldset/div[1]/div/div[1]/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id='lf-CertInfo-details']/div[2]/div[1]/div/div/fieldset/div[1]/div/div[1]/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Initial deposit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "This is your funding amount. Share certificates must be funded with at least $500. You will earn monthly dividends on these funds once they are deposited."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Savings_FirstCDTermInMonths_label']/span",
+      "value": "Deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-small-label",
+      "value": "(in months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths",
+      "value": "24 36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "verifyTitle": {
+      "value": "First Tech FCU Custom Calculator"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "3.500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDInterestRate",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDInterestRate",
+      "value": "2.500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CertInfo-details']/div[2]/div/div/div/fieldset/div[3]/div/div/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf-CertInfo-details']/div[2]/div/div/div/fieldset/div[3]/div/div/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividend rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual dividend rate of your share certificate. This rate is called the simple dividend rate. If dividends are compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Assumptions-tab-label",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Assumptions-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate_field_label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate_field_label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CertInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-server-error']/b",
+      "value": "Please fix the following errors:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_lf_Savings_SecondCDInitialDeposit_error_desc",
+      "value": "Second certificate initial deposit must be greater than or equal to matured balance of first certificate."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "60,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "45,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-server-error']/b",
+      "value": "Please fix the following errors:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_lf_Savings_ThirdCDInitialDeposit_error_desc",
+      "value": "Third certificate initial deposit must be greater than or equal to matured balance of the second certificate."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "70,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CertInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInitialDeposit",
+      "value": "150,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "125,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "100,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "6.550"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInterestRate",
+      "value": "5.889"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_ThirdCDInterestRate",
+      "value": "4.999"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Assumptions-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "30.11"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "2.45"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Over 3 years, the bump up share certificate ladder is estimated to grow to $418,390 and earn a total of $43,390 dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/th",
+      "value": "First Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td",
+      "value": "13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[2]",
+      "value": "4.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[3]",
+      "value": "$104,893"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_FirstCertTerm_Output_results']/td[4]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/th",
+      "value": "Second Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[2]",
+      "value": "4.04%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[3]",
+      "value": "$244,091"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[4]",
+      "value": "$104,893 (First certificate's matured balance)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_SecondCertTerm_Output_results']/td[4]/p",
+      "value": "(First certificate's matured balance)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/th",
+      "value": "Third Certificate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[2]",
+      "value": "3.42%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[3]",
+      "value": "$418,390"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='lf_FirstTechBumpUpLadder_ThirdCertTerm_Output_results']/td[4]",
+      "value": "$244,091 (Second certificate's matured balance)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/tfoot/tr/th",
+      "value": "Total balance after 3 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/tfoot/tr/td",
+      "value": "$418,390"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "TERMS OF USE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_main']/div/div[5]/small",
+      "value": "© 2025 Copyright Leadfusion"
+    }
+  }
+]

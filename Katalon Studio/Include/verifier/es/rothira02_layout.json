@@ -1,0 +1,193 @@
+{
+  "layout": {
+    "tabs": {
+      "CurrentIRA": {
+        "tabLabel": "CUENTA IRA ACTUAL"
+      },
+      "FutureContributions": {
+        "tabLabel": "CONTRIBUCIONES FUTURAS"
+      },
+      "AboutYou": {
+        "tabLabel": "ACERCA DE USTED"
+      },
+      "Returns": {
+        "tabLabel": "RENDIMIENTO"
+      }
+    },
+    "fields": {
+      "CurrIRA": {
+        "fieldLabel": "Cantidad en la cuenta IRA actual"
+      },
+      "TaxExpPortion": {
+        "fieldLabel": "Porción ya gravada o exenta de impuestos"
+      },
+      "TaxPmtFund": {
+        "fieldLabel": "Pago de impuestos adeudados por conversión de",
+        "dropdownOptions": [
+          {
+            "optionText": "Fondos de una cuenta IRA"
+          },
+          {
+            "optionText": "Fuente externa"
+          }
+        ]
+      },
+      "ContribAmt": {
+        "fieldLabel": "Contribución anual"
+      },
+      "ContribOpt": {
+        "fieldLabel": "Las contribuciones se invierten",
+        "dropdownOptions": [
+          {
+            "optionText": "Después de impuestos"
+          },
+          {
+            "optionText": "Antes de impuestos"
+          },
+          {
+            "optionText": "Sin relación con los impuestos"
+          }
+        ]
+      },
+      "CurrAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "RetAge": {
+        "fieldLabel": "Edad para comenzar a retirar"
+      },
+      "DeathAge": {
+        "fieldLabel": "Expectativa de vida"
+      },
+      "TaxRateBef": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(antes de la jubilación)"
+      },
+      "TaxRateAft": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(después de la jubilación)"
+      },
+      "DeathFunds": {
+        "fieldLabel": "Fondos que desea dejar al momento de su fallecimiento"
+      },
+      "IRARateRothIRA": {
+        "fieldLabel": "Tasa de rendimiento estimado de la cuenta IRA"
+      },
+      "SavRate": {
+        "fieldLabel": "Rendimiento estimado de otros activos"
+      }
+    },
+    "results_fields": {
+      "MonIncRothRothIRA02": {
+        "fieldLabel": "Convertir todos los fondos (existentes y futuros) a una cuenta IRA Roth"
+      },
+      "LumpSumRothRothIRA02": {
+        "fieldLabel": "Convertir todos los fondos (existentes y futuros) a una cuenta IRA Roth"
+      },
+      "MonIncTaxedRothIRA02": {
+        "fieldLabel": "Invertir únicamente en contribuciones futuras en una cuenta IRA Roth"
+      },
+      "LumpSumTaxedRothIRA02": {
+        "fieldLabel": "Invertir únicamente en contribuciones futuras en una cuenta IRA Roth"
+      },
+      "MonIncTradRothIRA02": {
+        "fieldLabel": "Mantenerse en la cuenta IRA actual"
+      },
+      "LumpSumTradRothIRA02": {
+        "fieldLabel": "Mantenerse en la cuenta IRA actual"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Ingresos mensuales de jubilación",
+        "Suma global al momento de la jubilación antes de impuestos"
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Ingresos mensuales de jubilación",
+    "dataTableCategory2": "Suma global al momento de la jubilación antes de impuestos",
+    "title": "¿Debo convertir mi IRA en una IRA Roth?",
+    "answer": "%name% proporcionará la mayor cantidad de ingresos de jubilación a <span class='lf-bold'>$%value%</span> por mes.",
+    "MonIncRothRothIRA02": "Convertir todos los fondos (existentes y futuros) a una cuenta IRA Roth le",
+    "MonIncTaxedRothIRA02": "Invertir únicamente contribuciones futuras en una cuenta IRA Roth le",
+    "MonIncTradRothIRA02": "El resto de la cuenta IRA actual",
+    "MonIncRothRothIRA02_g": "Convertir todos los fondos",
+    "MonIncTaxedRothIRA02_g": "Invertir únicamente fondos futuros",
+    "MonIncTradRothIRA02_g": "No convertir",
+    "selectors": [
+      {
+        "label": "Ingresos",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Suma global",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "nondeductibleira": {
+      "title": "Cuenta IRA no deducible",
+      "definition": "Una cuenta de jubilación individual cuyas contribuciones están parcial o completamente financiadas con contribuciones que no son deducibles de impuestos. Usted puede contribuir hasta $7,000 o $8,000 (según la edad, límites de ingresos y participación en un plan de jubilación patrocinado por el empleador) en 2025. Una cuenta IRA no deducible se beneficia de un crecimiento compuesto con impuestos diferidos."
+    },
+    "rothira": {
+      "title": "IRA Roth",
+      "definition": "Una cuenta de jubilación con ventajas de impuestos que le permite hacer una contribución después de impuestos de hasta $7,000 para 2025, o hasta $8,000 si tiene 50 años o más. Si usted mantiene una IRA Roth durante al menos cinco años y tiene al menos 59 años y medio de edad cuando comienza a hacer retiros de la cuenta, la cuenta entera puede ser distribuida sin pagar impuestos ni penalidades."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "deductibleira": {
+      "title": "IRA deducible",
+      "definition": "Una cuenta IRA deducible es una cuenta de jubilación individual financiada con aportaciones deducibles de impuestos. En 2025, usted puede aportar hasta $7,000 o $8,000 (dependiendo de su edad, sus ingresos y su participación en un plan de jubilación patrocinado por el empleador)."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "ira": {
+      "title": "Cuenta de jubilación individual (IRA)",
+      "definition": "Los dos tipos principales de IRA son la IRA normal y la IRA Roth. Las IRA normales también se denominan IRA tradicionales porque fueron las primeras que se introdujeron en 1981. Las IRA Roth se introdujeron en 1998. Para 2025, ambos tipos de cuentas IRA tienen límites de aportación similares de $7,000. Las personas de 50 años o más tienen derecho a una aportación adicional de $1,000 para ponerse al día, con lo que su aportación anual total permitida asciende a $8,000. La diferencia entre estas cuentas es cómo y cuándo se pagan los impuestos. En el caso de las cuentas IRA tradicionales, los impuestos se pagan cuando se retira dinero de la cuenta IRA; en el caso de las cuentas IRA Roth, los impuestos se pagan cuando se ingresa dinero en la cuenta IRA Roth. En el caso de las cuentas IRA tradicionales, las aportaciones hasta los límites establecidos son deducibles de impuestos. El dinero de una cuenta IRA tradicional crece con impuestos diferidos hasta que comienzan las distribuciones después de los 59 años y medio. Las distribuciones de una cuenta IRA tradicional tributan como ingresos ordinarios. En cambio, las aportaciones a una cuenta IRA Roth no son deducibles de impuestos, por lo que se pagan impuestos sobre el dinero que usted aporta a la cuenta IRA Roth. Las cuentas Roth IRA también crecen con impuestos diferidos, y suponiendo que usted mantenga la cuenta durante al menos cinco años y tenga 59 años y medio o más, las distribuciones de una cuenta Roth IRA están libres de impuestos y multas."
+    },
+    "conversiontaxesrothira": {
+      "title": "Impuesto por conversión a una cuenta IRA Roth",
+      "definition": "Si decide convertir su cuenta IRA regular a una cuenta IRA Roth, usted tendrá que pagar impuestos sobre la renta por el dinero que ya ha contribuido. Esto se debe a que sus contribuciones a una cuenta IRA regular fueron deducibles de impuestos (a menos que usted gane demasiado, en cuyo caso sus contribuciones son imponibles) y las contribuciones a una cuenta IRA Roth IRA se hacen después de que usted paga impuestos sobre la renta. El IRS exige que complete la conversión a Roth en un plazo de 60 días. El analizador de conversión a Roth le permite pagar impuestos de una de las siguientes cinco maneras: 1) en efectivo, considerando cualquier ahorro de impuestos proveniente de la conversión a Roth; 2) en efectivo, ignorando cualquier ahorro de impuestos proveniente de la conversión a Roth; 3) con préstamos; 4) con un retiro anticipado de una cuenta IRA regular y pagando el 10 % de penalidad; o 5) con un retiro de una cuenta IRA regular que no requiere el pago de la penalidad."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar si es una buena decisión <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ConversionTaxesRothIRA\">convertir</a></span> una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#IRA\">cuenta IRA regular</a></span> a una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">cuenta IRA Roth</a></span>."
+    },
+    {
+      "textLabel": "Cuando convierte a una cuenta IRA Roth, usted debe impuestos sobre la renta para ese año sobre la cantidad que está convirtiendo. Sin embargo, si hizo la conversión en 2010, podría pagar una mitad de los impuestos adeudados por la conversión en 2011 y la otra mitad en 2012. No debe pagar impuestos sobre los montos <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#NondeductibleIRA\">no deducibles</a></span> que convierte. La cantidad de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DeductibleIRA\">contribuciones</a></span> anuales que se le permite hacer a una cuenta deducible o una cuenta IRA Roth se elimina por fases en el caso de ingresos más altos."
+    },
+    {
+      "textLabel": "Los supuestos clave de esta herramienta incluyen:"
+    },
+    {
+      "textLabel": "Si las contribuciones se invierten antes o después de impuestos y el monto excede el máximo permitido, la contribución se maximiza por primera vez en las cuentas IRA. El monto restante se deposita en una cuenta de ahorros imponible. El escenario en el que las contribuciones se invierten sin tener en cuenta los impuestos no tiene una cuenta de ahorros."
+    },
+    {
+      "textLabel": "Los depósitos se acumulan mensualmente."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los ingresos de jubilación mensuales que se obtienen al convertir todos los fondos, invertir solo los fondos futuros y no convertirlos en absoluto."
+    },
+    {
+      "title": "Gráfico de columnas que compara la suma global proporcionada al convertir todos los fondos, invirtiendo solo fondos futuros y sin convertir en absoluto."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ingresos de jubilación mensuales que se obtienen al convertir todos los fondos, invertir solo los fondos futuros y no convertirlos en absoluto"
+    },
+    {
+      "title": "Suma global proporcionada al convertir todos los fondos, invirtiendo solo fondos futuros y sin convertir en absoluto"
+    }
+  ]
+}

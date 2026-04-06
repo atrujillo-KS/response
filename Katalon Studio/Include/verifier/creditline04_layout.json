@@ -1,0 +1,307 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "CreditLine_CashNeededFromEquity",
+          "Global_HomeEquityLoanInterestRate",
+          "CreditLine_MonthsToPayOff"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Global_FederalAndStateTaxRate",
+          "Global_InterestRateChangePrediction"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "columnHeaders": [
+        "Home Equity Loan",
+        "HELOC"
+      ],
+      "fields": [
+        [
+          "Pmt1CreditLn04",
+          "Pmt2CreditLn04"
+        ],
+        [
+          "TotEnd1",
+          "TotEnd2"
+        ],
+        [
+          "TotInt1CreditLn04",
+          "TotInt2CreditLn04"
+        ],
+        [
+          "OweAft301",
+          "OweAft302"
+        ]
+      ]
+    },
+    "fields": {
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Loan amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state & federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Predicted rate change",
+        "smallLabel": "",
+        "glossaryTerm": "futureinterestrates",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "None",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase 0.5% per year",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease 0.5% per year",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_MonthsToPayOff": {
+        "fieldLabel": "Months to pay off",
+        "smallLabel": "",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "OweAft301": {
+        "fieldLabel": "Amount owed after X months"
+      },
+      "OweAft302": {
+        "fieldLabel": "Amount owed after X months"
+      },
+      "Pmt1CreditLn04": {
+        "fieldLabel": "Starting monthly payment"
+      },
+      "Pmt2CreditLn04": {
+        "fieldLabel": "Starting monthly payment"
+      },
+      "TotEnd1": {
+        "fieldLabel": "Ending monthly payment"
+      },
+      "TotEnd2": {
+        "fieldLabel": "Ending monthly payment"
+      },
+      "TotInt1CreditLn04": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotInt2CreditLn04": {
+        "fieldLabel": "Total interest paid"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much will my home equity loan payments be?",
+    "answer": "Your initial payment will be <span class='lf-bold'>%Pmt1CreditLn04%</span> for a home equity loan and <span class='lf-bold'>%Pmt2CreditLn04%</span> for a HELOC",
+    "dataTableCategoryTitle2": "Month",
+    "start_values": "Starting",
+    "end_values": "Ending",
+    "Home_Equity_Loan": "Home Equity Loan",
+    "HELOC": "HELOC",
+    "month": "Month",
+    "balance": "Balance",
+    "categories": [
+      "Home Equity Loan",
+      "HELOC"
+    ],
+    "selectors": [
+      {
+        "label": "Payments",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Interest Paid",
+        "width": "33%",
+        "getGraphData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Home Equity Loan",
+            "label": "Home Equity Loan"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - HELOC",
+            "label": "HELOC"
+          }
+        ]
+      }
+    ],
+    "amountOwed": "Amount owed after %months% months",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "futureinterestrates": {
+      "title": "Future interest rates",
+      "definition": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates monthly payments for an amortizing loan and interest-only payments on a line of credit. "
+    },
+    {
+      "textLabel": "The home equity loan option amortizes the loan balance over the loan term, resulting in a loan payoff at maturity.  The line of credit assumes the user only makes interest payments on the full line of credit.  At the end of the term, the amount owed on the line of credit will be exactly the same as the amount borrowed."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the starting and ending monthly payments for the home equity loan and the home equity line of credit."
+    },
+    {
+      "title": "Line chart comparing the interest paid over time for the home equity loan and home equity line of credit."
+    },
+    {
+      "title": "Amortization table for the home equity loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Starting and ending monthly payments for the home equity loan and the home equity line of credit"
+    },
+    {
+      "title": "Interest paid over time for the home equity loan and home equity line of credit"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "layout": {
+    "tabs": {
+      "OriginalInfo": {
+        "tabLabel": "INFORMACIÓN ORIGINAL"
+      },
+      "CurrentInfo": {
+        "tabLabel": "INFORMACIÓN ACTUAL"
+      },
+      "Assumptions": {
+        "tabLabel": "PRESUNCIONES"
+      }
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_DesiredYieldToMaturity": {
+        "fieldLabel": "Rendimiento anual deseado"
+      },
+      "Bond_ReturnTaxOption": {
+        "fieldLabel": "Rendimiento anual antes o después de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Antes de impuestos"
+          },
+          {
+            "optionText": "Después de impuestos"
+          }
+        ]
+      },
+      "Bond_MonthsSincePurchase": {
+        "fieldLabel": "Meses desde la compra"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "text": "Para vender a un precio de %amount%, la tasa del mercado deberá ser aproximadamente del %rate%% o menos"
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Precio de venta",
+    "title": "¿Qué precio de bono alcanza mi tasa de rendimiento objetivo?",
+    "answer": "Un precio de venta de <span class='lf-bold'>%amount%</span> o más alto obtendrá un rendimiento del <span class='lf-bold'>%rate%% %beforeAfter%</span> de impuestos",
+    "before": "antes",
+    "after": "después",
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "selectors": [
+      {
+        "label": "Precio del bono",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "couponinterest": {
+      "title": "Interés de cupón",
+      "definition": "El interés de cupón es el ingreso por intereses que usted gana con un bono. El interés de cupón anual es igual a la tasa de face value. For example, coupon interest on a 6% $1,000 bond is $60. Most bonds pay coupons on a semi-annual basis. This means that, instead of receiving one payment of $60 a year, you receive two payments of $30 a year."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "capitalloss": {
+      "title": "Pérdida de capital",
+      "definition": "En general, se produce una pérdida de capital cuando se vende una inversión a un precio inferior al precio que se compró."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "marketinterestrate": {
+      "title": "Tasa de interés del mercado",
+      "definition": "La tasa de interés para los bonos con características de riesgo y plazos de vencimiento similares a los del bono que usted vende."
+    },
+    "brokeragecommission": {
+      "title": "Comisión de corretaje",
+      "definition": "Los cargos que usted paga a un corredor por comprar o vender acciones, bonos u otros valores. También se denominan cargos de transacción, cargos de compraventa, cargos de corretaje o simplemente comisiones."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el precio mínimo de venta necesario para obtener una tasa de rendimiento deseada, si los bonos se venden a su vencimiento. <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#BrokerageCommission\">Las comisiones de corretaje</a></span> no se consideran."
+    },
+    {
+      "textLabel": "La tasa de rendimiento de un bono se basa en el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CouponInterest\">ingreso por cupones</a></span> y cualquier <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapGain\">ganancia de capital</a></span> que usted tenga durante el período en que mantiene el bono. Si vende un bono por un precio más bajo que el que pagó por él, tendrá una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalLoss\">pérdida de capital</a></span> y su tasa de rendimiento se perjudica. Si vende un bono por un precio más alto, tendrá una ganancia de capital y su tasa de rendimiento se beneficiará."
+    },
+    {
+      "textLabel": "Nota: Esta herramienta supone una determinada gama de tipos de mercado en comparación con la tasa de interés nominal al calcular el precio de bono."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del precio de venta mínimo, antes y después de impuestos, necesario para obtener la tasa de rendimiento deseada."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Precio de venta mínimo, antes y después de impuestos, necesario para obtener la tasa de rendimiento deseada"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "layout": {
+    "fields": {
+      "Bond_TaxFreeYield": {
+        "fieldLabel": "Rendimiento libre de impuestos"
+      },
+      "Bond_FederalTaxExempt": {
+        "fieldLabel": "Exento de impuestos federales",
+        "dropdownOptions": [
+          {
+            "optionText": "sí"
+          },
+          {
+            "optionText": "no"
+          }
+        ]
+      },
+      "Bond_StateTaxExempt": {
+        "fieldLabel": "Exento de impuestos estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "sí"
+          },
+          {
+            "optionText": "no"
+          }
+        ]
+      },
+      "Bond_StateTaxRate": {
+        "fieldLabel": "Tasa de impuestos estatales"
+      },
+      "Bond_FederalTaxRate": {
+        "fieldLabel": "Tasa de impuestos federales"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuál es mi rendimiento imponible equivalente?",
+    "answer": "Rendimiento imponible equivalente: <span class='lf-bold'>%rate%%</span>",
+    "CouponYieldBef": "Antes de impuestos",
+    "dataTableCategory": "Rendimiento",
+    "CouponYieldAft": "Después de impuestos",
+    "taxEquivalentYield": "Rendimiento imponible",
+    "TaxFreeYield": "Rendimiento libre de impuestos",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "100%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondtaxability": {
+      "title": "Bonos sujetos al impuesto sobre la renta",
+      "definition": "Seleccione la casilla adecuada para indicar si la fianza está sujeta a impuestos estatales y/o federales. Si usted no está seguro, tenga en cuenta lo siguiente: Existen tres categorías de bonos: (1) bonos corporativos, (2) bonos del gobierno de EE.UU. y (3) bonos municipales. El tratamiento fiscal de los intereses obtenidos de cada categoría de bonos es diferente. Los intereses de los bonos corporativos están sujetos al impuesto sobre la renta federal y estatal. Los intereses de los bonos del gobierno de EE.UU. están sujetos al impuesto sobre la renta federal, pero están exentos del impuesto sobre la renta estatal. Los intereses de los bonos municipales están exentos del impuesto sobre la renta federal y suelen estar exentos del impuesto sobre la renta estatal. Si el propietario de un bono posee un bono municipal que proviene del estado en el que vive, es probable que el interés de ese bono esté exento del impuesto sobre la renta en ese estado. Sin embargo, si el propietario del bono posee un bono municipal que proviene de un estado diferente al estado en el que vive el propietario del bono, es probable que el interés generado por el bono esté sujeto al impuesto sobre la renta. Por ejemplo, el interés de un bono municipal emitido por la ciudad de Phoenix está exento del impuesto sobre la renta federal y estatal si el propietario del bono vive en Arizona. Si el propietario del bono es un residente de California, los intereses del bono seguirán estando exentos del impuesto sobre la renta federal, pero estarán sujetos al impuesto sobre la renta de California."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula cuál debería ser la tasa de rendimiento antes de impuestos en una inversión imponible para igualar la tasa de rendimiento obtenida sobre una inversión exenta de impuestos. La diferencia entre las dos tasas de rendimiento aumentará a medida que aumenta la tasa de impuestos del usuario."
+    },
+    {
+      "textLabel": "Se considera que el impuesto estatal sobre la renta es deducible a los fines de impuestos federales."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el rendimiento libre de impuestos del bono y el rendimiento equivalente a impuestos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento libre de impuestos del bono y el rendimiento equivalente a impuestos"
+    }
+  ]
+}

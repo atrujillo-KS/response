@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_For an owner that buys more than one vehi_256add</name>
+   <tag></tag>
+   <elementGuidId>17a08139-563b-437b-982c-7af97c8835a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_7</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_7']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;For an owner that buys more than one vehicle in the period, we assume that vehic&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>aff7ad24-536c-49d5-9050-ade1d2c9ee5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_7</value>
+      <webElementGuid>fdd9c713-7f3f-41c3-b28f-309017a879af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>For an owner that buys more than one vehicle in the period, we assume that vehicle sale price, down payment, depreciation rate, and loan terms are the same for each new vehicle.</value>
+      <webElementGuid>faeeb09e-c755-4b61-9db5-f0f2fe27ecd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_7&quot;)</value>
+      <webElementGuid>1e69cb60-7af9-4844-97e3-1b1384978166</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_7']</value>
+      <webElementGuid>0bb1407a-9ec4-4877-9162-3dabc083dc8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[8]</value>
+      <webElementGuid>4ed2da67-7820-4deb-8290-8657aca676d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[9]</value>
+      <webElementGuid>70cef81c-fe30-4ea3-878b-d667be40c127</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[9]</value>
+      <webElementGuid>31f24013-2ed7-40ab-8529-e3f40f1f2b95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>4ebb728d-8588-4b9a-821f-8e91cc41121e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>ea08805d-780a-4b98-811b-527f70c328b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='For an owner that buys more than one vehicle in the period, we assume that vehicle sale price, down payment, depreciation rate, and loan terms are the same for each new vehicle.']/parent::*</value>
+      <webElementGuid>6ac2b645-71e7-41d0-9f46-1f0502f36a26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[8]</value>
+      <webElementGuid>76a94442-cc9a-4d8a-a060-4576f7113d3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_7' and (text() = 'For an owner that buys more than one vehicle in the period, we assume that vehicle sale price, down payment, depreciation rate, and loan terms are the same for each new vehicle.' or . = 'For an owner that buys more than one vehicle in the period, we assume that vehicle sale price, down payment, depreciation rate, and loan terms are the same for each new vehicle.')]</value>
+      <webElementGuid>9ab56e6e-8b31-441f-9083-25327c625d46</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

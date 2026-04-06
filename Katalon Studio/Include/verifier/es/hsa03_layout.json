@@ -1,0 +1,139 @@
+{
+  "layout": {
+    "tabs": {
+      "AboutYou": {
+        "tabLabel": "ACERCA DE USTED"
+      },
+      "HSAInfo": {
+        "tabLabel": "INFORMACIÓN DE LA HSA"
+      },
+      "TaxesInflation": {
+        "tabLabel": "IMPUESTOS E INFLACIÓN"
+      }
+    },
+    "fields": {
+      "HSAAge": {
+        "fieldLabel": "¿Tiene 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "¿Tiene su cónyuge 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSARetire": {
+        "fieldLabel": "Años hasta la jubilación"
+      },
+      "MonthlyMedical": {
+        "fieldLabel": "Gastos mensuales previstos de atención médica"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "Deducible del plan HDHP"
+      },
+      "HealthPlanType": {
+        "fieldLabel": "Tipo de plan",
+        "dropdownOptions": [
+          {
+            "optionText": "Individual "
+          },
+          {
+            "optionText": "Familiar "
+          }
+        ]
+      },
+      "HSABalance": {
+        "fieldLabel": "Saldo actual de la HSA"
+      },
+      "HSADeposit": {
+        "fieldLabel": "Monto del depósito mensual en la HSA"
+      },
+      "HSAReturnRate": {
+        "fieldLabel": "Tasa de rendimiento anual de la HSA"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Después de %years% Años",
+    "title": "¿Cuál es el valor futuro de mi HSA?",
+    "answer": "Después de %years% años, su HSA tendrá un valor estimado de <span class='lf-bold'>$%amount%</span>",
+    "worth": "Valor",
+    "selectors": [
+      {
+        "label": "Future value",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "fitrate": {
+      "title": "Tipo del impuesto federal sobre los ingresos (FIT)",
+      "definition": "Las siete tasas de impuesto sobre la renta federal para 2023 son 10%, 12%, 22%, 24%, 32%, 35% y 37%. Estas también se llaman rangos de impuestos. Si se le pide que indique sus tasas de impuestos federales y estatales, agregue su tasa de impuesto sobre la renta estatal para calcular una tasa combinada. Por ejemplo, si paga impuestos federales sobre la renta en el rango impositivo del 22%, y su tasa de impuesto sobre la renta estatal es del 8%, su tasa de impuesto combinada es del 30%."
+    },
+    "hsaage": {
+      "title": "Su edad",
+      "definition": "Su edad se utiliza para determinar el monto máximo que puede contribuir a su HSA. Si usted o su cónyuge son mayores de 55 años, hay un monto de actualización permitido. Consulte la Publicación 969 del IRS para obtener más información."
+    },
+    "hsahealthplantype": {
+      "title": "Tipo de plan de salud de la HSA",
+      "definition": "El tipo de plan de salud que usted tiene influye sobre el deducible mínimo que debe cumplir para su plan de salud a fin de calificar como un plan médico de deducible alto."
+    },
+    "healthcareexpenses": {
+      "title": "Gastos médicos calificados",
+      "definition": "Los gastos médicos calificados se definen en la Publicación 502 del IRS."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Aumento porcentual anual de los precios. La tasa de inflación anual en los EE.UU. alcanzó un promedio de alrededor de 2- 3% en los últimos 10 años."
+    },
+    "hsaannualrateofreturn": {
+      "title": "Tasa de rendimiento anual de su cuenta HSA",
+      "definition": "El rendimiento que espera ganar en el dinero de su HSA."
+    },
+    "hdhpdeductible": {
+      "title": "Beneficios de salud con deducible del plan médico de deducible alto",
+      "definition": "Un deducible es lo que usted paga de su bolsillo antes de que se aplique cualquier pago del seguro por su atención. Un plan médico de deducible alto o HDHP es aquel en el que el deducible es más de $1,650 para una cobertura individual ($3,300 para la cobertura familiar) en 2025."
+    },
+    "hsamonthlydeposit": {
+      "title": "El monto de su depósito mensual a la HSA",
+      "definition": "Su contribución anual permitida se determina según su tipo de plan, su edad y la edad de su cónyuge si está casado. Consulte la Publicación 969 del IRS para obtener más información."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el valor previsto de su Cuenta de ahorros para la salud en el momento de la jubilación."
+    },
+    {
+      "textLabel": "Para obtener asesoramiento del IRS sobre cuentas de ahorros para la salud, incluido qué constituye un gasto médico elegible, consulte la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">Publicación 969</a> y la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">Publicación 502 del IRS</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del valor de la HSA al momento de la jubilación."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Valor de la HSA al momento de la jubilación"
+    }
+  ]
+}

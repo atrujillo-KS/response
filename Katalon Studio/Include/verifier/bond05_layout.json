@@ -1,0 +1,258 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Bond_PurchasePrice",
+          "Bond_FaceValue",
+          "Bond_CouponRate",
+          "Bond_MarketRateToday",
+          "Bond_MonthsToMaturity"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Your bond's value today",
+        "Pre-tax gain (loss) if sold today"
+      ],
+      "fields": [
+        [
+          "Bond_MarketValueIfRatesDrop",
+          "Bond_PreTaxGainOrLossIfRatesDrop"
+        ],
+        [
+          "Bond_MarketValue",
+          "Bond_PreTaxGainOrLoss"
+        ],
+        [
+          "Bond_MarketValueIfRatesRise",
+          "Bond_PreTaxGainOrLossIfRatesRise"
+        ]
+      ]
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Price you paid",
+        "smallLabel": "(% of face value)",
+        "glossaryTerm": "bondprice",
+        "format": "percent",
+        "defaultValue": "110.00",
+        "value": "110.00",
+        "minimumValue": "1.00",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "4.50",
+        "value": "4.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Months to maturity",
+        "smallLabel": "",
+        "glossaryTerm": "maturity",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Today's market rate",
+        "smallLabel": "",
+        "glossaryTerm": "marketinterestrate",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Bond_MarketValueIfRatesDrop": {
+        "fieldLabel": "If rates drop to 3%",
+        "value": "$10,684"
+      },
+      "Bond_PreTaxGainOrLossIfRatesDrop": {
+        "fieldLabel": "If rates drop to 3%",
+        "value": "−$316"
+      },
+      "Bond_MarketValue": {
+        "fieldLabel": "If rates stay at 5%",
+        "value": "$9,761"
+      },
+      "Bond_PreTaxGainOrLoss": {
+        "fieldLabel": "If rates stay at 5%",
+        "value": "−$1,239"
+      },
+      "Bond_MarketValueIfRatesRise": {
+        "fieldLabel": "If rates rise to 7%",
+        "value": "$8,925"
+      },
+      "Bond_PreTaxGainOrLossIfRatesRise": {
+        "fieldLabel": "If rates rise to 7%",
+        "value": "−$2,075"
+      }
+    }
+  },
+  "labels": {
+    "title": "How will rate changes affect my bond's current value?",
+    "answer": "If rates rise to 7%, your bond's value today will be $8,925",
+    "dataTableCategory": "Bond value today",
+    "Bond_MarketValueIfRatesDrop": "If rates drop to ",
+    "Bond_MarketValue": "If rates stay at ",
+    "Bond_MarketValueIfRatesRise": "If rates rise to ",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Value",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Gain If Sold",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Bond price",
+      "definition": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "couponrate": {
+      "title": "Coupon rate",
+      "definition": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    },
+    "maturity": {
+      "title": "Maturity",
+      "definition": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    },
+    "capgain": {
+      "title": "Capital gain",
+      "definition": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    },
+    "bonds": {
+      "title": "Bonds",
+      "definition": "A financial asset that represents a claim on the assets of the company or other entity that issued the bond. A bond is a form of an IOU that usually pays interest at a fixed interest rate."
+    },
+    "marketinterestrate": {
+      "title": "Market interest rate",
+      "definition": "The interest rate for bonds with similar risk characteristics and terms to maturity to those of the bond you are selling."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the effect of market rate changes to the bond value and the pre-tax gain/loss if sold today (prior to maturity)."
+    },
+    {
+      "textLabel": "Bond prices and interest rates move in opposite directions: If the market interest rate for similar bonds increases, your bond value decreases. Investors are willing to pay less for your bond since they can earn a higher interest rate on similar bonds. If the market interest rate for similar bonds decreases, your bond value increases as investors are willing to pay more for your bond. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart depicting how the value of the bond moves in the opposite direction of movements of interest rates."
+    },
+    {
+      "title": "Column chart of gains decrease (or losses increase) on the sale of the bond when rates rise."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "How the value of the bond moves in the opposite direction of movements of interest rates"
+    },
+    {
+      "title": "Gains decrease (or losses increase) on the sale of the bond when rates rise"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_The price you can expect to be offered fo_07f6bc</name>
+   <tag></tag>
+   <elementGuidId>fcfcf984-23dd-4434-b21a-8b9538d96426</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf-tooltip-text']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;The price you can expect to be offered for your used car if you sell it to a dea&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>7c5f9f5a-ea7d-45d1-b5d9-93f8b1dcb706</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-text</value>
+      <webElementGuid>ad45d4d3-2dbb-477e-8f55-0cb5e6b67604</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car.</value>
+      <webElementGuid>51a0e010-b330-49e0-b228-8da7c7d65728</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-text&quot;)</value>
+      <webElementGuid>b9bc63ee-fedb-4fee-989d-eb6b6aebc90c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf-tooltip-text']</value>
+      <webElementGuid>48ef3302-041e-430a-b161-ab30ba809c25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/p</value>
+      <webElementGuid>c9414bce-b4d1-44d1-8d8d-573c60981245</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Trade-in value'])[3]/following::p[1]</value>
+      <webElementGuid>90bd7f61-cec5-4bbc-9ff2-394a5b816d2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[1]</value>
+      <webElementGuid>e672bcc6-557f-4262-a0fd-34e93f2f8769</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/preceding::p[1]</value>
+      <webElementGuid>fa26e4b3-df42-4fcd-9648-1814fa836a55</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[3]</value>
+      <webElementGuid>5c9ae116-817a-417f-aa92-1db48811e5b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car.']/parent::*</value>
+      <webElementGuid>e774bcd6-f65c-4d35-959d-b9a5f1fc5f9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/p</value>
+      <webElementGuid>e3a69ab7-10db-4042-bded-922b27b2af50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf-tooltip-text' and (text() = 'The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car.' or . = 'The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car.')]</value>
+      <webElementGuid>b6dd9982-7943-43af-9804-2d06d08c9995</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

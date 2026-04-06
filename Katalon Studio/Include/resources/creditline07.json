@@ -1,0 +1,132 @@
+[
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How much equity do I have in my home?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "Home equity is the total amount of money you have already paid against the value of your home. You determine the amount by subtracting the amount of the mortgage balance from the current fair market value of your home. Your home equity is constantly fluctuating, as it depends on present property values in your area, mortgage interest rates, appraisal values, home improvements, and many other factors. It is worth noting that the amount of equity in your home is not money in your pocket while the figure sits on paper. Your net worth will not actually increase until and unless you withdraw the money. At that time, the equity will become an asset. In sum, if your home is appraised at $300,000 and you only have $100,000 left to pay it off, your equity is $200,000 on paper."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Home equity is only a dollar figure on paper until you actually access the funds, making it an asset and increasing your financial net worth. Home equity can be accessed by getting a home equity loan, home equity line of credit, or cash-out refinance. These types of loans allow the homeowner to borrow using the equity in his or her home for collateral. Although you are borrowing money from yourself, these loans still require a credit check. There must also be a suitable loan-to-value ratio, since the loan is being secured against the value of the property."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/div/h2",
+      "value": "The estimated amount of equity in your home is $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Estimated home value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-label",
+      "value": "Outstanding mortgage principal"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AccruedInterest-label",
+      "value": "Accrued interest"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_AccruedInterest",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AccruedInterest-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue-input-safe",
+      "value": "640000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-input-safe",
+      "value": "300000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_AccruedInterest-input-safe",
+      "value": "1400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "300000"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*[@id='lf-selectors-template-placeholder']/div[1]/h2",
+      "value": "The estimated amount of equity in your home is  $338,600"
+    }
+  }
+]

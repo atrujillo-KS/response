@@ -1,0 +1,254 @@
+{
+  "layout": {
+    "tabs": {
+      "ExemptBond": {
+        "tabLabel": "BONO EXENTO DE IMPUESTOS "
+      },
+      "TaxableBond": {
+        "tabLabel": "BONO IMPONIBLE"
+      },
+      "SharedBondInfo": {
+        "tabLabel": "INFORMACIÓN SOBRE EL BONO"
+      }
+    },
+    "fields": {
+      "Bond_TaxExemptBondPurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_TaxExemptBondFaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_TaxExemptBondCouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_TaxExemptBondMonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_MonthsTaxExemptBondOwned": {
+        "fieldLabel": "Meses hasta que usted venda"
+      },
+      "Bond_TaxExemptBondMarketRateToday": {
+        "fieldLabel": "Tasa de mercado cuando vende"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Bono exento de impuestos",
+        "Bono imponible"
+      ]
+    },
+    "results1": {
+      "subtitle": "Si vende en %months% meses",
+      "columnHeaders": [
+        "Bono exento de impuestos",
+        "Bono imponible"
+      ]
+    },
+    "results2": {
+      "columnHeaders": [
+        "Bono exento de impuestos",
+        "Bono imponible"
+      ],
+      "subtitle": "Si lo mantiene hasta el vencimiento"
+    },
+    "results_fields": {
+      "Bond_SellingPrice": {
+        "fieldLabel": "Precio de venta"
+      },
+      "Bond_TaxableBondSellingPrice": {
+        "fieldLabel": "Precio de venta"
+      },
+      "Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_TaxableBondYieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Bond_TaxableBondYieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Bond_TaxexemptBondYieldBeforeTaxesIfSell": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_TaxableBondYieldBeforeTaxesIfSell": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_TaxexemptBondYieldAfterTaxesIfSell": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Bond_TaxableBondYieldAfterTaxesIfSell": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "secondSubtitle": {
+        "fieldLabel": "Dummy subtitle"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Precio de venta",
+    "title": "¿Debo comprar un bono imponible o exento de impuestos?",
+    "answer": "Comprar un <span class='lf-bold'>bono %tax%</span> le hará ganar un mayor rendimiento después de impuestos del <span class='lf-bold'>%rate%%</span>",
+    "same_as_answer": "Comprar un <span class='lf-bold'>%tax%</span> le hará ganar <span class='lf-bold'>lo mismo</span> rendimiento después de impuestos</span>",
+    "taxExempt": "bono exento de impuestos",
+    "SellPrice_Bond12": "Bono exento de impuestos",
+    "taxable": "bono imponible",
+    "SellPrice2_Bond12": "Bono imponible",
+    "categories": [
+      "Bono exento de impuestos",
+      "Bono imponible"
+    ],
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "Price": "Precio",
+    "yieldToCall": "Rendimiento",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "En el momento de la venta",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Precio de venta",
+        "width": "33%"
+      },
+      {
+        "label": "Al vencimiento",
+        "width": "33%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "taxexemptbond": {
+      "title": "Bonos exentos de impuestos",
+      "definition": "Los intereses de bonos municipales están exentos de impuestos federales sobre la renta. Los intereses de bonos del Tesoro están exentos de impuestos estatales sobre la renta. En general, si un inversor es residente de un estado que emite bonos municipales, los intereses de dichos bonos también están exentos de impuestos estatales."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "taxableequivalentyield": {
+      "title": "Rendimiento equivalente imponible",
+      "definition": "La tasa de interés mínima que debe ganar un inversor sobre una inversión imponible para igualar su tasa de rendimiento de un valor exento de impuestos."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "marketinterestrate": {
+      "title": "Tasa de interés del mercado",
+      "definition": "La tasa de interés para los bonos con características de riesgo y plazos de vencimiento similares a los del bono que usted vende."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula las tasas de rendimiento, antes y después de impuestos, para un bono imponible y <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxExemptBond\">un bono exento de impuestos</a></span>. Las tasas de rendimiento se muestran en dos situaciones: mantener el bono hasta su vencimiento o venderlo antes de su vencimiento."
+    },
+    {
+      "textLabel": "Los bonos exentos de impuestos generan una tasa de rendimiento más baja porque el interés que pagan por lo general está exento de impuestos federales sobre la renta (y a veces estatales). El rendimiento de un bono imponible que es equivalente al rendimiento de un bono exento de impuestos se denomina <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableEquivalentYield\">rendimiento equivalente imponible</a></span>."
+    },
+    {
+      "textLabel": "El rendimiento equivalente imponible depende de la tasa de impuestos sobre la renta del inversor. Por ejemplo, un inversor en la categoría impositiva del 25 % que posee un bono exento de impuestos que produce un rendimiento del 5 % requeriría un rendimiento del 6,67 % en un bono imponible para hacer que el bono imponible sea igualmente atractivo."
+    },
+    {
+      "textLabel": "Esta herramienta supone que el bono imponible paga impuestos según las reglas de impuestos federales y estatales regulares, es decir, se trata como un bono corporativo."
+    },
+    {
+      "textLabel": "Dependiendo del tipo de bonos que se comparen, los impuestos aplicados a los pagos de cupones variarán."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los impuestos que paga el usuario si vende un día antes de los 12 meses y un día después de los 12 meses."
+    },
+    {
+      "title": "Gráfico de columnas del precio de venta de cada bono en el momento de la venta."
+    },
+    {
+      "title": "Gráfico de columnas que compara el rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Impuestos pagados por el usuario si vende un día antes de los 12 meses y un día después de los 12 meses"
+    },
+    {
+      "title": "Precio de venta de cada bono en el momento de la venta"
+    },
+    {
+      "title": "Rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento"
+    }
+  ]
+}

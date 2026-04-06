@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_View_Data_Table</name>
+   <tag></tag>
+   <elementGuidId>ea3177ba-25b8-4d9d-8cac-295dc5300fab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Chart context menu' or . = 'Chart context menu')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>g.highcharts-no-tooltip.highcharts-button.lf-data-table.highcharts-button-hover</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='lf_view_data_table_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>g</value>
+      <webElementGuid>02765662-5f78-40ec-8850-898bf3bf7f7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>highcharts-no-tooltip highcharts-button lf-data-table highcharts-button-hover</value>
+      <webElementGuid>745b4857-55c8-48d7-a214-5bcbe9f151bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-linecap</name>
+      <type>Main</type>
+      <value>round</value>
+      <webElementGuid>07f0a475-d512-471e-89de-bfb8cfd22953</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>transform</name>
+      <type>Main</type>
+      <value>translate(553,15)</value>
+      <webElementGuid>f28b263f-d9f4-4640-9bf7-f0f34a064ecb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Chart context menu</value>
+      <webElementGuid>999b5702-bcae-4472-98cb-44fc42a5b51b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;highcharts-upna329-0&quot;)/svg[@class=&quot;highcharts-root&quot;]/g[@class=&quot;highcharts-exporting-group&quot;]/g[@class=&quot;highcharts-no-tooltip highcharts-button lf-data-table highcharts-button-hover&quot;]</value>
+      <webElementGuid>be35e977-741e-4a6c-bad7-20f0f6fbfabf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id='lf_view_data_table_1']</value>
+      <webElementGuid>e78383a6-45d1-4114-ac0d-42dc3aac120f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

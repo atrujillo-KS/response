@@ -1,0 +1,340 @@
+{
+  "layout": {
+    "tabs": {
+      "Personal": {
+        "tabLabel": "Personal",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Información personal"
+        }
+      },
+      "Premiums": {
+        "tabLabel": "Primas",
+        "pageTitle": "Información sobre las primas",
+        "pageDesc": "Con una póliza de vida universal, tiene la flexibilidad de cambiar la cantidad y frecuencia de los pagos de la prima dentro de los límites especificados en la póliza. Usted puede introducir hasta tres pagos mensuales de la prima y / o sumas globales diferentes.",
+        "monthly1": {
+          "sectionLabel": "Primas mensuales",
+          "rows": [
+            {
+              "rowLabel": "Premiums_MonthlyPremium1"
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium2"
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium3"
+            }
+          ]
+        },
+        "monthly2": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "Premiums_MonthlyPremium1"
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium2"
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium3"
+            }
+          ]
+        },
+        "lumpSum1": {
+          "sectionLabel": "Primas en un solo pago total",
+          "rows": [
+            {
+              "rowLabel": "lumpSum_Premium1"
+            },
+            {
+              "rowLabel": "lumpSum_Premium2"
+            },
+            {
+              "rowLabel": "lumpSum_Premium3"
+            }
+          ]
+        },
+        "lumpSum2": {
+          "sectionLabel": "",
+          "rows": [
+            {
+              "rowLabel": "lumpSum_Premium1"
+            },
+            {
+              "rowLabel": "lumpSum_Premium2"
+            },
+            {
+              "rowLabel": "lumpSum_Premium3"
+            }
+          ]
+        }
+      },
+      "Fees": {
+        "tabLabel": "Comisiones",
+        "default": {
+          "sectionLabelH2": "Información sobre las comisiones",
+          "sectionLabel": ""
+        }
+      },
+      "Payout": {
+        "tabLabel": "Pagos",
+        "default": {
+          "sectionLabelH2": "Información de los pagos",
+          "sectionLabel": ""
+        },
+        "cash": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Valor en efectivo",
+          "sectionDesc": "Usted puede desear o necesitar para sacar provecho de su póliza de seguro de vida en algún momento antes de la muerte. Introduzca la siguiente información para incluir este escenario en los resultados."
+        }
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Ahora",
+        "Dentro de 25 años",
+        "Al momento del fallecimiento"
+      ]
+    },
+    "results_fields": {
+      "NowReceived": {
+        "fieldLabel": "Recibido después de impuestos"
+      },
+      "NowTaxes": {
+        "fieldLabel": "Impuestos adeudados"
+      },
+      "NowPrem": {
+        "fieldLabel": "Primas pagadas"
+      },
+      "NowRate": {
+        "fieldLabel": "Tasa de rendimiento después de impuestos"
+      }
+    },
+    "fields": {
+      "Insurance_YearsUntilCashInPolicy": {
+        "fieldLabel": "Años hasta que retira el valor en efectivo",
+        "valueTextLabel": "años"
+      },
+      "Insurance_UpfrontFees": {
+        "fieldLabel": "Comisiones iniciales"
+      },
+      "Insurance_PercentageOfPremiumsAppliedToFees": {
+        "fieldLabel": "% de las primas aplicadas a las comisiones"
+      },
+      "Insurance_RecurringFeeType": {
+        "fieldLabel": "Se cobra comisión recurrente",
+        "dropdownOptions": [
+          {
+            "optionText": "Mensual "
+          },
+          {
+            "optionText": "Anual (% del monto de la póliza)"
+          },
+          {
+            "optionText": "Anual (% de valor en efectivo)"
+          }
+        ]
+      },
+      "Insurance_MonthlyFees": {
+        "fieldLabel": "Comisiones mensuales"
+      },
+      "Insurance_AnnualFeePercentageofPolicyAmount": {
+        "fieldLabel": "Comisión anual",
+        "smallLabel": "(% del monto de la póliza)"
+      },
+      "Insurance_AnnualFeePercentageofCashValue": {
+        "fieldLabel": "Comisión anual",
+        "smallLabel": "(% de valor en efectivo)"
+      },
+      "Insurance_YearsOwnedPolicy": {
+        "fieldLabel": "Años que ha tenido póliza de seguro ",
+        "valueTextLabel": "años"
+      },
+      "Insurance_DeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_DeathBenefitPayoutOption": {
+        "fieldLabel": "Opción de pago del beneficio por muerte",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionText": "Recibir el monto de la póliza solamente "
+          },
+          {
+            "optionText": "Recibir también el valor en efectivo "
+          }
+        ]
+      },
+      "Insurance_CurrentCashValue": {
+        "fieldLabel": "Valor en efectivo"
+      },
+      "Insurance_ExpectedInterestRate": {
+        "fieldLabel": "Interés promedio que espera devengar"
+      },
+      "Insurance_SurrenderCharge": {
+        "fieldLabel": "Cargo de rescate"
+      },
+      "Insurance_MonthlyPremiumOneAmount": {
+        "fieldLabel": "Prima mensual 1",
+        "ariaLegendLabel": "Cantidad"
+      },
+      "Insurance_MonthlyPremiumOneYearsPaid": {
+        "fieldLabel": "Prima mensual 1",
+        "smallLabel": "",
+        "ariaLegendLabel": "Años pagados",
+        "valueTextLabel": "años"
+      },
+      "Insurance_MonthlyPremiumTwoAmount": {
+        "fieldLabel": "Prima mensual 2"
+      },
+      "Insurance_MonthlyPremiumTwoYearsPaid": {
+        "fieldLabel": "Prima mensual 2",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_MonthlyPremiumThreeAmount": {
+        "fieldLabel": "Prima mensual 3"
+      },
+      "Insurance_MonthlyPremiumThreeYearsPaid": {
+        "fieldLabel": "Prima mensual 3",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_LumpSumPremiumOneAmount": {
+        "fieldLabel": "Prima 1 en un solo pago total",
+        "ariaLegendLabel": "Cantidad"
+      },
+      "Insurance_LumpSumPremiumOneYearsPaid": {
+        "fieldLabel": "Prima 2 en un solo pago total",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "Años pagados"
+      },
+      "Insurance_LumpSumPremiumTwoAmount": {
+        "fieldLabel": "Prima 2 en un solo pago total"
+      },
+      "Insurance_LumpSumPremiumThreeAmount": {
+        "fieldLabel": "Prima 3 en un solo pago total"
+      },
+      "Insurance_LumpSumPremiumTwoYearsPaid": {
+        "fieldLabel": "Prima 2 en un solo pago total",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Insurance_LumpSumPremiumThreeYearsPaid": {
+        "fieldLabel": "Prima 3 en un solo pago total",
+        "smallLabel": "",
+        "valueTextLabel": "años"
+      },
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal "
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Tasa de rendimiento después de impuestos",
+    "dataTableCategory2": "Recibido después de impuestos",
+    "Premiums_MonthlyPremium1": "Prima mensual 1",
+    "Premiums_MonthlyPremium2": "Prima mensual 2",
+    "Premiums_MonthlyPremium3": "Prima mensual 3",
+    "lumpSum_Premium1": "Prima 1 en un solo pago total",
+    "lumpSum_Premium2": "Prima 2 en un solo pago total",
+    "lumpSum_Premium3": "Prima 3 en un solo pago total",
+    "title": "¿Cuál es mi rendimiento sobre una póliza de seguro de vida variable?",
+    "answer": "Su tasa de rendimiento después de impuestos al momento del fallecimiento es de <span class='lf-bold'>%DeathRate%%</span>",
+    "now": "Ahora",
+    "years25": "Dentro de 25 años",
+    "death": "Al momento del fallecimiento",
+    "endOfTerm": "Dentro de %years% años",
+    "endOfPolicy": "Dentro de %years% años",
+    "endOfLife": "Al momento del fallecimiento",
+    "rateOfReturn": "Tasa de rendimiento %",
+    "amountReceived": "Cantidad recibida",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Cantidad recibida",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "surrendercharge": {
+      "title": "Cargo de rescate",
+      "definition": "Comisión que usted paga para cancelar una póliza de seguro de vida o un contrato de anualidad. El cargo de rescate también se denomina cargo de venta diferida o comisión de salida."
+    },
+    "cashvalue": {
+      "title": "Valor en efectivo",
+      "definition": "Valor en dólares que se devuelve al tomador de un seguro si se cancela la póliza."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "deathbenefit": {
+      "title": "Beneficio por muerte",
+      "definition": "Monto que se paga al beneficiario de una póliza de seguro de vida al momento del fallecimiento del titular de la póliza. El monto puede ser una suma global o una anualidad."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara las tasas de retorno de una póliza de seguro de vida universal variable para tres períodos:"
+    },
+    {
+      "textLabel": "Entre el momento en que adquirió la póliza y ahora."
+    },
+    {
+      "textLabel": "Entre el momento en que adquirió la póliza y el momento en que usted reciba el valor en efectivo total de la póliza."
+    },
+    {
+      "textLabel": "Entre el momento en que adquirió la póliza y el momento de su fallecimiento."
+    },
+    {
+      "textLabel": "La tasa de retorno está basada en el monto de la póliza, los dividendos recibidos, las primas de la póliza y las tasas de impuesto."
+    },
+    {
+      "textLabel": "El seguro de vida universal variable, junto con el seguro de vida entera y el de vida universal, son pólizas de seguro de valor en efectivo, ya que generan una tasa de retorno sobre la inversión y se pueden usar como garantía para la obtención de préstamos."
+    },
+    {
+      "textLabel": "Las pólizas de seguro de vida universal variable pagan un beneficio por muerte a su beneficiario cuando usted muere. La cobertura de la póliza continúa en tanto y en cuanto usted pague las primas. Su prima se basa en estadísticas actuariales para su edad y sus características de salud."
+    },
+    {
+      "textLabel": "Mientras su póliza está en vigencia, devenga un valor en efectivo que se puede usar como garantía a una tasa de interés consignada en el contrato de la póliza. Todos los préstamos pendientes al momento de su fallecimiento reducen el monto del beneficio por muerte."
+    },
+    {
+      "textLabel": "Si usted cancela una póliza de vida universal variable, a veces debe pagar un cargo de rescate, especialmente si solo tuvo la póliza durante un período breve. Una característica clave de las pólizas de seguro de vida universal es que se puede omitir pagar la prima si el rendimiento de las inversiones del asegurador es lo suficientemente bueno como para cubrir el pago de las primas."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara las tasas de rendimiento después de impuestos de la póliza de seguro de vida variable si se cobra ahora, se cobra después de un cierto número de años y al fallecer."
+    },
+    {
+      "title": "Gráfico de columnas que compara el monto recibido en la póliza de seguro de vida variable si se cobra ahora, se cobra después del número especificado de años y al fallecer."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tasas de rendimiento después de impuestos de la póliza de seguro de vida variable si se cobra ahora, se cobra después de un cierto número de años y al fallecer"
+    },
+    {
+      "title": "Monto recibido en la póliza de seguro de vida variable si se cobra ahora, se cobra después del número especificado de años y al fallecer"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Disminución de 10% ",
+        "Disminución de 20% "
+      ]
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results_fields": {
+      "DownPmt2": {
+        "fieldLabel": "Cantidad de la cuota inicial"
+      },
+      "DownPmt4": {},
+      "MortIns2Home13": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "MortIns4Home13": {},
+      "TotPmt2Home13": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPmt4Home13": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cómo puedo reducir los costos del seguro hipotecario?",
+    "answer": "Usted puede reducir los costos de su seguro hipotecario si da una cuota inicial mayor.",
+    "payments_over_time": "Ver sus pagos anuales en el tiempo.",
+    "pct_5_down": "Disminución de 5%",
+    "pct_10_down": "Disminución de 10% ",
+    "pct_15_down": "Disminución de 15%",
+    "pct_20_down": "Disminución de 20% ",
+    "pmi_payment": "Pago del seguro hipotecario privado ",
+    "total_payment": "Pago total:",
+    "selectors": [
+      {
+        "label": "Primas del seguro hipotecario ",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Pagos",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "closing": {
+      "title": "Cierre",
+      "definition": "El cierre es la etapa final del proceso del préstamo. Exige el pago de todos los fondos adeudados a la otra parte y la firma de los documentos necesarios para registrar la transacción."
+    },
+    "hpa": {
+      "title": "Ley de Proteccion al Propietario",
+      "definition": "La Ley de Protección de Propietarios de Viviendas (Homeowner's Protection Act) de 1998 exige que los prestamistas de créditos para viviendas cancelen un requisito de seguro hipotecario privado (PMI) si el prestatario posee un patrimonio de al menos 22% en su vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "ltv": {
+      "title": "Relación préstamo-valor (LTV)",
+      "definition": "La relación préstamo-valor (LTV) es un factor clave que los prestamistas examinan antes de aprobar un préstamo hipotecario. Se calcula dividiendo el monto del préstamo hipotecario por el valor justo de mercado de la vivienda."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora estima su pago mensual para el seguro hipotecario privado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PMI\">PMI</a></span>) a lo largo de un rango de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#downpayment\">pagos iniciales</a></span>. Si su pago inicial es por lo menos el 20% del precio de compra de su vivienda, su prestamista no le exige que obtenga el seguro hipotecario."
+    },
+    {
+      "textLabel": "Los prestamistas hipotecarios exigen seguro hipotecario si la relación préstamo-valor (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#LTV\">LTV</a></span>) es mayor que el 80%. Cuando usted <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Closing\">cierra</a></span> un préstamo hipotecario, la relación podrá ser mayor que el 80% pero podrá reducirse en unos pocos años a medida que usted cancela su capital del préstamo y su vivienda se revalúa."
+    },
+    {
+      "textLabel": "Usted tal vez deba pagar por una tasación para confirmar que la relación préstamo-valor de su vivienda es del 80% o menor. La Ley de Protección a los Propietarios de Viviendas (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#HPA\">HPA</a></span>), aprobada en 1998, exige que los prestamistas cancelen el seguro hipotecario cuando la relación préstamo-valor alcanza el 78% en función de la amortización original del préstamo y sin tener en cuenta el valor que tiene la propiedad en ese momento."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los pagos mensuales del seguro hipotecario que se requerirían en cuatro intervalos de pago inicial diferentes que van del 5% al ​​20%."
+    },
+    {
+      "title": "Column chart of the total monthly payments including principal, interest, PMI, property taxes, and homeowners insurance at four different down payment intervals ranging from 5% to 20%."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Pagos mensuales del seguro hipotecario que se requerirían en cuatro intervalos de pago inicial diferentes que van del 5% al 20%."
+    },
+    {
+      "title": "Total monthly payments including principal, interest, PMI, property taxes, and homeowners insurance at four different down payment intervals ranging from 5% to 20%"
+    }
+  ]
+}

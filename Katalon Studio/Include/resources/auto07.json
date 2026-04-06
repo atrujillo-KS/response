@@ -1,0 +1,165 @@
+[
+
+  {
+    "click": {
+      "id": "link=Loan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-label",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-small-label",
+      "value": "(months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Auto_SecondLoanDownPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Shared Loan Info"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "45,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "28.49"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "4.23"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Loan 1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "5.12"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Loan 2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_SecondLoanInterestRate",
+      "value": "4.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Loan 2 will cost you, in today's dollars, $414 less than Loan 1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto07_result_value",
+      "value": "$1,276"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmt2Auto07_result_value",
+      "value": "$1,206"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto07_result_value",
+      "value": "$3,438"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2Auto07_result_value",
+      "value": "$2,910"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

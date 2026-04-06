@@ -1,0 +1,91 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-truist/calc/readynow?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Truist Custom Calculator",
+      "value": "Truist Custom Calculator"      
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your monthly payment will be $87.50 and your total repayment amount over 6 months will be $525.00 with an effective APR of 16.95%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_LoanAmountNeeded-label",
+      "value": "Amount needed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ReadyNow_LoanAmountNeeded",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_LoanAmountNeeded_tooltip",
+      "value": "i"
+    }
+  },
+
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_LoanTerm-label",
+      "value": "Loan term in months"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ReadyNow_LoanTerm",
+      "value": "6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_OriginationFee-error-message",
+      "value": "Must be between $0 and $100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_OriginationFee-label",
+      "value": "Loan fee per $100 borrowed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ReadyNow_OriginationFee",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ReadyNow_OriginationFee-error-message",
+      "value": "Must be between $0 and $100"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ReadyNow_LoanAmountNeeded"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ReadyNow_LoanAmountNeeded",
+      "value": "label=$1,000"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your monthly payment will be $175.00 and your total repayment amount over 6 months will be $1,050.00 with an effective APR of 16.95%"
+    }
+  }
+]

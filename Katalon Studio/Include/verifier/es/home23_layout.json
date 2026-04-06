@@ -1,0 +1,187 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "BÁSICO"
+      },
+      "advanced": {
+        "tabLabel": "AVANZADO"
+      }
+    },
+    "results_fields": {
+      "PrincAndInt": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TotPay": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "LoanAmtOut": {
+        "fieldLabel": "Monto inicial del préstamo"
+      },
+      "VAFundingFee": {
+        "fieldLabel": "Cargo de provisión de fondos del VA"
+      },
+      "LoanTotal": {
+        "fieldLabel": "Monto total del préstamo"
+      },
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado "
+      }
+    },
+    "fields": {
+      "Home_USMilitaryExperience": {
+        "fieldLabel": "Experiencia en las fuerzas militares estadounidenses",
+        "dropdownOptions": [
+          {
+            "optionText": "Servicio activo/veterano"
+          },
+          {
+            "optionText": "Reserva/Guardia Nacional"
+          },
+          {
+            "optionText": "Veterano discapacitado"
+          }
+        ]
+      },
+      "Home_PriorVALoanBenefitUse": {
+        "fieldLabel": "Uso previo del préstamo del VA",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "amount": "Cantidad",
+    "title": "¿Cuánto serán mis pagos del préstamo del Departamento de Asuntos de Veteranos o VA?",
+    "answer": "Su pago total será de <span class='lf-bold'>%result%</span>",
+    "payments_over_time": "See your annual payments over time.",
+    "selectors": [
+      {
+        "label": "Desglose",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "En el tiempo",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Cronograma de pagos"
+          }
+        ]
+      }
+    ],
+    "PrincAndInt": "Capital e intereses",
+    "TaxAndIns": "Impuestos y seguro de la propiedad",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "year_1": "1 año",
+    "year_2": "2 años",
+    "year_3": "3 años",
+    "year_4": "4 años",
+    "year_5": "5 años",
+    "year_10": "10 años",
+    "year_15": "15 años",
+    "year_20": "20 años",
+    "year_30": "30 años",
+    "year": "años",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Interés acumulativo"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Los préstamos del VA son hipotecas aseguradas por el Departamento de Asuntos de los Veteranos (VA) disponibles para aquellos que compran una residencia principal que han prestado servicio o actualmente están prestando servicio en las fuerzas militares de Estados Unidos. Los préstamos del VA no tienen primas de seguro hipotecario y no requieren un pago inicial (a menos que el prestamista lo exija).</br></br>En general, todos los prestatarios de préstamos del VA deben pagar un cargo de provisión de fondos del VA. Este cargo es un porcentaje del monto del préstamo que varía según el tipo de préstamo y la categoría militar del usuario, si el usuario utiliza por primera vez el préstamo o ya lo ha utilizado, y el tamaño del pago inicial. Esta herramienta supone que el cargo de provisión de fondos se financia como parte del monto del préstamo en lugar de pagarlo en efectivo.\n"
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del pago mensual total por principal e intereses, impuestos a la propiedad y seguro de propietarios."
+    },
+    {
+      "title": "Stacked column chart of the amounts applied to principal and interest at different intervals over the course of the loan term."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, impuestos prediales y seguro de vivienda"
+    },
+    {
+      "title": "Importes aplicados al principal y los intereses en diferentes intervalos durante el plazo del préstamo"
+    }
+  ]
+}

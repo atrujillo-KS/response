@@ -1,0 +1,310 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "selected": true,
+        "tabId": "lf-basic",
+        "tabClass": "lf-open",
+        "fieldSetId": "lf-basic",
+        "tabLabel": "",
+        "tableId": "lf_Basic",
+        "fields": [
+          "PersonalLoan_AmountNeeded",
+          "PersonalLoan_LoanTermInMonths",
+          "Global_State",
+          "Global_PricingAdjustment",
+          "PersonalLoan_LowerInterestRate"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": []
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "PersonalLoan_LowerPayment": {
+        "fieldLabel": "Lower payment"
+      },
+      "PersonalLoan_HigherPayment": {
+        "fieldLabel": "Higher payment"
+      },
+      "PersonalLoan_HigherInterestRate": {
+        "fieldLabel": "Higher interest rate"
+      },
+      "PersonalLoan_LowerTotalCost": {
+        "fieldLabel": "Lower total cost"
+      },
+      "PersonalLoan_HigherTotalCost": {
+        "fieldLabel": "Higher total cost"
+      }
+    },
+    "fields": {
+      "PersonalLoan_AmountNeeded": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Amount needed",
+        "defaultValue": "20000",
+        "glossaryTerm": "amountneeded",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "3500",
+        "sliderMaxVal": "50000",
+        "widgetStep": "500",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "3500",
+        "maximumValue": "100000",
+        "value": "20000",
+        "format": "currency"
+      },
+      "PersonalLoan_LoanTermInMonths": {
+        "fieldLabel": "Loan term in months",
+        "smallLabel": "",
+        "glossaryTerm": "loanterminmonths",
+        "dropdownOptions": [
+          {
+            "optionValue": "24",
+            "optionText": "24",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "36",
+            "optionText": "36",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "48",
+            "optionText": "40",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "60",
+            "optionText": "60",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "72",
+            "optionText": "72",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "84",
+            "optionText": "84",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "96",
+            "optionText": "96",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "108",
+            "optionText": "108",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "120",
+            "optionText": "120",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_State": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "state",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Alabama",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Arkansas",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "District of Columbia",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Florida",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Georgia",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Indiana",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Kentucky",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Maryland",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "8",
+            "optionText": "Mississippi",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "9",
+            "optionText": "North Carolina",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "10",
+            "optionText": "New Jersey",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "11",
+            "optionText": "Ohio",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "12",
+            "optionText": "Pennsylvania",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "13",
+            "optionText": "South Carolina",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "14",
+            "optionText": "Tennessee",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "15",
+            "optionText": "Texas",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "16",
+            "optionText": "Virginia",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "17",
+            "optionText": "West Virginia",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_PricingAdjustment": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Pricing adjustment",
+        "defaultValue": "5.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10.00",
+        "widgetStep": "1",
+        "value": "5.00",
+        "format": "percent"
+      },
+      "PersonalLoan_LowerInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Lower interest rate",
+        "defaultValue": "5.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1",
+        "value": "5.00",
+        "format": "percent"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Month",
+    "title": "How much will my Ready Now Loan payments be?",
+    "answer": "Your <span class='lf-bold'>estimated monthly payment is $%PersonalLoan_LowerPayment%</span> - <span class='lf-bold'>$%PersonalLoan_HigherPayment%</span> based on an interest rate range of <span class='lf-bold'>%PersonalLoan_LowerInterestRate%%</span> - <span class='lf-bold'>%PersonalLoan_HigherInterestRate%%</span>. Your total loan cost is estimated to be <span class='lf-bold'>$%PersonalLoan_LowerTotalCost%</span> - <span class='lf-bold'>$%PersonalLoan_HigherTotalCost%</span>.",
+    "selectors": [
+      {
+        "label": "Principal & Interest Payment",
+        "width": "100%",
+        "first": true,
+        "getTableData": true
+      }
+    ]
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Line chart that shows the loan balances over time for the lower and higher interest rates."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table that shows the loan balances over time for the lower and higher interest rates."
+    }
+  ]
+}

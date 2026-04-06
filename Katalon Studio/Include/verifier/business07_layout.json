@@ -1,0 +1,1635 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LeaseOption",
+        "BuyOption",
+        "Expenses",
+        "Property",
+        "TaxesInflation",
+        "results"
+      ],
+      "LeaseOption": {
+        "selected": true,
+        "tabLabel": "Lease Option",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "Lease Option",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_CRELeaseSecurityDeposit",
+                "Business_IsCRELeaseSecurityDepositRefundable",
+                "Business_CRELeaseTerm",
+                "Business_CRELeasePaymentType",
+                "Business_CRELeaseAnnualCostPerSquareFoot",
+                "Business_CRELeaseFlatRatePayment",
+                "Business_CRELeasePaymentFrequency",
+                "Business_AnnualIncreaseInLeasePayments",
+                "Business_OtherLeaseFees"
+              ]
+            }
+          ]
+        }
+      },
+      "BuyOption": {
+        "tabLabel": "Buy Option",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "Buy Option",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_CREPurchasePrice",
+                "Business_CREPurchasePricePortionForLand",
+                "Business_CREClosingCosts",
+                "Business_CREDownPaymentPercentage",
+                "Business_CRELoanTerm",
+                "Business_CREInterestRate",
+                "Business_CREMACRSDepreciationYears"
+              ]
+            }
+          ]
+        }
+      },
+      "Expenses": {
+        "tabLabel": "Expenses",
+        "pageTitle": "Projected Expenses",
+        "custom": "new-standard-3col",
+        "sections": [
+          "lease",
+          "buy"
+        ],
+        "lease": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Construction or remodeling (one-time)",
+              "fields": [
+                "Business_CRELeaseConstructionCosts"
+              ]
+            },
+            {
+              "rowLabel": "Property insurance (yearly)",
+              "fields": [
+                "Business_CRELeaseAnnualPropertyInsurance"
+              ]
+            },
+            {
+              "rowLabel": "Property tax (yearly)",
+              "fields": [
+                "Business_CRELeaseAnnualPropertyTax"
+              ]
+            },
+            {
+              "rowLabel": "Maintenance (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyMaintenance"
+              ]
+            },
+            {
+              "rowLabel": "Electricity (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyElectricity"
+              ]
+            },
+            {
+              "rowLabel": "Gas (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyGas"
+              ]
+            },
+            {
+              "rowLabel": "Sewer (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlySewer"
+              ]
+            },
+            {
+              "rowLabel": "Waste disposal (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyWasteDisposal"
+              ]
+            },
+            {
+              "rowLabel": "Water (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyWater"
+              ]
+            },
+            {
+              "rowLabel": "Other (monthly)",
+              "fields": [
+                "Business_CRELeaseMonthlyOtherCosts"
+              ]
+            }
+          ]
+        },
+        "buy": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "rows": [
+            {
+              "rowLabel": "Construction or remodeling (one-time)",
+              "fields": [
+                "Business_CRELoanConstructionCosts"
+              ]
+            },
+            {
+              "rowLabel": "Property insurance (yearly)",
+              "fields": [
+                "Business_CRELoanAnnualPropertyInsurance"
+              ]
+            },
+            {
+              "rowLabel": "Property tax (yearly)",
+              "fields": [
+                "Business_CRELoanAnnualPropertyTax"
+              ]
+            },
+            {
+              "rowLabel": "Maintenance (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyMaintenance"
+              ]
+            },
+            {
+              "rowLabel": "Electricity (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyElectricity"
+              ]
+            },
+            {
+              "rowLabel": "Gas (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyGas"
+              ]
+            },
+            {
+              "rowLabel": "Sewer (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlySewer"
+              ]
+            },
+            {
+              "rowLabel": "Waste disposal (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyWasteDisposal"
+              ]
+            },
+            {
+              "rowLabel": "Water (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyWater"
+              ]
+            },
+            {
+              "rowLabel": "Other (monthly)",
+              "fields": [
+                "Business_CRELoanMonthlyOtherCosts"
+              ]
+            }
+          ]
+        }
+      },
+      "Property": {
+        "tabLabel": "Property",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "Property Information",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_CRESquareFootageDesired",
+                "Business_PredictedYearlyChangeInPropertyValues",
+                "Business_PredictedYearlyChangeAmountInPropertyValues"
+              ]
+            }
+          ]
+        }
+      },
+      "TaxesInflation": {
+        "tabLabel": "Taxes & Inflation",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "Taxes, savings, and inflation rates",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_FederalTaxRate",
+                "Business_StateTaxRate",
+                "Business_SavingsRate",
+                "Global_InflationRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Lease",
+        "Buy"
+      ],
+      "fields": [
+        [
+          "LeaseTotalPmtsBusiness07",
+          "LoanTotalPmtsBusiness07"
+        ],
+        [
+          "LeaseTaxSavingsBusiness07",
+          "LoanTaxSavingsBusiness07"
+        ],
+        [
+          "LeaseNetPmtsBusiness07",
+          "LoanNetPmtsBusiness07"
+        ],
+        [
+          "LeaseNPVNetPmts",
+          "LoanNPVNetPmts"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_SavingsRate": {
+        "fieldLabel": "Savings interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "costofcapital",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "State tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.50",
+        "value": "5.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "34.00",
+        "value": "34.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_PredictedYearlyChangeInPropertyValues": {
+        "fieldLabel": "Predicted yearly change in property values",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "No change",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease ",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseMonthlyMaintenance": {
+        "fieldLabel": "Maintenance, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlyElectricity": {
+        "fieldLabel": "Electricity, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "400",
+        "value": "400",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlyGas": {
+        "fieldLabel": "Gas, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlySewer": {
+        "fieldLabel": "Sewer, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlyWasteDisposal": {
+        "fieldLabel": "Waste disposal, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlyWater": {
+        "fieldLabel": "Water, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseMonthlyOtherCosts": {
+        "fieldLabel": "Other, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanAnnualPropertyTax": {
+        "fieldLabel": "Property tax, yearly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyMaintenance": {
+        "fieldLabel": "Maintenance, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyElectricity": {
+        "fieldLabel": "Electricity, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "400",
+        "value": "400",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyGas": {
+        "fieldLabel": "Gas, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlySewer": {
+        "fieldLabel": "Sewer, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyWasteDisposal": {
+        "fieldLabel": "Waste disposal, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyWater": {
+        "fieldLabel": "Water, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanMonthlyOtherCosts": {
+        "fieldLabel": "Other, monthly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRESquareFootageDesired": {
+        "fieldLabel": "Square footage desired",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "SQFTs",
+        "format": "number",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_PredictedYearlyChangeAmountInPropertyValues": {
+        "fieldLabel": "Yearly change predicted",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.250",
+        "value": "2.250",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseAnnualPropertyTax": {
+        "fieldLabel": "Property tax, yearly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanAnnualPropertyInsurance": {
+        "fieldLabel": "Property insurance, yearly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELeaseAnnualPropertyInsurance": {
+        "fieldLabel": "Property insurance, yearly",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_CRELoanConstructionCosts": {
+        "fieldLabel": "Construction or remodeling, one-time",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "12000",
+        "value": "12000",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Buy",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "Business_CRELeaseConstructionCosts": {
+        "fieldLabel": "Construction or remodeling, one-time",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "12000",
+        "value": "12000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Lease"
+      },
+      "Business_CREInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "Loan interest rate",
+        "format": "percent",
+        "defaultValue": "6.500",
+        "value": "6.500",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CREClosingCosts": {
+        "fieldLabel": "Closing costs",
+        "smallLabel": "",
+        "glossaryTerm": "closingcosts",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "500000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CREDownPaymentPercentage": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "percent",
+        "defaultValue": "20.00",
+        "value": "20.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "7",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELoanTerm": {
+        "fieldLabel": "Loan term",
+        "smallLabel": "(in months)",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "240",
+        "value": "240",
+        "minimumValue": "0",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CREPurchasePricePortionForLand": {
+        "fieldLabel": "Portion of purchase price that is for land",
+        "smallLabel": "",
+        "glossaryTerm": "landpurchaseprice",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000000",
+        "widgetStep": "50000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CREPurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100000",
+        "value": "100000",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000000",
+        "widgetStep": "50000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_OtherLeaseFees": {
+        "fieldLabel": "Other lease fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_AnnualIncreaseInLeasePayments": {
+        "fieldLabel": "Annual increase in lease payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.125",
+        "value": "2.125",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseAnnualCostPerSquareFoot": {
+        "fieldLabel": "Annual cost per square foot",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeasePaymentType": {
+        "fieldLabel": "Type of lease payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Per square foot",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Flat rate",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeasePaymentFrequency": {
+        "fieldLabel": "Frequency of lease payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Bi-weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Semi-monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Monthly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Quarterly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Semi-annually",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Annually",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CREMACRSDepreciationYears": {
+        "fieldLabel": "MACRS depreciation years",
+        "smallLabel": "",
+        "glossaryTerm": "macrs",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "5",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "10",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "20",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "27",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "39",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseSecurityDeposit": {
+        "fieldLabel": "Security deposit",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseTerm": {
+        "fieldLabel": "Lease term",
+        "smallLabel": "(in months)",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CRELeaseFlatRatePayment": {
+        "fieldLabel": "Flat rate amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_IsCRELeaseSecurityDepositRefundable": {
+        "fieldLabel": "Deposit refundable at end of lease term",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "LeaseTotalPmtsBusiness07": {
+        "fieldLabel": "Total payments"
+      },
+      "LoanTotalPmtsBusiness07": {
+        "fieldLabel": "Total payments"
+      },
+      "LeaseTaxSavingsBusiness07": {
+        "fieldLabel": " - Tax savings"
+      },
+      "LoanTaxSavingsBusiness07": {
+        "fieldLabel": " - Tax savings"
+      },
+      "LeaseNetPmtsBusiness07": {
+        "fieldLabel": "Net payments"
+      },
+      "LoanNetPmtsBusiness07": {
+        "fieldLabel": "Net payments"
+      },
+      "LeaseNPVNetPmts": {
+        "fieldLabel": "Total cost, in today's dollars over X months"
+      },
+      "LoanNPVNetPmts": {
+        "fieldLabel": "Total cost, in today's dollars over X months"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Cost",
+    "title": "Should I lease or own my business location?",
+    "answer": "%lessOption% will cost you, in today's dollars, <span class='lf-bold'>%cost% %which%</span> %moreOption% over <span class='lf-bold'>%months% months</span>",
+    "same_as_answer": "Leasing will cost you, in today's dollars, <span class='lf-bold'>the same as</span> buying over <span class='lf-bold'>%months% months</span>",
+    "selectors": [
+      {
+        "label": "Total Cost",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Over Time",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Net Payment Schedule - Loan",
+            "label": "Loan"
+          },
+          {
+            "index": "1",
+            "title": "Net Payment Schedule - Lease",
+            "label": "Lease"
+          }
+        ]
+      }
+    ],
+    "leasing": "Leasing",
+    "buying": "Buying",
+    "lease": "Lease",
+    "buy": "Buy",
+    "more": "more than",
+    "less": "less than",
+    "totalCost": "Total cost, in today's dollars over %months% months",
+    "tableHeaders": [
+      [
+        "Month",
+        "Payment",
+        "Other Costs",
+        "Interest",
+        "Depreciation",
+        "Tax Savings",
+        "NPV of Net Pmt"
+      ],
+      [
+        "Month",
+        "Payment",
+        "Other Costs",
+        "Tax Savings",
+        "Net Payment",
+        "NPV of Net Pmt"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "termloan2": {
+      "title": "Term loan",
+      "definition": "A loan whose principal is repaid, or amortized, over a fixed term."
+    },
+    "lease2": {
+      "title": "Lease",
+      "definition": "A contract between two parties, a lessor and lessee, whereby the lessee makes periodic payments to the lessor to rent an asset."
+    },
+    "depreciation2": {
+      "title": "Depreciation",
+      "definition": "The decline in an asset's value over the course of its useful life due to wear and tear and obsolescence."
+    },
+    "costofcapital": {
+      "title": "Cost of capital",
+      "definition": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value. "
+    },
+    "loanterm": {
+      "title": "Loan term",
+      "definition": "The length, or period, of a loan. It is usually measured in years. "
+    },
+    "landpurchaseprice": {
+      "title": "Land purchase price",
+      "definition": "The portion of the purchase price used to pay for the land that sits under the asset."
+    },
+    "taxdeductible": {
+      "title": "Tax-deductible",
+      "definition": "An item or expense subtracted from adjusted gross income to reduce the amount of income subject to tax."
+    },
+    "termloan": {
+      "title": "Term loan",
+      "definition": "A loan whose principal is repaid, or amortized, over a fixed term."
+    },
+    "closingcosts": {
+      "title": "Closing costs",
+      "definition": "The total expenses that the buyer pays at the time a real estate transaction is completed, e.g. application fees, underwriting and loan-origination fees, etc. Average refinance closing costs range between 2 percent to 5 percent of the refinance loan amount."
+    },
+    "straightlinedepreciation": {
+      "title": "Straight-line depreciation",
+      "definition": "A method of depreciation whereby the difference between an asset's cost and its expected salvage value is divided by the number of years it is expected to be used."
+    },
+    "midmonthconvention": {
+      "title": "Mid-month convention",
+      "definition": "A depreciation convention that assumes the depreciable asset is put in place in the middle of a given month. As a result, depreciation expense in the first month is one-half the normal monthly depreciation expense."
+    },
+    "taxsavings": {
+      "title": "Tax savings",
+      "definition": "The amount you may save in taxes from a tax deduction or tax credit."
+    },
+    "principal": {
+      "title": "Principal",
+      "definition": "Also called the loan balance, principal is the amount owed on a loan"
+    },
+    "lineofcredit": {
+      "title": "Line of credit",
+      "definition": "A form of revolving credit whereby the borrower can draw down only the amount needed, up to the amount of the credit limit. The borrower only pays interest on the amount drawn, or disbursed."
+    },
+    "depreciation": {
+      "title": "Depreciation",
+      "definition": "The decline in an asset's value over the course of its useful life due to wear and tear and obsolescence. "
+    },
+    "loanpayoff": {
+      "title": "Loan payoff",
+      "definition": "A payment that you make on a loan or other debt to pay off the entire amount owed."
+    },
+    "yearsinbusiness": {
+      "title": "Years in business",
+      "definition": "In the first several years of starting a new business, you may not have enough retained earnings to pay for growth of your business. We use five years as a reasonable period to define the early stage of a business where there is a tendency to rely more on borrowing or selling equity vs. retained earnings."
+    },
+    "maintenanceexpenses": {
+      "title": "Maintenance expenses",
+      "definition": "The costs incurred to keep equipment or property in good condition and/or good working order."
+    },
+    "discountrate": {
+      "title": "Discount rate",
+      "definition": "The discount rate is the interest rate the Federal Reserve, the U.S. central bank, charges banks on loans the Fed makes at its discount window. Banks seldom borrow at the discount window, since the Fed is considered a lender of last resort. The discount rate is important, however, in that it is routinely used as an index rate by the lenders to set interest rates on a range of consumer loans. This includes auto, credit card, and home equity loans. Generally, the Fed lowers the discount rate when it changes its target for the fed funds rate."
+    },
+    "leaseterm": {
+      "title": "Lease term",
+      "definition": "The period that the lessee contracts with the lessor to make lease payments. At the end of a lease term, the lessee may have the option to renew the lease for a new term, purchase the equipment at a price called the residual value or walk away from any further obligation."
+    },
+    "annualcamexpenses": {
+      "title": "Annual CAM expenses",
+      "definition": "Periodic expenses that are not a part of the monthly lease rental rate and are paid by the tenant (lessee) to the owner (lessor) for overhead expenses such as security, maintenance, and advertising."
+    },
+    "otherleasecosts": {
+      "title": "Other lease costs",
+      "definition": "Periodic expenses that are not a part of the monthly lease rental rate such as security, maintenance, advertising, insurance premiums, and taxes."
+    },
+    "baserent": {
+      "title": "Base rent",
+      "definition": "The basic lease rent you pay per square foot of leased space."
+    },
+    "lease": {
+      "title": "Lease",
+      "definition": "A contract between two parties, a lessor and lessee, whereby the lessee makes periodic payments to the lessor to rent an asset."
+    },
+    "presentvalue": {
+      "title": "Present value",
+      "definition": "The value of a future payment, or series of payments, discounted at the appropriate interest rate to determine the value in today's dollars. "
+    },
+    "macrs": {
+      "title": "MACRS",
+      "definition": "MACRS (Modified Accelerated Cost Recovery System) is the depreciation method that businesses use to depreciate business equipment, buildings, and other real estate improvements over the useful life of the assets."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TermLoan\">term loan</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lease\">lease</a></span> to pay for real estate you will need to operate your business. To compare the value of payments over time for the lease-or-loan option, the calculator shows payments in <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#presentValue\">present value</a></span>."
+    },
+    {
+      "textLabel": "A <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#termloan2\">term loan</a></span> helps you to buy the real estate. While your business pays all expenses, it realizes substantial <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxSavings\">tax savings</a></span> from these expenses. As the owner of the real estate, your business also benefits from possible increases in the value of the property. However, loan financing may crimp your cash flow: a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#downPayment\">down payment</a></span> is a large initial expenditure, and your monthly payments are larger to include repayment of <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#principal\">loan principal</a></span>. If your business is a young enterprise, you may not have the level of cash necessary to sustain high debt payments."
+    },
+    {
+      "textLabel": "A <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lease2\">lease</a></span> lets you obtain business real estate at a cost that is generally less than loan financing. Under a lease, your monthly lease payments will be usually lower than loan payments. You also avoid a down payment. Instead, you pay a security deposit that is much smaller than a down payment. When the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#leaseTerm\">lease term</a></span> expires, you have more flexibility than with a loan. You can usually renew the lease or walk away."
+    },
+    {
+      "textLabel": "Be sure to understand all terms and conditions of the lease agreement. For example, an agreement may include provisions that require operating expenses to rise at a different annual rate than the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#baseRent\">base rent</a></span> or in some cases may be in proportion to your sales revenue."
+    },
+    {
+      "textLabel": "Key assumptions of this tool include:"
+    },
+    {
+      "textLabel": "Construction and remodeling costs. If you incur construction or remodeling costs, these costs are added to the loan principal. If you decide to lease, these costs are paid in cash. These costs are added to the basis of the property."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation\">Depreciation.</a></span> The <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MACRS\">MACRS</a></span> depreciation schedule and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#straightLineDepreciation\">straight-line depreciation</a></span> are used. The <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#midMonthConvention\">mid-month convention</a></span> is used to calculate <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation2\">depreciation</a></span> expense in the first year, regardless of purchase date."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AnnualCAMExpenses\">Annual CAM expenses.</a></span> Annual CAM expenses are allocated over the year to match the frequency of lease payments for base rent."
+    },
+    {
+      "textLabel": "Inflation. The inflation rate that you enter affects property taxes, property insurance, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#maintenanceExpenses\">maintenance expense</a></span>, and utilities."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total cost, in today's dollars, of leasing and buying."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total cost, in today's dollars, of leasing and buying"
+    }
+  ]
+}

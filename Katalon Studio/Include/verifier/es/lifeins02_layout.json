@@ -1,0 +1,209 @@
+{
+  "layout": {
+    "tabs": {
+      "Personal": {
+        "tabLabel": "Personal",
+        "pageTitle": "Información personal"
+      },
+      "Premiums": {
+        "tabLabel": "Primas",
+        "pageTitle": "información de primera calidad"
+      },
+      "Payout": {
+        "tabLabel": "Pagos",
+        "cashValue": {
+          "sectionLabel": "Valor en efectivo",
+          "sectionDesc": "Usted puede desear o necesitar para sacar provecho de su póliza de seguro de vida en algún momento antes de la muerte. Introduzca la siguiente información para incluir este escenario en los resultados."
+        },
+        "pageTitle": "Información de los pagos"
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Ahora",
+        "Dentro de X años",
+        "Al momento del fallecimiento"
+      ]
+    },
+    "results_fields": {
+      "Insurance_CurrentCashValue": {
+        "fieldLabel": "Valor en efectivo actual"
+      },
+      "NowDiv": {
+        "fieldLabel": "Dividendos netos recibidos"
+      },
+      "NowEarn": {
+        "fieldLabel": "Ganancias"
+      },
+      "NowTaxesInsurance02": {
+        "fieldLabel": " - Impuestos adeudados"
+      },
+      "NowReceivedInsurance02": {
+        "fieldLabel": "Recibido después de impuestos"
+      },
+      "NowPremInsurance02": {
+        "fieldLabel": "Primas pagadas"
+      },
+      "NowRateInsurance02": {
+        "fieldLabel": "Tasa de rendimiento después de impuestos"
+      }
+    },
+    "fields": {
+      "Insurance_FutureCashValue": {
+        "fieldLabel": "Valor en efectivo estimado en ese momento"
+      },
+      "Insurance_DividendIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por dividendos es de",
+        "dropdownOptions": [
+          {
+            "optionText": "Aplicado a las primas futuras"
+          },
+          {
+            "optionText": "Invertido(a) en otra parte"
+          },
+          {
+            "optionText": "Gastado en el plazo de 2 meses"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros"
+      },
+      "Insurance_YearsUntilCashInPolicy": {
+        "fieldLabel": "Años hasta que retira el valor en efectivo",
+        "valueTextLabel": "años"
+      },
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Insurance_Premium": {
+        "fieldLabel": "Monto de la prima"
+      },
+      "Insurance_PremiumPaymentsPerYear": {
+        "fieldLabel": "Pagos de prima al año",
+        "valueTextLabel": "pagos"
+      },
+      "Insurance_AverageAnnualDividend": {
+        "fieldLabel": "Dividendo anual promedio"
+      },
+      "Insurance_YearsOwnedPolicy": {
+        "fieldLabel": "Años que ha tenido póliza de seguro",
+        "valueTextLabel": "años"
+      },
+      "Insurance_DeathBenefit": {
+        "fieldLabel": "Beneficio por muerte"
+      },
+      "Insurance_CurrentCashValue": {
+        "fieldLabel": "Valor en efectivo"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Tasa de rendimiento después de impuestos",
+    "dataTableCategory2": "Valor en efectivo actual",
+    "title": "¿Cuál es mi rendimiento sobre una póliza de seguro de vida integral?",
+    "answer": "Su tasa de rendimiento después de impuestos al momento del fallecimiento es de <span class='lf-bold'>%DeathRateInsurance02%%</span>",
+    "endOfTerm": "Ahora",
+    "endOfPolicy": "Dentro de %years% años",
+    "endOfLife": "Al momento del fallecimiento",
+    "rateOfReturn": "Tasa de rendimiento %",
+    "amountReceived": "Cantidad recibida",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Recibido(a)",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "premium": {
+      "title": "Prima",
+      "definition": "Seguros: El monto que paga el titular de la póliza de seguro periódicamente para mantener la cobertura del seguro. Prima: Un precio superior al valor nominal del bono."
+    },
+    "cashvalue": {
+      "title": "Valor en efectivo",
+      "definition": "Valor en dólares que se devuelve al tomador de un seguro si se cancela la póliza."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "deathbenefit": {
+      "title": "Beneficio por muerte",
+      "definition": "Monto que se paga al beneficiario de una póliza de seguro de vida al momento del fallecimiento del titular de la póliza. El monto puede ser una suma global o una anualidad."
+    },
+    "dividendsinsurancepolicy": {
+      "title": "Dividendos (poliza de seguro)",
+      "definition": "Retorno sobre las primas del seguro que percibe el titular de la póliza. Si las inversiones realizadas por una compañía de seguros superan las expectativas, el asegurador devuelve parte de las primas pagadas previamente."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara las tasas de retorno de una póliza de seguro de vida entera para tres períodos:"
+    },
+    {
+      "textLabel": "Entre el momento en que adquirió la póliza y ahora."
+    },
+    {
+      "textLabel": "Entre el momento de la compra y el momento en que usted reciba el valor en efectivo total de la póliza."
+    },
+    {
+      "textLabel": "Entre el momento de la compra y el momento del fallecimiento."
+    },
+    {
+      "textLabel": "La tasa de retorno se basa en el monto de la póliza, los dividendos, las primas y las tasas de impuesto."
+    },
+    {
+      "textLabel": "El seguro de vida entera, junto con el seguro de vida variable y el de vida universal, son pólizas de seguro de valor en efectivo, ya que generan una tasa de retorno sobre la inversión y se pueden usar como garantía para la obtención de préstamos."
+    },
+    {
+      "textLabel": "Las pólizas de seguro de vida entera pagan un beneficio por muerte a su beneficiario cuando usted muere. La cobertura de la póliza continuará en tanto y en cuanto usted pague las primas, que generalmente son de igual monto y están basadas en estadísticas actuariales para su edad y para sus características de salud."
+    },
+    {
+      "textLabel": "Mientras su póliza está en vigencia, devenga un valor en efectivo que se puede usar como garantía a una tasa de interés consignada en el contrato de la póliza. Todos los préstamos pendientes al momento de su fallecimiento reducen el monto del beneficio por muerte."
+    },
+    {
+      "textLabel": "Las pólizas de seguro de vida entera periódicamente reembolsan primas por medio de dividendos exentos de impuestos. El monto del dividendo generalmente depende del rendimiento de la cartera de inversiones de la compañía de seguros."
+    },
+    {
+      "textLabel": "Si usted cancela una póliza de vida entera, a veces debe pagar un cargo de rescate, especialmente si solo tuvo la póliza durante un período breve."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara las tasas de rendimiento después de impuestos de toda la póliza de seguro de vida si se cobra ahora, se cobra después de una cierta cantidad de años y al fallecer."
+    },
+    {
+      "title": "Gráfico de columnas que compara la cantidad recibida en la póliza de seguro de vida completa si se cobra ahora, se cobra después del número especificado de años y al fallecer."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tasas de rendimiento después de impuestos de toda la póliza de seguro de vida si se cobra ahora, se cobra después de una cierta cantidad de años y al fallecer"
+    },
+    {
+      "title": "Cantidad recibida en la póliza de seguro de vida completa si se cobra ahora, se cobra después del número especificado de años y al fallecer"
+    }
+  ]
+}

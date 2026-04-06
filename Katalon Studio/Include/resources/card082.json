@@ -1,0 +1,203 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I consolidate my credit cards?"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardOneBalance",
+      "value": "6,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardOneInterestRate",
+      "value": "8.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardOneMinimumMonthlyPaymentAmount",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardOneAnnualFee",
+      "value": "69"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardTwoBalance",
+      "value": "4,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardTwoInterestRate",
+      "value": "5.68"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardTwoMinimumMonthlyPaymentAmount",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardTwoAnnualFee",
+      "value": "80"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardThreeBalance",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardThreeInterestRate",
+      "value": "12.99"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardThreeMinimumMonthlyPaymentAmount",
+      "value": "20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardThreeAnnualFee",
+      "value": "30"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFourBalance",
+      "value": "39,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFourInterestRate",
+      "value": "6.79"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFourMinimumMonthlyPaymentAmount",
+      "value": "120"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFourAnnualFee",
+      "value": "90"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFiveBalance",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFiveInterestRate",
+      "value": "4.67"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFiveMinimumMonthlyPaymentAmount",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_CardFiveAnnualFee",
+      "value": "100"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ConsolidationCard-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_ConsolidationCardInterestRate",
+      "value": "8.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_ConsolidationCardAnnualFee",
+      "value": "70"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_PayoffPlan",
+      "value": "label=Fixed timeframe"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_ConsolidationCardMonthsToPayOff",
+      "value": "48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_ConsolidationCardMonthlyPayment",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "27.55"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Based on a payoff in 48 months, the existing cards will save you $667 in today's dollars."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_ExistingNetPresentCost_result_label",
+      "value": "Total cost in today's dollars"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_ExistingNetPresentCost_result_value",
+      "value": "$59,306"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_ConsolidationNetPresentCost_result_value",
+      "value": "$59,973"
+    }
+  }
+]

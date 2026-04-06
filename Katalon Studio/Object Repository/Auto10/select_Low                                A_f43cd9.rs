@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Low                                A_f43cd9</name>
+   <tag></tag>
+   <elementGuidId>ae48ef90-31ff-4a6d-9ab1-d789a26884e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_FutureDepreciation</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='lf_Auto_FutureDepreciation']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Future depreciation&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>1207979d-5893-4417-90a7-2278d43d88a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-select-toggle</value>
+      <webElementGuid>d8a63c7a-a437-48a2-a4a6-3febf515975b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Auto_FutureDepreciation</value>
+      <webElementGuid>a148d8b7-b31b-4f88-8ac2-87de95a257f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Future depreciation</value>
+      <webElementGuid>46a28749-0a64-4fa3-a563-751ecb16d0b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_FutureDepreciation</value>
+      <webElementGuid>08948284-3ce9-4834-9295-20385c892281</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-listener-added</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>de692bfd-fcb2-4a72-bbdf-28f12b16228f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                Low
+
+                                Average
+
+                                High
+                            </value>
+      <webElementGuid>a9083dbd-82e3-4ebf-84ae-4872a1c1ddf8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_FutureDepreciation&quot;)</value>
+      <webElementGuid>9d8ebd65-fb45-4623-b5a9-267b87836f3d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='lf_Auto_FutureDepreciation']</value>
+      <webElementGuid>649e5a54-4c19-412f-99e1-000340c1264e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_FutureDepreciation-table']/div[3]/select</value>
+      <webElementGuid>dd323b90-9769-425e-a282-099edff47930</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Error message for dropdown list here'])[1]/following::select[1]</value>
+      <webElementGuid>17497a15-0878-46c1-8194-68fc2517bd79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Future depreciation'])[1]/following::select[1]</value>
+      <webElementGuid>fd38999d-2099-419e-aebd-9039740e50bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sales tax rate'])[1]/preceding::select[1]</value>
+      <webElementGuid>9e1cd20d-b88c-42e2-a3f9-2628c0286564</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 99.00%'])[1]/preceding::select[1]</value>
+      <webElementGuid>b411ec6d-7440-44d3-a1bd-fb4b8d882e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>90292645-1d8c-4a0e-95fe-00d7d7c39f22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'Auto_FutureDepreciation' and @id = 'lf_Auto_FutureDepreciation' and (text() = '
+                                Low
+
+                                Average
+
+                                High
+                            ' or . = '
+                                Low
+
+                                Average
+
+                                High
+                            ')]</value>
+      <webElementGuid>3153f4de-eac8-472e-b505-785817e14ec4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,211 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc/calc/nextdayfunding?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your estimated annual return is $500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_DailyCardProcessingSales-label",
+      "value": "Daily card processing sales"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_DailyCardProcessingSales",
+      "value": "2,500.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_DailyCardProcessingSales-error-message",
+      "value": "Must be between $1.00 and $100,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_DailyCardProcessingSales_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_DailyCardProcessingSales_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Daily card processing sales"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The total dollar amount of card payments the business receives on a daily basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays-label",
+      "value": "Current number of days for card payment funding"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays-error-message",
+      "value": "Must be between 1 and 90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Days for card payment funding"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The number of days it takes for card processing sales to be credited to the business account."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCostOfCapital-label",
+      "value": "Annual cost of capital"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCostOfCapital",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Commercial_AnnualCostOfCapital_container']/div",
+      "value": "Annual cost of capital i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCostOfCapital-error-message",
+      "value": "Must be between 1.00% and 50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCostOfCapital_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_AnnualCostOfCapital_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Annual cost of capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The weighted average of a business cost of debt as well as its cost of equity."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_DailyCardProcessingSales",
+      "value": "25,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_CurrentCardPaymentFundingDays",
+      "value": "15"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_AnnualCostOfCapital",
+      "value": "12"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your estimated annual return is $42,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/div[4]",
+      "value": "NOTE: If you don’t accept cards, you can still calculate what your potential increased cash flow could be if you accepted cards and had next business day funding from PNC Merchant Services®. To do this, just indicate your current payment terms (example net 30, 60, 90) as the current number of days for card payment funding."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//small[@id='lf-terms-of-use']/span",
+      "value": "Use of the calculator signifies agreement to the"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "disclaimer_text",
+      "value": "Except as is otherwise set forth in your agreement for merchant services, your funds for MasterCard, Visa, Discover, PayPal and American Express transactions will ordinarily be processed and transferred to select PNC business checking accounts within one business day from the time PNC Merchant Services receives your batch (which is an electronic file containing your card transactions). If a batch is received after our cut-off time of 10:00 PM ET, or on a day that is not a business day, we will generally consider the batch as being received on the next business day. Business day means Monday through Friday, excluding Federal holidays."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

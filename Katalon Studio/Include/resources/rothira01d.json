@@ -1,0 +1,660 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What option is best for estate planning?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the total amount left as an inheritance, if you don't use any of the retirement money as a source of income, for four investment alternatives: a traditional IRA, Roth IRA, nondeductible IRA, and depositing into a taxable account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[1]",
+      "value": "Key assumptions of this tool include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[2]",
+      "value": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[2]",
+      "value": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Traditional IRA'])[1]/following::span[2]",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Traditional IRA'])[2]/following::th[1]",
+      "value": "Tax-deferred portion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Tax-deferred portion'])[1]/following::th[1]",
+      "value": "Total inheritance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTrad_result_label",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTrad_result_value",
+      "value": "$3,894,226"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateTrad_result_value",
+      "value": "$3,605,012"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpRoth_result_label",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpRoth_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateRoth_result_value",
+      "value": "$3,029,159"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTaxed_result_label",
+      "value": "Nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTaxed_result_value",
+      "value": "$2,577,977"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateTaxed_result_value",
+      "value": "$2,386,518"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpInvest_result_label",
+      "value": "Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpInvest_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateInvest_result_value",
+      "value": "$86,004"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis-labels.highcharts-xaxis-labels > text",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1 > text",
+      "value": "Taxable"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Inheritance provided (tax-deferred, taxable, and total) by the Traditional IRA, Roth IRA, Nondeductible IRA and Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Tax-deferred"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Taxable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$3,894,226"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$294,920"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/th",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td[2]",
+      "value": "$3,029,159"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/th",
+      "value": "Nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/td",
+      "value": "$2,577,977"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/td[2]",
+      "value": "$195,237"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[4]/th",
+      "value": "Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[4]/td",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[4]/td[2]",
+      "value": "$86,004"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Contributions-accordion",
+      "value": "Contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-label",
+      "value": "Annual contribution"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribAmt",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt-label",
+      "value": "Contributions are invested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt",
+      "value": "After taxes Before taxes Disregarding taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-label",
+      "value": "Age to begin withdrawing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-error-message",
+      "value": "Must be between 60 and 71"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-label",
+      "value": "Your state + federal tax rate (before retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateBef_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft-label",
+      "value": "Your state + federal tax rate (after retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateAft",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateAft_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Returns-accordion",
+      "value": "Returns"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-label",
+      "value": "Estimated rate of return on IRA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IRARateRothIRA",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-label",
+      "value": "Estimated return on other assets"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "Contributions-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ContribAmt"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ContribAmt",
+      "value": "25,000"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CurrAge"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge",
+      "value": "63"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetAge",
+      "value": "70"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DeathAge"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge",
+      "value": "85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateAft",
+      "value": "15.55"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRARateRothIRA",
+      "value": "7.48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SavRate",
+      "value": "3.45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Assuming no withdrawals during retirement, the Roth IRA will provide the largest inheritance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTrad_result_value",
+      "value": "$232,767"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateTrad_result_value",
+      "value": "$334,766"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpRoth_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateRoth_result_value",
+      "value": "$342,009"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpTaxed_result_value",
+      "value": "$232,767"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateTaxed_result_value",
+      "value": "$300,704"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxExpInvest_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstateInvest_result_value",
+      "value": "$196,214"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,1431 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "SharedLoanInfo",
+        "Loan1",
+        "Loan2",
+        "TaxesInsurance",
+        "results"
+      ],
+      "SharedLoanInfo": {
+        "selected": true,
+        "tabLabel": "Shared Loan Info",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "columns": [
+            {
+              "fields": [
+                "Global_HomeAppraisedValue",
+                "Home_DownPaymentPercentage",
+                "Home_LoanTermInYears",
+                "Home_ExpectedYearsInHome"
+              ]
+            }
+          ]
+        }
+      },
+      "Loan1": {
+        "tabLabel": "Loan 1",
+        "sections": [
+          "default",
+          "adjustmentTerms"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionID": "loan1_default",
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Home_InterestRateType",
+                "Home_InterestRate",
+                "Home_OriginationCharge",
+                "Home_DiscountPoints",
+                "Home_OtherClosingCosts"
+              ]
+            }
+          ]
+        },
+        "adjustmentTerms": {
+          "sectionID": "loan1_adjustment",
+          "sectionLabel": "",
+          "sectionLabelH2": "Adjustment Terms",
+          "custom": "new-standard-3col",
+          "fieldSets": "1",
+          "columns": [
+            {
+              "fields": [
+                "Home_ARMMonthsBeforeFirstAdjustment",
+                "Home_ARMMonthsBetweenRateAdjustments",
+                "Global_InterestRateChangePrediction",
+                "Home_ARMMaximumRateAdjustment",
+                "Home_ARMMinimumRate",
+                "Home_ARMMaximumRate",
+                "Home_ARMMargin",
+                "Home_ARMIndexRate",
+                "Home_ARMMonthsBetweenIndexAdjustments",
+                "Home_ARMIndexRateChangeBetweenIndexAdjustments"
+              ]
+            }
+          ]
+        }
+      },
+      "Loan2": {
+        "tabLabel": "Loan 2",
+        "sections": [
+          "default",
+          "adjustmentTerms"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionID": "loan2_default",
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Home_SecondLoanInterestRateType",
+                "Home_SecondLoanInterestRate",
+                "Home_SecondLoanOriginationCharge",
+                "Home_SecondLoanDiscountPoints",
+                "Home_SecondLoanOtherClosingCosts"
+              ]
+            }
+          ]
+        },
+        "adjustmentTerms": {
+          "sectionID": "loan2_adjustment",
+          "sectionLabel": "",
+          "sectionLabelH2": "Adjustment Terms",
+          "custom": "new-standard-3col",
+          "fieldSets": "1",
+          "columns": [
+            {
+              "fields": [
+                "Home_SecondARMMonthsBeforeFirstAdjustment",
+                "Home_SecondARMMonthsBetweenRateAdjustments",
+                "Home_SecondARMInterestRateChangePrediction",
+                "Home_SecondARMMaximumRateAdjustment",
+                "Home_SecondARMMinimumRate",
+                "Home_SecondARMMaximumRate",
+                "Home_SecondARMMargin",
+                "Home_SecondARMIndexRate",
+                "Home_SecondARMMonthsBetweenIndexAdjustments",
+                "Home_SecondARMIndexRateChangeBetweenIndexAdjustments"
+              ]
+            }
+          ]
+        }
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Taxes & Insurance",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Home_YearlyPropertyTax",
+                "Home_YearlyHomeownersInsurance",
+                "Global_FederalAndStateTaxRate",
+                "Global_SavingsInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "format": "number"
+      },
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Expected years in home",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "7",
+        "value": "7",
+        "minimumValue": "0",
+        "maximumValue": "40",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state + federal tax rate",
+        "defaultValue": "33.80",
+        "glossaryTerm": "taxrates",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "40",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "90",
+        "widgetStep": "1",
+        "value": "33.80",
+        "format": "percent",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Your savings rate",
+        "smallLabel": "",
+        "glossaryTerm": "savingsinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMaximumRateAdjustment": {
+        "fieldLabel": "Maximum rate adjustment",
+        "smallLabel": "",
+        "glossaryTerm": "predictedfutureinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "5.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMaximumRateAdjustment": {
+        "fieldLabel": "Maximum rate adjustment",
+        "smallLabel": "",
+        "glossaryTerm": "predictedfutureinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "5.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMaximumRate": {
+        "fieldLabel": "Maximum rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestratecap",
+        "format": "percent",
+        "defaultValue": "7.50",
+        "value": "7.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMaximumRate": {
+        "fieldLabel": "Maximum rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestratecap",
+        "format": "percent",
+        "defaultValue": "7.50",
+        "value": "7.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMargin": {
+        "fieldLabel": "Margin",
+        "smallLabel": "",
+        "glossaryTerm": "margin",
+        "format": "percent",
+        "defaultValue": "2.75",
+        "value": "2.75",
+        "minimumValue": "-20.00",
+        "maximumValue": "20.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMargin": {
+        "fieldLabel": "Margin",
+        "smallLabel": "",
+        "glossaryTerm": "margin",
+        "format": "percent",
+        "defaultValue": "2.75",
+        "value": "2.75",
+        "minimumValue": "-20.00",
+        "maximumValue": "20.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMIndexRate": {
+        "fieldLabel": "Index rate",
+        "smallLabel": "",
+        "glossaryTerm": "indexrate",
+        "format": "percent",
+        "defaultValue": "1.25",
+        "value": "1.25",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMIndexRate": {
+        "fieldLabel": "Index rate",
+        "smallLabel": "",
+        "glossaryTerm": "indexrate",
+        "format": "percent",
+        "defaultValue": "1.25",
+        "value": "1.25",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMonthsBetweenIndexAdjustments": {
+        "fieldLabel": "Months between index adjustments",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "monthsbetweenrateadjustments",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "24",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMonthsBetweenIndexAdjustments": {
+        "fieldLabel": "Months between index adjustments",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "monthsbetweenrateadjustments",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "24",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMIndexRateChangeBetweenIndexAdjustments": {
+        "fieldLabel": "Index rate change between index adjustments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.200",
+        "value": "0.200",
+        "minimumValue": "0",
+        "maximumValue": "20.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMIndexRateChangeBetweenIndexAdjustments": {
+        "fieldLabel": "Index rate change between index adjustments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.200",
+        "value": "0.200",
+        "minimumValue": "0",
+        "maximumValue": "20.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMonthsBetweenRateAdjustments": {
+        "fieldLabel": "Months between rate adjustments",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "monthsbetweenrateadjustments",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "60",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMonthsBetweenRateAdjustments": {
+        "fieldLabel": "Months between rate adjustments",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "monthsbetweenrateadjustments",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "60",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMinimumRate": {
+        "fieldLabel": "Minimum rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestratefloor",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMinimumRate": {
+        "fieldLabel": "Minimum rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestratefloor",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": " 5.000",
+        "value": " 5.000",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Origination charge",
+        "smallLabel": "",
+        "glossaryTerm": "origchargeamount",
+        "format": "currency",
+        "defaultValue": " 1500",
+        "value": " 1500",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Discount points",
+        "smallLabel": "",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "format": "percent",
+        "defaultValue": " 1.000",
+        "value": " 1.000",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Other settlement services",
+        "smallLabel": "",
+        "glossaryTerm": "othersettlementservices",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondLoanOtherClosingCosts": {
+        "fieldLabel": "Other settlement services",
+        "smallLabel": "",
+        "glossaryTerm": "othersettlementservices",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "4.000",
+        "value": "4.000",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondLoanOriginationCharge": {
+        "fieldLabel": "Origination charge",
+        "smallLabel": "",
+        "glossaryTerm": "origchargeamount",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondLoanDiscountPoints": {
+        "fieldLabel": "Discount points",
+        "smallLabel": "",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "format": "percent",
+        "defaultValue": "2.000",
+        "value": "2.000",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_ARMMonthsBeforeFirstAdjustment": {
+        "fieldLabel": "Months before first adjustment",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "adjustmentperiod",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMMonthsBeforeFirstAdjustment": {
+        "fieldLabel": "Months before first adjustment",
+        "smallLabel": "",
+        "valueTextLabel": "months",
+        "glossaryTerm": "adjustmentperiod",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "You predict that rates will",
+        "smallLabel": "",
+        "glossaryTerm": "predictedfutureinterestrate",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Remains the same",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondARMInterestRateChangePrediction": {
+        "fieldLabel": "You predict that rates will",
+        "smallLabel": "",
+        "glossaryTerm": "predictedfutureinterestrate",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Remains the same",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_InterestRateType": {
+        "fieldLabel": "Loan Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Adjustable",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Home_SecondLoanInterestRateType": {
+        "fieldLabel": "Loan Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Adjustable",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Loan 1",
+        "Loan 2"
+      ],
+      "fields": [
+        [
+          "PrincAndIntHome14",
+          "PrincAndInt2Home14"
+        ],
+        [
+          "TaxAndIns",
+          "TaxAndIns2"
+        ],
+        [
+          "MortInsHome14",
+          "MortIns2Home14"
+        ],
+        [
+          "TotPmtHome14",
+          "TotPmt2Home14"
+        ]
+      ]
+    },
+    "results_fields": {
+      "PrincAndIntHome14": {
+        "fieldLabel": "Principal and interest"
+      },
+      "PrincAndInt2Home14": {},
+      "MortInsHome14": {
+        "fieldLabel": "Private mortgage insurance (PMI)"
+      },
+      "MortIns2Home14": {},
+      "TaxAndIns": {
+        "fieldLabel": "Property taxes and insurance"
+      },
+      "TaxAndIns2": {},
+      "TotPmtHome14": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "TotPmt2Home14": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "Which lender has the better loan?",
+    "answer": "Loan 1 will cost you, in today's dollars, <span class='lf-bold'>%amount% %which%</span> Loan 2 over the %years% years",
+    "selectors": [
+      {
+        "label": "Cost Difference",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Payments",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Loan 1",
+            "label": "Loan 1"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Loan 2",
+            "label": "Loan 2"
+          }
+        ]
+      }
+    ],
+    "principalInterest": "Principal & Interest",
+    "pmi": "PMI",
+    "taxesInsurance": "Taxes & Insurance",
+    "moreThan": "more than",
+    "lessThan": "less than",
+    "overThe": "over the",
+    "sameAs": "the same as",
+    "TotPmtHome14": "Loan 1",
+    "TotPmt2Home14": "Loan 2",
+    "categories": [
+      "Loan 1",
+      "Loan 2"
+    ],
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Cumulative interest",
+        "Max tax savings"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Cumulative interest",
+        "Max tax savings"
+      ]
+    ],
+    "cost": "Cost Difference"
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "interestratefloor": {
+      "title": "Interest rate floor",
+      "definition": "The minimum interest rate that can be charged on an adjustable interest rate loan during the term of the loan."
+    },
+    "anniversarydate": {
+      "title": "Anniversary date",
+      "definition": "The periodic date, usually once a year, that the interest rate is reset on an adjustable-rate mortgage."
+    },
+    "lifetimecap": {
+      "title": "Lifetime cap",
+      "definition": "A lifetime cap is the limit to how much the interest rate on an adjustable-rate loan can be increased over the term of the loan."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "yield": {
+      "title": "Yield",
+      "definition": "The annual income provided by a fund, share or bond expressed as a percentage. Yield is normally calculated by dividing the current price of the asset by the income. For example, the yield on a bond that sells for $1,000 and has a coupon rate of 8% is 8%. If the bond price rises to $1,050, the yield falls to 7.62%. If the price drops to $950, the current yield rises to 8.42%. Redemption yield is the interest rate that you are getting if you buy a bond at the current price and hold it until redemption."
+    },
+    "indexrate": {
+      "title": "Index rate",
+      "definition": "An index rate is a widely used, benchmark interest rate that lenders use to set the interest rate on loans and credit cards. "
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "predictedfutureinterestrate": {
+      "title": "Predicted future interest rate",
+      "definition": "Your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "arm": {
+      "title": "Adjustable-rate mortgage (ARM)",
+      "definition": "A type of mortgage loan in which the interest rate paid on the outstanding balance varies according to a specific benchmark. "
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    },
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "margin": {
+      "title": "Margin",
+      "definition": "The fixed amount a lender adds to the base rate of an adjustable-rate mortgage to set the loan rate."
+    },
+    "costanalysis": {
+      "title": "Cost-benefit analysis",
+      "definition": "An analysis of the cost effectiveness of different alternatives in order to see whether the benefits outweigh the costs."
+    },
+    "periodicratecap": {
+      "title": "Periodic rate cap",
+      "definition": "The periodic interest rate cap is the maximum amount the loan rate can change on an adjustable-rate mortgage loan on the anniversary date. ARM loan rates are often reset once a year after an initial period. A lifetime cap often exists. A lifetime cap limits the maximum loan rate that can be charged."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "treasurybills": {
+      "title": "Treasury bills (T-bills)",
+      "definition": "U.S. Treasury bills are short-term debt obligations of the U.S. Treasury. T-bills are usually issued to mature in three or six months. Prices for T-bills are stated as a discount to the par value. For example, a T-bill with a price of 99.65 is selling for 99.65% of its par value. T-bills are auctioned weekly and used to pay operations of the federal government. T-bills are considered to be among the safest and most liquid investments."
+    },
+    "spread": {
+      "title": "Spread",
+      "definition": "The arithmetic difference between two interest rates, usually stated in basis points. One percentage point consists of 100 basis points. "
+    },
+    "monthsbetweenrateadjustments": {
+      "title": "Months between rate adjustments",
+      "definition": "The frequency at which interest rate changes or resets on an adjustable-rate mortgage occur."
+    },
+    "adjustmentperiod": {
+      "title": "Adjustment period",
+      "definition": "The initial fixed-interest-rate period on an adjustable rate mortgage loan. For example, a 5-year ARM would have an adjustment period of 60 months."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "othersettlementservices": {
+      "title": "Other settlement services",
+      "definition": "Fees paid for services associated with the purchase of a home that do not represent compensation to the lender and/or the broker for originating the loan."
+    },
+    "origchargeamount": {
+      "title": "Origination Charges",
+      "definition": "The sum of all fees and charges from origination-related services. This represents all compensation to the lender and/or broker for originating the loan."
+    },
+    "monthsbetweenindexadjustments": {
+      "title": "Months between index adjustments",
+      "definition": "The frequency of change for the index, the benchmark interest rate to which an adjustable rate mortgage is tied."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "An acronym for the principal and interest that you pay on a mortgage loan."
+    },
+    "originationfees": {
+      "title": "Origination fee",
+      "definition": "A lender may charge an origination fee that is additional to any mortgage points you pay. Origination fees are the lender's charge for funding your mortgage with a mortgage broker. The process of funding your loan is called origination."
+    },
+    "presentvalue": {
+      "title": "Present value",
+      "definition": "The value of a future payment, or series of payments, discounted at the appropriate interest rate to determine the value in today's dollars. "
+    },
+    "interestratecap": {
+      "title": "Interest rate cap",
+      "definition": "The maximum interest rate that can be charged on an adjustable interest rate loan during the term of the loan."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine which of two mortgage loans is the better deal. The loans may both be fixed- or adjustable-rate (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#arm\">ARMs</a></span>) loans."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart comparing the difference in total cost, in today's dollars for both loans over the expected years in home."
+    },
+    {
+      "title": "Stacked column chart of the breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance for both loans."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference in total cost, in today's dollars for both loans over the expected years in home"
+    },
+    {
+      "title": "Breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance for both loans"
+    }
+  ]
+}

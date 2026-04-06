@@ -1,0 +1,648 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will my CD be worth at maturity?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the maturity value of your certificate of deposit (CD). CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (FDIC). Because CDs are federally insured, they are considered relatively conservative investments. As a result, they pay a lower interest rate -- stated as an annual percentage yield ( APY ) -- than non-insured investments such as stocks and bonds."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='APY'])[1]/following::p[1]",
+      "value": "The factors that increase a CD's yield include a higher interest rate earned on the deposit, more frequency compounding and a longer deposit term."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=certificate of deposit (CD)",
+      "value": "certificate of deposit (CD)"
+    }
+  },
+  {
+    "click": {
+      "id": "link=certificate of deposit (CD)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Certificate of deposit (CD)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A time deposit that you make at a bank generally ranging in amount from $500 to $250,000. The FDIC insures CDs for up to $250,000 per institution per depositor."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=FDIC",
+      "value": "FDIC"
+    }
+  },
+  {
+    "click": {
+      "id": "link=FDIC"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=interest rate",
+      "value": "interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=APY",
+      "value": "APY"
+    }
+  },
+  {
+    "click": {
+      "id": "link=APY"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Annual percentage yield (APY)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Annual percentage yield (APY) is the interest rate you earn on a certificate of deposit (CD) or other fixed-term deposit. The APY calculation assumes that you hold the investment until maturity. APY is greater than the stated rate on the deposit if interest is compounded. For example, a bank may be selling a one-year CD at a stated rate of 10%. If the CD compounds interest on a quarterly basis, the APY rises to 10.38%. If compounded daily, the APY rises to 10.52%."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Annual percentage yield (APY)'])[2]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='APY'])[1]/following::a[1]",
+      "value": "interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=frequency compounding",
+      "value": "frequency compounding"
+    }
+  },
+  {
+    "click": {
+      "id": "link=frequency compounding"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The frequency that a bank compounds interest on your deposit (e.g. daily, monthly, quarterly). The higher the frequency, the higher the interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Compounding frequency'])[2]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=deposit term",
+      "value": "deposit term"
+    }
+  },
+  {
+    "click": {
+      "id": "link=deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CD deposit term'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$10,100'])[1]/following::span[3]",
+      "value": "$10,100"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnPerYield_result_label",
+      "value": "Annual percentage yield (APY)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnPerYield_result_value",
+      "value": "1.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgMonInt_result_label",
+      "value": "Average monthly interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgMonInt_result_value",
+      "value": "$8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntErn_result_label",
+      "value": "Total interest earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntErn_result_value",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxOwe_result_label",
+      "value": "Taxes you will owe"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxOwe_result_value",
+      "value": "$32"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntAftTax_result_label",
+      "value": "Interest after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntAftTax_result_value",
+      "value": "$69"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-next-steps-zoneA-content",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DepositAmount-label",
+      "value": "Initial deposit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_DepositAmount",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DepositAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Initial deposit'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CD amount'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDTermNumber-label",
+      "value": "Deposit term (number)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CDTermNumber",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDTermNumber-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(number)'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CD deposit term'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDTermType-label",
+      "value": "Deposit term (type)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDTermType",
+      "value": "Days Months Quarters Years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CDTermType",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(type)'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CD deposit term'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CDInterestRate",
+      "value": "1.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CDInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Compounding frequency'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CD compounding frequency'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_DepositAmount",
+      "value": "12,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_CDTermNumber",
+      "value": "24"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_CDTermType",
+      "value": "label=Days"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_CDInterestRate",
+      "value": "1.500"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "label=Daily"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "28.15"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.70"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$12,012'])[1]/following::span[3]",
+      "value": "$12,012"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$12,012'])[2]/following::span[1]",
+      "value": "Date"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnPerYield_result_value",
+      "value": "1.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgMonInt_result_value",
+      "value": "$15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntErn_result_value",
+      "value": "$12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxOwe_result_value",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntAftTax_result_value",
+      "value": "$8"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

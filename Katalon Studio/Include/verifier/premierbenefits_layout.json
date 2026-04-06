@@ -1,0 +1,111 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CREDITMORTGAGE",
+        "CHECKSTRANSACTIONS",
+        "OTHERTRANSACTIONS"
+      ],
+      "CREDITMORTGAGE": {
+        "tabLabel": "CREDIT & MORTGAGE",
+        "tabDesc": "Are you interested in the following products?",
+        "fields": [
+          "HSBCPremierBenefit_InterestInWorldMastercard",
+          "HSBCPremierBenefit_InterestInWorldEliteMastercard",
+          "HSBCPremierBenefit_InterestInMortgage"
+        ]
+      },
+      "CHECKSTRANSACTIONS": {
+        "tabLabel": "CHECKS & TRANSACTIONS",
+        "tabDesc": "How many of each would you need per year?",
+        "fields": [
+          "HSBCPremierBenefit_Checkbooks",
+          "HSBCPremierBenefit_CashierChecks",
+          "HSBCPremierBenefit_DomesticNonHSBCATMWithdrawals",
+          "HSBCPremierBenefit_InternationalEmergencyCashWithdrawals",
+          "HSBCPremierBenefit_IncomingWireTransfers",
+          "HSBCPremierBenefit_OutboundWireTransfers"
+        ]
+      },
+      "OTHERTRANSACTIONS": {
+        "tabLabel": "OTHER TRANSACTIONS",
+        "tabDesc": "How many of each would you need per year?",
+        "fields": [
+          "HSBCPremierBenefit_Overdrafts",
+          "HSBCPremierBenefit_ForexDebit"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Benefit"
+      ],
+      "fields": [
+        [
+          "HSBCPremierBenefit_WorldMastercardBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_WorldEliteMastercardBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_MortgageBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_CheckbookBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_CashierCheckBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_DomesticNonHSBCATMWithdrawalBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_InternationalEmergencyCashWithdrawalBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_IncomingWireTransferBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_OutboundWireTransferBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_OverdraftBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_ForexDebitBenefit"
+        ],
+        [
+          "HSBCPremierBenefit_TotalBenefit"
+        ]
+      ]
+    }
+  },
+  "labels": {
+    "total": "Total",
+    "title": "How much can I benefit from HSBC Premier?",
+    "answer": "Your total annual benefit from the HSBC Premier is %AMOUNT%",
+    "selectors": [
+      {
+        "label": "Benefits",
+        "width": "33%",
+        "first": true
+      }
+    ],
+    "UnsecuredLending": "Unsecured Lending",
+    "SecuredLending": "Secured Lending",
+    "MoneyMovementorTransfers": "Money Movement or Transfers",
+    "OtherTransactions": "Other Transactions"
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Pie chart that provides an itemized breakdown of the total annual benefit into unsecured lending, money movement or transfers, and other transactions."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Itemized breakdown of the total annual benefit into unsecured lending, money movement or transfers, and other transactions"
+    }
+  ]
+}

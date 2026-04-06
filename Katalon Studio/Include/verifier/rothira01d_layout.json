@@ -1,0 +1,384 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Contributions",
+        "AboutYou",
+        "Returns"
+      ],
+      "Contributions": {
+        "tabLabel": "Contributions",
+        "fields": [
+          "ContribAmt",
+          "ContribOpt"
+        ]
+      },
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "CurrAge",
+          "RetAge",
+          "DeathAge",
+          "TaxRateBef",
+          "TaxRateAft"
+        ]
+      },
+      "Returns": {
+        "tabLabel": "Returns",
+        "fields": [
+          "IRARateRothIRA",
+          "SavRate"
+        ]
+      }
+    },
+    "fields": {
+      "ContribAmt": {
+        "fieldLabel": "Annual contribution",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ContribOpt": {
+        "fieldLabel": "Contributions are invested",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "After taxes ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Before taxes",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Disregarding taxes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "RetAge": {
+        "fieldLabel": "Age to begin withdrawing",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeathAge": {
+        "fieldLabel": "Life expectancy",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "98",
+        "value": "98",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TaxRateBef": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "(before retirement)",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TaxRateAft": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "(after retirement)",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "15.00",
+        "value": "15.00",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "IRARateRothIRA": {
+        "fieldLabel": "Estimated rate of return on IRA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "SavRate": {
+        "fieldLabel": "Estimated return on other assets",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Tax-deferred portion",
+        "Total inheritance"
+      ],
+      "fields": [
+        [
+          "TaxExpTrad",
+          "EstateTrad"
+        ],
+        [
+          "TaxExpRoth",
+          "EstateRoth"
+        ],
+        [
+          "TaxExpTaxed",
+          "EstateTaxed"
+        ],
+        [
+          "TaxExpInvest",
+          "EstateInvest"
+        ]
+      ]
+    },
+    "results_fields": {
+      "TaxExpTrad": {
+        "fieldLabel": "Traditional IRA"
+      },
+      "EstateTrad": {
+        "fieldLabel": "Traditional IRA"
+      },
+      "TaxExpRoth": {
+        "fieldLabel": "Roth IRA"
+      },
+      "EstateRoth": {
+        "fieldLabel": "Roth IRA"
+      },
+      "TaxExpTaxed": {
+        "fieldLabel": "Nondeductible IRA"
+      },
+      "EstateTaxed": {
+        "fieldLabel": "Nondeductible IRA"
+      },
+      "TaxExpInvest": {
+        "fieldLabel": "Taxable account"
+      },
+      "EstateInvest": {
+        "fieldLabel": "Taxable account"
+      }
+    }
+  },
+  "labels": {
+    "title": "What option is best for estate planning?",
+    "answer": "Assuming no withdrawals during retirement, the <span class='lf-bold'>%name%</span> will provide the largest inheritance.",
+    "EstateTrad": "Traditional IRA",
+    "EstateRoth": "Roth IRA",
+    "EstateTaxed": "Nondeductible IRA",
+    "EstateInvest": "Taxable account",
+    "TaxDeferred": "Tax-deferred",
+    "Taxable": "Taxable",
+    "categories": [
+      "Traditional IRA",
+      "Roth IRA",
+      "Nondeductible IRA",
+      "Taxable account"
+    ],
+    "selectors": [
+      {
+        "label": "Inheritance",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Taxable account",
+      "definition": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive. "
+    },
+    "regularira": {
+      "title": "Regular IRA",
+      "definition": "A regular IRA is also called a traditional IRA. It is a tax-deferred retirement account. For 2025, you are allowed to make a tax-deferred contribution of $7,000 to a regular IRA. This account grows tax-deferred until you begin to take distributions, which you may do without penalty after you turn age 59-1/2. For persons who are age 50 or older, a special catch-up provision of the 2001 tax law allows you to contribute an additional $1,000, or a total of $8,000."
+    },
+    "nondeductibleira": {
+      "title": "Nondeductible IRA",
+      "definition": "An individual retirement account whose contributions are either partially or fully funded with contributions that are not tax-deductible. You can contribute up to either $7,000 or $8,000 (depending on age, income limits and participation in an employer-sponsored retirement plan) in 2025. A nondeductible IRA benefits from tax-deferred compounded growth."
+    },
+    "rothira": {
+      "title": "Roth IRA",
+      "definition": "A tax-advantaged retirement account that allows you to make an after-tax contribution of up to $7,000 for 2025, or up to $8,000 if you're age 50 or older. If you keep a Roth IRA for at least five years and are at least age 59-1/2 when you begin to withdraw from the account, the entire account may be distributed tax- and penalty-free."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "deductibleira": {
+      "title": "Deductible IRA",
+      "definition": "A deductible IRA is an individual retirement account that is funded with tax-deductible contributions. You can contribute up to either $7,000 or $8,000 (depending on age, income, and participation in an employer-sponsored retirement plan) in 2025."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "catchupprovisioniras": {
+      "title": "Catch-up provision for contributions to individual retirement accounts",
+      "definition": "The Economic Growth and Tax Relief Reconciliation Act of 2001 authorized higher yearly contribution limits to IRAs, 401(k) plans and other defined-contribution retirement plans. A catch-up provision of the new law authorized even higher limits for workers who are age 50 or older. For regular and Roth IRAs, this additional contribution amount is $1,000 for 2025. As a result, combined yearly contribution limits for persons aged 50 or older increase to $8,000 for 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the total amount left as an inheritance, if you don't use any of the retirement money as a source of income, for four investment alternatives: a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">traditional IRA</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">Roth IRA</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#nonDeductibleIRA\">nondeductible IRA</a></span>, and depositing into a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">taxable account</a></span>."
+    },
+    {
+      "textLabel": "Key assumptions of this tool include:"
+    },
+    {
+      "textLabel": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    },
+    {
+      "textLabel": "Deposits are compounded monthly"
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Stacked column chart comparing the inheritance provided (tax-deferred, taxable, and total) by the Traditional IRA, Roth IRA, Nondeductible IRA and Taxable account."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Inheritance provided (tax-deferred, taxable, and total) by the Traditional IRA, Roth IRA, Nondeductible IRA and Taxable account"
+    }
+  ]
+}

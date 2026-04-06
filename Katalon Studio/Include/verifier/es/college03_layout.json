@@ -1,0 +1,111 @@
+{
+  "layout": {
+    "fields": {
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado",
+        "smallLabel": "(MAGI)"
+      },
+      "College_PeriodicSavings": {
+        "fieldLabel": "Ahorro periódico"
+      },
+      "College_SavingsFrequency": {
+        "fieldLabel": "Frecuencia de ahorro",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Quincenal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Semestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Jefe de familia"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          }
+        ]
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Qué inversiones puedo aprovechar para ahorrar para la universidad?",
+    "answer": "",
+    "selectors": [
+      {
+        "label": "",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "magi_notFound": "<div class='lf-container-text'><p class='lf-college03-ans'>Puede contribuir a una o más de las siguientes opciones de inversión:</p><ul><li>Plan de la Sección 529</li><li>Cuenta Coverdell ESA hasta $2,000 por año</li><li>Cuenta UGMA/UTMA</li><li>Cuenta imponible</li></ul></div>",
+    "magi_found": "<div class='lf-container-text'><p class='lf-college03-ans'>Puede contribuir a una o más de las siguientes opciones de inversión:</p><ul><li>Plan de la Sección 529</li><li>Cuenta UGMA/UTMA</li><li>Cuenta imponible</li></ul><p class='lf-college03-ans'>Parece que no podrá contribuir a una cuenta Coverdell ESA porque su MAGI excede las limitaciones de ingresos para su estado civil para la presentación de la declaración de impuestos.</p></div>"
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "coverdellesa": {
+      "title": "Cuenta de ahorro para la educación Coverdell (ESA)",
+      "definition": "Una cuenta de inversión con ventajas impositivas diseñada para fomentar los ahorros para cubrir futuros gastos de educación primaria, secundaria o universitaria."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "section529plan": {
+      "title": "Planes de la Sección 529",
+      "definition": "Un plan especial con ventajas impositivas, administrado por un gobierno estatal o una institución educativa, utilizado para ahorrar para la educación universitaria de un hijo, nieto u otro dependiente."
+    },
+    "savingfrequencycollege03": {
+      "title": "Frecuencia de ahorro",
+      "definition": "Con qué frecuencia estima que podrá contribuir a un plan de la Sección 529, una cuenta de ahorro para la educación Coverdell u otra cuenta con ventajas fiscales para futuros gastos universitarios."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta explica algunas de las opciones que tiene para ahorrar para la universidad en función de sus ingresos, el estado civil para la presentación de la declaración de impuestos y los ahorros previstos. Las opciones pueden incluir cuentas con ventajas impositivas como <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Section529Plan\">planes de la Sección 529</a></span> y cuentas <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CoverdellESA\">Coverdell ESAs</a></span>."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

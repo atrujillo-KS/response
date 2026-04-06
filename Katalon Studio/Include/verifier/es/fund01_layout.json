@@ -1,0 +1,225 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "FeesTaxes": {
+        "tabLabel": "TASAS E IMPUESTOS"
+      },
+      "Income": {
+        "tabLabel": "INGRESOS"
+      }
+    },
+    "fields": {
+      "Fund_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Fund_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Fund_AdditionalInvestment": {
+        "fieldLabel": "Inversión adicional"
+      },
+      "Fund_InvestmentFrequency": {
+        "fieldLabel": "Frecuencia de inversión",
+        "dropdownOptions": [
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Fund_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Fund_SharePriceToday": {
+        "fieldLabel": "Precio de la acción hoy"
+      },
+      "Fund_FrontendLoad": {
+        "fieldLabel": "Cobro inicial"
+      },
+      "Fund_BackendLoad": {
+        "fieldLabel": "Comisión por cancelación anticipada"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Soltero(a)"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Fund_LongTermYearlyGainsPerShare": {
+        "fieldLabel": "Ganancias anuales por acción",
+        "smallLabel": "(a largo plazo)"
+      },
+      "Fund_ShortTermYearlyGainsPerShare": {
+        "fieldLabel": "Ganancias anuales por acción",
+        "smallLabel": "(a corto plazo)"
+      },
+      "Fund_TaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(imponibles)"
+      },
+      "Fund_YearlyIncreaseInDividendsAndGains": {
+        "fieldLabel": "Aumento anual en dividendos y ganancias"
+      },
+      "Fund_FederalTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(exentos de impuestos exentos)"
+      },
+      "Fund_StateTaxExemptQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(exentos de impuestos estatales)"
+      },
+      "Fund_NonTaxableQuarterlyDividendsPerShare": {
+        "fieldLabel": "Dividendos trimestrales por acción",
+        "smallLabel": "(no imponibles)"
+      },
+      "Fund_DividendsAndGainsReinvestmentOption": {
+        "fieldLabel": "Los dividendos y las ganancias",
+        "dropdownOptions": [
+          {
+            "optionValue": "2",
+            "optionText": "Se gastan cuando se reciben",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Se reinvierten en el fondo",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Se reinvierten en otro lugar",
+            "defaultSelection": false
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      }
+    },
+    "results_fields": {
+      "Fund_RateOfReturnBeforeTaxes": {
+        "fieldLabel": "Rendimiento antes de impuestos",
+        "tooltipLabel": "Antes de Impuestos"
+      },
+      "Fund_RateOfReturnAfterTaxes": {
+        "fieldLabel": "Rendimiento después de impuestos",
+        "tooltipLabel": "Después de Impuestos"
+      },
+      "Fund_ProfitFromSale": {
+        "fieldLabel": "Ganancia (o pérdida) de la venta"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "title": "¿Cuál es el rendimiento de mi fondo si vendo ahora?",
+    "answer": "Rendimiento después de impuestos: <span class='lf-bold'>%rate%</span>",
+    "price": "Precio",
+    "Yield": "Rendimiento",
+    "return": "Rendimiento %",
+    "selectors": [
+      {
+        "label": "Tasa de rendimiento",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "capgain": {
+      "title": "Ganancia de capital",
+      "definition": "Un aumento en el valor de un activo de capital que usted posee. El Servicio de Impuestos Internos (IRS, por sus siglas en inglés) define un activo de capital como casi todo lo que se usa para fines personales o de inversión, como acciones y bonos, su vivienda, bienes personales y objetos coleccionables."
+    },
+    "backendload": {
+      "title": "Comisión por cancelación anticipada",
+      "definition": "Un cargo que usted paga cuando vende acciones de un fondo mutuo. El cargo se calcula como un porcentaje de la cantidad en dólares que está vendiendo."
+    },
+    "capitalgainstaxes": {
+      "title": "Impuesto sobre las ganancias de capital",
+      "definition": "Impuestos que usted debe sobre ganancias de capital. La tasa de impuestos sobre las ganancias de capital que se aplica sobre activos que se han mantenido durante menos de un año es igual a la tasa para ingresos ordinarios. Para las ganancias de capital a largo plazo (activos que se han mantenido durante al menos un año), la tasa de impuestos para contribuyentes solteros es del 0 % sobre los ingresos imponibles hasta $47,025 del 15 % sobre los ingresos imponibles entre $47,026 y $518,900 y del 20 % sobre los ingresos imponibles de más de $518,901. Para los contribuyentes casados que presentan una declaración conjunta, la tasa de impuestos es del 0 % sobre los ingresos imponibles hasta $94,050, del 15 % sobre los ingresos imponibles entre $94,051 y $583,750 y del 20 % sobre los ingresos imponibles de más de $583,751."
+    },
+    "growthratedividends": {
+      "title": "Tasa esperada de crecimiento de los dividendos",
+      "definition": "Ingrese la tasa de aumento anual que predice para los dividendos. Por definición, esta cifra será mucho mayor para un fondo de ingresos que para un fondo de crecimiento."
+    },
+    "frontendload": {
+      "title": "Cobro inicial",
+      "definition": "Un cargo que usted paga cuando compra acciones de un fondo mutuo. El cargo se calcula como un porcentaje del monto en dólares que está invirtiendo."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    },
+    "brokeragecommission": {
+      "title": "Comisión de corretaje",
+      "definition": "Los cargos que usted paga a un corredor por comprar o vender acciones, bonos u otros valores. También se denominan cargos de transacción, cargos de compraventa, cargos de corretaje o simplemente comisiones."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento</a></span>, anual, antes y después de impuestos, que usted gana si vende sus acciones de fondos mutuos hoy. <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#BrokerageCommission\">Los cargos por corretaje</a></span> se deducen."
+    },
+    {
+      "textLabel": "Las acciones que se mantienen durante más de un año son imponibles a la tasa de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">impuestos sobre ganancias de capital</a></span>. a largo plazo. Los dividendos y las ganancias de capital se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvierten</a></span> a la tasa de interés especificada o se gastan. Reinvertir el ingreso que recibe en una inversión puede aumentar su tasa de rendimiento."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de el rendimiento, antes y después de impuestos, si el fondo se vende ahora."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rentabilidad, antes y después de impuestos, si el fondo se vende ahora"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_CardInterestRate",
+          "Global_CardAnnualFee",
+          "Global_FutureMonthlyChargesOnCard",
+          "Card_MonthlyPayment"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Card balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "12.00",
+        "value": "12.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CardAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Future monthly charges",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlycharges",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Future monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How will rate changes affect my balance?",
+    "answer": "Your balance changes as follows after 1 year for a range of rates:",
+    "balance": "Balance",
+    "rate": "Rate: ",
+    "dataTableCategoryTitle": "Interest Rate (%)",
+    "selectors": [
+      {
+        "label": "Balance vs. Rate",
+        "width": "50%",
+        "first": true,
+        "getGraphData": true
+      },
+      {
+        "label": "Monthly Statement",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Monthly statement",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "xAxisLabel": "Interest rate (%)",
+    "yAxisLabel": "Balance"
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The tool shows the change in your credit card balance after one year, based on current use and the card's interest rate. "
+    },
+    {
+      "textLabel": "If you charge more than you pay, your card balance increases. If your monthly payment is less than the periodic interest owed, unpaid interest is added to your card balance. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the card balance after one year at three different rates."
+    },
+    {
+      "title": "Amortization table for the credit card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Card balance after one year at three different rates"
+    }
+  ]
+}

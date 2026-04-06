@@ -1,0 +1,265 @@
+{
+  "layout": {
+    "tabs": {
+      "HomeInfo": {
+        "tabLabel": "Información de la vivienda"
+      },
+      "LessDown": {
+        "tabLabel": "Cuota inicial menor"
+      },
+      "MoreDown": {
+        "tabLabel": "Cuota inicial mayor"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Cuota inicial menor",
+        "Cuota inicial mayor"
+      ]
+    },
+    "fields": {
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Años que espera vivir en la vivienda"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Home_SecondLoanDownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_SecondLoanDiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_SecondLoanOtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa sobre sus ahorros "
+      }
+    },
+    "results_fields": {
+      "LoanAmtHome07": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "LoanAmt2Home07": {},
+      "PrincAndIntHome07": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PrincAndInt2Home07": {},
+      "MortInsHome07": {
+        "fieldLabel": "Seguro hipotecario privado "
+      },
+      "MortIns2Home07": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TaxAndIns2": {},
+      "TotPmtHome07": {
+        "fieldLabel": "Pago total"
+      },
+      "TotPmt2Home07": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "costDifference": "Diferencia de costos",
+    "title": "¿Cuánto debo dar de cuota inicial para una nueva vivienda?",
+    "answer": "La cuota inicial menor le <span class='lf-bold'>%savecost%</span> <span class='lf-bold'>%result%</span> en el plazo de los %years% años.",
+    "TotPmtHome07": "Cuota inicial menor",
+    "TotPmt2Home07": "Cuota inicial mayor",
+    "amount_suffix": " durante ",
+    "cost_suffix": "costará",
+    "cost": "costará",
+    "save": "ahorrará",
+    "categories": [
+      "Cuota inicial menor",
+      "Cuota inicial mayor"
+    ],
+    "selectors": [
+      {
+        "label": "Diferencia de costos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pago",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo con cuota inicial menor",
+            "label": "Préstamo con cuota inicial menor"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo con cuota inicial mayor",
+            "label": "Préstamo con cuota inicial mayor"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ]
+    ],
+    "principalInterest": "Capital e Intereses",
+    "pmi": "Seguro hipotecario privado",
+    "taxesInsurance": "Impuestos y seguro"
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "Siglas que designan el capital del préstamo, los interés, los impuestos sobre la propiedad y el seguro del propietario de vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a decidir si es mejor realizar un pago inicial mayor  o realizar uno menor en función de otros plazos de préstamo determinados. Habitualmente cuanto más tiempo pretenda mantener el préstamo, mayor será la ventaja de realizar un pago inicial mayor dado que se pagarían menos intereses a lo largo del tiempo. Sin embargo, un pago inicial mayor puede ser menos ventajoso, si su intención es vender su vivienda, refinanciar o cancelar el préstamo en el futuro inmediato."
+    },
+    {
+      "textLabel": "Si usted ingresa un pago inicial inferior al 20% del precio de compra de la vivienda, la calculadora estima un monto mensual para el seguro hipotecario privado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#pmi\">PMI</a></span>). Por lo general, los prestamistas hipotecarios exigen que obtenga un seguro hipotecario si su pago inicial es inferior al 20% del precio de compra de la vivienda. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de la diferencia en el costo total, en dólares de hoy, tanto para los escenarios menos bajos como más bajos durante los años esperados en el hogar."
+    },
+    {
+      "title": "Gráfico de columnas apiladas que incluye un desglose del pago mensual total por principal e intereses, impuestos sobre la propiedad y seguro, y PMI para los escenarios de menor y mayor caída."
+    },
+    {
+      "title": "Tabla de amortización del préstamo con el pago inicial más bajo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo total, en dólares de hoy, tanto para los escenarios menos bajos como más bajos durante los años esperados en el hogar"
+    },
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, impuestos sobre la propiedad y seguro, y PMI para los escenarios de menor y mayor caída"
+    }
+  ]
+}

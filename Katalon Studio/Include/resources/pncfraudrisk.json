@@ -1,0 +1,133 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc/calc/fraudrisk?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//span[@id='lf_answer']/p",
+      "value": "A business like yours, in the Health industry, has an average per record cost of $429.00* if a data breach happens. With 5,000 clients, that means a potential breach of your business could cost up to $2,145,000.00."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[2]",
+      "value": "In addition to the monetary costs of a data breach, you could stand to lose a portion of your customers due to reputational risk."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[3]",
+      "value": "The industry you selected has an average fraud-related client churn rate† of 7.00%*."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[4]",
+      "value": "The potential number of clients lost to the reputational damage of a data breach is 350."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_NumberOfCustomers-label",
+      "value": "Number of customers"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_NumberOfCustomers",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_NumberOfCustomers-error-message",
+      "value": "Must be between 1 and 100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_Industry-label",
+      "value": "Industry"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_Industry",
+      "value": "National Average Communication Consumer Education Energy Entertainment Financial Health Hospitality Industrial Media Pharmaceuticals Public Research Retail Services Technology Transportation"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_Industry",
+      "value": "7"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_NumberOfCustomers",
+      "value": "7,500"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Commercial_Industry",
+      "value": "label=Hospitality"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p",
+      "value": "A business like yours, in the Hospitality industry, has an average per record cost of $123.00* if a data breach happens. With 7,500 clients, that means a potential breach of your business could cost up to $922,500.00."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[2]",
+      "value": "In addition to the monetary costs of a data breach, you could stand to lose a portion of your customers due to reputational risk."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[3]",
+      "value": "The industry you selected has an average fraud-related client churn rate† of 2.50%*."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_answer']/p[4]",
+      "value": "The potential number of clients lost to the reputational damage of a data breach is 188."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='disclaimer_text']/p",
+      "value": "*Record data as of 2019. Provided by IBM; for more information visit https://www.ibm.com/security/data-breach"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='disclaimer_text']/p[2]",
+      "value": "†Churn rate defined as: loss of customers, expressed as an annual percentage of a company's total customer base, due to incidents of fraud."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//small[@id='lf-terms-of-use']/span",
+      "value": "Use of the calculator signifies agreement to the"
+    }
+  }
+]

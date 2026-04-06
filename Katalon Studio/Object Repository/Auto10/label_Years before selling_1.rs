@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Years before selling_1</name>
+   <tag></tag>
+   <elementGuidId>2e956a45-02d8-49ee-b745-74cd26d7a02c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_YearsBeforeSellingIfSellOften-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_YearsBeforeSellingIfSellOften-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_YearsBeforeSellingIfSellOften-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>20f9c166-1a1c-4ccb-b37d-c67580d9307a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_YearsBeforeSellingIfSellOften</value>
+      <webElementGuid>da18fb2d-d840-48e3-a63e-228d8381a195</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_YearsBeforeSellingIfSellOften-label</value>
+      <webElementGuid>d1d05e30-2688-4eea-a85d-0f67e6b62382</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>37c03f9a-359b-46e9-9d15-0bf4c1f4e3c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Years before selling
+                                
+                        </value>
+      <webElementGuid>f5c68df1-bcb2-44db-b22a-277bac93aafe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_YearsBeforeSellingIfSellOften-label&quot;)</value>
+      <webElementGuid>b3423b6f-ab30-47c9-8e92-2d83692f8e7d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_YearsBeforeSellingIfSellOften-label']</value>
+      <webElementGuid>0abfeb9c-ab03-4098-a5ed-4d53b6459e02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_YearsBeforeSellingIfSellOften-table']/div/label</value>
+      <webElementGuid>aeac99a5-0291-438e-b982-e19ff9da3d1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sell Often'])[2]/following::label[1]</value>
+      <webElementGuid>af402828-a544-4e35-8626-870b29a0ef71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yearly registration'])[2]/following::label[1]</value>
+      <webElementGuid>9c0dd32c-883e-4e4f-a9b0-2d6dc7d3a9e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 30'])[2]/preceding::label[1]</value>
+      <webElementGuid>1fe25878-ebb0-4f64-985c-3655d3ec2e13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Years before selling'])[4]/preceding::label[1]</value>
+      <webElementGuid>b2b4385c-fe8f-4723-8a48-347bb647de6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[3]/div[3]/div/div/label</value>
+      <webElementGuid>870390fe-7f17-4a46-9889-7aaffa913741</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_YearsBeforeSellingIfSellOften-label' and (text() = 'Years before selling
+                                
+                        ' or . = 'Years before selling
+                                
+                        ')]</value>
+      <webElementGuid>f9cd3710-3d0e-45f7-bee0-1c1144339ab1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

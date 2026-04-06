@@ -1,0 +1,195 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "fields": [
+          "Global_EstimatedDailyCostOfLongTermCare",
+          "Insurance_LongTermCareSavings",
+          "Global_InflationRate",
+          "Insurance_YearsOfLongTermCare"
+        ]
+      },
+      "advanced": {
+        "fields": []
+      }
+    },
+    "fields": {
+      "Global_EstimatedDailyCostOfLongTermCare": {
+        "fieldLabel": "Estimated daily cost",
+        "smallLabel": "",
+        "glossaryTerm": "longtermcaredailycost",
+        "format": "currency",
+        "defaultValue": "275",
+        "value": "275",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_LongTermCareSavings": {
+        "fieldLabel": "Available savings",
+        "smallLabel": "",
+        "glossaryTerm": "longtermcareavailablesavings",
+        "format": "currency",
+        "defaultValue": "75000",
+        "value": "75000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Annual inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflation",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_YearsOfLongTermCare": {
+        "fieldLabel": "Years of care",
+        "smallLabel": "",
+        "glossaryTerm": "longtermcareyears",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "50",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "result": "Insurance_LongTermCareSurplusOrShortage",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Insurance_LongTermCareSavings"
+        ],
+        [
+          "Insurance_LongTermCareTotalCost"
+        ],
+        [
+          "Insurance_LongTermCareSurplusOrShortage"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "Insurance_LongTermCareSavings": {
+        "fieldLabel": "Available savings"
+      },
+      "Insurance_LongTermCareTotalCost": {
+        "fieldLabel": "Long term care total cost"
+      },
+      "Insurance_LongTermCareSurplusOrShortage": {
+        "fieldLabel": "Long term care surplus or shortage"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "How much long term care insurance will I need?",
+    "answer1": "You need <span class='lf-bold'>%result%</span> in long term care insurance.",
+    "answer2": "Your savings is adequate to meet your long term care needs.",
+    "AvailableSavings": "Available savings",
+    "LongTermCareTotalCost": "Long term care total cost",
+    "LongTermCareSurplus": "Long term care surplus",
+    "LongTermCareShortage": "Long term care shortage",
+    "selectors": [
+      {
+        "label": "",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "longtermcaredailycost": {
+      "title": "Daily cost of long term care",
+      "definition": "The daily cost of providing long-term care for you or your loved one."
+    },
+    "longtermcareavailablesavings": {
+      "title": "Available long term care savings",
+      "definition": "The amount of savings you have available to pay for long-term care."
+    },
+    "inflation": {
+      "title": "Annual inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    },
+    "longtermcareyears": {
+      "title": "Years of long term care",
+      "definition": "The number of years you anticipate requiring long-term care."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Long-term care insurance provides care in the event that you or a loved one need long-term assistance in a nursing home, at an adult day care facility or at your home. It is designed to cover the cost of assistance with activities of daily living such as dressing, eating, bathing, toileting, getting in and out of bed, etc. This coverage provides peace of mind since long-term care is not covered by traditional health insurance and can become a huge financial burden if you don?t plan ahead. As a starting point, this tool helps you determine the amount of long-term care insurance needed for your specific situation. For further information, please consult an insurance professional."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart that compares available savings and estimated long term care total cost expenses."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Comparison between available savings and estimated long term care total cost expenses"
+    }
+  ]
+}

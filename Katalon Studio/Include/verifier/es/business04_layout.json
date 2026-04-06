@@ -1,0 +1,193 @@
+{
+  "layout": {
+    "tabs": {
+      "SharedLoanInfo": {
+        "tabLabel": "INFORMACIÓN DEL PRÉSTAMO COMPARTIDA"
+      },
+      "Loan1": {
+        "tabLabel": "PRÉSTAMO 1"
+      },
+      "Loan2": {
+        "tabLabel": "PRÉSTAMO 2"
+      }
+    },
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "Monto del préstamo"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Tasa de impuestos federales"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "Tasa de impuestos estatales"
+      },
+      "Business_LoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_SecondLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)"
+      },
+      "Business_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      }
+    },
+    "results_fields": {
+      "TotalPmts1Business04": {
+        "fieldLabel": "Total de pagos"
+      },
+      "TotalPmts2Business04": {
+        "fieldLabel": "Total de pagos"
+      },
+      "TotalInterest1Business04": {
+        "fieldLabel": "Total de intereses pagados"
+      },
+      "TotalInterest2Business04": {
+        "fieldLabel": "Total de intereses pagados"
+      },
+      "TaxSavings1Business04": {
+        "fieldLabel": "- Ahorros de impuestos"
+      },
+      "TaxSavings2Business04": {
+        "fieldLabel": "- Ahorros de impuestos"
+      },
+      "NetPaid1Business04": {
+        "fieldLabel": "Costo total"
+      },
+      "NetPaid2Business04": {
+        "fieldLabel": "Costo total"
+      },
+      "ATIntRate1": {
+        "fieldLabel": "Tasa de interés después de impuestos"
+      },
+      "ATIntRate2": {
+        "fieldLabel": "Tasa de interés después de impuestos"
+      },
+      "MonthlyPmt1Business04": {
+        "fieldLabel": "Pago mensual"
+      },
+      "MonthlyPmt2Business04": {
+        "fieldLabel": "Pago mensual"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo 1",
+        "Préstamo 2"
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo total",
+    "dataTableCategory2": "Pago mensual",
+    "title": "¿Qué plazo de préstamo debería elegir?",
+    "answer": "%lessOption% le costará <span class='lf-bold'>$%amount% %which%</span> %moreOption%",
+    "morethan": "más que",
+    "lessthan": "menos que",
+    "sameas": "lo mismo que",
+    "loan1": "Préstamo 1",
+    "loan2": "Préstamo 2",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Costo total",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos: préstamo 1",
+            "label": "Préstamo 1"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos: préstamo 2",
+            "label": "Préstamo 2"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Saldo",
+        "Interés pagado",
+        "Interés acumulativo",
+        "Pago mensual",
+        "Capital pagado"
+      ],
+      [
+        "Mes",
+        "Saldo",
+        "Interés pagado",
+        "Interés acumulativo",
+        "Pago mensual",
+        "Capital pagado"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "principal": {
+      "title": "Capital",
+      "definition": "También se denomina saldo del préstamo y es el monto adeudado de un préstamo."
+    },
+    "taxdeductible": {
+      "title": "Deducibles de impuestos",
+      "definition": "Un artículo o gasto restado de los ingresos brutos ajustados para reducir el importe de los ingresos sujetos a impuestos."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "amortized": {
+      "title": "Amortización",
+      "definition": "La reducción gradual del capital de un préstamo que tiene lugar a medida que usted hace los pagos periódicos del préstamo."
+    },
+    "aftertaxinterestrate": {
+      "title": "Tasa de interés después de impuestos",
+      "definition": "La tasa de interés después de impuestos es la tasa de interés sobre un préstamo después de deducir los gastos tributarios. Por ejemplo, si la tasa de interés es del 6 % y la tasa de impuestos sobre la renta es del 25 %, su tasa de interés después de impuestos es del 4.5 %."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar cuál de los dos préstamos con diferentes plazos es el mejor para usted. Generalmente, un préstamo con un plazo más largo tiene una tasa de interés más alta que un préstamo con un plazo más corto. La tasa de interés más alta es compensar a los prestamistas por prestar sus fondos durante más tiempo."
+    },
+    {
+      "textLabel": "Dado que los gastos de intereses son <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxDeductible\">deducibles de impuestos</a></span>, la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AfterTaxInterestRate\">tasa de interés después de impuestos</a></span> debe considerarse al momento de evaluar un préstamo. Los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxSavings\">ahorros de impuestos</a></span> se deducen del total de los pagos para calcular los pagos netos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el monto neto total pagado por el Préstamo 1 y el Préstamo 2."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual del Préstamo 1 y el Préstamo 2."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Importe neto total pagado por el préstamo 1 y el préstamo 2"
+    },
+    {
+      "title": "Pago mensual del Préstamo 1 y Préstamo 2"
+    }
+  ]
+}

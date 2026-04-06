@@ -1,0 +1,908 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will retirement affect my expenses?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you estimate your monthly expenses in retirement adjusted for inflation. Inflation has averaged between 2 and 3 percent over the past 15 or 20 years. Since your expenses in retirement change over time, it helps to think of retirement in stages."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='inflation'])[1]/following::p[1]",
+      "value": "Your early retirement years may include spending on travel, education, and recreation. You may also be caring for elderly parents. Your expenses are likely to be highest in this stage of retirement. You will want to begin thinking about estate planning if you haven't already."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='estate planning'])[1]/following::p[1]",
+      "value": "In your middle-retirement years, you are likely to have paid off your mortgage and other debts. Higher medical expenses may creep up on you. A budget-conscious lifestyle becomes more important."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='estate planning'])[1]/following::p[2]",
+      "value": "Finally, in your late-retirement years, you may face larger medical bills. Sticking to a strict budget may be more likely."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=inflation",
+      "value": "inflation"
+    }
+  },
+  {
+    "click": {
+      "id": "link=inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inflation'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=estate planning",
+      "value": "estate planning"
+    }
+  },
+  {
+    "click": {
+      "id": "link=estate planning"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Estate planning"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The set-up and administration of your estate to ensure that your desired beneficiaries are provided for."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estate planning'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Adjusted for inflation, your monthly living expenses will be $3,078 during retirement"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$3,078'])[2]/following::th[1]",
+      "value": "Not adjusted for inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Not adjusted for inflation'])[1]/following::th[1]",
+      "value": "Adjusted for inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrExp_result_label",
+      "value": "Current"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrExp_result_value_0",
+      "value": "$3,610"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrExp_result_value",
+      "value": "$3,610"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstExp_result_label",
+      "value": "During Retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstExp_result_value",
+      "value": "$2,520"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstExpAdj_result_value",
+      "value": "$3,078"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Comparison"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Total current expenses and total expenses during retirement, adjusted for inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Current"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "During Retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Adjusted for Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$3,610"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$3,078"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Current"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "During Retirement"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-14",
+      "value": "Housing"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-LowerExpenses-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-LowerExpenses-details']/div/div/div/div/fieldset/legend",
+      "value": "Current"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-LowerExpenses-details']/div/div[2]/div/div/fieldset/legend",
+      "value": "During Retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrHouse_label']/span[2]",
+      "value": "Housing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrHouse",
+      "value": "1,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrHouse-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstHouse",
+      "value": "1,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstHouse-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrLifeIns_label']/span",
+      "value": "Life Insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrLifeIns",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrLifeIns-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstLifeIns",
+      "value": "40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstLifeIns-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrTrans_label']/span",
+      "value": "Transportation"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrTrans",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrTrans-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstTrans",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstTrans-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrCloth_label']/span",
+      "value": "Clothing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrCloth",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrCloth-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstCloth",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstCloth-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrDebt_label']/span",
+      "value": "Debt payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrDebt",
+      "value": "400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrDebt-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstDebt",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstDebt-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrEdu_label']/span",
+      "value": "Education"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrEdu",
+      "value": "350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrEdu-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstEdu",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstEdu-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrOther_label']/span",
+      "value": "Other"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrOther",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrOther-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstOther",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstOther-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-HigerExpenses-tab-label",
+      "value": "Higher Expenses"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-HigerExpenses-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-HigerExpenses-details']/div/div/div/div/fieldset/legend",
+      "value": "Current"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-HigerExpenses-details']/div/div[2]/div/div/fieldset/legend",
+      "value": "During Retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrMed_label']/span[2]",
+      "value": "Medical"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrMed",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrMed-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstMed",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstMed-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrFood_label']/span",
+      "value": "Food"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrFood",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrFood-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstFood",
+      "value": "400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstFood-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrRec_label']/span",
+      "value": "Recreation"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrRec",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrRec-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstRec",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstRec-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_CurrPropIns_label']/span",
+      "value": "Property insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrPropIns",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrPropIns-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstPropIns",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstPropIns-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Projections-tab-label",
+      "value": "Projections"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Projections-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermRetire01_field_label",
+      "value": "Years until you retire"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TermRetire01",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TermRetire01-error-message",
+      "value": "Must be between 1 and 115"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InflationRate_field_label",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_InflationRate_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-LowerExpenses-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrHouse",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrLifeIns",
+      "value": "78"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrTrans",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrCloth",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrDebt",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrEdu",
+      "value": "450"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrOther",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstHouse",
+      "value": "1,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstLifeIns",
+      "value": "120"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstTrans",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstCloth",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstDebt",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstEdu",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstOther",
+      "value": "500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-HigerExpenses-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrMed",
+      "value": "120"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrFood",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrRec",
+      "value": "168"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrPropIns",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstMed",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstFood",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstRec",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_EstPropIns",
+      "value": "300"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Projections-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TermRetire01",
+      "value": "8"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InflationRate",
+      "value": "6.78"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Adjusted for inflation, your monthly living expenses will be $5,788 during retirement"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrExp_result_value_0",
+      "value": "$4,016"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrExp_result_value",
+      "value": "$4,016"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstExp_result_value",
+      "value": "$3,370"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_EstExpAdj_result_value",
+      "value": "$5,788"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

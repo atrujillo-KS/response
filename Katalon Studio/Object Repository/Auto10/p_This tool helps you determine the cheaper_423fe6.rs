@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_This tool helps you determine the cheaper_423fe6</name>
+   <tag></tag>
+   <elementGuidId>b28f0eae-20e1-4743-bf48-dcbdce173c46</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_0']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This tool helps you determine the cheaper option: buying a vehicle and owning it&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>fe34f2a3-4a29-4ed6-a723-410bd21b5621</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_0</value>
+      <webElementGuid>2236f429-5210-4b93-aeac-5d28f451d013</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This tool helps you determine the cheaper option: buying a vehicle and owning it for a long period, or selling and buying a new vehicle more often. Most likely, keeping a car for a long time is cheaper than buying and selling every couple of years, especially if the user buys and sells a new car every couple of years.</value>
+      <webElementGuid>b71feffd-1955-4cc6-b572-46b37d52356c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_0&quot;)</value>
+      <webElementGuid>7044f0b1-58be-4f6a-a83c-40d3a248ba16</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_0']</value>
+      <webElementGuid>309602a5-598e-4413-8d38-5a83600b9012</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p</value>
+      <webElementGuid>56ee6a30-cd9e-4b12-8cd9-bcc45b56b0b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[2]</value>
+      <webElementGuid>9a900f69-5c90-4e7a-b18e-381bc1e43fbc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[2]</value>
+      <webElementGuid>c7ab445d-1c0b-43be-8545-934747cc945d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[8]</value>
+      <webElementGuid>e5b61e4c-ac2a-4b95-9a6f-a45fd3d65fc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[8]</value>
+      <webElementGuid>68ba1eb9-3236-4407-ba3f-217ae347b1a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This tool helps you determine the cheaper option: buying a vehicle and owning it for a long period, or selling and buying a new vehicle more often. Most likely, keeping a car for a long time is cheaper than buying and selling every couple of years, especially if the user buys and sells a new car every couple of years.']/parent::*</value>
+      <webElementGuid>31f04d18-dc24-4741-a9be-b4ca1dbd4b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/p</value>
+      <webElementGuid>27182e05-f28e-433b-9dd2-7fb089970503</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_0' and (text() = 'This tool helps you determine the cheaper option: buying a vehicle and owning it for a long period, or selling and buying a new vehicle more often. Most likely, keeping a car for a long time is cheaper than buying and selling every couple of years, especially if the user buys and sells a new car every couple of years.' or . = 'This tool helps you determine the cheaper option: buying a vehicle and owning it for a long period, or selling and buying a new vehicle more often. Most likely, keeping a car for a long time is cheaper than buying and selling every couple of years, especially if the user buys and sells a new car every couple of years.')]</value>
+      <webElementGuid>66cdeaab-6f16-4d1e-b2a3-58cfdb2dfa3f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

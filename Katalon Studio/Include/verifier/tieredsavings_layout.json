@@ -1,0 +1,341 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "tabId": "lf-basic",
+        "tabClass": "lf-open",
+        "fieldSetId": "lf-basic",
+        "tabLabel": "Basic",
+        "tableId": "lf_Basic",
+        "fields": [
+          "Global_ZipCode",
+          "Global_CurrentSavings",
+          "Savings_MonthlyInvestment",
+          "Savings_DepositFrequencyOne",
+          "Savings_YearsDeposited"
+        ]
+      },
+      "advanced": {
+        "tabId": "lf-advanced",
+        "tabClass": "",
+        "fieldSetId": "lf-advanced",
+        "tabLabel": "Advanced",
+        "tableId": "lf_Advanced",
+        "fields": [
+          "Global_FederalTaxRate",
+          "Global_StateTaxRate",
+          "Global_InflationRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Savings_InitialBalance"
+        ],
+        [
+          "Savings_TotalFutureDeposits"
+        ],
+        [
+          "Savings_CumulativeInterestEarned"
+        ],
+        [
+          "Savings_GrossSavings"
+        ],
+        [
+          "Savings_SavingsAfterTaxes"
+        ],
+        [
+          "Savings_SavingsAfterTaxesAndInflation"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "Savings_InitialBalance": {
+        "fieldLabel": "Initial balance"
+      },
+      "Savings_TotalFutureDeposits": {
+        "fieldLabel": "Future deposits"
+      },
+      "Savings_CumulativeInterestEarned": {
+        "fieldLabel": "Interest earned"
+      },
+      "Savings_GrossSavings": {
+        "fieldLabel": "Total savings after % years"
+      },
+      "Savings_SavingsAfterTaxes": {
+        "fieldLabel": "Savings after taxes"
+      },
+      "Savings_SavingsAfterTaxesAndInflation": {
+        "fieldLabel": "Savings after taxes and inflation"
+      }
+    },
+    "fields": {
+      "Global_ZipCode": {
+        "fieldLabel": "Zip Code",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "maxlength": "5",
+        "precision": 0,
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "errorMessage": "Must be exactly 5 numeric characters."
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Current savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_MonthlyInvestment": {
+        "fieldLabel": "Additional deposits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_DepositFrequencyOne": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Deposit frequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Years deposited",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "90",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual rate of return",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflation",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "totalSavings": "Total savings after %YEARS% years",
+    "savingsAfterTAxes": "Savings after taxes",
+    "savingsAfterInflation": "Savings after taxes and inflation",
+    "endingBalance": "Ending Balance",
+    "initialBalance": "Initial balance",
+    "futureDeposits": "Future Deposits",
+    "interestEarned": "Interest Earned",
+    "title": "How much will my savings be worth?",
+    "answer": "Your savings will be worth <span class='lf-bold'>$%beforeTax%</span> before taking taxes and inflation into account. Adjusted for taxes and inflation, the purchasing power of your savings will be <span class='lf-bold'>$%afterTaxAndInflation%.</span>",
+    "selectors": [
+      {
+        "label": "Breakdown",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Taxes & Inflation",
+        "width": "33%"
+      },
+      {
+        "label": "Savings Over Time",
+        "width": "33%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Pie chart showing the breakdown of total savings accumulated - before taking taxes and inflation - by initial balance, future deposits, and interest earned."
+    },
+    {
+      "title": "Column chart comparing  total gross savings accumulated, savings after taxes, and savings after taxes and inflation."
+    },
+    {
+      "title": "Column chart depicting the total gross savings earned at the end of each year over the savings time horizon."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table showing the breakdown of total savings accumulated - before taking taxes and inflation - by initial balance, future deposits, and interest earned."
+    },
+    {
+      "title": "Table comparing  total gross savings accumulated, savings after taxes, and savings after taxes and inflation."
+    },
+    {
+      "title": "Table depicting the total gross savings earned at the end of each year over the savings time horizon."
+    }
+  ]
+}

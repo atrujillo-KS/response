@@ -1,0 +1,132 @@
+{
+  "layout": {
+    "tabs": {
+      "yourInformation": {
+        "tabLabel": "Su información"
+      },
+      "disabilityInformation": {
+        "tabLabel": "Información sobre discapacidad"
+      }
+    },
+    "fields": {
+      "Global_MonthlyExpenses": {
+        "fieldLabel": "Gastos mensuales",
+        "smallLabel": ""
+      },
+      "Insurance_MonthsOfDisability": {
+        "fieldLabel": "Meses de incapacidad",
+        "smallLabel": ""
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación anual",
+        "smallLabel": ""
+      },
+      "Insurance_CurrentMonthlyDisabilityCoverage": {
+        "fieldLabel": "Cobertura mensual actual",
+        "smallLabel": ""
+      },
+      "Insurance_MonthsOfDisabilityCoverage": {
+        "fieldLabel": "Meses de cobertura",
+        "smallLabel": ""
+      }
+    },
+    "results_fields": {
+      "Global_MonthlyExpensesInflationAdjusted": {
+        "fieldLabel": "Gastos mensuales"
+      },
+      "Insurance_CurrentMonthlyDisabilityCoverage": {
+        "fieldLabel": "Cobertura de invalidez"
+      },
+      "Insurance_DisabilityCoverageSurplusOrShortage": {
+        "fieldLabel": "%surplus%"
+      },
+      "Insurance_MonthsOfDisability": {
+        "fieldLabel": "Meses de incapacidad"
+      },
+      "Insurance_MonthsOfDisabilityCoverage": {
+        "fieldLabel": "Meses de cobertura"
+      },
+      "Insurance_DisabilityCoverageMonthsSurplusOrShortage": {
+        "fieldLabel": "%shortage%"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "SHORTFALL": "Déficit",
+    "SURPLUS": "Excedente",
+    "month": "Mes",
+    "dataTableCategoryTitle": "Mes",
+    "title": "¿Cuánto seguro de incapacidad necesito?",
+    "answer1": "Para cubrir sus necesidades de seguro de invalidez, tendrá que ampliar su cobertura de invalidez por <span class='lf-bold'>%result1% %MONTHS%</span> y tendrá que aumentar su cobertura de invalidez por <span class='lf-bold'>%result2%</span>.",
+    "answer2": "Su cobertura de invalidez actual es adecuada para cubrir sus gastos ajustados a la inflación de <span class='lf-bold'>%result3%</span> pero se queda corta por <span class='lf-bold'>%result4% %MONTHS%</span> en cuanto a la duración de la cobertura.",
+    "answer3": "Su cobertura de invalidez es adecuada para cubrir los <span class='lf-bold'>%result5% %MONTHS%</span> de cobertura requeridos, pero se queda corta por <span class='lf-bold'>%result2%</span> para cubrir sus necesidades de gastos mensuales.",
+    "answer": "Su cobertura de invalidez es adecuada para cubrir sus necesidades de invalidez.",
+    "monthlyExpenses": "Gastos mensuales",
+    "disabilityCoverage": "Cobertura de invalidez",
+    "selectors": [
+      {
+        "label": "Gastos mensuales",
+        "width": "50%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Necesidades de invalidez frente a cobertura",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Gastos mensuales",
+        "Cobertura de invalidez"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "monthlyexpenses": {
+      "title": "Gastos mensuales",
+      "definition": "Tus gastos de manutención mensuales, menos los gastos en que puedas incurrir por ir a trabajar (como los costes de combustible para desplazarte)."
+    },
+    "monthsofdisability": {
+      "title": "Meses de incapacidad",
+      "definition": "El número de meses que podría esperar estar incapacitado o que necesitaría cobertura por incapacidad."
+    },
+    "inflation": {
+      "title": "Tasa de inflación anual",
+      "definition": "Aumento general de los precios que se pagan por los bienes y servicios, expresado como tasa anual."
+    },
+    "currentbonthlydisabilitycoverage": {
+      "title": "Cobertura mensual actual por incapacidad",
+      "definition": "Su importe mensual actual de cobertura por invalidez."
+    },
+    "monthsofdisabilitycoverage": {
+      "title": "Meses de cobertura por invalidez",
+      "definition": "Los meses de cobertura por incapacidad que tiene actualmente con un plan de seguro de incapacidad existente."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Uno de los activos más importantes es la capacidad de trabajar y obtener ingresos. El seguro de incapacidad laboral sustituye una parte de sus ingresos si enferma o se lesiona y no puede trabajar. Este tipo de seguro está disponible a través de programas públicos y privados. Como punto de partida, esta herramienta le ayuda a calcular el importe y la duración del seguro de incapacidad necesario para su situación específica. Para más información, consulte a un profesional de seguros."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Cuadro de columnas que compara los gastos y la cobertura de invalidez para cada mes de invalidez."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Necesidades de discapacidad frente a cobertura"
+    }
+  ]
+}

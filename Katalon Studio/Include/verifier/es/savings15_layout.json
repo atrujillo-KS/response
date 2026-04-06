@@ -1,0 +1,125 @@
+{
+  "layout": {
+    "tabs": {
+      "CashOption": {
+        "tabLabel": "Opción de efectivo"
+      },
+      "PaymentOption": {
+        "tabLabel": "Opción de pago"
+      },
+      "GeneralInfo": {
+        "tabLabel": "Información general "
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Opción de efectivo",
+        "Opción de pago"
+      ]
+    },
+    "results_fields": {
+      "NPVCash": {
+        "fieldLabel": "Valor actual neto"
+      },
+      "NPVAnnuity": {
+        "fieldLabel": "Valor actual neto"
+      }
+    },
+    "fields": {
+      "Savings_CashPayment": {
+        "fieldLabel": "Cantidad del pago inicial en efectivo"
+      },
+      "Savings_AnnualPayment": {
+        "fieldLabel": "Cantidad del pago anual"
+      },
+      "Savings_NumberOfAnnualPayments": {
+        "fieldLabel": "Número de pagos anuales"
+      },
+      "Savings_DesiredYearsForMoneyToLast": {
+        "fieldLabel": "Años que quisiera que le dure el dinero "
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal "
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Qué es mejor: pagar al contado u obtener financiamiento?",
+    "answer": "La mejor opción es <span class='lf-bold'>%which%</span> con un valor actual mayor de <span class='lf-bold'>$%value%</span>",
+    "same_as_answer": "<span class='lf-bold'>Ambas</span> opciones tendrán el mismo valor actual de <span class='lf-bold'>$%value%</span>",
+    "cashOption": "Opción de efectivo",
+    "paymentOption": "Opción de pago",
+    "purchase": "pagar",
+    "cash": "dinero en efectivo",
+    "spendingCash": "Cantidad que podría gastar cada año durante %years% años",
+    "selectors": [
+      {
+        "label": "valor actual neto",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Poder adquisitivo anual",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "annuitization": {
+      "title": "Transformación en anualidad",
+      "definition": "Anualidades variables: La transformación en anualidad implica convertir el pago de una compra en una anualidad, o serie de pagos, a lo largo de un plazo de pago designado. El plazo de pago puede extenderse por una determinada cantidad de años o por el resto de la vida del beneficiario de la anualidad. Planificación para jubilación y educación universitaria: La transformación en anualidad implica convertir la inversión de una suma global en una anualidad, que se extenderá por el plazo esperado de la jubilación o la educación universitaria."
+    },
+    "netpresentvalue": {
+      "title": "Valor actual neto",
+      "definition": "El método del valor actual neto se utiliza para determinar el valor de una inversión en dólares corrientes, tomando en cuenta la inflación y los beneficios. Como regla general, si el valor actual neto es positivo, se debería realizar la inversión."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "discount": {
+      "title": "Descuento",
+      "definition": "Un precio que es inferior al precio regular de venta. En el contexto de inversión en bonos, un descuento es un precio de bono inferior al valor nominal del bono."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "annuity": {
+      "title": "Anualidad",
+      "definition": "Póliza de seguro o inversión que paga anualmente un monto fijo de dinero."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara dos opciones de pago: recibir una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lumpSumInvestments\">suma global</a></span> hoy, invertirla usted mismo y vivir de las ganancias después de pagar impuestos sobre la renta, o recibir una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Annuity\">anualidad</a></span> durante una determinada cantidad de años y pagar impuestos todos los años. Las loterías generalmente se pagan como anualidades."
+    },
+    {
+      "textLabel": "La calculadora <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#discount\">descuenta</a></span> la anualidad de un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#presentValue\">un valor presente</a></span> para que usted pueda comparar qué opción es la más conveniente. Generalmente, la mejor opción es la que posee un valor presente más alto. La <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#savingsInterestRate\">tasa de interés de ahorro</a></span> que usted designe se utiliza para calcular el valor presente para la opción de pago de la anualidad y es un interés compuesto mensual."
+    },
+    {
+      "textLabel": "La decisión de recibir una suma global o una anualidad básicamente depende de la tasa de interés que usted puede obtener por sus ahorros y la diferencia entre el monto de la suma global y el monto de la anualidad."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

@@ -1,0 +1,323 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "Savings_DepositAmount",
+          "Savings_CDTermNumber",
+          "Savings_CDTermType",
+          "Savings_CDInterestRate",
+          "Savings_CompoundingFrequency"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Global_FederalTaxRate",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "fields": [
+        [
+          "AnnPerYield"
+        ],
+        [
+          "AvgMonInt"
+        ],
+        [
+          "TotIntErn"
+        ],
+        [
+          "TaxOwe"
+        ],
+        [
+          "IntAftTax"
+        ]
+      ]
+    },
+    "results_fields": {
+      "AnnPerYield": {
+        "fieldLabel": "Annual percentage yield (APY)"
+      },
+      "AvgMonInt": {
+        "fieldLabel": "Average monthly interest"
+      },
+      "TotIntErn": {
+        "fieldLabel": "Total interest earned"
+      },
+      "TaxOwe": {
+        "fieldLabel": "Taxes you will owe"
+      },
+      "IntAftTax": {
+        "fieldLabel": "Interest after taxes"
+      }
+    },
+    "fields": {
+      "Savings_DepositAmount": {
+        "fieldLabel": "Initial deposit",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_CDTermNumber": {
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(number)",
+        "glossaryTerm": "cddepositterm",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_CDTermType": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(type)",
+        "glossaryTerm": "cddepositterm",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Days"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Months"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarters"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Years"
+          }
+        ]
+      },
+      "Savings_CDInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "1",
+        "maximumValue": "50.00",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_CompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "smallLabel": "",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Amount",
+    "title": "How much will my CD be worth at maturity?",
+    "answer": "Your CD will be worth <span class='lf-bold'>%finalVal%</span> at maturity on <span class='lf-bold'>%maturityDate%</span>.",
+    "selectors": [
+      {
+        "label": "CD value at maturity",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "deposit": "Deposit Amount",
+    "interestEarned": "Interest Earned",
+    "maturityDate_prefix": "will mature on ",
+    "finalVal_prefix": "value of "
+  },
+  "glossaryItems": {
+    "cdvalueatmaturity": {
+      "title": "CD value at maturity",
+      "definition": "CD value at maturity is equal to the sum of the face value of the CD (repaid at maturity) plus any accrued interest owed."
+    },
+    "cd": {
+      "title": "Certificate of deposit (CD)",
+      "definition": "A time deposit that you make at a bank generally ranging in amount from $500 to $250,000. The FDIC insures CDs for up to $250,000 per institution per depositor."
+    },
+    "cdamount": {
+      "title": "CD amount",
+      "definition": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    },
+    "cdinterestrate": {
+      "title": "CD interest rate",
+      "definition": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    },
+    "cdavemonthlyinterest": {
+      "title": "CD average monthly interest",
+      "definition": "CD average monthly interest is the average amount of interest you receive in a month for a CD. If interest is compounded, you do not actually receive this interest until the CD matures. Over the term of the CD, interest is compounded to earn additional interest. The compounded interest has the benefit of increasing average monthly interest."
+    },
+    "apy": {
+      "title": "Annual percentage yield (APY)",
+      "definition": "Annual percentage yield (APY) is the interest rate you earn on a certificate of deposit (CD) or other fixed-term deposit. The APY calculation assumes that you hold the investment until maturity. APY is greater than the stated rate on the deposit if interest is compounded. For example, a bank may be selling a one-year CD at a stated rate of 10%. If the CD compounds interest on a quarterly basis, the APY rises to 10.38%. If compounded daily, the APY rises to 10.52%."
+    },
+    "cddepositterm": {
+      "title": "CD deposit term",
+      "definition": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    },
+    "compoundingfrequency": {
+      "title": "Compounding frequency",
+      "definition": "The frequency that a bank compounds interest on your deposit (e.g. daily, monthly, quarterly). The higher the frequency, the higher the interest rate. "
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "cddepositdate": {
+      "title": "CD deposit date",
+      "definition": "CD deposit date is the date you buy a certificate of deposit (CD). Enter the date using the following format: \"MM/DD/YYYY\"."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "cdcompoundingfrequency": {
+      "title": "CD compounding frequency",
+      "definition": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the maturity value of your <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CD\">certificate of deposit (CD)</a></span>. CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (<a target=\"_blank\" href=\"https://www.fdic.gov/\">FDIC</a>). Because CDs are federally insured, they are considered relatively conservative investments. As a result, they pay a lower <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cdinterestrate\">interest rate</a></span> -- stated as an annual percentage yield (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#APY\">APY</a></span>) -- than non-insured investments such as stocks and bonds."
+    },
+    {
+      "textLabel": "The factors that increase a CD's yield include a higher <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cdinterestrate\">interest rate</a></span> earned on the deposit, more <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CompoundingFrequency\">frequency compounding</a></span> and a longer <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cddepositterm\">deposit term</a></span>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of the CD's worth at maturity by the deposit amount and interest earned."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the CD's worth at maturity by the deposit amount and interest earned"
+    }
+  ]
+}

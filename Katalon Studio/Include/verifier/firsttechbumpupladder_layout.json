@@ -1,0 +1,545 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CertInfo",
+        "Assumptions",
+        "results"
+      ],
+      "CertInfo": {
+        "selected": true,
+        "tabLabel": "Certificate Info",
+        "pageTitle": "Estimated Monthly Housing & Transportation Expenses",
+        "custom": "new-standard-3col",
+        "sections": [
+          "numCerts",
+          "certOne",
+          "certTwo",
+          "certThree"
+        ],
+        "numCerts": {
+          "sectionLabel": "",
+          "fieldSets": "1-single",
+          "inputColumns": "lf-1-column-input",
+          "rows": [
+            {
+              "rowLabel": "Number of certificates in the ladder",
+              "fields": [
+                "FirstTechBumpUpLadder_CDsInLadder"
+              ]
+            }
+          ]
+        },
+        "certOne": {
+          "sectionLabel": "",
+          "fieldSets": "3",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial deposit",
+              "fields": [
+                "Savings_FirstCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term",
+              "fields": [
+                "Savings_FirstCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest rate",
+              "fields": [
+                "Savings_FirstCDInterestRate"
+              ]
+            }
+          ]
+        },
+        "certTwo": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial deposit",
+              "fields": [
+                "Savings_SecondCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term",
+              "fields": [
+                "Savings_SecondCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest rate",
+              "fields": [
+                "Savings_SecondCDInterestRate"
+              ]
+            }
+          ]
+        },
+        "certThree": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Initial deposit",
+              "fields": [
+                "Savings_ThirdCDInitialDeposit"
+              ]
+            },
+            {
+              "rowLabel": "Deposit term",
+              "fields": [
+                "Savings_ThirdCDTermInMonths"
+              ]
+            },
+            {
+              "rowLabel": "Interest rate",
+              "fields": [
+                "Savings_ThirdCDInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "Assumptions": {
+        "tabLabel": "Assumptions",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Global_FederalTaxRate",
+                "Global_StateTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "result": "",
+      "allHeaders": true,
+      "columnHeaders": [
+        "Certificate Ladder",
+        "Term (months)",
+        "APY",
+        "Balance at maturity",
+        "Additional Deposits"
+      ],
+      "fields": [
+        [
+          "FirstTechBumpUpLadder_FirstCertTerm_Output",
+          "FirstTechBumpUpLadder_FirstCertAPY_Output",
+          "FirstTechBumpUpLadder_FirstCertMaturityBalance_Output",
+          null
+        ],
+        [
+          "FirstTechBumpUpLadder_SecondCertTerm_Output",
+          "FirstTechBumpUpLadder_SecondCertAPY_Output",
+          "FirstTechBumpUpLadder_SecondCertMaturityBalance_Output",
+          "FirstTechBumpUpLadder_FirstCertMaturityBalance_Output"
+        ],
+        [
+          "FirstTechBumpUpLadder_ThirdCertTerm_Output",
+          "FirstTechBumpUpLadder_ThirdCertAPY_Output",
+          "FirstTechBumpUpLadder_ThirdCertMaturityBalance_Output",
+          "FirstTechBumpUpLadder_SecondCertMaturityBalance_Output"
+        ]
+      ]
+    },
+    "results_fields": {
+      "FirstTechBumpUpLadder_FirstCertTerm_Output": {
+        "fieldLabel": "First Certificate"
+      },
+      "FirstTechBumpUpLadder_SecondCertTerm_Output": {
+        "fieldLabel": "Second Certificate"
+      },
+      "FirstTechBumpUpLadder_ThirdCertTerm_Output": {
+        "fieldLabel": "Third Certificate"
+      },
+      "FirstTechBumpUpLadder_FirstCertAPY_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_SecondCertAPY_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_ThirdCertAPY_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_FirstCertMaturityBalance_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_SecondCertMaturityBalance_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_ThirdCertMaturityBalance_Output": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_FirstCertMaturityBalance_Output2": {
+        "fieldLabel": ""
+      },
+      "FirstTechBumpUpLadder_SecondCertMaturityBalance_Output2": {
+        "fieldLabel": ""
+      }
+    },
+    "fields": {
+      "FirstTechBumpUpLadder_CDsInLadder": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Number of certificates in the ladder",
+        "glossaryTerm": "",
+        "smallLabel": "",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "false",
+            "optionValue": "0",
+            "optionText": "one"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "1",
+            "optionText": "one"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "2",
+            "optionText": "Two"
+          },
+          {
+            "defaultSelection": "true",
+            "optionValue": "3",
+            "optionText": "Three"
+          }
+        ]
+      },
+      "Savings_FirstCDInitialDeposit": {
+        "fieldLabel": "Initial deposit",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "80000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "First Certificate",
+        "sliderClass": "lf-triple-input-slider",
+        "errorMesssageLabel": "First certificate matured balance must be less than the initial deposit of first certificate."
+      },
+      "Savings_SecondCDInitialDeposit": {
+        "fieldLabel": "Initial deposit",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "60000",
+        "value": "60000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "80000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Second Certificate",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "errorMesssageLabel": "Second certificate initial deposit must be greater than or equal to matured balance of first certificate."
+      },
+      "Savings_ThirdCDInitialDeposit": {
+        "fieldLabel": "Initial deposit",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "format": "currency",
+        "defaultValue": "70000",
+        "value": "70000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "80000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Third Certificate",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "errorMesssageLabel": "Third certificate initial deposit must be greater than or equal to matured balance of the second certificate."
+      },
+      "Savings_FirstCDInterestRate": {
+        "cellClass": "lf-Savings_FirstCDInterestRate lf-percent",
+        "dataHighlight": "true",
+        "glossaryTerm": "cdinterestrate",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.05",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "50.00",
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "precision": 3,
+        "value": "5.05",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Savings_SecondCDInterestRate": {
+        "cellClass": "lf-Savings_SecondCDInterestRate lf-percent",
+        "dataHighlight": "true",
+        "glossaryTerm": "cdinterestrate",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.05",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "50.00",
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "precision": 3,
+        "value": "5.05",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Savings_ThirdCDInterestRate": {
+        "cellClass": "lf-Savings_ThirdCDInterestRate lf-percent",
+        "dataHighlight": "true",
+        "glossaryTerm": "cdinterestrate",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.05",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "50.00",
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "precision": 3,
+        "value": "5.05",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Global_FederalTaxRate": {
+        "cellClass": "lf-Global_FederalTaxRate lf-percent",
+        "dataHighlight": "true",
+        "fieldLabel": "Your federal tax rate",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "defaultValue": "0.00",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "80.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "precision": 2,
+        "value": "0.00",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_StateTaxRate": {
+        "cellClass": "lf-Global_StateTaxRate lf-percent",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state tax rate",
+        "defaultValue": "0.00",
+        "inputType": "text",
+        "showTooltip": "lf-hidden",
+        "maxlength": "6",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "precision": 2,
+        "value": "0.00",
+        "format": "percent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Savings_FirstCDTermInMonths": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Deposit term",
+        "glossaryTerm": "cddepositterm",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "smallLabel": "(in months)",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "true",
+            "optionValue": "13",
+            "optionText": "13"
+          }
+        ]
+      },
+      "Savings_SecondCDTermInMonths": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Deposit term",
+        "glossaryTerm": "cddepositterm",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "smallLabel": "(in months)",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "true",
+            "optionValue": "24",
+            "optionText": "24"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "36",
+            "optionText": "36"
+          }
+        ]
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Deposit term",
+        "glossaryTerm": "cddepositterm",
+        "tooltipAriaLabel": "Show tooltip for ",
+        "smallLabel": "(in months)",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "true",
+            "optionValue": "36",
+            "optionText": "36"
+          }
+        ]
+      }
+    }
+  },
+  "labels": {
+    "CUMULATIVE_DIVIDENS": "Cumulative dividends earned",
+    "BALANCE_AFTER": "Total balance after %YEARS% years",
+    "CERT_ONE_BALANCE": "First certificate's matured balance",
+    "CERT_TWO_BALANCE": "Second certificate's matured balance",
+    "FIRST_CERT": "1st Certificate",
+    "SECOND_CERT": "2nd Certificate",
+    "THIRD_CERT": "3rd Certificate",
+    "dataTableCategoryTitle": "Year",
+    "title": "How can I benefit from a bump up share certificate ladder?",
+    "answer": "Over <span class='lf-bold'>%result%</span> years, the bump up share certificate ladder is estimated to grow to $<span class='lf-bold'>%result2%</span> and earn a total of $<span class='lf-bold'>%result3%</span> dividends",
+    "selectors": [
+      {
+        "label": "Dividends",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "CD amount",
+      "definition": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    },
+    "cddepositterm": {
+      "title": "CD deposit term",
+      "definition": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    },
+    "cdinterestrate": {
+      "title": "CD interest rate",
+      "definition": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart that indicates the cumulative dividends earned from each certificate for each year in the certificate ladder."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Cumulative dividends earned from each certificate for each year in the certificate ladder"
+    }
+  ]
+}

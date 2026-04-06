@@ -1,0 +1,614 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much disability insurance will I need?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "One of the most important assets you have is the ability to work and earn an income. Disability insurance replace a portion of your income if you become sick or injured and are unable to work. This type of insurance is available available through both public and private programs. As a starting point, this tool helps you estimate the amount and duration of disability insurance needed for your specific situation. For further information, please consult an insurance professional."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "In order to meet your disability insurance needs, you will have to extend your disability coverage by 6 months and you will need to increase your disability coverage by $3,046."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_more_info",
+      "value": "Show details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpensesInflationAdjusted_result_label",
+      "value": "Monthly expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage_result_label",
+      "value": "Disability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageSurplusOrShortage_result_label",
+      "value": "Shortfall"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpensesInflationAdjusted_result_value",
+      "value": "$5,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage_result_value",
+      "value": "$2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageSurplusOrShortage_result_value",
+      "value": "$3,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability_result_label",
+      "value": "Months of disability"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage_result_label",
+      "value": "Months of coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageMonthsSurplusOrShortage_result_label",
+      "value": "Shortfall"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability_result_value",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage_result_value",
+      "value": "6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageMonthsSurplusOrShortage_result_value",
+      "value": "6"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Month']/parent::*",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Monthly Expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-0:nth-child(1)",
+      "value": "Monthly expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-legend-item.highcharts-color-1:nth-child(2)",
+      "value": "Disability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container2-graph-container']/div/div/span",
+      "value": "Disability Needs vs. Coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Disability Needs vs. Coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly Expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Disability Coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[12]/td",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[12]/td[2]",
+      "value": "$5,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[12]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "yourInformation-accordion",
+      "value": "Your Information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpenses-label",
+      "value": "Monthly expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MonthlyExpenses",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpenses-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpenses_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_MonthlyExpenses_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Monthly expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your monthly living expenses, less any expenses you might incur by going to work (such as fuel costs for commuting)."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability-label",
+      "value": "Months of disability"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthsOfDisability",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_MonthsOfDisability_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Months of disability"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The number of months you might expect to be disabled or that you would require disability coverage."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Annual inflation rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InflationRate_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Annual inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "disabilityInformation-accordion",
+      "value": "Disability Information"
+    }
+  },
+  {
+    "click": {
+      "id": "disabilityInformation-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage-label",
+      "value": "Current monthly coverage"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Current monthly disability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your current monthly dollar amount of disability coverage."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage-label",
+      "value": "Months of coverage"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage",
+      "value": "6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Months of disability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The months of disability coverage your curently have coverage for with an existing disability insurance plan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "yourInformation-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_MonthlyExpenses",
+      "value": "6,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthsOfDisability",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_InflationRate",
+      "value": "5.45"
+    }
+  },
+  {
+    "click": {
+      "id": "disabilityInformation-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage",
+      "value": "7,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage",
+      "value": "25"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your disability coverage is adequate to meet the 24 month of required coverage, but falls short by $214 in meeting your monthly expense needs."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage",
+      "value": "8,000"
+    }
+  },
+      {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your disability coverage is adequate to meet your disability needs."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyExpensesInflationAdjusted_result_label",
+      "value": "Monthly expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentMonthlyDisabilityCoverage_result_label",
+      "value": "Disability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageSurplusOrShortage_result_label",
+      "value": "Surplus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageSurplusOrShortage_result_value",
+      "value": "$786"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisability_result_value",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthsOfDisabilityCoverage_result_value",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageMonthsSurplusOrShortage_result_label",
+      "value": "Surplus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DisabilityCoverageMonthsSurplusOrShortage_result_value",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

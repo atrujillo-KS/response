@@ -1,0 +1,183 @@
+{
+  "layout": {
+    "tabs": {
+      "GeneralInfo": {
+        "tabLabel": "Información general "
+      },
+      "KeepIt": {
+        "tabLabel": "Conservarlo"
+      },
+      "SellOften": {
+        "tabLabel": "Vender a menudo"
+      },
+      "TaxesDepreciation": {
+        "tabLabel": "Impuestos y depreciación "
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_YearsBeforeSellingIfKeep": {
+        "fieldLabel": "Años antes de vender"
+      },
+      "Auto_YearlyRepairsIfKeep": {
+        "fieldLabel": "Reparaciones anuales"
+      },
+      "Auto_YearlyInsuranceIfKeep": {
+        "fieldLabel": "Seguro anual"
+      },
+      "Auto_YearlyRegistrationIfKeep": {
+        "fieldLabel": "Registro anual "
+      },
+      "Auto_YearsBeforeSellingIfSellOften": {
+        "fieldLabel": "Años antes de vender"
+      },
+      "Auto_YearlyRepairsIfSellOften": {
+        "fieldLabel": "Reparaciones anuales"
+      },
+      "Auto_YearlyInsuranceIfSellOften": {
+        "fieldLabel": "Seguro anual"
+      },
+      "Auto_YearlyRegistrationIfSellOften": {
+        "fieldLabel": "Registro anual "
+      },
+      "Auto_VehicleAgeInYears": {
+        "fieldLabel": "Antigüedad del vehículo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Auto_FutureDepreciation": {
+        "fieldLabel": "Depreciación futura",
+        "dropdownOptions": [
+          {
+            "optionText": "Baja"
+          },
+          {
+            "optionText": "Promedio"
+          },
+          {
+            "optionText": "Elevado(a)"
+          }
+        ]
+      },
+      "Global_SalesTaxRate": {
+        "fieldLabel": "Tasa impositiva a las ventas"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Conservarlo",
+        "Vender a menudo"
+      ]
+    },
+    "results_fields": {
+      "TotIntPaidAuto10": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotDepAuto10": {
+        "fieldLabel": "Depreciación total"
+      },
+      "TotRep": {
+        "fieldLabel": "Reparaciones totales"
+      },
+      "TotInsLic": {
+        "fieldLabel": "Gastos totales por concepto de seguro y registro "
+      },
+      "TaxAtPurcAuto10": {
+        "fieldLabel": "Impuestos al momento de la compra"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto tiempo debo conservar un vehículo?",
+    "answer_keep": "Conservar un vehículo más tiempo le <span class='lf-bold'>%which% %result%</span> en dólares actuales",
+    "answer": "<span class='lf-bold'>%type%</span> un vehículo por más tiempo le ahorrará <span class='lf-bold'>%result%</span> en dólares actuales",
+    "answer_same": "Conservar un vehículo más tiempo le costará <span class='lf-bold'>lo mismo</span>, en dólares de hoy como vender a menudo",
+    "total_cost": "Costo total",
+    "loan1": "Conservarlo",
+    "loan2": "Vender a menudo",
+    "save": "ahorrará",
+    "cost": "costo"
+  },
+  "glossaryItems": {
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa la opción más económica: comprar un vehículo y ser propietario del mismo durante un largo período o vender y comprar un vehículo nuevo con mayor frecuencia. Lo más probable es que conservar un vehículo por mucho tiempo sea más económico que comprar un vehículo y venderlo para comprar otro cada pocos años, en especial si el usuario cada vez compra un vehículo nuevo."
+    },
+    {
+      "textLabel": "Las siguientes variables son las principales razones por las que generalmente es más costoso comprar y vender un vehículo con frecuencia:"
+    },
+    {
+      "textLabel": "Cada vez que el usuario compra un vehículo nuevo, tiene que tomar un préstamo nuevo y pagar el interés del préstamo."
+    },
+    {
+      "textLabel": "Cuando se compran vehículos nuevos, la mayor depreciación ocurre durante el primer año de propiedad."
+    },
+    {
+      "textLabel": "Cada vez que el usuario compra un vehículo debe pagar el impuesto sobre la venta."
+    },
+    {
+      "textLabel": "El seguro de automóvil es más costoso para los vehículos más nuevos."
+    },
+    {
+      "textLabel": "Los costos de registro y licencia también son mayores en el caso de los vehículos más nuevos."
+    },
+    {
+      "textLabel": "Para el propietario que compra más de un vehículo durante el período, suponemos que el precio de venta del vehículo, el pago inicial, la tasa de depreciación y los plazos del préstamo son iguales para cada vehículo nuevo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del dinero que se ahorra al mantener un vehículo más tiempo o venderlo con frecuencia."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Dinero ahorrado al mantener un vehículo por más tiempo o venderlo con frecuencia"
+    }
+  ]
+}

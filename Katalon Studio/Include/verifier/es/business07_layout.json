@@ -1,0 +1,526 @@
+{
+  "layout": {
+    "tabs": {
+      "LeaseOption": {
+        "tabLabel": "OPCIÓN DE ARRENDAMIENTO",
+        "pageTitle": "Opción De Arrendamiento"
+      },
+      "BuyOption": {
+        "tabLabel": "OPCIÓN DE COMPRA",
+        "pageTitle": "Opción De Compra"
+      },
+      "Expenses": {
+        "tabLabel": "Gastos",
+        "pageTitle": "Gastos Proyectados",
+        "lease": {
+          "rows": [
+            {
+              "rowLabel": "Construcción o remodelación (por única vez)"
+            },
+            {
+              "rowLabel": "Seguro para la propiedad (anual)"
+            },
+            {
+              "rowLabel": "Impuestos sobre la propiedad (anuales)"
+            },
+            {
+              "rowLabel": "Mantenimiento (mensual)"
+            },
+            {
+              "rowLabel": "Electricidad (mensual)"
+            },
+            {
+              "rowLabel": "Gas (mensual)"
+            },
+            {
+              "rowLabel": "Alcantarillado (mensual)"
+            },
+            {
+              "rowLabel": "Eliminación de desechos (mensual)"
+            },
+            {
+              "rowLabel": "Agua (mensual)"
+            },
+            {
+              "rowLabel": "Otro (mensual)"
+            }
+          ]
+        },
+        "buy": {
+          "rows": [
+            {
+              "rowLabel": "Construcción o remodelación (por única vez)"
+            },
+            {
+              "rowLabel": "Seguro para la propiedad (anual)"
+            },
+            {
+              "rowLabel": "Impuestos sobre la propiedad (anuales)"
+            },
+            {
+              "rowLabel": "Mantenimiento (mensual)"
+            },
+            {
+              "rowLabel": "Electricidad (mensual)"
+            },
+            {
+              "rowLabel": "Gas (mensual)"
+            },
+            {
+              "rowLabel": "Alcantarillado (mensual)"
+            },
+            {
+              "rowLabel": "Eliminación de desechos (mensual)"
+            },
+            {
+              "rowLabel": "Agua (mensual)"
+            },
+            {
+              "rowLabel": "Otro (mensual)"
+            }
+          ]
+        }
+      },
+      "Property": {
+        "tabLabel": "PROPIEDAD",
+        "pageTitle": "Información sobre la propiedad"
+      },
+      "TaxesInflation": {
+        "tabLabel": "IMPUESTOS E INFLACIÓN",
+        "pageTitle": "Impuestos, ahorros y tasas de inflación"
+      },
+      "results": {
+        "tabLabel": "RESULTADOS"
+      }
+    },
+    "fields": {
+      "Business_CRELeaseSecurityDeposit": {
+        "fieldLabel": "Depósito de garantía"
+      },
+      "Business_IsCRELeaseSecurityDepositRefundable": {
+        "fieldLabel": "Depósito reembolsable al final del plazo del arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "Business_CRELeaseTerm": {
+        "fieldLabel": "Plazo del arrendamiento",
+        "smallLabel": "(en meses)"
+      },
+      "Business_CRELeasePaymentType": {
+        "fieldLabel": "Tipo de pago del arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Por pie cuadrado"
+          },
+          {
+            "optionText": "Tasa fija"
+          }
+        ]
+      },
+      "Business_CRELeaseAnnualCostPerSquareFoot": {
+        "fieldLabel": "Costo anual por pie cuadrado"
+      },
+      "Business_CRELeaseFlatRatePayment": {
+        "fieldLabel": "Monto de la tasa fija"
+      },
+      "Business_CRELeasePaymentFrequency": {
+        "fieldLabel": "Frecuencia del pago del arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Quincenal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Semestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Business_AnnualIncreaseInLeasePayments": {
+        "fieldLabel": "Aumento anual en los pagos del arrendamiento"
+      },
+      "Business_OtherLeaseFees": {
+        "fieldLabel": "Otros cargos por arrendamiento"
+      },
+      "Business_CREPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Business_CREPurchasePricePortionForLand": {
+        "fieldLabel": "Porción del precio de compra que es para el terreno"
+      },
+      "Business_CREClosingCosts": {
+        "fieldLabel": "Costos de cierre"
+      },
+      "Business_CREDownPaymentPercentage": {
+        "fieldLabel": "Pago inicial"
+      },
+      "Business_CRELoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)"
+      },
+      "Business_CREInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_CREMACRSDepreciationYears": {
+        "fieldLabel": "Depreciación en base al sistema acelerado de recuperación de costos modificado (MACRS, por sus siglas en inglés) en años",
+        "dropdownOptions": [
+          {
+            "optionText": "5"
+          },
+          {
+            "optionText": "10"
+          },
+          {
+            "optionText": "20"
+          },
+          {
+            "optionText": "27"
+          },
+          {
+            "optionText": "39"
+          }
+        ]
+      },
+      "Business_CRELeaseConstructionCosts": {
+        "fieldLabel": "Construcción o remodelación, por única vez",
+        "ariaLegendLabel": "Arrendar"
+      },
+      "Business_CRELoanConstructionCosts": {
+        "fieldLabel": "Construcción o remodelación, por única vez",
+        "ariaLegendLabel": "Comprar"
+      },
+      "Business_CRELeaseAnnualPropertyInsurance": {
+        "fieldLabel": "Seguro para la propiedad, anual"
+      },
+      "Business_CRELoanAnnualPropertyInsurance": {
+        "fieldLabel": "Seguro para la propiedad, anual"
+      },
+      "Business_CRELeaseAnnualPropertyTax": {
+        "fieldLabel": "Impuestos sobre la propiedad, anuales"
+      },
+      "Business_CRELoanAnnualPropertyTax": {
+        "fieldLabel": "Impuestos sobre la propiedad, anuales"
+      },
+      "Business_CRELeaseMonthlyMaintenance": {
+        "fieldLabel": "Mantenimiento, mensual"
+      },
+      "Business_CRELoanMonthlyMaintenance": {
+        "fieldLabel": "Mantenimiento, mensual"
+      },
+      "Business_CRELeaseMonthlyElectricity": {
+        "fieldLabel": "Electricidad, mensual"
+      },
+      "Business_CRELoanMonthlyElectricity": {
+        "fieldLabel": "Electricidad, mensual"
+      },
+      "Business_CRELeaseMonthlyGas": {
+        "fieldLabel": "Gas, mensual"
+      },
+      "Business_CRELoanMonthlyGas": {
+        "fieldLabel": "Gas, mensual"
+      },
+      "Business_CRELeaseMonthlySewer": {
+        "fieldLabel": "Alcantarillado, mensual"
+      },
+      "Business_CRELoanMonthlySewer": {
+        "fieldLabel": "Alcantarillado, mensual"
+      },
+      "Business_CRELeaseMonthlyWasteDisposal": {
+        "fieldLabel": "Eliminación de desechos, mensual"
+      },
+      "Business_CRELoanMonthlyWasteDisposal": {
+        "fieldLabel": "Eliminación de desechos, mensual"
+      },
+      "Business_CRELeaseMonthlyWater": {
+        "fieldLabel": "Agua, mensual"
+      },
+      "Business_CRELoanMonthlyWater": {
+        "fieldLabel": "Agua, mensual"
+      },
+      "Business_CRELeaseMonthlyOtherCosts": {
+        "fieldLabel": "Otro, mensual"
+      },
+      "Business_CRELoanMonthlyOtherCosts": {
+        "fieldLabel": "Otro, mensual"
+      },
+      "Business_CRESquareFootageDesired": {
+        "fieldLabel": "Superficie deseada",
+        "smallLabel": "(en pies cuadrados)"
+      },
+      "Business_PredictedYearlyChangeInPropertyValues": {
+        "fieldLabel": "Cambio anual previsto en el valor de la propiedad",
+        "dropdownOptions": [
+          {
+            "optionText": "Sin cambios"
+          },
+          {
+            "optionText": "Aumento"
+          },
+          {
+            "optionText": "Disminución"
+          }
+        ]
+      },
+      "Business_PredictedYearlyChangeAmountInPropertyValues": {
+        "fieldLabel": "Cambio anual previsto"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Tasa de impuestos federales"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "Tasa de impuestos estatales"
+      },
+      "Business_SavingsRate": {
+        "fieldLabel": "Ahorros con la tasa de interés"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Arrendar",
+        "Comprar"
+      ]
+    },
+    "results_fields": {
+      "LeaseTotalPmtsBusiness07": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LoanTotalPmtsBusiness07": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LeaseTaxSavingsBusiness07": {
+        "fieldLabel": " - Ahorros de impuestos"
+      },
+      "LoanTaxSavingsBusiness07": {
+        "fieldLabel": " - Ahorros de impuestos"
+      },
+      "LeaseNetPmtsBusiness07": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LoanNetPmtsBusiness07": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LeaseNPVNetPmts": {
+        "fieldLabel": "Costo total en dólares actuales a lo largo de X meses"
+      },
+      "LoanNPVNetPmts": {
+        "fieldLabel": "Costo total en dólares actuales a lo largo de X meses"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo Total",
+    "title": "¿Debería arrendar o ser propietario de las instalaciones de mi empresa?",
+    "answer": "%lessOption% le costará, en dólares actuales, <span class='lf-bold'>%cost% %which%</span> %moreOption% durante <span class='lf-bold'>%months%</span> meses",
+    "same_as_answer": "El arrendamiento le costará, en dólares actuales, <span class='lf-bold'>lo mismo que</span> %moreOption% durante <span class='lf-bold'>%months%</span> meses",
+    "selectors": [
+      {
+        "label": "Costo total",
+        "width": "50%"
+      },
+      {
+        "label": "A lo largo del tiempo",
+        "width": "50%",
+        "tables": [
+          {
+            "title": "Cronograma de pagos netos: préstamo",
+            "label": "Préstamo"
+          },
+          {
+            "title": "Cronograma de pagos netos: arrendamiento",
+            "label": "Arrendar"
+          }
+        ]
+      }
+    ],
+    "lease": "Arrendar",
+    "buy": "Comprar",
+    "more": "más que",
+    "less": "menos que",
+    "totalCost": "Costo total en dólares actuales a lo largo de %months% meses",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago",
+        "Otros costos",
+        "Intereses",
+        "Depreciación",
+        "Ahorros de impuestos",
+        "Valor actual neto del pago"
+      ],
+      [
+        "Mes",
+        "Pago",
+        "Otros costos",
+        "Ahorros de impuestos",
+        "Net Pmt",
+        "Valor actual neto del pago"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "termloan2": {
+      "title": "Préstamo a plazo",
+      "definition": "Un préstamo cuyo capital se devuelve o se amortiza, a lo largo de un plazo fijo."
+    },
+    "lease2": {
+      "title": "Arrendamiento",
+      "definition": "Un contrato entre dos partes, un arrendador y un arrendatario, en base al cual el arrendatario hace pagos periódicos al arrendador para arrendar un activo."
+    },
+    "depreciation2": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    },
+    "costofcapital": {
+      "title": "Costo del capital",
+      "definition": "El costo promedio ponderado del financiamiento de deudas y activos netos, o la tasa de rendimiento requerida que una empresa espera obtener sobre sus inversiones. El costo del capital se utiliza para descontar flujos de efectivo futuros al valor actual."
+    },
+    "loanterm": {
+      "title": "Plazo del préstamo.",
+      "definition": "Duración o el período de un préstamo. Habitualmente se mide en años."
+    },
+    "landpurchaseprice": {
+      "title": "Precio de compra de terrenos",
+      "definition": "La parte del precio de compra utilizado para pagar el terreno donde se encuentra en el activo."
+    },
+    "taxdeductible": {
+      "title": "Deducibles de impuestos",
+      "definition": "Un artículo o gasto restado de los ingresos brutos ajustados para reducir el importe de los ingresos sujetos a impuestos."
+    },
+    "termloan": {
+      "title": "Préstamo a plazo",
+      "definition": "Un préstamo cuyo capital se devuelve o se amortiza, a lo largo de un plazo fijo."
+    },
+    "yearsinbusiness": {
+      "title": "Years in business",
+      "definition": "In the first several years of starting a new business, you may not have enough retained earnings to pay for growth of your business. We use five years as a reasonable period to define the early stage of a business where there is a tendency to rely more on borrowing or selling equity vs. retained earnings."
+    },
+    "closingcosts": {
+      "title": "Gastos de cierre de la operación",
+      "definition": "Gastos totales que el comprador paga cuando se completa una transacción de bienes inmuebles; por ejemplo: comisiones de solicitud, evaluación y originación del préstamo."
+    },
+    "straightlinedepreciation": {
+      "title": "Depreciación lineal",
+      "definition": "Un método de depreciación en el que se divide la diferencia entre el costo de un activo y su valor recuperable previsto por la cantidad de años que se espera que se utilice."
+    },
+    "midmonthconvention": {
+      "title": "Convención de medio mes",
+      "definition": "Una convención de depreciación que supone que el activo depreciable se pone en uso a la mitad de un mes determinado. Como resultado, el gasto de depreciación en el primer mes es la mitad del gasto de depreciación mensual normal."
+    },
+    "maintenanceexpenses": {
+      "title": "Gastos de mantenimiento",
+      "definition": "Los costos incurridos en relación con el mantenimiento de equipos o bienes en buenas condiciones o en buen estado de funcionamiento."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "principal": {
+      "title": "Capital",
+      "definition": "También se denomina saldo del préstamo y es el monto adeudado de un préstamo."
+    },
+    "leaseterm": {
+      "title": "Plazo del arrendamiento",
+      "definition": "El período en el que el arrendatario tiene un contrato con el arrendador para efectuar pagos de arrendamiento. Al finalizar un plazo de arrendamiento, el arrendatario puede tener la opción de renovar el arrendamiento por un nuevo plazo, comprar el equipo a un precio denominado valor residual, o desvincularse de cualquier obligación adicional."
+    },
+    "lineofcredit": {
+      "title": "Línea de crédito",
+      "definition": "Una forma de crédito renovable mediante el cual el prestatario solo puede retirar el monto que necesita, hasta el monto del límite de crédito. El prestatario solo paga intereses sobre el monto retirado, o desembolsado."
+    },
+    "annualcamexpenses": {
+      "title": "Gastos anuales de mantenimiento de áreas comunes (CAM, por sus siglas en inglés)",
+      "definition": "Gastos periódicos que no forman parte de la tarifa mensual de alquiler y son pagados por el inquilino (arrendatario) al propietario (arrendador) para gastos generales como seguridad, mantenimiento y publicidad."
+    },
+    "otherleasecosts": {
+      "title": "Otros costos de arrendamiento",
+      "definition": "Gastos periódicos que no forman parte del precio mensual del alquiler, como seguridad, mantenimiento, publicidad, primas de seguros e impuestos."
+    },
+    "baserent": {
+      "title": "Alquiler base",
+      "definition": "El alquiler básico que usted paga por pie cuadrado del espacio arrendado."
+    },
+    "lease": {
+      "title": "Arrendamiento",
+      "definition": "Un contrato entre dos partes, un arrendador y un arrendatario, en base al cual el arrendatario hace pagos periódicos al arrendador para arrendar un activo."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "macrs": {
+      "title": "MACRS",
+      "definition": "El sistema acelerado de recuperación de costos modificado (MACRS, por sus siglas en inglés) es el método de depreciación que utilizan las empresas para depreciar equipos, edificios y otras mejoras de bienes raíces a lo largo de la vida útil de los activos."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TermLoan\">préstamo a plazo</a></span> y un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lease\">arrendamiento</a></span> para pagar por bienes inmuebles que usted necesitará para operar su empresa. Para comparar el valor de los pagos a lo largo del tiempo para la opción de arrendamiento o préstamo, la calculadora muestra pagos en el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#presentValue\">valor actual</a></span>."
+    },
+    {
+      "textLabel": "Un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#termloan2\">préstamo a plazo</a></span> le ayuda a comprar bienes raíces. Aunque su empresa paga todos los gastos, obtiene <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxSavings\">ahorros considerables de impuestos</a></span> con estos gastos. Como propietario de los bienes raíces, su empresa también se beneficia de los posibles aumentos en el valor de la propiedad. Sin embargo, el financiamiento del préstamo puede afectar su flujo de efectivo: un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#downPayment\">pago inicial</a></span> es un gasto inicial grande, y sus pagos mensuales son mayores para incluir el pago del <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#principal\">capital del préstamo</a></span>. Si su empresa es una empresa joven, es posible que no tenga el nivel de efectivo necesario para sustanciar altos pagos de deuda."
+    },
+    {
+      "textLabel": "Un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lease2\">arrendamiento</a></span> le permite obtener bienes raíces comerciales a un costo que por lo general es menor que el financiamiento de un préstamo. Al optar por un arrendamiento, sus pagos mensuales de arrendamiento generalmente serán inferiores a los pagos del préstamo. También evita el pago inicial. En su lugar, usted paga un depósito de garantía que es mucho menor que un pago inicial. Cuando vence el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#leaseTerm\">plazo del arrendamiento</a></span> tiene más flexibilidad que con un préstamo. Por lo general, puede renovar el arrendamiento o desvincularse."
+    },
+    {
+      "textLabel": "Asegúrese de entender todos los términos y condiciones del contrato de arrendamiento. Por ejemplo, un contrato puede incluir disposiciones que exigen que los gastos operativos aumenten a una tasa anual diferente del <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#baseRent\">alquiler base</a></span> o, en algunos casos, en proporción con sus ingresos de ventas."
+    },
+    {
+      "textLabel": "Los supuestos clave de esta herramienta incluyen:"
+    },
+    {
+      "textLabel": "Costos de construcción y remodelación. Si incurre en gastos de construcción o remodelación, estos costos se suman al capital del préstamo. Si decide arrendar, estos costos se pagan en efectivo. Estos costos se suman a la base de la propiedad."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation\">Depreciación.</a></span> Para la depreciación, se utiliza el sistema acelerado de recuperación de costos modificado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MACRS\">MACRS</a></span>, por sus siglas en inglés) y el método de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#straightLineDepreciation\">depreciación lineal</a></span> Se utiliza la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#midMonthConvention\">convención de medio mes</a></span> para calcular el gasto de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation2\">depreciación.</a></span> en el primer año, independientemente de la fecha de compra."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AnnualCAMExpenses\">Gastos anuales de mantenimiento de áreas comunes (CAM, por sus siglas en inglés)</a></span>. Los gastos anuales de CAM son asignados a lo largo del año para igualar la frecuencia de los pagos de arrendamiento para el alquiler base."
+    },
+    {
+      "textLabel": "Inflación. La tasa de inflación que ingrese afectará los impuestos sobre la propiedad, el seguro para la propiedad, los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#maintenanceExpenses\">gastos de mantenimiento</a></span>, y los servicios públicos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo total, en dólares de hoy, de arrendamiento y compra."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total, en dólares de hoy, de arrendamiento y compra"
+    }
+  ]
+}

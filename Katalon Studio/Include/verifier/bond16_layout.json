@@ -1,0 +1,200 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Bond_TaxFreeYield",
+          "Bond_FederalTaxExempt",
+          "Bond_StateTaxExempt",
+          "Bond_StateTaxRate",
+          "Bond_FederalTaxRate"
+        ]
+      }
+    },
+    "results": {},
+    "fields": {
+      "Bond_TaxFreeYield": {
+        "fieldLabel": "Tax-free yield",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "1",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_FederalTaxExempt": {
+        "fieldLabel": "Federal tax-exempt",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_StateTaxExempt": {
+        "fieldLabel": "State tax-exempt",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_StateTaxRate": {
+        "fieldLabel": "State tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "TODO",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_FederalTaxRate": {
+        "fieldLabel": "Federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "10%",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "12%",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "22%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "3",
+            "optionText": "24%",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "32%",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "35%",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "37%",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "What is my tax-equivalent yield?",
+    "answer": "Tax-equivalent yield: <span class='lf-bold'>6.81%</span>",
+    "dataTableCategory": "Yield",
+    "CouponYieldBef": "Before Taxes",
+    "CouponYieldAft": "After Taxes",
+    "taxEquivalentYield": "Taxable Yield",
+    "TaxFreeYield": "Tax-Free Yield",
+    "selectors": [
+      {
+        "label": "Yield",
+        "width": "100%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondtaxability": {
+      "title": "Bonds subject to income tax",
+      "definition": "Select the appropriate box to indicate whether the bond is subject to state and/or federal tax.  If you are unsure, consider the following:  There are three categories of bonds:  (1) corporate bonds, (2) U.S. government bonds, and (3) municipal bonds.  The tax treatment of the interest earned from each category of bond is different.  Corporate bond interest is subject to both federal and state income tax.  U.S. government bond interest is subject to federal income tax, but is exempt from state income tax.  Municipal bond interest is exempt from federal income tax and is usually exempt from state income tax.  If a bond owner holds a municipal bond that comes from the state where the bond owner lives, the interest from that bond is likely to be exempt from income tax in that state.  However, if the bond owner holds a municipal bond that comes from a state that is different from the state where the bond owner lives, the interest generated by the bond is likely to be subject to income tax.  For example, interest from a municipal bond issued by the City of Phoenix is exempt from federal and state income tax if the owner of the bond lives in Arizona.  If a California resident owns the bond, the bond interest will still be exempt from federal income tax, but will be subject to California income tax."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates what the pre-tax rate of return would have to be on a taxable investment to equal the rate of return earned on a tax-exempt investment. The difference in the two rates of return will increase as the user's tax rate increases."
+    },
+    {
+      "textLabel": "It is assumed that your state income tax is deductible for federal tax purposes."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the bond's tax-free yield and tax-equivalent yield."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Bond's tax-free yield and tax-equivalent yield"
+    }
+  ]
+}

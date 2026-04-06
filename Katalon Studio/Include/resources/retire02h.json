@@ -1,0 +1,1163 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the yearly breakdown of sources for retirement income. The sources are categorized into:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Fixed income: Social security benefits (non-taxable), pension benefits (taxable)."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fixed income:'])[1]/following::p[1]",
+      "value": "Taxable income: post retirement wages, regular pre-retirement income earned by spouse who has not retired, interest earned from taxable accounts or investments."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxable income:'])[1]/following::p[1]",
+      "value": "Tax-deferred income: 401(k), Traditional IRA, Roth IRA, SEP, SIMPLE, Keogh, other tax-advantaged accounts."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your estimated yearly breakdown of retirement income:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='patterns_enabled_label']/label",
+      "value": "Enable color patterns"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Annual Income']/parent::*",
+      "value": "Annual Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0 > text",
+      "value": "Tax-deferred"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1 > text",
+      "value": "Taxable"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-personal-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-tab-label",
+      "value": "Personal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-spouse-0",
+      "value": "Include spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div/div/div/label",
+      "value": "My information Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[2]/div/div/label",
+      "value": "Annual income (before taxes)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Income",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Income-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[3]/div/div/label",
+      "value": "Age at retirement"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetireAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetireAge-error-message",
+      "value": "Must be between 2 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[4]/div/div/label",
+      "value": "Monthly wages during retirement"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetireWage",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetireWage-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-personal-table-spouseNo-body']/div[5]/div/div/label",
+      "value": "For how many years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_WageYrs",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WageYrs-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-projections-tab-label",
+      "value": "Projections"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-projections-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-projections-lifeExpectancy']/table/tbody/tr/td/div/label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-projections-living-expenses']/div/h2",
+      "value": "Your projected monthly living expenses during retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=expenses during retirement",
+      "value": "expenses during retirement"
+    }
+  },
+  {
+    "click": {
+      "id": "link=expenses during retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Expenses during retirement"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Expenses change as you move through various stages of retirement. Three major retirement stages, and the expenses usually associated with each of them, include: 1) Early retirement. Early retirees typically spend more than retirees in their 60s or 70s. Early retirees may travel more often, or even may still be facing mortgage payments. They have yet to face the restricted budgets that affect retirees in later stages of retirement. You are likely to be in a lower income tax bracket since your highest income-earning years have just ended; 2) Middle retirement. As you hit the middle stage of retirement, you will likely begin to spend less, as you travel less, pay off your mortgage, and come to terms with a need to make your retirement fund last. If you are healthy, you are likely to face only some medical bills. Estate planning becomes crucial to ensure that your assets are handed over to the intended beneficiaries when you die; and 3) Late retirement. At this stage, you are spending more on prescription drugs or other medical care. Leisure- and housing-related expenses are at a minimum and you are likely to have completely paid off any debts such as credit cards or auto loans."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_label_for_RetExpAmt1",
+      "value": "Initial living expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetExpAmt1",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetExpAmt1-error-message",
+      "value": "Must be between $1 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_label_for_RetExpYrs1",
+      "value": "Initial living expenses For how many years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetExpYrs1",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetExpYrs1-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_label_for_RetExpYrs1",
+      "value": "Initial living expenses For how many years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetExpYrs1",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetExpYrs1-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_label_for_RetExpYrs2",
+      "value": "Intermediate living expenses For how many years"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetExpYrs2",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetExpYrs2-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_label_for_RetExpAmt3",
+      "value": "Remainder of retirement"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetExpAmt3",
+      "value": "2,400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetExpAmt3-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//button[@id='lf_projection_assumptions_toggle']/span[2]/h2",
+      "value": "Taxes & Inflation assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_projection_assumptions_toggle']/span[2]/h2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_projection_assumptions']/tbody/tr/td/div/label",
+      "value": "Your state + federal tax rate (before retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_projection_assumptions']/tbody/tr[2]/td/div/label",
+      "value": "Your state + federal tax rate (after retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetireTaxRate",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetireTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_projection_assumptions']/tbody/tr[3]/td/div/label",
+      "value": "Inflation on your expenses"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_InflationRate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_projection_assumptions']/tbody/tr[4]/td/div/label",
+      "value": "Yearly rate of growth in income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnIncGrow",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnIncGrow-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-benefits-pensions-tab-label",
+      "value": "Benefits & Pensions"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-benefits-pensions-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-personal-spouse-1",
+      "value": "Include spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-social-security-benefits']/h2",
+      "value": "Social Security benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-benefits-pensions-details']/div[3]/div/fieldset/div[2]/div/div/label/span[2]",
+      "value": "Age you will claim Social Security benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SSAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SSAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-benefits-pensions-details']/div[3]/div/fieldset/div[3]/div/div/label/span",
+      "value": "Your monthly benefits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SSType",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-pensions-legend']/h2",
+      "value": "Pension or defined-benefit plan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_pensionTooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Pension"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An employer-sponsored retirement plan that pays retirees a fixed amount that is based on number of years of service and salary history."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//fieldset[@id='lf-pensions-table-spouseNo-body']/div[2]/div/label/span[2]",
+      "value": "Monthly pension payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PenAmt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PenAmt-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//fieldset[@id='lf-pensions-table-spouseNo-body']/div[3]/div/label/span",
+      "value": "Years you will receive payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PenYrs",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PenYrs-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//fieldset[@id='lf-pensions-table-spouseNo-body']/div[4]/div/label",
+      "value": "Payments to adjust for inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PenAdjOpt",
+      "value": "No payments First payment Rest of payments All payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PenAdjOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tax-advantaged-savings-tab-label",
+      "value": "Tax-Advantaged Savings"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tax-advantaged-savings-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-tax-advantaged-savings-legend']/h2",
+      "value": "Monthly savings in tax-advantaged accounts"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_taxadvantagedaccountTooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax-advantaged account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tax-advantaged-savings-sectionText",
+      "value": "Enter information for all tax-advantaged accounts that you are using or intend to use for retirement."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_AcctOwner_content']/label",
+      "value": "Owner"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AcctOwner",
+      "value": "You"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AcctOwner",
+      "value": "lf-MTaxAdvantage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_MTaxAdvantage-account-type_content']/label",
+      "value": "Type of Account"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MTaxAdvantage-account-type",
+      "value": "lf-individualAccount-type1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_add_this_account_label",
+      "value": "Add this account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-other-savings-tab-label",
+      "value": "Other Savings"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-other-savings-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-legendTitle']/h2",
+      "value": "Other Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-other-savings-sectionText",
+      "value": "Enter information for all taxable accounts that you intend to use for retirement."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_taxableaccountTooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Taxable account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-details']/div[3]/div[2]/fieldset/div/span",
+      "value": "Account #1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavAmt1_label",
+      "value": "Account #1 Current balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavAmt1",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate1_label",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavRate1",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavDep1_label",
+      "value": "Monthly investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavDep1",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavBef1_label",
+      "value": "Years to start"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavBef1",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-details']/div[3]/div[3]/fieldset/div/span",
+      "value": "Account #2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavAmt2_label",
+      "value": "Account #2 Current balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavAmt2",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavDep2_label",
+      "value": "Monthly investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavDep2",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavBef2_label",
+      "value": "Years to start"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavBef2",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-investment-legend']/h2",
+      "value": "Your future one-time investments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-details']/div[4]/div[2]/fieldset/div/span",
+      "value": "Investment #1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvAmt1_label",
+      "value": "Investment #1 Investment amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvAmt1",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvRate1_label",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvRate1",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvBef1_label",
+      "value": "Years until you invest"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvBef1",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-other-savings-details']/div[4]/div[3]/fieldset/div/span",
+      "value": "Investment #2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvAmt2_label",
+      "value": "Investment #2 Investment amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvAmt2",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvRate2_label",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvRate2",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InvBef2_label",
+      "value": "Years until you invest"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InvBef2",
+      "value": "6"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-personal-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge-input-safe",
+      "value": "46"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Income-input-safe",
+      "value": "276000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetireAge-input-safe",
+      "value": "57"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetireWage-input-safe",
+      "value": "45000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_WageYrs-input-safe",
+      "value": "26"
+    }
+  },
+    {
+    "setTextAndWait": {
+      "id": "lf_WageYrs",
+      "value": "26"
+    }
+  },
+  {
+    "click": {
+      "id": "projections-link"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge-input-safe",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetExpAmt1",
+      "value": "1,234"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetExpYrs1",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetExpAmt2",
+      "value": "1,547"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetExpYrs2",
+      "value": "17"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetExpAmt3",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRate",
+      "value": "26.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetireTaxRate",
+      "value": "12.03"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InflationRate",
+      "value": "5.88"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-benefits-pensions-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SSAge",
+      "value": "69"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_SSType",
+      "value": "label=Ignore"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PenAmt",
+      "value": "1,245"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PenYrs",
+      "value": "7"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PenAdjOpt",
+      "value": "label=First payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tax-advantaged-savings-tab-label"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_MTaxAdvantage-account-type",
+      "value": "label=Traditional IRA"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_add_this_account_label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRABal-input-safe",
+      "value": "21000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRARate",
+      "value": "2.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRADep",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your estimated yearly breakdown of retirement income:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='57']/parent::*",
+      "value": "57"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='61']/parent::*",
+      "value": "61"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='65']/parent::*",
+      "value": "65"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='69']/parent::*",
+      "value": "69"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='73']/parent::*",
+      "value": "73"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='77']/parent::*",
+      "value": "77"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='81']/parent::*",
+      "value": "81"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='85']/parent::*",
+      "value": "85"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='89']/parent::*",
+      "value": "89"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='93']/parent::*",
+      "value": "93"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='97']/parent::*",
+      "value": "97"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='highcharts-data-table-1']/caption",
+      "value": "Breakdown of total annual retirement income at various ages during retirement by fixed income, taxable accounts and tax-advantaged accounts"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

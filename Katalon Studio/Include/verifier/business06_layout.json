@@ -1,0 +1,234 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Business_DaysToMakeFullPayment",
+          "Business_DaysToMakeEarlyPayment",
+          "Business_TradeDiscount",
+          "Business_TotalYearlyTradeInvoice",
+          "Business_LOCInterestRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [
+        [
+          "Business_TradeDiscountInterestRate"
+        ],
+        [
+          "Business_LoanInterestRate"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_DaysToMakeFullPayment": {
+        "fieldLabel": "Days to make full payment",
+        "smallLabel": "",
+        "glossaryTerm": "paymentduedays",
+        "valueTextLabel": "days",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "90",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Business_DaysToMakeFullPayment",
+          "Business_DaysToMakeEarlyPayment"
+        ]
+      },
+      "Business_DaysToMakeEarlyPayment": {
+        "fieldLabel": "Days to make early payment",
+        "smallLabel": "",
+        "glossaryTerm": "earlypaymentdays",
+        "valueTextLabel": "days",
+        "format": "number",
+        "defaultValue": "10",
+        "value": "10",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "90",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Business_DaysToMakeFullPayment",
+          "Business_DaysToMakeEarlyPayment"
+        ]
+      },
+      "Business_TradeDiscount": {
+        "fieldLabel": "Trade discount",
+        "smallLabel": "",
+        "glossaryTerm": "tradediscount",
+        "format": "percent",
+        "defaultValue": "2.000",
+        "value": "2.000",
+        "minimumValue": "1",
+        "maximumValue": "50.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_TotalYearlyTradeInvoice": {
+        "fieldLabel": "Total yearly trade invoice",
+        "smallLabel": "(estimate)",
+        "glossaryTerm": "tradeinvoice",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "1",
+        "maximumValue": "50000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LOCInterestRate": {
+        "fieldLabel": "Loan interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "7.500",
+        "value": "7.500",
+        "minimumValue": "1",
+        "maximumValue": "100.000",
+        "maxlength": "7",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Business_TradeDiscountInterestRate": {
+        "fieldLabel": "Annual interest rate on the trade discount"
+      },
+      "Business_LoanInterestRate": {
+        "fieldLabel": "Loan interest rate (cost of borrowing)"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Invoice Payments",
+    "title": "Should I take advantage of trade discounts?",
+    "answer": "Taking advantage of trade discounts will reduce your yearly invoice payments by as much as <span class='lf-bold'>%amount%</span>",
+    "answer2": "Taking advantage of trade discounts will not reduce your yearly invoice payments",
+    "withDiscount": "With Trade Discounts",
+    "withoutDiscount": "Without Trade Discounts",
+    "selectors": [
+      {
+        "label": "Yearly invoice payments",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "earlypaymentdays": {
+      "title": "Days to make early payment",
+      "definition": "If your vendor provides you with trade credit, you may be offered a trade discount if you pay the invoice early. Generally, the number of days for early payment is 10 and the discount is 2 to 3 percent of the invoice amount."
+    },
+    "tradefinancing": {
+      "title": "Trade financing",
+      "definition": "The process of using trade credit to pay bills owed to vendors and suppliers."
+    },
+    "annualinterestrateontradediscount": {
+      "title": "Annual interest rate on trade discount",
+      "definition": "The interest rate that you save your vendor by paying him early."
+    },
+    "paymentduedays": {
+      "title": "Days to make full payment",
+      "definition": "If your vendor provides you with trade credit, you have a certain number of days to make payment with no penalty. Generally, the number of days is 30 and the payment due date begins from the invoice due date. "
+    },
+    "tradecredit": {
+      "title": "Trade credit",
+      "definition": "The privilege of borrowing money from a supplier. A supplier may offer trade credit terms that allow you to receive a discount on your invoice for paying before the due date."
+    },
+    "tradeinvoice": {
+      "title": "Trade invoice",
+      "definition": "The billing notification you receive from a vendor that offers you trade credit. The invoice details the amount owed, items shipped, and specific payment instructions."
+    },
+    "tradediscount": {
+      "title": "Trade discount",
+      "definition": "The percentage discount you receive from a vendor or supplier by paying early. Often, a vendor will offer you a discount of 2 or 3 percentage points off the invoice price if you pay early. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "When you buy goods on credit, a supplier may offer you a discount if you pay early. This incentive is called a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeCredit\">discount on trade credit</a></span>. For example, a supplier may offer you trade terms of \"2% 10 net 30.\" These credit terms offer you a 2% discount if you pay within 10 days of the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeInvoice\">invoice</a></span>. Otherwise, payment of the unpaid balance is due within 30 days of the invoice."
+    },
+    {
+      "textLabel": "You should take advantage of the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#tradeDiscount\">trade discount</a></span> if the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#annualInterestRateOnTradeDiscount\">annual interest rate on the trade discount</a></span> is higher than your cost of borrowing."
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TradeFinancing\">Trade financing</a></span> is the process of using <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#tradeCredit\">trade credit</a></span> to pay your suppliers and vendors. If the effective interest rate is higher than your cost of borrowing and cash flow is tight, you may want to borrow to pay early instead of using cash."
+    },
+    {
+      "textLabel": "Interest rates are based on a 360-day year."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the difference in total annual invoice payments with and without the trade discount."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference in total annual invoice payments with and without the trade discount"
+    }
+  ]
+}

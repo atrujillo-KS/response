@@ -1,0 +1,294 @@
+{
+  "layout": {
+    "tabs": {
+      "Assets": {
+        "tabLabel": "ACTIVOS",
+        "pageTitle": "Activos",
+        "pageDesc": "Ingrese los valores justos de mercado reales o actuales."
+      },
+      "Liabilities": {
+        "tabLabel": "PASIVOS",
+        "pageTitle": "Pasivos"
+      },
+      "results": {
+        "tabLabel": "RESULTADOS"
+      }
+    },
+    "fields": {
+      "Business_CheckingAccountBalances": {
+        "fieldLabel": "Cuentas corrientes"
+      },
+      "Business_SavingsAccountsValue": {
+        "fieldLabel": "Cuentas de ahorros"
+      },
+      "Business_MoneyMarketAccountsBalance": {
+        "fieldLabel": "Cuentas del mercado monetario"
+      },
+      "Business_CDsBalance": {
+        "fieldLabel": "Certificados de depósito"
+      },
+      "Business_AccountsReceivable": {
+        "fieldLabel": "Cuentas por cobrar"
+      },
+      "Business_NotesReceivable": {
+        "fieldLabel": "Documentos por cobrar"
+      },
+      "Business_InventoryValue": {
+        "fieldLabel": "Inventario"
+      },
+      "Business_FixturesValue": {
+        "fieldLabel": "Elementos fijos"
+      },
+      "Business_FurnitureValue": {
+        "fieldLabel": "Mobiliario"
+      },
+      "Business_EquipmentValue": {
+        "fieldLabel": "Equipos, maquinaria, herramientas"
+      },
+      "Business_VehiclesValue": {
+        "fieldLabel": "Vehículos"
+      },
+      "Business_PropertyValue": {
+        "fieldLabel": "Propiedad o bienes raíces"
+      },
+      "Business_PatentsValue": {
+        "fieldLabel": "Patentes o marcas comerciales"
+      },
+      "Business_OtherAssets": {
+        "fieldLabel": "Otros activos"
+      },
+      "Business_AccountsPayable": {
+        "fieldLabel": "Cuentas por pagar"
+      },
+      "Business_TaxesPayable": {
+        "fieldLabel": "Impuestos por pagar"
+      },
+      "Business_CreditCardOneBalance": {
+        "fieldLabel": "Saldo de la tarjeta de crédito 1"
+      },
+      "Business_CreditCardTwoBalance": {
+        "fieldLabel": "Saldo de la tarjeta de crédito 2"
+      },
+      "Business_LoanOneType": {
+        "fieldLabel": "Tipo de préstamo 1",
+        "dropdownOptions": [
+          {
+            "optionText": "Comercial"
+          },
+          {
+            "optionText": "Para equipos"
+          },
+          {
+            "optionText": "Línea de crédito"
+          },
+          {
+            "optionText": "De bienes raíces"
+          },
+          {
+            "optionText": "Para vehículo"
+          }
+        ]
+      },
+      "Business_LoanOneBalance": {
+        "fieldLabel": "Préstamo 1"
+      },
+      "Business_LoanTwoType": {
+        "fieldLabel": "Tipo de préstamo 2",
+        "dropdownOptions": [
+          {
+            "optionText": "Comercial"
+          },
+          {
+            "optionText": "Para equipos"
+          },
+          {
+            "optionText": "Línea de crédito"
+          },
+          {
+            "optionText": "De bienes raíces"
+          },
+          {
+            "optionText": "Para vehículo"
+          }
+        ]
+      },
+      "Business_LoanTwoBalance": {
+        "fieldLabel": "Préstamo 2"
+      },
+      "Business_LoanThreeType": {
+        "fieldLabel": "Tipo de préstamo 3",
+        "dropdownOptions": [
+          {
+            "optionText": "Comercial"
+          },
+          {
+            "optionText": "Para equipos"
+          },
+          {
+            "optionText": "Línea de crédito"
+          },
+          {
+            "optionText": "De bienes raíces"
+          },
+          {
+            "optionText": "Para vehículo"
+          }
+        ]
+      },
+      "Business_LoanThreeBalance": {
+        "fieldLabel": "Préstamo 3"
+      },
+      "Business_LoanFourType": {
+        "fieldLabel": "Tipo de préstamo 4",
+        "dropdownOptions": [
+          {
+            "optionText": "Comercial"
+          },
+          {
+            "optionText": "Para equipos"
+          },
+          {
+            "optionText": "Línea de crédito"
+          },
+          {
+            "optionText": "De bienes raíces"
+          },
+          {
+            "optionText": "Para vehículo"
+          }
+        ]
+      },
+      "Business_LoanFourBalance": {
+        "fieldLabel": "Préstamo 4"
+      },
+      "Business_LeasingObligations": {
+        "fieldLabel": "Obligaciones de arrendamiento"
+      },
+      "Business_OtherLiabilities": {
+        "fieldLabel": "Otros pasivos"
+      }
+    },
+    "results_fields": {
+      "TotalAssetsBusiness08": {
+        "fieldLabel": "Total de activos"
+      },
+      "TotalLiab": {
+        "fieldLabel": " - Total de pasivos"
+      },
+      "NetWorth": {
+        "fieldLabel": "Patrimonio neto"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Cuál es el valor de mi empresa hoy?",
+    "answer": "Su empresa tiene un patrimonio neto de <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Activos y pasivos",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "assets": "Activos",
+    "liabilities": "Pasivos"
+  },
+  "glossaryItems": {
+    "mma": {
+      "title": "Cuenta del mercado monetario (MMA, por sus siglas en inglés)",
+      "definition": "Una cuenta bancaria que invierte en los valores más seguros a corto plazo. Abrir una cuenta del mercado monetario generalmente requiere un depósito más grande que una cuenta corriente, ya que paga una tasa de interés más alta que la de depósitos. La Corporación Federal de Seguros de Depósitos (FDIC, por sus siglas en inglés) asegura las cuentas del mercado monetario por hasta $250,000 por institución, por depositante."
+    },
+    "cd": {
+      "title": "Certificado de depósito (CD)",
+      "definition": "Depósito a plazo que usted realiza en un banco. Los montos de este tipo de depósitos generalmente van de $500 a $250,000. La Corporación Federal de Seguros de Depósitos (Federal Deposit Insurance Corporation, FDIC) garantiza los certificados de depósito hasta un límite de $250,000 por depositante y por institución."
+    },
+    "creditcardbalance": {
+      "title": "Credit card balance",
+      "definition": "The amount you owe on your credit card(s) and on which you pay interest."
+    },
+    "notesreceivable": {
+      "title": "Documentos por cobrar",
+      "definition": "Una cuenta de activos que representa los reclamos que usted tiene sobre sus deudores. Los documentos por cobrar son como préstamos bancarios, ya que son utilizados como fuente de financiamiento de deudas."
+    },
+    "vehicles": {
+      "title": "Vehículos",
+      "definition": "Una cuenta de activos que incluye automóviles de pasajeros, camiones de reparto y medios de transporte de motor (o sin motor) para distribuir sus productos y servicios."
+    },
+    "equipment": {
+      "title": "Equipos",
+      "definition": "Una cuenta de activos que representa los activos que se consideran parte esencial de una planta u otro bien raíz, tales como maquinaria, herramientas y cualquier otro activo fijo requerido para producir sus productos o servicios."
+    },
+    "inventory": {
+      "title": "Inventario",
+      "definition": "Un activo que refleja los productos que usted posee para la venta. El inventario es un activo circulante, lo que significa que usted prevé vender el inventario durante el próximo ciclo operativo (generalmente 12 meses)."
+    },
+    "fmv": {
+      "title": "Valor justo de mercado",
+      "definition": "El valor o precio al cual un producto cambiaría de propietario, suponiendo un comprador dispuesto a comprar y un vendedor dispuesto a vender, sin coacción."
+    },
+    "fixtures": {
+      "title": "Elementos fijos",
+      "definition": "Una cuenta de activos que representa los activos no extraíbles que se consideran parte de una planta u otro bien raíz, tales como apliques de iluminación, pisos, paneles, lavabos, inodoros, etc."
+    },
+    "accountspayable": {
+      "title": "Cuentas por pagar",
+      "definition": "Un pasivo que refleja las facturas que usted adeuda a otras empresas. Cuentas por pagar es un pasivo circulante, lo que significa que usted prevé cancelar las cuentas durante el próximo ciclo operativo (generalmente 12 meses)."
+    },
+    "intellectualproperty": {
+      "title": "Propiedad intelectual",
+      "definition": "Activos intangibles como patentes, derechos de autor, marcas comerciales y marcas de servicio que crean valor para la compañía que es propietaria de los activos, pero que no se puede medir fácilmente."
+    },
+    "furniture": {
+      "title": "Mobiliario",
+      "definition": "Una cuenta de activos que representa los activos extraíbles que se consideran parte de una planta u otro bien raíz, tales como escritorios, sillas, sofás, mesas, etc."
+    },
+    "otherassets": {
+      "title": "Otros activos",
+      "definition": "Activos que no pueden clasificarse dentro de una categoría común de activos. Por lo general, otros activos constituyen menos del 5 % de los activos de una empresa."
+    },
+    "personalnetworth": {
+      "title": "Patrimonio neto personal",
+      "definition": "Patrimonio neto, también llamado liquidez total, es igual a los activos menos los pasivos."
+    },
+    "taxespayable": {
+      "title": "Impuestos por pagar",
+      "definition": "Un pasivo que refleja los impuestos que usted debe a las autoridades fiscales federales, estatales y locales. Los impuestos por pagar son un pasivo circulante, lo que significa que usted prevé cancelar las cuentas durante el próximo ciclo operativo (generalmente 12 meses)."
+    },
+    "property": {
+      "title": "Propiedad",
+      "definition": "También denominada bienes raíces o activos fijos, es una cuenta de activos de su empresa."
+    },
+    "otherliabilities": {
+      "title": "Otros pasivos",
+      "definition": "Pasivos que no pueden clasificarse dentro de otra categoría común de pasivos. Por lo general, otros pasivos constituyen menos del 5 % de los pasivos totales de una empresa."
+    },
+    "accountsreceivable": {
+      "title": "Cuentas por cobrar",
+      "definition": "Un activo que refleja las facturas que se le adeudan a su compañía. Cuentas por cobrar es un activo circulante, lo que significa que usted prevé cobrar en las cuentas durante el próximo ciclo operativo (generalmente 12 meses)."
+    },
+    "leasingobligations": {
+      "title": "Obligaciones de arrendamiento",
+      "definition": "Un compromiso y una contingencia que están incluidos en las anotaciones de los estados financieros. Dado que los contratos de arrendamiento operativo pueden cancelarse, dichas obligaciones están excluidas del balance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PersonalNetWorth\">patrimonio neto</a></span> de su empresa. El patrimonio neto se basa en su cálculo del <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FMV\">valor justo de mercado</a></span> de los activos de la empresa y los montos pendientes de pago sobre las deudas de la empresa en cierta fecha. El patrimonio neto es el valor neto de su propiedad en la empresa. Se calcula restando los pasivos de los activos de su empresa."
+    },
+    {
+      "textLabel": "Dado que determinar el valor justo de mercado de sus activos es una práctica subjetiva, debe consultar a un asesor financiero o impositivo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de activos totales, pasivos totales y patrimonio neto."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Activos totales, pasivos totales y patrimonio neto"
+    }
+  ]
+}

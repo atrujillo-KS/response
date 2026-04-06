@@ -1,0 +1,249 @@
+{
+  "layout": {
+    "tabs": {
+      "GeneralInfo": {
+        "tabLabel": "INFORMACIÓN GENERAL",
+        "pageTitle": "Información general",
+        "default": {
+          "columns": [
+            {
+              "fields": [
+                "AnnualDoctorVisits",
+                "InMedicalSpend",
+                "OutMedicalSpend"
+              ]
+            }
+          ]
+        }
+      },
+      "PlanInfo": {
+        "tabLabel": "INFORMACIÓN DEL PLAN",
+        "pageTitle": "Información del plan",
+        "plan1": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Este es un plan HSA"
+            },
+            {
+              "rowLabel": "Prima mensual"
+            },
+            {
+              "rowLabel": "Máximo de desembolso personal fuera de la red"
+            },
+            {
+              "rowLabel": "Copago dentro de la red"
+            },
+            {
+              "rowLabel": "Tarifa de coseguro dentro de la red"
+            },
+            {
+              "rowLabel": "Deducible estándar dentro de la red"
+            },
+            {
+              "rowLabel": "Tasa de coseguro fuera de la red"
+            },
+            {
+              "rowLabel": "Deducibles del coseguro"
+            }
+          ]
+        },
+        "plan2": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "rows": [
+            {
+              "rowLabel": "Este es un plan HSA"
+            },
+            {
+              "rowLabel": "Prima mensual"
+            },
+            {
+              "rowLabel": "Máximo de desembolso personal fuera de la red"
+            },
+            {
+              "rowLabel": "Copago dentro de la red"
+            },
+            {
+              "rowLabel": "Tarifa de coseguro dentro de la red"
+            },
+            {
+              "rowLabel": "Deducible estándar dentro de la red"
+            },
+            {
+              "rowLabel": "Tasa de coseguro fuera de la red"
+            },
+            {
+              "rowLabel": "Deducibles del coseguro"
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results1": {
+      "subtitle": "Costos dentro de red",
+      "columnHeaders": [
+        "Plan 1",
+        "Plan 2"
+      ]
+    },
+    "results2": {
+      "subtitle": "Costos fuera de la red"
+    },
+    "results_fields": {
+      "InAnnHealthPremiumPlanA": {
+        "fieldLabel": "Costo anual de la prima"
+      },
+      "InAnnHealthPremiumPlanB": {
+        "fieldLabel": ""
+      },
+      "InAnnHealthCopayPlanA": {
+        "fieldLabel": "Costo anual del copago"
+      },
+      "InAnnHealthCopayPlanB": {
+        "fieldLabel": ""
+      },
+      "InHealthStandDeductablePlanA": {
+        "fieldLabel": "Franquicias estándar"
+      },
+      "InHealthStandDeductablePlanB": {
+        "fieldLabel": ""
+      },
+      "OutHealthDeductablePlanA": {
+        "fieldLabel": "Deducibles del coseguro"
+      },
+      "OutHealthDeductablePlanB": {
+        "fieldLabel": ""
+      },
+      "OutHealthPaymentsPlanA": {
+        "fieldLabel": "Pagos del coseguro"
+      },
+      "OutHealthPaymentsPlanB": {
+        "fieldLabel": ""
+      },
+      "HealthTotalCostPlanA": {
+        "fieldLabel": "Costo total"
+      },
+      "HealthTotalCostPlanB": {
+        "fieldLabel": ""
+      }
+    },
+    "fields": {
+      "AnnualDoctorVisits": {
+        "fieldLabel": "Consultas al médico anuales"
+      },
+      "InMedicalSpend": {
+        "fieldLabel": "Costos anuales en la atención médica dentro de la red"
+      },
+      "OutMedicalSpend": {
+        "fieldLabel": "Costos anuales en la atención médica fuera de la red"
+      },
+      "HSAplan": {
+        "fieldLabel": "Plan 1",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSAplan2": {
+        "fieldLabel": "Plan 2",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HealthPremiumPlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "HealthPremiumPlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "OutHealthMaxPlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "OutHealthMaxPlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "InHealthCopayPlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "InHealthCopayPlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "InHealthCoinsPlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "InHealthCoinsPlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "InHealthDeductablePlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "InHealthDeductablePlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "OutHealthCoinsPlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "OutHealthCoinsPlanB": {
+        "fieldLabel": "Plan 2"
+      },
+      "OutHealthDeductablePlanA": {
+        "fieldLabel": "Plan 1"
+      },
+      "OutHealthDeductablePlanB": {
+        "fieldLabel": "Plan 2"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cómo se comparan mis opciones de atención médica?",
+    "answer": "El Plan 1 le costará <span class='lf-bold'>%result% </span> que el Plan 2",
+    "lessThan": "menos",
+    "moreThan": "más",
+    "same": "lo mismo",
+    "categories": [
+      "Plan 1",
+      "Plan 2"
+    ],
+    "inNetwork": "Dentro de la red",
+    "outNetwork": "Fuera de la red"
+  },
+  "glossaryItems": {
+    "hsaplan": {
+      "title": "HSA Plan",
+      "definition": "Indicates that the health plan type being described is a Health Savings Account plan."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara dos planes de salud para ayudarle a evaluar cuál es el costo más conveniente. Si uno o ambos planes son un plan HSA, el deducible se resta a los máximos de desembolso personal."
+    },
+    {
+      "textLabel": "Puede aprender más sobre las cuentas de ahorros para la salud en el sitio web del IRS. Para obtener asesoramiento del IRS sobre cuentas de ahorros para la salud, consulte la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">Publicación 969</a> y la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">Publicación 502 del IRS</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico del costo total de cada plan de salud desglosado por costos dentro de la red y costos fuera de la red."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total de cada plan de salud desglosado por costos dentro de la red y costos fuera de la red"
+    }
+  ]
+}

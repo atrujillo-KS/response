@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_The calculated vehicle cost represents th_eac687</name>
+   <tag></tag>
+   <elementGuidId>35ddc48b-348d-4163-a0b6-886e905a9f58</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_2</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_2']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;The calculated vehicle cost represents the maximum sticker price that you can af&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>5736747f-b15d-4c6e-a982-f5dfcaff2a79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_2</value>
+      <webElementGuid>696c4bad-92f4-448b-8eaa-9c8b456e6166</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The calculated vehicle cost represents the maximum sticker price that you can afford based on your inputs.  Sales tax and other fees that might be associated with the purchase of a vehicle are not included in the total.</value>
+      <webElementGuid>08506305-58ec-4a76-a3bf-680cdb14acfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_2&quot;)</value>
+      <webElementGuid>639fa2af-2bd6-42dd-bba4-cc77dafdf738</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_2']</value>
+      <webElementGuid>f13afd04-3992-40a4-ab57-2fbd2f445707</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[3]</value>
+      <webElementGuid>4b492179-4031-4061-aa3c-749415128f77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[4]</value>
+      <webElementGuid>7765e2dd-96da-4c16-8434-9402d079ec67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[5]</value>
+      <webElementGuid>f9a1d8f4-41cd-417b-bdd2-9604fad5df09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[2]</value>
+      <webElementGuid>5f535d67-2d18-4dad-965b-d4f761ade0d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[2]</value>
+      <webElementGuid>25816f04-8db4-401e-bccc-10be2affa088</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[3]</value>
+      <webElementGuid>5118b9fa-1248-450c-8742-b7ece1572f87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_2' and (text() = 'The calculated vehicle cost represents the maximum sticker price that you can afford based on your inputs.  Sales tax and other fees that might be associated with the purchase of a vehicle are not included in the total.' or . = 'The calculated vehicle cost represents the maximum sticker price that you can afford based on your inputs.  Sales tax and other fees that might be associated with the purchase of a vehicle are not included in the total.')]</value>
+      <webElementGuid>05fe0da6-23eb-4861-a47c-1f3793c843b1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

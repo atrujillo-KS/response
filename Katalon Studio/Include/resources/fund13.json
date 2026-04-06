@@ -1,0 +1,1168 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: load or no load?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares rates of return, before and after taxes, for two mutual funds : a fund that charges a load and a fund that does not. Mutual fund returns are annualized, which means that returns for holding periods of more or less than one year are stated as a yearly percentage."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rates of return",
+      "value": "rates of return"
+    }
+  },
+  {
+    "click": {
+      "id": "link=rates of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=mutual funds",
+      "value": "mutual funds"
+    }
+  },
+  {
+    "click": {
+      "id": "link=mutual funds"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Mutual fund"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A mutual fund invests in a portfolio of stocks, bonds, or other investments and sells individual shares of the portfolio to investors."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=load",
+      "value": "load"
+    }
+  },
+  {
+    "click": {
+      "id": "link=load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A transaction fee, stated as a percentage of your investment, that you pay when you buy or redeem shares of a mutual fund."
+    }
+  },
+    {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=annualized",
+      "value": "annualized"
+    }
+  },
+  {
+    "click": {
+      "id": "link=annualized"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Annualized rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An annualized rate of return converts to an annual percentage rate the rate of return that you earn on an investment held for more or less than one year, allowing you to compare investment performance for the same period of time."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The fund with load will earn a higher return after taxes of 18.19%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "With load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "No load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesWithLoad_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesWithLoad_result_value",
+      "value": "20.53%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesNoLoad_result_value",
+      "value": "18.01%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesWithLoad_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesWithLoad_result_value",
+      "value": "18.19%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesNoLoad_result_value",
+      "value": "16.32%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_GainOrLossWithLoad_result_label",
+      "value": "Long-term gains received"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_GainOrLossWithLoad_result_value",
+      "value": "$2,921"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_GainOrLossNoLoad_result_value",
+      "value": "$2,982"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceWithLoad_result_label",
+      "value": "Selling price per share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceWithLoad_result_value",
+      "value": "$44"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceNoLoad_result_value",
+      "value": "$38"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFeesWithLoad_result_label",
+      "value": "Total fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFeesWithLoad_result_value",
+      "value": "$620"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFeesNoLoad_result_value",
+      "value": "$620"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesWithLoad_result_label",
+      "value": "Total taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesWithLoad_result_value",
+      "value": "$1,960"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesNoLoad_result_value",
+      "value": "$1,519"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Return (%)']/parent::*",
+      "value": "Return (%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis-labels.highcharts-xaxis-labels > text",
+      "value": "With load"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Investment-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf-Investment-page-title']/h2",
+      "value": "Investment information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Investment-details']/div[3]/div/div",
+      "value": "Initial Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Investment-details']/div[3]/div/div[2]/div/fieldset/legend",
+      "value": "With Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Investment-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "No Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_SharePurchasePrice_label']/span[2]",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoSharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoSharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Investment-details']/div[3]/div/div[2]/div/fieldset/div[2]/div/div",
+      "value": "Shares you will purchase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoSharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoSharesPurchased-error-message",
+      "value": "Must be between 1.00 and 10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Investment-details']/div[4]/div/div/h3",
+      "value": "Shared fund information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment_field_label",
+      "value": "Additional investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_InvestmentFrequency_field_label",
+      "value": "Investment Frequency"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_MonthsOwned_field_label",
+      "value": "Months owned"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_MonthsOwned_field_label",
+      "value": "Months owned"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_field_label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_TaxFilingStatus_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_field_label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_ModifiedAdjustedGrossIncome_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate_label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Fees-tab-label",
+      "value": "Fees"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Fees-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-page-title']/h2",
+      "value": "Fee information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "With load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "No Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_FrontendLoad_label']/span[2]",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div[3]/div/div/div/fieldset/div/div/div/a",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoFrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoFrontendLoad-error-message",
+      "value": "Must be between 0.000% and 25.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div[3]/div/div/div/fieldset/div[2]/div/div",
+      "value": "Yearly management fees"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_Annual12b1Fees",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoAnnual12b1Fees",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoAnnual12b1Fees-error-message",
+      "value": "Must be between 0.000% and 25.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_BackendLoad_label']/span",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div[3]/div/div/div/fieldset/div[3]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoBackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoBackendLoad-error-message",
+      "value": "Must be between 0.000% and 25.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Income-tab-label",
+      "value": "Income"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Income-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-page-title']/h2",
+      "value": "Dividends and gains"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "With load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "No Load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_LongTermYearlyGainsPerShare_label']/span[2]",
+      "value": "Yearly gains per share (long term)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-error-message",
+      "value": "Must be between $0.00 and $1,000.00"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoLongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoLongTermYearlyGainsPerShare-error-message",
+      "value": "Must be between $0.00 and $1,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_ShortTermYearlyGainsPerShare_label']/span",
+      "value": "Yearly gains per share (short term)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div[2]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoShortTermYearlyGainsPerShare",
+      "value": "0.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoShortTermYearlyGainsPerShare-error-message",
+      "value": "Must be between $0.00 and $1,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_YearlyIncreaseInDividendsAndGains_label']/span",
+      "value": "Yearly increase in dividends"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoYearlyIncreaseInDividendsAndGains",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoYearlyIncreaseInDividendsAndGains-error-message",
+      "value": "Must be between 0.00% and 1,000.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_TaxableQuarterlyDividendsPerShare_label']/span",
+      "value": "Quarterly dividends per share (taxable)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div[4]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoTaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoTaxableQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare_label",
+      "value": "Quarterly dividends per share (fed tax-exempt)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div[5]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_StateTaxExemptQuarterlyDividendsPerShare_label']/span",
+      "value": "Quarterly dividends per share (state tax-exempt)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div[6]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Fund_NonTaxableQuarterlyDividendsPerShare_label']/span",
+      "value": "Quarterly dividends per share (non-taxable)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Income-details']/div[3]/div/div/div/fieldset/div[7]/div/div/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FundTwoNonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FundTwoNonTaxableQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption_field_label",
+      "value": "Dividends & gains are"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Investment-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "18.459"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "1,500.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlySharePriceIncrease",
+      "value": "5.59"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoSharePurchasePrice",
+      "value": "28.460"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoSharesPurchased",
+      "value": "1,523.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoYearlySharePriceIncrease",
+      "value": "6.78"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "15,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Monthly"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Yearly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "38"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "158,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.89"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Fees-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "4.598"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_Annual12b1Fees",
+      "value": "0.999"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "7.452"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoFrontendLoad",
+      "value": "6.459"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoAnnual12b1Fees",
+      "value": "1.222"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoBackendLoad",
+      "value": "40.789"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoBackendLoad",
+      "value": "5.753"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Income-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "4.56"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "2.15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "2.89"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoLongTermYearlyGainsPerShare",
+      "value": "5.79"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoShortTermYearlyGainsPerShare",
+      "value": "3.22"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoYearlyIncreaseInDividendsAndGains",
+      "value": "6.48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoTaxableQuarterlyDividendsPerShare",
+      "value": "8"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare",
+      "value": "11"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FundTwoNonTaxableQuarterlyDividendsPerShare",
+      "value": "10"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.26"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The fund without load will earn a higher return after taxes of 140.20%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesWithLoad_result_value",
+      "value": "122.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxesNoLoad_result_value",
+      "value": "156.54%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesWithLoad_result_value",
+      "value": "106.58%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxesNoLoad_result_value",
+      "value": "140.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_GainOrLossWithLoad_result_value",
+      "value": "$32,396"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_GainOrLossNoLoad_result_value",
+      "value": "$39,353"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceWithLoad_result_value",
+      "value": "$22"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceNoLoad_result_value",
+      "value": "$35"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFeesWithLoad_result_value",
+      "value": "$10,510"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFeesNoLoad_result_value",
+      "value": "$13,607"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesWithLoad_result_value",
+      "value": "$34,801"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesNoLoad_result_value",
+      "value": "$102,298"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,644 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which CD will earn more?"
+    }
+  },
+        {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+    {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Interest earned by each of the two CDs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Interest Earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "First CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/th",
+      "value": "Second CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td",
+      "value": "$618"
+    }
+  },
+              {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+    {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Second CD will earn $618 in interest, $314 more than the First CD."
+    }
+  },
+      {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/caption",
+      "value": "Value at maturity for each of the two CDs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th[2]",
+      "value": "Value at Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/th",
+      "value": "First CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "$10,304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/th",
+      "value": "Second CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/td",
+      "value": "$10,618"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine which CD will generate more interest as well as to the value of each CD at maturity."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (FDIC) or National Credit Union Administration (NCUA) in the case of credit unions. Because CDs are federally insured, they are considered relatively safe investments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+ 
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Interest Earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Value at Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestEarned_Output_result_label",
+      "value": "First CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestEarned_Output_result_value",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDValueAtMaturity_Output_result_value",
+      "value": "$10,304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInterestEarned_Output_result_label",
+      "value": "Second CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInterestEarned_Output_result_value",
+      "value": "$618"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDValueAtMaturity_Output_result_value",
+      "value": "$10,618"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='patterns_enabled_label']/label",
+      "value": "Enable color patterns"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.highcharts-container > svg > g.highcharts-axis-labels.highcharts-xaxis-labels > text:nth-child(1)",
+      "value": "First CD"
+    }
+  },
+    {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Interest Earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Value at Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInitialDeposit-label",
+      "value": "Deposit amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-label",
+      "value": "Deposit term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "24"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_FirstCDTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "1.50"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Savings_FirstCDInterestRate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Second_CD-accordion",
+      "value": "Second CD"
+    }
+  },
+  {
+    "click": {
+      "id": "Second_CD-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInitialDeposit-label",
+      "value": "Deposit amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_SecondCDInitialDeposit_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInitialDeposit-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths-label",
+      "value": "Deposit term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_SecondCDTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDInterestRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_SecondCDInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-tooltip']/dfn",
+      "value": "CD compounding frequency X"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "First_CD-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInitialDeposit",
+      "value": "12,789"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "4.78"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "label=Daily"
+    }
+  },
+  {
+    "click": {
+      "id": "Second_CD-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInitialDeposit",
+      "value": "12,789"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDTermInMonths",
+      "value": "48"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Savings_SecondCDInterestRate",
+      "value": "2.16"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_SecondCDCompoundingFrequency",
+      "value": "label=Daily"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "The First CD will earn $1,972 in interest, $818 more than the Second CD."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestEarned_Output_result_value",
+      "value": "$1,972"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDValueAtMaturity_Output_result_value",
+      "value": "$14,761"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDInterestEarned_Output_result_value",
+      "value": "$1,154"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_SecondCDValueAtMaturity_Output_result_value",
+      "value": "$13,943"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

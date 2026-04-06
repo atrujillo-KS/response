@@ -1,0 +1,201 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "selected": true,
+        "tabId": "lf-basic",
+        "tabClass": "lf-open",
+        "fieldSetId": "lf-basic",
+        "tabLabel": "",
+        "tableId": "lf_Basic",
+        "fields": [
+          "ReadyNow_LoanAmountNeeded",
+          "ReadyNow_LoanTerm",
+          "ReadyNow_OriginationFee"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": []
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "ReadyNow_LoanPayment": {
+        "fieldLabel": "ReadyNow loan payment"
+      },
+      "ReadyNow_TotalRepaymentAmount": {
+        "fieldLabel": "ReadyNow total repayment amount"
+      },
+      "ReadyNow_MonthlyPrincipalPaid": {
+        "fieldLabel": "ReadyNow monthly principal paid"
+      },
+      "ReadyNow_MonthlyFee": {
+        "fieldLabel": "ReadyNow monthly fee"
+      }
+    },
+    "fields": {
+      "ReadyNow_LoanAmountNeeded": {
+        "fieldLabel": "Amount needed",
+        "smallLabel": "",
+        "glossaryTerm": "amountneeded",
+        "dropdownOptions": [
+          {
+            "optionValue": "100",
+            "optionText": "$100",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "200",
+            "optionText": "$200",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "300",
+            "optionText": "$300",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "400",
+            "optionText": "$400",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "500",
+            "optionText": "$500",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "600",
+            "optionText": "$600",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "700",
+            "optionText": "$700",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "800",
+            "optionText": "$800",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "900",
+            "optionText": "$900",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1000",
+            "optionText": "$1,000",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ReadyNow_LoanTerm": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Loan term in months",
+        "valueTextLabel": "months",
+        "defaultValue": "4",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "10",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "10",
+        "widgetStep": "1",
+        "value": "4",
+        "format": "number"
+      },
+      "ReadyNow_OriginationFee": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Loan fee per $100 borrowed",
+        "defaultValue": "5",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "10",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "value": "5",
+        "format": "currency"
+      },
+      "ReadyNow_EffectiveAPR": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Effective APR",
+        "defaultValue": "5.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1",
+        "value": "5.00",
+        "format": "percent"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much will my Ready Now Loan payments be?",
+    "answer": "Your monthly payment will be <span class='lf-bold'>$%amount1%</span> and your total repayment amount over <span class='lf-bold'>%months%</span> months will be <span class='lf-bold'>$%amount2%</span> with an effective APR of <span class='lf-bold'>%apr%%</span>",
+    "selectors": [
+      {
+        "label": "Principal & Interest Payment",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Pie chart that shows a breakdown of the monthly payment into principal and fees."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of the monthly payment into principal and fees"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Monthly maintenance costs</name>
+   <tag></tag>
+   <elementGuidId>a96bd070-7f75-4d89-9dac-3b4b062f2597</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_MonthlyMaintenance-label']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_MonthlyMaintenance-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Auto_MonthlyMaintenance-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>0dfb103d-6c78-4393-8ebe-8f714f4f59b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_MonthlyMaintenance</value>
+      <webElementGuid>f5ae22de-4056-4b86-aff7-523159b1e2b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_MonthlyMaintenance-label</value>
+      <webElementGuid>224a5ec7-790b-4d51-8b8c-06b44fe44f7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>c8f3ca27-98c4-4a96-b421-a48325c2e0c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Monthly maintenance costs
+                                
+                        </value>
+      <webElementGuid>d65d59fc-13c7-4400-a0f3-84c20198c233</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_MonthlyMaintenance-label&quot;)</value>
+      <webElementGuid>9b478a58-4448-4416-bf64-9b715e84479a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_MonthlyMaintenance-label']</value>
+      <webElementGuid>336ee65f-391c-4757-b5e0-589d21f4b8d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_MonthlyMaintenance-table']/div/label</value>
+      <webElementGuid>f8792409-4b40-4f83-b1d7-907150776e33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Years you will own vehicle'])[2]/following::label[1]</value>
+      <webElementGuid>c14697fc-9566-428b-874c-402a47f5d09e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 30'])[1]/following::label[2]</value>
+      <webElementGuid>20040636-dfeb-4f83-babb-6c450b1b0ed2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[1]/preceding::label[1]</value>
+      <webElementGuid>e1b9438a-0348-40d6-995e-30592d087d87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly maintenance costs'])[2]/preceding::label[1]</value>
+      <webElementGuid>97722bc4-88ae-4d9c-9137-64710c5f2a67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Monthly maintenance costs']/parent::*</value>
+      <webElementGuid>0e5d36bf-15f9-4472-b9ba-7ea7598799a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[2]/div/label</value>
+      <webElementGuid>0a98de43-57a1-4d78-ac29-314716a82089</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_MonthlyMaintenance-label' and (text() = 'Monthly maintenance costs
+                                
+                        ' or . = 'Monthly maintenance costs
+                                
+                        ')]</value>
+      <webElementGuid>f6cf15bd-2932-489c-9542-c158752ce847</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

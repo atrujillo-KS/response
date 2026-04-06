@@ -1,0 +1,186 @@
+{
+  "layout": {
+    "tabs": {
+      "purchase": {
+        "tabLabel": "Compra",
+        "label": "Compra"
+      },
+      "purchaseAssumptions": {
+        "tabLabel": "Supuestos de compra"
+      },
+      "lease": {
+        "tabLabel": "Alquiler",
+        "label": "Alquiler"
+      },
+      "taxes": {
+        "tabLabel": "Impuestos y depreciación "
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_SalesTaxRate": {
+        "fieldLabel": "Tasa impositiva a las ventas"
+      },
+      "Auto_VehicleAgeInYears": {
+        "fieldLabel": "Antigüedad del vehículo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      },
+      "Auto_OtherCosts": {
+        "fieldLabel": "Otros costos iniciales"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Auto_FutureDepreciation": {
+        "fieldLabel": "Depreciación futura",
+        "dropdownOptions": [
+          {
+            "optionText": "Baja"
+          },
+          {
+            "optionText": "Promedio"
+          },
+          {
+            "optionText": "Elevado(a)"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      },
+      "Auto_LeaseMonthlyPayment": {
+        "fieldLabel": "Pago mensual"
+      },
+      "Auto_LeaseDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Auto_LeaseTerm": {
+        "fieldLabel": "Plazo de alquiler",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Auto_LeaseSecurityDeposit": {
+        "fieldLabel": "Depósito de garantía"
+      },
+      "Auto_LeaseCashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Compra",
+        "Alquiler"
+      ]
+    },
+    "results_fields": {
+      "AveCostPerYrAuto03": {
+        "fieldLabel": "Costo promedio al año"
+      },
+      "MonPmtAuto03": {
+        "fieldLabel": "Pago mensual"
+      },
+      "TotIntPaidAuto03": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotDepAuto03": {
+        "fieldLabel": "Depreciación total"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo Medio Por Año",
+    "dataTableCategory2": "Pago mensual",
+    "title": "¿Debo alquilar o comprar un vehículo?",
+    "answer": "La opción de <span class='lf-bold'>%which%</span> le costará <span class='lf-bold'>%result% menos</span> en promedio cada año.",
+    "same_answer": "<span class='lf-bold'>Ambas opciónes</span> le costarán <span class='lf-bold'>lo mismo</span> en promedio cada año.",
+    "purchase": "Compra",
+    "lease": "Alquiler",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Costo promedio",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pagos",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    },
+    "cashrebate": {
+      "title": "Reembolso de efectivo",
+      "definition": "Oferta a los consumidores, que se hace como incentivo para la compra, que reduce el precio de compra de un bien en una cantidad equivalente al monto del reembolso en efectivo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a decidir si es más conveniente el leasing en lugar de tomar un préstamo para comprar un automóvil."
+    },
+    {
+      "textLabel": "La calculadora supone que usted no ejerce la opción de compra al finalizar el plazo del leasing. Con un préstamo para vehículos, usted será propietario del vehículo cuando se cancele el préstamo."
+    },
+    {
+      "textLabel": "El costo anual promedio por ser propietario de un vehículo disminuye abruptamente después de los primeros años. Esto se debe a que los gastos de depreciación y financiación son menores."
+    },
+    {
+      "textLabel": "El primer año del plazo del leasing es el que implica un mayor costo, dado que usted paga cargos de financiación de leasing adicionales. Como arrendatario, no incurre en costos por depreciación."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo promedio por año de la opción de compra y la opción de arrendamiento."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual de la opción de compra y la opción de arrendamiento."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo promedio por año de la opción de compra y la opción de arrendamiento"
+    },
+    {
+      "title": "Pago mensual de la opción de compra y la opción de arrendamiento"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LoanInfo"
+      ],
+      "LoanInfo": {
+        "tabLabel": "LOAN INFO",
+        "selected": true,
+        "fields": [
+          "HSBCCreditorInsurance_LoanType",
+          "HSBCCreditorInsurance_ApplicantAgeRange",
+          "HSBCCreditorInsurance_CoApplicantAgeRange",
+          "HSBCCreditorInsurance_TypeOfCoverage",
+          "HSBCCreditorInsurance_SingleDisabilityCoverageFor",
+          "HSBCCreditorInsurance_ApplicantProvince",
+          "HSBCCreditorInsurance_CurrentLoanBalance",
+          "HSBCCreditorInsurance_CurrentMonthlyPayment",
+          "HSBCCreditorInsurance_PaymentFrequency",
+          "HSBCCreditorInsurance_LoanTermInMonths"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [
+        [
+          "BaseLifeInsurancePremiumPayment"
+        ],
+        [
+          "BaseDisabilityInsurancePremiumPaymentApplicant1"
+        ],
+        [
+          "BaseDisabilityInsurancePremiumPaymentApplicant2"
+        ],
+        [
+          "ProvincialSalesTax"
+        ],
+        [
+          "CalculatedInsurancePremium"
+        ]
+      ],
+      "refine": true
+    },
+    "results_fields": {
+      "BaseLifeInsurancePremiumPayment": {
+        "fieldLabel": "%paymentFreq% base Life Insurance premium payment"
+      },
+      "BaseDisabilityInsurancePremiumPaymentApplicant1": {
+        "fieldLabel": "%paymentFreq% base Disability Insurance premium payment - Applicant 1"
+      },
+      "BaseDisabilityInsurancePremiumPaymentApplicant2": {
+        "fieldLabel": "%paymentFreq% base Disability Insurance Premium payment - Applicant 2"
+      },
+      "ProvincialSalesTax": {
+        "fieldLabel": "Taxes (%taxRate%% tax rate)"
+      },
+      "CalculatedInsurancePremium": {
+        "fieldLabel": "%paymentFreq% after-tax premium payment"
+      }
+    },
+    "fields": {
+      "HSBCCreditorInsurance_LoanType": {
+        "fieldLabel": "Loan type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Mortgage",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Line of credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Demand loan",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Personal installment loan",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_CurrentLoanBalance": {
+        "fieldLabel": "Current balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "250000",
+        "value": "250000",
+        "minimumValue": "1",
+        "maximumValue": "750000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "750000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_CurrentMonthlyPayment": {
+        "fieldLabel": "Payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_LoanTermInMonths": {
+        "fieldLabel": "Loan term in months",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "48",
+        "value": "48",
+        "minimumValue": "1",
+        "maximumValue": "84",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "84",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_PaymentFrequency": {
+        "fieldLabel": "Payment frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Semimonthly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Biweekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_TypeOfCoverage": {
+        "fieldLabel": "Type of coverage",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Life – Single",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Life & Disability – Single",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Life – Joint",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Life & Disability – Joint",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Joint Life and Single Disability",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_SingleDisabilityCoverageFor": {
+        "fieldLabel": "Single disability coverage for",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Applicant",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Co-applicant",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_ApplicantAgeRange": {
+        "fieldLabel": "Your age range",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "18-30",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "31-35",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "36-40",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "3",
+            "optionText": "41-45",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "46-50",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "51-55",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "56-60",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "61-64",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_ApplicantProvince": {
+        "fieldLabel": "Province",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Alberta",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "British Columbia",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Manitoba",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "New Brunswick",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Newfoundland",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Nova Scotia",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Ontario",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Prince Edward Island",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "8",
+            "optionText": "Quebec",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "9",
+            "optionText": "Saskatchewan",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "HSBCCreditorInsurance_CoApplicantAgeRange": {
+        "fieldLabel": "Age range of co-applicant",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "18-30",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "31-35",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "36-40",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "3",
+            "optionText": "41-45",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "46-50",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "51-55",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "56-60",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "61-64",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much will my premium be for creditor insurance?",
+    "answerText1": "Your premium will be <span class='lf-bold'>$%result1%</span> and your new loan payment will be <span class='lf-bold'>$%result2%</span>.",
+    "answerText2": "If you opt for life and disability, your premium will be <span class='lf-bold'>$%result3%</span> and your new loan payment will be <span class='lf-bold'>$%result4%</span>.",
+    "LifeSingle": "Life – Single",
+    "LifeAndDisabilitySingle": "Life & Disability – Single",
+    "LifeJoint": "Life – Joint",
+    "LifeAndDisabilityJoint": "Life & Disability – Joint",
+    "JointLifeAndSingleDisability": "Joint Life and Single Disability",
+    "selectors": [
+      {
+        "label": "Premiums",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Payments",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "defaultColumnColorForChart": "#287C9E",
+    "highlightedColumnColorForChart": "#BA2025",
+    "categories": [
+      "Life – Single",
+      "Life & Disability – Single",
+      "Life – Joint",
+      "Life & Disability – Joint",
+      "Joint Life and Single Disability"
+    ],
+    "pdfFileNamePrefix": "creditorInsurance",
+    "generatingPDF": "Generating PDF...",
+    "pdfSuccess": "Your PDF has been successfully generated.",
+    "pdfError": "Oops! Your PDF was not generated. Please try again."
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the after-tax cost of insurance (per payment) for each of the coverage types"
+    },
+    {
+      "title": "Column chart of the new loan payment amount (with insurance included) for each of the coverage types"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table of the after-tax cost of insurance (per payment) for each of the coverage types"
+    },
+    {
+      "title": "Table of the new loan payment amount (with insurance included) for each of the coverage types"
+    }
+  ]
+}

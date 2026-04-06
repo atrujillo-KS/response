@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_This tool helps you determine which of tw_c00dcd</name>
+   <tag></tag>
+   <elementGuidId>cd7e64db-4c00-450f-99cf-195aacd68473</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_0']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This tool helps you determine which of two vehicle loans with different terms is&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>597da926-1a83-4ea0-adc5-a05901c94d82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_0</value>
+      <webElementGuid>0257c061-620c-4678-8c79-80c9990e0f4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This tool helps you determine which of two vehicle loans with different terms is the better deal. For two loans with the same interest rate, the monthly payment is larger for the loan with the shorter term. However, you pay off the loan sooner and have a chance to deposit the savings in an interest-paying account. If your savings rate of return is much higher than the auto loan interest rate, it might be better to invest the money and finance the car.</value>
+      <webElementGuid>9afcaad7-f86a-4fd7-975f-5a1e75236b2f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_0&quot;)</value>
+      <webElementGuid>2b61706a-4139-442c-9a0b-7ac6140c00e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_0']</value>
+      <webElementGuid>965edc40-0340-4d4a-aaba-7059d1e6e7bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p</value>
+      <webElementGuid>5d2e8467-0bab-4338-be6b-806484aea820</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[2]</value>
+      <webElementGuid>56645c81-fdcd-4a8a-a302-9bab57434b0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[2]</value>
+      <webElementGuid>c9d1e958-0778-495a-af55-5ccf9f297afd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>8b3d76eb-3db9-4ef8-9545-5641c852ffb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>ae581608-abad-480c-a548-3b2fc8d1cf77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This tool helps you determine which of two vehicle loans with different terms is the better deal. For two loans with the same interest rate, the monthly payment is larger for the loan with the shorter term. However, you pay off the loan sooner and have a chance to deposit the savings in an interest-paying account. If your savings rate of return is much higher than the auto loan interest rate, it might be better to invest the money and finance the car.']/parent::*</value>
+      <webElementGuid>dd9758fa-bd0b-4348-b17c-e8bde3d41e26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/p</value>
+      <webElementGuid>2a946a69-1e09-406b-8488-27729e282543</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_0' and (text() = 'This tool helps you determine which of two vehicle loans with different terms is the better deal. For two loans with the same interest rate, the monthly payment is larger for the loan with the shorter term. However, you pay off the loan sooner and have a chance to deposit the savings in an interest-paying account. If your savings rate of return is much higher than the auto loan interest rate, it might be better to invest the money and finance the car.' or . = 'This tool helps you determine which of two vehicle loans with different terms is the better deal. For two loans with the same interest rate, the monthly payment is larger for the loan with the shorter term. However, you pay off the loan sooner and have a chance to deposit the savings in an interest-paying account. If your savings rate of return is much higher than the auto loan interest rate, it might be better to invest the money and finance the car.')]</value>
+      <webElementGuid>80632cbc-5924-465d-968d-a0ec5ee4f483</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

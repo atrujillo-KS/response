@@ -1,0 +1,89 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc/calc/levelthreeprocessing?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Level 3 processing is estimated to save your business $400 annually"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume-label",
+      "value": "Annual card processing volume"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume",
+      "value": "100,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume-error-message",
+      "value": "Must be between $1.00 and $100,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume-label",
+      "value": "% of volume that is corporate, fleet, and purchase cards"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume",
+      "value": "50.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume-error-message",
+      "value": "Must be between 1.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume",
+      "value": "300,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume",
+      "value": "25"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Level 3 processing is estimated to save your business $600 annually"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/following::div[4]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='% of volume that is corporate, fleet, and purchase cards'])[2]/following::b[1]",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

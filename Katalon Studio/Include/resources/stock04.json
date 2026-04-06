@@ -1,0 +1,630 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What stock price achieves my target rate of return?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the price at which you will have to sell shares of stock to realize your desired rate of return. You select whether you want your return to be calculated before or after income and capital gains taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='capital gains taxes'])[1]/following::p[1]",
+      "value": "Dividends that you receive on shares are reinvested at the specified interest rate or spent."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='reinvested'])[1]/following::p[1]",
+      "value": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=capital gains taxes",
+      "value": "capital gains taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Dividends",
+      "value": "Dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Dividends'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=reinvested",
+      "value": "reinvested"
+    }
+  },
+  {
+    "click": {
+      "id": "link=reinvested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Reinvesting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The act of investing dividends and capital gains that you receive from a company or mutual fund into additional shares of the stock or fund."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reinvesting'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "A sale price of $37 or higher will earn a return of 10.00% before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Investment-accordion",
+      "value": "Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SharesPurchased-error-message",
+      "value": "Must be between 1 and 1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-label",
+      "value": "Months you will own"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_MonthsOwned-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+    {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "IncomeTaxes-accordion",
+      "value": "Income & Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AnnualizedReturnDesired-label",
+      "value": "Annualized return desired"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_AnnualizedReturnDesired",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AnnualizedReturnDesired-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_ReturnTaxOption-label",
+      "value": "Desired return is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_ReturnTaxOption",
+      "value": "Before taxes After taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_ReturnTaxOption",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-label",
+      "value": "Average quarterly dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Stock_AverageQuarterlyDividend_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Average quarterly dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Dividends earned on a lot of shares, on average during a quarter."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_AverageQuarterlyDividend-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption-label",
+      "value": "Dividend income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_DividendIncomeSpendingOption",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_TaxFilingStatus_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatPurchase-accordion",
+      "value": "Fees at Purchase"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesatSale-accordion",
+      "value": "Fees at Sale"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-label",
+      "value": "As fixed dollar amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "8"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesFixedAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-label",
+      "value": "As % of total amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesPercentage-error-message",
+      "value": "Must be between 0.00% and 25.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-label",
+      "value": "As dollar amount per share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Stock_SaleFeesAmountPerShare-error-message",
+      "value": "Must be between $0 and $10"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharePurchasePrice",
+      "value": "20.011"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SharesPurchased",
+      "value": "822"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_MonthsOwned",
+      "value": "46"
+    }
+  },
+  {
+    "click": {
+      "id": "IncomeTaxes-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Stock_AnnualizedReturnDesired"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_AnnualizedReturnDesired",
+      "value": "15.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Stock_ReturnTaxOption",
+      "value": "label=After taxes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_AverageQuarterlyDividend",
+      "value": "150"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing separately"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "122,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.79"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatPurchase-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesFixedAmount",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesPercentage",
+      "value": "1.10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_PurchaseFeesAmountPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesatSale-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesFixedAmount",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesPercentage",
+      "value": "1.20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Stock_SaleFeesAmountPerShare",
+      "value": "9"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "A sale price of $41 or higher will earn a return of 15.00% before taxes"
+    }
+  }
+]

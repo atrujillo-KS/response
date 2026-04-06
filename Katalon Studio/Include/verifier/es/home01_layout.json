@@ -1,0 +1,220 @@
+{
+  "layout": {
+    "tabs": {
+      "MonthlyIncome": {
+        "tabLabel": "Ingreso mensual"
+      },
+      "MonthlyPayments": {
+        "tabLabel": "Pagos mensuales"
+      },
+      "LoanInfo": {
+        "tabLabel": "Información del préstamo"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Estimado conservador ",
+        "Estimado agresivo"
+      ]
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Sueldos antes de impuestos y deducciones",
+        "errorMessage": "Debe ubicarse entre $1 y $%maximumValue%"
+      },
+      "Home_InvestmentIncomeBeforeTaxes": {
+        "fieldLabel": "Ingresos por inversiones antes de impuestos"
+      },
+      "Home_MonthlyIncomeFromRentalProperties": {
+        "fieldLabel": "Ingresos por el alquiler de propiedades"
+      },
+      "Global_OtherMonthlyIncome": {
+        "fieldLabel": "Otros ingresos"
+      },
+      "Home_AutoLoanPayments": {
+        "fieldLabel": "Préstamos para automóviles"
+      },
+      "Home_MonthlyStudentLoanPayments": {
+        "fieldLabel": "Préstamos estudiantiles"
+      },
+      "Home_CreditCardPayments": {
+        "fieldLabel": "Tarjeta de crédito"
+      },
+      "Home_AlimonyPayment": {
+        "fieldLabel": "Pensión compensatoria para el cónyuge o pensión de manutención para los hijos"
+      },
+      "Home_MonthlyRentalPropertyLoanPayments": {
+        "fieldLabel": "Préstamos para propiedades en alquiler"
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Otros pagos"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results_fields": {
+      "ConsPrice4": {
+        "fieldLabel": "Precio de la vivienda"
+      },
+      "AggrPrice4": {},
+      "ConsDownPmt4": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "AggrDownPmt4": {},
+      "ConsLoanAmt4": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "AggrLoanAmt4": {},
+      "ConsPrincAndInt4": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "AggrPrincAndInt4": {},
+      "ConsTaxAndIns4": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "AggrTaxAndIns4": {},
+      "ConsMortIns4": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "AggrMortIns4": {},
+      "ConsTotPmt4": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "AggrTotPmt4": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Importe del préstamo",
+    "title": "¿Qué cantidad puedo tomar en préstamo?",
+    "answer": "Usted puede solicitar un préstamo por un monto entre <span class='lf-bold'>%result1%</span> (conservador) y <span class='lf-bold'>%result2%</span> (agresivo)",
+    "ConsLoanAmt": "Conservador",
+    "AggrLoanAmt": "Agresivo",
+    "principalInterest": "Capital e intereses",
+    "pmi": "Seguro hipotecario privado ",
+    "taxesInsurance": "Impuestos y seguro",
+    "categories": [
+      "Conservador",
+      "Agresivo"
+    ],
+    "selectors": [
+      {
+        "label": "Importe del préstamo",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Pago",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "debtratio": {
+      "title": "Relación de deuda",
+      "definition": "Utilizada por los prestamistas para aprobar préstamos. La relación de deuda es igual a los pagos de deuda mensuales combinados divididos por el ingreso mensual bruto."
+    },
+    "conservativequalificationestimate": {
+      "title": "Estimación conservadora de requisitos",
+      "definition": "Cuando la economía es débil, los prestamistas hipotecarios son más conservadores y tienden a aumentar los requisitos para calificar para préstamos."
+    },
+    "housingratio": {
+      "title": "Relación de vivienda",
+      "definition": "Los prestamistas utilizan una relación de vivienda para dar su aprobación a los solicitantes de préstamos. La relación de vivienda equivale al pago hipotecario mensual combinado dividido por el ingreso mensual bruto. Por ejemplo, un pago hipotecario mensual combinado de $1,500 dividido por el ingreso mensual bruto de $4,500 equivale a una relación de vivienda del 33%."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "aggressivequalificationestimate": {
+      "title": "Estimación agresiva de requisitos",
+      "definition": "Cuando la economía es sólida, los prestamistas hipotecarios tienen una actitud más agresiva y tienden a exigir menores requisitos para el otorgamiento de préstamos."
+    },
+    "underwriting": {
+      "title": "Evaluación",
+      "definition": "Proceso de evaluación que realiza el prestamista para verificar si un posible prestatario tiene la capacidad financiera para devolver el préstamo. "
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "Siglas que designan el capital del préstamo, los interés, los impuestos sobre la propiedad y el seguro del propietario de vivienda."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa los montos de préstamo y de pagos hipotecarios mensuales para dos situaciones de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#underwriting\">evaluación</a></span>: una que usa pautas de evaluación <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#aggressivequalificationestimate\">agresivas</a></span>, y otra que usa pautas <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#conservativequalificationestimate\">conservadoras</a></span>."
+    },
+    {
+      "textLabel": "La calculadora utiliza dos relaciones: la relación pago-ingreso (también denominada <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#housingratio\">relación de vivienda</a></span>) y la relación deuda-ingreso (también denominada <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#debtratio\">relación de deuda</a></span>)."
+    },
+    {
+      "textLabel": "Cuando la economía es sólida, los prestamistas tienen una actitud más agresiva y aumentan estas relaciones para competir por los negocios. Cuando la economía es débil, los prestamistas son más conservadores y disminuyen las relaciones."
+    },
+    {
+      "textLabel": "Las siguientes relaciones de vivienda se utilizan para obtener resultados conservadores: 29% para pagos iniciales menores que el 20%, y 30% para pagos iniciales del 20% o más. Para todos los pagos iniciales, se utiliza una relación de deuda del 36%."
+    },
+    {
+      "textLabel": "Las siguientes relaciones se utilizan para obtener resultados agresivos: relaciones de vivienda y deuda del 31% y del 38%, respectivamente, para pagos iniciales menores que el 10%; relaciones de vivienda y deuda del 32% y del 40%, respectivamente, para pagos iniciales del 10% o más, pero inferiores al 20%; relaciones de vivienda y deuda del 33% y del 41%, respectivamente, para pagos iniciales del 20% o más."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el monto del préstamo tanto para la estimación conservadora como para la agresiva."
+    },
+    {
+      "title": "Gráfico de columnas apiladas que incluye un desglose del pago mensual total por capital e intereses, impuestos a la propiedad y seguros, y PMI tanto para la estimación conservadora como para la agresiva."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Tabla que compara el monto del préstamo tanto para la estimación conservadora como para la agresiva"
+    },
+    {
+      "title": "Tabla que incluye un desglose del pago mensual total por capital e intereses, impuestos a la propiedad y seguros, y PMI tanto para la estimación conservadora como para la agresiva"
+    }
+  ]
+}

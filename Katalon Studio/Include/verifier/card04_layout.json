@@ -1,0 +1,302 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CreditCardInfo",
+        "Projections"
+      ],
+      "CreditCardInfo": {
+        "tabLabel": "Credit Card Info",
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_CardInterestRate",
+          "Global_PayoffPlan",
+          "Global_DesiredMonthsToPayOffCard",
+          "Global_DesiredMonthlyCardPayment"
+        ]
+      },
+      "Projections": {
+        "tabLabel": "Assumptions",
+        "fields": [
+          "Global_MinimumPaymentPercentage",
+          "Global_MinimumPaymentFloor"
+        ]
+      }
+    },
+    "results": {
+      "result": ""
+    },
+    "tableFields": {
+      "Global_PayoffPlanMonthlyPayment": {
+        "fieldLabel": "Payoff plan"
+      },
+      "Global_AlternativePlanOneMonthlyPayment": {
+        "fieldLabel": "Alternative plan 1"
+      },
+      "Global_AlternativePlanTwoMonthlyPayment": {
+        "fieldLabel": "Alternative plan 2"
+      },
+      "Global_AlternativePlanThreeMonthlyPayment": {
+        "fieldLabel": "Alternative plan 3"
+      },
+      "Global_AlternativePlanFourMonthlyPayment": {
+        "fieldLabel": "Alternative plan 4"
+      }
+    },
+    "fields": {
+      "Global_MinimumPaymentPercentage": {
+        "fieldLabel": "Minimum payment percentage",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_MinimumPaymentFloor": {
+        "fieldLabel": "Minimum payment floor",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Amount you owe",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "12.00",
+        "value": "12.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_PayoffPlan": {
+        "fieldLabel": "Payoff plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Desired months to pay off",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Desired monthly payment",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_DesiredMonthsToPayOffCard": {
+        "fieldLabel": "Desired months to pay off",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "480",
+        "value": "480",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_DesiredMonthlyCardPayment": {
+        "fieldLabel": "Desired monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "350",
+        "value": "350",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2500",
+        "widgetStep": "25",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "CHART_HEADER": "This chart shows the total interest you will pay for each monthly payment option.",
+    "ADDITIONAL_PAYMENT_OPTIONS": "Additional payment options:",
+    "PLAN": "Plan",
+    "MONTHLY_PAYMENT": "Monthly payment",
+    "PAYOFF": "Payoff (in months)",
+    "INTEREST": "Interest",
+    "dataTableCategoryTitle": "Monthly payment",
+    "title": "What will it take to pay off my credit card?",
+    "answer": "",
+    "answer1": "A <span class='lf-bold'>$%payment%</span> monthly payment and no further charges will pay off your credit card in <span class='lf-bold'>%months% %monthlabel%</span>. Over that time you will pay <span class='lf-bold'>$%interest%</span> in total interest.",
+    "answer2": "It will take you <span class='lf-bold'>%months% %monthlabel%</span> to pay off your credit card with a fixed payment of <span class='lf-bold'>$%payment%</span> and no further charges. Over that time you will pay <span class='lf-bold'>$%interest%</span> in total interest.",
+    "answer3": "It appears that you will not pay off your credit card in under 360 months.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Additional Payment Options",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Total Interest Paid",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Payoff Schedule",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "month": "Month",
+    "endingBalance": "Balance",
+    "months": "Months",
+    "dollars": "Card Balance",
+    "months_prefix1": "desired ",
+    "months_prefix2": "balance in ",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest",
+        "Ending balance"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    },
+    "futureinterestrates": {
+      "title": "Future interest rates",
+      "definition": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool estimates the amount of time to pay off a credit card balance based on a desired monthly payment or the payment required to pay off a balance by a desired timeframe. Regardless of payoff plan desired, the tool will also estimate the total interest paid and present additional monthly payment options for consideration."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": ""
+    },
+    {
+      "title": "Column chart that shows the total interest you will pay for each monthly payment option."
+    },
+    {
+      "title": "Amortization table for the credit card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total interest you will pay for each monthly payment option"
+    }
+  ]
+}

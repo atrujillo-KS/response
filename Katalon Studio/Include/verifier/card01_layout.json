@@ -1,0 +1,218 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_CardInterestRate",
+          "Global_CardAnnualFee",
+          "Global_FutureMonthlyChargesOnCard",
+          "Card_MonthlyPayment"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Card balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "12.00",
+        "value": "12.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_CardAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Future monthly charges",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlycharges",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Future monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "title": "How important is the interest rate?",
+    "answer": "After <span class='lf-bold'>%numberOfYears% %yearlabel% %and% %numberOfMonths% %monthlabel%</span>, your credit card debt will be <span class='lf-bold'>%balance%</span>",
+    "answer_noCardBalance": "You have no credit card debt.",
+    "dataTableCategoryTitle": "Month",
+    "dataTableCategoryTitle2": "Interest Rate (%)",
+    "dataTableCategory": "Months to Pay Off",
+    "noPayoff": "The debt is unlikely to be settled with the input values provided.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Balance",
+        "width": "33%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "index": 2,
+        "label": "Payoff vs. Rate",
+        "width": "33%",
+        "getGraphData": true,
+        "getTableData": true
+      },
+      {
+        "label": "Statement",
+        "width": "33%",
+        "getTableData": true,
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Monthly Statement",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "balance": "Balance",
+    "principal": "Principal",
+    "interest_rate_percent": "Interest rate (%)",
+    "months_to_pay_off": "Months to pay off ",
+    "month": "Month",
+    "months": "Months",
+    "rate": "Rate",
+    "and": "and"
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows how credit card interest rates affect the amount of finance charges and therefore, the number of months it takes to pay off credit card debt. Higher interest rates can dramatically increase your credit card debt. Comparing credit card rates to find a good deal and learning how the card companies charge interest on card balances is essential."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Line chart of the card balance over time."
+    },
+    {
+      "title": "Column chart of the time needed to pay off the card at various interest rates."
+    },
+    {
+      "title": "Amortization schedule for the credit card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Card balance over time"
+    },
+    {
+      "title": "Time needed to pay off the card at various interest rates"
+    }
+  ]
+}

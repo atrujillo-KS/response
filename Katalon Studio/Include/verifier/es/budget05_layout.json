@@ -1,0 +1,160 @@
+{
+  "layout": {
+    "tabs": {
+      "CreditCardInfo": {
+        "tabLabel": "Información de la tarjeta de crédito "
+      },
+      "Projections": {
+        "tabLabel": "Suposiciones"
+      }
+    },
+    "tableFields": {
+      "Global_PayoffPlanMonthlyPayment": {
+        "fieldLabel": "Plan de pago"
+      },
+      "Global_AlternativePlanOneMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 1"
+      },
+      "Global_AlternativePlanTwoMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 2"
+      },
+      "Global_AlternativePlanThreeMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 3"
+      },
+      "Global_AlternativePlanFourMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 4"
+      }
+    },
+    "fields": {
+      "Global_MinimumPaymentPercentage": {
+        "fieldLabel": "Porcentaje mínimo de pago"
+      },
+      "Global_MinimumPaymentFloor": {
+        "fieldLabel": "Piso mínimo de pago"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Cantidad que debe"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_CardAnnualFee": {
+        "fieldLabel": "Comisión anual"
+      },
+      "Global_PayoffPlan": {
+        "fieldLabel": "Plan de liquidación",
+        "dropdownOptions": [
+          {
+            "optionText": "Número de meses en que desea liquidar la deuda"
+          },
+          {
+            "optionText": "Pago mensual deseado"
+          }
+        ]
+      },
+      "Global_DesiredMonthsToPayOffCard": {
+        "fieldLabel": "Número de meses en que desea liquidar la deuda"
+      },
+      "Global_DesiredMonthlyCardPayment": {
+        "fieldLabel": "Pago mensual deseado"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "CHART_HEADER": "Este gráfico muestra el interés total que pagará por cada opción de pago mensual.",
+    "ADDITIONAL_PAYMENT_OPTIONS": "Opciones de pago adicionales:",
+    "PLAN": "Plan",
+    "MONTHLY_PAYMENT": "Pago mensual",
+    "PAYOFF": "liquidación (en meses)",
+    "INTEREST": "Interés",
+    "dataTableCategoryTitle": "Pago mensual",
+    "title": "¿Qué debo hacer para terminar de pagar mi tarjeta de crédito?",
+    "answer1": "Un pago mensual de <span class='lf-bold'>$%payment%</span> y sin cargos adicionales pagará su tarjeta de crédito en <span class='lf-bold'>%months% %monthlabel%</span>. Durante ese tiempo pagará <span class='lf-bold'>$%interest%</span> en intereses totales.",
+    "answer2": "Le tomará <span class='lf-bold'>%months% %monthlabel%</span> pagar su tarjeta de crédito con un pago fijo de <span class='lf-bold'>$%payment%</span> y sin cargos adicionales. Durante ese tiempo pagará <span class='lf-bold'>$%interest%</span> en intereses totales.",
+    "answer3": "Parece que no pagará su tarjeta de crédito en menos de 360 meses.",
+    "month": "Mes",
+    "endingBalance": "Saldo final ",
+    "months": "Meses",
+    "dollars": "Saldo de la tarjeta",
+    "months_prefix1": "en los ",
+    "months_prefix2": "adeudado en ",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Opciones de pago adicionales",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Total de intereses pagados",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Calendario de liquidación"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado",
+        "Saldo final"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado",
+        "Saldo final"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Pagos mensuales futuros",
+      "definition": "Monto que usted paga mensualmente sobre el saldo de su tarjeta de crédito. Si sus pagos son menores que los gastos por intereses para el período, los intereses impagos se suman al saldo de su tarjeta."
+    },
+    "futuremonthlycharges": {
+      "title": "Cargos mensuales futuros",
+      "definition": "Monto neto que usted gasta mensualmente con su tarjeta de crédito, descontando cualquier retorno que se acredite en el saldo de su tarjeta."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a determinar el monto del pago mensual que se requiere para cancelar la deuda de su tarjeta de crédito en el plazo que usted desea o el tiempo estimado que le tomará cancelar la deuda de su tarjeta de crédito en función del monto mensual que desea pagar."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": ""
+    },
+    {
+      "title": "Gráfico de columnas que muestra el interés total que pagará por cada opción de pago mensual."
+    },
+    {
+      "title": "Tabla de amortización de la tarjeta de crédito."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Interés total que pagará por cada opción de pago mensual"
+    }
+  ]
+}

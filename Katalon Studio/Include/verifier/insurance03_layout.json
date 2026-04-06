@@ -1,0 +1,1130 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Personal",
+        "Premiums",
+        "Fees",
+        "Payout",
+        "results"
+      ],
+      "Personal": {
+        "selected": true,
+        "tabLabel": "Personal",
+        "pageTitle": "",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Personal information",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Global_CurrentAge",
+                "Global_LifeExpectancy",
+                "Global_FederalAndStateTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "Premiums": {
+        "tabLabel": "Premiums",
+        "pageTitle": "Premium information",
+        "pageDesc": "With a universal life policy, you have the flexibility to change the amount and frequency of premium payments within the specified limits in your policy. You may enter up to three different monthly and/or lump sum premium payments.",
+        "sections": [
+          "monthly1",
+          "monthly2",
+          "lumpSum1",
+          "lumpSum2"
+        ],
+        "custom": "new-standard-3col",
+        "monthly1": {
+          "sectionLabel": "Monthly Premiums",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Premiums_MonthlyPremium1",
+              "fields": [
+                "Insurance_MonthlyPremiumOneAmount"
+              ]
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium2",
+              "fields": [
+                "Insurance_MonthlyPremiumTwoAmount"
+              ]
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium3",
+              "fields": [
+                "Insurance_MonthlyPremiumThreeAmount"
+              ]
+            }
+          ]
+        },
+        "monthly2": {
+          "sectionLabel": "",
+          "fieldSets": "2 double-set",
+          "rows": [
+            {
+              "rowLabel": "Premiums_MonthlyPremium1",
+              "fields": [
+                "Insurance_MonthlyPremiumOneYearsPaid"
+              ]
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium2",
+              "fields": [
+                "Insurance_MonthlyPremiumTwoYearsPaid"
+              ]
+            },
+            {
+              "rowLabel": "Premiums_MonthlyPremium3",
+              "fields": [
+                "Insurance_MonthlyPremiumThreeYearsPaid"
+              ]
+            }
+          ]
+        },
+        "lumpSum1": {
+          "sectionLabel": "Lump Sum Premiums",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "lumpSum_Premium1",
+              "fields": [
+                "Insurance_LumpSumPremiumOneAmount"
+              ]
+            },
+            {
+              "rowLabel": "lumpSum_Premium2",
+              "fields": [
+                "Insurance_LumpSumPremiumTwoAmount"
+              ]
+            },
+            {
+              "rowLabel": "lumpSum_Premium3",
+              "fields": [
+                "Insurance_LumpSumPremiumThreeAmount"
+              ]
+            }
+          ]
+        },
+        "lumpSum2": {
+          "sectionLabel": "",
+          "fieldSets": "2 double-set",
+          "rows": [
+            {
+              "rowLabel": "lumpSum_Premium1",
+              "fields": [
+                "Insurance_LumpSumPremiumOneYearsPaid"
+              ]
+            },
+            {
+              "rowLabel": "lumpSum_Premium2",
+              "fields": [
+                "Insurance_LumpSumPremiumTwoYearsPaid"
+              ]
+            },
+            {
+              "rowLabel": "lumpSum_Premium3",
+              "fields": [
+                "Insurance_LumpSumPremiumThreeYearsPaid"
+              ]
+            }
+          ]
+        }
+      },
+      "Fees": {
+        "tabLabel": "Fees",
+        "pageTitle": "",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Fee information",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Insurance_UpfrontFees",
+                "Insurance_PercentageOfPremiumsAppliedToFees",
+                "Insurance_RecurringFeeType",
+                "Insurance_MonthlyFees",
+                "Insurance_AnnualFeePercentageofPolicyAmount",
+                "Insurance_AnnualFeePercentageofCashValue"
+              ]
+            }
+          ]
+        }
+      },
+      "Payout": {
+        "tabLabel": "Payout",
+        "pageTitle": "",
+        "sections": [
+          "default",
+          "cash"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Payout information",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Insurance_YearsOwnedPolicy",
+                "Insurance_DeathBenefit",
+                "Insurance_DeathBenefitPayoutOption"
+              ]
+            }
+          ]
+        },
+        "cash": {
+          "sectionLabel": "",
+          "sectionLabelH2": "Cash Value",
+          "custom": "new-standard-3col",
+          "fieldSets": "1",
+          "sectionDesc": "You may want or need to cash in your life insurance policy at some point before death. Enter the following information to include this scenario in the results. ",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Insurance_CurrentCashValue",
+                "Insurance_ExpectedInterestRate",
+                "Insurance_YearsUntilCashInPolicy",
+                "Insurance_SurrenderCharge"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "result": "DeathRate",
+      "columnHeaders": [
+        "Now",
+        "In 25 years",
+        "At death"
+      ],
+      "fields": [
+        [
+          "NowReceived",
+          "FutReceived",
+          "DeathReceived"
+        ],
+        [
+          "NowTaxes",
+          "FutTaxes",
+          "DeathTaxes"
+        ],
+        [
+          "NowPrem",
+          "FutPrem",
+          "DeathPrem"
+        ],
+        [
+          "NowRate",
+          "FutRate",
+          "DeathRate"
+        ]
+      ]
+    },
+    "results_fields": {
+      "NowReceived": {
+        "fieldLabel": "Received after Taxes"
+      },
+      "FutReceived": {
+        "fieldLabel": ""
+      },
+      "DeathReceived": {
+        "fieldLabel": ""
+      },
+      "NowTaxes": {
+        "fieldLabel": "Taxes owed"
+      },
+      "FutTaxes": {
+        "fieldLabel": ""
+      },
+      "DeathTaxes": {
+        "fieldLabel": ""
+      },
+      "NowPrem": {
+        "fieldLabel": "Premiums paid"
+      },
+      "FutPrem": {
+        "fieldLabel": ""
+      },
+      "DeathPrem": {
+        "fieldLabel": ""
+      },
+      "NowRate": {
+        "fieldLabel": "After-tax rate of return"
+      },
+      "FutRate": {
+        "fieldLabel": ""
+      },
+      "DeathRate": {
+        "fieldLabel": ""
+      }
+    },
+    "fields": {
+      "Insurance_YearsUntilCashInPolicy": {
+        "fieldLabel": "Years until you might cash in the policy",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number",
+        "steppedButtonID": "Payout-link",
+        "crossFields": [
+          "Insurance_YearsUntilCashInPolicy",
+          "Global_CurrentAge",
+          "Global_LifeExpectancy"
+        ]
+      },
+      "Insurance_MonthlyPremiumOneAmount": {
+        "fieldLabel": "Monthly Premium 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Amount",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyPremiumOneYearsPaid": {
+        "fieldLabel": "Monthly Premium 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Years paid",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-double-input-slider",
+        "Legendcolumn": "lf-legend-column-2"
+      },
+      "Insurance_MonthlyPremiumTwoAmount": {
+        "fieldLabel": "Monthly Premium 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyPremiumTwoYearsPaid": {
+        "fieldLabel": "Monthly Premium 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyPremiumThreeAmount": {
+        "fieldLabel": "Monthly Premium 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyPremiumThreeYearsPaid": {
+        "fieldLabel": "Monthly Premium 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_LumpSumPremiumOneAmount": {
+        "fieldLabel": "Lump Sum Premium 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Amount",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_LumpSumPremiumOneYearsPaid": {
+        "fieldLabel": "Lump Sum Premium 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Years paid",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-double-input-slider",
+        "Legendcolumn": "lf-legend-column-2"
+      },
+      "Insurance_LumpSumPremiumTwoAmount": {
+        "fieldLabel": "Lump Sum Premium 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_LumpSumPremiumThreeAmount": {
+        "fieldLabel": "Lump Sum Premium 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_LumpSumPremiumTwoYearsPaid": {
+        "fieldLabel": "Lump Sum Premium 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_LumpSumPremiumThreeYearsPaid": {
+        "fieldLabel": "Lump Sum Premium 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-double-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_UpfrontFees": {
+        "fieldLabel": "Upfront fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_PercentageOfPremiumsAppliedToFees": {
+        "fieldLabel": "% of premiums applied to fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_RecurringFeeType": {
+        "fieldLabel": "Recurring fee is charged",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Monthly ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Annually (% of policy amount)",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Annually (% of cash value)",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyFees": {
+        "fieldLabel": "Monthly fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "200",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_AnnualFeePercentageofPolicyAmount": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "(% of policy amount)",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "1.00",
+        "maxlength": "4",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1.00",
+        "widgetStep": "0.01",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_AnnualFeePercentageofCashValue": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "(% of cash value)",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "5.00",
+        "maxlength": "4",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "5.00",
+        "widgetStep": ".05",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_YearsOwnedPolicy": {
+        "fieldLabel": "Years you have owned policy",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "5",
+        "value": "5",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number",
+        "crossFields": [
+          "Insurance_YearsOwnedPolicy",
+          "Global_CurrentAge"
+        ],
+        "steppedButtonID": "Payout-link"
+      },
+      "Insurance_DeathBenefit": {
+        "fieldLabel": "Death benefit",
+        "smallLabel": "",
+        "glossaryTerm": "deathbenefit",
+        "format": "currency",
+        "defaultValue": "100000",
+        "value": "100000",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_DeathBenefitPayoutOption": {
+        "fieldLabel": "Death benefit payout option",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Receive policy amount only ",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Receive the cash value also",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_CurrentCashValue": {
+        "fieldLabel": "Current cash value",
+        "smallLabel": "",
+        "glossaryTerm": "cashvalue",
+        "format": "currency",
+        "defaultValue": "2500",
+        "value": "2500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_ExpectedInterestRate": {
+        "fieldLabel": "Average interest you expect to earn",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_SurrenderCharge": {
+        "fieldLabel": "Surrender charge",
+        "smallLabel": "",
+        "glossaryTerm": "surrendercharge",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number",
+        "steppedButtonID": "Personal-link",
+        "crossFields": []
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Life expectancy",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "98",
+        "value": "98",
+        "minimumValue": "5",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "5",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "steppedButtonID": "Personal-link",
+        "crossFields": [
+          "Global_LifeExpectancy",
+          "Global_CurrentAge",
+          "Insurance_YearsUntilCashInPolicy"
+        ]
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "After-tax Rate of Return",
+    "dataTableCategory2": "Received after Taxes",
+    "title": "What is my return on a universal life policy?",
+    "answer": "Your after-tax rate of return at death is <span class='lf-bold'>%DeathRate%%</span>",
+    "selectors": [
+      {
+        "label": "Return",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amount Received",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "now": "Now",
+    "years25": "In 25 Years",
+    "death": "At Death",
+    "endOfTerm": "In %years% years",
+    "endOfPolicy": "In %years% years",
+    "endOfLife": "At death",
+    "rateOfReturn": "Rate of return %",
+    "amountReceived": "Amount received",
+    "Premiums_MonthlyPremium1": "Monthly Premium 1",
+    "Premiums_MonthlyPremium2": "Monthly Premium 2",
+    "Premiums_MonthlyPremium3": "Monthly Premium 3",
+    "lumpSum_Premium1": "Lump Sum Premium 1",
+    "lumpSum_Premium2": "Lump Sum Premium 2",
+    "lumpSum_Premium3": "Lump Sum Premium 3"
+  },
+  "glossaryItems": {
+    "surrendercharge": {
+      "title": "Surrender charge",
+      "definition": "A fee that you pay to cancel a life insurance policy or annuity contract. Also called a deferred sales charge or back-end load."
+    },
+    "cashvalue": {
+      "title": "Cash value",
+      "definition": "A dollar value that is returned to an insurance policyholder if the policy is canceled."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "deathbenefit": {
+      "title": "Death benefit",
+      "definition": "An amount that is paid to the beneficiary of a life insurance policy upon the death of the insured. The amount may be a lump sum or an annuity."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares rates of return for a universal life insurance policy for three periods:"
+    },
+    {
+      "textLabel": "Between the time you acquired the policy and now."
+    },
+    {
+      "textLabel": "Between the time you acquired the policy and the time that you receive full cash value for the policy."
+    },
+    {
+      "textLabel": "Between the time you acquired the policy and the time you die."
+    },
+    {
+      "textLabel": "Rate of return is based on the policy amount, dividends received, policy premiums, and tax rates."
+    },
+    {
+      "textLabel": "Universal life insurance, together with whole and variable life, are cash-value insurance policies, since they earn an investment rate of return and can be used as collateral for loans."
+    },
+    {
+      "textLabel": "Universal life insurance policies pay a death benefit to your beneficiary when you die. Policy coverage continues as long as you pay premiums. Your premium is based on actuarial statistics for your age and health characteristics."
+    },
+    {
+      "textLabel": "While your policy is in effect, it accrues a cash value, which can be used as collateral at an interest rate stated in the policy agreement. Any loans that are outstanding at the time of your death reduce the amount of the death benefit."
+    },
+    {
+      "textLabel": "If you cancel a universal life policy, you are sometimes faced with a surrender charge, particularly if the policy is held for only a short time. A key feature of universal life insurance policies is that the premium can be skipped if the insurer's investment performance is good enough to fund your premium payment."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the after-tax rates of return of the universal life insurance policy if cashed in now, cashed in after a certain number of years, and at death."
+    },
+    {
+      "title": "Column chart comparing the amount received on the universal life insurance policy if cashed in now, cashed in after the specified number of years, and at death."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "After-tax rates of return of the universal life insurance policy if cashed in now, cashed in after a certain number of years, and at death"
+    },
+    {
+      "title": "Amount received on the universal life insurance policy if cashed in now, cashed in after the specified number of years, and at death"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Your savings interest rate</name>
+   <tag></tag>
+   <elementGuidId>1b8bea5c-c599-4b81-ab2c-52526555bfad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Global_SavingsInterestRate-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Global_SavingsInterestRate-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Global_SavingsInterestRate-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>18bf2496-cb52-470d-838b-34b8a6e16242</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Global_SavingsInterestRate</value>
+      <webElementGuid>1bf8bef8-58b3-4854-9dc2-5dfcb5edb0dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Global_SavingsInterestRate-label</value>
+      <webElementGuid>d99fe027-8255-4778-a0b8-064b1cfb4746</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Your savings interest rate
+                             
+                        </value>
+      <webElementGuid>6ab7a0dc-1f58-4981-8a1b-5bd7a91b1958</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Global_SavingsInterestRate-label&quot;)</value>
+      <webElementGuid>5328cdfb-9ab9-4a5f-98d5-a14e510b8703</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Global_SavingsInterestRate-label']</value>
+      <webElementGuid>aeaf2455-f4de-4299-a007-fb3905ad5787</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Global_SavingsInterestRate_container']/div/label</value>
+      <webElementGuid>b8ae5fc3-b311-4cb3-adf3-41b90cac7f93</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Your state &amp; federal tax rate'])[2]/following::label[1]</value>
+      <webElementGuid>03f9964a-9012-4661-b1ae-e3cc58e12235</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 90.00%'])[1]/following::label[2]</value>
+      <webElementGuid>831585a7-42b6-4541-af06-873e69735cd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 100.00%'])[1]/preceding::label[1]</value>
+      <webElementGuid>ce8b530c-489c-46f6-b779-1fbfe6310b2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Your savings interest rate'])[2]/preceding::label[1]</value>
+      <webElementGuid>988497cb-22fa-47cd-b2c0-6faf79626036</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Your savings interest rate']/parent::*</value>
+      <webElementGuid>113d1367-6cae-44e2-aa5d-cae06b440b01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/fieldset/div/div[3]/div/label</value>
+      <webElementGuid>cbcbf31f-071e-4594-a504-1389247201b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Global_SavingsInterestRate-label' and (text() = 'Your savings interest rate
+                             
+                        ' or . = 'Your savings interest rate
+                             
+                        ')]</value>
+      <webElementGuid>1aba37d6-1bce-431d-92d2-d9ee8276cea0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,240 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "tabId": "lf-basic",
+        "tabClass": "lf-open",
+        "fieldSetId": "lf-basic",
+        "tabLabel": "HOME & PURCHASE INFO",
+        "tableId": "lf_Basic",
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Home_CurrentHomeSavings",
+          "Home_MonthsUntilHomePurchase"
+        ]
+      },
+      "advanced": {
+        "tabId": "lf-advanced",
+        "tabClass": "lf-downpayment-info",
+        "fieldSetId": "lf-advanced",
+        "tabLabel": "DOWN PAYMENT INFO",
+        "tableId": "lf_Advanced",
+        "fields": [
+          "Home_DownPaymentAmount"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          [
+            "Home_MortgageReserves"
+          ],
+          [
+            "Home_TotalCashNeededToClose"
+          ],
+          [
+            "Home_SavingsWithoutHomeFund"
+          ],
+          [
+            "Home_HomeFundBenefits"
+          ],
+          [
+            "Home_SavingsGoal"
+          ],
+          [
+            "Global_PaycheckContribution"
+          ]
+        ]
+      ]
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "Home_ClosingCosts": {
+        "fieldLabel": "Closing Costs"
+      },
+      "Home_MortgageReserves": {
+        "fieldLabel": "Mortgage Reserves"
+      },
+      "Home_TotalCashNeededToClose": {
+        "fieldLabel": "Total Cash Needed to Close"
+      },
+      "Home_SavingsWithoutHomeFund": {
+        "fieldLabel": "Savings Without HomeFund"
+      },
+      "Home_HomeFundBenefits": {
+        "fieldLabel": "HomeFund Benefits"
+      },
+      "Home_SavingsGoal": {
+        "fieldLabel": "Savings Goal"
+      },
+      "Global_PaycheckContribution": {
+        "fieldLabel": "Paycheck Contribution"
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Target Home Price",
+        "defaultValue": "250000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "20000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "value": "250000",
+        "format": "currency",
+        "description": "Target Home Price Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Home_CurrentHomeSavings": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Current Home Savings",
+        "defaultValue": "10000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "maxlength": "11",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "value": "10000",
+        "format": "currency",
+        "description": "Current Home Savings Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Home_DownPaymentAmount": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down Payment",
+        "defaultValue": "50000",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "value": "50000",
+        "format": "currency",
+        "description": "Down Payment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "Global_EmployerContributionAmount": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Employer Contribution Amount",
+        "defaultValue": "1000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "value": "1000",
+        "format": "currency"
+      },
+      "Global_LenderContributionAmount": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Lender Contribution Amount",
+        "defaultValue": "1000",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "value": "1000",
+        "format": "currency"
+      },
+      "Home_MonthsUntilHomePurchase": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Months until planned home Purchase",
+        "valueTextLabel": "months",
+        "defaultValue": "36",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "widgetStep": "1",
+        "value": "4",
+        "format": "number",
+        "description": "Months Until Planned Home Purchase Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    }
+  },
+  "labels": {
+    "title": "DETERMINE HOW MUCH YOU NEED TO SAVE",
+    "answer": "Your estimated annual return is <span class='lf-bold'>$%amount%</span>",
+    "selectors": []
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the estimated annual return with next day card payment funding."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table of the estimated annual return with next day card payment funding."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Monthly insurance costs_1</name>
+   <tag></tag>
+   <elementGuidId>5112fdf7-8545-426c-a65c-55ae7a78228b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_UsedVehicleMonthlyInsurance-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_UsedVehicleMonthlyInsurance-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>0ba3d7c0-605f-4f63-a635-8581f8e45541</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_UsedVehicleMonthlyInsurance</value>
+      <webElementGuid>128a1dfb-5ad1-4c20-bee5-273f2b6df075</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_UsedVehicleMonthlyInsurance-label</value>
+      <webElementGuid>8b14338f-d520-4e7a-af74-669d068fc36f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>0c848eea-5697-41bb-a07d-c997be82b25c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Monthly insurance costs
+                                
+                        </value>
+      <webElementGuid>84a5e681-9394-4364-8aba-155b2b4b6fd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_UsedVehicleMonthlyInsurance-label&quot;)</value>
+      <webElementGuid>2b5452e2-013d-4d9a-8f94-855f8382afc4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_UsedVehicleMonthlyInsurance-label']</value>
+      <webElementGuid>2b09f63f-122a-48ee-8de2-dad89c94f19f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_UsedVehicleMonthlyInsurance-table']/div/label</value>
+      <webElementGuid>147f8d38-824c-411e-9c37-ea54ae41ebd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly maintenance costs'])[4]/following::label[1]</value>
+      <webElementGuid>00c56478-c6d4-4724-b75a-cc46fe94f1cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[3]/following::label[2]</value>
+      <webElementGuid>0fade7fe-dd85-4177-932a-15e9a543859c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between $0 and $10,000'])[4]/preceding::label[1]</value>
+      <webElementGuid>8ee380d2-74ea-4a56-a6ba-72334e6bc48e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly insurance costs'])[4]/preceding::label[1]</value>
+      <webElementGuid>f9ba0ba6-97f3-4f77-ab22-0590778aab36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[4]/div[3]/div[4]/div/label</value>
+      <webElementGuid>1829eb07-ab77-4f5c-94e9-5ed59764e4e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_UsedVehicleMonthlyInsurance-label' and (text() = 'Monthly insurance costs
+                                
+                        ' or . = 'Monthly insurance costs
+                                
+                        ')]</value>
+      <webElementGuid>bc9b3756-dd85-4a63-998f-664c62503b19</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

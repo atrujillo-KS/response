@@ -1,0 +1,403 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What will it take to save for a vehicle, home, etc.?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates different combinations to save a lump-sum amount that you intend to use to buy a vehicle, home, or other big-ticket item."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Your savings will grow over time due to monthly deposits and compound interest. The amount you accumulate, however, will be decreased due to taxes you pay on the interest you've earned."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='compound interest'])[1]/following::p[1]",
+      "value": "The calculator assumes you save with a taxable account. If you want to simulate saving with a tax-advantaged account, enter a zero in the fields for federal and state income tax rates. Tax-advantaged accounts may have restrictions on taking early penalty-free distributions. You may wish to consult a financial professional."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=compound interest",
+      "value": "compound interest"
+    }
+  },
+  {
+    "click": {
+      "id": "link=compound interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Compounded interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Compounded interest is the interest that you earn on a deposit or investment that uses compounding. Banks and financial institutions routinely use compounding to pay you a higher interest rate. For example, a bank may be offering a CD that pays interest at 10%. If the bank does not compound interest, you will receive 10% of your investment as interest income at the end of a year. However, if the bank compounds interest every three months, you will earn an interest rate of 10.38%. If the bank compounds interest monthly, you will earn 10.47%. If it compounds daily, you will earn 10.52%. For a $10,000 deposit, this is an extra $52 in interest that you earn."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Compounded interest'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=taxable",
+      "value": "taxable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=tax-advantaged",
+      "value": "tax-advantaged"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your savings will be worth $35,682."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$35,682'])[2]/following::span[1]",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$20,000'])[1]/following::li[1]",
+      "value": "Decrease the amount you invest now to $0, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Decrease the amount you invest now to $0, or'])[1]/following::li[1]",
+      "value": "Decrease your monthly investment to $243, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Decrease your monthly investment to $243, or'])[1]/following::li[1]",
+      "value": "Earn a rate of return of 0.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-next-steps-zoneA-content",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_Goal-label",
+      "value": "Amount you need"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_Goal",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_Goal-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-label",
+      "value": "Current savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_MonthlyInvestment-label",
+      "value": "Savings to invest monthly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_MonthlyInvestment",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_MonthlyInvestment-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DurationInMonths-label",
+      "value": "Months you wish to save"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_DurationInMonths",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DurationInMonths-error-message",
+      "value": "Must be between 1 and 600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Annual rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_Goal",
+      "value": "35,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "1,200"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_MonthlyInvestment",
+      "value": "600"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_DurationInMonths",
+      "value": "48"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "30.21"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.78"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your savings will be worth $31,017."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings03-p1",
+      "value": "To achieve savings of $35,000, you'll need to:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings03-L1",
+      "value": "Increase the amount you invest now to $4,933, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_answer_text']/ul/li[2]",
+      "value": "Increase your monthly investment to $680, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_answer_text']/ul/li[3]",
+      "value": "Earn a rate of return of 11.36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$35,000'])[1]/following::li[1]",
+      "value": "Increase the amount you invest now to $4,933, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase the amount you invest now to $4,933, or'])[1]/following::li[1]",
+      "value": "Increase your monthly investment to $680, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase your monthly investment to $680, or'])[1]/following::li[1]",
+      "value": "Earn a rate of return of 11.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

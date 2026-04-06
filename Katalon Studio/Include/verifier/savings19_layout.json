@@ -1,0 +1,322 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "First_CD",
+        "Second_CD"
+      ],
+      "First_CD": {
+        "tabLabel": "First CD",
+        "fields": [
+          "Savings_FirstCDInitialDeposit",
+          "Savings_FirstCDTermInMonths",
+          "Savings_FirstCDInterestRate",
+          "Savings_FirstCDCompoundingFrequency"
+        ]
+      },
+      "Second_CD": {
+        "tabLabel": "Second CD",
+        "fields": [
+          "Savings_SecondCDInitialDeposit",
+          "Savings_SecondCDTermInMonths",
+          "Savings_SecondCDInterestRate",
+          "Savings_SecondCDCompoundingFrequency"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "columnHeaders": [
+        "Interest Earned",
+        "Value at Maturity"
+      ],
+      "fields": [
+        [
+          "Savings_FirstCDInterestEarned_Output",
+          "Savings_FirstCDValueAtMaturity_Output"
+        ],
+        [
+          "Savings_SecondCDInterestEarned_Output",
+          "Savings_SecondCDValueAtMaturity_Output"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Savings_FirstCDInterestEarned_Output": {
+        "fieldLabel": "First CD"
+      },
+      "Savings_FirstCDValueAtMaturity_Output": {
+        "fieldLabel": "First CD"
+      },
+      "Savings_SecondCDInterestEarned_Output": {
+        "fieldLabel": "Second CD"
+      },
+      "Savings_SecondCDValueAtMaturity_Output": {
+        "fieldLabel": "Second CD"
+      }
+    },
+    "fields": {
+      "Savings_FirstCDInitialDeposit": {
+        "fieldLabel": "Deposit amount",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "500",
+        "sliderMaxVal": "50000",
+        "widgetStep": "500",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_SecondCDInitialDeposit": {
+        "fieldLabel": "Deposit amount",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "500",
+        "sliderMaxVal": "50000",
+        "widgetStep": "500",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "cddepositterm",
+        "format": "number",
+        "defaultValue": "24",
+        "value": "24",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "6",
+        "sliderMaxVal": "60",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_SecondCDTermInMonths": {
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "cddepositterm",
+        "format": "number",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "6",
+        "sliderMaxVal": "60",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_FirstCDInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "1.50",
+        "glossaryTerm": "cdinterestrate",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": ".10",
+        "value": "1.50",
+        "format": "percent"
+      },
+      "Savings_SecondCDInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "2.00",
+        "glossaryTerm": "cdinterestrate",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": ".10",
+        "value": "2.00",
+        "format": "percent"
+      },
+      "Savings_FirstCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Savings_SecondCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      }
+    }
+  },
+  "labels": {
+    "title": "Which CD will earn more?",
+    "answer1": "The <span class='lf-bold'>%moreCD%</span> will earn <span class='lf-bold'>$%moreCDInterestEarned%</span> in interest, <span class='lf-bold'>$%Savings_AbsoluteCDInterestDifference_Output%</span> <span class='lf-bold'>more</span> than the <span class='lf-bold'>%lessCD%</span>.",
+    "answer2": "<span class='lf-bold'>Both CDs</span> will earn <span class='lf-bold'>$%Savings_FirstCDInterestEarned_Output%</span> in interest.",
+    "selectors": [
+      {
+        "label": "Interest Earned",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Value at Maturity",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "FIRST_CD": "First CD",
+    "SECOND_CD": "Second CD"
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "CD amount",
+      "definition": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    },
+    "cdinterestrate": {
+      "title": "CD interest rate",
+      "definition": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    },
+    "cdcompoundingfrequency": {
+      "title": "CD compounding frequency",
+      "definition": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    },
+    "cddepositterm": {
+      "title": "CD deposit term",
+      "definition": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine which CD will generate more interest as well as to the value of each CD at maturity."
+    },
+    {
+      "textLabel": "CDs are time deposits that are guaranteed for up to $250,000 per depositor per institution by the U.S. Federal Deposit Insurance Corporation (FDIC) or National Credit Union Administration (NCUA) in the case of credit unions. Because CDs are federally insured, they are considered relatively safe investments."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart that compares the interest earned by each of the two CDs."
+    },
+    {
+      "title": "Column chart that compares the value at maturity for each of the two CDs."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Interest earned by each of the two CDs"
+    },
+    {
+      "title": "Value at maturity for each of the two CDs"
+    }
+  ]
+}

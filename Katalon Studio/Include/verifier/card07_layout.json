@@ -1,0 +1,688 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "RebateCard",
+        "RebateInfo",
+        "RebateLimits",
+        "LowRateCard",
+        "CardActivity"
+      ],
+      "RebateCard": {
+        "tabLabel": "Rebate Card",
+        "fields": [
+          "Card_RebateCardIntroductoryInterestRate",
+          "Card_RebateCardIntroductoryTerm",
+          "Card_RebateCardIntroductoryAnnualFee",
+          "Card_RebateCardInterestRate",
+          "Card_RebateCardAnnualFee"
+        ]
+      },
+      "RebateInfo": {
+        "tabLabel": "Rebate Rates",
+        "fields": [
+          "Card_RebateCardRebateRateOnRegularPurchases",
+          "Card_RebateRateOnBalanceOwed",
+          "Card_RebateCardRebateRateOnBalanceTransfer",
+          "Card_RebateCardRebateOnSpecificBrandPurchases",
+          "Card_RebateCardSpecificBrandPurchasesMonthly"
+        ]
+      },
+      "RebateLimits": {
+        "tabLabel": "Rebate Limits",
+        "fields": [
+          "Card_RebateCardMaximumYearlyRebate",
+          "Card_RebateCardMaximumTotalRebate",
+          "Card_RebateCardRebatePayoutType"
+        ]
+      },
+      "LowRateCard": {
+        "tabLabel": "Low Rate Card",
+        "fields": [
+          "Card_FeeCardIntroductoryInterestRate",
+          "Card_FeeCardIntroductoryTerm",
+          "Card_FeeCardIntroductoryAnnualFee",
+          "Card_FeeCardInterestRate",
+          "Card_FeeCardAnnualFee"
+        ]
+      },
+      "CardActivity": {
+        "tabLabel": "Card Activity",
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_YearsCardToBeUsed",
+          "Global_FutureMonthlyChargesOnCard",
+          "Card_MonthlyPayment"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Rebate card",
+        "Low rate card"
+      ],
+      "fields": [
+        [
+          "Card_RebateTotalCost",
+          "Card_LowRateTotalCost"
+        ],
+        [
+          "Card_RebateTotalInterestAndFees",
+          "Card_LowRateTotalInterestAndFees"
+        ],
+        [
+          "Card_RebateTotalEarned",
+          "Card_NotAvailable"
+        ]
+      ]
+    },
+    "fields": {
+      "Card_RebateCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardIntroductoryAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardRebateRateOnRegularPurchases": {
+        "fieldLabel": "% earned on regular purchases",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateRateOnBalanceOwed": {
+        "fieldLabel": "% earned on balance owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardRebateRateOnBalanceTransfer": {
+        "fieldLabel": "% earned on balance transfer",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardRebateOnSpecificBrandPurchases": {
+        "fieldLabel": "% earned on specific brand purchases",
+        "smallLabel": "",
+        "glossaryTerm": "rebaterateforbrands",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardSpecificBrandPurchasesMonthly": {
+        "fieldLabel": "Specific brand purchases",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "rebatespecificcardmonthlypurchases",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RebateCardMaximumYearlyRebate": {
+        "fieldLabel": "Maximum rebate earned ",
+        "smallLabel": "(annually)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Card_RebateCardMaximumYearlyRebate",
+          "Card_RebateCardMaximumTotalRebate"
+        ]
+      },
+      "Card_RebateCardMaximumTotalRebate": {
+        "fieldLabel": "Maximum total rebate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "4000",
+        "value": "4000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Card_RebateCardMaximumYearlyRebate",
+          "Card_RebateCardMaximumTotalRebate"
+        ]
+      },
+      "Card_RebateCardRebatePayoutType": {
+        "fieldLabel": "Rebate payout each year",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "In cash",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Pay down",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "9.00",
+        "value": "9.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Card balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_YearsCardToBeUsed": {
+        "fieldLabel": "Years you'll use card",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "1",
+        "maximumValue": "30",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Future monthly charges",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlycharges",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Future monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Card_RebateTotalCost": {
+        "fieldLabel": "Total net cost"
+      },
+      "Card_LowRateTotalCost": {
+        "fieldLabel": "Total net cost"
+      },
+      "Card_RebateTotalInterestAndFees": {
+        "fieldLabel": "Interest and fees paid"
+      },
+      "Card_LowRateTotalInterestAndFees": {
+        "fieldLabel": "Interest and fees paid"
+      },
+      "Card_RebateTotalEarned": {
+        "fieldLabel": "Rebate earned"
+      },
+      "Card_NotAvailable": {
+        "fieldLabel": "Rebate earned"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Net Cost",
+    "title": "Which is better: rebate card or low rate card?",
+    "answer": "The <span class='lf-bold'>%CARDTYPE% </span> will cost you <span class='lf-bold'>%AMOUNT% less</span> over a <span class='lf-bold'>%YEARS% year</span> period.",
+    "same_as_answer": "<span class='lf-bold'>Both cards</span> will cost you <span class='lf-bold'>the same</span> over a <span class='lf-bold'>%YEARS% year</span> period.",
+    "moreThan": "more",
+    "lessThan": "less",
+    "sameAs": "the same",
+    "lowRate": "Low rate card",
+    "rebateCard": "Rebate card",
+    "more_prefix": " low rate ",
+    "less_prefix": " rebate ",
+    "years_prefix": " a ",
+    "years_suffix": " year period",
+    "selectors": [
+      {
+        "label": "Total net cost",
+        "width": "50%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "introrate": {
+      "title": "Introductory rate",
+      "definition": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    },
+    "introperiod": {
+      "title": "Introductory period",
+      "definition": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months. "
+    },
+    "rebaterateforbrands": {
+      "title": "Rebate rate on rebate card (specific brands)",
+      "definition": "The rebate rate on a brand-specific rebate card is the percentage rate at which you can earn rewards using the card on brand-related purchases."
+    },
+    "rebaterate": {
+      "title": "Rebate rate on rebate card",
+      "definition": "The rebate rate on a rebate card is the percentage rate at which you can earn rewards using the card. "
+    },
+    "rebatespecificcardmonthlypurchases": {
+      "title": "Monthly amount purchased towards specific-brand rebates",
+      "definition": "If you use a rebate card for specific-brand goods, enter the amount of future monthly purchases that are made for those goods. For example, if you expect future monthly charges of $300, and $50 of those charges are for the specific-brand goods, enter $300 as Future monthly charges and $50 as Monthly amount purchased (on the specific-brand goods). Monthly amount purchased is included in Future monthly charges but is entered separately in order to calculate the rebate."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares a rebate reward card with a low interest rate card. Rebate reward cards allow you to accumulate points, or credits, toward merchandise when you make purchases. Often, the reward card comes with a higher annual fee than an ordinary card and may have a higher interest rate. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart for the cumulative value of the rebate over the years of usage for the rebate card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Value of the rebate over the years of usage for the rebate card"
+    }
+  ]
+}

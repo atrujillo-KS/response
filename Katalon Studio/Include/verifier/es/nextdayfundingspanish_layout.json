@@ -1,0 +1,80 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Commercial_DailyCardProcessingSales",
+          "Commercial_CurrentCardPaymentFundingDays",
+          "Commercial_AnnualCostOfCapital"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [],
+      "fields": [
+        [
+          "Commercial_AnnualReturnNextDayCardPaymentFunding"
+        ]
+      ]
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "Commercial_AnnualReturnNextDayCardPaymentFunding": {
+        "fieldLabel": "Estimated annual return with next day card payment funding"
+      }
+    },
+    "fields": {
+      "Commercial_DailyCardProcessingSales": {
+        "fieldLabel": "Ventas diarias procesadas con tarjeta"
+      },
+      "Commercial_CurrentCardPaymentFundingDays": {
+        "fieldLabel": "Cantidad actual de días para la provisión de fondos de pagos de tarjetas"
+      },
+      "Commercial_AnnualCostOfCapital": {
+        "fieldLabel": "Costo de capital anual"
+      }
+    },
+    "glossaryItems": {
+      "dailycardprocessingsales": {
+        "title": "Ventas diarias procesadas con tarjeta",
+        "definition": "El monto total en dólares de los pagos con tarjeta que recibe la empresa todos los días."
+      },
+      "annualcostofcapital": {
+        "title": "Costo de capital anual",
+        "definition": "El promedio ponderado del costo de la deuda de una empresa y el costo de sus activos netos."
+      },
+      "daysforcardpaymentfunding": {
+        "title": "Días para la provisión de fondos de los pagos con tarjeta",
+        "definition": "La cantidad de días que lleva el procesamiento de la venta con tarjeta para que se acredite el pago en la cuenta comercial."
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Cuál es mi rendimiento anual estimado con la provisión de fondos de la tarjeta de pago al día siguiente?",
+    "answer": "Su rendimiento anual estimado es <span class='lf-bold'>$%amount%</span>",
+    "selectors": [
+      {
+        "label": "Estimated annual return with next day card payment funding",
+        "width": "50%",
+        "first": true
+      }
+    ],
+    "return": "Annual return",
+    "total": "Total",
+    "note": "NOTA: Si usted no acepta tarjetas, de todos modos puede calcular cuál podría ser el aumento de su flujo de efectivo si aceptara tarjetas y tuviera la provisión de fondos al día siguiente de PNC Merchant Services®. Para hacer esto, simplemente indique sus condiciones de pago actuales (por ejemplo, a 30, 60, 90 días) como la cantidad actual de días para la provisión de fondos de pagos de tarjetas.",
+    "annualCostWithNextDay": "Costo de capital anual con provisión de fondos al día siguiente",
+    "annualCostWithCurrentDay": "Costo de capital anual con provisión de fondos a los %numberOfdays% días"
+  },
+  "glossaryItems": {},
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the estimated annual return with next day card payment funding."
+    }
+  ],
+  "tableTitles": []
+}

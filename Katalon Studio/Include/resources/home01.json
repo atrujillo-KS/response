@@ -1,0 +1,1001 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much can I borrow?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates loan amounts and mortgage payments for two underwriting scenarios: one that uses aggressive underwriting guidelines and one that uses conservative guidelines."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "The calculator uses the lower of two ratios for each set of results: payment-to-income ratio (also called housing ratio ) and debt-to-income ratio (also called debt ratio )."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "When the economy is strong, lenders are more aggressive and raise these ratios to compete for business. When the economy is weak, lenders are more conservative and lower their ratios."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "The following housing ratios are used for conservative results: 29% for down payments of less than 20% and 30% for down payments of 20% or more. A debt ratio of 36% is used for all down payments."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_4",
+      "value": "The following ratios are used for aggressive results: housing and debt ratios of 31% and 38%, respectively, for down payments of less than 10%; housing and debt ratios of 32% and 40%, respectively, for down payments of 10% or more but less than 20%; and housing and debt ratios of 33% and 41%, respectively, for down payments of 20% or more."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=underwriting",
+      "value": "underwriting"
+    }
+  },
+  {
+    "click": {
+      "id": "link=underwriting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Underwriting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The process a mortgage lender undertakes to evaluate a loan prospect to see if they have the financial capacity to repay the loan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=aggressive",
+      "value": "aggressive"
+    }
+  },
+  {
+    "click": {
+      "id": "link=aggressive"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Aggressive qualification estimate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "When the economy is strong, mortgage lenders are more aggressive and tend to lower their loan qualification requirements."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=conservative",
+      "value": "conservative"
+    }
+  },
+  {
+    "click": {
+      "id": "link=conservative"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Conservative qualification estimate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "When the economy is weak, mortgage lenders are more conservative and tend to raise their loan qualification requirements."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=housing ratio",
+      "value": "housing ratio"
+    }
+  },
+  {
+    "click": {
+      "id": "link=housing ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Housing ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Used by lenders to approve loan applicants. Housing ratio equals combined monthly mortgage payment divided by gross monthly income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=debt ratio",
+      "value": "debt ratio"
+    }
+  },
+  {
+    "click": {
+      "id": "link=debt ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Debt ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Used by lenders to approve loan applicants. Debt ratio equals combined monthly debt payments divided by gross monthly income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You may qualify for a loan amount ranging from $261,881 (conservative) to $328,942 (aggressive)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Conservative Estimate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Aggressive Estimate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrice4_result_label",
+      "value": "Home price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrice4_result_value",
+      "value": "$327,351"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrPrice4_result_value",
+      "value": "$411,178"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsDownPmt4_result_label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsDownPmt4_result_value",
+      "value": "$65,470"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrDownPmt4_result_value",
+      "value": "$82,236"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsLoanAmt4_result_label",
+      "value": "Loan amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsLoanAmt4_result_value",
+      "value": "$261,881"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrLoanAmt4_result_value",
+      "value": "$328,942"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrincAndInt4_result_label",
+      "value": "Principal and interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrincAndInt4_result_value",
+      "value": "$1,406"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrPrincAndInt4_result_value",
+      "value": "$1,766"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTaxAndIns4_result_label",
+      "value": "Property taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTaxAndIns4_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrTaxAndIns4_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTotPmt4_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTotPmt4_result_value",
+      "value": "$1,760"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrTotPmt4_result_value",
+      "value": "$2,120"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1 > text",
+      "value": "Aggressive"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "MonthlyIncome-accordion",
+      "value": "Monthly Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyGrossIncome-label",
+      "value": "Wages before taxes and deductions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MonthlyGrossIncome",
+      "value": "6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyGrossIncome-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InvestmentIncomeBeforeTaxes-label",
+      "value": "Investment income before taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InvestmentIncomeBeforeTaxes",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InvestmentIncomeBeforeTaxes-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyIncomeFromRentalProperties-label",
+      "value": "Income from rental properties"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyIncomeFromRentalProperties",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyIncomeFromRentalProperties-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OtherMonthlyIncome-label",
+      "value": "Other income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_OtherMonthlyIncome",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OtherMonthlyIncome-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "MonthlyIncome-accordion",
+      "value": "MONTHLY INCOME"
+    }
+  },
+  {
+    "click": {
+      "id": "MonthlyIncome-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AutoLoanPayments-label",
+      "value": "Auto loans"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_AutoLoanPayments",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AutoLoanPayments-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyStudentLoanPayments-label",
+      "value": "Student loans"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyStudentLoanPayments",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyStudentLoanPayments-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_CreditCardPayments-label",
+      "value": "Credit card"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_CreditCardPayments",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_CreditCardPayments-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AlimonyPayment-label",
+      "value": "Alimony & child support"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_AlimonyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_AlimonyPayment-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRentalPropertyLoanPayments-label",
+      "value": "Rental property loans"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyRentalPropertyLoanPayments",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyRentalPropertyLoanPayments-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OtherMonthlyPayments-label",
+      "value": "Other payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_OtherMonthlyPayments",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_OtherMonthlyPayments-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_InterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-error-message",
+      "value": "Must be between 1 and 40 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_LoanTermInYears_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "20.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-label",
+      "value": "Property tax (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "3,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Property tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-label",
+      "value": "Homeowners insurance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Homeowner's insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "MonthlyIncome-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_MonthlyGrossIncome",
+      "value": "10,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_InvestmentIncomeBeforeTaxes",
+      "value": "500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_MonthlyIncomeFromRentalProperties",
+      "value": "2,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_OtherMonthlyIncome",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "MonthlyPayments-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_AutoLoanPayments",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_MonthlyStudentLoanPayments",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_CreditCardPayments",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_AlimonyPayment",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_MonthlyRentalPropertyLoanPayments",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_OtherMonthlyPayments",
+      "value": "200"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.489"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,200"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You may qualify for a loan amount ranging from $201,473 (conservative) to $261,891 (aggressive)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrice4_result_value",
+      "value": "$237,027"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrPrice4_result_value",
+      "value": "$308,107"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsDownPmt4_result_value",
+      "value": "$35,554"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrDownPmt4_result_value",
+      "value": "$46,216"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsLoanAmt4_result_value",
+      "value": "$201,473"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrLoanAmt4_result_value",
+      "value": "$261,891"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsPrincAndInt4_result_value",
+      "value": "$1,645"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrPrincAndInt4_result_value",
+      "value": "$2,138"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTaxAndIns4_result_value",
+      "value": "$517"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrTaxAndIns4_result_value",
+      "value": "$517"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsMortIns4_result_value",
+      "value": "$42"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrMortIns4_result_value",
+      "value": "$55"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTotPmt4_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ConsTotPmt4_result_value",
+      "value": "$2,204"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AggrTotPmt4_result_value",
+      "value": "$2,710"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

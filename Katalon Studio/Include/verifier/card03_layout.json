@@ -1,0 +1,492 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LowRateCard",
+        "OtherCard",
+        "CardActivity"
+      ],
+      "LowRateCard": {
+        "tabLabel": "Low Rate Card",
+        "fields": [
+          "Card_FeeCardIntroductoryInterestRate",
+          "Card_FeeCardIntroductoryTerm",
+          "Card_FeeCardIntroductoryAnnualFee",
+          "Card_FeeCardInterestRate",
+          "Card_FeeCardAnnualFee"
+        ]
+      },
+      "OtherCard": {
+        "tabLabel": "Other Card",
+        "fields": [
+          "Card_RateCardIntroductoryInterestRate",
+          "Card_RateCardIntroductoryTerm",
+          "Card_RateCardIntroductoryAnnualFee",
+          "Card_RateCardInterestRate",
+          "Card_RateCardAnnualFee"
+        ]
+      },
+      "CardActivity": {
+        "tabLabel": "Card Activity",
+        "fields": [
+          "Global_TotalCardDebt",
+          "Global_FutureMonthlyChargesOnCard",
+          "Card_MonthlyPayment"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "columnHeaders": [
+        "Low-rate card",
+        "Other card"
+      ],
+      "fields": [
+        [
+          "Card_LowRateTotalCost",
+          "Card_OtherTotalCost"
+        ],
+        [
+          "Card_LowRateTotalFees",
+          "Card_OtherTotalFees"
+        ],
+        [
+          "Card_LowRateTotalInterest",
+          "Card_OtherTotalInterest"
+        ],
+        [
+          "Card_LowRateTerm",
+          "Card_OtherTerm"
+        ]
+      ]
+    },
+    "fields": {
+      "Card_FeeCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardIntroductoryAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "9.00",
+        "value": "9.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_FeeCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateCardIntroductoryInterestRate": {
+        "fieldLabel": "Introductory interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "introrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateCardIntroductoryTerm": {
+        "fieldLabel": "Introductory term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "introperiod",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateCardIntroductoryAnnualFee": {
+        "fieldLabel": "Introductory annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateCardInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_RateCardAnnualFee": {
+        "fieldLabel": "Regular annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "4",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Card balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Future monthly charges",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlycharges",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Future monthly payments",
+        "smallLabel": "",
+        "glossaryTerm": "futuremonthlypayments",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Card_LowRateTotalCost": {
+        "fieldLabel": "Total monthly payments"
+      },
+      "Card_OtherTotalCost": {
+        "fieldLabel": "Total monthly payments"
+      },
+      "Card_LowRateTotalFees": {
+        "fieldLabel": "Total fees"
+      },
+      "Card_OtherTotalFees": {
+        "fieldLabel": "Total fees"
+      },
+      "Card_LowRateTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Card_OtherTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Card_LowRateTerm": {
+        "fieldLabel": "Months to pay off"
+      },
+      "Card_OtherTerm": {
+        "fieldLabel": "Months to pay off"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Monthly Payments",
+    "dataTableCategoryTitle": "Month",
+    "title": "Is a lower rate worth the annual fee?",
+    "answer1": "The %lowercard% will <span class='lf-bold'>save</span> you <span class='lf-bold'>%amount% more</span> than the %highercard%",
+    "answer2": "Based on your future charges and payments, it appears as if you will never be able to pay off your credit card balance.",
+    "same_as_answer": "The low-rate card will <span class='lf-bold'>cost</span> you <span class='lf-bold'>the same as</span> the other card.",
+    "cost": "cost",
+    "save": "save",
+    "lowRateCard": "Low Rate Card",
+    "otherCard": "Other Card",
+    "months": "month",
+    "balance": "Balance",
+    "month": "Month",
+    "xAxisTitle": "Month",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Total Cost",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Balances",
+        "width": "33%",
+        "getTableData": true
+      },
+      {
+        "label": "Monthly Statement",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Other card",
+            "label": "Other card"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Low rate card",
+            "label": "Low rate card"
+          }
+        ]
+      }
+    ],
+    "repay_prefix": "you will never be able to pay off",
+    "same_text": "exactly the same"
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Future monthly payments",
+      "definition": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance. "
+    },
+    "introrate": {
+      "title": "Introductory rate",
+      "definition": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card. "
+    },
+    "futuremonthlycharges": {
+      "title": "Future monthly charges",
+      "definition": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    },
+    "introperiod": {
+      "title": "Introductory period",
+      "definition": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the tradeoff in holding a no-annual fee card with a higher interest rate versus an annual fee card with a lower rate. You may also enter any introductory \"teaser\" rates and the period offered."
+    },
+    {
+      "textLabel": "Your decision depends, in large part, on your card use. If you pay off your balances promptly, you don't incur any card interest expense. There's little reason to pay an annual fee for the privilege of paying the card company promptly. "
+    },
+    {
+      "textLabel": "If you tend to carry a card balance, you should aim to minimize interest expenses by using a low-interest rate card. You may have to pay an annual fee in exchange for the low rate but may save more in interest expense during the year than the cost of the annual fee."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the difference in cumulative monthly payments made until payoff for the low rate card and the other card."
+    },
+    {
+      "title": "Line chart comparing the balances of the low rate card and the other card over time."
+    },
+    {
+      "title": "Amortization schedule for the other credit card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference in cumulative monthly payments made until payoff for the low rate card and the other card"
+    },
+    {
+      "title": "Balances of the low rate card and the other card over time"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CashOption",
+        "PaymentOption",
+        "GeneralInfo"
+      ],
+      "CashOption": {
+        "tabLabel": "Cash Option",
+        "fields": [
+          "Savings_CashPayment"
+        ]
+      },
+      "PaymentOption": {
+        "tabLabel": "Payment Option",
+        "fields": [
+          "Savings_AnnualPayment",
+          "Savings_NumberOfAnnualPayments"
+        ]
+      },
+      "GeneralInfo": {
+        "tabLabel": "General Info",
+        "fields": [
+          "Savings_DesiredYearsForMoneyToLast",
+          "Global_SavingsInterestRate",
+          "Global_InflationRate",
+          "Global_FederalAndStateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Cash Option",
+        "Payment Option"
+      ],
+      "fields": [
+        [
+          "NPVCash",
+          "NPVAnnuity"
+        ],
+        [
+          "YearlySpendingCash",
+          "YearlySpendingAnnuity"
+        ]
+      ]
+    },
+    "results_fields": {
+      "NPVCash": {
+        "fieldLabel": "Net present value"
+      },
+      "NPVAnnuity": {
+        "fieldLabel": "Net present value"
+      },
+      "YearlySpendingCash": {
+        "fieldLabel": " "
+      },
+      "YearlySpendingAnnuity": {
+        "fieldLabel": " "
+      }
+    },
+    "fields": {
+      "Savings_CashPayment": {
+        "fieldLabel": "Cash up front amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000000",
+        "value": "16000000",
+        "minimumValue": "0",
+        "maximumValue": "1000000000",
+        "maxlength": "13",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_AnnualPayment": {
+        "fieldLabel": "Annual payment amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000000",
+        "value": "1000000",
+        "minimumValue": "0",
+        "maximumValue": "1000000000",
+        "maxlength": "13",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_NumberOfAnnualPayments": {
+        "fieldLabel": "Number of annual payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "payments",
+        "format": "number",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_DesiredYearsForMoneyToLast": {
+        "fieldLabel": "Years you'd like the money to last",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "90",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual rate of return",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflation",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Amount",
+    "title": "Which is better: cash up front or payments over time?",
+    "answer": "The <span class='lf-bold'>%which%</span> option is the better deal with a higher present value of <span class='lf-bold'>$%value%</span>",
+    "same_as_answer": "<span class='lf-bold'>Both</span> options will have the same present value of <span class='lf-bold'>$%value%</span>",
+    "selectors": [
+      {
+        "label": "Net Present Value",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Yearly Spending Power",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "cashOption": "Cash Option",
+    "paymentOption": "Payment Option",
+    "purchase": "payment",
+    "cash": "cash",
+    "spendingCash": "Amount you could spend each year for %years% years"
+  },
+  "glossaryItems": {
+    "annuitization": {
+      "title": "Annuitization",
+      "definition": "Variable annuities: Annuitization is the conversion of a purchase payment into an annuity, or series of payments, over a designated payout period. The payout period may be for a certain number of years or it may be for the remainder of the lifetime of the annuitant. Retirement and college planning: Annuitization is the conversion of a lump-sum investment into an annuity over the expected duration of retirement or college."
+    },
+    "netpresentvalue": {
+      "title": "Net present value (NPV)",
+      "definition": "NPV method determines the value of an investment or project in today's dollars, taking inflation and returns into account. Generally, if NPV is positive, the investment should be made."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "discount": {
+      "title": "Discount",
+      "definition": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "lumpsuminvestments": {
+      "title": "Lump-sum investments",
+      "definition": "An investment that you make to open an investment or savings account. "
+    },
+    "presentvalue": {
+      "title": "Present value",
+      "definition": "The value of a future payment, or series of payments, discounted at the appropriate interest rate to determine the value in today's dollars. "
+    },
+    "annuity": {
+      "title": "Annuity",
+      "definition": "An insurance policy or an investment that pays out a fixed amount of money each year."
+    },
+    "inflation": {
+      "title": "Inflation",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares two payment options: receiving a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#lumpSumInvestments\">lump sum</a></span> today, investing it yourself, and living off the proceeds after paying income taxes; or receiving an <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Annuity\">annuity</a></span> for a specific number of years and paying taxes each year. Lotteries are often paid as annuities."
+    },
+    {
+      "textLabel": "The calculator <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#discount\">discounts</a></span> the annuity to a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#presentValue\">present value</a></span> so that you can compare which option is the better deal. Generally, the option with a higher present value is the better deal. The <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#savingsInterestRate\">savings interest rate</a></span> that you designate is used to calculate present value for the annuity payment option and is compounded monthly."
+    },
+    {
+      "textLabel": "The decision between cash up front and payments over time mostly depends on the interest rate that you can earn on money that you save and the difference between the lump sum amount and the annuity amount."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference in net present value between the cash and payment options."
+    },
+    {
+      "title": "Column chart comparing the yearly spending value of the cash and payment options."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Table comparing the difference in net present value between the cash and payment options."
+    },
+    {
+      "title": "Table comparing the yearly spending value of the cash and payment options."
+    }
+  ]
+}

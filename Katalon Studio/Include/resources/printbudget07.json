@@ -1,0 +1,61 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Leadfusion Budgeting Calculator"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will it cost to raise a child?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Raising a child will cost approximately $196,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_answer']/span",
+      "value": "$196,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_container1-label",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_container2-label",
+      "value": "By Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Child's Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(show all)'])[1]/following::legend[1]",
+      "value": "HELP"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='HELP'])[1]/following::p[1]",
+      "value": "This tool shows the cost of raising a child, in total and by year, from the age of zero until 20. The figures are not adjusted for inflation."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='HELP'])[1]/following::span[1]",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

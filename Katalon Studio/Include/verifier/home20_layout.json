@@ -1,0 +1,284 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "homeInfo"
+      ],
+      "homeInfo": {
+        "tabLabel": "",
+        "selected": true,
+        "fields": [
+          "Global_OutstandingMortgagePrincipal",
+          "Home_RemainingTermInMonths",
+          "Home_InterestRate",
+          "Home_ExtraPaymentStartDate",
+          "Home_TargetPayoffDate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "No extra payments",
+        "Extra payments"
+      ],
+      "fields": [
+        [
+          "TotIntPaid",
+          "TotIntPaid2"
+        ],
+        [
+          "MonUntilPayoff",
+          "MonUntilPayoff2"
+        ],
+        [
+          "TotPay",
+          "TotPmt2Home20"
+        ]
+      ]
+    },
+    "results_fields": {
+      "TotIntPaid": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotIntPaid2": {},
+      "MonUntilPayoff": {
+        "fieldLabel": "Months until payoff"
+      },
+      "MonUntilPayoff2": {},
+      "TotPay": {
+        "fieldLabel": "Total monthly payment"
+      },
+      "TotPmt2Home20": {}
+    },
+    "date_fields_default": {
+      "Home_ExtraPaymentStartDate": {
+        "days": 0,
+        "months": 1,
+        "years": 0
+      },
+      "Home_TargetPayoffDate": {
+        "days": 0,
+        "months": 1,
+        "years": 20,
+        "adjustBottom": 160
+      }
+    },
+    "fields": {
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Current loan balance",
+        "smallLabel": "",
+        "glossaryTerm": "loanprincipal",
+        "glossaryDefinition": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero.",
+        "glossaryTitle": "Loan principal",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_RemainingTermInMonths": {
+        "fieldLabel": "Remaining term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "48",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "360",
+        "maxlength": "3",
+        "safeType": "number",
+        "value": "240",
+        "minimumValue": "1",
+        "maximumValue": "540",
+        "widgetStep": "1",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "Home_TargetPayoffDate": {
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "inputTypeChar": false,
+        "inputTypeDate": true,
+        "calendarWidget": true,
+        "cellClass": "Home_TargetPayoffDate lf-date-input",
+        "dataHighlight": "true",
+        "defaultValue": "",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "999999999",
+        "widgetStep": "",
+        "value": "30",
+        "format": "number",
+        "fieldLabel": "Target payoff date"
+      },
+      "Home_ExtraPaymentStartDate": {
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "inputTypeChar": false,
+        "inputTypeDate": true,
+        "calendarWidget": true,
+        "cellClass": "Home_ExtraPaymentStartDate lf-date-input",
+        "dataHighlight": "true",
+        "defaultValue": "",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "999999999",
+        "widgetStep": "",
+        "value": "30",
+        "format": "number",
+        "fieldLabel": "Extra payment start date"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Interest Paid",
+    "title": "What extra monthly payment is needed to pay off my loan by a specific date?",
+    "answer": "An extra monthly payment of <span class='lf-bold'>$%result%</span> will pay off your loan by <span class='lf-bold'>%date%</span> and save you <span class='lf-bold'>$%interest%</span> in interest.",
+    "selectors": [
+      {
+        "label": "Interest Paid",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Without Extra Payments ",
+            "label": "Without Extra Payments "
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - With Extra Payments",
+            "label": "With Extra Payments"
+          }
+        ]
+      }
+    ],
+    "moreThan": "more than",
+    "lessThan": "less than",
+    "sameAs": "the same as",
+    "principalInterest": "Principal & Interest",
+    "pmi": "PMI",
+    "taxesInsurance": "Taxes & Insurance",
+    "categories": [
+      "Fixed",
+      "Adjustable"
+    ],
+    "TotPay": "Fixed",
+    "TotPmtHome": "Adjustable",
+    "TotIntPaid": "No Extra Payments",
+    "TotIntPaid2": "Extra Payments",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Ending Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ],
+      [
+        "Month",
+        "Monthly payment",
+        "Ending Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ],
+    "more_prefix": " more ",
+    "less_prefix": " less "
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "loanprincipal": {
+      "title": "Loan principal",
+      "definition": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the additional monthly principal payment required to pay off a loan by a specific date and the resulting interest savings. The entire amount of additional payments is applied to amortizing the loan principal. Some mortgage loans may have a prepayment penalty. Check with your lender to verify whether your loan has such a penalty."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference between the total interest paid on the loan with extra payments and the loan without extra payments."
+    },
+    {
+      "title": "Amortization table for the loan without extra payments."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference between the total interest paid on the loan with extra payments and the loan without extra payments"
+    }
+  ]
+}

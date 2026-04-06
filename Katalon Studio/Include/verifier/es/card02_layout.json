@@ -1,0 +1,96 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Saldo de la tarjeta"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_CardAnnualFee": {
+        "fieldLabel": "Comisión anual"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Cargos mensuales futuros"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Pagos mensuales futuros"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cómo las fluctuaciones de las tasas afectarán mi saldo?",
+    "answer": "Su saldo cambia como se explica a continuación después del primer año para un rango de tasas: ",
+    "balance": "Saldo",
+    "rate": "Tasa: ",
+    "interestRatePercent": "Tasa de interés (%)",
+    "dataTableCategoryTitle": "Tasa de Interés (%)",
+    "selectors": [
+      {
+        "label": "Saldo vs. Tasa",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Estado de cuenta mensual",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Estado de cuenta mensual"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ],
+    "xAxisLabel": "Tasa de interés (%)",
+    "yAxisLabel": "Saldo"
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Pagos mensuales futuros",
+      "definition": "Monto que usted paga mensualmente sobre el saldo de su tarjeta de crédito. Si sus pagos son menores que los gastos por intereses para el período, los intereses impagos se suman al saldo de su tarjeta."
+    },
+    "futuremonthlycharges": {
+      "title": "Cargos mensuales futuros",
+      "definition": "Monto neto que usted gasta mensualmente con su tarjeta de crédito, descontando cualquier retorno que se acredite en el saldo de su tarjeta."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "La calculadora muestra el cambio en el saldo de su tarjeta de crédito después de un año, sobre la base del uso actual y la tasa de interés de la tarjeta."
+    },
+    {
+      "textLabel": "Si usted gasta más de lo que paga, el saldo de su tarjeta aumenta. Si su pago mensual es inferior al interés periódico adeudado, el interés impago se suma al saldo de su tarjeta."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del saldo de la tarjeta después de un año a tres tasas diferentes."
+    },
+    {
+      "title": "Tabla de amortización de la tarjeta de crédito."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Saldo de la tarjeta después de un año a tres tasas diferentes"
+    }
+  ]
+}

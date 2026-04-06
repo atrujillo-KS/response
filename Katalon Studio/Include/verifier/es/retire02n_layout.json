@@ -1,0 +1,184 @@
+{
+  "layout": {
+    "tabs": {
+      "personal": {
+        "tabLabel": "Personal",
+        "toggleQuestion": "¿Incluir a su cónyuge?",
+        "firstLabel": "Mi información ",
+        "secondLabel": "La información de mi cónyuge",
+        "toggleAttributes": [
+          {
+            "textLabel": "Sí"
+          },
+          {
+            "textLabel": "No"
+          }
+        ]
+      },
+      "projections": {
+        "tabLabel": "Proyecciones"
+      },
+      "benefits-pensions": {
+        "tabLabel": "Beneficios del seguro social  ",
+        "initTabName": "Personal",
+        "toggleQuestion": "¿Incluir a su cónyuge?",
+        "firstLabel": "Mi información ",
+        "secondLabel": "La información de mi cónyuge",
+        "myFirstLabelHidden": "Mi información para los beneficios del Seguro Social",
+        "mySecondLabelHidden": "Mi información para plan de pensión o beneficio definido",
+        "mySpouseFirstLabelHidden": "La información de mi cónyuge para los beneficios del Seguro Social",
+        "mySpouseSecondLabelHidden": "Información de mi cónyuge Pensión o plan de beneficios definidos",
+        "socialSecurityBenefits": "Beneficios del seguro social",
+        "toggleAttributes": [
+          {
+            "textLabel": "Sí"
+          },
+          {
+            "textLabel": "No"
+          }
+        ]
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "fields": {
+      "SSType": {
+        "fieldLabel": "Sus beneficios mensuales",
+        "dropdownOptions": [
+          {
+            "optionText": "Estimado para mí"
+          },
+          {
+            "optionText": "Ignorar"
+          },
+          {
+            "optionText": "Futuro(a)"
+          }
+        ]
+      },
+      "Income": {
+        "fieldLabel": "Ingreso anual",
+        "smallLabel": "(antes de impuestos)"
+      },
+      "RetireAge": {
+        "fieldLabel": "Edad al momento de la jubilación",
+        "valueTextLabel": "años"
+      },
+      "RetireWage": {
+        "fieldLabel": "Sueldos mensuales durante la jubilación"
+      },
+      "WageYrs": {
+        "fieldLabel": "Por cuántos años"
+      },
+      "SpsAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "La información de mi cónyuge"
+      },
+      "SpsInc": {
+        "fieldLabel": "Ingreso anual",
+        "smallLabel": "(antes de impuestos)"
+      },
+      "SpsRetireAge": {
+        "fieldLabel": "Edad al momento de la jubilación",
+        "valueTextLabel": "años"
+      },
+      "SpsRetireWage": {
+        "fieldLabel": "Sueldos mensuales durante la jubilación"
+      },
+      "SpsWageYrs": {
+        "fieldLabel": "Por cuántos años",
+        "valueTextLabel": "años"
+      },
+      "DeathAge": {
+        "fieldLabel": "Esperanza de vida",
+        "valueTextLabel": "años"
+      },
+      "AnnIncGrow": {
+        "fieldLabel": "Tasa anual de crecimiento de los beneficios del Seguro Social"
+      },
+      "SSAge": {
+        "fieldLabel": "Edad en la que exigirá el pago de beneficios del seguro social",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "Mi información"
+      },
+      "SSPmt": {
+        "fieldLabel": "Sus beneficios mensuales que espera recibir"
+      },
+      "SpsSSAge": {
+        "fieldLabel": "Edad a la que su cónyuge exigirá el pago de beneficios del seguro social",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "La información de mi cónyuge"
+      },
+      "SpsSSPmt": {
+        "fieldLabel": "Sus beneficios mensuales que espera recibir"
+      },
+      "CurrAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años",
+        "ariaLegendLabel": "Mi información"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Edad",
+    "progressFilled": "Totalmente financiado(a)",
+    "progressEmpty": "Sin financiamiento",
+    "retirement": "Jubilación",
+    "age": "Edad",
+    "yourResults": "Sus resultados",
+    "title": "¿Cuánto proporcionará el seguro social después de la jubilación?",
+    "answer": "La proyección de sus beneficios del seguro social durante la jubilación es como sigue:",
+    "spouse": "Su cónyuge",
+    "annualBenefits": "Beneficios anuales",
+    "selectors": [
+      {
+        "label": "Beneficios",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Beneficios anuales del seguro social",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Beneficios anuales del seguro social"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Edad",
+        "Usted ",
+        "Su cónyuge"
+      ]
+    ]
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "Esta calculadora le permite proyectar sus beneficios de Seguro Social durante su jubilación. Toma en cuenta su edad, la duración estimada de la jubilación y los ingresos adicionales que espera ganar después de ser elegible para recibir los beneficios."
+    },
+    {
+      "textLabel": "De acuerdo con la Administración de Seguridad Social (<a target=\"_blank\" href=\"https://www.ssa.gov/\">SSA</a>), el jubilado soltero promedio recibió $1,404 en beneficios mensuales en noviembre de 2018. La pareja jubilada promedio recibió $2,077 en beneficios mensuales."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico  de columnas de los beneficios anuales del Seguro Social durante la jubilación."
+    },
+    {
+      "title": "Tabla."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Beneficios anuales del Seguro Social durante la jubilación"
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: cash up front or payments over time?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares two payment options: receiving a lump sum today, investing it yourself, and living off the proceeds after paying income taxes; or receiving an annuity for a specific number of years and paying taxes each year. Lotteries are often paid as annuities."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='annuity'])[1]/following::p[1]",
+      "value": "The calculator discounts the annuity to a present value so that you can compare which option is the better deal. Generally, the option with a higher present value is the better deal. The savings interest rate that you designate is used to calculate present value for the annuity payment option and is compounded monthly."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='savings interest rate'])[1]/following::p[1]",
+      "value": "The decision between cash up front and payments over time mostly depends on the interest rate that you can earn on money that you save and the difference between the lump sum amount and the annuity amount."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=lump sum",
+      "value": "lump sum"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=annuity",
+      "value": "annuity"
+    }
+  },
+  {
+    "click": {
+      "id": "link=annuity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Annuity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An insurance policy or an investment that pays out a fixed amount of money each year."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Annuity'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=discounts",
+      "value": "discounts"
+    }
+  },
+  {
+    "click": {
+      "id": "link=discounts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Discount'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=present value",
+      "value": "present value"
+    }
+  },
+  {
+    "click": {
+      "id": "link=present value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Present value"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=savings interest rate",
+      "value": "savings interest rate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The payment option is the better deal with a higher present value of $17,292,211"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Cash Option"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Payment Option"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVCash_result_label",
+      "value": "Net present value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVCash_result_value",
+      "value": "$10,592,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVAnnuity_result_value",
+      "value": "$17,292,211"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearlySpendingCash_result_label",
+      "value": "Amount you could spend each year for 60 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearlySpendingCash_result_value",
+      "value": "$159,178"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearlySpendingAnnuity_result_value",
+      "value": "$259,870"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Net Present Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Yearly Spending Power"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CashOption-accordion",
+      "value": "Cash Option"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CashPayment-label",
+      "value": "Cash up front amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CashPayment",
+      "value": "16,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CashPayment-error-message",
+      "value": "Must be between $0 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "PaymentOption-accordion",
+      "value": "Payment Option"
+    }
+  },
+  {
+    "click": {
+      "id": "PaymentOption-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_AnnualPayment-label",
+      "value": "Annual payment amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_AnnualPayment",
+      "value": "1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_AnnualPayment-error-message",
+      "value": "Must be between $0 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_NumberOfAnnualPayments-label",
+      "value": "Number of annual payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_NumberOfAnnualPayments",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_NumberOfAnnualPayments-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "GeneralInfo-accordion",
+      "value": "General Info"
+    }
+  },
+  {
+    "click": {
+      "id": "GeneralInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DesiredYearsForMoneyToLast-label",
+      "value": "Years you'd like the money to last"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_DesiredYearsForMoneyToLast",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DesiredYearsForMoneyToLast-error-message",
+      "value": "Must be between 1 and 90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Annual rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inflation rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Inflation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inflation'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "CashOption-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_CashPayment",
+      "value": "20,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "PaymentOption-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_AnnualPayment",
+      "value": "2,000,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_NumberOfAnnualPayments",
+      "value": "15"
+    }
+  },
+  {
+    "click": {
+      "id": "GeneralInfo-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_DesiredYearsForMoneyToLast",
+      "value": "20"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InflationRate",
+      "value": "3.50"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "32.30"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The payment option is the better deal with a higher present value of $23,451,939"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVCash_result_value",
+      "value": "$13,540,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NPVAnnuity_result_value",
+      "value": "$23,451,939"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearlySpendingCash_result_value",
+      "value": "$561,466"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearlySpendingAnnuity_result_value",
+      "value": "$972,487"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

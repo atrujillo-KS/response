@@ -1,0 +1,572 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should my spouse work too?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine the net financial benefits of having a spouse who earns an income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Net monthly gain from spouse working: $2,702"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome_result_label",
+      "value": "Monthly gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome_result_value",
+      "value": "$6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExp_AtHome_result_label",
+      "value": "Plus extra expenses if staying at home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExp_AtHome_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExpenses_result_label",
+      "value": "Less extra expenses if going to work"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExpenses_result_value",
+      "value": "$1,180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyIncomeTaxes_result_label",
+      "value": "Less income taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyIncomeTaxes_result_value",
+      "value": "$1,829"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyEmploymentTaxes_result_label",
+      "value": "Less employment taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyEmploymentTaxes_result_value",
+      "value": "$440"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyGain_result_label",
+      "value": "Net monthly gain from spouse working"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyGain_result_value",
+      "value": "$2,702"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "SpousesEstIncome-accordion",
+      "value": "Spouse's Est. Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome-label",
+      "value": "Monthly gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome",
+      "value": "6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyNontaxableIncome-label",
+      "value": "Monthly non-taxable income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MonthlyNontaxableIncome",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MonthlyNontaxableIncome-label",
+      "value": "Monthly non-taxable income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SelfEmployed-label",
+      "value": "Employment status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SelfEmployed",
+      "value": "Employed Self-employed"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SelfEmployed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "State tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "GoingtoWork-accordion",
+      "value": "Going to Work"
+    }
+  },
+  {
+    "click": {
+      "id": "GoingtoWork-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraChildCareCosts-label",
+      "value": "Child care"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraChildCareCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraWorkTransportationCosts-label",
+      "value": "Work transportation"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraWorkTransportationCosts",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraWorkTransportationCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraWorkClothingCosts-label",
+      "value": "Work-related attire"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraWorkClothingCosts",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraWorkClothingCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraHousekeepingCosts-label",
+      "value": "Housekeeping"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraHousekeepingCosts",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraHousekeepingCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraChildrensEntertainmentCosts-label",
+      "value": "Children's entertainment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraChildrensEntertainmentCosts",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraEatingOutCosts-label",
+      "value": "Eating out"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraEatingOutCosts",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraEatingOutCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraOtherCostsGoingToWorkStayingAtHome-label",
+      "value": "Other"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraOtherCostsGoingToWorkStayingAtHome",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraOtherCostsGoingToWorkStayingAtHome-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "StayingatHome-accordion",
+      "value": "Staying at Home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//fieldset[@id='lf-tab-StayingatHome']/div[2]",
+      "value": "Extra monthly expenses"
+    }
+  },
+  {
+    "click": {
+      "id": "StayingatHome-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraMedicalInsuranceCosts-label",
+      "value": "Medical insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraMedicalInsuranceCosts",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraMedicalInsuranceCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraLifeInsuranceCosts-label",
+      "value": "Life insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraLifeInsuranceCosts",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraLifeInsuranceCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraOtherCostsStayingAtHome-label",
+      "value": "Other"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ExtraOtherCostsStayingAtHome",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExtraOtherCostsStayingAtHome-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "SpousesEstIncome-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome",
+      "value": "8,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_MonthlyNontaxableIncome",
+      "value": "300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "27.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.51"
+    }
+  },
+  {
+    "click": {
+      "id": "GoingtoWork-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraChildCareCosts",
+      "value": "499"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraWorkTransportationCosts",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraWorkClothingCosts",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraHousekeepingCosts",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraChildrensEntertainmentCosts",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraEatingOutCosts",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraOtherCostsGoingToWorkStayingAtHome",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "StayingatHome-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraMedicalInsuranceCosts",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraLifeInsuranceCosts",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ExtraOtherCostsStayingAtHome",
+      "value": "250"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Net monthly gain from spouse working: $4,051"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SpouseMonthlyGrossIncome_result_value",
+      "value": "$8,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExp_AtHome_result_value",
+      "value": "$600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyExtraExpenses_result_value",
+      "value": "$1,499"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyIncomeTaxes_result_value",
+      "value": "$2,461"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyEmploymentTaxes_result_value",
+      "value": "$589"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyGain_result_value",
+      "value": "$4,051"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

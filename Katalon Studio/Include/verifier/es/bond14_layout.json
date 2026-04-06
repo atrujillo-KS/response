@@ -1,0 +1,276 @@
+{
+  "layout": {
+    "tabs": {
+      "CouponBond": {
+        "tabLabel": "BONO CON CUPONES"
+      },
+      "ZeroCouponBond": {
+        "tabLabel": "BONO CUPÓN CERO"
+      },
+      "SharedBondInfo": {
+        "tabLabel": "INFORMACIÓN SOBRE EL BONO"
+      }
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_ZeroCouponBondPurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_ZeroCouponBondFaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "CouponRate2_Bond14": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_ZeroCouponBondMonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_MonthsSincePurchase": {
+        "fieldLabel": "Meses hasta que usted venda"
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Tasa de mercado cuando vende"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "El bono con cupón",
+        "El bono cupón cero"
+      ],
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "subtitle": "Si vende en %months% meses",
+      "columnHeaders": [
+        "El bono con cupón",
+        "El bono cupón cero"
+      ]
+    },
+    "results2": {
+      "subtitle": "Si lo mantiene hasta el vencimiento"
+    },
+    "results_fields": {
+      "Bond_SellingPrice": {
+        "fieldLabel": "Precio de venta"
+      },
+      "Bond_YieldBeforeTaxesIfSell": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_YieldAfterTaxesIfSell": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "Bond_YieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento antes de impuestos"
+      },
+      "Bond_ZeroCouponBondYieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "secondSubtitle": {
+        "fieldLabel": "Dummy subtitle"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Precio de venta",
+    "title": "¿Debo comprar un bono cupón cero?",
+    "answer": "El <span class='lf-bold'>bono %tax%</span> obtendrá un mayor rendimiento después de impuestos del <span class='lf-bold'>%rate%%</span>",
+    "Bond_YieldAfterTaxesIfSell": "con cupón",
+    "Bond_ZeroCouponBondYieldAfterTaxesIfSell": "cupón cero",
+    "Bond_SellingPrice": "Con cupón",
+    "Bond_ZeroCouponBondSellingPrice": "Cupón cero",
+    "categories": [
+      "Con cupón",
+      "Cupón cero"
+    ],
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "selectors": [
+      {
+        "label": "En el momento de la venta"
+      },
+      {
+        "label": "Precio de venta"
+      },
+      {
+        "label": "Al vencimiento"
+      }
+    ],
+    "returnPercent": "Rendimiento (%)",
+    "return": "Rendimiento",
+    "sellingPrice": "Precio de venta"
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "parvalue": {
+      "title": "Valor a la par",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor nominal. "
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "discount": {
+      "title": "Descuento",
+      "definition": "Un precio que es inferior al precio regular de venta. En el contexto de inversión en bonos, un descuento es un precio de bono inferior al valor nominal del bono."
+    },
+    "corporatebonds": {
+      "title": "Corporate bond",
+      "definition": "Bonds issued by corporations to raise money for operations."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "imputedinterest": {
+      "title": "Interés imputado",
+      "definition": "La cantidad de intereses ganados con un bono cupón cero."
+    },
+    "ytm": {
+      "title": "Rendimiento al vencimiento",
+      "definition": "La tasa de interés, o tasa de rendimiento interna (IRR, por sus siglas en inglés), que hace que la entrada de efectivo sea igual al precio que se paga por el bono. Las entradas de efectivo consisten en el interés del cupón y el capital del bono cuando este llega a su vencimiento."
+    },
+    "zerocouponbond": {
+      "title": "Bono cupón cero",
+      "definition": "Un bono cupón cero se vende con un gran descuento en su valor nominal y no paga intereses con cupones. A medida que el bono se acerca al vencimiento, el precio del bono aumenta hacia el valor nominal. Esta apreciación de un bono cupón cero se llama intereses imputados. El IRS exige que declare el interés imputado como ingreso imponible a menos que lo haya ganado con un bono exento de impuestos."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "treasurysecurities": {
+      "title": "Títulos del Tesoro",
+      "definition": "Obligaciones de deuda del gobierno de Estados Unidos con un vencimiento superior a 10 años. También llamado bono T."
+    },
+    "marketinterestrate": {
+      "title": "Tasa de interés del mercado",
+      "definition": "La tasa de interés para los bonos con características de riesgo y plazos de vencimiento similares a los del bono que usted vende."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara dos inversiones en bonos: comprar un bono con un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Discount\">descuento</a></span> sustancial en su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ParValue\">valor nominal</a></span> y no recibir un cupón (un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ZeroCouponBond\">bono cupón cero</a></span>), y comprar un bono con cupón. Las tasas de rendimiento se proporcionan para dos períodos: 1) el plazo restante hasta el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Maturity\">vencimiento </a></span>) (su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YTM\"> rendimiento al vencimiento</a></span>) y 2) cantidad de meses hasta que usted vende los bonos."
+    },
+    {
+      "textLabel": "Dependiendo del tipo de bonos que se comparen, los impuestos aplicados a los pagos de cupones variarán. Los valores del Tesoro están exentos de impuestos estatales sobre la renta. Los bonos municipales están exentos de impuestos federales sobre la renta. En algunos casos, los bonos municipales también están exentos de impuestos estatales sobre la renta."
+    },
+    {
+      "textLabel": "Con un bono cupón cero, usted debe declarar los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ImputedInterest\">intereses imputados</a></span> como ingresos. Por lo tanto, su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento</a></span> después de impuestos de un bono cupón cero puede ser menor."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la devolución del usuario, antes y después de impuestos, para cada tipo de bono en el momento de la venta."
+    },
+    {
+      "title": "Gráfico de columnas del precio de venta de cada bono en el momento de la venta."
+    },
+    {
+      "title": "Gráfico de columnas que compara el rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Devolución del usuario, antes y después de impuestos, para cada tipo de bono en el momento de la venta"
+    },
+    {
+      "title": "Precio de venta de cada bono en el momento de la venta"
+    },
+    {
+      "title": "Rendimiento, antes y después de impuestos, para cada tipo de bono si los bonos se mantienen hasta el vencimiento"
+    }
+  ]
+}

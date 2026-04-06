@@ -1,0 +1,312 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How large a line of credit can I obtain?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the maximum possible credit line you can obtain based on your home value, existing mortgage loans, and the maximum combined loan-to-value (CLTV) ratio the lender will consider. Loans are the sum of the amount of the proposed credit line plus the balance of any outstanding mortgage debt. Value is usually appraisal value, which is an independent appraiser's assessment of the home's current market value. The greater the value of your home and/or the loan-to-value requirements of the lender, the greater the line of credit you can obtain."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(CLTV)'])[1]/following::p[1]",
+      "value": "For example, a lender willing to consider a CLTV of 90 percent will offer a credit line amount that - added to any other mortgage debt - equals 90 percent of the home's appraisal value."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=(CLTV)",
+      "value": "(CLTV)"
+    }
+  },
+  {
+    "click": {
+      "id": "link=(CLTV)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Combined loan-to-value ratio (CLTV)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A ratio used by lenders to determine default risk when the home is used as collateral for more than one loan. It is calculated by dividing the total value of the combined mortgages by the value of the property."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Combined loan-to-value ratio (CLTV)'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You may qualify for a credit line up to $50,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ApprUsr_result_label",
+      "value": "Maximum amount of loans possible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ApprUsr_result_value",
+      "value": "$200,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal_result_label",
+      "value": "Less existing loans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal_result_value",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLimitUsr_result_label",
+      "value": "Your credit limit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLimitUsr_result_value",
+      "value": "$50,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Appraised value of home"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Appraised value of home'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Appraised value of home'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Appraisal value'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-label",
+      "value": "Mortgages you owe"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal-error-message",
+      "value": "Must be between $0 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mortgages you owe'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mortgages you owe'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Mortgage balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The unpaid principal on your first mortgage loan and any second mortgages or existing home equity loans."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mortgage balance'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaximumLTVRatio-label",
+      "value": "Max loan-to-value ratio"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_MaximumLTVRatio",
+      "value": "80.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_MaximumLTVRatio-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max loan-to-value ratio'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max loan-to-value ratio'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "LTV is a lending risk assessment ratio that lenders examine before approving a mortgage. It is calculated by dividing the mortgage loan amount by the fair market value of the home."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loan-to-value ratio (LTV)'])[1]/following::span[1]"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "350,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_OutstandingMortgagePrincipal",
+      "value": "125,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_MaximumLTVRatio",
+      "value": "85.00"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "You may qualify for a credit line up to $172,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ApprUsr_result_value",
+      "value": "$297,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ApprUsr_result_value",
+      "value": "$297,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_OutstandingMortgagePrincipal_result_value",
+      "value": "$125,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLimitUsr_result_value",
+      "value": "$172,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

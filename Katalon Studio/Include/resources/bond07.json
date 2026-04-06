@@ -1,0 +1,412 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What bond price achieves my target rate of return?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool computes the minimum selling price needed to obtain a desired rate of return, if the bonds are sold at maturity. Brokerage commissions are ignored."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Brokerage commissions'])[1]/following::p[1]",
+      "value": "A bond's rate of return is based on the coupon income and any capital gain you earn during the time you hold the bond. If you sell a bond for a lower price than you paid for it, you realize a capital loss and your rate of return suffers. If you sell a bond for a higher price, you realize a capital gain and your rate of return benefits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='capital loss'])[1]/following::p[1]",
+      "value": "Note: This tool assumes a certain market rate range in comparison to the coupon rate when calculating the bond price."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "A sale price of $11,320 or higher will earn a return of 7.00% before taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_text",
+      "value": "To sell at a price of $11,320, the market rate will need to be approximately 1.73% or lower"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OriginalInfo-accordion",
+      "value": "Original Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CurrentInfo-accordion",
+      "value": "Current Info"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DesiredYieldToMaturity-label",
+      "value": "Annual return you desire"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_DesiredYieldToMaturity",
+      "value": "7.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_DesiredYieldToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ReturnTaxOption-label",
+      "value": "Annual return before or after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ReturnTaxOption",
+      "value": "Before taxes After taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_ReturnTaxOption",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsSincePurchase-label",
+      "value": "Months since purchase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Assumptions-accordion",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption-label",
+      "value": "Your coupon income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "OriginalInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "88.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "1.23"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Municipal: not state tax-exempt"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_DesiredYieldToMaturity",
+      "value": "10.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_ReturnTaxOption",
+      "value": "label=After taxes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "12"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "46,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "1.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "A sale price of $48,087 or higher will earn a return of 10.00% after taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_text",
+      "value": "To sell at a price of $48,029, the market rate will need to be approximately 5.15% or lower"
+    }
+  }
+]

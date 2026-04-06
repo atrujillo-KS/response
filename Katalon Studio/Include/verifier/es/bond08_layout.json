@@ -1,0 +1,227 @@
+{
+  "layout": {
+    "tabs": {
+      "OriginalInfo": {
+        "tabLabel": "INFORMACIÓN ORIGINAL"
+      },
+      "CurrentInfo": {
+        "tabLabel": "INFORMACIÓN ACTUAL"
+      },
+      "CallInfo": {
+        "tabLabel": "INFORMACIÓN DE RESCATE"
+      },
+      "Assumptions": {
+        "tabLabel": "PRESUNCIONES"
+      }
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Bond_MonthsOwned": {
+        "fieldLabel": "Meses desde la compra"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_MonthsUntilCall": {
+        "fieldLabel": "Meses hasta que puede ocurrir el rescate"
+      },
+      "Bond_CallPrice": {
+        "fieldLabel": "Precio de rescate",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Antes de impuestos",
+        "Después de impuestos"
+      ]
+    },
+    "results_fields": {
+      "Bond_YieldBeforeTaxesAtCall": {
+        "fieldLabel": "Rendimiento al rescate"
+      },
+      "Bond_YieldAfterTaxesAtCall": {
+        "fieldLabel": "Rendimiento al rescate"
+      },
+      "Bond_YieldAfterTaxes": {
+        "fieldLabel": "Rendimiento al vencimiento"
+      },
+      "Bond_YieldBeforeTaxes": {
+        "fieldLabel": "Rendimiento al vencimiento"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle2": "Precio",
+    "title": "¿Cuál podría ser mi rendimiento al rescate?",
+    "answer": "Su rendimiento al rescate después de impuestos es del <span class='lf-bold'>%Bond_YieldAfterTaxesAtCall%%</span>.",
+    "beforeTaxes": "Antes de impuestos",
+    "afterTaxes": "Después de impuestos",
+    "categories": [
+      "Al rescate",
+      "Al vencimiento"
+    ],
+    "Price": "Precio",
+    "yieldToCall": "Rendimiento",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Rendimientos",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Relación entre rendimiento y precio",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "ytm": {
+      "title": "Rendimiento al vencimiento",
+      "definition": "La tasa de interés, o tasa de rendimiento interna (IRR, por sus siglas en inglés), que hace que la entrada de efectivo sea igual al precio que se paga por el bono. Las entradas de efectivo consisten en el interés del cupón y el capital del bono cuando este llega a su vencimiento."
+    },
+    "yieldtocall": {
+      "title": "Rendimiento al rescate",
+      "definition": "El rendimiento al vencimiento de un bono amortizable anticipadamente."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    },
+    "callablebonds": {
+      "title": "Bonos amortizables anticipadamente",
+      "definition": "Bonos que pueden ser rescatados o redimidos por el emisor de los bonos antes de que los bonos lleguen al vencimiento. El emisor generalmente paga un recargo al valor nominal del bono si rescata los bonos."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento</a></span>, antes y después de impuestos, para un bono amortizable anticipadamente. Las tasas de rendimiento se calculan de dos maneras: <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YTM\">rendimiento al vencimiento</a></span> y <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YieldToCall\">rendimiento al rescate</a></span>."
+    },
+    {
+      "textLabel": "Un bono amortizable anticipadamente es un bono que puede ser redimido por la compañía, el municipio o el gobierno emisor antes de su fecha de vencimiento programada."
+    },
+    {
+      "textLabel": "Algunas de las razones por las que un emisor de bonos puede decidir rescatar algunos o todos sus bonos incluyen la intención de refinanciar a tasas de interés más bajas o reemplazar parte de su deuda con activo neto."
+    },
+    {
+      "textLabel": "Para compensar el riesgo de que se rescate un bono, el emisor del bono generalmente rescata sus bonos a un precio más alto que el valor nominal del bono."
+    },
+    {
+      "textLabel": "Mientras más alta sea la prima de rescate que debe pagar el emisor del bono, mayor será su rendimiento al rescate."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del rendimiento del bono para llamar y el rendimiento al vencimiento antes y después de impuestos."
+    },
+    {
+      "title": "Gráfico de columnas de la relación directa entre el rendimiento de un bono y el precio de compra. Cuanto mayor sea la prima de compra que debe pagar el emisor del bono, en caso de que el bono sea exigido, mayor será su rendimiento a la vista."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento del bono para llamar y rendimiento al vencimiento antes y después de impuestos"
+    },
+    {
+      "title": "Relación directa entre el rendimiento de un bono y el precio de compra. Cuanto mayor sea la prima de compra que debe pagar el emisor del bono, en caso de que el bono sea exigido, mayor será su rendimiento a la vista"
+    }
+  ]
+}

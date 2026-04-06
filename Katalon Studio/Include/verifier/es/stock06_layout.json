@@ -1,0 +1,194 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "IncomeTaxes": {
+        "tabLabel": "INGRESOS E IMPUESTOS"
+      },
+      "FeesatPurchase": {
+        "tabLabel": "CARGOS DE COMPRA"
+      },
+      "FeesatSale": {
+        "tabLabel": "TASAS DE VENTA"
+      }
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Stock_SharePriceToday": {
+        "fieldLabel": "Precio de la acción hoy"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Sin cargos",
+        "Con cargos"
+      ]
+    },
+    "results_fields": {
+      "FMRRAftWO": {
+        "fieldLabel": "Rendimiento después de impuestos"
+      },
+      "SaleGainAftWO": {
+        "fieldLabel": "Ganancia total después de impuestos"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "dataTableCategory2": "Ganancia total",
+    "title": "¿De qué manera los cargos afectan la tasa de rendimiento de mi valor?",
+    "answer": "Los cargos reducen su tasa de rendimiento después de impuestos en un <span class='lf-bold'>%result%%</span>",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Ganancia o pérdida",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "without": "Sin cargos",
+    "with": "Con cargos",
+    "returnPercent": "Rendimiento (%)",
+    "gain": "Ganancia ($)"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "dividendincome": {
+      "title": "Ingresos de dividendos",
+      "definition": "Distribución de beneficios que las empresas o fondos de inversión hacen a los accionistas."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    },
+    "brokeragecommission": {
+      "title": "Comisión de corretaje",
+      "definition": "Los cargos que usted paga a un corredor por comprar o vender acciones, bonos u otros valores. También se denominan cargos de transacción, cargos de compraventa, cargos de corretaje o simplemente comisiones."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula cómo los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#BrokerageCommission\">cargos de corretaje</a></span> que usted paga para comprar y vender acciones reducen la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">la tasa de rendimiento</a></span> de una inversión en acciones."
+    },
+    {
+      "textLabel": "La herramienta supone que usted vende sus acciones al precio de acción actual. Los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">dividendos</a></span> que ha recibido mientras posee las acciones se supone que han sido <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvertidos</a></span> a una tasa que usted especifica o han sido gastados."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la Rendimiento después de impuestos con y sin tasas."
+    },
+    {
+      "title": "Gráfico de columnas de la ganancia después de impuestos con y sin comisiones."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento después de impuestos con y sin tasas"
+    },
+    {
+      "title": "Ganancia después de impuestos con y sin comisiones"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "layout": {
+    "tabs": {
+      "HomeInfo": {
+        "tabLabel": "Información de la vivienda"
+      },
+      "InterestOnly": {
+        "tabLabel": "Pago de intereses solamente"
+      },
+      "Traditional": {
+        "tabLabel": "Tradicional"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      }
+    },
+    "fields": {
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Años que espera vivir en la vivienda"
+      },
+      "Home_InterestOnlyPeriodInYears": {
+        "fieldLabel": "Período de pago de intereses solamente ",
+        "smallLabel": "(años)"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Home_SecondLoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_SecondLoanOriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_SecondLoanDiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_SecondLoanOtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa sobre sus ahorros "
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Período de pago de intereses solamente ",
+        "Plazo restante del préstamo solo con interés",
+        "Tradicional"
+      ]
+    },
+    "results_fields": {
+      "IntOnlyPay": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PrincAndInt": {},
+      "PrincAndInt2": {},
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "MortIns2": {},
+      "MortIns3": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TaxAndIns2": {},
+      "TaxAndIns3": {},
+      "TotIntOnlyPay": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPmt": {},
+      "TotPmt2": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Qué es mejor: un préstamo con amortización única al vencimiento o un préstamo tradicional?",
+    "answer": "El <span class='lf-bold'>préstamo %WHICHLOAN%</span> le <span class='lf-bold'>%savecost%</span> <span class='lf-bold'>%result% %which%</span> el <span class='lf-bold'>préstamo %WHICHLOAN2%</span>",
+    "same_as_answer": "<span class='lf-bold'>Ambos préstamos</span> le <span class='lf-bold'>costarán</span> <span class='lf-bold'>lo mismo</span>",
+    "moreThan": "más que",
+    "lessThan": "menos que",
+    "sameAs": "lo mismo que",
+    "more_prefix": " more than ",
+    "less_prefix": " less than ",
+    "TotIntOnlyPay": "de Pago de intereses solamente",
+    "TotPmt2": "Tradicional",
+    "costDifference": "Diferencia de costos",
+    "cost": "costará",
+    "save": "ahorrará",
+    "categories": [
+      "Período de pago de intereses solamente ",
+      "Plazo restante",
+      "Tradicional"
+    ],
+    "principalInterest": "Capital e Intereses",
+    "pmi": "Seguro hipotecario privado",
+    "taxesInsurance": "Impuestos y seguro",
+    "selectors": [
+      {
+        "label": "Diferencia de costos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pagos mensuales",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo con amortización única al vencimiento",
+            "label": "Préstamo con amortización única al vencimiento"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo tradicional",
+            "label": "Préstamo tradicional "
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestonlyperiod": {
+      "title": "Período de pago de intereses solamente",
+      "definition": "Para préstamos de interes solamente, el período de tiempo al principio de los terminos del préstamo cuando no tiene que hacer pagos sobre el principal del préstamo."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "discountpoints": {
+      "title": "Puntos de descuento",
+      "definition": "Los puntos de descuento también se denominan puntos, puntos de hipoteca, puntos de descuento de préstamo, comisiones por originación de préstamo y cargos máximos de préstamo. Un punto equivale al 1 por ciento del monto del préstamo. Por ejemplo, un punto sobre un préstamo de $150,000 es $1,500. Los prestamistas consideran los puntos de hipoteca como intereses que tú pagas por anticipado. Por lo tanto, cuantos más puntos pagues al cerrar el préstamo, menor será tu tasa de interés. Si reúnes los requisitos, es posible que puedas deducir los puntos de hipoteca en el año en que tú cierras el préstamo para fines impositivos. De lo contrario, deberás amortizar los puntos pagados durante el plazo del préstamo."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora compara un préstamo hipotecario tradicional con tasa de interés fija y un préstamo sólo a intereses. La diferencia entre ambas se muestra en términos de la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#costdifference\">diferencia de costos</a></span> total con base en el número de años que usted prevé pagar el préstamo hipotecario, así como en términos de la diferencia entre los pagos mensuales. Asimismo, se indican el monto de los pagos mensuales del préstamo sólo a intereses durante el período inicial, en el que se paga solamente el interés, y el monto de dichos pagos una vez finalizado el período inicial."
+    },
+    {
+      "textLabel": "Un préstamo sólo a intereses podría ser ventajoso si el tomador del préstamo tiene una fuente de ingresos variable (comisiones), si prevé que sus ingresos aumentarán antes de que se produzca el aumento del monto de los pagos o si pretende vender la vivienda en poco tiempo y los precios de las viviendas están en alza. Asimismo, un préstamo sólo a intereses permite que alguien califique para una vivienda más costosa."
+    },
+    {
+      "textLabel": "Por otra parte, el monto real de los intereses que se pagan a lo largo del plazo del préstamo es más alto para los préstamos sólo a intereses y, si se presenta un período de estancamiento o de caída de los precios de los inmuebles, es fácil quedar en una situación en la que el valor de la vivienda es inferior al saldo del préstamo. En los casos en los que el préstamo sólo a intereses es además un préstamo hipotecario con tasa de interés variable, el aumento de los pagos cuando finalice el período inicial en el que solamente se paga el interés puede llegar a ser muy elevado."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras que compara la diferencia en el costo total, en dólares de hoy, de ambos préstamos durante los años esperados en el hogar."
+    },
+    {
+      "title": "Gráfico de columnas apiladas con el desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro para propietarios de viviendas tanto para el préstamo con interés único como para el préstamo tradicional."
+    },
+    {
+      "title": "Tabla de amortización del préstamo a interés."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo total, en dólares de hoy, de ambos préstamos durante los años esperados en el hogar"
+    },
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro para propietarios de viviendas tanto para el préstamo con interés único como para el préstamo tradicional"
+    }
+  ]
+}

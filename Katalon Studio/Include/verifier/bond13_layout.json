@@ -1,0 +1,697 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "DiscountBond",
+        "HighRateBond",
+        "SharedBondInfo"
+      ],
+      "DiscountBond": {
+        "tabLabel": "Discount Bond",
+        "fields": [
+          "Bond_DiscountBondPurchasePrice",
+          "Bond_DiscountBondFaceValue",
+          "Bond_DiscountBondCouponRate",
+          "Bond_DiscountBondMonthsToMaturity",
+          "Bond_DiscountBondType"
+        ]
+      },
+      "HighRateBond": {
+        "tabLabel": "High Rate Bond",
+        "fields": [
+          "Bond_HighRateBondPurchasePrice",
+          "Bond_HighRateBondFaceValue",
+          "Bond_HighRateBondCouponRate",
+          "Bond_HighRateBondMonthsToMaturity",
+          "Bond_HighRateBondType"
+        ]
+      },
+      "SharedBondInfo": {
+        "tabLabel": "Shared Bond Info",
+        "fields": [
+          "Bond_MonthsSincePurchase",
+          "Bond_MarketRateToday",
+          "Bond_CouponIncomeSpendingOption",
+          "Global_SavingsInterestRate",
+          "Global_TaxFilingStatus",
+          "Global_ModifiedAdjustedGrossIncome",
+          "Global_StateTaxRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Discount",
+        "High rate"
+      ],
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "subtitle": "If you sell in %months% months",
+      "columnHeaders": [
+        "Discount",
+        "High rate"
+      ],
+      "fields": [
+        [
+          "Bond_DiscountBondSellingPrice",
+          "Bond_HighRateBondSellingPrice"
+        ],
+        [
+          "Bond_DiscountBondYieldBeforeTaxesIfSell",
+          "Bond_HighRateBondYieldBeforeTaxesIfSell"
+        ],
+        [
+          "Bond_DiscountBondYieldAfterTaxesIfSell",
+          "Bond_HighRateBondYieldAfterTaxesIfSell"
+        ],
+        [
+          "secondSubtitle",
+          "secondSubtitle"
+        ],
+        [
+          "Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity",
+          "Bond_HighRateBondYieldBeforeTaxesIfHoldToMaturity"
+        ],
+        [
+          "Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity",
+          "Bond_HighRateBondYieldAfterTaxesIfHoldToMaturity"
+        ]
+      ]
+    },
+    "results2": {
+      "subtitle": "If you hold to maturity",
+      "fields": [
+        [
+          "Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity",
+          "Bond_HighRateBondYieldBeforeTaxesIfHoldToMaturity"
+        ],
+        [
+          "Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity",
+          "Bond_HighRateBondYieldAfterTaxesIfHoldToMaturity"
+        ]
+      ]
+    },
+    "fields": {
+      "Global_TaxFilingStatus": {
+        "glossaryTerm": "taxfilingstatus",
+        "dropdown": true,
+        "fieldLabel": "Tax filing status",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married filing jointly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Married filing separately"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Head of household"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Modified adjusted gross income",
+        "smallLabel": "",
+        "glossaryTerm": "magi",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_HighRateBondFaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_HighRateBondCouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "4.50",
+        "value": "4.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DiscountBondCouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_HighRateBondMonthsToMaturity": {
+        "fieldLabel": "Months to maturity",
+        "smallLabel": "",
+        "glossaryTerm": "maturity",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DiscountBondMonthsToMaturity": {
+        "fieldLabel": "Months to maturity",
+        "smallLabel": "",
+        "glossaryTerm": "maturity",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Market rate when you sell",
+        "smallLabel": "",
+        "glossaryTerm": "marketinterestrate",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MonthsSincePurchase": {
+        "fieldLabel": "Months until you sell",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Your coupon income is",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Spent when received",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Invested elsewhere",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DiscountBondPurchasePrice": {
+        "fieldLabel": "Price you paid",
+        "smallLabel": "(% of face value)",
+        "glossaryTerm": "bondprice",
+        "format": "percent",
+        "defaultValue": "96.00",
+        "value": "96.00",
+        "minimumValue": "1",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1000.00",
+        "widgetStep": "10.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DiscountBondFaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_HighRateBondPurchasePrice": {
+        "fieldLabel": "Price you paid",
+        "smallLabel": "(% of face value)",
+        "glossaryTerm": "bondprice",
+        "format": "percent",
+        "defaultValue": "100.00",
+        "value": "100.00",
+        "minimumValue": "1",
+        "maximumValue": "1000.00",
+        "maxlength": "8",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DiscountBondType": {
+        "fieldLabel": "Type of bond",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Corporate or other",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Municipal: not state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Municipal: state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Treasury security",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_HighRateBondType": {
+        "fieldLabel": "Type of bond",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Corporate or other",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Municipal: not state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Municipal: state tax-exempt",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Treasury security",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "secondSubtitle": {
+        "fieldLabel": "Dummy subtitle"
+      },
+      "Bond_DiscountBondSellingPrice": {
+        "fieldLabel": "Selling price"
+      },
+      "Bond_HighRateBondSellingPrice": {
+        "fieldLabel": "Selling price"
+      },
+      "Bond_DiscountBondYieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Bond_HighRateBondYieldBeforeTaxesIfHoldToMaturity": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Bond_DiscountBondYieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Return after taxes"
+      },
+      "Bond_HighRateBondYieldAfterTaxesIfHoldToMaturity": {
+        "fieldLabel": "Return after taxes"
+      },
+      "Bond_DiscountBondYieldBeforeTaxesIfSell": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Bond_HighRateBondYieldBeforeTaxesIfSell": {
+        "fieldLabel": "Return before taxes"
+      },
+      "Bond_DiscountBondYieldAfterTaxesIfSell": {
+        "fieldLabel": "Return after taxes"
+      },
+      "Bond_HighRateBondYieldAfterTaxesIfSell": {
+        "fieldLabel": "Return after taxes"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Selling Price",
+    "title": "Which is better: discount or high coupon rate?",
+    "answer": "The <span class='lf-bold'>%tax% bond</span> will earn a higher return after taxes of <span class='lf-bold'>%rate%%</span>",
+    "same_as_answer": "<span class='lf-bold'>Both bonds</span> will earn the same return after taxes of <span class='lf-bold'>%rate%%</span>",
+    "Bond_DiscountBondYieldAfterTaxesIfSell": "discounted",
+    "Bond_DiscountBondSellingPrice": "Discount",
+    "Bond_HighRateBondYieldAfterTaxesIfSell": "high rate",
+    "Bond_HighRateBondSellingPrice": "High Rate",
+    "categories": [
+      "Discount",
+      "High Rate"
+    ],
+    "beforeTaxes": "Before Taxes",
+    "afterTaxes": "After Taxes",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "At Sale",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Sale Price",
+        "width": "33%"
+      },
+      {
+        "index": 3,
+        "label": "At Maturity",
+        "width": "33%",
+        "last": true
+      }
+    ],
+    "returnPercent": "Return (%)",
+    "sellingPrice": "Selling price",
+    "return": "Return"
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Bond price",
+      "definition": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    },
+    "couponrate": {
+      "title": "Coupon rate",
+      "definition": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    },
+    "magi": {
+      "title": "Modified adjusted gross income (MAGI)",
+      "definition": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA. "
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "parvalue": {
+      "title": "Par value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as face value."
+    },
+    "maturity": {
+      "title": "Maturity",
+      "definition": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    },
+    "discount": {
+      "title": "Discount",
+      "definition": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond. "
+    },
+    "corporatebonds": {
+      "title": "Corporate bond",
+      "definition": "Bonds issued by corporations to raise money for operations."
+    },
+    "munibonds": {
+      "title": "Municipal bond",
+      "definition": "States and municipalities issue municipal bonds, or muni bonds for short. Investors often buy muni bonds issued by the state or municipality in which they reside to derive the greatest income tax benefit."
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "premium": {
+      "title": "Premium",
+      "definition": "Insurance: The amount an insurance policyholder pays periodically to maintain insurance coverage. Premium: A price more than the face value of the bond."
+    },
+    "bondtypes": {
+      "title": "Bond types",
+      "definition": "The four major types of bonds, as defined by category of issuers, are U.S. government, corporate, agency, and municipal bonds. U.S. government bonds include U.S. Treasury securities. Corporate bonds include those sold by private companies to raise funds. Agency bonds include those sold by government-sponsored enterprises, such as Ginnie Mae, Fannie Mae, and Freddie Mac. Municipal bonds include those sold by state and local governments."
+    },
+    "treasurysecurities": {
+      "title": "Treasury securities",
+      "definition": "Debt obligations of the U.S. government with a maturity of longer than 10 years. Also called a T-bond."
+    },
+    "marketinterestrate": {
+      "title": "Market interest rate",
+      "definition": "The interest rate for bonds with similar risk characteristics and terms to maturity to those of the bond you are selling."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">rates of return</a></span>, before and after taxes, for a discounted bond and high-coupon bond. Rates of return are shown for two scenarios: holding the bond to maturity and selling before maturity. "
+    },
+    {
+      "textLabel": "Generally, you pay a price below <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ParValue\">par value</a></span> (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Discount\">discount</a></span>) for a bond that has a low <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CouponRate\">coupon rate</a></span> relative to <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MarketInterestRate\">market interest rates</a></span>. You pay a price above par value (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Premium\">premium</a></span>) for a bond that has a high coupon rate relative to market rates."
+    },
+    {
+      "textLabel": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the user's return, before and after taxes, for each bond type at the time of sale."
+    },
+    {
+      "title": "Column chart of the selling price for each bond at time of sale."
+    },
+    {
+      "title": "Column chart comparing return, before and after taxes, for each bond type if the bonds are held until maturity."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "User's return, before and after taxes, for each bond type at the time of sale"
+    },
+    {
+      "title": "Selling price for each bond at time of sale"
+    },
+    {
+      "title": "Return, before and after taxes, for each bond type if the bonds are held until maturity"
+    }
+  ]
+}

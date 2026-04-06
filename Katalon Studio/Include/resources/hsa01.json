@@ -1,0 +1,370 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will I save on my taxes by using a HSA?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates tax savings based on your annual contributions to a Health Savings account. Contributions to a health savings account that are below the allowable contribution amount are exempt from federal income tax and most state income taxes. However, Alabama, California, and New Jersey do not provide that same exemption."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "If your high-deductible health plan coverage begins after January 1, contribution limits are pro-rated based on the number of full months the health plan is effective."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your tax savings will be $301"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Next Steps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-next-steps-zoneA-content",
+      "value": "These calculators are intended to be used by Leadfusion for demonstration purposes only. Linking and usage of these calculators without a written license agreement is in violation of the Leadfusion Terms of Use and therefore not permitted. Please Click Here to go to GOOGLE. Please contact cs@leadfusion.com with any questions."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Tax savings by using a HSA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$301"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPlanType-label",
+      "value": "Plan type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPlanType",
+      "value": "Single Family"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HealthPlanType",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HealthPlanType_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "HSA Health Plan Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The health plan type you have influences the minimum deductable you must fulfill for your health plan to qualify as a high deductable health plan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAAge-label",
+      "value": "Are you 55 years of age or older?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAAge",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAAge",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSAAge_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Your Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSASpouseAge-label",
+      "value": "Is spouse 55 years of age or older?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSASpouseAge",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSASpouseAge",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSASpouseAge_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Your Age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your age is used to determine the maximum amount you can contribute to your HSA. If you or your spouse is over 55, there is a catch up amount that is allowed. Refer to IRS Publication 969 for more information."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAContribution-label",
+      "value": "Yearly HSA contributions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAContribution",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAContribution-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HSAContribution_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "HSA Annual contribution Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Your annual allowable contribution is influenced by your plan type, your age, and your spouse's age if married. Refer to IRS Publication 969 for more information."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FedTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_FedTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FedTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HealthPlanType",
+      "value": "label=Family"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSAAge",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSASpouseAge",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HSAContribution",
+      "value": "1,299"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_FedTaxRate",
+      "value": "19.77"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_StateTaxRate",
+      "value": "5.79"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your tax savings will be $317"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-6']/tbody/tr/td",
+      "value": "$317"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

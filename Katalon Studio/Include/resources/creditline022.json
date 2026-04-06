@@ -1,0 +1,323 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I consolidate my debts?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $348 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Loans-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneAmountOwed",
+      "value": "6,500"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors:Based on the Amount owed, Monthly payment, and Months left that you input for your 1st Existing debt, the interest rate would result in a negative value."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "575"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthsLeft",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoAmountOwed",
+      "value": "1,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LoanTwoMonthlyPayment"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors:The amount you entered in the 2nd \"Monthly Payment\" input box must be greater than 0.0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "200"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors:Please enter another value for the 2nd \"Months Left\" input box. 0 is too short."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LoanTwoMonthlyPayment"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "370"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthsLeft",
+      "value": "7"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeAmountOwed",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthsLeft",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourAmountOwed",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthlyPayment",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthsLeft",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveAmountOwed",
+      "value": "4,555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthlyPayment",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthsLeft",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CreditCards-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneAmountOwed",
+      "value": "4,600"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneInterestRate",
+      "value": "12.455"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoAmountOwed",
+      "value": "1,300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoInterestRate",
+      "value": "15.999"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeAmountOwed",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeInterestRate",
+      "value": "0.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFourInterestRate",
+      "value": "8.999"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveAmountOwed",
+      "value": "1,253"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveInterestRate",
+      "value": "0.999"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ConsolidationLoan-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ConsolidationLoanType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_ConsolidationLoanType",
+      "value": "label=Home equity loan"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanInterestRate",
+      "value": "5.455"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff",
+      "value": "26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints",
+      "value": "0.001"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.55"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $2,292 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtMonthlyPayment_result_value",
+      "value": "$5,815"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationMonthlyPayment_result_value",
+      "value": "$3,523"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalInterest_result_value",
+      "value": "$14,632"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalInterest_result_value",
+      "value": "$5,390"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTaxSavings_result_value",
+      "value": "$1,377"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalCost_result_value",
+      "value": "$100,840"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalCost_result_value",
+      "value": "$90,722"
+    }
+  }
+]

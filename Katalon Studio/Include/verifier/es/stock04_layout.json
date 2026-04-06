@@ -1,0 +1,170 @@
+{
+  "layout": {
+    "tabs": {
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "IncomeTaxes": {
+        "tabLabel": "INGRESOS E IMPUESTOS"
+      },
+      "FeesatPurchase": {
+        "tabLabel": "CARGOS DE COMPRA"
+      },
+      "FeesatSale": {
+        "tabLabel": "TASAS DE VENTA"
+      }
+    },
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Stock_AnnualizedReturnDesired": {
+        "fieldLabel": "Rendimiento deseado anualizado"
+      },
+      "Stock_ReturnTaxOption": {
+        "fieldLabel": "El rendimiento deseado es",
+        "dropdownOptions": [
+          {
+            "optionText": "Antes de impuestos"
+          },
+          {
+            "optionText": "Después de impuestos"
+          }
+        ]
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      },
+      "Stock_PurchaseFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_PurchaseFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_PurchaseFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      },
+      "Stock_SaleFeesFixedAmount": {
+        "fieldLabel": "Como monto fijo en dólares"
+      },
+      "Stock_SaleFeesPercentage": {
+        "fieldLabel": "Como porcentaje del monto total"
+      },
+      "Stock_SaleFeesAmountPerShare": {
+        "fieldLabel": "Como monto en dólares por acción"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Qué precio del valor alcanza mi tasa de rendimiento objetivo?",
+    "answer": "Un precio de venta de <span class='lf-bold'>$%sale%</span> o más alto obtendrá un rendimiento del %rate%% antes de impuestos",
+    "selectors": [
+      {
+        "label": "Precio mínimo de venta",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "salePrice": "Precio mínimo de venta"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "definition": "Una distribución de las ganancias que hacen las compañías y los fondos mutuos a sus accionistas. Los dividendos son imponibles como ganancias de capital a largo plazo y a menudo se pagan a los accionistas trimestralmente."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    },
+    "capitalgainstaxes": {
+      "title": "Impuesto sobre las ganancias de capital",
+      "definition": "Impuestos que usted debe sobre ganancias de capital. La tasa de impuestos sobre las ganancias de capital que se aplica sobre activos que se han mantenido durante menos de un año es igual a la tasa para ingresos ordinarios. Para las ganancias de capital a largo plazo (activos que se han mantenido durante al menos un año), la tasa de impuestos para contribuyentes solteros es del 0 % sobre los ingresos imponibles hasta $47,025 del 15 % sobre los ingresos imponibles entre $47,026 y $518,900 y del 20 % sobre los ingresos imponibles de más de $518,901. Para los contribuyentes casados que presentan una declaración conjunta, la tasa de impuestos es del 0 % sobre los ingresos imponibles hasta $94,050, del 15 % sobre los ingresos imponibles entre $94,051 y $583,750 y del 20 % sobre los ingresos imponibles de más de $583,751."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "reinvesting": {
+      "title": "Reinversión",
+      "definition": "El acto de invertir dividendos y ganancias de capital que usted recibe de una compañía o fondo mutuo en acciones adicionales de la bolsa o un fondo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el precio al que tendrá que vender sus acciones para obtener su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento </a></span> deseada. Usted selecciona su quiere que su rendimiento se calcule antes o después de los impuestos sobre la renta y los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">impuestos sobre ganancias de capital</a></span>."
+    },
+    {
+      "textLabel": "Los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Dividends\">dividendos</a></span> que usted recibe sobre las acciones se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Reinvesting\">reinvierten</a></span> a una tasa de interés específica o se gastan."
+    },
+    {
+      "textLabel": "Es posible que desee consultar a un asesor financiero antes de tomar la decisión de inversión."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del precio de venta mínimo, antes de impuestos, necesario para obtener la tasa de rendimiento deseada."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Precio de venta mínimo, antes de impuestos, necesario para obtener la tasa de rendimiento deseada"
+    }
+  ]
+}

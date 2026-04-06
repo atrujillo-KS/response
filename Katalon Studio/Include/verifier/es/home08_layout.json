@@ -1,0 +1,211 @@
+{
+  "layout": {
+    "tabs": {
+      "LoanInfo": {
+        "tabLabel": "Información del préstamo"
+      },
+      "UpfrontFees": {
+        "tabLabel": "Comisiones iniciales"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      }
+    },
+    "fields": {
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      }
+    },
+    "results_fields": {
+      "RateTaxAdj": {
+        "fieldLabel": "Tasa ajustada en función de los ahorros fiscales"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuánto puedo ahorrar en impuestos?",
+    "answer": "Sus ahorros fiscales anuales promedio serán de <span class='lf-bold'>%result%</span>.",
+    "PrincAndInt": "Capital e intereses",
+    "MortIns": "Seguro hipotecario privado ",
+    "TaxAndIns": "Impuestos y seguro",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "taxSavings": "Ahorros fiscales estimados",
+    "year_1": "1 año",
+    "year_2": "2 años",
+    "year_3": "3 años",
+    "year_4": "4 años",
+    "year_5": "5 años",
+    "year_10": "10 años",
+    "year_15": "15 años",
+    "year_20": "20 años",
+    "year_30": "30 años",
+    "year": "Año",
+    "total": "Total",
+    "average": "Promedio",
+    "selectors": [
+      {
+        "label": "Ahorros fiscales",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pago",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "taxdeductible": {
+      "title": "Deducibles de impuestos",
+      "definition": "Un artículo o gasto restado de los ingresos brutos ajustados para reducir el importe de los ingresos sujetos a impuestos."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "amortized": {
+      "title": "Amortización",
+      "definition": "La reducción gradual del capital de un préstamo que tiene lugar a medida que usted hace los pagos periódicos del préstamo."
+    },
+    "settlementcharges": {
+      "title": "Cargos por liquidación",
+      "definition": "También llamados costos de cierre, son los costos habituales por encima del precio de venta que deben pagarse para cubrir la transferencia de propiedad en la operación de cierre."
+    },
+    "points": {
+      "title": "Puntos",
+      "definition": "Los puntos también se denominan puntos de descuento, puntos hipotecarios, puntos de descuento del préstamo, comisiones de apertura del préstamo y gastos máximos del préstamo. Un punto equivale al 1% del importe del préstamo. Por ejemplo, un punto sobre un préstamo de $150,000 es $1,500. Los prestamistas consideran los puntos hipotecarios como intereses que usted paga por adelantado. Por lo tanto, cuantos más puntos pague al cerrar el préstamo, más bajo será el tipo de interés. Si reúne los requisitos, es posible que pueda deducir los puntos hipotecarios a efectos fiscales el año en que cierre el préstamo. De lo contrario, tendrá que amortizar los puntos pagados a lo largo del plazo del préstamo."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "aftertaxinterestrate": {
+      "title": "Tasa de interés después de impuestos",
+      "definition": "La tasa de interés después de impuestos es la tasa de interés sobre un préstamo después de deducir los gastos tributarios. Por ejemplo, si la tasa de interés es del 6 % y la tasa de impuestos sobre la renta es del 25 %, su tasa de interés después de impuestos es del 4.5 %."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta de cálculo muestra sus <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxsavings\">ahorros impositivos</a></span> anuales promedio en un préstamo hipotecario y calcula su tasa de interés del préstamo <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#aftertaxinterestrate\">neta de impuestos</a></span>."
+    },
+    {
+      "textLabel": "Los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#settlementcharges\">cargos por liquidación</a></span> (o costos de cierre) del préstamo, que incluyen <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#chargeforspecificinterestrate\">cargos para una tasa de interés específica</a></span> (o puntos de descuento), se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#amortized\">amortizan</a></span> durante la vida útil del préstamo. "
+    },
+    {
+      "textLabel": "Los ahorros impositivos en un préstamo hipotecario aumentan cuanto mayor sea la tasa del impuesto sobre los ingresos, y todo lo demás permanece sin cambios. Esto se debe a que el interés hipotecario generalmente es <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxdeductible\">deducible de impuestos</a></span>, lo que reduce la tasa de interés neta de impuestos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los ahorros fiscales estimados para cada año del préstamo con una línea de tendencia que representa el promedio."
+    },
+    {
+      "title": "Gráfico de columnas apiladas de los montos pagados al capital e intereses en diferentes intervalos durante el transcurso del plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ahorros fiscales estimados para cada año del préstamo con una línea de tendencia que representa el promedio"
+    },
+    {
+      "title": "Montos pagados al capital e intereses en diferentes intervalos durante el transcurso del plazo del préstamo"
+    }
+  ]
+}

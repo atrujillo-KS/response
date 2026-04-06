@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Payments</name>
+   <tag></tag>
+   <elementGuidId>73c0497f-c667-411d-ac66-6c7fec712cfa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.lf-graph-tabs.lf-last-loop .lf-dot-holder</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-graph-tabs ') and contains(concat(' ', normalize-space(@class), ' '), ' lf-last-loop ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-dot-holder ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tab[name=&quot;Payments&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>87723104-176b-4593-b3ef-b20de5460a24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-dot-holder lf-dot-label</value>
+      <webElementGuid>a9ce7745-d3c2-49bb-97fb-e6ca243b02e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Payments</value>
+      <webElementGuid>20cc0146-53a9-41c9-a65d-7cdc94042dbb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>@text</name>
+      <type>Main</type>
+      <value>Payments</value>
+      <webElementGuid>79ee4879-386d-4b5b-bfa3-f7f13555b20a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3489b79148ae95889aa75f26675fecfd</value>
+      <webElementGuid>d637b126-5810-4507-8c66-eb382e550c86</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-graph-tabs ') and contains(concat(' ', normalize-space(@class), ' '), ' lf-last-loop ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-dot-holder ')]</value>
+      <webElementGuid>e889e2cb-2e53-4a83-ad35-6852b9abab55</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-graph-tabs ') and contains(concat(' ', normalize-space(@class), ' '), ' lf-last-loop ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lf-dot-holder ')]</value>
+      <webElementGuid>31601913-58d7-4f94-9600-e40e0abd7eac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Payments' or . = 'Payments')]</value>
+      <webElementGuid>dd26b165-d0fc-4ef4-9269-6f121380ebe5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,605 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much can I contribute to my retirement plan each year?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates your maximum tax-deductible or allowable contributions to a 401(k), Traditional IRA, Roth IRA, Roth 401(k), SEP, SIMPLE or Keogh plan. Please note that the maximum contribution limits displayed for each plan are only applicable if you contribute to only one of the plans. For example, a contribution to a Traditional IRA plan reduces the maximum you are allowed to contribute to a Roth IRA."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "At higher incomes, your tax-deductible contribution to a regular IRA phases out. Similarly, your allowable contributions to a Roth IRA phase out at higher incomes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=401(k)",
+      "value": "401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Traditional IRA",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Roth IRA",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Roth 401(k)",
+      "value": "Roth 401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=SEP",
+      "value": "SEP"
+    }
+  },
+  {
+    "click": {
+      "id": "link=SEP"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "SEP plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A Simplified Employee Pension (SEP) plan is an employer-contribution retirement plan for self-employed persons or small businesses (25 or fewer employees). For 2025, your employer may contribute up to the lesser of $70,000 or 25% of your annual compensation to your SEP-IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=SIMPLE",
+      "value": "SIMPLE"
+    }
+  },
+  {
+    "click": {
+      "id": "link=SIMPLE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "SIMPLE plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A Savings Incentive Match Plan for Employees (SIMPLE) plan is an employer-contribution retirement plan for self-employed persons or small businesses (100 or fewer employees). For 2025, you may contribute up to $16,500 to your SIMPLE-IRA, or if you are age 50 or older, up to $20,000."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Keogh plan",
+      "value": "Keogh plan"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Keogh plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Keogh plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A defined-contribution retirement plan for self-employed persons and their employees, including sole proprietorships and partnerships. Contribution limits vary depending on whether your Keogh plan is a defined-benefit, defined contribution, or qualified 401(k) plan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=MAGI",
+      "value": "MAGI"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "In 2026, you can contribute up to a maximum of $7,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Your Spouse"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContYr1_result_label",
+      "value": "2026"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContYr1_result_value",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpouseContYr1_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Contribution limit']/parent::*",
+      "value": "Contribution limit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0 > text",
+      "value": "You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "GeneralInfo-accordion",
+      "value": "General Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AcctType-label",
+      "value": "Retirement plan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AcctType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_FilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Income-label",
+      "value": "Annual income (before taxes)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Income",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Income-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MAGI_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SETax-label",
+      "value": "Self-employment tax paid"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SETax",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SETax-error-message",
+      "value": "Must be between $0 and $151,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_UserWorkPlanRetire02F-label",
+      "value": "Participate in work retirement plan?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_UserWorkPlanRetire02F",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MaxPct-label",
+      "value": "Employer cap on contributions (% of pay)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MaxPct",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MaxPct-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "YourSpouse-accordion",
+      "value": "Your Spouse"
+    }
+  },
+  {
+    "click": {
+      "id": "YourSpouse-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpsAge-label",
+      "value": "Current Age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SpsAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpsAge-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpsInc-label",
+      "value": "Annual income (before taxes)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SpsInc",
+      "value": "30,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpsInc-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpouseMAGI-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SpouseMAGI",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpouseMAGI-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_SpouseMAGI_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SETaxSp-label",
+      "value": "Self-employment tax-paid"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SETaxSp",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SETaxSp-error-message",
+      "value": "Must be between $0 and $151,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpouseWorkPlanRetire02F-label",
+      "value": "Participate in work retirement plan?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SpouseWorkPlanRetire02F",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "GeneralInfo-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_AcctType",
+      "value": "label=Roth IRA"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_FilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge",
+      "value": "45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Income",
+      "value": "65,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_MAGI",
+      "value": "60,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SETax",
+      "value": "1,200"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_UserWorkPlanRetire02F",
+      "value": "label=No"
+    }
+  },
+  {
+    "click": {
+      "id": "YourSpouse-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SpsAge",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SpsInc",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SpouseMAGI",
+      "value": "45,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SETaxSp",
+      "value": "400"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_SpouseWorkPlanRetire02F",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SpouseMaxPct",
+      "value": "18.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "In 2026, you can contribute up to a maximum of $7,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContYr1_result_value",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SpouseContYr1_result_value",
+      "value": "$8,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

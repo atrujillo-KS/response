@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_This tool helps you determine which loan _de4773</name>
+   <tag></tag>
+   <elementGuidId>56e575b2-a3ad-4b2e-b9c5-07969d5f061f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_0']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This tool helps you determine which loan saves you more by comparing the terms o&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>c148a180-a142-4837-a9ea-4db845bf7f3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_0</value>
+      <webElementGuid>6be31084-ae6a-4fa0-bffc-57cfecd0f04c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This tool helps you determine which loan saves you more by comparing the terms of a home equity and auto loan. The interest on most home equity loans can be deducted from your federal income taxes. This results in a lower effective interest rate. However, you still need to compare closing costs and the after-tax interest rates of the two loans to decide which loan is cheaper. </value>
+      <webElementGuid>bc541cc3-04f9-4e1b-9af3-5a6dd9726774</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_0&quot;)</value>
+      <webElementGuid>e6694d5b-d6c8-46cd-92c7-68a1b1b0c005</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_0']</value>
+      <webElementGuid>5d8c54ee-6e41-4f71-be5e-3991a0c3303a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p</value>
+      <webElementGuid>8e9b8510-5fa0-4525-ace7-49da9ea07fac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[2]</value>
+      <webElementGuid>58fe0647-59dd-4ffa-9149-3c289bfa7057</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[2]</value>
+      <webElementGuid>ca39fec3-82ca-4ef1-9641-5ab90df1d710</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[1]</value>
+      <webElementGuid>08e3b0fc-7949-44f2-b128-60ac436418e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[1]</value>
+      <webElementGuid>5ff3bec6-f43e-4904-8c1e-5d0c54822b3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This tool helps you determine which loan saves you more by comparing the terms of a home equity and auto loan. The interest on most home equity loans can be deducted from your federal income taxes. This results in a lower effective interest rate. However, you still need to compare closing costs and the after-tax interest rates of the two loans to decide which loan is cheaper.']/parent::*</value>
+      <webElementGuid>a06a3b84-6af0-4989-9b52-09f4a1376be9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/p</value>
+      <webElementGuid>480ee4ea-2ac2-4a85-b643-fa56e5249b87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_0' and (text() = 'This tool helps you determine which loan saves you more by comparing the terms of a home equity and auto loan. The interest on most home equity loans can be deducted from your federal income taxes. This results in a lower effective interest rate. However, you still need to compare closing costs and the after-tax interest rates of the two loans to decide which loan is cheaper. ' or . = 'This tool helps you determine which loan saves you more by comparing the terms of a home equity and auto loan. The interest on most home equity loans can be deducted from your federal income taxes. This results in a lower effective interest rate. However, you still need to compare closing costs and the after-tax interest rates of the two loans to decide which loan is cheaper. ')]</value>
+      <webElementGuid>6d6f801d-b6fa-476b-98f9-65248e44fcce</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

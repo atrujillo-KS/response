@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Vehicle age                          _16c007</name>
+   <tag></tag>
+   <elementGuidId>54123529-f876-4cdd-be52-3c4e3eea7b76</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'lf_Auto_VehicleAgeInYears-label' and (text() = 'Vehicle age
+                                 (years)' or . = 'Vehicle age
+                                 (years)')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Auto_VehicleAgeInYears-label']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Auto_VehicleAgeInYears-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Vehicle age (years)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>a9784ef1-62be-4619-a852-e4da33ea891b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Auto_VehicleAgeInYears</value>
+      <webElementGuid>9ae9f86b-5ffc-430b-b893-9fa9554ff625</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Auto_VehicleAgeInYears-label</value>
+      <webElementGuid>759df2f0-5097-4d90-ac0f-8cb94bd27c7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>lf-field-label-no-tooltip</value>
+      <webElementGuid>42ed1864-01b6-4ba0-bdca-3156ce223767</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Vehicle age
+                                 (years)</value>
+      <webElementGuid>806d4549-e08b-4606-aed0-e5af8fbffaf0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Auto_VehicleAgeInYears-label&quot;)</value>
+      <webElementGuid>106bf309-faed-4f5f-b4b1-517ccfa4ae9d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Auto_VehicleAgeInYears-label']</value>
+      <webElementGuid>5ed62f05-7476-4ef2-a727-8c4c15ffd485</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Auto_VehicleAgeInYears-table']/div/label</value>
+      <webElementGuid>215a81aa-53a8-4c5c-8cc8-e338e8edc1ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sales tax rate'])[2]/following::label[1]</value>
+      <webElementGuid>0161f302-7394-4a62-a25b-f50f7ea47007</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 99.00%'])[1]/following::label[2]</value>
+      <webElementGuid>e33d1a6a-f3e1-4a53-b691-86cdd47f7819</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0 and 30 years'])[1]/preceding::label[1]</value>
+      <webElementGuid>cd3bade9-4348-471f-847d-7fe77da34f3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Vehicle age']/parent::*</value>
+      <webElementGuid>2d290a65-23af-4b47-9763-8a06af1026d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset[2]/div[3]/div[2]/div/label</value>
+      <webElementGuid>da026c2e-fc2c-48bc-9113-928742957f67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Auto_VehicleAgeInYears-label' and (text() = 'Vehicle age
+                                 (years)' or . = 'Vehicle age
+                                 (years)')]</value>
+      <webElementGuid>17dcf157-9745-4284-83d4-2a2ae732f583</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

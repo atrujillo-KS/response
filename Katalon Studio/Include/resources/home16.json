@@ -1,0 +1,683 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How advantageous are extra payments?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the total mortgage interest paid with and without making prepayments for a given set of loan terms. It also calculates how many months it will take to pay off the loan with and without making extra payments. The entire amount of additional payments is applied to amortizing the loan principal."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Some mortgage loans may have a prepayment penalty. Check with your lender to verify whether your loan has such a penalty."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=prepayments",
+      "value": "prepayments"
+    }
+  },
+  {
+    "click": {
+      "id": "link=prepayments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Prepayment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An amount that you pay on your mortgage or other loan that constitutes an additional, unscheduled payment."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=amortizing",
+      "value": "amortizing"
+    }
+  },
+  {
+    "click": {
+      "id": "link=amortizing"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Amortization"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The gradual reduction of loan principal that occurs as you make periodic loan payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=loan principal",
+      "value": "loan principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=loan principal",
+      "value": "loan principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=prepayment penalty",
+      "value": "prepayment penalty"
+    }
+  },
+  {
+    "click": {
+      "id": "link=prepayment penalty"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Prepayment penalty"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A penalty that a lender may charge if you make unscheduled, extra payments on your loan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $37,069 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Extra payments'])[1]/preceding::th[1]",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='No extra payments'])[1]/following::th[1]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$186,512"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$149,443"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_label",
+      "value": "Months until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_value",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff2_result_value",
+      "value": "298"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_label",
+      "value": "Principal and interest payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_value",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt2Home16_result_value",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_label",
+      "value": "Private mortgage insurance (PMI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns2Home16_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_label",
+      "value": "Property taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns2_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$1,428"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home16_result_value",
+      "value": "$1,428"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_label",
+      "value": "Additional principal payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPrincipalPmt_result_value",
+      "value": "$29,800"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "500,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "6.000"
+    }
+  },
+  {
+    "click": {
+      "id": "ExtraPayments-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_ExtraPaymentType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Home_ExtraPaymentType",
+      "value": "label=Lump sum"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='2']"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ExtraPaymentStartYear",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ExtraPaymentStartMonth",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_AdditionalPayment",
+      "value": "200"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxesInsurance-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "5,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $225 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$233,524"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$233,299"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_value",
+      "value": "180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff2_result_value",
+      "value": "180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_value",
+      "value": "$3,797"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt2Home16_result_value",
+      "value": "$3,797"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$149"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns2Home16_result_value",
+      "value": "$149"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$558"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns2_result_value",
+      "value": "$558"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$4,504"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home16_result_value",
+      "value": "$4,504"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPrincipalPmt_result_value",
+      "value": "$200"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "LoanInfo-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_ExtraPaymentsLoanType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Home_ExtraPaymentsLoanType",
+      "value": "label=Existing"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='1']"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_CurrentLoanAmount"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_CurrentLoanAmount",
+      "value": "200,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-server-error']/b",
+      "value": "Please fix the following errors:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-server-error']/p",
+      "value": "Based on your inputs, your loan cannot be paid off. Please adjust your inputs."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_CurrentLoanPayment",
+      "value": "2100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "3.754"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ExistingPMIPayment",
+      "value": "150"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $61 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid_result_value",
+      "value": "$37,826"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2_result_value",
+      "value": "$37,765"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff_result_value",
+      "value": "114"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonUntilPayoff2_result_value",
+      "value": "114"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_value",
+      "value": "$2,100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt2Home16_result_value",
+      "value": "$2,100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns2Home16_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$558"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns2_result_value",
+      "value": "$558"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$2,808"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPmt2Home16_result_value",
+      "value": "$2,808"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_dummyAdditionalPrincipalPmt_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AdditionalPrincipalPmt_result_value",
+      "value": "$200"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "ExtraPayments-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_ExtraPaymentType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Home_ExtraPaymentType",
+      "value": "label=Recurring"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Home_ExtraPaymentType']/option[2]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $4,034 in interest"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_ExtraPaymentFrequency"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Home_ExtraPaymentFrequency",
+      "value": "label=Annual"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Home_ExtraPaymentFrequency']/option"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Making extra payments will save you $413 in interest"
+    }
+  }
+]

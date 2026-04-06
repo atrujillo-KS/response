@@ -1,0 +1,729 @@
+[
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How much will my mortgage payments be?"
+    }
+  },
+  {
+    "verifyTitle": {
+      "value": "Leadfusion Home Calculator"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates your monthly mortgage payment for a given purchase price, down payment, interest rate, and loan term."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "If the loan amount is more than 80% of the home's purchase price, the calculator estimates a monthly amount for private mortgage insurance ( PMI ). Mortgage lenders generally require that you obtain mortgage insurance if your down payment is less than 20% of the home purchase price."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=PMI",
+      "value": "PMI"
+    }
+  },
+  {
+    "click": {
+      "id": "link=PMI"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Private mortgage insurance (PMI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link= down payment",
+      "value": "down payment"
+    }
+  },
+  {
+    "click": {
+      "id": "link= down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Your total payment will be $1,428"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_label",
+      "value": "Principal and interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_value",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_label",
+      "value": "Property taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Breakdown"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Over Time"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td",
+      "value": "$354"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/th",
+      "value": "10 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "$679"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td[2]",
+      "value": "$394"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/th",
+      "value": "20 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/td",
+      "value": "$424"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/td[2]",
+      "value": "$649"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[3]/th",
+      "value": "30 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[3]/td",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[3]/td[2]",
+      "value": "$1,069"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[2]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[4]",
+      "value": "$1,069"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[5]",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[6]",
+      "value": "$186,512"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-label",
+      "value": "Down payment ($50K)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "20.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-error-message",
+      "value": "Must be between 0.000% and 99.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears-error-message",
+      "value": "Must be between 1 and 40 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_LoanTermInYears_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_LoanTermInYears_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_InterestRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_InterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_InterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-label",
+      "value": "Property tax (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "3,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Property tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-label",
+      "value": "Homeowners insurance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Homeowner's insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "500,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_InterestRate",
+      "value": "4.560"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,500"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your total payment will be $5,048"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincAndInt_result_value",
+      "value": "$4,417"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MortIns_result_value",
+      "value": "$89"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxAndIns_result_value",
+      "value": "$542"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,213 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Bond_DesiredYieldToMaturity",
+          "Bond_FaceValue",
+          "Bond_CouponRate",
+          "Bond_MarketRateToday",
+          "Bond_MonthsToMaturity"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Bond_MarketValue"
+        ]
+      ]
+    },
+    "fields": {
+      "Bond_FaceValue": {
+        "fieldLabel": "Face value",
+        "smallLabel": "",
+        "glossaryTerm": "facevalue",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Coupon rate",
+        "smallLabel": "",
+        "glossaryTerm": "couponrate",
+        "format": "percent",
+        "defaultValue": "4.50",
+        "value": "4.50",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Months to maturity",
+        "smallLabel": "",
+        "glossaryTerm": "maturity",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "360",
+        "widgetStep": "6",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_MarketRateToday": {
+        "fieldLabel": "Today's market rate",
+        "smallLabel": "",
+        "glossaryTerm": "marketinterestrate",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Bond_DesiredYieldToMaturity": {
+        "fieldLabel": "Yield to maturity you desire",
+        "smallLabel": "",
+        "glossaryTerm": "ytm",
+        "format": "percent",
+        "defaultValue": "7.00",
+        "value": "7.00",
+        "minimumValue": "0.10",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Bond_MarketValue": {
+        "fieldLabel": "Market value of the bond "
+      }
+    }
+  },
+  "labels": {
+    "title": "What price should I pay?",
+    "answer": "The bond price that provides a <span class='lf-bold'>%rate%%</span> yield to maturity before taxes is <span class='lf-bold'>$%amount%</span>",
+    "dataTableCategory": "Bond Price",
+    "Bond_MarketValue": "Market Value",
+    "Bond_SellingPrice": "Price for Desired YTM",
+    "selectors": [
+      {
+        "label": "Bond price",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Bond price",
+      "definition": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    },
+    "facevalue": {
+      "title": "Face value",
+      "definition": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    },
+    "ytm": {
+      "title": "Yield-to-maturity",
+      "definition": "The interest rate, or internal rate of return (IRR), that makes the cash inflows equal to the price you pay for the bond. Cash inflows are made up of coupon interest and the bond principal when the bond matures."
+    },
+    "couponrate": {
+      "title": "Coupon rate",
+      "definition": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    },
+    "maturity": {
+      "title": "Maturity",
+      "definition": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    },
+    "bonds": {
+      "title": "Bonds",
+      "definition": "A financial asset that represents a claim on the assets of the company or other entity that issued the bond. A bond is a form of an IOU that usually pays interest at a fixed interest rate."
+    },
+    "marketinterestrate": {
+      "title": "Market interest rate",
+      "definition": "The interest rate for bonds with similar risk characteristics and terms to maturity to those of the bond you are selling."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the bond price you need to pay today to obtain a desired yield (before taxes) to maturity.  This bond price is calculated based on the difference in coupon and market rates and the number of months to maturity."
+    },
+    {
+      "textLabel": "Bond prices and interest rates move in opposite directions: If the market interest rate for similar bonds increases, your bond value decreases. Investors are willing to pay less for your bond since they can earn a higher interest rate on similar bonds. If the market interest rate for similar bonds decreases, your bond value increases as investors are willing to pay more for your bond."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the calculated market value of the bond today and the bond price needed to pay today to obtain a desired yield (before taxes) to maturity."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Calculated market value of the bond today and the bond price needed to pay today to obtain a desired yield (before taxes) to maturity"
+    }
+  ]
+}

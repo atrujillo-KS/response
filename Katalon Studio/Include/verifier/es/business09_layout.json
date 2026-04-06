@@ -1,0 +1,215 @@
+{
+  "layout": {
+    "tabs": {
+      "SingleParticipants": {
+        "tabLabel": "PARTICIPANTES DE PLANES INDIVIDUALES"
+      },
+      "FamilyParticipants": {
+        "tabLabel": "PARTICIPANTES DE PLANES FAMILIARES"
+      },
+      "Taxes": {
+        "tabLabel": "IMPUESTOS"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "HDHP con HSA",
+        "Plan tradicional"
+      ]
+    },
+    "fields": {
+      "Business_HDHPWithHSASingleCoverageEmployees": {
+        "fieldLabel": "Cantidad de empleados con cobertura individual",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% employee(s)"
+      },
+      "Business_HDHPWithHSASingleCoverageDeductible": {
+        "fieldLabel": "Deducible del HDHP",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_HDHPWithHSASingleCoveragePremium": {
+        "fieldLabel": "Prima mensual del HDHP",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_SingleCoverageNormalPremium": {
+        "fieldLabel": "Prima normal mensual",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_AverageHSAEmployeeContributionSingle": {
+        "fieldLabel": "Contribución promedio del empleado por cuenta",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_AverageHSAEmployerContributionSingle": {
+        "fieldLabel": "Contribución promedio del empleador por cuenta",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_HDHPWithHSAFamilyCoverageEmployees": {
+        "fieldLabel": "Cantidad de empleados con cobertura familiar",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% employee(s)"
+      },
+      "Business_HDHPWithHSAFamilyCoverageDeductible": {
+        "fieldLabel": "Deducible del HDHP",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_HDHPWithHSAFamilyCoveragePremium": {
+        "fieldLabel": "Prima mensual del HDHP",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_FamilyCoverageNormalPremium": {
+        "fieldLabel": "Prima normal mensual",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_AverageHSAEmployeeContributionFamily": {
+        "fieldLabel": "Contribución promedio del empleado por cuenta",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_AverageHSAEmployerContributionFamily": {
+        "fieldLabel": "Contribución promedio del empleador por cuenta",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue%"
+      },
+      "Business_MarginalTaxRate": {
+        "fieldLabel": "Tasa de impuestos sobre la renta para gastos empresariales"
+      },
+      "Business_FUTAStateUnemploymentTaxRate": {
+        "fieldLabel": "Tasa de impuestos de la Ley federal del impuesto por desempleo y tasa de impuestos estatales por desempleo"
+      }
+    },
+    "results_fields": {
+      "HDHPWithHSATotalAnnualSavings": {
+        "fieldLabel": "Costo total de las primas"
+      },
+      "HDHPWithHSATotalCostOfPremiums": {
+        "fieldLabel": "Costo total de las primas"
+      },
+      "HDHPWithHSATotalCostOfEmployerContributions": {
+        "fieldLabel": "Costo total de las contribuciones del empleador a la HSA"
+      },
+      "ExistingHealthPlanNetTotalAnnualCost": {
+        "fieldLabel": ""
+      },
+      "HDHPWithHSATotalFUTAStateUnemploymentTaxSavings": {
+        "fieldLabel": "Total de ahorros de impuestos en virtud de la Ley federal del impuesto por desempleo (FUTA, por sus siglas en inglés) e impuestos estatales por desempleo"
+      },
+      "ExistingHealthPlanTotalBusinessExpenseTaxSavings": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalCostOfEmployerContributions": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalCostOfPremiums": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanTotalFUTAStateUnemploymentTaxSavings": {
+        "fieldLabel": ""
+      },
+      "HDHPWithHSATotalFICATaxSavings": {
+        "fieldLabel": "Total de ahorros de impuestos en virtud de la Ley federal de contribuciones al seguro (FICA, por sus siglas en inglés)\t"
+      },
+      "HDHPWithHSANetTotalAnnualCost": {
+        "fieldLabel": "Costo anual total neto"
+      },
+      "HDHPWithHSANetTotalAnnualCostPerEmployee": {
+        "fieldLabel": "Costo anual total neto por empleado"
+      },
+      "HDHPWithHSATotalBusinessExpenseTaxSavings": {
+        "fieldLabel": "Total de ahorros de impuestos de gastos de negocios"
+      },
+      "ExistingHealthPlanTotalFICATaxSavings": {
+        "fieldLabel": ""
+      },
+      "ExistingHealthPlanNetTotalAnnualCostPerEmployee": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo neto total",
+    "title": "¿Cuánto puede ahorrar mi negocio ofreciendo a mis empleados un Plan médico de deducible alto (HDHP, por sus siglas en inglés) con una Cuenta de ahorros para la salud (HSA, por sus siglas en inglés)?",
+    "answer": "Un HDHP con una HSA le <span class='lf-bold'>%WHICH%</span>  a su empresa <span class='lf-bold'>%VALUE%</span> al año.",
+    "same_as_answer": "Un HDHP con una HSA le <span class='lf-bold'>costará lo mismo</span> al año.",
+    "selectors": [
+      {
+        "label": "Costo anual total neto",
+        "width": "100%"
+      }
+    ],
+    "chart1_title": "Costo anual total neto",
+    "chart1_subTitle": "",
+    "withHSA": "HDHP con HSA",
+    "traditional": "Plan tradicional",
+    "save": "ahorrara",
+    "cost": "costará"
+  },
+  "glossaryItems": {
+    "hdhpwithhsasinglecoveragepremium": {
+      "title": "Prima del HDHP individual",
+      "definition": "La prima mensual que usted paga, por empleado, por la cobertura individual de un Plan médico de deducible alto (HDHP)."
+    },
+    "averagehsaemployeecontributionfamily": {
+      "title": "Contribución promedio del empleado a la HSA de cobertura familiar",
+      "definition": "La parte del deducible del empleado que el empleado contribuirá a su Cuenta de ahorros para la salud (HSA) con una cobertura familiar del Plan médico de deducible alto (HDHP)."
+    },
+    "futastateunemploymentaxrate": {
+      "title": "Tasa de impuestos de la Ley federal del impuesto por desempleo y tasa de impuestos estatales por desempleo",
+      "definition": "En virtud de la Ley federal del impuesto por Desempleo (FUTA, por sus siglas en inglés), los empleadores deben pagar impuestos federales y/o estatales por desempleo que se utilizan para el pago por compensación por desempleo a los trabajadores que han perdido sus empleos."
+    },
+    "averagehsaemployeecontributionsingle": {
+      "title": "Contribución promedio del empleado a la HSA de cobertura individual",
+      "definition": "La parte del deducible del empleado que el empleado contribuirá a su Cuenta de ahorros para la salud (HSA) con una cobertura individual del HDHP."
+    },
+    "hdhpwithhsafamilycoveragedeductible": {
+      "title": "Deducible del HDHP familiar",
+      "definition": "Su deducible para la cobertura familiar del Plan médico de deducible alto (HDHP). En 2025, monto mínimo deducible es de $3,300 y el gasto de desembolso personal máximo es de $16,600 para cobertura familiar."
+    },
+    "averagehsaemployercontributionfamily": {
+      "title": "Contribución promedio del empleador a la HSA de cobertura familiar",
+      "definition": "La parte del deducible del empleado que el empleador contribuirá a su Cuenta de ahorros para la salud (HSA) con una cobertura familiar del Plan médico de deducible alto (HDHP)."
+    },
+    "hdhpwithhsasinglecoveragedeductible": {
+      "title": "Deducible del HDHP individual",
+      "definition": "Su deducible por la cobertura individual de un Plan médico de deducible alto (HDHP). En 2025, el monto mínimo deducible es de $1,650 y el gasto de desembolso personal máximo es de $8,300 para cobertura individual."
+    },
+    "hdhpwithhsafamilycoverageemployees": {
+      "title": "Empleados con cobertura familiar",
+      "definition": "¿Cuántos empleados casados participarían en el Plan médico de deducible alto (HDHP) y Cuentas de ahorros para la salud (HSA)?"
+    },
+    "hdhpwithhsafamilycoveragepremium": {
+      "title": "Prima del HDHP familiar",
+      "definition": "La prima mensual que usted paga, por empleado, por la cobertura familiar de un Plan médico de deducible alto (HDHP)."
+    },
+    "hdhpwithhsasinglecoverageemployees": {
+      "title": "Empleados con cobertura individual",
+      "definition": "¿Cuántos empleados con cobertura individual participarían en el Plan médico de deducible alto (HDHP) y Cuentas de ahorros para la salud (HSA)?"
+    },
+    "averagehsaemployercontributionsingle": {
+      "title": "Contribución promedio del empleador a la HSA de cobertura individual",
+      "definition": "La parte del deducible del empleado que el empleador contribuirá a la Cuenta de ahorros para la salud (HSA) con una cobertura individual del Plan médico de deducible alto (HDHP)."
+    },
+    "singlecoveragenormalpremium": {
+      "title": "Prima de un plan de salud tradicional individual",
+      "definition": "La prima mensual que usted paga, por empleado, por la cobertura individual de un plan de salud tradicional."
+    },
+    "familycoveragenormalpremium": {
+      "title": "Prima de un plan de salud tradicional familiar",
+      "definition": "La prima mensual que usted paga, por empleado, por la cobertura familiar de un plan de salud tradicional."
+    },
+    "marginaltaxratebusiness": {
+      "title": "Tasa de impuestos sobre la renta para gastos empresariales",
+      "definition": "La tasa marginal de impuestos sobre la renta para su empresa."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora ayuda a estimar el valor de ofrecer un Plan médico de deducible alto (HDHP) con Cuentas de ahorros para la salud (HSA) para sus empleados. Proporcionar un plan de este tipo no solo permite que sus empleados paguen ciertos gastos médicos con dinero libre de impuestos federales sino que también puede reducir los costos de las primas de su empresa."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo total neto del HDHP con la HSA y el plan tradicional."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total neto del HDHP con HSA y el plan tradicional"
+    }
+  ]
+}

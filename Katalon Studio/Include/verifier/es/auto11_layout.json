@@ -1,0 +1,145 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Auto_MonthlyPayment": {
+        "fieldLabel": "Pago mensual"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Valor de recompra"
+      }
+    },
+    "results_fields": {
+      "LoanAmount11": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Valor de recompra"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Qué vehículo está a mi alcance?",
+    "answer": "Usted puede acceder a un vehículo que cueste hasta <span class='lf-bold'>%result%</span>",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "dataTableCategoryTitle2": "Año",
+    "year": "Año:",
+    "downPayment": "Cuota inicial",
+    "loanAmount": "Importe del préstamo",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Desglose",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "En el tiempo ",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "tradeinvalue": {
+      "title": "Valor como parte de pago",
+      "definition": "Precio que usted puede esperar que le ofrezcan por su automóvil usado si lo entrega al concesionario como parte del pago para comprar un vehículo nuevo."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "cashrebate": {
+      "title": "Reembolso de efectivo",
+      "definition": "Oferta a los consumidores, que se hace como incentivo para la compra, que reduce el precio de compra de un bien en una cantidad equivalente al monto del reembolso en efectivo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa el costo de un vehículo que usted puede pagar, sobre la base de su pago inicial, el valor que puede entregar a cambio, los descuentos en efectivo disponibles y plazos del préstamo. "
+    },
+    {
+      "textLabel": "Los principales supuestos que utiliza esta calculadora son los siguientes: "
+    },
+    {
+      "textLabel": "El costo calculado del vehículo representa el “precio de etiqueta” máximo que usted puede permitirse pagar sobre la base de los datos que introdujo. El total no incluye el impuesto sobre la venta y otros cargos que podrían estar asociados a la compra del vehículo."
+    },
+    {
+      "textLabel": "El valor que puede entregar a cambio y los descuentos en efectivo disponibles se suman al pago inicial del vehículo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del precio máximo de compra."
+    },
+    {
+      "title": "Gráfico de columnas apiladas de los montos aplicados al principal y los intereses en diferentes intervalos durante el transcurso del plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del precio máximo de compra"
+    },
+    {
+      "title": "Importes aplicados al principal y los intereses en diferentes intervalos durante el plazo del préstamo"
+    }
+  ]
+}

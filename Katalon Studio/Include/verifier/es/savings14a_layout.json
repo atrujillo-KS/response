@@ -1,0 +1,67 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Savings_Goal": {
+        "fieldLabel": "Meta de ahorro"
+      },
+      "Savings_RecurringDeposits": {
+        "fieldLabel": "Depósitos recurrentes"
+      },
+      "Savings_DepositFrequencyTwo": {
+        "fieldLabel": "Frecuencia de depósito",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Invertido(a) durante años",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Savings_MonthsInvested": {
+        "fieldLabel": "y meses",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto debo depositar ahora para alcanzar mi meta de ahorro?",
+    "answer": "Usted deberá depositar <span class='lf-bold'>%result%</span> ahora",
+    "interest": "Intereses",
+    "startingBalance": "Depósito inicial ",
+    "contributions": "Aportes"
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar el monto inicial que necesitará para hacer un depósito inicial para cumplir con un objetivo de ahorro. Debido a que no ingresa tasas de impuestos sobre la renta, la calculadora supone que usted ahorra con una cuenta con ventajas de impuestos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose de esa meta de ahorro por interés devengado, depósito inicial y depósitos totales recurrentes necesarios."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose de esa meta de ahorro por los intereses devengados, el depósito inicial y el total de depósitos recurrentes necesarios"
+    }
+  ]
+}

@@ -1,0 +1,1318 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I consolidate my debts?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This calculator shows the difference in the monthly payments, total interest, and total tax savings of your existing loans and credit cards with a new loan into which all your debts are consolidated. The total cost difference is discounted back to the present using your after-tax savings rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Note: You may be better off not including loans which will be paid off sooner than your proposed consolidation loan, even if their interest rate is higher than the consolidation loan's rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "The preferred types of consolidation loans are home equity loans and home equity lines of credit because the interest portions of such loans generally are tax-deductible. In comparison, personal loans and personal lines of credit usually do not offer any tax benefits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=home equity loans",
+      "value": "home equity loans"
+    }
+  },
+  {
+    "click": {
+      "id": "link=home equity loans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Home equity loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An amortizing mortgage loan that allows homeowners to borrow against the equity in the home for making home improvements, consolidating debt, or spending for general purposes."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=home equity lines of credit",
+      "value": "home equity lines of credit"
+    }
+  },
+  {
+    "click": {
+      "id": "link=home equity lines of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Home equity line of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A form of revolving credit, secured by the equity in your home, that enables you to borrow an amount up to but not exceeding a pre-approved credit limit. Unlike a home-equity loan, payments are flexible and may consist of interest-only payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=personal loans",
+      "value": "personal loans"
+    }
+  },
+  {
+    "click": {
+      "id": "link=personal loans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Personal loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An unsecured loan with fixed payments that may or may not have a personal guarantee."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=personal lines of credit",
+      "value": "personal lines of credit"
+    }
+  },
+  {
+    "click": {
+      "id": "link=personal lines of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Personal line of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "An unsecured line of credit that allows you to borrow an amount up to but not exceeding a pre-approved credit limit. Unlike a personal loan, payments are flexible and may consist of interest-only payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $348 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Existing Debts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Consolidation Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtMonthlyPayment_result_label",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtMonthlyPayment_result_value",
+      "value": "$624"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationMonthlyPayment_result_value",
+      "value": "$276"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalInterest_result_label",
+      "value": "Total interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalInterest_result_value",
+      "value": "$4,387"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalInterest_result_value",
+      "value": "$521"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTaxSavings_result_label",
+      "value": "Total tax savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalCost_result_label",
+      "value": "Total cost in today's dollars"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalCost_result_value",
+      "value": "$10,487"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalCost_result_value",
+      "value": "$6,996"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Total Costs"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Loans-tab-label",
+      "value": "Loans"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Loans-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loans-page-title']/h2",
+      "value": "Your existing installment loans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loans-details']/div[2]/span",
+      "value": "Enter information for all existing installment loans that you intend to consolidate into one loan or line of credit."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loans-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Amount owed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loans-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Loans-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Months left"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LoanOneAmountOwed_label']/span[2]",
+      "value": "Auto loan 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanOneAmountOwed",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanOneAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "375"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanOneMonthlyPayment-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanOneMonthsLeft",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanOneMonthsLeft-error-message",
+      "value": "Must be between 0 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LoanTwoAmountOwed_label']/span",
+      "value": "Auto loan 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanTwoAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanTwoAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanTwoMonthlyPayment-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanTwoMonthsLeft",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanTwoMonthsLeft-error-message",
+      "value": "Must be between 0 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LoanThreeAmountOwed_label']/span",
+      "value": "Boat/RV loan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanThreeAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanThreeAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanThreeMonthlyPayment-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LoanFourAmountOwed_label']/span",
+      "value": "Education loan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanThreeMonthsLeft",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanThreeMonthsLeft-error-message",
+      "value": "Must be between 0 and 360"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFourAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanFourAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFourMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFourMonthsLeft",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanFourMonthsLeft-error-message",
+      "value": "Must be between 0 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LoanFiveAmountOwed_label']/span",
+      "value": "Other loans"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFiveAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanFiveAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFiveMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanFiveMonthlyPayment-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LoanFiveMonthsLeft",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LoanFiveMonthsLeft-error-message",
+      "value": "Must be between 0 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-CreditCards-tab-label",
+      "value": "Credit Cards"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CreditCards-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next >'])[1]/following::h2[1]",
+      "value": "Your existing credit cards and lines of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your existing credit cards and lines of credit'])[1]/following::span[1]",
+      "value": "Enter information for all existing credit cards and lines of credit that you intend to consolidate into one loan or line of credit."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf-CreditCards-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Amount owed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-CreditCards-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LineofCreditOneAmountOwed_label']/span[2]",
+      "value": "Credit card 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditOneAmountOwed",
+      "value": "3,600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditOneAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditOneInterestRate",
+      "value": "15.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditOneInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LineofCreditTwoAmountOwed_label']/span",
+      "value": "Credit card 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditTwoAmountOwed",
+      "value": "1,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditTwoAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditTwoInterestRate",
+      "value": "19.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditTwoInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LineofCreditThreeAmountOwed_label']/span",
+      "value": "Credit card 3"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditThreeAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditThreeAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditThreeInterestRate",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditThreeInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LineofCreditFourAmountOwed_label']/span",
+      "value": "Other Account 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditFourAmountOwed",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditFourAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditFourInterestRate",
+      "value": "14.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditFourInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Global_LineofCreditFiveAmountOwed_label']/span",
+      "value": "Other Account 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditFiveAmountOwed",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditFiveAmountOwed-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LineofCreditFiveInterestRate",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LineofCreditFiveInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-ConsolidationLoan-tab-label",
+      "value": "Consolidation Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ConsolidationLoan-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next >'])[2]/following::h2[1]",
+      "value": "Consolidation Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Consolidation Loan'])[3]/following::span[1]",
+      "value": "Enter information for the loan or line of credit into which you would like to consolidate your debt."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanType_label",
+      "value": "Loan type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanType",
+      "value": "Home equity line of credit Home equity loan Personal line of credit Personal loan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ConsolidationLoanType",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanInterestRate_field_label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ConsolidationLoanInterestRate",
+      "value": "8.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_ConsolidationLoanInterestRate_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_ConsolidationLoanInterestRate_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff_label",
+      "value": "Months to pay off"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts_label",
+      "value": "Upfront costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts",
+      "value": "375"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints_field_label",
+      "value": "Discount points"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints-error-message",
+      "value": "Must be between 0.000% and 100.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_ConsolidationLoanDiscountPoints_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_ConsolidationLoanDiscountPoints_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Charge for specific interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_field_label",
+      "value": "Your state & federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate_field_label",
+      "value": "Your savings rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_SavingsInterestRate_label']/a/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+    {
+    "click": {
+      "id": "lf-Loans-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $348 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Loans-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneAmountOwed",
+      "value": "6,500"
+    }
+  },
+    {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors: Based on the Amount owed, Monthly payment, and Months left that you input for your 1st Existing debt, the interest rate would result in a negative value."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthlyPayment",
+      "value": "575"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanOneMonthsLeft",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoAmountOwed",
+      "value": "1,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LoanTwoMonthlyPayment"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors: The amount you entered in the 2nd \"Monthly Payment\" input box must be greater than 0.0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "200"
+    }
+  },
+    {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-server-error",
+      "value": "Please fix the following errors: Please enter another value for the 2nd \"Months Left\" input box. 0 is too short."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_LoanTwoMonthlyPayment"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthlyPayment",
+      "value": "370"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanTwoMonthsLeft",
+      "value": "7"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeAmountOwed",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthlyPayment",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanThreeMonthsLeft",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourAmountOwed",
+      "value": "50,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthlyPayment",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFourMonthsLeft",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveAmountOwed",
+      "value": "4,555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthlyPayment",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LoanFiveMonthsLeft",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-CreditCards-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneAmountOwed",
+      "value": "4,600"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditOneInterestRate",
+      "value": "12.455"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoAmountOwed",
+      "value": "1,300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditTwoInterestRate",
+      "value": "15.999"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeAmountOwed",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditThreeInterestRate",
+      "value": "0.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFourInterestRate",
+      "value": "8.999"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveAmountOwed",
+      "value": "1,253"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LineofCreditFiveInterestRate",
+      "value": "0.999"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ConsolidationLoan-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ConsolidationLoanType"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_ConsolidationLoanType",
+      "value": "label=Home equity loan"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanInterestRate",
+      "value": "5.455"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanMonthstoPayoff",
+      "value": "26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanUpfrontCosts",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ConsolidationLoanDiscountPoints",
+      "value": "0.001"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.55"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Consolidating your debts will save you $2,292 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtMonthlyPayment_result_value",
+      "value": "$5,815"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationMonthlyPayment_result_value",
+      "value": "$3,523"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalInterest_result_value",
+      "value": "$14,632"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalInterest_result_value",
+      "value": "$5,390"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTaxSavings_result_value",
+      "value": "$1,377"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ExistingDebtTotalCost_result_value",
+      "value": "$100,840"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ConsolidationTotalCost_result_value",
+      "value": "$90,722"
+    }
+  },
+     {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

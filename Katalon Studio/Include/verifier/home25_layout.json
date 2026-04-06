@@ -1,0 +1,201 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CreditCardInfo",
+        "Projections"
+      ],
+      "CreditCardInfo": {
+        "tabLabel": "GROSS MONTHLY INCOME",
+        "fields": [
+          "Global_MonthlyGrossIncome"
+        ]
+      },
+      "Projections": {
+        "tabLabel": "MONTHLY MORTGAGE PAYMENT",
+        "fields": [
+          "Home_PrincipalAndInterestPayment",
+          "Home_MonthlyPropertyTax",
+          "Home_MonthlyHomeownersInsurance",
+          "Home_PMI",
+          "Home_MonthlyHOA",
+          "Home_OtherMonthlyPayments"
+        ]
+      }
+    },
+    "results_fields": {
+      "Home25_HousingExpenseRatio_Output": {
+        "precision": 0
+      }
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Wages before taxes and deductions",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "6000",
+        "value": "6000",
+        "minimumValue": "0",
+        "maxlength": "10",
+        "maximumValue": "10000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "errorMessage": "Must be between $1 and $%maximumValue% "
+      },
+      "Home_PrincipalAndInterestPayment": {
+        "fieldLabel": "Principal and interest",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "1300",
+        "value": "1300",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "200",
+        "format": "currency"
+      },
+      "Home_MonthlyPropertyTax": {
+        "fieldLabel": "Property tax",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "300",
+        "value": "300",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "maxlength": "9",
+        "safeType": "number",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "widgetStep": "200",
+        "format": "currency"
+      },
+      "Home_MonthlyHomeownersInsurance": {
+        "fieldLabel": "Homeowner's insurance",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "100",
+        "value": "100",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "maxlength": "9",
+        "safeType": "number",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "widgetStep": "200",
+        "format": "currency"
+      },
+      "Home_PMI": {
+        "fieldLabel": "Private mortgage insurance",
+        "smallLabel": "(PMI)",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "maxlength": "10",
+        "safeType": "number",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "widgetStep": "200",
+        "format": "currency"
+      },
+      "Home_MonthlyHOA": {
+        "fieldLabel": "HOA",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "maxlength": "9",
+        "safeType": "number",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "widgetStep": "200",
+        "format": "currency"
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Other payments",
+        "glossaryTerm": "OtherMonthlyPayments",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "What is my housing expense ratio?",
+    "answer": "<h2 class='lf-graph-text'>Based on a gross monthly income of <span class='lf-bold'>$%result1%</span> and a monthly mortgage payment of <span class='lf-bold'>$%result2%</span> <span class='lf-bold'>your estimated housing expense ratio is %result3%%</span></h2>",
+    "selectors": []
+  },
+  "glossaryItems": {
+    "OtherMonthlyPayments": {
+      "title": "Other monthly payments",
+      "definition": "Include any recurring payments related to maintenance, property management, utility bills, etc."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The housing ratio, or \"front-end ratio\", measures the amount of your total monthly housing payment (including principal, interest, property taxes, homeowners insurance, mortgage insurance, and HOA fees) as a percentage of your monthly gross income. The housing ratio is one of two ratios, the other being the debt-to-income ratio, commonly used by lenders to determine whether a mortgage applicant can afford a mortgage loan. Lenders typically prefer to see a housing ratio of 28% or less."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

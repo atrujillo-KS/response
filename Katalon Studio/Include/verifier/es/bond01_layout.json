@@ -1,0 +1,188 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "BÁSICO"
+      },
+      "advanced": {
+        "tabLabel": "AVANZADO"
+      }
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio que pagó",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_MonthsToMaturity": {
+        "fieldLabel": "Meses hasta el vencimiento"
+      },
+      "Bond_CouponIncomeSpendingOption": {
+        "fieldLabel": "Su ingreso por cupones",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gasta cuando se recibe"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results_fields": {
+      "Bond_RateOfReturnBeforeTaxes": {
+        "fieldLabel": "Rendimiento al vencimiento antes de impuestos"
+      },
+      "Bond_RateOfReturnAfterTaxes": {
+        "fieldLabel": "Rendimiento al vencimiento después de impuestos"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuál es mi rendimiento al vencimiento?",
+    "answer": "Su rendimiento al vencimiento después de impuestos es del <span class='lf-bold'>%rate%</span>.",
+    "Bond_RateOfReturnBeforeTaxes": "Antes de impuestos",
+    "Bond_RateOfReturnAfterTaxes": "Después de impuestos",
+    "dataTableCategory": "Rendimiento (%)",
+    "dataTableCategoryTitle2": "Precio de Compra (% del valor nominal)",
+    "price": "Precio",
+    "Yield": "Rendimiento",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Relación entre rendimiento y precio",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "yAxisLabelForChartOptions1": "Rendimiento al vencimiento (%)",
+    "xAxisLabelForChartOptions2": "Precio de compra (% del valor nominal)",
+    "yAxisLabelForChartOptions2": "Rendimiento al vencimiento (%)"
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    },
+    "couponinterest": {
+      "title": "Coupon interest",
+      "definition": "Coupon interest is the interest income you earn a bond. Annual coupon interest is equal to the bond coupon rate times its face value. For example, coupon interest on a 6% $1,000 bond is $60. Most bonds pay coupons on a semi-annual basis. This means that, instead of receiving one payment of $60 a year, you receive two payments of $30 a year."
+    },
+    "ytm": {
+      "title": "Rendimiento al vencimiento",
+      "definition": "La tasa de interés, o tasa de rendimiento interna (IRR, por sus siglas en inglés), que hace que la entrada de efectivo sea igual al precio que se paga por el bono. Las entradas de efectivo consisten en el interés del cupón y el capital del bono cuando este llega a su vencimiento."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "maturity": {
+      "title": "Vencimiento",
+      "definition": "Préstamos: El vencimiento es el fin del plazo de un préstamo cuando el monto completo se devuelve en su totalidad al prestamista. Bonos: El vencimiento es la fecha en la que el valor nominal del bono se devuelve a los inversores."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#YTM\">rendimiento al vencimiento</a></span>, o la tasa de rendimiento, antes y después de impuestos, que usted gana de un bono si lo mantiene hasta el vencimiento. El rendimiento al vencimiento supone que los cupones de interés que usted recibe sobre el bono se pueden reinvertir a la misma tasa."
+    },
+    {
+      "textLabel": "Dependiendo del tipo de bonos que se comparen, los impuestos aplicados a los pagos de cupones variarán. Los valores del Tesoro están exentos de impuestos estatales sobre la renta. Los bonos municipales están exentos de impuestos federales sobre la renta. En algunos casos, también están exentos de impuestos estatales sobre la renta."
+    },
+    {
+      "textLabel": "Las tasas de rendimiento después de impuestos son estimaciones basadas en las leyes tributarias actuales."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del rendimiento del bono al vencimiento antes y después de impuestos."
+    },
+    {
+      "title": "Gráfico de columnas apiladas de la relación inversa entre el rendimiento de un bono y el vencimiento y el precio. A medida que suben los precios de los bonos, los rendimientos caen. A medida que bajan los precios de los bonos, aumentan los rendimientos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento del bono al vencimiento antes y después de impuestos"
+    },
+    {
+      "title": "Relación inversa del rendimiento de un bono al vencimiento y al precio. A medida que suben los precios de los bonos, los rendimientos caen. A medida que bajan los precios de los bonos, aumentan los rendimientos"
+    }
+  ]
+}

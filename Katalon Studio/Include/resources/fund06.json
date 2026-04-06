@@ -1,0 +1,908 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I wait a year to sell my fund shares?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates the difference in your annual rate of return if you hold your mutual fund shares long enough to qualify for the preferential long-term capital gains tax rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Shares held longer than one year are taxed at the preferential long-term capital gains tax rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "A mutual fund distributes capital gains and dividends to its shareholders. Capital gains distributions are taxed at the long- or short-term capital gains tax rate depending on the type of distribution. Dividend distributions are taxed at a special dividend tax rate, which is equal to the long-term capital gains tax rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "click": {
+      "id": "link=rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=capital gains tax rate",
+      "value": "capital gains tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=mutual fund",
+      "value": "mutual fund"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=capital gains",
+      "value": "capital gains"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=dividends",
+      "value": "dividends"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling your shares after a year will earn a higher return."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='after'])[2]/following::th[1]",
+      "value": "Taxes paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxes paid'])[1]/following::th[1]",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesBeforeOneYear_result_label",
+      "value": "If you sell one day before 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesBeforeOneYear_result_value",
+      "value": "$382.48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxes_result_value",
+      "value": "13.85%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesAfterOneYear_result_label",
+      "value": "If you sell one day after 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesAfterOneYear_result_value",
+      "value": "$251.85"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxes_result_value",
+      "value": "15.16%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Return %']/parent::*",
+      "value": "Return %"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Taxes Paid"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container2']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Investment-accordion",
+      "value": "Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePurchasePrice-error-message",
+      "value": "Must be between $0.100 and $1,000,000.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharesPurchased-error-message",
+      "value": "Must be between 1.00 and 10,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_YearlySharePriceIncrease-label",
+      "value": "Yearly share price increase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_YearlySharePriceIncrease",
+      "value": "8.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_YearlySharePriceIncrease-error-message",
+      "value": "Must be between 0.000% and 1,000.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment-label",
+      "value": "Additional investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "Biweekly Monthly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesTaxes-accordion",
+      "value": "Fees & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FrontendLoad-label",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FrontendLoad-error-message",
+      "value": "Must be between 0.000% and 25.000%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_FrontendLoad_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A fee you pay when you buy shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are investing."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_BackendLoad-label",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_BackendLoad-error-message",
+      "value": "Must be between 0.000% and 25.000%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_BackendLoad_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A fee you pay when you sell shares of a mutual fund. The load is calculated as a percentage of the dollar amount you are selling."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_TaxFilingStatus_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Income-accordion",
+      "value": "Income"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (long term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-error-message",
+      "value": "Must be between $0.00 and $1,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Capital gain"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (short term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare-error-message",
+      "value": "Must be between $0.00 and $1,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Capital gain"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An increase in the value of a capital asset that you own. The IRS defines a capital asset as almost everything you use for personal purposes or investment, including stocks and bonds, your home, personal property, and collectibles."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (fed tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (state tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (non-taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividends"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A distribution of profits that companies and mutual funds make to shareholders. Dividends are taxed as long-term capital gains and are often paid to shareholders on a quarterly basis."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption-label",
+      "value": "Dividends & gains are"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "Spent when received Reinvested in the fund Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Fund_SharePurchasePrice"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "15.489"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "1,233.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlySharePriceIncrease",
+      "value": "4.159"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "1,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Monthly"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "4.258"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "2.159"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing separately"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "159,444"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.49"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.46"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.89"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "14"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "label=Reinvested in the fund"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling your shares before a year will earn a higher return."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesBeforeOneYear_result_value",
+      "value": "$105,993.85"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxes_result_value",
+      "value": "535.86%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxesAfterOneYear_result_value",
+      "value": "$99,826.55"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxes_result_value",
+      "value": "535.86%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

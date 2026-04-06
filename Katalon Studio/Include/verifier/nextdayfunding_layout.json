@@ -1,0 +1,144 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Commercial_DailyCardProcessingSales",
+          "Commercial_CurrentCardPaymentFundingDays",
+          "Commercial_AnnualCostOfCapital"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [],
+      "fields": [
+        [
+          "Commercial_AnnualReturnNextDayCardPaymentFunding"
+        ]
+      ]
+    },
+    "columnHeaders": [],
+    "results_fields": {
+      "Commercial_AnnualReturnNextDayCardPaymentFunding": {
+        "fieldLabel": "Estimated annual return with next day card payment funding"
+      }
+    },
+    "fields": {
+      "Commercial_DailyCardProcessingSales": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Daily card processing sales",
+        "defaultValue": "2500",
+        "glossaryTerm": "dailycardprocessingsales",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "100000",
+        "value": "2500",
+        "format": "currency"
+      },
+      "Commercial_CurrentCardPaymentFundingDays": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Current number of days for card payment funding",
+        "valueTextLabel": "days",
+        "defaultValue": "4",
+        "glossaryTerm": "daysforcardpaymentfunding",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "90",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "90",
+        "widgetStep": "1",
+        "value": "4",
+        "format": "number"
+      },
+      "Commercial_AnnualCostOfCapital": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual cost of capital",
+        "defaultValue": "50.00",
+        "glossaryTerm": "annualcostofcapital",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "1.00",
+        "sliderMaxVal": "100.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1.00",
+        "maximumValue": "100.00",
+        "widgetStep": "1",
+        "value": "50.00",
+        "format": "percent"
+      }
+    }
+  },
+  "labels": {
+    "title": "What is my estimated annual return with next day card payment funding?",
+    "answer": "Your estimated annual return is <span class='lf-bold'>$%amount%</span>",
+    "selectors": [
+      {
+        "label": "Estimated annual return with next day card payment funding",
+        "width": "50%",
+        "first": true
+      }
+    ],
+    "return": "Annual return",
+    "total": "Total",
+    "note": "NOTE: If you don't accept cards, you can still calculate what your potential increased cash flow could be if you accepted cards and had next-day funding from PNC Merchant Services®. To do this, just indicate your current payment terms (example net 30, 60, 90) as the current number of days for card payment funding.",
+    "annualCostWithNextDay": "Annual cost of capital with next day finding",
+    "annualCostWithCurrentDay": "Annual cost of capital with %numberOfdays% days funding"
+  },
+  "glossaryItems": {
+    "dailycardprocessingsales": {
+      "title": "Daily card processing sales",
+      "definition": "The total dollar amount of card payments the business receives on a daily basis."
+    },
+    "annualcostofcapital": {
+      "title": "Annual cost of capital",
+      "definition": "The weighted average of a business cost of debt as well as its cost of equity."
+    },
+    "daysforcardpaymentfunding": {
+      "title": "Days for card payment funding",
+      "definition": "The number of days it takes for card processing sales to be credited to the business account."
+    },
+    "custommonthlypayment": {
+      "title": "Monthly Payment",
+      "definition": "Minimum payment is $100 or 1.5% of outstanding debt, whichever is greater. Choose a payment amount to see how it impacts the pay-off time."
+    }
+  },
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Column chart of the estimated annual return with next day card payment funding."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Estimated annual return with next day card payment funding"
+    }
+  ]
+}

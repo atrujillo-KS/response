@@ -1,0 +1,208 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CreditCardInfo",
+        "Projections"
+      ],
+      "CreditCardInfo": {
+        "tabLabel": "GROSS MONTHLY INCOME",
+        "fields": [
+          "Global_MonthlyGrossIncome"
+        ]
+      },
+      "Projections": {
+        "tabLabel": "RECURRING MONTHLY DEBTS",
+        "fields": [
+          "Home_MonthlyRent",
+          "Home_CreditCardPayments",
+          "Home_AutoLoanPayments",
+          "Home_MonthlyStudentLoanPayments",
+          "Global_OtherMonthlyLoanAmounts",
+          "Home_OtherMonthlyPayments"
+        ]
+      }
+    },
+    "results_fields": {
+      "Home24_DTIRatio_Output": {
+        "precision": 0
+      }
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Wages before taxes and deductions",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "6000",
+        "value": "6000",
+        "minimumValue": "0",
+        "maxlength": "10",
+        "maximumValue": "10000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "200",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "errorMessage": "Must be between $1 and $%maximumValue% "
+      },
+      "Home_MonthlyRent": {
+        "fieldLabel": "Rent or mortgage",
+        "glossaryTerm": "MonthlyRent",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "1300",
+        "value": "1300",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      },
+      "Home_CreditCardPayments": {
+        "fieldLabel": "Credit card",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      },
+      "Home_AutoLoanPayments": {
+        "fieldLabel": "Auto loans",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "300",
+        "value": "300",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      },
+      "Home_MonthlyStudentLoanPayments": {
+        "fieldLabel": "Student loans",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "100",
+        "value": "100",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      },
+      "Global_OtherMonthlyLoanAmounts": {
+        "fieldLabel": "Other loans",
+        "glossaryTerm": "",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "200000",
+        "widgetStep": "100",
+        "format": "currency"
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Other payments",
+        "glossaryTerm": "OtherMonthlyPaymentsDTI",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "0",
+        "value": "0",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "widgetStep": "100",
+        "format": "currency"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "What is my debt-to-Income (DTI) ratio?",
+    "answer": "<h2 class='lf-graph-text'>Based on a gross monthly income of <span class='lf-bold'>$%result1%</span> and a total of <span class='lf-bold'>$%result2%</span> in recurring monthly debts <span class='lf-bold'>your estimated DTI ratio is %result3%%</span></h2>",
+    "selectors": []
+  },
+  "glossaryItems": {
+    "MonthlyRent": {
+      "title": "Monthly rent",
+      "definition": "Include any property taxes, HOA fees, homeowner's insurance, renter's insurance, etc."
+    },
+    "OtherMonthlyPaymentsDTI": {
+      "title": "Other monthly payments",
+      "definition": "Include any alimony, child support and other recurring financial obligations.  However, monthly expenses such as utilities and groceries are not typically included in determining your DTI ratio."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your debt-to-income (DTI) ratio or \"back-end ratio\". DTI is used by lenders to approve loan applicants. The debt-to-income ratio equals your combined monthly debt payments divided by gross monthly income."
+    },
+    {
+      "textLabel": "Mortgage lenders regularly use a DTI ratio of 36% or lower as a guideline to approve home loans. DTI guidelines change over the course of the economic cycle. When the economy is strong, lenders tend to raise the ratio, making it easier to obtain a loan. When the economy is weak, lenders tend to lower the ratio, making it harder to obtain a loan. A weaker economy leads to lower interest rates, which makes it somewhat easier to qualify."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

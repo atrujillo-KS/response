@@ -1,0 +1,874 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How does a HDHP with a HSA compare to a traditional plan?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares the cost of a high-deductible health plan with a health savings account to a traditional health plan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "For IRS help concerning health savings accounts, refer to IRS Publication 969 and IRS Publication 502."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=IRS Publication 969",
+      "value": "IRS Publication 969"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=IRS Publication 502",
+      "value": "IRS Publication 502"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "An HDHP with an HSA would save you $4,898"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "HDHP with HSA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Traditional plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "HDHP with HSA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Traditional plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPCoinsuranceCosts_result_label",
+      "value": "Insurance cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPCoinsuranceCosts_result_value",
+      "value": "$3,600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradCoinsuranceCosts_result_value",
+      "value": "$9,600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductibleMet_result_label",
+      "value": "Deductible cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductibleMet_result_value",
+      "value": "$1,620"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradDeductibleMet_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPInsCost_result_label",
+      "value": "Co-insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPInsCost_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradInsCost_result_value",
+      "value": "$18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDoctorCopay_result_label",
+      "value": "Co-pays"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDoctorCopay_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradDoctorCopay_result_value",
+      "value": "$50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTotalGross_result_label",
+      "value": "Gross cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTotalGross_result_value",
+      "value": "$5,220"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradTotalGross_result_value",
+      "value": "$9,668"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTaxSavings_result_label",
+      "value": "Tax savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTaxSavings_result_value",
+      "value": "−$450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPNetCost_result_value",
+      "value": "$4,770"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradNetCost_result_value",
+      "value": "$9,668"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Net cost of the HDHP with HSA and the traditional health plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "HDHP with HSA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Traditional plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Net Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$4,770"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$9,668"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-GeneralInfo-tab-label",
+      "value": "General Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-GeneralInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-GeneralInfo-page-title']/h2",
+      "value": "General information"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnualPrescriptions",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnualPrescriptions-error-message",
+      "value": "Must be between 0 and 500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnualDoctorVisits_field_label",
+      "value": "Yearly doctor visits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnualDoctorVisits",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnualDoctorVisits-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FedTaxRate_field_label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FedTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-PlanInfo-tab-label",
+      "value": "Plan Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PlanInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-page-title']/h2",
+      "value": "Plan information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "HDHP qualified plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Traditional health plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPPremium_label']/span[2]",
+      "value": "Monthly premium"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPPremium",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPPremium-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradPremium",
+      "value": "800"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradPremium-error-message",
+      "value": "Must be between $0 and $2,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPDeductible_label']/span",
+      "value": "Yearly deductible"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPDeductible",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductible-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradDeductible",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradDeductible-error-message",
+      "value": "Must be between $0 and $15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPOOP_label",
+      "value": "Yearly maximum out-of-pocket expense"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPOOP",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPOOP-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradOOP",
+      "value": "2,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradOOP-error-message",
+      "value": "Must be between $0 and $25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPPrescriptionCopay_label']/span",
+      "value": "Prescription co-pay"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPPrescriptionCopay",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPPrescriptionCopay-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradPrescriptionCopay",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradPrescriptionCopay-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPMDVisit_label']/span",
+      "value": "Doctor visit co-pay"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPMDVisit",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPMDVisit-error-message",
+      "value": "Must be between $0 and $500"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradMDVisit",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradMDVisit-error-message",
+      "value": "Must be between $0 and $100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPMDAvgCost_label']/span",
+      "value": "Average cost of doctor visit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPMDAvgCost",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPMDAvgCost-error-message",
+      "value": "Must be between $0 and $500"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradMDAvgCost",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradMDAvgCost-error-message",
+      "value": "Must be between $0 and $500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPEstMedExp_label']/span",
+      "value": "Other estimated medical expenses"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPEstMedExp",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPEstMedExp-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradEstMedExp",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradEstMedExp-error-message",
+      "value": "Must be between $0 and $500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPCoins_label']/span",
+      "value": "Co-insurance rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPCoins",
+      "value": "70.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPCoins-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TradCoins",
+      "value": "90.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradCoins-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HDHPContribution_label']/span",
+      "value": "Monthly HSA contribution"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HDHPContribution",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPContribution-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-GeneralInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AnnualPrescriptions",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AnnualDoctorVisits",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_FedTaxRate",
+      "value": "20.45"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PlanInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPPremium",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPDeductible",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPOOP",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPPrescriptionCopay",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPMDVisit",
+      "value": "40"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPMDAvgCost",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPEstMedExp",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPCoins",
+      "value": "85.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HDHPContribution",
+      "value": "120"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradPremium",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradDeductible",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradOOP",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradPrescriptionCopay",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradMDVisit",
+      "value": "35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradMDAvgCost",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradEstMedExp",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TradCoins",
+      "value": "95.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "An HDHP with an HSA would cost you $777"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPCoinsuranceCosts_result_value",
+      "value": "$3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='lf_TradCoinsuranceCosts_result_value']/span",
+      "value": "$1,800"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDeductibleMet_result_value",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradDeductibleMet_result_value",
+      "value": "$1,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPInsCost_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradInsCost_result_value",
+      "value": "$79"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPDoctorCopay_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradDoctorCopay_result_value",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTotalGross_result_value",
+      "value": "$4,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradTotalGross_result_value",
+      "value": "$3,429"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPTaxSavings_result_value",
+      "value": "−$294"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradTaxSavings_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HDHPNetCost_result_value",
+      "value": "$4,206"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TradNetCost_result_value",
+      "value": "$3,429"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "$4,206"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td[2]",
+      "value": "$3,429"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

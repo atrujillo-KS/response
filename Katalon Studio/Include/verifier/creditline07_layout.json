@@ -1,0 +1,102 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Global_OutstandingMortgagePrincipal",
+          "Home_AccruedInterest"
+        ]
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Estimated home value",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "250000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Outstanding mortgage principal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100000",
+        "value": "100000",
+        "minimumValue": "0",
+        "maximumValue": "100000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_AccruedInterest": {
+        "fieldLabel": "Accrued interest",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "20000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "How much equity do I have in my home?",
+    "answer": "<h2 class='lf-graph-text'>The estimated amount of equity in your home is <span class='lf-bold'>%result%</span></h2>",
+    "selectors": []
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "Home equity is the total amount of money you have already paid against the value of your home. You determine the amount by subtracting the amount of the mortgage balance from the current fair market value of your home. Your home equity is constantly fluctuating, as it depends on present property values in your area, mortgage interest rates, appraisal values, home improvements, and many other factors. It is worth noting that the amount of equity in your home is not money in your pocket while the figure sits on paper. Your net worth will not actually increase until and unless you withdraw the money. At that time, the equity will become an asset. In sum, if your home is appraised at $300,000 and you only have $100,000 left to pay it off, your equity is $200,000 on paper."
+    },
+    {
+      "textLabel": "Home equity is only a dollar figure on paper until you actually access the funds, making it an asset and increasing your financial net worth. Home equity can be accessed by getting a home equity loan, home equity line of credit, or cash-out refinance. These types of loans allow the homeowner to borrow using the equity in his or her home for collateral. Although you are borrowing money from yourself, these loans still require a credit check. There must also be a suitable loan-to-value ratio, since the loan is being secured against the value of the property."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

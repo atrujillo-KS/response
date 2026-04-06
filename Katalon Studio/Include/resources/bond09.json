@@ -1,0 +1,657 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I wait a year to sell my bond?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares the taxes paid and the rates of return for a bond if it is sold after holding it for a year or less or sold after holding it for more than one year."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "If you sell a bond after owning it for over a year, the capital gain is taxed at the long-term capital gains tax rate. Capital gains on bonds that are held for one year or less are taxed as ordinary income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling your bond after a year will earn you the same return."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Taxes paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellBeforeOneYear_result_label",
+      "value": "If you sell one day before 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellBeforeOneYear_result_value",
+      "value": "$81"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfSellBeforeOneYear_result_value",
+      "value": "−7.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellAfterOneYear_result_label",
+      "value": "If you sell one day after 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellAfterOneYear_result_value",
+      "value": "$81"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfSellAfterOneYear_result_value",
+      "value": "−7.51%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Taxes Paid"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OriginalInfo-accordion",
+      "value": "Original Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_PurchasePrice_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Bond price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The current price of a bond in the market, as determined by supply and demand. Bond prices are usually stated as a percentage of their face value. For example, a $1,000 bond that is quoted at a price of 98.00 trades at $980."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_FaceValue_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as par value."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_CouponRate_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The interest rate on a bond, stated as a percentage of the bond's face value. For example, a $1,000 bond that pays $60 in interest a year has a coupon rate of 6%."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_Type",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CurrentInfo-accordion",
+      "value": "Current Info"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday-label",
+      "value": "Today's market rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday-error-message",
+      "value": "Must be between 0.10% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_MarketRateToday_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Market interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The interest rate for bonds with similar risk characteristics and terms to maturity to those of the bond you are selling."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-error-message",
+      "value": "Must be between 1 and 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Assumptions-accordion",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption-label",
+      "value": "Your coupon income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_TaxFilingStatus_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Modified adjusted gross income (MAGI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A measure of income used to determine how much of a tax-deductible contribution you may make to a traditional IRA or nondeductible contribution to a Roth IRA."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "click": {
+      "id": "OriginalInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "1.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "1.01"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_Type"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Treasury security"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Bond_Type"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Municipal: state tax-exempt"
+    }
+  },
+  {
+    "click": {
+      "id": "CurrentInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "9.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "18"
+    }
+  },
+  {
+    "click": {
+      "id": "Assumptions-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.56"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing separately"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "150,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.89"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Selling your bond after a year will earn you the same return."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellBeforeOneYear_result_value",
+      "value": "$1,508"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfSellBeforeOneYear_result_value",
+      "value": "535.86%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxesPaidIfSellAfterOneYear_result_value",
+      "value": "$1,084"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfSellAfterOneYear_result_value",
+      "value": "535.86%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

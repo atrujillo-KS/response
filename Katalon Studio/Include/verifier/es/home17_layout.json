@@ -1,0 +1,236 @@
+{
+  "layout": {
+    "tabs": {
+      "LoanAndBorrowInfo": {
+        "tabLabel": "INFORMACIÓN DE PRÉSTAMO Y PRESTATARIO"
+      },
+      "TaxesAndInsurance": {
+        "tabLabel": "IMPUESTOS Y SEGURO"
+      },
+      "Assumptions": {
+        "tabLabel": "SUPOSICIONES"
+      }
+    },
+    "results_fields": {
+      "PrincAndIntHome17": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PropTax": {
+        "fieldLabel": "Impuestos de propiedad"
+      },
+      "PropIns": {
+        "fieldLabel": "Seguro para propietarios de casas"
+      },
+      "MonthlyHOA": {
+        "fieldLabel": "Tarifas de HOA"
+      },
+      "MortInsHome17": {
+        "fieldLabel": "Seguro hipotecario privado (PMI)"
+      },
+      "TotPmtHome17": {
+        "fieldLabel": "Pago mensual total"
+      }
+    },
+    "fields": {
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Home_AffordabilityCalculationOption": {
+        "fieldLabel": "Calcule la asequibilidad",
+        "dropdownOptions": [
+          {
+            "optionText": "Ingresos"
+          },
+          {
+            "optionText": "Pago"
+          }
+        ]
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Ingresos brutos anuales"
+      },
+      "Global_CurrentMonthlyDebtPayments": {
+        "fieldLabel": "Pagos mensuales de deuda"
+      },
+      "Home_MaximumMortgagePayment": {
+        "fieldLabel": "Pago máximo"
+      },
+      "Home_DownPaymentAmount": {
+        "fieldLabel": "Pago inicial"
+      },
+      "Home_IncludeTaxesInsuranceHOA": {
+        "fieldLabel": "Impuestos, seguros y HOA",
+        "dropdownOptions": [
+          {
+            "optionText": "Incluir"
+          },
+          {
+            "optionText": "No incluye"
+          }
+        ]
+      },
+      "Home_MonthlyHOA": {
+        "fieldLabel": "Cuota mensual de HOA"
+      },
+      "Home_DebtRatio": {
+        "fieldLabel": "Relación deuda-ingreso"
+      },
+      "Home_HousingRatio": {
+        "fieldLabel": "Relación de vivienda"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuánta casa puedo pagar?",
+    "answer": "Puede pagar una casa que vale hasta <span class='lf-bold'>%home%</span> con un %total% pago mensual de <span class='lf-bold'>%payment%</span>",
+    "PrincAndIntHome17": "Interés principal",
+    "PropTax": "Impuestos de propiedad",
+    "PropIns": "Seguro para propietarios de casas",
+    "MonthlyHOA": "HOA",
+    "MortInsHome17": "Seguro hipotecario privado (PMI)",
+    "amountPrefix": "$",
+    "amountSuffix": " con un pago",
+    "dataTableTitle": "Cantidad",
+    "dot": ".",
+    "selectors": [
+      {
+        "label": "Desglose de pagos",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "monthlydebtpayments": {
+      "title": "Pagos mensuales de deuda",
+      "definition": "Todas las deudas mensuales de usted y su coprestatario, incluidos los pagos mínimos mensuales requeridos con tarjeta de crédito, pagos de automóviles, préstamos estudiantiles, pagos de pensión alimenticia / manutención de los hijos, cualquier pago de vivienda (alquiler o hipoteca) que no sea la nueva hipoteca que está buscando, alquiler de propiedad mantenimiento y otros préstamos personales con pagos periódicos."
+    },
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "debtratio": {
+      "title": "Relación de deuda",
+      "definition": "Utilizada por los prestamistas para aprobar préstamos. La relación de deuda es igual a los pagos de deuda mensuales combinados divididos por el ingreso mensual bruto."
+    },
+    "maximumpayment": {
+      "title": "Pago máximo",
+      "definition": "El pago hipotecario máximo que puede pagar."
+    },
+    "totalmonthlypayment": {
+      "title": "Pago mensual total",
+      "definition": "El pago mensual total que puede pagar para una hipoteca, incluyendo el principal, los intereses, impuestos y seguro."
+    },
+    "grossincome": {
+      "title": "Ingreso bruto",
+      "definition": "El IRS define el ingreso bruto como todo ingreso que no está exento de impuestos. Los ingresos brutos se pueden recibir como dinero, bienes, propiedades o servicios."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "taxesinsurancehoa": {
+      "title": "Impuestos, seguros y HOA",
+      "definition": "Incluye impuestos sobre la propiedad, seguros para propietarios de viviendas, cuotas de asociaciones de propietarios y seguros hipotecarios privados (si corresponde) en el cálculo de la asequibilidad."
+    },
+    "hoafee": {
+      "title": "Cuota de asociación de propietarios",
+      "definition": "Las tarifas de la asociación de propietarios de viviendas son cuotas mensuales que los propietarios de condominios, y los propietarios de algunos vecindarios unifamiliares, pagan para cubrir los costos de mantenimiento de áreas comunes o servicios compartidos, como casas club, piscinas, jardines, seguridad, etc."
+    },
+    "housingratio": {
+      "title": "Relación de vivienda",
+      "definition": "Los prestamistas utilizan una relación de vivienda para dar su aprobación a los solicitantes de préstamos. La relación de vivienda equivale al pago hipotecario mensual combinado dividido por el ingreso mensual bruto. Por ejemplo, un pago hipotecario mensual combinado de $1,500 dividido por el ingreso mensual bruto de $4,500 equivale a una relación de vivienda del 33%."
+    },
+    "ltv": {
+      "title": "Relación préstamo-valor (LTV)",
+      "definition": "La relación préstamo-valor (LTV) es un factor clave que los prestamistas examinan antes de aprobar un préstamo hipotecario. Se calcula dividiendo el monto del préstamo hipotecario por el valor justo de mercado de la vivienda."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "La hipoteca que usted puede pagar depende de muchos factores, incluidos su pago mensual total, sus ingresos, sus obligaciones de deuda y el pago inicial. Los prestamistas comúnmente utilizan dos coeficientes para determinar si un solicitante de una hipoteca puede pagar un préstamo hipotecario:</br></br> El coeficiente de vivienda, o “relación de inicio”, mide la cantidad de su pago mensual total de vivienda (incluido el capital, los intereses, los impuestos sobre la propiedad, el seguro de propietario, el seguro hipotecario, y los cargos de la Asociación de Propietarios de Viviendas [HOA, por sus siglas en inglés]) como un porcentaje de su ingreso bruto mensual. Los prestamistas suelen preferir ver un coeficiente de vivienda del 28 % o menos.</br></br> El coeficiente deudas-ingresos o “relación de cancelación”, mide la cantidad de pagos mensuales totales que usted debe hacer por toda la deuda pendiente como un porcentaje de sus ingresos mensuales. Generalmente este coeficiente debe ser 36 % o menos para calificar para una hipoteca.</br></br> Las aprobaciones del préstamo son posibles con coeficientes de inicio y de cancelación que son más altos que los límites convencionales del 28 % y el 36 %. Los programas de préstamos gubernamentales como la Administración Federal de la Vivienda (FHA, por sus siglas en inglés), el Departamento de Asuntos de Veteranos (VA, por sus siglas en inglés) y el Departamento de Agricultura de Estados Unidos (USDA, por sus siglas en inglés) permiten coeficientes más altos. Además, los solicitantes de préstamos hipotecarios con coeficientes elevados de todos modos pueden ser aprobados según las fortalezas de otros aspectos de la solicitud, como un pago inicial grande, un puntaje de crédito excepcionalmente bueno o reservas importantes en cuentas bancarias e inversiones."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del precio máximo de la vivienda que puede pagar por monto del préstamo y pago inicial."
+    },
+    {
+      "title": "Gráfico circular del desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro de propietarios."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del precio máximo de la vivienda que puede pagar por monto del préstamo y pago inicial"
+    },
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro de propietarios"
+    }
+  ]
+}

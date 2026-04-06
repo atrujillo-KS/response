@@ -1,0 +1,340 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LineofCreditInfo",
+        "FutureMonthlyPayments"
+      ],
+      "LineofCreditInfo": {
+        "tabLabel": "Line of Credit Info",
+        "fields": [
+          "CreditLine_CashNeededFromEquity",
+          "Global_HomeEquityLoanInterestRate",
+          "CreditLine_PayoffGoalInMonths",
+          "CreditLine_AnnualFee"
+        ]
+      },
+      "FutureMonthlyPayments": {
+        "tabLabel": "Future Monthly Payments",
+        "fields": [
+          "CreditLine_FutureMonthlyPayment",
+          "CreditLine_FutureFixedMonthlyPayment",
+          "CreditLine_PercentagePaymentOfOutstandingBalance",
+          "CreditLine_FutureMinimumMonthlyPayment",
+          "Global_InterestRateChangePrediction"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true
+    },
+    "fields": {
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Loan amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_PayoffGoalInMonths": {
+        "fieldLabel": "Payoff goal (months)",
+        "smallLabel": "",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_AnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "80",
+        "value": "80",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_FutureMonthlyPayment": {
+        "fieldLabel": "Payment type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed amount",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "% of balance",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_FutureFixedMonthlyPayment": {
+        "fieldLabel": "Fixed monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "400",
+        "value": "400",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_PercentagePaymentOfOutstandingBalance": {
+        "fieldLabel": "% of outstanding balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.00",
+        "value": "6.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_FutureMinimumMonthlyPayment": {
+        "fieldLabel": "Minimum payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Predicted rate change",
+        "smallLabel": "",
+        "glossaryTerm": "futureinterestrates",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "None",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Increase 0.5% per year",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Decrease 0.5% per year",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Month",
+    "dataTableCategoryTitle2": "Payment",
+    "title": "What will it take to pay off my line of credit?",
+    "answer": "Payoff will take <span class='lf-bold'>%month% %monthlabel%</span>",
+    "answer1": "You will still have a balance of <span class='lf-bold'>%value%</span> at the end of <span class='lf-bold'>%month% %monthlabel%</span>",
+    "month": "Month",
+    "Payment": "Payment",
+    "selectors": [
+      {
+        "label": "Payoff",
+        "width": "33%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "label": "Payoff vs. Payment",
+        "width": "33%",
+        "getTableData": true,
+        "getGraphData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "getTableData": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "months": "Months to pay off",
+    "balance": "Balance",
+    "monthsToPayoff": "Months to pay off",
+    "monthlyPayment": "Monthly payment",
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly payment",
+        "Balance",
+        "Principal paid",
+        "Interest paid",
+        "Cumulative interest"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "apr": {
+      "title": "Annual percentage rate (APR)",
+      "definition": "The real cost that you pay to borrow, stated as a yearly percentage of the loan amount. This is sometimes called your effective borrowing cost. For auto and mortgage loans, closing costs and discount points are added to calculate APR. For example, if you pay $500 in closing costs to obtain a $10,000 loan, the APR will be higher than the interest rate since you are effectively borrowing $9,500 but will owe $10,000. The Truth-in-Lending Act requires the lender to disclose the APR to you. For credit cards, the annual fee is often not included in the APR calculation. As a result, an APR of a credit card is often its simple interest rate."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "futureinterestrates": {
+      "title": "Future interest rates",
+      "definition": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows either the number of months necessary to repay a home equity line of credit – if the debt is paid off in the desired timeframe entered – or how much debt you will have at the end of the period. In case the interest rate is variable, the calculator allows you to enter a forecast."
+    },
+    {
+      "textLabel": "You may enter future monthly payments as either a fixed amount or a variable amount that amortizes the credit line balance by a fixed percentage of the outstanding loan balance."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the outstanding balance of the home equity line of credit over the course of the payoff period."
+    },
+    {
+      "title": "Column chart of the months to pay off the line of credit at various monthly payment amounts."
+    },
+    {
+      "title": "Amortization table for the home equity line of credit."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Outstanding balance of the home equity line of credit over the course of the payoff period"
+    },
+    {
+      "title": "Months to pay off the line of credit at various monthly payment amounts"
+    }
+  ]
+}

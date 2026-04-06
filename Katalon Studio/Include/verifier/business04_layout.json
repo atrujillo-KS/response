@@ -1,0 +1,377 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "SharedLoanInfo",
+        "Loan1",
+        "Loan2"
+      ],
+      "SharedLoanInfo": {
+        "tabLabel": "Shared Loan Info",
+        "fields": [
+          "Business_CreditNeeded",
+          "Business_FederalTaxRate",
+          "Business_StateTaxRate"
+        ]
+      },
+      "Loan1": {
+        "tabLabel": "Loan 1",
+        "fields": [
+          "Business_LoanTerm",
+          "Business_InterestRate"
+        ]
+      },
+      "Loan2": {
+        "tabLabel": "Loan 2",
+        "fields": [
+          "Business_SecondLoanTerm",
+          "Business_SecondLoanInterestRate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Loan 1",
+        "Loan 2"
+      ],
+      "fields": [
+        [
+          "TotalPmts1Business04",
+          "TotalPmts2Business04"
+        ],
+        [
+          "TotalInterest1Business04",
+          "TotalInterest2Business04"
+        ],
+        [
+          "TaxSavings1Business04",
+          "TaxSavings2Business04"
+        ],
+        [
+          "NetPaid1Business04",
+          "NetPaid2Business04"
+        ],
+        [
+          "ATIntRate1",
+          "ATIntRate2"
+        ],
+        [
+          "MonthlyPmt1Business04",
+          "MonthlyPmt2Business04"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "Loan Amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "34.00",
+        "value": "34.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "State tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.50",
+        "value": "5.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": ".50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_LoanTerm": {
+        "fieldLabel": "Loan term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "48",
+        "value": "48",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "7.875",
+        "value": "7.875",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_SecondLoanTerm": {
+        "fieldLabel": "Loan term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "term",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Business_SecondLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.125",
+        "value": "8.125",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "TotalPmts1Business04": {
+        "fieldLabel": "Total payments"
+      },
+      "TotalPmts2Business04": {
+        "fieldLabel": "Total payments"
+      },
+      "TotalInterest1Business04": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotalInterest2Business04": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TaxSavings1Business04": {
+        "fieldLabel": "- Tax savings"
+      },
+      "TaxSavings2Business04": {
+        "fieldLabel": "- Tax savings"
+      },
+      "NetPaid1Business04": {
+        "fieldLabel": "Total cost"
+      },
+      "NetPaid2Business04": {
+        "fieldLabel": "Total cost"
+      },
+      "ATIntRate1": {
+        "fieldLabel": "After-tax interest rate"
+      },
+      "ATIntRate2": {
+        "fieldLabel": "After-tax interest rate"
+      },
+      "MonthlyPmt1Business04": {
+        "fieldLabel": "Monthly payment"
+      },
+      "MonthlyPmt2Business04": {
+        "fieldLabel": "Monthly payment"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Cost",
+    "dataTableCategory2": "Monthly Payment",
+    "title": "What term of loan should I choose?",
+    "answer": "%lessOption% will cost you <span class='lf-bold'>$%amount% %which%</span> %moreOption%",
+    "morethan": "more than",
+    "lessthan": "less than",
+    "sameas": "the same as",
+    "loan1": "Loan 1",
+    "loan2": "Loan 2",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Total Cost",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payments",
+        "width": "33%"
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Loan 1",
+            "label": "Loan 1"
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - Loan 2",
+            "label": "Loan 2"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Month",
+        "Balance",
+        "Interest paid",
+        "Cumulative Interest",
+        "Monthly payment",
+        "Principal paid"
+      ],
+      [
+        "Month",
+        "Balance",
+        "Interest paid",
+        "Cumulative Interest",
+        "Monthly payment",
+        "Principal paid"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "principal": {
+      "title": "Principal",
+      "definition": "Also called the loan balance, principal is the amount owed on a loan"
+    },
+    "taxdeductible": {
+      "title": "Tax-deductible",
+      "definition": "An item or expense subtracted from adjusted gross income to reduce the amount of income subject to tax."
+    },
+    "taxsavings": {
+      "title": "Tax savings",
+      "definition": "The amount you may save in taxes from a tax deduction or tax credit."
+    },
+    "amortized": {
+      "title": "Amortization",
+      "definition": "The gradual reduction of loan principal that occurs as you make periodic loan payments."
+    },
+    "aftertaxinterestrate": {
+      "title": "After-tax interest rate",
+      "definition": "The after-tax interest rate is the interest rate on a loan after you deduct tax expense. For example, if your loan rate is 6% and your income tax rate is 25%, your after-tax interest rate is 4.5%."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine which of two loans with different terms is the better deal. Generally, a loan with a longer term has a higher interest rate than one with a shorter term. The higher interest rate is to compensate lenders for tying up their funds longer."
+    },
+    {
+      "textLabel": "Since interest expense is <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxDeductible\">tax-deductible</a></span>, the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#AfterTaxInterestRate\">after-tax interest</a></span> rate should be considered when evaluating a loan. <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxSavings\">Tax savings</a></span> are deducted from total payments to calculate net payments. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total net amount paid for Loan 1 and Loan 2."
+    },
+    {
+      "title": "Column chart comparing the monthly payment of Loan 1 and Loan 2."
+    },
+    {
+      "title": "Amortization table for Loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total net amount paid for Loan 1 and Loan 2"
+    },
+    {
+      "title": "Monthly payment of Loan 1 and Loan 2"
+    }
+  ]
+}

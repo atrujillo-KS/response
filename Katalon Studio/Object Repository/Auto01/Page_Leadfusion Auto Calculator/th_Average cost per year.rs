@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Average cost per year</name>
+   <tag></tag>
+   <elementGuidId>5634f87e-c6ee-4296-8415-8d23e006dcbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='lf_AveCostPerYrAuto01_result_label']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_AveCostPerYrAuto01_result_label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=rowheader[name=&quot;Average cost per year&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>1768e8a3-b680-4de2-8742-2a282307d735</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_AveCostPerYrAuto01_result_label</value>
+      <webElementGuid>d6a94d40-6c6b-4a45-beb7-3a71551021b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tableCellADA</value>
+      <webElementGuid>af5ce7a1-9f34-4166-8f3b-89484351f116</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>row</value>
+      <webElementGuid>25688f9f-2f87-4a55-99b7-dc955551d806</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            Average cost per year
+                                        </value>
+      <webElementGuid>ae828fef-60ed-49f9-98e7-fed4e5db8862</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_AveCostPerYrAuto01_result_label&quot;)</value>
+      <webElementGuid>815eb1e0-e88e-4a42-ab15-70f4ae54a51e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@id='lf_AveCostPerYrAuto01_result_label']</value>
+      <webElementGuid>ad9e0bae-70f6-420b-bba9-3e4e7032eff0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='lf_AveCostPerYrAuto01_results']/th</value>
+      <webElementGuid>bd5be558-6082-4a13-a3f9-dcf3686cea2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Used'])[1]/following::th[1]</value>
+      <webElementGuid>405a8066-f4f3-4830-9e00-0e220af982e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New'])[1]/following::th[2]</value>
+      <webElementGuid>9070a50f-76fd-4f35-9cec-beeeb6120f6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$7,735'])[1]/preceding::th[1]</value>
+      <webElementGuid>ed389ffa-940f-4889-a739-30e1805fc333</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$3,193'])[1]/preceding::th[1]</value>
+      <webElementGuid>2ffb21aa-9da7-49d9-844a-fa0ceb3a4253</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Average cost per year']/parent::*</value>
+      <webElementGuid>5b30883e-50a8-4604-be4c-1e9c845bc5b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tbody/tr/th</value>
+      <webElementGuid>01687da9-0d3b-4898-b4e2-b8ffced1eb87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[@id = 'lf_AveCostPerYrAuto01_result_label' and (text() = '
+                                            Average cost per year
+                                        ' or . = '
+                                            Average cost per year
+                                        ')]</value>
+      <webElementGuid>5de614a4-9081-47c8-b79e-f7baa7492b3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

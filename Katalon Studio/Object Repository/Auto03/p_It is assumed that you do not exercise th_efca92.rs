@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_It is assumed that you do not exercise th_efca92</name>
+   <tag></tag>
+   <elementGuidId>36a8b145-9da4-4409-97de-01b2d7629f29</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_help_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf_help_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;It is assumed that you do not exercise the purchase option at the end of the lea&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>0199d042-9def-4818-85cb-17a48d0a3948</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_help_1</value>
+      <webElementGuid>3c1af6c7-d626-418b-8c74-4ad22f29fbd2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off.</value>
+      <webElementGuid>44dc668f-d572-4db7-a48a-2d46efe430ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_help_1&quot;)</value>
+      <webElementGuid>62ba42e2-9a81-4082-915e-b328612de300</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf_help_1']</value>
+      <webElementGuid>738fedc0-617b-4626-b5b7-ce231cae1bb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-help-content']/p[2]</value>
+      <webElementGuid>5c1326a5-c1b8-4560-bb78-f20967723330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[4]/following::p[3]</value>
+      <webElementGuid>b8e173b6-a801-40b8-82ba-63e8a64cc306</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[3]/following::p[3]</value>
+      <webElementGuid>368dbd1a-a107-447d-89fd-92887eec3feb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of help content'])[1]/preceding::p[3]</value>
+      <webElementGuid>4b68ad73-37a4-4846-a146-6734d2f32cc1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Help'])[5]/preceding::p[3]</value>
+      <webElementGuid>b8b2bf3b-94a3-463a-b676-a862051557c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off.']/parent::*</value>
+      <webElementGuid>f4c5437d-4e9e-4c33-8f57-ef9ac281896d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[2]</value>
+      <webElementGuid>66815d96-59df-4864-8fd6-49054648cc9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf_help_1' and (text() = 'It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off.' or . = 'It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off.')]</value>
+      <webElementGuid>4949c925-27e0-4859-984b-7e302a94c88b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

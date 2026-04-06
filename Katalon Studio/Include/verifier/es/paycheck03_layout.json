@@ -1,0 +1,781 @@
+{
+  "layout": {
+    "tabs": {
+      "Income": {
+        "tabLabel": "Ingresos",
+        "pageTitle": "Información sobre los ingresos"
+      },
+      "Taxes": {
+        "tabLabel": "Impuestos",
+        "pageTitle": "Información sobre los impuestos"
+      },
+      "deductions": {
+        "tabLabel": "Deducciónes",
+        "pageTitle": "Deducciones de impuestos<br><span style='font-size:0.90em'>Ingrese información sobre cualquier artículo o gasto que se reste del ingreso bruto para reducir su ingreso imponible.</span>",
+        "deduction1": {
+          "sectionLabel": "Deducción n.º 1"
+        },
+        "deduction2": {
+          "sectionLabel": "Deducción n.º 2"
+        },
+        "deduction3": {
+          "sectionLabel": "Deducción n.º 3"
+        },
+        "deduction4": {
+          "sectionLabel": "Deducción n.º 4"
+        },
+        "deduction5": {
+          "sectionLabel": "Deducción n.º 5"
+        },
+        "deduction6": {
+          "sectionLabel": "Deducción n.º 6"
+        },
+        "deduction7": {
+          "sectionLabel": "Deducción n.º 7"
+        },
+        "deduction8": {
+          "sectionLabel": "Deducción n.º 8"
+        }
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "fields": {
+      "JobRate": {
+        "fieldLabel": "Tasa de pago por hora"
+      },
+      "JobHrs": {
+        "fieldLabel": "Horas trabajadas por período de pago"
+      },
+      "GrossIncomeYTD": {
+        "fieldLabel": "Ingresos brutos ",
+        "adaAriaLabel": "Ingresos brutos, año a la fecha",
+        "smallLabel": "(año a la fecha)"
+      },
+      "PayFreq": {
+        "fieldLabel": "Frecuencia del período de pago",
+        "dropdownOptions": [
+          {
+            "optionText": "Diario"
+          },
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Quincenal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Semestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "FilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Exemptions": {
+        "fieldLabel": "Exenciones totales"
+      },
+      "AddFedTax": {
+        "fieldLabel": "Ingresos adicionales retenidos por el IRS"
+      },
+      "StateTaxOpt": {
+        "fieldLabel": "Impuestos estatales sobre la renta",
+        "dropdownOptions": [
+          {
+            "optionText": "% del salario bruto"
+          },
+          {
+            "optionText": "% de impuestos federales"
+          },
+          {
+            "optionText": "Sin impuestos estatales"
+          }
+        ]
+      },
+      "StateTaxRatePaycheck": {
+        "fieldLabel": "% del salario bruto"
+      },
+      "StateTaxRateFIT": {
+        "fieldLabel": "% de impuestos federales"
+      },
+      "DeductionList_0_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_0_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_0_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes0": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_0_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_0_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_0_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_0_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_1_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_1_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_1_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes1": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_1_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_1_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_1_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_1_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_2_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_2_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_2_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes2": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_2_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_2_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_2_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_2_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_3_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_3_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_3_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes3": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_3_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_3_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_3_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_3_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_4_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_4_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_4_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes4": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_4_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_4_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_4_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_4_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_5_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_5_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_5_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes5": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_5_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_5_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_5_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_5_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_6_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_6_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_6_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes6": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_6_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_6_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_6_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_6_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_7_DeductionName": {
+        "fieldLabel": "Propósito"
+      },
+      "DeductionList_7_DeductionAmount": {
+        "fieldLabel": "Monto por período de pago"
+      },
+      "DeductionList_7_DeductionType": {
+        "fieldLabel": "Tipo",
+        "dropdownOptions": [
+          {
+            "optionText": "%"
+          },
+          {
+            "optionText": "$"
+          }
+        ]
+      },
+      "ExemptFromWhichTaxes7": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exento de qué impuestos</a>"
+      },
+      "DeductionList_7_FederalTaxExempt": {
+        "fieldLabel": "Federales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_7_StateTaxExempt": {
+        "fieldLabel": "Estatales",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_7_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "DeductionList_7_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      }
+    },
+    "results_fields": {
+      "CalcGrossIncome": {
+        "fieldLabel": "Ingreso bruto por cheque de pago"
+      },
+      "CalcFedTax": {
+        "fieldLabel": "Impuestos federales sobre la renta"
+      },
+      "CalcStateTax": {
+        "fieldLabel": "Impuestos estatales sobre la renta"
+      },
+      "CalcFICA": {
+        "fieldLabel": "Impuestos del Seguro Social"
+      },
+      "CalcMedicare": {
+        "fieldLabel": "Impuestos de Medicare"
+      },
+      "CalcDeductions": {
+        "fieldLabel": "Deducciones"
+      },
+      "CalcNetIncome": {
+        "fieldLabel": "Ingreso neto por cheque de pago"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Cuál es el monto de mi salario neto como empelado por hora?",
+    "answer": "Su salario neto por cada período de pago es de <span class='lf-bold'>%result%</span>",
+    "federalIncomeTaxes": "Impuestos federales sobre la renta",
+    "stateIncomeTaxes": "Impuestos estatales sobre la renta",
+    "socialSecurityTaxes": "Impuestos del Seguro Social",
+    "medicareTaxes": "Impuestos de Medicare",
+    "deductions": "Deducciones",
+    "netIncome": "Ingreso neto"
+  },
+  "glossaryItems": {
+    "taxexemptdeduction": {
+      "title": "Deducción exenta de los siguientes impuestos",
+      "definition": "Para cada deducción que ingrese (que no sea para contribuciones a un plan 401(k)), ingrese los tipos de impuestos de los que está exenta la deducción. Los cuatro tipos de impuestos incluyen Seguro Social, Medicare, sobre la renta estatales y sobre la renta federales."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "medicaretaxes": {
+      "title": "Impuestos de Medicare",
+      "definition": "Los impuestos de Medicare se abonan al fondo de Medicare (HI)."
+    },
+    "dcplan401k": {
+      "title": "Plan 401(k)",
+      "definition": "Un plan 401(k) es un plan de contribución definida que permite a los empleados destinar una parte de su salario, mediante deducción de nómina, a una cuenta. Los impuestos federales (y generalmente también los estatales) sobre las contribuciones del empleado y las ganancias de inversión se difieren hasta que el participante reciba una distribución del plan (normalmente en la jubilación). Los empleadores también pueden contribuir a la cuenta del participante. Para el año 2025, usted puede contribuir hasta $23,500 a un plan 401(k). Si tiene 50 años o más, puede aportar $7,500 adicionales, para un total de $31,000. Si su empleador realiza aportes, el monto máximo que puede aportarse a un plan 401(k) en 2025 es el menor entre $70,000 ($76,500 si tiene 50 años o más) o el 100% de su compensación anual."
+    },
+    "socialsecuritytaxes": {
+      "title": "Impuestos del Seguro Social",
+      "definition": "Los impuestos del Seguro Social se pagan a, Supervivencia e Invalidez (OASDI) y a Medicare."
+    },
+    "catchupprovisiondcplans": {
+      "title": "Un suministro de recuperacion compensatoria",
+      "definition": "Disposición de la Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 que autoriza aplicar a los trabajadores de 50 años o más límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas."
+    },
+    "amountwithheldbyirs": {
+      "title": "Cantidad retenida por el IRS",
+      "definition": "La cantidad de su ingreso que se retiene en cada período de pago para el pago de impuestos federales sobre la renta. Su empleador envía esta cantidad al IRS en su nombre."
+    },
+    "stateincometaxes": {
+      "title": "Impuestos estatales sobre la renta",
+      "definition": "Los impuestos que usted paga, si corresponde, a la autoridad fiscal del estado de su domicilio legal."
+    },
+    "grossincome": {
+      "title": "Ingreso bruto",
+      "definition": "El IRS define el ingreso bruto como todo ingreso que no está exento de impuestos. Los ingresos brutos se pueden recibir como dinero, bienes, propiedades o servicios."
+    },
+    "fica": {
+      "title": "FICA",
+      "definition": "Acrónimo de Federal Insurance Contributions Act (Ley Federal de Contribuciones al Seguro), también conocida como Seguro Social. La Ley FICA consiste en un seguro para sobrevivientes de edad avanzada y discapacidad (OASDI) y Medicare."
+    },
+    "payperiodfrequency": {
+      "title": "Frecuencia del periodo de pago",
+      "definition": "Seleccione en el menú desplegable la frecuencia del periodo de pago que corresponda. Puede elegir entre diario, semanal, bisemanal (26 periodos al año), quincenal (dos veces al mes), mensual, trimestral, semestral (dos veces al año) y anual. La mayoría de los periodos de pago son bisemanales, quincenales o mensuales."
+    },
+    "totalexemptions": {
+      "title": "Exenciones totales",
+      "definition": "Ya sea la cantidad de exenciones de su declaración individual de impuestos sobre la renta (Formulario 1040 del IRS) o la cantidad de descuentos en su certificado de retenciones del empleado (Formulario W-4)."
+    },
+    "contribution": {
+      "title": "Contribución",
+      "definition": "El monto que usted invierte en una cuenta imponible o con ventajas impositivas."
+    },
+    "grossincomeytd": {
+      "title": "Ingreso bruto (año a la fecha)",
+      "definition": "El ingreso bruto (año a la fecha) es su ingreso total hasta el período de pago más reciente para el año calendario actual."
+    },
+    "yourtaxfilingstatus": {
+      "title": "Su situación fiscal",
+      "definition": "Si bien el IRS tiene cinco estados civiles para la presentación de impuestos, verá que se ha seleccionado automáticamente un estado civil llamado \"Suplementario\". Esto se utiliza para identificar el bono como ingreso suplementario, que el calculador asume que está sujeto a un impuesto único del 28%."
+    },
+    "additionalwithholdings": {
+      "title": "Ingresos adicionales retenidos por el IRS",
+      "definition": "Ingrese cualquier monto adicional que haya solicitado que el IRS retenga de su salario."
+    },
+    "deductionsfrompay": {
+      "title": "Deducciones del salario",
+      "definition": "El importe total de las deducciones de cada nómina, incluidas las aportaciones al plan 401(k)."
+    },
+    "netincome": {
+      "title": "Ingresos netos",
+      "definition": "Personas físicas: La renta neta es la cantidad de ingresos que queda después de todas las deducciones e impuestos. Empresas: Los ingresos netos son los beneficios de una empresa durante un periodo de tiempo determinado después de pagar los impuestos y todos los demás gastos."
+    },
+    "incometaxrate": {
+      "title": "Tasas del impuesto sobre la renta",
+      "definition": "Las tasas del impuesto sobre la renta para 2025 son 37%, 35%, 32%, 24%, 22%, 12% y 10%."
+    },
+    "payperioddeduction": {
+      "title": "Monto por período de pago para esta deducción de impuestos",
+      "definition": "La deducción de nómina es un proceso automatizado que deduce montos preestablecidos del salario bruto de los empleados por hacer contribuciones del empleado a planes de jubilación y planes de cafetería."
+    },
+    "numberhoursworkedpayperiod": {
+      "title": "Número de horas trabajadas por período de pago",
+      "definition": "Ingrese el número de horas trabajadas durante el período de pago. Si es necesario, ingrese un salario medio ponderado en el campo de entrada anterior."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula su salario por peróodo de pago después de deducir los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#incometaxrate\">impuestos federales sobre la renta</a></span> los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FICA\">impuestos FICA</a></span>, los impuestos estatales y cualquier deducción que usted especifique, incluidas las <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#contribution\">contribuciones</a></span> a un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#dcplan401k\">plan 401(k)</a></span> o un plan de jubilación similar patrocinado por el empleador."
+    },
+    {
+      "textLabel": "Debido a que las contribuciones a un plan 401(k) u otro plan de jubilación calificado se deducen de los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#grossIncome\">ingresos brutos</a></span>, usted reduce el monto de ingresos sobre el que debe pagar impuestos.# Errors"
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del ingreso bruto por período de pago por impuestos federales sobre la renta, impuestos estatales sobre la renta, impuestos del Seguro Social, impuestos al Medicare, deducciones e ingresos netos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del ingreso bruto por período de pago por impuestos federales sobre la renta, impuestos estatales sobre la renta, impuestos del Seguro Social, impuestos al Medicare, deducciones e ingresos netos"
+    }
+  ]
+}

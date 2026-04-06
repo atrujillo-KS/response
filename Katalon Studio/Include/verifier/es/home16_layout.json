@@ -1,0 +1,263 @@
+{
+  "layout": {
+    "tabs": {
+      "LoanInfo": {
+        "tabLabel": "Información del préstamo"
+      },
+      "ExtraPayments": {
+        "tabLabel": "Pagos adicionales"
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      }
+    },
+    "fields": {
+      "Home_ExtraPaymentsLoanType": {
+        "fieldLabel": "Tipo de préstamo"
+      },
+      "Home_CurrentLoanAmount": {
+        "fieldLabel": "Saldo actual del préstamo"
+      },
+      "Home_CurrentLoanPayment": {
+        "fieldLabel": "Pago mensual"
+      },
+      "Home_ExistingPMIPayment": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "Home_ExtraPaymentType": {
+        "fieldLabel": "Tipo de pago extra"
+      },
+      "Home_ExtraPaymentsStartYear": {
+        "fieldLabel": "Inicio de pagos adicionales - año"
+      },
+      "Home_ExtraPaymentsStartMonth": {
+        "fieldLabel": "Inicio de pagos adicionales - mes"
+      },
+      "Home_ExtraPaymentFrequency": {
+        "fieldLabel": "Frecuencia de pago"
+      },
+      "Home_ExtraPaymentStartYear": {
+        "fieldLabel": "Inicio de pago adicional - año"
+      },
+      "Home_ExtraPaymentStartMonth": {
+        "fieldLabel": "Inicio de pago adicionales - mes"
+      },
+      "Home_ExtraPaymentsEnd": {
+        "fieldLabel": "Fin de pagos adicionales"
+      },
+      "Home_ExtraPaymentsEndYear": {
+        "fieldLabel": "Fin de pagos adicionales - año"
+      },
+      "Home_ExtraPaymentsEndMonth": {
+        "fieldLabel": "Fin de pagos adicionales - mes"
+      },
+      "Home_AdditionalPayment": {
+        "fieldLabel": "Pago adicional"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Ningún pago adicional",
+        "Pagos adicionales"
+      ]
+    },
+    "results_fields": {
+      "TotIntPaid": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotIntPaid2": {},
+      "MonUntilPayoff": {
+        "fieldLabel": "Meses hasta que termine de pagar"
+      },
+      "MonUntilPayoff2": {},
+      "PrincAndInt": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PrincAndInt2Home16": {},
+      "MortIns": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "MortIns2Home16": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TaxAndIns2": {},
+      "TotPay": {
+        "fieldLabel": "Pago inicial total"
+      },
+      "TotPmt2Home16": {},
+      "dummyAdditionalPrincipalPmt": {
+        "fieldLabel": "Pagos de capital adicionales"
+      },
+      "AdditionalPrincipalPmt": {}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Intereses totales pagados",
+    "dataTableCategory2": "Meses hasta que termine de pagar",
+    "title": "¿Qué tan ventajosos son los pagos adicionales?",
+    "answer": "Al hacer pagos adicionales, usted ahorrará <span class='lf-bold'>$%result%</span> en intereses",
+    "TotIntPaid": "Sin pagos adicionales",
+    "TotIntPaid2": "Con pagos adicionales",
+    "MonUntilPayoff": "Ningún pago adicional",
+    "MonUntilPayoff2": "Pagos adicionales",
+    "categories": [
+      "Cuota inicial menor",
+      "Cuota inicial mayor"
+    ],
+    "selectors": [
+      {
+        "label": "Intereses pagados",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Liquidación",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Sin pagos adicionales",
+            "label": "Sin pagos adicionales"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Con pagos adicionales ",
+            "label": "Con pagos adicionales "
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "additionalmonthlypayments": {
+      "title": "Pagos mensuales adicionales",
+      "definition": "La mayoría de los prestamistas hipotecarios permiten a los prestatarios realizar pagos adicionales. Consulte a su prestamista para asegurarse de que no existen penalidades por pago anticipado."
+    },
+    "mortgageinteresttaxdeduction": {
+      "title": "Deducción impositiva de intereses hipotecarios",
+      "definition": "Deducción autorizada a los contribuyentes que pagan intereses sobre un préstamo hipotecario de vivienda e intereses sobre un préstamo sobre el valor neto de la vivienda. El principal objetivo de esta deducción es fomentar el acceso a la vivienda en propiedad."
+    },
+    "amortized": {
+      "title": "Amortización",
+      "definition": "La reducción gradual del capital de un préstamo que tiene lugar a medida que usted hace los pagos periódicos del préstamo."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "principal": {
+      "title": "Capital",
+      "definition": "También se denomina saldo del préstamo y es el monto adeudado de un préstamo."
+    },
+    "prepaymentpenalty": {
+      "title": "Penalidad por pago anticipado",
+      "definition": "Penalidad que un prestamista puede cobrar si usted realiza pagos adicionales no programados sobre su préstamo."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "prepayments": {
+      "title": "Pago anticipado",
+      "definition": "Monto que usted paga sobre su hipoteca o sobre otro préstamo, que constituye un pago adicional no programado. "
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa el total de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#mortgageinteresttaxdeduction\">intereses hipotecarios</a></span> que se paga tanto haciendo como no haciendo <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#prepayments\">pagos anticipados</a></span> para un determinado conjunto de plazos del préstamo. También calcula cuántos meses le llevará cancelar el préstamo haciendo pagos adicionales y sin hacerlos. El monto total de pagos adicionales se aplica a la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#amortized\">amortización</a></span> del <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#principal\">capital del préstamo</a></span>."
+    },
+    {
+      "textLabel": "Algunos préstamos hipotecarios pueden tener una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#prepaymentpenalty\">penalidad por pago anticipado</a></span>. Consulte a su prestamista para verificar si su préstamo tiene esa penalidad."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la diferencia entre el interés total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales."
+    },
+    {
+      "title": "Gráfico de barras que compara los cronogramas de liquidación del préstamo con pagos adicionales y el préstamo sin pagos adicionales."
+    },
+    {
+      "title": "Tabla de amortización del préstamo sin pagos extras."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia entre el interés total pagado por el préstamo con pagos adicionales y el préstamo sin pagos adicionales"
+    },
+    {
+      "title": "Cronogramas de liquidación del préstamo con pagos adicionales y el préstamo sin pagos adicionales"
+    }
+  ]
+}

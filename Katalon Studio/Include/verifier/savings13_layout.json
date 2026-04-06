@@ -1,0 +1,352 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "action1",
+        "action2",
+        "action3"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge",
+          "Global_SavingsInterestRate",
+          "Global_FederalAndStateTaxRate"
+        ]
+      },
+      "action1": {
+        "tabLabel": "1st Action",
+        "fields": [
+          "Global_BudgetingActionOneName",
+          "Global_BudgetingActionOneAmount"
+        ]
+      },
+      "action2": {
+        "tabLabel": "2nd Action",
+        "fields": [
+          "Global_BudgetingActionTwoName",
+          "Global_BudgetingActionTwoAmount"
+        ]
+      },
+      "action3": {
+        "tabLabel": "3rd Action",
+        "fields": [
+          "Global_BudgetingActionThreeName",
+          "Global_BudgetingActionThreeAmount"
+        ]
+      }
+    },
+    "results": {
+      "text": "If you invest this amount, you'll accumulate $%savingsTenYears% in 10 years and $%retirementValue% at retirement."
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Expected retirement age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "67",
+        "value": "67",
+        "minimumValue": "1",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual rate of return",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionOneName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "eat out less",
+        "value": "eat out less",
+        "minimumValue": "0",
+        "maximumValue": "0",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "0",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "text"
+      },
+      "Global_BudgetingActionOneAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionTwoName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "buy fewer clothes",
+        "value": "buy fewer clothes",
+        "minimumValue": "0",
+        "maximumValue": "0",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "0",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "text"
+      },
+      "Global_BudgetingActionTwoAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BudgetingActionThreeName": {
+        "fieldLabel": "By",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "text",
+        "defaultValue": "brew coffee at home",
+        "value": "brew coffee at home",
+        "minimumValue": "0",
+        "maximumValue": "0",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "0",
+        "widgetStep": "0",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "text"
+      },
+      "Global_BudgetingActionThreeAmount": {
+        "fieldLabel": "I can save",
+        "smallLabel": "(monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "dataTableCategory2": "Savings",
+    "title": "What's it worth to reduce my spending?",
+    "answer": "You will save <span class='lf-bold'>$%annualSavings%</span> each year",
+    "selectors": [
+      {
+        "label": "Savings",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Future Value",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "savingsAnnual": "Accumulated Savings",
+    "savingsTenYears": "After 10 Years",
+    "retirementValue": "At Retirement",
+    "yAxisTitle": "Future value if invested"
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Taxable account",
+      "definition": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive. "
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "taxadvantagedaccount": {
+      "title": "Tax-advantaged account",
+      "definition": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses. "
+    },
+    "annuity": {
+      "title": "Annuity",
+      "definition": "An insurance policy or an investment that pays out a fixed amount of money each year."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine how much reductions in spending may be worth if you invest the savings. Budget tightening ideas include eating out less, buying fewer clothes, taking fewer trips, waiting to buy a new car, going to fewer movies, brewing coffee at home, paying off credit cards, and carpooling to work, among others."
+    },
+    {
+      "textLabel": "It is assumed that you contribute at the beginning of each month and that you save with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">taxable</a></span> account. If you want to simulate saving with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">tax-advantaged</a></span> account, enter a zero in the fields for federal and state income tax rates."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Bar chart of the annual savings by reducing spending."
+    },
+    {
+      "title": "Column chart of the savings after 10 years and at retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Annual savings by reducing spending"
+    },
+    {
+      "title": "Savings after 10 years and at retirement"
+    }
+  ]
+}

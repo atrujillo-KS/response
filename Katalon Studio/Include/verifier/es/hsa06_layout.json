@@ -1,0 +1,237 @@
+{
+  "layout": {
+    "tabs": {
+      "GeneralInfo": {
+        "tabLabel": "INFORMACIÓN GENERAL",
+        "pageTitle": "Información general",
+        "default": {
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "AnnualPrescriptions",
+                "AnnualDoctorVisits",
+                "FedTaxRate"
+              ]
+            }
+          ]
+        }
+      },
+      "PlanInfo": {
+        "tabLabel": "INFORMACIÓN DEL PLAN",
+        "pageTitle": "Información del plan",
+        "HDHP": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "Prima mensual"
+            },
+            {
+              "rowLabel": "Deducible anual"
+            },
+            {
+              "rowLabel": "Gasto de desembolso personal máximo por año"
+            },
+            {
+              "rowLabel": "Copago de recetas"
+            },
+            {
+              "rowLabel": "Copago de consultas al médico"
+            },
+            {
+              "rowLabel": "Costo promedio de la consulta médica"
+            },
+            {
+              "rowLabel": "Otros gastos médicos estimados"
+            },
+            {
+              "rowLabel": "Tarifa de coseguro"
+            },
+            {
+              "rowLabel": "Contribución mensual de a la HSA"
+            }
+          ]
+        },
+        "traditional": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "rows": [
+            {
+              "rowLabel": "Prima mensual"
+            },
+            {
+              "rowLabel": "Deducible anual"
+            },
+            {
+              "rowLabel": "Gasto de desembolso personal máximo por año"
+            },
+            {
+              "rowLabel": "Copago de recetas"
+            },
+            {
+              "rowLabel": "Copago de consultas al médico"
+            },
+            {
+              "rowLabel": "Costo promedio de la consulta médica"
+            },
+            {
+              "rowLabel": "Otros gastos médicos estimados"
+            },
+            {
+              "rowLabel": "Tarifa de coseguro"
+            },
+            {
+              "rowLabel": "Contribución mensual de a la HSA"
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "fields": {
+      "AnnualPrescriptions": {
+        "fieldLabel": "Recetas anuales surtidas"
+      },
+      "AnnualDoctorVisits": {
+        "fieldLabel": "Consultas al médico anuales"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "HDHPPremium": {
+        "fieldLabel": "Plan HDHP calificado",
+        "ariaLegendLabel": "Plan HDHP calificado"
+      },
+      "TradPremium": {
+        "fieldLabel": "Plan de salud tradicional",
+        "ariaLegendLabel": "Plan de salud tradicional"
+      },
+      "HDHPDeductible": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradDeductible": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPOOP": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradOOP": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPPrescriptionCopay": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradPrescriptionCopay": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPMDVisit": {
+        "fieldLabel": "Doctor visit co-pay"
+      },
+      "TradMDVisit": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPMDAvgCost": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradMDAvgCost": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPEstMedExp": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradEstMedExp": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPCoins": {
+        "fieldLabel": "Plan HDHP calificado"
+      },
+      "TradCoins": {
+        "fieldLabel": "Plan de salud tradicional"
+      },
+      "HDHPContribution": {
+        "fieldLabel": "Plan HDHP calificado"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "HDHP con una HSA",
+        "Plan tradicional"
+      ]
+    },
+    "results_fields": {
+      "HDHPCoinsuranceCosts": {
+        "fieldLabel": "Costo de seguro"
+      },
+      "TradCoinsuranceCosts": {
+        "fieldLabel": "Costo de seguro"
+      },
+      "HDHPDeductibleMet": {
+        "fieldLabel": "Costo deducible"
+      },
+      "TradDeductibleMet": {
+        "fieldLabel": "Costo deducible"
+      },
+      "HDHPInsCost": {
+        "fieldLabel": "Coseguro"
+      },
+      "TradInsCost": {
+        "fieldLabel": "Coseguro"
+      },
+      "HDHPDoctorCopay": {
+        "fieldLabel": "Copagos"
+      },
+      "TradDoctorCopay": {
+        "fieldLabel": "Copagos"
+      },
+      "HDHPTotalGross": {
+        "fieldLabel": "Costo bruto"
+      },
+      "TradTotalGross": {
+        "fieldLabel": "Costo bruto"
+      },
+      "HDHPTaxSavings": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "TradTaxSavings": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "HDHPNetCost": {
+        "fieldLabel": "Costo neto"
+      },
+      "TradNetCost": {
+        "fieldLabel": "Costo neto"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo neto",
+    "title": "¿Cuál es la diferencia entre un HDHP con una HSA y un plan tradicional?",
+    "answer": "Un HDHP con una HSA %result% <span class='lf-bold'>$%amount%</span>",
+    "save": "guardar",
+    "cost": "costo",
+    "withHSA": "HDHP con HSA",
+    "traditional": "Plan tradicional"
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara el costo de un plan médico de deducible alto con una cuenta de ahorros para la salud y un plan de salud tradicional."
+    },
+    {
+      "textLabel": "Para obtener asesoramiento del IRS sobre cuentas de ahorros para la salud, consulte la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">Publicación 969</a> y la <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">Publicación 502 del IRS</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo total del HDHP con la HSA y el plan de salud tradicional."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo neto del HDHP con la HSA y el plan de salud tradicional"
+    }
+  ]
+}

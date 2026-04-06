@@ -1,0 +1,128 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "Savings_DesiredAgeToBeMillionaire": {
+        "fieldLabel": "Edad deseada para ser millonario(a)"
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Ahorro actual "
+      },
+      "Savings_MonthlyInvestment": {
+        "fieldLabel": "Ahorros para invertir mensualmente"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Años",
+    "title": "¿Qué debo hacer para ser millonario(a)?",
+    "answer": "Será millonario en <span class='lf-bold'>%years%</span> %yearlabel% a la edad de <span class='lf-bold'>%age%</span>",
+    "answer2": "Lo sentimos, parece que no te convertirás en millonario en tu vida.",
+    "answerText1": "Usted todavía podría ser millonario a la edad de <span class='lf-bold'>%age%</span> si:<br/><br/><ul><li>Reduce la cantidad que invierte ahora a %investNow%, o </li><li>Reduce su inversión mensual a %monthlyInvest%, o</li><li>Gana una tasa de rendimiento de %returnRate%%</li></ul>Cuando se aplica el ajuste por inflación, $1 millón en %years% %yearlabel% sería equivalente a %totAmount% actualmente.",
+    "answerText2": "Para ser millonario a la edad de %age%, usted tendrá que:<br/><br/><ul><li>Aumentar la cantidad que invierte ahora a %investNow%, o </li><li>Aumentar su inversión mensual a %monthlyInvest%, o</li><li>Ganar una tasa de rendimiento de %returnRate%%</li></ul>Cuando se aplica el ajuste por inflación, $1 millón en %years% %yearlabel% sería equivalente a %totAmount% actualmente.",
+    "answerText3": "Podrías ser millonario a la edad <span class='lf-bold'>%age%</span> si usted:<br/><br/><ul><li>Disminuya la cantidad que invierte ahora a %investNow%, o</li><li>Disminuya su inversión mensual a %monthlyInvest%</li></ul>Cuando se ajusta por inflación, $1 millón en %years% %yearlabel% sería equivalente a %totAmount% hoy.",
+    "answerText4": "Cuando se aplica el ajuste por inflación, $1 millón en %years% %yearlabel% sería equivalente a %totAmount% actualmente.",
+    "desiredAge": "Edad deseada",
+    "retireAge": "Edad proyectada",
+    "age": "Edad",
+    "notMillionaire_prefix": "no se convertirá en millonario",
+    "congratulations_prefix": "Felicitaciones",
+    "investNow_prefix": "ahora a ",
+    "monthlyInvest_prefix": "inversión mensual a ",
+    "rateOfReturn_prefix": "una tasa de retorno del ",
+    "totAmount_prefix": "equivalente a ",
+    "starting_prefix": "invierte ",
+    "contribution_prefix": " ahora y ",
+    "interest_prefix": " mensualmente al ",
+    "millionaireIn_prefix": "millonario dentro de ",
+    "yearsAtAge_prefix": "años, a la edad de ",
+    "yearsAtAge_suffix": " años.<br><br>",
+    "years": "years",
+    "selectors": [
+      {
+        "label": "Edad millonaria deseada versus proyectada",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Aumento porcentual anual de los precios. La tasa de inflación anual en los EE.UU. alcanzó un promedio de alrededor de 2- 3% en los últimos 10 años."
+    },
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "discount": {
+      "title": "Descuento",
+      "definition": "Un precio que es inferior al precio regular de venta. En el contexto de inversión en bonos, un descuento es un precio de bono inferior al valor nominal del bono."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa calcula cuánto tiempo le llevará ahorrar $1 millón sobre la base de la información de ahorro que usted proporciona. El <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#futurevalue\">valor futuro</a></span> de $1 millón se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#discount\">descuenta</a></span> por la tasa de inflación."
+    },
+    {
+      "textLabel": "La calculadora supone que usted ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxableaccount\">tributable</a></span>. Si usted desea simular que ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#taxadvantagedaccount\">con ventajas impositivas</a></span>, ingrese cero en los campos correspondientes a las tasas del impuesto sobre la renta federal y estatal. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras que compara la edad estimada para convertirse en millonario con la edad deseada para convertirse en millonario."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Edad estimada para convertirse en millonario con la edad deseada para convertirse en millonario"
+    }
+  ]
+}

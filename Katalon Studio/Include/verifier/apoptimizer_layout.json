@@ -1,0 +1,256 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "AP_TotalAPSpend",
+          "AP_TotalAPPayments",
+          "AP_PercentagePayablesMadeByCheck"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "AP_EstimatedAnnualNetBenefit"
+        ],
+        [
+          "AP_EstimatedVirtualCardRebate"
+        ],
+        [
+          "AP_EstimatedPremiumACHRebate"
+        ],
+        [
+          "AP_AnnualFees"
+        ]
+      ]
+    },
+    "results_fields": {
+      "AP_EstimatedAnnualNetBenefit": {
+        "fieldLabel": "Estimated annual net benefit",
+        "glossaryTerm": "estimatedannualnetbenefit",
+        "tooltipAriaLabel": [
+          "Show tooltip for Estimated annual net benefit"
+        ]
+      },
+      "AP_EstimatedVirtualCardRebate": {
+        "fieldLabel": "Estimated virtual card rebate",
+        "glossaryTerm": "estimatedvirtualcardrebate",
+        "tooltipAriaLabel": "Show tooltip for Estimated virtual card rebate"
+      },
+      "AP_EstimatedPremiumACHRebate": {
+        "fieldLabel": "Estimated premium ACH rebate",
+        "glossaryTerm": "estimatedpremiumachrebate",
+        "tooltipAriaLabel": "Show tooltip for Estimated premium ACH rebate"
+      },
+      "AP_AnnualFees": {
+        "fieldLabel": "Annual fees (Ongoing per transaction fees)",
+        "glossaryTerm": "annualfees",
+        "tooltipAriaLabel": "Show tooltip for Annual fees"
+      }
+    },
+    "fields": {
+      "AP_TotalAPSpend": {
+        "fieldLabel": "Total AP spend",
+        "smallLabel": "",
+        "glossaryTerm": "totalapspend",
+        "format": "currency",
+        "defaultValue": "100,000,000",
+        "value": "25000",
+        "minimumValue": "1",
+        "maxlength": "13",
+        "maximumValue": "5000000000",
+        "sliderMinVal": "15000000",
+        "sliderMaxVal": "5000000000",
+        "widgetStep": "5000000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "AP_TotalAPPayments": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Total AP payments",
+        "defaultValue": "15000",
+        "glossaryTerm": "totalappayments",
+        "inputType": "text",
+        "sliderMinVal": "5000",
+        "sliderMaxVal": "500000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "500000",
+        "widgetStep": "5000",
+        "value": "15000",
+        "format": "number"
+      },
+      "AP_PercentagePayablesMadeByCheck": {
+        "glossaryTerm": "percentageofpayablesmadebycheck",
+        "dropdown": true,
+        "fieldLabel": "% payables made by check",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "100%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "95%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "90%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "85%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "4",
+            "optionText": "80%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "5",
+            "optionText": "75%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "6",
+            "optionText": "70%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "7",
+            "optionText": "65%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "8",
+            "optionText": "60%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "9",
+            "optionText": "55%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "10",
+            "optionText": "50%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "11",
+            "optionText": "45%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "12",
+            "optionText": "40%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "13",
+            "optionText": "35%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "14",
+            "optionText": "30%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "15",
+            "optionText": "25%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "16",
+            "optionText": "20%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "17",
+            "optionText": "15%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "18",
+            "optionText": "10%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "19",
+            "optionText": "5%"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "20",
+            "optionText": "0%"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      }
+    }
+  },
+  "labels": {
+    "title": "What's the financial benefit of using AP Optimizer™?",
+    "answer": ""
+  },
+  "glossaryItems": {
+    "totalapspend": {
+      "title": "Total AP spend",
+      "definition": "The total dollar amount of non-payroll payments for the past 12 months."
+    },
+    "totalappayments": {
+      "title": "Total AP payments",
+      "definition": "The total number of AP payments for the past 12 months."
+    },
+    "percentageofpayablesmadebycheck": {
+      "title": "Percentage of payables made by check",
+      "definition": "The percentage of payables made by check."
+    },
+    "estimatedannualnetbenefit": {
+      "title": "Estimated annual net benefit",
+      "definition": "Estimated rebates minus fees. Projection does not include additional values of check cost and fraud risk reduction, nor productivity increases from automation."
+    },
+    "estimatedvirtualcardrebate": {
+      "title": "Estimated virtual card rebate",
+      "definition": "The rebate revenue you can potentially receive by paying suppliers via virtual card."
+    },
+    "estimatedpremiumachrebate": {
+      "title": "Estimated premium ACH rebate",
+      "definition": "The rebate revenue you can potentially receive by paying suppliers via Premium ACH."
+    },
+    "annualfees": {
+      "title": "Annual fees",
+      "definition": "Ongoing transaction fees based on your AP spend and payments inputs."
+    }
+  },
+  "help": [],
+  "chartTitles": [],
+  "tableTitles": []
+}

@@ -1,0 +1,228 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Insurance_HomeReplacementCost",
+          "Insurance_BelongingsReplacementCost",
+          "Global_NetWorth",
+          "Insurance_DeductibleAndPremiumPreference"
+        ]
+      }
+    },
+    "fields": {
+      "Insurance_HomeReplacementCost": {
+        "fieldLabel": "Cost to rebuild your home",
+        "smallLabel": "",
+        "glossaryTerm": "homereplacementcost",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Under $150,000",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$150,000 - $300,000",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "$300,001 - $600,000",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Over $600,000",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_BelongingsReplacementCost": {
+        "fieldLabel": "Cost to replace your belongings",
+        "smallLabel": "",
+        "glossaryTerm": "belongingsreplacementcost",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Under $50,000",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$50,000 - $150,000",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Over $150,000",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_NetWorth": {
+        "fieldLabel": "Your net worth",
+        "smallLabel": "",
+        "glossaryTerm": "personalnetworth",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Under $100,000",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$100,000 - $300,000",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "$300,001 - $500,000",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Over $500,000",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_DeductibleAndPremiumPreference": {
+        "fieldLabel": "Deductible and premium preference",
+        "smallLabel": "",
+        "glossaryTerm": "deductible",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Higher deductible, lower premium",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Lower deductible, higher premium",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "A balance between the two",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Insurance_DwellingCoverage"
+        ],
+        [
+          "Insurance_PersonalPropertyCoverage"
+        ],
+        [
+          "Insurance_HomeInsuranceLiabilityCoverage"
+        ],
+        [
+          "Insurance_HomeInsuranceDeductible"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Insurance_DwellingCoverage": {
+        "fieldLabel": "Dwelling",
+        "glossaryTerm": "dwellingcoverage"
+      },
+      "Insurance_PersonalPropertyCoverage": {
+        "fieldLabel": "Personal property",
+        "glossaryTerm": "personalpropertycoverage"
+      },
+      "Insurance_HomeInsuranceLiabilityCoverage": {
+        "fieldLabel": "Liability",
+        "glossaryTerm": "homeinsuranceliabilitycoverage"
+      },
+      "Insurance_HomeInsuranceDeductible": {
+        "fieldLabel": "Deductible",
+        "glossaryTerm": "deductible2"
+      }
+    }
+  },
+  "labels": {
+    "title": "How much homeowners insurance do I need?",
+    "answer": "Your estimated coverage needs:"
+  },
+  "glossaryItems": {
+    "homereplacementcost": {
+      "title": "Cost to rebuild your home",
+      "definition": "The amount it costs to rebuild your house from scratch to its original standard based on current market prices for construction, materials and labor."
+    },
+    "belongingsreplacementcost": {
+      "title": "Cost to replace your belongings",
+      "definition": "The amount it costs to fully replace your personal possessions of similar kind and quality if they are damaged or destroyed by a covered loss."
+    },
+    "personalnetworth": {
+      "title": "Personal net worth",
+      "definition": "Net worth, also called total equity, is equal to assets you own minus liabilities you owe."
+    },
+    "deductible": {
+      "title": "Deductible",
+      "definition": "A deductible is the dollar amount that you must pay on an insurance policy before the insurance company begins to pay your claim. A higher deductible means you pay more before the insurer begins to pay. The benefit of having a higher deductible is that you will pay a smaller premium."
+    },
+    "dwellingcoverage": {
+      "title": "Dwelling coverage",
+      "definition": "Dwelling coverage pays to repair or rebuild the actual structure of your home from covered hazards such as fires, hurricanes, falling trees, etc."
+    },
+    "personalpropertycoverage": {
+      "title": "Personal property coverage",
+      "definition": "Personal property coverage pays to repair or replace belongings —  clothing, furniture, electronics, jewelry, etc. — after a covered loss."
+    },
+    "homeinsuranceliabilitycoverage": {
+      "title": "Personal liability coverage",
+      "definition": "Personal liability coverage protects you if you or members of your household are liable for  injury for property damage, in or out of your home."
+    },
+    "deductible2": {
+      "title": "Deductible",
+      "definition": "A deductible is the dollar amount that you must pay on an insurance policy before the insurance company begins to pay your claim. A higher deductible means you pay more before the insurer begins to pay. The benefit of having a higher deductible is that you will pay a smaller premium."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Homeowners insurance provides coverage to repair or rebuild your home after events like fire, smoke, theft, a falling tree, or damage caused by weather. It is important because it protects you from enormous financial loss and can also help cover the cost of paying for bodily injury to others or damage to their property. As a starting point, this tool helps you estimate your homeowners insurance coverage needs based on your net worth, deductible and premium preference, and the cost to rebuild your home and replace your belongings. For further information, please consult an insurance professional."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

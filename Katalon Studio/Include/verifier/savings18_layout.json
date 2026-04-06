@@ -1,0 +1,465 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "generalInfo",
+        "savingsAccount",
+        "shortTermCD",
+        "longTermCD"
+      ],
+      "generalInfo": {
+        "tabLabel": "General Info",
+        "fields": [
+          "Savings_DepositAmount",
+          "Savings_PredictedAnnualRateIncrease",
+          "Global_FederalTaxRate",
+          "Global_StateTaxRate"
+        ]
+      },
+      "savingsAccount": {
+        "tabLabel": "Savings Account",
+        "fields": [
+          "Global_SavingsInterestRate",
+          "Savings_CompoundingFrequency"
+        ]
+      },
+      "shortTermCD": {
+        "tabLabel": "Short Term CD",
+        "fields": [
+          "Savings_FirstCDTermInMonths",
+          "Savings_FirstCDInterestRate",
+          "Savings_FirstCDCompoundingFrequency"
+        ]
+      },
+      "longTermCD": {
+        "tabLabel": "Long Term CD",
+        "fields": [
+          "Savings_ThirdCDTermInMonths",
+          "Savings_ThirdCDInterestRate",
+          "Savings_ThirdCDCompoundingFrequency"
+        ]
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "columnHeaders": [
+        "Interest Earned After %years% %yearlabel%",
+        "Cumulative Return"
+      ],
+      "fields": [
+        [
+          "SavingsInterestEarned",
+          "SavingsCumulativeReturn"
+        ],
+        [
+          "ShortTermCDInterestEarned",
+          "ShortTermCDCumulativeReturn"
+        ],
+        [
+          "LongTermCDInterestEarned",
+          "LongTermCDCumulativeReturn"
+        ]
+      ]
+    },
+    "results_fields": {
+      "SavingsInterestEarned": {
+        "fieldLabel": "Savings Account"
+      },
+      "SavingsCumulativeReturn": {
+        "fieldLabel": " "
+      },
+      "ShortTermCDCumulativeReturn": {
+        "fieldLabel": " "
+      },
+      "LongTermCDCumulativeReturn": {
+        "fieldLabel": " "
+      },
+      "ShortTermCDInterestEarned": {
+        "fieldLabel": "Short Term CD"
+      },
+      "LongTermCDInterestEarned": {
+        "fieldLabel": "Long Term CD"
+      }
+    },
+    "fields": {
+      "Savings_DepositAmount": {
+        "fieldLabel": "Initial deposit",
+        "smallLabel": "",
+        "glossaryTerm": "cdamount",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_PredictedAnnualRateIncrease": {
+        "fieldLabel": "Predicted annual rate increase",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      },
+      "Savings_CompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Savings_FirstCDTermInMonths": {
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "cddepositterm",
+        "format": "number",
+        "defaultValue": "24",
+        "value": "24",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "enclosingButtonSecondLabel": true,
+        "enclosingButtonID": "shortTermCD-accordion",
+        "crossFields": [
+          "Savings_FirstCDTermInMonths",
+          "Savings_ThirdCDTermInMonths"
+        ]
+      },
+      "Savings_FirstCDInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "1.50",
+        "value": "1.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_FirstCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      },
+      "Savings_ThirdCDTermInMonths": {
+        "fieldLabel": "Deposit term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "cddepositterm",
+        "format": "number",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "enclosingButtonSecondLabel": true,
+        "enclosingButtonID": "longTermCD-accordion",
+        "crossFields": [
+          "Savings_FirstCDTermInMonths",
+          "Savings_ThirdCDTermInMonths"
+        ]
+      },
+      "Savings_ThirdCDInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "cdinterestrate",
+        "format": "percent",
+        "defaultValue": "2.50",
+        "value": "2.50",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_ThirdCDCompoundingFrequency": {
+        "inputTypeDDL": true,
+        "dropdown": true,
+        "solverEditable": false,
+        "fieldLabel": "Compounding frequency",
+        "glossaryTerm": "cdcompoundingfrequency",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "optionText": "Daily"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "1",
+            "optionText": "Monthly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "optionText": "Quarterly"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "optionText": "Yearly"
+          }
+        ]
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle2": "Year",
+    "title": "Which savings option earns more if rates go up?",
+    "answer1": "If rates go up annually by <span class='lf-bold'>%rate%%</span>, the <span class='lf-bold'>%cdType%</span> will earn the most over the <span class='lf-bold'>%years% %yearlabel%</span>",
+    "answer2": "If rates go up annually by <span class='lf-bold'>%rate%%</span>, more than one savings option will earn the most over <span class='lf-bold'>%years% %yearlabel%</span>.",
+    "selectors": [
+      {
+        "label": "Interest Earned",
+        "width": "50%",
+        "first": true,
+        "getGraphData": true
+      },
+      {
+        "label": "Over Time",
+        "width": "50%",
+        "last": true,
+        "getGraphData": true
+      }
+    ],
+    "savingsAccount": "Savings Account",
+    "shortTermCD": "Short Term CD",
+    "longTermCD": "Long Term CD",
+    "year": "Year",
+    "interestEarned": "Interest Earned",
+    "endingBalance": "Ending Balance"
+  },
+  "glossaryItems": {
+    "cdamount": {
+      "title": "CD amount",
+      "definition": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "cdinterestrate": {
+      "title": "CD interest rate",
+      "definition": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    },
+    "cdcompoundingfrequency": {
+      "title": "CD compounding frequency",
+      "definition": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    },
+    "cddepositterm": {
+      "title": "CD deposit term",
+      "definition": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine which savings option provides the greater return if interest rates rise. Longer term options can still outperform even if short term rates go up."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total interest earned for each savings option at the time the long term CD matures."
+    },
+    {
+      "title": "Column chart of the cumulative interest earned at the end of each year of the investment horizon (when the long term CD matures) for each savings option."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total interest earned for each savings option at the time the long term CD matures"
+    },
+    {
+      "title": "Cumulative interest earned at the end of each year of the investment horizon (when the long term CD matures) for each savings option"
+    }
+  ]
+}

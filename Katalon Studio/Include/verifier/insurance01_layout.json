@@ -1,0 +1,1656 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Assets",
+        "ExpensesatDeath",
+        "FutureIncome",
+        "FutureExpenses",
+        "TaxesInflation",
+        "results"
+      ],
+      "Assets": {
+        "selected": true,
+        "tabLabel": "Assets",
+        "custom": "new-standard-3col",
+        "pageTitle": "Assets to cover family expenses after death",
+        "fieldSets": "1",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Insurance_ReasonForNeed",
+                "Insurance_YearsNeeded",
+                "Insurance_CashAndSavings",
+                "Insurance_HomeEquity",
+                "Insurance_Investments",
+                "Insurance_OtherAssets"
+              ]
+            }
+          ]
+        }
+      },
+      "ExpensesatDeath": {
+        "tabLabel": "Expenses at Death",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "pageTitle": "One-time expenses at death",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "sectionLabelH2": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Insurance_EstateTaxPercentage",
+                "Insurance_ProbateCosts",
+                "Insurance_FuneralCosts",
+                "Insurance_UninsuredMedicalCosts",
+                "Insurance_DebtRepayment",
+                "Insurance_CollegeFundChildOne",
+                "Insurance_CollegeFundChildTwo",
+                "Insurance_CollegeFundChildThree"
+              ]
+            }
+          ]
+        }
+      },
+      "FutureIncome": {
+        "tabLabel": "Future Income",
+        "pageTitle": "Your family's estimated future monthly income, in today's dollars",
+        "custom": "new-standard-3col",
+        "sections": [
+          "amount",
+          "yearsStart",
+          "duration"
+        ],
+        "amount": {
+          "sectionLabel": "",
+          "fieldSets": "3",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureIncome_row1",
+              "fields": [
+                "Insurance_SpouseGrossMonthlyIncomeAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row2",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row3",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row4",
+              "fields": [
+                "Insurance_OtherMonthlyIncomeAmount"
+              ]
+            }
+          ]
+        },
+        "yearsStart": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureIncome_row1",
+              "fields": [
+                "Insurance_SpouseGrossMonthlyIncomeYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row2",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row3",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row4",
+              "fields": [
+                "Insurance_OtherMonthlyIncomeYearsUntilStart"
+              ]
+            }
+          ]
+        },
+        "duration": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureIncome_row1",
+              "fields": [
+                "Insurance_SpouseGrossMonthlyIncomeDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row2",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row3",
+              "fields": [
+                "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureIncome_row4",
+              "fields": [
+                "Insurance_OtherMonthlyIncomeDuration"
+              ]
+            }
+          ]
+        }
+      },
+      "FutureExpenses": {
+        "tabLabel": "Future Expenses",
+        "pageTitle": "Your family's estimated future monthly expenses, in today's dollars",
+        "custom": "new-standard-3col",
+        "sections": [
+          "amount",
+          "yearsStart",
+          "duration"
+        ],
+        "amount": {
+          "sectionLabel": "",
+          "fieldSets": "3",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureExpenses_row1",
+              "fields": [
+                "Insurance_MonthlyChildCareExpensesAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row2",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenAtHomeAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row3",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenGoneAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row4",
+              "fields": [
+                "Insurance_MonthlyCollegeExpensesAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row5",
+              "fields": [
+                "Insurance_MonthlySpouseEducationExpensesAmount"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row6",
+              "fields": [
+                "Insurance_OtherMonthlyExpensesAmount"
+              ]
+            }
+          ]
+        },
+        "yearsStart": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureExpenses_row1",
+              "fields": [
+                "Insurance_MonthlyChildCareExpensesYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row2",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenAtHomeYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row3",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenGoneYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row4",
+              "fields": [
+                "Insurance_MonthlyCollegeExpensesYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row5",
+              "fields": [
+                "Insurance_MonthlySpouseEducationExpensesYearsUntilStart"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row6",
+              "fields": [
+                "Insurance_OtherMonthlyExpensesYearsUntilStart"
+              ]
+            }
+          ]
+        },
+        "duration": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "FutureExpenses_row1",
+              "fields": [
+                "Insurance_MonthlyChildCareExpensesDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row2",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenAtHomeDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row3",
+              "fields": [
+                "Insurance_MonthlyLivingExpensesChildrenGoneDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row4",
+              "fields": [
+                "Insurance_MonthlyCollegeExpensesDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row5",
+              "fields": [
+                "Insurance_MonthlySpouseEducationExpensesDuration"
+              ]
+            },
+            {
+              "rowLabel": "FutureExpenses_row6",
+              "fields": [
+                "Insurance_OtherMonthlyExpensesDuration"
+              ]
+            }
+          ]
+        }
+      },
+      "TaxesInflation": {
+        "tabLabel": "Taxes & Inflation",
+        "pageTitle": "Tax, inflation, and savings rates",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Global_FederalAndStateTaxRate",
+                "Global_InflationRate",
+                "Global_SavingsInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "fields": {
+      "Insurance_ReasonForNeed": {
+        "fieldLabel": "Insurance needed for",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "A given time period",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "All expenses",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Insurance_YearsNeeded": {
+        "fieldLabel": "Years needed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "10",
+        "value": "10",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Insurance_CashAndSavings": {
+        "fieldLabel": "Cash and savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_HomeEquity": {
+        "fieldLabel": "Home equity",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30000",
+        "value": "30000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_Investments": {
+        "fieldLabel": "Investments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_OtherAssets": {
+        "fieldLabel": "Other assets",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "4500",
+        "value": "4500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_EstateTaxPercentage": {
+        "fieldLabel": "Estate taxes",
+        "smallLabel": "",
+        "glossaryTerm": "estatetaxes",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_ProbateCosts": {
+        "fieldLabel": "Probate costs",
+        "smallLabel": "",
+        "glossaryTerm": "probate",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_FuneralCosts": {
+        "fieldLabel": "Funeral costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "6000",
+        "value": "6000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_UninsuredMedicalCosts": {
+        "fieldLabel": "Uninsured medical costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_DebtRepayment": {
+        "fieldLabel": "Debt repayment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_CollegeFundChildOne": {
+        "fieldLabel": "College fund, child 1",
+        "smallLabel": "",
+        "glossaryTerm": "collegesavingsplan",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_CollegeFundChildTwo": {
+        "fieldLabel": "College fund, child 2",
+        "smallLabel": "",
+        "glossaryTerm": "collegesavingsplan",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_CollegeFundChildThree": {
+        "fieldLabel": "College fund, child 3",
+        "smallLabel": "",
+        "glossaryTerm": "collegesavingsplan",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Insurance_SpouseGrossMonthlyIncomeAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "3000",
+        "value": "3000",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Amount (monthly)",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SpouseGrossMonthlyIncomeYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Years until start",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SpouseGrossMonthlyIncomeDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Duration",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "glossaryTerm": "survivorsinsurance",
+        "format": "currency",
+        "defaultValue": "225",
+        "value": "225",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "sliderClass": "lf-triple-input-slider",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "survivorsinsurance",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenAtHomeDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "survivorsinsurance",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "glossaryTerm": "survivorsinsurance",
+        "format": "currency",
+        "defaultValue": "225",
+        "value": "225",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "survivorsinsurance",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_SocialSecuritySurvivorBenefitsChildrenGoneDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "survivorsinsurance",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyIncomeAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "8",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyIncomeYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyIncomeDuration": {
+        "fieldLabel": "Duration ",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyChildCareExpensesAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Amount (monthly)",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyChildCareExpensesYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "ariaLegendLabel": "Years until start",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyChildCareExpensesDuration": {
+        "fieldLabel": "Duration ",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "ariaLegendLabel": "Duration",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenAtHomeAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2600",
+        "value": "2600",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenAtHomeYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenAtHomeDuration": {
+        "fieldLabel": "Duration ",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenGoneAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1900",
+        "value": "1900",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenGoneYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyLivingExpensesChildrenGoneDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyCollegeExpensesAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyCollegeExpensesYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "8",
+        "value": "8",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlyCollegeExpensesDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlySpouseEducationExpensesAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlySpouseEducationExpensesYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_MonthlySpouseEducationExpensesDuration": {
+        "fieldLabel": "Duration ",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyExpensesAmount": {
+        "fieldLabel": "Amount (monthly)",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyExpensesYearsUntilStart": {
+        "fieldLabel": "Years until start",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Insurance_OtherMonthlyExpensesDuration": {
+        "fieldLabel": "Duration",
+        "valueTextLabel": "years",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state + federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflationrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Your savings interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "savingsinterestrate",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "columnHeaders": [],
+      "fields": [
+        [
+          "Expenses"
+        ],
+        [
+          "NowAssets"
+        ],
+        [
+          "FutAssets"
+        ],
+        [
+          "InsNeeded"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Expenses": {
+        "fieldLabel": "Total amount necessary today to cover expenses"
+      },
+      "NowAssets": {
+        "fieldLabel": "Assets you own today which you may convert to cash"
+      },
+      "FutAssets": {
+        "fieldLabel": "Amount of expenses your family will be able to cover"
+      },
+      "InsNeeded": {
+        "fieldLabel": "Shortfall (life insurance you'll need)"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "How much life insurance do I need?",
+    "answer1": "You'll need <span class='lf-bold'>%InsNeeded%</span> in life insurance to cover expenses.",
+    "answer2": "You do not need to buy any life insurance to cover expenses.",
+    "selectors": [
+      {
+        "label": "Expense coverage",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "nowAssets": "Current Assets",
+    "futAssets": "Future Assets",
+    "insNeeded": "Insurance Needed",
+    "FutureIncome_row1": "Spouse's gross income from work",
+    "FutureIncome_row2": "Social Security survivor benefits (children at home)",
+    "FutureIncome_row3": "Social Security survivor benefits (children gone)",
+    "FutureIncome_row4": "Other income",
+    "FutureExpenses_row1": "Child care expenses",
+    "FutureExpenses_row2": "Living expenses (children at home)",
+    "FutureExpenses_row3": "Living expenses (children gone)",
+    "FutureExpenses_row4": "Children's college expenses",
+    "FutureExpenses_row5": "Retraining or education expenses for spouse",
+    "FutureExpenses_row6": "Other expenses",
+    "ChildcareEducation_DayCare": "Day care"
+  },
+  "glossaryItems": {
+    "estatetaxes": {
+      "title": "Estate taxes",
+      "definition": "Taxes that are levied on the assets of an estate. For 2025, the maximum amount of income that is excluded from estate taxes is $13.99 million. The maximum estate and gift tax rate in 2025 is 40%."
+    },
+    "probate": {
+      "title": "Probate",
+      "definition": "A legal procedure settled by a state court of law that identifies the heirs to your estate and determines their legally entitled share."
+    },
+    "collegesavingsplan": {
+      "title": "College savings plan",
+      "definition": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    },
+    "survivorsinsurance": {
+      "title": "Survivors insurance",
+      "definition": "Social Security survivors insurance pays an additional benefit, called a survivors benefit, to the surviving spouse or dependent of a deceased person who was eligible to receive or was receiving Social Security retirement benefits."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "inflationrate": {
+      "title": "Inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool estimates how much life insurance coverage your family may need to cover future expenses in the event of your untimely death."
+    },
+    {
+      "textLabel": "A life insurance policy is used to supplement income that your family may earn from:"
+    },
+    {
+      "textLabel": "Nonrecurring events, such as the sale of assets to pay outstanding debts or expenses."
+    },
+    {
+      "textLabel": "Income from Social Security, pensions, investments, or salaries."
+    },
+    {
+      "textLabel": "Key assumptions of this tool include: "
+    },
+    {
+      "textLabel": "The results shown are after inflation and taxes"
+    },
+    {
+      "textLabel": "Available assets (including home equity, savings, and other investments) are treated as a source of income.  It is assumed that they are sold at the time of unexpected death and therefore become available as a cash resource."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of current assets, future assets and insurance needed to cover expenses after death."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of current assets, future assets and insurance needed to cover expenses after death"
+    }
+  ]
+}

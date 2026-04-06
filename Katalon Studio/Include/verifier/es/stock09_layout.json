@@ -1,0 +1,129 @@
+{
+  "layout": {
+    "tabs": {
+      "ExchangeRates": {
+        "tabLabel": "TIPOS DE CAMBIO"
+      },
+      "Investment": {
+        "tabLabel": "INVERSIÓN"
+      },
+      "Income": {
+        "tabLabel": "INGRESOS"
+      }
+    },
+    "fields": {
+      "Stock_ExchangeRateAtPurchase": {
+        "fieldLabel": "Tipo de cambio a $1 en la compra"
+      },
+      "Stock_ExchangeRateAtSale": {
+        "fieldLabel": "Tipo de cambio a $1 hoy"
+      },
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones que comprará"
+      },
+      "Stock_MonthsOwned": {
+        "fieldLabel": "Cantidad de meses de posesión"
+      },
+      "Stock_SharePriceToday": {
+        "fieldLabel": "Precio de la acción hoy"
+      },
+      "Stock_AverageQuarterlyDividend": {
+        "fieldLabel": "Dividendo trimestral promedio"
+      },
+      "Stock_DividendIncomeSpendingOption": {
+        "fieldLabel": "Los ingresos por dividendos son",
+        "dropdownOptions": [
+          {
+            "optionText": "Se gastan cuando se reciben"
+          },
+          {
+            "optionText": "Se reinvierten en otro lugar"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento de una inversión"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "En el momento de la venta"
+      ]
+    },
+    "results_fields": {
+      "PriceNewStock09": {
+        "fieldLabel": "Precio de la acción, ajustado por tipo de cambio"
+      },
+      "GainNewStock09": {
+        "fieldLabel": "Ganancia por acción"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "title": "¿De qué manera los tipos de cambio afectan mi valor extranjero?",
+    "answer": "En la venta, el rendimiento denominado en dólares es un <span class='lf-bold'>%result%%</span> después de impuestos y cargos",
+    "selectors": [
+      {
+        "label": "Tasa de rendimiento",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "purchase": "Tipo de cambio al momento de la compra",
+    "sale": "Tipo de cambio al momento de la venta"
+  },
+  "glossaryItems": {
+    "foreignstock": {
+      "title": "Acciones extranjeras",
+      "definition": "Una acción emitida por una empresa no registrada en EE. UU."
+    },
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "exchangerate": {
+      "title": "Tipo de cambio",
+      "definition": "La relación de valores entre las monedas de dos países."
+    },
+    "currencyrisk": {
+      "title": "Riesgo de la moneda",
+      "definition": "El riesgo de que el valor de su inversión que se denomina en la moneda de otro país se elevará o caerá con los cambios en el tipo de cambio entre los países."
+    },
+    "dividend": {
+      "title": "Dividendos trimestrales promedio",
+      "definition": "Divididos que se ganan por muchas acciones, en promedio durante un trimestre."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta muestra cómo un cambio en el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ExchangeRate\">tipo de cambio</a></span> de dos países afecta la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento</a></span>, ya sea de manera positiva o negativa, que usted gana por invertir en acciones de ese país."
+    },
+    {
+      "textLabel": "Este riesgo de tipos de cambio que potencialmente aumenta o reduce el valor de su inversión extranjera se denomina <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CurrencyRisk\">riesgo de una divisa</a></span>."
+    },
+    {
+      "textLabel": "Para comprar <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#ForeignStock\">acciones extranjeras</a></span>, usted necesita pagarlas en la moneda local. Comience calculando el tipo de cambio entre la moneda que corresponda y el dólar el día que compra las acciones."
+    },
+    {
+      "textLabel": "Cuando el valor de la moneda extranjera que se requiere cambiar por la moneda local aumenta, sus ganancias de una inversión disminuyen si usted vende. Si la cantidad requerida disminuye, sus ganancias aumentan. En otras palabras, cuando el dólar se vuelve más valioso, su rendimiento disminuye. Si el dólar se debilita en relación con la moneda extranjera, su rendimiento aumenta."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el rendimiento, después de impuestos y tarifas, al tipo de cambio original y al tipo de cambio actual."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento, después de impuestos y tarifas, al tipo de cambio original y al tipo de cambio actual"
+    }
+  ]
+}

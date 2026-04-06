@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>font_Depreciation</name>
+   <tag></tag>
+   <elementGuidId>561ca9e9-b646-48fb-b22d-19c4b69b5fa7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-term > font > font</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='lf-tooltip-term']/font/font</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;lf-tooltip-term&quot;)/font[1]/font[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf-tooltip-term >> internal:text=&quot;Depreciation&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>font</value>
+      <webElementGuid>0986e65f-e265-4a46-8401-4385fd5793a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Depreciation</value>
+      <webElementGuid>d281605a-96f8-47a3-b933-b4eb2f5da6de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-term&quot;)/font[1]/font[1]</value>
+      <webElementGuid>9490e08e-bd35-4cf2-952c-28735f2dcad2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='lf-tooltip-term']/font/font</value>
+      <webElementGuid>8610c995-8962-48b3-a849-e8ddaa995a49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::font[2]</value>
+      <webElementGuid>4e812e65-291d-4e99-99ed-740114d4af63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025 Leadfusion'])[1]/following::font[4]</value>
+      <webElementGuid>ab5fa401-21ef-448b-8677-d03af353c413</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[3]/preceding::font[1]</value>
+      <webElementGuid>82f30aef-6adf-44f9-8750-7ea4df6a9156</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[4]/preceding::font[3]</value>
+      <webElementGuid>18f0913c-4355-4bcb-91d3-6a61d19a5687</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dfn/h2/span/font/font</value>
+      <webElementGuid>bcc57369-2c92-4d9b-b003-35de3cfc708f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//font[(text() = 'Depreciation' or . = 'Depreciation')]</value>
+      <webElementGuid>796e5814-d518-4ced-84f1-76d2a58345cb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

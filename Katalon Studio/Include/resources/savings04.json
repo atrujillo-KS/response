@@ -1,0 +1,526 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What will it take to save for a college education?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates different combinations to save a lump-sum amount to pay college expenses for a child or someone else. The calculator calculates the future cost of tuition based on the college cost inflation rate that you designate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='inflation rate'])[1]/following::p[1]",
+      "value": "The calculator assumes you save with a taxable account. If you want to simulate saving with a tax-advantaged account, enter a zero in the fields for federal and state income tax rates."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='tax-advantaged'])[1]/following::p[1]",
+      "value": "Tax-advantaged accounts to save for college tuition and other expenses include Section 529 plans and Coverdell education savings accounts (formerly called education IRAs)."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=lump-sum amount",
+      "value": "lump-sum amount"
+    }
+  },
+  {
+    "click": {
+      "id": "link=lump-sum amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Lump-sum investments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A lump-sum investment is an investment that you make to open an investment or savings account. It is used to jump-start an investment or savings account. Possible sources of lump-sum investments include inheritances, lump-sum distributions from retirement plans, and proceeds from a life insurance policy."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lump-sum investments'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=inflation rate",
+      "value": "inflation rate"
+    }
+  },
+  {
+    "click": {
+      "id": "link=inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Inflation rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inflation rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=taxable",
+      "value": "taxable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=tax-advantaged",
+      "value": "tax-advantaged"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Section 529 plans",
+      "value": "Section 529 plans"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Section 529 plans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Section 529 plans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A special tax-advantaged plan, operated by a state government or an educational institution, used to save for the college education of a child, grandchild, or other dependent."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Section 529 plans'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Coverdell education savings accounts",
+      "value": "Coverdell education savings accounts"
+    }
+  },
+  {
+    "click": {
+      "id": "link=Coverdell education savings accounts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Coverdell education savings account (ESA)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A tax-advantaged investment account designed to encourage savings to cover future elementary, secondary or college education expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Coverdell education savings account (ESA)'])[1]/following::div[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your college savings goal is $63,062"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-p1",
+      "value": "The total amount you'll need to have saved when college starts is $63,062. Your current savings plan will provide $14,556. To accumulate $63,062 in 10 years you'll need to:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L1",
+      "value": "Increase the amount you invest now to $47,309, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L2",
+      "value": "Increase your monthly investment to $397, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L3",
+      "value": "Earn a rate of return of 28.06%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$63,062'])[2]/following::li[1]",
+      "value": "Increase the amount you invest now to $47,309, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase the amount you invest now to $47,309, or'])[1]/following::li[1]",
+      "value": "Increase your monthly investment to $397, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase your monthly investment to $397, or'])[1]/following::li[1]",
+      "value": "Earn a rate of return of 28.06%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CollegeInfo-accordion",
+      "value": "College Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualCollegeCost-label",
+      "value": "Annual college cost (in today's dollars)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AnnualCollegeCost",
+      "value": "15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AnnualCollegeCost-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsUntilCollege-label",
+      "value": "Years until college"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_YearsUntilCollege",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsUntilCollege-error-message",
+      "value": "Must be between 1 and 30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsInCollege-label",
+      "value": "Years in college"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_YearsInCollege",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsInCollege-error-message",
+      "value": "Must be between 1 and 20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Annual rise in college costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InflationRate-label",
+      "value": "Annual rise in college costs"
+    }
+  },
+  {
+    "click": {
+      "id": "SavingsPlan-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "SavingsPlan-accordion",
+      "value": "Savings Plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentCollegeSavings-label",
+      "value": "Current college savings"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentCollegeSavings",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentCollegeSavings-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_MonthlyInvestmentForCollege-label",
+      "value": "Savings to invest monthly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_MonthlyInvestmentForCollege",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_MonthlyInvestmentForCollege-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Annual rate of return"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "CollegeInfo-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AnnualCollegeCost",
+      "value": "25,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_YearsUntilCollege",
+      "value": "12"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_YearsInCollege",
+      "value": "5"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_InflationRate",
+      "value": "1.50"
+    }
+  },
+  {
+    "click": {
+      "id": "SavingsPlan-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_CurrentCollegeSavings",
+      "value": "15,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_MonthlyInvestmentForCollege",
+      "value": "200"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.60"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "32.10"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your college savings goal is $141,694"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-p1",
+      "value": "The total amount you'll need to have saved when college starts is $141,694. Your current savings plan will provide $47,553. To accumulate $141,694 in 12 years you'll need to:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L1",
+      "value": "Increase the amount you invest now to $98,355, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L2",
+      "value": "Increase your monthly investment to $640, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savings04-L3",
+      "value": "Earn a rate of return of 17.60%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$141,694'])[2]/following::li[1]",
+      "value": "Increase the amount you invest now to $98,355, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$141,694'])[2]/following::li[1]",
+      "value": "Increase the amount you invest now to $98,355, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase the amount you invest now to $98,355, or'])[1]/following::li[1]",
+      "value": "Increase your monthly investment to $640, or"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Increase your monthly investment to $640, or'])[1]/following::li[1]",
+      "value": "Earn a rate of return of 17.60%"
+    }
+  }
+]

@@ -1,0 +1,695 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LoanInfo",
+        "TaxesInsurance",
+        "OriginationFees",
+        "OtherSettlementServices"
+      ],
+      "LoanInfo": {
+        "tabLabel": "Loan Info",
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Home_DownPaymentPercentage",
+          "Home_LoanTermInYears",
+          "Home_InterestRate"
+        ]
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Taxes & Insurance",
+        "fields": [
+          "Home_YearlyPropertyTax",
+          "Home_YearlyHomeownersInsurance"
+        ]
+      },
+      "OriginationFees": {
+        "tabLabel": "Origination Fees",
+        "fields": [
+          "Home_OriginationCharge",
+          "Home_DiscountPoints"
+        ]
+      },
+      "OtherSettlementServices": {
+        "tabLabel": "Other Settlement Services",
+        "fields": [
+          "Home_AppraisalFee",
+          "Home_CreditReportFee",
+          "Home_FloodCertificationFee",
+          "Home_TaxServiceFee",
+          "Home_TitleServicesFee",
+          "Home_OwnersTitleInsuranceFee",
+          "Home_GovernmentRecordingFees",
+          "Home_TransferTaxes",
+          "Home_SurveyFee",
+          "Home_PestInspectionFee"
+        ]
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "13",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "Home_DownPaymentPercentage": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "3",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "99",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "Home_LoanTermInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Home_InterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "Home_YearlyPropertyTax": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Property tax",
+        "defaultValue": "2000",
+        "glossaryTerm": "propertytax",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "9",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "2000",
+        "format": "currency"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "dataElementName": "lf_YrIns",
+        "fieldLabel": "Homeowners insurance",
+        "defaultValue": "500",
+        "glossaryTerm": "homeownersinsurance",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "(yearly)",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "500",
+        "format": "currency"
+      },
+      "Home_FloodCertificationFee": {
+        "fieldLabel": "Flood certification",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_OriginationCharge": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Origination charge",
+        "defaultValue": "1500",
+        "glossaryTerm": "origchargeamount",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "1500",
+        "format": "currency"
+      },
+      "Home_DiscountPoints": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Discount points",
+        "defaultValue": "1.000",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "widgetStep": "0.1",
+        "value": "1.000",
+        "format": "percent"
+      },
+      "Home_AppraisalFee": {
+        "fieldLabel": "Appraisal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_CreditReportFee": {
+        "fieldLabel": "Credit report",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_TaxServiceFee": {
+        "fieldLabel": "Tax service",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150",
+        "value": "150",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_TitleServicesFee": {
+        "fieldLabel": "Title services",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "350",
+        "value": "350",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_OwnersTitleInsuranceFee": {
+        "fieldLabel": "Owner's title insurance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "350",
+        "value": "350",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_GovernmentRecordingFees": {
+        "fieldLabel": "Government recording fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_TransferTaxes": {
+        "fieldLabel": "Transfer taxes",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_SurveyFee": {
+        "fieldLabel": "Survey",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "175",
+        "value": "175",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Home_PestInspectionFee": {
+        "fieldLabel": "Pest inspection",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "What will my closing costs be?",
+    "answer": "Your total estimated closing costs will be <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Closing Costs",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Payment",
+        "width": "33%"
+      },
+      {
+        "label": "Breakdown",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Breakdown of closing costs",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "princAndInt": "Principal & Interest",
+    "taxAndIns": "Taxes & Insurance",
+    "mortIns": "PMI",
+    "resultTable": [
+      {
+        "label": "Total Adjusted Origination Charges",
+        "dataElementName": "AdjOrigCharges"
+      },
+      {
+        "label": "Origination Charge",
+        "dataElementName": "LenderOrigCharge"
+      },
+      {
+        "label": "Charge for Discount Points",
+        "dataElementName": "ChargeAmountForSpecificInterestRate"
+      },
+      {
+        "label": "Total Other Settlement Services",
+        "dataElementName": "ChargesForAllSettlementServices"
+      },
+      {
+        "label": "Appraisal",
+        "dataElementName": "Home_AppraisalFee"
+      },
+      {
+        "label": "Credit report",
+        "dataElementName": "Home_CreditReportFee"
+      },
+      {
+        "label": "Flood certification",
+        "dataElementName": "Home_FloodCertificationFee"
+      },
+      {
+        "label": "Tax service",
+        "dataElementName": "Home_TaxServiceFee"
+      },
+      {
+        "label": "Title services",
+        "dataElementName": "Home_TitleServicesFee"
+      },
+      {
+        "label": "Owner's title insurance",
+        "dataElementName": "Home_OwnersTitleInsuranceFee"
+      },
+      {
+        "label": "Government recording fees",
+        "dataElementName": "Home_GovernmentRecordingFees"
+      },
+      {
+        "label": "Transfer taxes",
+        "dataElementName": "Home_TransferTaxes"
+      },
+      {
+        "label": "Survey",
+        "dataElementName": "Home_SurveyFee"
+      },
+      {
+        "label": "Pest inspection",
+        "dataElementName": "Home_PestInspectionFee"
+      },
+      {
+        "label": "Initial escrow account deposit",
+        "dataElementName": "InitDepositForEscrow"
+      },
+      {
+        "label": "Prepaid interest",
+        "dataElementName": "DailyInterestCharge"
+      },
+      {
+        "label": "Homeowner's Insurance",
+        "dataElementName": "HomeownerIns"
+      },
+      {
+        "label": "Total Estimated Closing Costs",
+        "dataElementName": "TotEstimatedSettlementCharges"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "requiredservicesselectedbylender": {
+      "title": "Required services selected by lender",
+      "definition": "Charges for services that are required to complete your mortgage settlement where the provider of the services is chosen by the lender."
+    },
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "fees": {
+      "title": "Fees (mortgage points and miscellaneous fees)",
+      "definition": "Fees include mortgage points and expenses to underwrite and originate a mortgage loan. One point equals 1% of the loan amount. The IRS considers points to be a form of prepaid interest. Expenses include fees for appraisal, title search, recordation of documents, and conveyance taxes. Total closing costs include these fees, prepaid interest to the first mortgage payment, and prepayments for homeowners insurance and property taxes."
+    },
+    "settlementcharges": {
+      "title": "Settlement Charges",
+      "definition": "Also known as closing costs, these are the customary costs above and beyond the sales price that must be paid to cover the transfer of ownership at closing."
+    },
+    "pmi": {
+      "title": "Private mortgage insurance (PMI)",
+      "definition": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    },
+    "points": {
+      "title": "Points",
+      "definition": "Points are also called discount points, mortgage points, loan discount points, loan origination fees, and maximum loan charges. A point is equal to 1 percent of the loan amount. For example, one point on a loan of $150,000 is $1,500. Lenders consider mortgage points as interest that you pay in advance. As a result, the more points you pay when you close the loan, the lower your interest rate. If you qualify, you may be able to deduct mortgage points in the year you close the loan for tax purposes. Otherwise, you will have to amortize the points paid over the term of the loan."
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "initdepositforescrow": {
+      "title": "Initial deposit for your escrow account",
+      "definition": "Payments that you make in advance for homeowner's insurance premiums and real estate taxes. "
+    },
+    "dailyinterestcharge": {
+      "title": "Daily interest charges",
+      "definition": "A daily interest charge, or prepaid interest, is the interest that you pay the lender in advance, often when you close on a loan."
+    },
+    "requiredservicesyoucanshopfor": {
+      "title": "Required services you can shop for",
+      "definition": "Charges for services that are required to complete your mortgage settlement for which the borrower can shop. "
+    },
+    "prepaidinterest": {
+      "title": "Prepaid interest",
+      "definition": "Prepaid interest is the interest that you pay the lender in advance, often when you close on a loan. If you close a loan before the end of the month, the lender will require you to pay interest for the number of days until the end of the month. This is one form of prepaid interest. Analyzers that calculate prepaid interest assume the loan closing date is the midpoint of a 30-day month. As a result, prepaid interest is calculated for 15 days. The IRS recognizes points that you pay at loan closing as prepaid interest. One point equals 1% of the loan amount. If you meet a checklist of requirements, the IRS allows you to deduct these points in the first year of your mortgage loan."
+    },
+    "origchargeamount": {
+      "title": "Origination Charges",
+      "definition": "The sum of all fees and charges from origination-related services. This represents all compensation to the lender and/or broker for originating the loan."
+    },
+    "othersettlementservices": {
+      "title": "Other settlement services",
+      "definition": "Fees paid for services associated with the purchase of a home that do not represent compensation to the lender and/or the broker for originating the loan."
+    },
+    "appraisal": {
+      "title": "Appraisal",
+      "definition": "Appraisal is the process of estimating fair market value of an asset. Appraisals are routinely required for real estate transactions. An appraiser should be a certified professional. He or she should be an independent party to the transaction in order to avoid potential conflict of interest. Real estate appraisers use methods that are common in local practice. Comparable-sales method is widely used to appraise real estate."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "An acronym for the principal and interest that you pay on a mortgage loan."
+    },
+    "piti": {
+      "title": "P+I+T+I",
+      "definition": "An acronym for loan principal, interest, property taxes and homeowner's insurance."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "originationfees": {
+      "title": "Origination fee",
+      "definition": "A lender may charge an origination fee that is additional to any mortgage points you pay. Origination fees are the lender's charge for funding your mortgage with a mortgage broker. The process of funding your loan is called origination."
+    },
+    "homeownersinsurance": {
+      "title": "Homeowner's insurance",
+      "definition": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    },
+    "propertytax": {
+      "title": "Property tax",
+      "definition": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "impounds": {
+      "title": "Property Taxes and Homeowner's Insurance",
+      "definition": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your mortgage <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#settlementcharges\">settlement charges</a></span> (or closing costs) for a given set of loan terms. The calculator lumps settlement charges into two categories: <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#origchargeamount\">origination charges</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#othersettlementservices\">other settlement services</a></span>."
+    },
+    {
+      "textLabel": "If you enter a loan amount that is more than 80% of the home's purchase price, the calculator estimates a monthly amount for private mortgage insurance (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#pmi\">PMI</a></span>). Mortgage lenders generally require that you obtain mortgage insurance if your down payment is less than 20% of the home purchase price."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of total estimated closing costs by total adjusted origination charges and total other settlement charges."
+    },
+    {
+      "title": "Pie chart of the breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of total estimated closing costs by total adjusted origination charges and total other settlement charges"
+    },
+    {
+      "title": "Breakdown of the total monthly payment by principal and interest, private mortgage insurance, and property taxes and homeowners insurance"
+    }
+  ]
+}

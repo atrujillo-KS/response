@@ -1,0 +1,110 @@
+{
+  "layout": {
+    "tabs": {
+      "GeneralInfo": {
+        "tabLabel": "Información del préstamo"
+      },
+      "Rebate": {
+        "tabLabel": "Reembolso"
+      },
+      "SpecialDealerFinancing": {
+        "tabLabel": "Financiamiento especial del concesionario "
+      },
+      "TaxSavingsRates": {
+        "tabLabel": "Tasas fiscales y sobre los ahorros"
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Auto_RegularInterestRate": {
+        "fieldLabel": "Tasa de interés fija"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      },
+      "Auto_RebateUse": {
+        "fieldLabel": "El reembolso se aplica a ",
+        "dropdownOptions": [
+          {
+            "optionText": "Ahorros"
+          },
+          {
+            "optionText": "Cuota inicial"
+          }
+        ]
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés baja"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Qué es mejor: un reembolso o un financiamiento especial del concesionario?",
+    "answer": "El <span class='lf-bold'>%type%</span> es la mejor opción.  En dólares actuales, usted ahorrará <span class='lf-bold'>%savings%</span>.",
+    "answer_same": "El reembolso le ahorrará, en dólares actuales, <span class='lf-bold'>lo mismo que</span> el financiamiento especial del concesionario",
+    "loan1": "Reembolso de efectivo",
+    "loan2": "Financiamiento especial del concesionario ",
+    "savings": "Ahorros",
+    "lowRate": "tasa baja",
+    "rebate": "reembolso"
+  },
+  "glossaryItems": {
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "cashrebate": {
+      "title": "Reembolso de efectivo",
+      "definition": "Oferta a los consumidores, que se hace como incentivo para la compra, que reduce el precio de compra de un bien en una cantidad equivalente al monto del reembolso en efectivo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora muestra la fuente más económica para tomar un préstamo para comprar un vehículo, financiación con tasa de interés baja o incentivos de reembolso por parte del concesionario o del fabricante de automóviles. Si el incentivo se invierte en una cuenta de ahorros, se asume que el interés que se gane estará sujeto al pago de impuestos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del costo total, en dólares de hoy, de la opción de reembolso en efectivo y la opción de financiamiento del concesionario especial durante el plazo del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total, en dólares de hoy, de la opción de reembolso en efectivo y la opción de financiamiento de concesionario especial durante el plazo del préstamo"
+    }
+  ]
+}

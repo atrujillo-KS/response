@@ -1,0 +1,1212 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Loans",
+        "CreditCards",
+        "ConsolidationLoan",
+        "results"
+      ],
+      "Loans": {
+        "selected": true,
+        "tabLabel": "Loans",
+        "custom": "new-standard-3col",
+        "pageTitle": "Your existing installment loans",
+        "pageDesc": "Enter information for all existing installment loans that you intend to consolidate into one loan or line of credit.",
+        "sections": [
+          "Amountowed",
+          "Monthlypayment",
+          "Monthsleft"
+        ],
+        "Amountowed": {
+          "sectionLabel": "",
+          "fieldSets": "3",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Loans_AutoLoan1",
+              "fields": [
+                "Global_LoanOneAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "Loans_AutoLoan2",
+              "fields": [
+                "Global_LoanTwoAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "Loans_BoatRVLoan",
+              "fields": [
+                "Global_LoanThreeAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "Loans_EducationLoan",
+              "fields": [
+                "Global_LoanFourAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "Loans_OtherLoans",
+              "fields": [
+                "Global_LoanFiveAmountOwed"
+              ]
+            }
+          ]
+        },
+        "Monthlypayment": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Loans_AutoLoan1",
+              "fields": [
+                "Global_LoanOneMonthlyPayment"
+              ]
+            },
+            {
+              "rowLabel": "Loans_AutoLoan2",
+              "fields": [
+                "Global_LoanTwoMonthlyPayment"
+              ]
+            },
+            {
+              "rowLabel": "Loans_BoatRVLoan",
+              "fields": [
+                "Global_LoanThreeMonthlyPayment"
+              ]
+            },
+            {
+              "rowLabel": "Loans_EducationLoan",
+              "fields": [
+                "Global_LoanFourMonthlyPayment"
+              ]
+            },
+            {
+              "rowLabel": "Loans_OtherLoans",
+              "fields": [
+                "Global_LoanFiveMonthlyPayment"
+              ]
+            }
+          ]
+        },
+        "Monthsleft": {
+          "sectionLabel": "",
+          "fieldSets": "3b",
+          "inputColumns": "lf-3-column-input",
+          "rows": [
+            {
+              "rowLabel": "Loans_AutoLoan1",
+              "fields": [
+                "Global_LoanOneMonthsLeft"
+              ]
+            },
+            {
+              "rowLabel": "Loans_AutoLoan2",
+              "fields": [
+                "Global_LoanTwoMonthsLeft"
+              ]
+            },
+            {
+              "rowLabel": "Loans_BoatRVLoan",
+              "fields": [
+                "Global_LoanThreeMonthsLeft"
+              ]
+            },
+            {
+              "rowLabel": "Loans_EducationLoan",
+              "fields": [
+                "Global_LoanFourMonthsLeft"
+              ]
+            },
+            {
+              "rowLabel": "Loans_OtherLoans",
+              "fields": [
+                "Global_LoanFiveMonthsLeft"
+              ]
+            }
+          ]
+        }
+      },
+      "CreditCards": {
+        "tabLabel": "Credit Cards",
+        "custom": "new-standard-3col",
+        "pageTitle": "Your existing credit cards and lines of credit",
+        "pageDesc": "Enter information for all existing credit cards and lines of credit that you intend to consolidate into one loan or line of credit.",
+        "sections": [
+          "Amountowed",
+          "Interestrate"
+        ],
+        "sectionLabel": "",
+        "Amountowed": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "CreditCards_CreditCard1",
+              "fields": [
+                "Global_LineofCreditOneAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_CreditCard2",
+              "fields": [
+                "Global_LineofCreditTwoAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_CreditCard3",
+              "fields": [
+                "Global_LineofCreditThreeAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_OtherAccount1",
+              "fields": [
+                "Global_LineofCreditFourAmountOwed"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_OtherAccount2",
+              "fields": [
+                "Global_LineofCreditFiveAmountOwed"
+              ]
+            }
+          ]
+        },
+        "Interestrate": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "fieldSetClass": "",
+          "rows": [
+            {
+              "rowLabel": "CreditCards_CreditCard1",
+              "fields": [
+                "Global_LineofCreditOneInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_CreditCard2",
+              "fields": [
+                "Global_LineofCreditTwoInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_CreditCard3",
+              "fields": [
+                "Global_LineofCreditThreeInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_OtherAccount1",
+              "fields": [
+                "Global_LineofCreditFourInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "CreditCards_OtherAccount2",
+              "fields": [
+                "Global_LineofCreditFiveInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "ConsolidationLoan": {
+        "tabLabel": "Consolidation Loan",
+        "pageTitle": "Consolidation Loan",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageDesc": "Enter information for the loan or line of credit into which you would like to consolidate your debt.",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Global_ConsolidationLoanType",
+                "Global_ConsolidationLoanInterestRate",
+                "Global_ConsolidationLoanMonthstoPayoff",
+                "Global_ConsolidationLoanUpfrontCosts",
+                "Global_ConsolidationLoanDiscountPoints",
+                "Global_FederalAndStateTaxRate",
+                "Global_SavingsInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "fields": {
+      "arialLabel": false,
+      "Global_LoanOneAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Amount owed",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanOneMonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Monthly payment",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanOneMonthsLeft": {
+        "fieldLabel": "Months left",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Months left",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanTwoAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanTwoMonthlyPayment": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanTwoMonthsLeft": {
+        "fieldLabel": "Months left",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanThreeAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanThreeMonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanThreeMonthsLeft": {
+        "fieldLabel": "Months left",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFourAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFourMonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFourMonthsLeft": {
+        "fieldLabel": "Months left",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFiveAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFiveMonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LoanFiveMonthsLeft": {
+        "fieldLabel": "Months left",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "120",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "sliderClass": "lf-triple-input-slider"
+      },
+      "Global_LineofCreditOneAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Amount owed",
+        "Legendcolumn": "lf-legend-column-2"
+      },
+      "Global_LineofCreditOneInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0.00",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Interest rate",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden"
+      },
+      "Global_LineofCreditTwoAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_LineofCreditTwoInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0.00",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden"
+      },
+      "Global_LineofCreditThreeAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_LineofCreditThreeInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0.00",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden"
+      },
+      "Global_LineofCreditFourAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_LineofCreditFourInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0.00",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden"
+      },
+      "Global_LineofCreditFiveAmountOwed": {
+        "fieldLabel": "Amount owed",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_LineofCreditFiveInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0.00",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "label-visually-hidden"
+      },
+      "Global_ConsolidationLoanType": {
+        "fieldLabel": "Loan type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "3",
+            "optionText": "Home equity line of credit",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Home equity loan",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Personal line of credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "Personal loan",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_ConsolidationLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "8.000",
+        "value": "8.000",
+        "minimumValue": "0.000",
+        "maximumValue": "1000000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "20.000",
+        "widgetStep": "1.000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "glossaryClass": "lf-glossary-label"
+      },
+      "Global_ConsolidationLoanMonthstoPayoff": {
+        "fieldLabel": "Months to pay off",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "24",
+        "value": "24",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "240",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_ConsolidationLoanUpfrontCosts": {
+        "fieldLabel": "Upfront costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "375",
+        "value": "375",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Global_ConsolidationLoanDiscountPoints": {
+        "fieldLabel": "Discount points",
+        "smallLabel": "",
+        "glossaryTerm": "chargeforspecificinterestrate",
+        "format": "percent",
+        "defaultValue": "0.000",
+        "value": "0.000",
+        "minimumValue": "0",
+        "maximumValue": "100.000",
+        "maxlength": "6",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "5.000",
+        "widgetStep": ".100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "glossaryClass": "lf-glossary-label"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state & federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "glossaryClass": "lf-glossary-label"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your savings rate",
+        "defaultValue": "1.00",
+        "glossaryTerm": "savingsinterestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "widgetStep": "1.00",
+        "value": "",
+        "format": "percent",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "glossaryClass": "lf-glossary-label"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Existing Debts",
+        "Consolidation Loan"
+      ],
+      "fields": [
+        [
+          "Global_ExistingDebtMonthlyPayment",
+          "Global_ConsolidationMonthlyPayment"
+        ],
+        [
+          "Global_ExistingDebtTotalInterest",
+          "Global_ConsolidationTotalInterest"
+        ],
+        [
+          "Global_ExistingDebtTaxSavings",
+          "Global_ConsolidationTaxSavings"
+        ],
+        [
+          "Global_ExistingDebtTotalCost",
+          "Global_ConsolidationTotalCost"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Global_ExistingDebtMonthlyPayment": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Global_ConsolidationMonthlyPayment": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Global_ExistingDebtTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Global_ConsolidationTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Global_ExistingDebtTaxSavings": {
+        "fieldLabel": "Total tax savings"
+      },
+      "Global_ConsolidationTaxSavings": {
+        "fieldLabel": "Total tax savings"
+      },
+      "Global_ExistingDebtTotalCost": {
+        "fieldLabel": "Total cost in today's dollars"
+      },
+      "Global_ConsolidationTotalCost": {
+        "fieldLabel": "Total cost in today's dollars"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Monthly Payment",
+    "dataTableCategory2": "Total Cost",
+    "title": "Should I consolidate my debts?",
+    "answer": "%WHICHSAVES% will save you <span class='lf-bold'>%result%</span> per month.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Payments",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Total Costs",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "existingDebts": "Existing Debts",
+    "consolidation": "Consolidated Loan",
+    "save": "save",
+    "cost": "cost",
+    "Loans_AutoLoan1": "Auto loan 1",
+    "Loans_AutoLoan2": "Auto loan 2",
+    "Loans_BoatRVLoan": "Boat/RV loan",
+    "Loans_EducationLoan": "Education loan",
+    "Loans_OtherLoans": "Other loans",
+    "CreditCards_CreditCard1": "Credit card 1",
+    "CreditCards_CreditCard2": "Credit card 2",
+    "CreditCards_CreditCard3": "Credit card 3",
+    "CreditCards_OtherAccount1": "Other Account 1",
+    "CreditCards_OtherAccount2": "Other Account 2"
+  },
+  "glossaryItems": {
+    "chargeforspecificinterestrate": {
+      "title": "Charge for specific interest rate",
+      "definition": "An additional charge, expressed as a percentage of the loan amount, to obtain a lower interest rate. "
+    },
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "homeequityloan": {
+      "title": "Home equity loan",
+      "definition": "An amortizing mortgage loan that allows homeowners to borrow against the equity in the home for making home improvements, consolidating debt, or spending for general purposes. "
+    },
+    "personalloc": {
+      "title": "Personal line of credit",
+      "definition": "An unsecured line of credit that allows you to borrow an amount up to but not exceeding a pre-approved credit limit.  Unlike a personal loan, payments are flexible and may consist of interest-only payments."
+    },
+    "heloc": {
+      "title": "Home equity line of credit",
+      "definition": "A form of revolving credit, secured by the equity in your home, that enables you to borrow an amount up to but not exceeding a pre-approved credit limit. Unlike a home-equity loan, payments are flexible and may consist of interest-only payments."
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "taxsavings": {
+      "title": "Tax savings",
+      "definition": "The amount you may save in taxes from a tax deduction or tax credit."
+    },
+    "consolidation": {
+      "title": "Consolidation",
+      "definition": "Loan consolidation combines multiple loans into a single loan to reduce payments, pay off debt quicker, and/or switch from a fixed-rate to variable-rate loan or vice versa."
+    },
+    "personalloan": {
+      "title": "Personal loan",
+      "definition": "An unsecured loan with fixed payments that may or may not have a personal guarantee."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the difference in the monthly payments, total interest, and total tax savings of your existing loans and credit cards with a new loan into which all your debts are consolidated. The total cost difference is discounted back to the present using your after-tax savings rate."
+    },
+    {
+      "textLabel": "<b>Note:</b> You may be better off not including loans which will be paid off sooner than your proposed consolidation loan, even if their interest rate is higher than the consolidation loan's rate."
+    },
+    {
+      "textLabel": "The preferred types of consolidation loans are <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#HomeEquityLoan\">home equity loans</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#HELOC\">home equity lines of credit</a></span> because the interest portions of such loans generally are tax-deductible. In comparison, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PersonalLoan\">personal loans</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PersonalLOC\">personal lines of credit</a></span> usually do not offer any tax benefits."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the total monthly payments of existing debt and the monthly payment of the consolidation loan."
+    },
+    {
+      "title": "Column chart comparing the total costs, in today's dollars, of existing debt and the consolidation loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total monthly payments of existing debt and the monthly payment of the consolidation loan"
+    },
+    {
+      "title": "Total costs, in today's dollars, of existing debt and the consolidation loan"
+    }
+  ]
+}

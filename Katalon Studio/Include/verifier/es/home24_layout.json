@@ -1,0 +1,68 @@
+{
+  "layout": {
+    "tabs": {
+      "CreditCardInfo": {
+        "tabLabel": "INGRESOS BRUTOS MENSUALES"
+      },
+      "Projections": {
+        "tabLabel": "DEUDAS MENSUALES RECURRENTES"
+      }
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Salarios antes de impuestos y deducciones",
+        "smallLabel": "",
+        "errorMessage": "Debe ubicarse entre $1 y $%maximumValue%"
+      },
+      "Home_MonthlyRent": {
+        "fieldLabel": "Renta o hipoteca",
+        "smallLabel": ""
+      },
+      "Home_CreditCardPayments": {
+        "fieldLabel": "Tarjeta de crédito",
+        "smallLabel": ""
+      },
+      "Home_AutoLoanPayments": {
+        "fieldLabel": "Préstamos para automóviles",
+        "smallLabel": ""
+      },
+      "Home_MonthlyStudentLoanPayments": {
+        "fieldLabel": "Préstamos estudiantiles",
+        "smallLabel": ""
+      },
+      "Global_OtherMonthlyLoanAmounts": {
+        "fieldLabel": "Otros préstamos",
+        "smallLabel": ""
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Otros pagos"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuál es mi relación deuda-ingresos (DTI)?",
+    "answer": "<h2 class='lf-graph-text'>Basado en un ingreso mensual bruto de <span class='lf-bold'>$%result1%</span> y un total de <span class='lf-bold'>$%result2%</span> en deudas mensuales recurrentes <span class='lf-bold'>su índice DTI estimado es %result3%%</span></h2>",
+    "selectors": []
+  },
+  "glossaryItems": {
+    "MonthlyRent": {
+      "title": "Renta mensual",
+      "definition": "Incluya los impuestos a la propiedad, tarifas de HOA, seguro de propietario, seguro de inquilino, etc."
+    },
+    "OtherMonthlyPaymentsDTI": {
+      "title": "Otros pagos mensuales",
+      "definition": "Incluya cualquier pago recurrente relacionado con mantenimiento, administración de propiedades, facturas de servicios públicos, etc."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula su relación deuda-ingresos (DTI) o \"relación back-end\". Los prestamistas utilizan DTI para aprobar a los solicitantes de préstamos. La relación deuda-ingresos es igual a los pagos mensuales combinados de su deuda divididos por el ingreso mensual bruto."
+    },
+    {
+      "textLabel": "Los prestamistas hipotecarios utilizan habitualmente un índice DTI del 36% o menos como guía para aprobar préstamos hipotecarios. Las directrices del DTI cambian a lo largo del ciclo económico. Cuando la economía es fuerte, los prestamistas tienden a aumentar el ratio, lo que facilita la obtención de un préstamo. Cuando la economía es débil, los prestamistas tienden a reducir el ratio, lo que dificulta la obtención de un préstamo. Una economía más débil conduce a tasas de interés más bajas, lo que hace que sea algo más fácil calificar."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

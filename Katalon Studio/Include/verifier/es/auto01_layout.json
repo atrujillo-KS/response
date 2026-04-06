@@ -1,0 +1,207 @@
+{
+  "layout": {
+    "tabs": {
+      "NewVehicleLoan": {
+        "tabLabel": "Préstamo de un vehículo nuevo"
+      },
+      "NewVehicleCost": {
+        "tabLabel": "Costo de un vehículo nuevo"
+      },
+      "UsedVehicleLoan": {
+        "tabLabel": "Préstamo de un vehículo usado"
+      },
+      "UsedVehicleCost": {
+        "tabLabel": "Costo de un vehículo usado"
+      },
+      "TaxesDepreciation": {
+        "tabLabel": "Impuestos y depreciación "
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo ",
+        "smallLabel": "(meses)"
+      },
+      "Auto_YearsOwned": {
+        "fieldLabel": "Años que tendrá vehículo "
+      },
+      "Auto_MonthlyMaintenance": {
+        "fieldLabel": "Gastos de mantenimiento mensuales"
+      },
+      "Auto_MonthlyInsurance": {
+        "fieldLabel": "Gastos de seguro mensuales"
+      },
+      "Auto_Registration": {
+        "fieldLabel": "Gastos de registro"
+      },
+      "Auto_UsedVehiclePurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "DownPmt2Auto01": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Auto_UsedVehicleInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_UsedVehicleLoanTerm": {
+        "fieldLabel": "Plazo del préstamo ",
+        "smallLabel": "(meses)"
+      },
+      "Auto_UsedVehicleAgeInYears": {
+        "fieldLabel": "Antigüedad del vehículo",
+        "smallLabel": "(años)"
+      },
+      "Auto_YearsUsedVehicleOwned": {
+        "fieldLabel": "Años que tendrá vehículo "
+      },
+      "YrsOwnAuto": {
+        "fieldLabel": "Años que tendrá vehículo "
+      },
+      "Auto_UsedVehicleMonthlyMaintenance": {
+        "fieldLabel": "Gastos de mantenimiento mensuales"
+      },
+      "Auto_UsedVehicleMonthlyInsurance": {
+        "fieldLabel": "Gastos de seguro mensuales"
+      },
+      "Auto_UsedVehicleRegistration": {
+        "fieldLabel": "Gastos de registro"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Auto_FutureDepreciation": {
+        "fieldLabel": "Depreciación futura",
+        "dropdownOptions": [
+          {
+            "optionText": "Baja"
+          },
+          {
+            "optionText": "Promedio"
+          },
+          {
+            "optionText": "Elevado(a)"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Nuevo",
+        "Usado"
+      ]
+    },
+    "results_fields": {
+      "AveCostPerYrAuto01": {
+        "fieldLabel": "Costo promedio al año"
+      },
+      "MonPmtAuto01": {
+        "fieldLabel": "Pago mensual"
+      },
+      "TotIntPaidAuto01": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TotDepAuto01": {
+        "fieldLabel": "Depreciación total"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo Medio Por Año",
+    "dataTableCategory2": "Pago mensual",
+    "title": "¿Qué es mejor: un vehículo nuevo o usado?",
+    "answer": "El <span class='lf-bold'>vehículo %vehicle%</span> le costará <span class='lf-bold'>%result% menos</span> en promedio cada año.",
+    "answer_same": "Tomando en cuenta los gastos de financiamiento y mantenimiento y otros costos, el vehículo nuevo que compre a un precio de <span class='lf-bold'>%newPrice%</span> le costará <span class='lf-bold'>lo mismo</span> en promedio cada año que el vehículo usado que compre por <span class='lf-bold'>%usedPrice%</span>.",
+    "newPayment": "Nuevo",
+    "usedPayment": "Usado",
+    "Used": "vehículo usado",
+    "New": "vehículo nuevo",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Costo promedio",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pagos",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "loanterm": {
+      "title": "Plazo del préstamo.",
+      "definition": "Duración o el período de un préstamo. Habitualmente se mide en años."
+    },
+    "firstyeardepreciation": {
+      "title": "Depreciación del primer año",
+      "definition": "La depreciación del primer año es el monto en dólares de costo por depreciación. Se deduce del precio de compra para calcular el valor residual o el valor libro del vehículo. El costo por depreciación es más alto en los primeros años de titularidad, particularmente en el caso de vehículos nuevos. La depreciación de un vehículo con una alta tasa de depreciación es mayor que el gasto de uno cuya tasa es baja."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Para decidir si compra un vehículo nuevo en lugar de uno usado, usted debe tener en cuenta los siguientes aspectos:"
+    },
+    {
+      "textLabel": "<i>Precio de compra.</i> Un vehículo nuevo ciertamente le costará más que uno usado de la misma marca y modelo. La medida en la que el automóvil nuevo o usado perderá su valor se basa en la tasa de depreciación seleccionada: promedio, alta o baja."
+    },
+    {
+      "textLabel": "<i>Depreciación.</i> Algunos vehículos se deprecian más rápido que otros. Cuanto más lenta sea la tasa de depreciación del vehículo, mayor será su valor de reventa."
+    },
+    {
+      "textLabel": "<i>Costos operativos.</i> Un vehículo usado tiende a requerir más trabajo de mantenimiento y reparación que uno nuevo. Además, el consumo de combustible puede ser menos eficiente."
+    },
+    {
+      "textLabel": "<i>Años de tenencia.</i> Cuanto más conserve el vehículo, menor será el costo anual promedio, ya que los costos de adquisición se distribuyen a lo largo de más años."
+    },
+    {
+      "textLabel": "<i>Costo de financiación.</i> Las tasas de interés de los préstamos para vehículos nuevos, por lo general, son menores a las de los préstamos para vehículos usados.  "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo promedio por año del vehículo nuevo y el vehículo usado."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual del vehículo nuevo y el vehículo usado."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo promedio por año del vehículo nuevo y del vehículo usado"
+    },
+    {
+      "title": "Monthly payment for the new vehicle and the used vehicle"
+    }
+  ]
+}

@@ -1,0 +1,1293 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What is my return on a universal life policy?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares rates of return for a universal life insurance policy for three periods:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Between the time you acquired the policy and now."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Between the time you acquired the policy and the time that you receive full cash value for the policy."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "Between the time you acquired the policy and the time you die."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_4",
+      "value": "Rate of return is based on the policy amount, dividends received, policy premiums, and tax rates."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_5",
+      "value": "Universal life insurance, together with whole and variable life, are cash-value insurance policies, since they earn an investment rate of return and can be used as collateral for loans."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_6",
+      "value": "Universal life insurance policies pay a death benefit to your beneficiary when you die. Policy coverage continues as long as you pay premiums. Your premium is based on actuarial statistics for your age and health characteristics."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your after-tax rate of return at death is 0.67%"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_more_info",
+      "value": "Show details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='In 25 years'])[1]/preceding::th[1]",
+      "value": "Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Now'])[1]/following::th[1]",
+      "value": "In 25 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='In 25 years'])[1]/following::th[1]",
+      "value": "At death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowReceived_result_label",
+      "value": "Received after Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowReceived_result_value",
+      "value": "$2,450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutReceived_result_value",
+      "value": "$56,390"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathReceived_result_value",
+      "value": "$100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowTaxes_result_label",
+      "value": "Taxes owed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowTaxes_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutTaxes_result_value",
+      "value": "$7,858"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathTaxes_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowPrem_result_label",
+      "value": "Premiums paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowPrem_result_value",
+      "value": "$4,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutPrem_result_value",
+      "value": "$41,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathPrem_result_value",
+      "value": "$77,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowRate_result_label",
+      "value": "After-tax rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowRate_result_value",
+      "value": "−24.42%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-1",
+      "value": "Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-2",
+      "value": "In 25 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-3",
+      "value": "At Death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-1",
+      "value": "Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-2",
+      "value": "In 25 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-legend-item-3",
+      "value": "At Death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutRate_result_value",
+      "value": "2.19%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathRate_result_value",
+      "value": "0.67%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Rate of return %']/parent::*",
+      "value": "Rate of return %"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//button[@id='lf_graph_tabs_lf_container1']/div",
+      "value": "Return"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "After-tax rates of return of the universal life insurance policy if cashed in now, cashed in after a certain number of years, and at death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::th[1]",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/following::th[1]",
+      "value": "Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Now'])[3]/following::th[1]",
+      "value": "In 25 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[4]",
+      "value": "At Death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='At Death'])[2]/following::th[1]",
+      "value": "After-tax Rate of Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='At Death'])[2]/following::td[1]",
+      "value": "-24.42%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='At Death'])[2]/following::td[2]",
+      "value": "2.19%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Return'])[1]/preceding::td[1]",
+      "value": "0.67%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[2]/following::caption[1]",
+      "value": "Amount received on the universal life insurance policy if cashed in now, cashed in after the specified number of years, and at death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[2]/following::th[1]",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/following::th[1]",
+      "value": "Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Now'])[4]/following::th[1]",
+      "value": "In 25 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='In 25 Years'])[3]/following::th[1]",
+      "value": "At Death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='At Death'])[3]/following::th[1]",
+      "value": "Received after Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='At Death'])[3]/following::td[1]",
+      "value": "$2,450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,450'])[2]/following::td[1]",
+      "value": "$56,390"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$56,390'])[2]/following::td[1]",
+      "value": "$100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Personal-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Results'])[2]/following::h2[1]",
+      "value": "Personal information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge_label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy_label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-error-message",
+      "value": "Must be between 5 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_field_label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Premiums-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Premiums-page-title",
+      "value": "Premium information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[2]/span",
+      "value": "With a universal life policy, you have the flexibility to change the amount and frequency of premium payments within the specified limits in your policy. You may enter up to three different monthly and/or lump sum premium payments."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[3]/div/div/h3",
+      "value": "Monthly Premiums"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[3]/div/div[2]/div/fieldset/legend",
+      "value": "Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Years paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyPremiumOneAmount_label']/span[2]",
+      "value": "Monthly Premium 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumOneAmount",
+      "value": "75"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumOneAmount-error-message",
+      "value": "Must be between $1 and $1,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumOneYearsPaid",
+      "value": "20"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumOneYearsPaid",
+      "value": "20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumOneYearsPaid-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyPremiumTwoAmount_label']/span",
+      "value": "Monthly Premium 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumTwoAmount",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumTwoAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumTwoYearsPaid",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumTwoYearsPaid-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_MonthlyPremiumThreeAmount_label']/span",
+      "value": "Monthly Premium 3"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumThreeAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumThreeAmount-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumThreeYearsPaid",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumThreeYearsPaid-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[4]/div/div/h3",
+      "value": "Lump Sum Premiums"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[4]/div/div[2]/div/fieldset/legend",
+      "value": "Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Premiums-details']/div[4]/div[2]/div/div/fieldset/legend",
+      "value": "Years paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_LumpSumPremiumOneAmount_label']/span[2]",
+      "value": "Lump Sum Premium 1"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_LumpSumPremiumOneAmount",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LumpSumPremiumOneAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_LumpSumPremiumOneYearsPaid",
+      "value": "7"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LumpSumPremiumOneYearsPaid-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_LumpSumPremiumTwoAmount_label']/span",
+      "value": "Lump Sum Premium 2"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_LumpSumPremiumTwoAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LumpSumPremiumTwoAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyPremiumThreeYearsPaid",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyPremiumThreeYearsPaid-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Insurance_LumpSumPremiumThreeAmount_label']/span",
+      "value": "Lump Sum Premium 3"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_LumpSumPremiumThreeAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LumpSumPremiumThreeAmount-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_LumpSumPremiumThreeYearsPaid",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LumpSumPremiumThreeYearsPaid-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-Fees-tab-label",
+      "value": "Fees"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Fees-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Fees-details']/div/div/div/h2",
+      "value": "Fee information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_UpfrontFees_field_label",
+      "value": "Upfront fees"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_UpfrontFees",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_UpfrontFees-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PercentageOfPremiumsAppliedToFees_field_label",
+      "value": "% of premiums applied to fees"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_PercentageOfPremiumsAppliedToFees",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PercentageOfPremiumsAppliedToFees-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_RecurringFeeType_label",
+      "value": "Recurring fee is charged"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_RecurringFeeType",
+      "value": "Monthly Annually (% of policy amount) Annually (% of cash value)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_RecurringFeeType",
+      "value": "Monthly Annually (% of policy amount) Annually (% of cash value)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyFees_field_label",
+      "value": "Monthly fees"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_MonthlyFees",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_MonthlyFees-error-message",
+      "value": "Must be between $0 and $200"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Payout-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Years you have owned policy'])[1]/preceding::h2[1]",
+      "value": "Payout information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsOwnedPolicy_label",
+      "value": "Years you have owned policy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_YearsOwnedPolicy",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsOwnedPolicy-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathBenefit_field_label",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_DeathBenefit",
+      "value": "100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathBenefit-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_DeathBenefit_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_DeathBenefit_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An amount that is paid to the beneficiary of a life insurance policy upon the death of the insured. The amount may be a lump sum or an annuity."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Must be between $1 and $10,000,000'])[1]/following::h2[1]",
+      "value": "Cash Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Payout-details']/div[2]/div/div[2]/span",
+      "value": "You may want or need to cash in your life insurance policy at some point before death. Enter the following information to include this scenario in the results."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentCashValue_field_label",
+      "value": "Current cash value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CurrentCashValue",
+      "value": "2,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CurrentCashValue-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_CurrentCashValue_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_CurrentCashValue_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Cash value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A dollar value that is returned to an insurance policyholder if the policy is canceled."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ExpectedInterestRate_field_label",
+      "value": "Average interest you expect to earn"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_ExpectedInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ExpectedInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy_field_label",
+      "value": "Years until you might cash in the policy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SurrenderCharge_field_label",
+      "value": "Surrender charge"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_SurrenderCharge",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_SurrenderCharge-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_SurrenderCharge_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_SurrenderCharge_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Surrender charge"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A fee that you pay to cancel a life insurance policy or annuity contract. Also called a deferred sales charge or back-end load."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Personal-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentAge",
+      "value": "45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "99"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "15.48"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Premiums-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumOneAmount",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumTwoAmount",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumThreeAmount",
+      "value": "45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumOneYearsPaid",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumTwoYearsPaid",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_MonthlyPremiumThreeYearsPaid",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumOneAmount",
+      "value": "10,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumTwoAmount",
+      "value": "50000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumThreeAmount",
+      "value": "12000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumOneYearsPaid",
+      "value": "10"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumTwoYearsPaid",
+      "value": "8"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_LumpSumPremiumThreeYearsPaid",
+      "value": "12"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Fees-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_UpfrontFees",
+      "value": "140"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_PercentageOfPremiumsAppliedToFees",
+      "value": "1.89"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_RecurringFeeType",
+      "value": "label=Annually (% of policy amount)"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_AnnualFeePercentageofPolicyAmount",
+      "value": "1.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Payout-tab-label"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_YearsOwnedPolicy"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_YearsOwnedPolicy",
+      "value": "25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_DeathBenefit",
+      "value": "250,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_DeathBenefitPayoutOption",
+      "value": "label=Receive the cash value also"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_CurrentCashValue",
+      "value": "4,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_ExpectedInterestRate",
+      "value": "12.45"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_SurrenderCharge",
+      "value": "1.23"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Your after-tax rate of return at death is 5.79%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowReceived_result_value",
+      "value": "$4,445"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutReceived_result_value",
+      "value": "$47,517"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathReceived_result_value",
+      "value": "$3,592,120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowTaxes_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutTaxes_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathTaxes_result_value",
+      "value": "$590,119"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowPrem_result_value",
+      "value": "$67,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutPrem_result_value",
+      "value": "$112,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathPrem_result_value",
+      "value": "$120,100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NowRate_result_value",
+      "value": "−50.06%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_FutRate_result_value",
+      "value": "−5.32%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathRate_result_value",
+      "value": "5.79%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

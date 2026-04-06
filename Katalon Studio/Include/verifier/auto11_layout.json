@@ -1,0 +1,282 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "tabLabel": "Basic",
+        "selected": true,
+        "fields": [
+          "Auto_MonthlyPayment",
+          "Global_AutoDownPayment",
+          "Global_AutoLoanTerm",
+          "Global_AutoInterestRate"
+        ]
+      },
+      "advanced": {
+        "tabLabel": "Advanced",
+        "fields": [
+          "Auto_CashRebate",
+          "Auto_TradeInValue"
+        ]
+      }
+    },
+    "fields": {
+      "Auto_MonthlyPayment": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Monthly payment",
+        "defaultValue": "400",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "10",
+        "value": "400",
+        "format": "currency"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "249999",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AutoLoanTerm": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "valueTextLabel": "months",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Loan term",
+        "defaultValue": "48",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "84",
+        "maxlength": "3",
+        "safeType": "number",
+        "smallLabel": "(months)",
+        "minimumValue": "1",
+        "maximumValue": "360",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "Global_AutoInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.00",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "widgetStep": "0.1",
+        "value": "",
+        "format": "percent"
+      },
+      "Auto_CashRebate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Cash rebate",
+        "defaultValue": "0",
+        "glossaryTerm": "cashrebate",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "maxlength": "7",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "widgetStep": "100",
+        "value": "0",
+        "format": "currency"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Trade-in value",
+        "smallLabel": "",
+        "glossaryTerm": "tradeinvalue",
+        "format": "currency",
+        "defaultValue": "4000",
+        "value": "4000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "200000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "",
+      "columnHeaders": [
+        " "
+      ],
+      "fields": [
+        [
+          "Auto_LoanAmount"
+        ],
+        [
+          "Global_AutoDownPayment"
+        ],
+        [
+          "Auto_CashRebate"
+        ],
+        [
+          "Auto_TradeInValue"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Auto_LoanAmount": {
+        "fieldLabel": "Loan amount",
+        "value": "$19,540"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Down payment",
+        "value": "$2,000"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Cash rebate"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Trade-in value"
+      }
+    }
+  },
+  "labels": {
+    "title": "What vehicle can I afford?",
+    "answer": "You can afford a vehicle that costs up to $21,540",
+    "dataTableCategoryTitle2": "Year",
+    "dataTableCategory": "Total",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Breakdown",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payment Over Time",
+        "width": "33%",
+        "getTableData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Your payments over time",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "principal": "Principal",
+    "interest": "Interest",
+    "year": "Year",
+    "loanAmount": "Loan Amount"
+  },
+  "glossaryItems": {
+    "tradeinvalue": {
+      "title": "Trade-in value",
+      "definition": "The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car."
+    },
+    "term": {
+      "title": "Term",
+      "definition": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "cashrebate": {
+      "title": "Cash rebate",
+      "definition": "An offer to consumers - as an incentive to buy - that reduces the purchase price of a good by the amount of the rebate."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine the price of a vehicle you can afford, based on your down payment, value of your trade-in, cash rebates available, and loan terms. "
+    },
+    {
+      "textLabel": "Key assumptions of this tool include: "
+    },
+    {
+      "textLabel": "The calculated vehicle cost represents the maximum sticker price that you can afford based on your inputs.  Sales tax and other fees that might be associated with the purchase of a vehicle are not included in the total."
+    },
+    {
+      "textLabel": "Trade-in value and cash rebate are added to the down payment of the vehicle."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of maximum purchase price."
+    },
+    {
+      "title": "Stacked column chart of the amounts applied to principal and interest at different intervals over the course of the loan term."
+    },
+    {
+      "title": "Amortization table for the loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of maximum purchase price"
+    },
+    {
+      "title": "Amounts applied to principal and interest at different intervals over the course of the loan term"
+    }
+  ]
+}

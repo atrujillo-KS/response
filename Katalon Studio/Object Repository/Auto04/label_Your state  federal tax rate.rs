@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Your state  federal tax rate</name>
+   <tag></tag>
+   <elementGuidId>9d8d5e21-511d-46c1-9248-31dc25e6b80f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lf_Global_FederalAndStateTaxRate-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='lf_Global_FederalAndStateTaxRate-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lf_Global_FederalAndStateTaxRate-label</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>e3a43c95-f82f-4734-9b41-4dbbd5a85c1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>lf_Global_FederalAndStateTaxRate</value>
+      <webElementGuid>de732f50-295f-40e2-bd58-ae4c49662441</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf_Global_FederalAndStateTaxRate-label</value>
+      <webElementGuid>1c20ef4c-9a96-45f2-9939-4f1abbfd009a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Your state &amp; federal tax rate
+                             
+                        </value>
+      <webElementGuid>0fec943a-fced-4168-987f-130173eed4b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf_Global_FederalAndStateTaxRate-label&quot;)</value>
+      <webElementGuid>cb51cdfa-d8cb-437f-ba6e-017b4d48253e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='lf_Global_FederalAndStateTaxRate-label']</value>
+      <webElementGuid>7f7d53c3-d1c3-4587-8dad-a932755170dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf_Global_FederalAndStateTaxRate_container']/div/label</value>
+      <webElementGuid>70db17be-e9cb-48a6-9e7f-4affcb256006</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Years you will own vehicle'])[2]/following::label[1]</value>
+      <webElementGuid>d5c5cc7b-02d3-453e-8fa4-be0d9f1b6f6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 1 and 30'])[1]/following::label[2]</value>
+      <webElementGuid>5afbf61e-e49b-4068-a4dc-5e90148537cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Must be between 0.00% and 90.00%'])[1]/preceding::label[1]</value>
+      <webElementGuid>0d046bff-2539-48c8-b923-3da0a586ddd5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Your state &amp; federal tax rate'])[2]/preceding::label[1]</value>
+      <webElementGuid>149ba84e-324c-41cd-8223-c6245318ebfc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Your state &amp; federal tax rate']/parent::*</value>
+      <webElementGuid>8abc2b29-c79d-47f2-88c6-829554e79000</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/fieldset/div/div[2]/div/label</value>
+      <webElementGuid>57304543-1d4f-48e5-99a5-43d986bbd050</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lf_Global_FederalAndStateTaxRate-label' and (text() = 'Your state &amp; federal tax rate
+                             
+                        ' or . = 'Your state &amp; federal tax rate
+                             
+                        ')]</value>
+      <webElementGuid>6ae745a6-ba5b-46d3-aced-08089e2c42d5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

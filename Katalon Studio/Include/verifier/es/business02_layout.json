@@ -1,0 +1,484 @@
+{
+  "layout": {
+    "tabs": {
+      "EquipmentInfo": {
+        "tabLabel": "INFORMACIÓN SOBRE EQUIPOS",
+        "pageTitle": "Información Sobre Equipos"
+      },
+      "BuyOption": {
+        "tabLabel": "OPCIÓN DE COMPRA",
+        "pageTitle": "Opción De Compra"
+      },
+      "LeaseOption": {
+        "tabLabel": "OPCIÓN DE ARRENDAMIENTO",
+        "pageTitle": "Opción De Arrendamiento"
+      },
+      "CompanyInfo": {
+        "tabLabel": "INFORMACIÓN DE LA COMPAÑÍA",
+        "pageTitle": "Información De La Compañía"
+      },
+      "results": {
+        "tabLabel": "RESULTADOS"
+      }
+    },
+    "fields": {
+      "Business_EquipmentPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_SalesTaxRate": {
+        "fieldLabel": "Tasa de impuesto sobre las ventas"
+      },
+      "Business_EquipmentUsefulLifeInYears": {
+        "fieldLabel": "Vida útil estimada de los equipos",
+        "smallLabel": "(años)"
+      },
+      "Business_MACRSDepreciationYears": {
+        "fieldLabel": "Depreciación en base al sistema acelerado de recuperación de costos modificado (MACRS, por sus siglas en inglés) en años",
+        "dropdownOptions": [
+          {
+            "optionText": "3"
+          },
+          {
+            "optionText": "5"
+          },
+          {
+            "optionText": "7"
+          },
+          {
+            "optionText": "10"
+          },
+          {
+            "optionText": "15"
+          }
+        ]
+      },
+      "Business_AverageAnnualMaintenanceCosts": {
+        "fieldLabel": "Promedio de costos anuales de mantenimiento"
+      },
+      "Business_MonthEquipmentBoughtOrLeased": {
+        "fieldLabel": "Mes en el que planea comprar o arrendar equipos",
+        "dropdownOptions": [
+          {
+            "optionText": "Enero"
+          },
+          {
+            "optionText": "Febrero"
+          },
+          {
+            "optionText": "Marzo"
+          },
+          {
+            "optionText": "Abril"
+          },
+          {
+            "optionText": "Mayo"
+          },
+          {
+            "optionText": "Junio"
+          },
+          {
+            "optionText": "Julio"
+          },
+          {
+            "optionText": "Agosto"
+          },
+          {
+            "optionText": "Septiembre"
+          },
+          {
+            "optionText": "Octubre"
+          },
+          {
+            "optionText": "Noviembre"
+          },
+          {
+            "optionText": "Diciembre"
+          }
+        ]
+      },
+      "Business_EquipmentFairMarketValueAtEndOfLease": {
+        "fieldLabel": "Valor justo de mercado al final del arrendamiento"
+      },
+      "Business_EquipmentFairMarketValueAtEndOfUsefulLife": {
+        "fieldLabel": "Valor justo de mercado al final de la vida útil"
+      },
+      "Business_EquipmentDownPaymentPercentage": {
+        "fieldLabel": "Pago inicial"
+      },
+      "Business_EquipmentLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)"
+      },
+      "Business_EquipmentLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_EquipmentLeaseSecurityDeposit": {
+        "fieldLabel": "Depósito de garantía"
+      },
+      "Business_IsEquipmentLeaseSecurityDepositRefunded": {
+        "fieldLabel": "Depósito reembolsable al final del arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "Business_EquipmentLeaseTerm": {
+        "fieldLabel": "Plazo de arrendamiento",
+        "smallLabel": "(meses)"
+      },
+      "Business_EquipmentLeasePayment": {
+        "fieldLabel": "Pago del arrendamiento"
+      },
+      "Business_EquipmentLeasePaymentFrequency": {
+        "fieldLabel": "Frecuencia de los pagos de arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Bisemanal"
+          },
+          {
+            "optionText": "Quincenal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Trimestral"
+          },
+          {
+            "optionText": "Semestral"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "Business_OtherEquipmentLeaseFees": {
+        "fieldLabel": "Otros cargos por arrendamiento"
+      },
+      "Business_ResponsibleForEquipmentMaintenance": {
+        "fieldLabel": "¿Usted es responsable del mantenimiento de los equipos arrendados?",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "Business_OptionToBuyEquipment": {
+        "fieldLabel": "Opción para comprar equipos al final del arrendamiento",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "Business_OptionToBuyEquipmentPrice": {
+        "fieldLabel": "Precio de la opción de compra"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Tasa de impuestos federales"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "Tasa de impuestos estatales"
+      },
+      "Business_SavingsRate": {
+        "fieldLabel": "Tasa de interés de ahorro"
+      }
+    },
+    "results_fields": {
+      "LoanTotalPmtsBusiness02": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LeaseTotalPmtsBusiness02": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LoanTaxSavingsBusiness02": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "LeaseTaxSavingsBusiness02": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "LoanNetPmtsBusiness02": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LeaseNetPmtsBusiness02": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LoanAvgCostYrBusiness02": {
+        "fieldLabel": "Costo promedio anual"
+      },
+      "LeaseAvgCostYrBusiness02": {
+        "fieldLabel": "Costo promedio anual"
+      },
+      "NPVBuyEOLT": {
+        "fieldLabel": "Costo neto, en dólares actuales"
+      },
+      "NPVLeaseEOLT": {
+        "fieldLabel": "Costo neto, en dólares actuales"
+      },
+      "secondSubtitle": {
+        "fieldLabel": "Dummy subtitle"
+      },
+      "LoanTotalPmtsEOUL": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LeaseTotalPmtsEOUL": {
+        "fieldLabel": "Total de pagos"
+      },
+      "LoanTaxSavingsEOUL": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "LeaseTaxSavingsEOUL": {
+        "fieldLabel": "Ahorros de impuestos"
+      },
+      "LoanNetPmtsEOUL": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LeaseNetPmtsEOUL": {
+        "fieldLabel": "Pagos netos"
+      },
+      "LoanAvgCostYrEOUL": {
+        "fieldLabel": "Costo promedio anual"
+      },
+      "LeaseAvgCostYrEOUL": {
+        "fieldLabel": "Costo promedio anual"
+      },
+      "NPVBuyEOUL": {
+        "fieldLabel": "Costo neto, en dólares actuales"
+      },
+      "NPVLeaseEOUL": {
+        "fieldLabel": "Costo neto, en dólares actuales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Comprar",
+        "Arrendar"
+      ]
+    },
+    "results_yes": {
+      "subtitle": "Al final del plazo del arrendamiento de %param% %second_param%:",
+      "columnHeaders": [
+        "Comprar",
+        "Arrendar"
+      ]
+    },
+    "results_yes1": {
+      "subtitle": "Al final del plazo del arrendamiento de %param% %second_param%:",
+      "columnHeaders": [
+        "Comprar",
+        "Arrendar"
+      ]
+    },
+    "results_yes2": {
+      "subtitle": "Al final de la vida útil del equipo de %param% %second_param%:"
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Pagos netos",
+    "dataTableCategory2": "Costo promedio anual",
+    "title": "¿Debo comprar o arrendar equipos?",
+    "answer": "",
+    "answer1": "Comprar le costará <span class='lf-bold'>%buy% %buyWhich%</span> arrendar, en dólares actuales, a lo largo del plazo del arrendamiento y le costará <span class='lf-bold'>%lease% %leaseWhich%</span> arrendar a lo largo de la vida útil del equipo.",
+    "answer2": "Comprar le costará <span class='lf-bold'>%buy% %buyWhich%</span> arrendar, en dólares actuales, a lo largo del plazo del arrendamiento.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Costo neto",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Costo promedio",
+        "width": "33%"
+      },
+      {
+        "label": "A lo largo del tiempo",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos: préstamo",
+            "label": "Préstamo"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos: arrendar",
+            "label": "Arrendar"
+          }
+        ]
+      }
+    ],
+    "buy": "Comprar",
+    "lease": "Arrendar",
+    "save": "guardar",
+    "cost": "costo ",
+    "netCostOverLease": "Costo neto a lo largo del plazo del arrendamiento",
+    "aveYearlyCost": "Costo anual promedio a lo largo del plazo del arrendamiento",
+    "lessThan": "menos que",
+    "moreThan": "más que",
+    "theSame": "lo mismo",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago",
+        "Costos de mantenimiento",
+        "",
+        "Depreciación",
+        "Ahorros de impuestos",
+        "",
+        "",
+        "Valor actual neto del pago"
+      ],
+      [
+        "Mes",
+        "Pago",
+        "Costos de mantenimiento",
+        "Ahorros de impuestos",
+        "",
+        "",
+        "Valor actual neto del pago"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "termloan2": {
+      "title": "Préstamo a plazo",
+      "definition": "Un préstamo cuyo capital se devuelve o se amortiza, a lo largo de un plazo fijo."
+    },
+    "depreciation2": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    },
+    "costofcapital": {
+      "title": "Costo del capital",
+      "definition": "El costo promedio ponderado del financiamiento de deudas y activos netos, o la tasa de rendimiento requerida que una empresa espera obtener sobre sus inversiones. El costo del capital se utiliza para descontar flujos de efectivo futuros al valor actual."
+    },
+    "loanterm": {
+      "title": "Plazo del préstamo.",
+      "definition": "Duración o el período de un préstamo. Habitualmente se mide en años."
+    },
+    "netpresentvalue": {
+      "title": "Valor actual neto",
+      "definition": "El método del valor actual neto se utiliza para determinar el valor de una inversión en dólares corrientes, tomando en cuenta la inflación y los beneficios. Como regla general, si el valor actual neto es positivo, se debería realizar la inversión."
+    },
+    "ddb": {
+      "title": "Método de amortización doble de saldo decreciente",
+      "definition": "El método de amortización doble de saldo decreciente (DDB, por sus siglas en inglés) es un método de depreciación que acelera los gastos de depreciación de los equipos."
+    },
+    "taxdeductible": {
+      "title": "Deducibles de impuestos",
+      "definition": "Un artículo o gasto restado de los ingresos brutos ajustados para reducir el importe de los ingresos sujetos a impuestos."
+    },
+    "termloan": {
+      "title": "Préstamo a plazo",
+      "definition": "Un préstamo cuyo capital se devuelve o se amortiza, a lo largo de un plazo fijo."
+    },
+    "straightlinedepreciation": {
+      "title": "Depreciación lineal",
+      "definition": "Un método de depreciación en el que se divide la diferencia entre el costo de un activo y su valor recuperable previsto por la cantidad de años que se espera que se utilice."
+    },
+    "residualvalue": {
+      "title": "Valor residual",
+      "definition": "Es el valor justo de mercado de un vehículo u otro equipo arrendado al final del plazo del arrendamiento."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "fmv": {
+      "title": "Valor justo de mercado",
+      "definition": "El valor o precio al cual un producto cambiaría de propietario, suponiendo un comprador dispuesto a comprar y un vendedor dispuesto a vender, sin coacción."
+    },
+    "purchaseoption": {
+      "title": "Arrendamiento con opción de compra automática",
+      "definition": "El derecho a comprar los equipos arrendados al final del plazo del arrendamiento."
+    },
+    "operatinglease": {
+      "title": "Arrendamiento operativo",
+      "definition": "Un contrato que requiere que el arrendatario (la parte que utiliza el equipo) haga pagos periódicos al arrendador (la parte que conserva la propiedad del equipo) a lo largo del plazo del arrendamiento."
+    },
+    "lease": {
+      "title": "Arrendamiento",
+      "definition": "Un contrato entre dos partes, un arrendador y un arrendatario, en base al cual el arrendatario hace pagos periódicos al arrendador para arrendar un activo."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "macrs": {
+      "title": "MACRS",
+      "definition": "El sistema acelerado de recuperación de costos modificado (MACRS, por sus siglas en inglés) es el método de depreciación que utilizan las empresas para depreciar equipos, edificios y otras mejoras de bienes raíces a lo largo de la vida útil de los activos."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "usefullife": {
+      "title": "Vida útil",
+      "definition": "La cantidad de años que el activo commercial puede ser usado para fines de depreciación."
+    },
+    "salvagevalue": {
+      "title": "Valor recuperable",
+      "definition": "Es el valor del activo depreciado o arrendado al final de su vida depreciable o de arrendamiento. También se conoce como valor residual o valor de salvamento."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TermLoan\">préstamo a plazo</a></span>. y un arrendamiento para obtener equipos para una empresa. Para comparar el valor de los pagos a lo largo del tiempo para la opción de arrendamiento o préstamo, la calculadora muestra pagos en el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PresentValue\">valor actual</a></span>."
+    },
+    {
+      "textLabel": "Un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#termloan2\">préstamo a plazo</a></span> le ayuda a comprar el equipo. Aunque su empresa paga todos los gastos, obtiene <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxSavings\">ahorros considerables de impuestos</a></span> con estos gastos. Sin embargo, el financiamiento del préstamo afecta sus flujos de efectivo: un pago inicial es un gasto inicial grande, y sus pagos mensuales son mayores para incluir el pago del capital del préstamo. Si su empresa es una empresa joven, es posible que no tenga el nivel de efectivo necesario para sustanciar altos pagos de deuda."
+    },
+    {
+      "textLabel": "Un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Lease\">arrendamiento</a></span> le permite obtener equipos de negocios a un costo que por lo general es menor que el financiamiento de un préstamo. Al optar por un <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#OperatingLease\">arrendamiento operativo</a></span>, sus pagos mensuales de arrendamiento serán inferiores a los pagos del préstamo. También evita el pago inicial. En su lugar, usted paga un depósito de garantía que es mucho menor que el pago inicial de una compra. Cuando vence el plazo del arrendamiento, tiene más flexibilidad que con un préstamo. Puede renovar el arrendamiento, hacer uso de una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PurchaseOption\">opción de compra</a></span> o, en la mayoría de los casos, desvincularse. El arrendamiento también puede ser ventajoso si el equipo se vuelve obsoleto rápidamente."
+    },
+    {
+      "textLabel": "Los supuestos clave de esta herramienta incluyen:"
+    },
+    {
+      "textLabel": "<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation\">Depreciación.</a></span> La calculadora utiliza el método de amortización doble de saldo decreciente (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DDB\">DDB</a></span>, por sus siglas en inglés) y el sistema acelerado de recuperación de costos modificado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MACRS\">MACRS</a></span>, por sus siglas en inglés) para <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Depreciation2\">depreciar</a></span> los equipos. Cambia al <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#StraightLineDepreciation\">método de depreciación lineal</a></span> en el año en que el gasto de depreciación según ese método es mayor. Se utiliza la convención de medio año para calcular los gastos de depreciación durante el primer año, independientemente de la fecha de compra."
+    },
+    {
+      "textLabel": "Si el plazo de arrendamiento original es más corto que la vida útil del equipo, se supone que usted utiliza la opción de compra al final del plazo del arrendamiento."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la diferencia en el costo neto durante el plazo del arrendamiento entre las opciones de compra y arrendamiento."
+    },
+    {
+      "title": "Gráfico de columnas de la diferencia en el costo promedio por año durante el plazo del arrendamiento entre las opciones de compra y arrendamiento."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo neto durante el plazo del arrendamiento entre las opciones de compra y arrendamiento"
+    },
+    {
+      "title": "Diferencia en el costo promedio por año durante el plazo del arrendamiento entre las opciones de compra y arrendamiento"
+    }
+  ]
+}

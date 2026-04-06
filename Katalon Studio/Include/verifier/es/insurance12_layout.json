@@ -1,0 +1,88 @@
+{
+  "layout": {
+    "fields": {
+      "Global_EstimatedDailyCostOfLongTermCare": {
+        "fieldLabel": "Costo diario estimado"
+      },
+      "Insurance_LongTermCareSavings": {
+        "fieldLabel": "Ahorros disponibles"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación anual"
+      },
+      "Insurance_YearsOfLongTermCare": {
+        "fieldLabel": "Años de cuidado"
+      }
+    },
+    "results_fields": {
+      "Insurance_LongTermCareSavings": {
+        "fieldLabel": "Ahorros disponibles"
+      },
+      "Insurance_LongTermCareTotalCost": {
+        "fieldLabel": "Costo total de atención a largo plazo"
+      },
+      "Insurance_LongTermCareSurplusOrShortage": {
+        "fieldLabel": "Excedente o escasez de cuidados a largo plazo"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "¿Cuánto seguro de cuidado a largo plazo necesitaré?",
+    "answer1": "Necesita <span class='lf-bold'>%result%</span> en seguro de atención a largo plazo.",
+    "answer2": "Sus ahorros son adecuados para satisfacer sus necesidades de atención a largo plazo.",
+    "selectors": [
+      {
+        "label": "",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "AvailableSavings": "Ahorros disponibles",
+    "LongTermCareTotalCost": "Costo total de atención a largo plazo",
+    "LongTermCareSurplus": "Superávit de atención a largo plazo",
+    "LongTermCareShortage": "Escasez de atención a largo plazo"
+  },
+  "glossaryItems": {
+    "longtermcaredailycost": {
+      "title": "Costo diario de atención a largo plazo",
+      "definition": "El costo diario de brindar atención a largo plazo para usted o su ser querido."
+    },
+    "longtermcareavailablesavings": {
+      "title": "Ahorros disponibles para el cuidado a largo plazo",
+      "definition": "La cantidad de ahorros que tiene disponible para pagar el cuidado a largo plazo."
+    },
+    "inflation": {
+      "title": "Tasa de inflación anual",
+      "definition": "Un aumento general en los precios que paga por bienes y servicios, expresado como una tasa anual."
+    },
+    "longtermcareyears": {
+      "title": "Años de cuidado a largo plazo",
+      "definition": "La cantidad de años que anticipa que necesitará atención a largo plazo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El seguro de atención a largo plazo brinda atención en caso de que usted o un ser querido necesiten asistencia a largo plazo en un hogar de ancianos, en un centro de atención diurna para adultos o en su hogar. Está diseñado para cubrir el costo de la asistencia con las actividades de la vida diaria como vestirse, comer, bañarse, ir al baño, acostarse y levantarse de la cama, etc. Esta cobertura brinda tranquilidad ya que los cuidados a largo plazo no están cubiertos por la salud tradicional. seguro y puede convertirse en una enorme carga financiera si no planifica con anticipación. Como punto de partida, esta herramienta lo ayuda a determinar la cantidad de seguro de atención a largo plazo necesaria para su situación específica. Para obtener más información, consulte a un profesional de seguros."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los ahorros disponibles y los gastos estimados del costo total del cuidado a largo plazo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Comparación entre los ahorros disponibles y los gastos estimados del costo total del cuidado a largo plazo"
+    }
+  ]
+}

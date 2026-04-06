@@ -1,0 +1,166 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_HomeAppraisedValue",
+          "Global_OutstandingMortgagePrincipal",
+          "Global_MaximumLTVRatio"
+        ]
+      }
+    },
+    "results": {
+      "result": "",
+      "fields": [
+        [
+          "ApprUsr"
+        ],
+        [
+          "Global_OutstandingMortgagePrincipal"
+        ],
+        [
+          "CreditLimitUsr"
+        ]
+      ],
+      "refine": true
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Appraised value of home",
+        "smallLabel": "",
+        "glossaryTerm": "appraisalvalue",
+        "format": "currency",
+        "defaultValue": "250000",
+        "value": "250000",
+        "minimumValue": "0",
+        "maximumValue": "1000000000",
+        "maxlength": "13",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Mortgages you owe",
+        "smallLabel": "",
+        "glossaryTerm": "mortgagebalance",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_MaximumLTVRatio": {
+        "fieldLabel": "Max loan-to-value ratio",
+        "smallLabel": "",
+        "glossaryTerm": "ltv",
+        "format": "percent",
+        "defaultValue": "80.00",
+        "value": "80.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "5",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "ApprUsr": {
+        "fieldLabel": "Maximum amount of loans possible",
+        "value": "$200,000"
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Less existing loans",
+        "value": "$150,000"
+      },
+      "CreditLimitUsr": {
+        "fieldLabel": "Your credit limit",
+        "value": "$50,000"
+      }
+    }
+  },
+  "labels": {
+    "title": "How large a line of credit can I obtain?",
+    "answer": "You may qualify for a credit line up to <span class='lf-bold'>$50,000</span>",
+    "dataTableCategory": "Amount",
+    "ApprUsr": "Max combined loan amount",
+    "Global_OutstandingMortgagePrincipal": "Existing loans",
+    "CreditLimitUsr": "Your credit limit",
+    "selectors": [
+      {
+        "label": "Line of Credit",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    },
+    "cltvratio": {
+      "title": "Combined loan-to-value ratio (CLTV)",
+      "definition": "A ratio used by lenders to determine default risk when the home is used as collateral for more than one loan. It is calculated by dividing the total value of the combined mortgages by the value of the property."
+    },
+    "mortgagebalance": {
+      "title": "Mortgage balance",
+      "definition": "The unpaid principal on your first mortgage loan and any second mortgages or existing home equity loans. "
+    },
+    "ltv": {
+      "title": "Loan-to-value ratio (LTV)",
+      "definition": "LTV is a lending risk assessment ratio that lenders examine before approving a mortgage. It is calculated by dividing the mortgage loan amount by the fair market value of the home."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool shows the maximum possible credit line you can obtain based on your home value, existing mortgage loans, and the maximum combined loan-to-value <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#cltvratio\">(CLTV)</a></span> ratio the lender will consider. Loans are the sum of the amount of the proposed credit line plus the balance of any outstanding mortgage debt. Value is usually appraisal value, which is an independent appraiser's assessment of the home's current market value.  The greater the value of your home and/or the loan-to-value requirements of the lender, the greater the line of credit you can obtain."
+    },
+    {
+      "textLabel": "For example, a lender willing to consider a CLTV of 90 percent will offer a credit line amount that - added to any other mortgage debt - equals 90 percent of the home's appraisal value."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the maximum combined loan amount, amount of existing loans and your credit limit."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Maximum combined loan amount, amount of existing loans and your credit limit"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "layout": {
+    "tableFields": {
+      "Global_PayoffPlanMonthlyPayment": {
+        "fieldLabel": "Plan de pago"
+      },
+      "Global_AlternativePlanOneMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 1"
+      },
+      "Global_AlternativePlanTwoMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 2"
+      },
+      "Global_AlternativePlanThreeMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 3"
+      },
+      "Global_AlternativePlanFourMonthlyPayment": {
+        "fieldLabel": "Plan alternativo 4"
+      }
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Cantidad que debe"
+      },
+      "Global_InterestRateOnDebt": {
+        "fieldLabel": "Tasa de interés sobre la deuda"
+      },
+      "Budget_TermOfDebtInMonths": {
+        "fieldLabel": "Plazo de la deuda",
+        "smallLabel": "(en meses)"
+      },
+      "Global_MonthlyInvestment": {
+        "fieldLabel": "Cantidad que puede ahorrar mensualmente"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Tasa impositiva federal y estatal"
+      }
+    },
+    "results": {
+      "text": "Si utiliza el pago %payment% por mes para pagar la deuda, podrás evitar el pago de %interestCharge% en intereses sobre %months% meses. Si usted invierte el %investment% en vez, ganarás %investmentIncome% después de pagar los impuestos."
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    }
+  },
+  "labels": {
+    "title": "¿Debo liquidar mi deuda o invertir en ahorros?",
+    "answer": "Pagando la deuda le ahorrará  <span class='lf-bold'>lo mismo</span> en intereses que invertir en ahorros",
+    "answer1": "<span class='lf-bold'>%WHICHDEBT%</span> le ahorrará <span class='lf-bold'>%amount% más</span> en intereses",
+    "interestReduction": "Reducción de intereses sobre la deuda",
+    "interestEarned": "Intereses devengados sobre los ahorros",
+    "earn_prefix": "ganará",
+    "dataTableCategory": "Interes",
+    "months_prefix": " durante ",
+    "same_prefix": "igual",
+    "selectors": [
+      {
+        "label": "Interés",
+        "width": "100%"
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a determinar cuál es la mejor decisión financiera: cancelar la deuda o invertir el mismo monto."
+    },
+    {
+      "textLabel": "Cuando usted cancela la deuda, elimina gastos por intereses. Durante el tiempo que realiza pagos de deudas, sacrifica los ingresos por intereses que podría haber ganado si hubiera invertido el mismo monto. No obstante, una vez que cancela la deuda, usted puede comenzar a percibir ingresos por intereses sobre el dinero que usted hubiera gastado cada mes por pagos de deudas."
+    },
+    {
+      "textLabel": "<b>Nota:</b> Esta calculadora no es apropiada para tomar decisiones con respecto a los préstamos para la vivienda o préstamos como inversión. Está diseñada para calcular decisiones con respecto a las tarjetas de crédito, los automóviles y otros préstamos personales."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la reducción en los cargos por intereses al pagar la deuda y el interés ganado al invertir en ahorros."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Reducción en los cargos por intereses al cancelar la deuda y el interés ganado al invertir en ahorros"
+    }
+  ]
+}

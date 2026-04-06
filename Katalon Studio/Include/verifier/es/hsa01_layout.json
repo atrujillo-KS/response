@@ -1,0 +1,117 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "HealthPlanType",
+          "HSAAge",
+          "HSASpouseAge",
+          "HSAContribution",
+          "FedTaxRate",
+          "StateTaxRate"
+        ]
+      }
+    },
+    "fields": {
+      "HealthPlanType": {
+        "fieldLabel": "Tipo de plan",
+        "dropdownOptions": [
+          {
+            "optionText": "Individual"
+          },
+          {
+            "optionText": "Familiar"
+          }
+        ]
+      },
+      "HSAAge": {
+        "fieldLabel": "¿Tiene 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSASpouseAge": {
+        "fieldLabel": "¿Tiene su cónyuge 55 años o más?",
+        "dropdownOptions": [
+          {
+            "optionText": "No"
+          },
+          {
+            "optionText": "Sí"
+          }
+        ]
+      },
+      "HSAContribution": {
+        "fieldLabel": "Contribuciones anuales a la HSA"
+      },
+      "FedTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto ahorraré en mis impuestos usando una HSA?",
+    "answer": "Su ahorro de impuestos será de <span class='lf-bold'>$%amount%</span>",
+    "save": "Ahorros",
+    "selectors": [
+      {
+        "label": "Ahorros de impuestos",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "fitrate": {
+      "title": "Tipo del impuesto federal sobre los ingresos (FIT)",
+      "definition": "Las siete tasas de impuesto sobre la renta federal para 2023 son 10%, 12%, 22%, 24%, 32%, 35% y 37%. Estas también se llaman rangos de impuestos. Si se le pide que indique sus tasas de impuestos federales y estatales, agregue su tasa de impuesto sobre la renta estatal para calcular una tasa combinada. Por ejemplo, si paga impuestos federales sobre la renta en el rango impositivo del 22%, y su tasa de impuesto sobre la renta estatal es del 8%, su tasa de impuesto combinada es del 30%."
+    },
+    "hsahealthplantype": {
+      "title": "Tipo de plan de salud de la HSA",
+      "definition": "El tipo de plan de salud que usted tiene influye sobre el deducible mínimo que debe cumplir para su plan de salud a fin de calificar como un plan médico de deducible alto."
+    },
+    "hsaage": {
+      "title": "Su edad",
+      "definition": "Su edad se utiliza para determinar el monto máximo que puede contribuir a su HSA. Si usted o su cónyuge son mayores de 55 años, hay un monto de actualización permitido. Consulte la Publicación 969 del IRS para obtener más información."
+    },
+    "stateincometaxrate": {
+      "title": "Tasa estatal del impuesto sobre ingresos",
+      "definition": "Ingrese el porcentaje promedio de su ingreso que debe pagar a su gobierno estatal. Si también paga impuestos locales, agregue esa cantidad a sus impuestos sobre la renta estatales."
+    },
+    "hsaannualcontributions": {
+      "title": "El monto de su contribución anual a la HSA",
+      "definition": "Su contribución anual permitida se determina según su tipo de plan, su edad y la edad de su cónyuge si está casado. Consulte la Publicación 969 del IRS para obtener más información."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula los ahorros de impuestos según sus contribuciones anuales a una Cuenta de ahorros para la salud. Las contribuciones a una Cuenta de ahorros para la salud que son inferiores al monto permitido de contribución están exentas de impuestos federales sobre la renta y la mayoría de los impuestos estatales sobre la renta. Sin embargo, Alabama, California y Nueva Jersey no ofrecen esa misma exención. "
+    },
+    {
+      "textLabel": "Si la cobertura de su plan de salud de deducible alto comienza después del 1 de enero, los límites de contribución son prorrateados en base a la cantidad de meses completos que el plan de salud tiene vigencia."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de los ahorros fiscales mediante el uso de una HSA."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ahorros fiscales mediante el uso de una HSA"
+    }
+  ]
+}

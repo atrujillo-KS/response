@@ -1,0 +1,61 @@
+{
+  "layout": {
+    "tabs": {
+      "CreditCardInfo": {
+        "tabLabel": "INGRESOS BRUTOS MENSUALES"
+      },
+      "Projections": {
+        "tabLabel": "PAGO MENSUAL DE LA HIPOTECA"
+      }
+    },
+    "fields": {
+      "Global_MonthlyGrossIncome": {
+        "fieldLabel": "Salarios antes de impuestos y deducciones",
+        "smallLabel": "",
+        "errorMessage": "Debe ubicarse entre $1 y $%maximumValue%"
+      },
+      "Home_PrincipalAndInterestPayment": {
+        "fieldLabel": "Capital e intereses",
+        "smallLabel": ""
+      },
+      "Home_MonthlyPropertyTax": {
+        "fieldLabel": "Impuesto a la propiedad",
+        "smallLabel": "(mensual)"
+      },
+      "Home_MonthlyHomeownersInsurance": {
+        "fieldLabel": "Seguro para propietarios de casas",
+        "smallLabel": "(mensual)"
+      },
+      "Home_PMI": {
+        "fieldLabel": "Seguro hipotecario privado",
+        "smallLabel": "(PMI)"
+      },
+      "Home_MonthlyHOA": {
+        "fieldLabel": "Asociación de propietarios",
+        "smallLabel": "(mensual)"
+      },
+      "Home_OtherMonthlyPayments": {
+        "fieldLabel": "Otros pagos",
+        "smallLabel": ""
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuál es mi ratio de gastos de vivienda?",
+    "answer": "<h2 class='lf-graph-text'>Basado en un ingreso mensual bruto de <span class='lf-bold'>$%result1%</span> y un pago hipotecario mensual de <span class='lf-bold'>$%result2%</span> <span class='lf-bold'>su índice estimado de gastos de vivienda es %result3%%</span></h2>"
+  },
+  "glossaryItems": {
+    "OtherMonthlyPayments": {
+      "title": "Otros pagos mensuales",
+      "definition": "Incluya cualquier pago recurrente relacionado con mantenimiento, administración de propiedades, facturas de servicios públicos, etc."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El índice de vivienda, o \"índice inicial\", mide el monto de su pago mensual total de la vivienda (incluido el capital, los intereses, los impuestos a la propiedad, el seguro de propiedad, el seguro hipotecario y las tarifas de la Asociación de propietarios) como un porcentaje de su ingreso bruto mensual. La relación de vivienda es una de dos relaciones, la otra es la relación deuda-ingresos, comúnmente utilizada por los prestamistas para determinar si un solicitante de una hipoteca puede pagar un préstamo hipotecario. Los prestamistas normalmente prefieren ver una proporción de vivienda del 28% o menos."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

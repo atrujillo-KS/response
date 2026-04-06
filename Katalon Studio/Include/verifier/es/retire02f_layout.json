@@ -1,0 +1,680 @@
+{
+  "layout": {
+    "tabs": {
+      "GeneralInfo": {
+        "tabLabel": "Información general"
+      },
+      "AboutYou": {
+        "tabLabel": "Acerca de usted"
+      },
+      "YourSpouse": {
+        "tabLabel": "Su cónyuge"
+      }
+    },
+    "fields": {
+      "MAGI": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "SETax": {
+        "fieldLabel": "Impuesto de trabajo por cuenta propia pagado "
+      },
+      "MaxPct": {
+        "fieldLabel": "Límite de los aportes del empleador ",
+        "smallLabel": "(% de pago)"
+      },
+      "SpouseMAGI": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "SETaxSp": {
+        "fieldLabel": "Impuesto de trabajo por cuenta propia pagado "
+      },
+      "SpouseMaxPct": {
+        "fieldLabel": "Límite de los aportes del empleador ",
+        "smallLabel": "(% de pago)"
+      },
+      "AcctType": {
+        "fieldLabel": "Plan de jubilación",
+        "dropdownOptions": [
+          {
+            "optionText": "Plan 401(k)"
+          },
+          {
+            "optionText": "Cuenta IRA tradicional"
+          },
+          {
+            "optionText": "Cuenta IRA Roth"
+          },
+          {
+            "optionText": "Cuenta Roth 401(k)"
+          },
+          {
+            "optionText": "Plan Keogh"
+          },
+          {
+            "optionText": "Simple/Sencillo(a)"
+          },
+          {
+            "optionText": "Cuenta SEP"
+          }
+        ]
+      },
+      "FilingStatus": {
+        "fieldLabel": "Estado de la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casados con declaración conjunta"
+          },
+          {
+            "optionText": "Casados con declaración por separado"
+          },
+          {
+            "optionText": "Jefe(a) de familia"
+          }
+        ]
+      },
+      "UserWorkPlanRetire02F": {
+        "fieldLabel": "¿Participa en el plan de jubilación del trabajo?",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "SpouseWorkPlanRetire02F": {
+        "fieldLabel": "¿Participa en el plan de jubilación del trabajo?",
+        "dropdownOptions": [
+          {
+            "optionText": "Sí"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "CurrAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "Income": {
+        "fieldLabel": "Ingreso anual",
+        "smallLabel": "(antes de impuestos)"
+      },
+      "RetireAge": {
+        "fieldLabel": "Edad al momento de la jubilación"
+      },
+      "RetireWage": {
+        "fieldLabel": "Sueldos mensuales durante la jubilación "
+      },
+      "WageYrs": {
+        "fieldLabel": "Por cuántos años"
+      },
+      "SpsAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "SpsInc": {
+        "fieldLabel": "Ingreso anual",
+        "smallLabel": "(antes de impuestos)"
+      },
+      "SpsRetireAge": {
+        "fieldLabel": "Edad al momento de la jubilación"
+      },
+      "SpsRetireWage": {
+        "fieldLabel": "Sueldos mensuales durante la jubilación "
+      },
+      "SpsWageYrs": {
+        "fieldLabel": "Por cuántos años"
+      },
+      "DeathAge": {
+        "fieldLabel": "Esperanza de vida"
+      },
+      "RetExpAmt1": {
+        "fieldLabel": "Gastos básicos iniciales"
+      },
+      "RetExpYrs1": {
+        "fieldLabel": "Por cuántos años"
+      },
+      "RetExpAmt2": {
+        "fieldLabel": "Gastos básicos intermedios"
+      },
+      "RetExpYrs2": {
+        "fieldLabel": "Por cuántos años"
+      },
+      "RetExpAmt3": {
+        "fieldLabel": "Lo que reste de la jubilación "
+      },
+      "TaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal ",
+        "smallLabel": "(antes de la jubilación)"
+      },
+      "RetireTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal ",
+        "smallLabel": "(después de la jubilación)"
+      },
+      "AnnIncGrow": {
+        "fieldLabel": "Tasa de crecimiento anual del ingreso"
+      },
+      "SSAge": {
+        "fieldLabel": "Edad en la que exigirá el pago de beneficios del seguro social "
+      },
+      "SSPmt": {
+        "fieldLabel": "Sus beneficios mensuales que espera recibir"
+      },
+      "SpsSSAge": {
+        "fieldLabel": "Edad a la que su cónyuge exigirá el pago de beneficios del seguro social "
+      },
+      "SpsSSPmt": {
+        "fieldLabel": "Sus beneficios mensuales que espera recibir"
+      },
+      "PenAmt": {
+        "fieldLabel": "Pago de pensión mensual"
+      },
+      "PenYrs": {
+        "fieldLabel": "Años que recibirá pagos "
+      },
+      "SpsPenAmt": {
+        "fieldLabel": "Pago de pensión mensual"
+      },
+      "SpsPenYrs": {
+        "fieldLabel": "Años en que mi cónyuge recibirá pagos "
+      },
+      "M401kBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "M401kRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "M401kDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "M401kEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "MRoth401kBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "MRoth401kRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "MRoth401kDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "RothBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "RothRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "RothDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "IRABal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "IRARate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "IRADep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SepBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SepRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SepDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SepEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "SimpleBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SimpleRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SimpleDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SimpleEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "KeoghBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "KeoghRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "KeoghDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "KeoghEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "OtherBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "OtherRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "OtherDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "Sps401kBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "Sps401kRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "Sps401kDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "Sps401kEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "SpsRoth401kBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsRoth401kRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsRoth401kDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsRothBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsRothRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsRothDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsIRABal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsIRARate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsIRADep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsSepBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsSepRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsSepDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsSepEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "SpsSimpleBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsSimpleRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsSimpleDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsSimpleEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "SpsKeoghBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsKeoghRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsKeoghDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SpsKeoghEmp": {
+        "fieldLabel": "Inversión mensual del empleador"
+      },
+      "SpsOtherBal": {
+        "fieldLabel": "Saldo actual"
+      },
+      "SpsOtherRate": {
+        "fieldLabel": "Tasa de rendimiento actual "
+      },
+      "SpsOtherDep": {
+        "fieldLabel": "Su inversión mensual"
+      },
+      "SavAmt1": {
+        "fieldLabel": "Saldo actual",
+        "ariaLegendLabel": "Cuenta #1"
+      },
+      "SavRate1": {
+        "fieldLabel": "Tasa de rendimiento"
+      },
+      "SavDep1": {
+        "fieldLabel": "Inversión mensual"
+      },
+      "SavBef1": {
+        "fieldLabel": "Años para comenzar "
+      },
+      "SavAmt2": {
+        "fieldLabel": "Saldo actual",
+        "ariaLegendLabel": "Cuenta #2"
+      },
+      "SavRate2": {
+        "fieldLabel": "Tasa de rendimiento"
+      },
+      "SavDep2": {
+        "fieldLabel": "Inversión mensual"
+      },
+      "SavBef2": {
+        "fieldLabel": "Años para comenzar "
+      },
+      "InvAmt1": {
+        "fieldLabel": "Cantidad de la inversión",
+        "ariaLegendLabel": "Inversion #1"
+      },
+      "InvRate1": {
+        "fieldLabel": "Tasa de rendimiento"
+      },
+      "InvBef1": {
+        "fieldLabel": "Años hasta que invierta"
+      },
+      "InvAmt2": {
+        "fieldLabel": "Cantidad de la inversión",
+        "ariaLegendLabel": "Inversion #2"
+      },
+      "InvRate2": {
+        "fieldLabel": "Tasa de rendimiento"
+      },
+      "InvBef2": {
+        "fieldLabel": "Años hasta que invierta"
+      },
+      "empty": {
+        "fieldLabel": ""
+      },
+      "PenAdjOpt": {
+        "fieldLabel": "Pagos a los que aplicar el ajuste por inflación ",
+        "dropdownOptions": [
+          {
+            "optionText": "Ningún pago"
+          },
+          {
+            "optionText": "Primer pago"
+          },
+          {
+            "optionText": "Resto de los pagos"
+          },
+          {
+            "optionText": "Todos los pagos"
+          }
+        ]
+      },
+      "SpsPenAdjOpt": {
+        "fieldLabel": "",
+        "dropdownOptions": [
+          {
+            "optionText": "Ningún pago"
+          },
+          {
+            "optionText": "Primer pago"
+          },
+          {
+            "optionText": "Resto de los pagos"
+          },
+          {
+            "optionText": "Todos los pagos"
+          }
+        ]
+      },
+      "AcctOwner": {
+        "fieldLabel": "Propietario",
+        "dropdownOptions": [
+          {
+            "optionText": "Usted "
+          },
+          {
+            "optionText": "Su cónyuge"
+          }
+        ]
+      },
+      "MTaxAdvantage-account-type": {
+        "fieldLabel": "Tipo de cuenta",
+        "dropdownOptions": [
+          {
+            "optionText": "Plan 401(k)"
+          },
+          {
+            "optionText": "Cuenta Roth 401(k)"
+          },
+          {
+            "optionText": "Cuenta IRA Roth"
+          },
+          {
+            "optionText": "Cuenta IRA tradicional"
+          },
+          {
+            "optionText": "Cuenta SEP"
+          },
+          {
+            "optionText": "Cuenta SIMPLE"
+          },
+          {
+            "optionText": "Plan Keogh"
+          },
+          {
+            "optionText": "Otro(a)"
+          }
+        ]
+      },
+      "STaxAdvantage-account-type": {
+        "fieldLabel": "Tipo de cuenta",
+        "dropdownOptions": [
+          {
+            "optionText": "Plan 401(k)"
+          },
+          {
+            "optionText": "Cuenta Roth 401(k)"
+          },
+          {
+            "optionText": "Cuenta IRA Roth"
+          },
+          {
+            "optionText": "Cuenta IRA tradicional"
+          },
+          {
+            "optionText": "Cuenta SEP"
+          },
+          {
+            "optionText": "Cuenta SIMPLE"
+          },
+          {
+            "optionText": "Plan Keogh"
+          }
+        ]
+      },
+      "AccType": {
+        "fieldLabel": "indefinido",
+        "dropdownOptions": [
+          {
+            "optionText": "Plan 401(k)"
+          },
+          {
+            "optionText": "Cuenta Roth 401(k)"
+          },
+          {
+            "optionText": "Cuenta IRA Roth"
+          },
+          {
+            "optionText": "Cuenta IRA tradicional"
+          },
+          {
+            "optionText": "Cuenta SEP"
+          },
+          {
+            "optionText": "Cuenta SIMPLE"
+          },
+          {
+            "optionText": "Plan Keogh"
+          },
+          {
+            "optionText": "Otro(a)"
+          }
+        ]
+      },
+      "SSType": {
+        "fieldLabel": "Sus beneficios mensuales",
+        "dropdownOptions": [
+          {
+            "optionText": "Estimado para mí"
+          },
+          {
+            "optionText": "Ignorar"
+          },
+          {
+            "optionText": "Futuro(a)"
+          }
+        ]
+      },
+      "SpsSSType": {
+        "fieldLabel": "",
+        "dropdownOptions": [
+          {
+            "optionText": "Estimado para el cónyuge"
+          },
+          {
+            "optionText": "Ignorar"
+          },
+          {
+            "optionText": "Futuro(a) cónyuge"
+          }
+        ]
+      }
+    },
+    "results_fields": {
+      "ContYr1": {
+        "fieldLabel": "2024"
+      },
+      "ContYr2": {
+        "fieldLabel": "2025 (estimado)"
+      },
+      "ContYr3": {
+        "fieldLabel": "2026 (estimado)"
+      },
+      "TotMinWd": {
+        "fieldLabel": "Retiros mínimos totales"
+      },
+      "TotWd": {
+        "fieldLabel": "Cantidad total retirada"
+      },
+      "TotTaxPen": {
+        "fieldLabel": "Impuesto sobre la renta total y sanciones "
+      },
+      "TotIntRetire02B": {
+        "fieldLabel": "Ingresos por intereses totales"
+      },
+      "TotMaxDep": {
+        "fieldLabel": "Aporte máximo total"
+      },
+      "CurrExp": {
+        "fieldLabel": "Corriente/actual/al día"
+      },
+      "EstExp": {
+        "fieldLabel": "Durante la jubilación"
+      },
+      "EstExpAdj": {
+        "fieldLabel": "Durante la jubilación"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Usted ",
+        "Su cónyuge"
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Año",
+    "progressFilled": "Totalmente financiado(a)",
+    "progressEmpty": "Sin financiamiento",
+    "retirement": "Jubilación",
+    "age": "Edad",
+    "yourResults": "Sus resultados",
+    "title": "¿Cuánto puedo aportar a mi plan de jubilación cada año?",
+    "answer": "En %year%, usted puede aportar un máximo de <span class='lf-bold'>%result%</span>",
+    "spouse": "Su cónyuge",
+    "contributionLimit": "Límite de contribución ",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "regularira": {
+      "title": "Cuenta IRA regular",
+      "definition": "Una cuenta IRA regular también se llama IRA tradicional. Es una cuenta de jubilación con impuestos diferidos. En 2025, usted tiene permitido hacer una contribución con impuestos diferidos de $7,000 a una cuenta IRA regular. Esta cuenta crece con impuestos diferidos hasta que usted comience a tomar las distribuciones, lo que puede hacer sin penalización después de alcanzar la edad de 59 años y medio. Para las personas de 50 años o más, existe una disposición especial de la Ley tributaria de 2001 para ponerse al día que le permite contribuir $1,000 adicionales o un total de $8,000."
+    },
+    "rothira": {
+      "title": "IRA Roth",
+      "definition": "Una cuenta de jubilación con ventajas de impuestos que le permite hacer una contribución después de impuestos de hasta $7,000 para 2025, o hasta $8,000 si tiene 50 años o más. Si usted mantiene una IRA Roth durante al menos cinco años y tiene al menos 59 años y medio de edad cuando comienza a hacer retiros de la cuenta, la cuenta entera puede ser distribuida sin pagar impuestos ni penalidades."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "deductibleira": {
+      "title": "IRA deducible",
+      "definition": "Una cuenta IRA deducible es una cuenta de jubilación individual financiada con aportaciones deducibles de impuestos. En 2025, usted puede aportar hasta $7,000 o $8,000 (dependiendo de su edad, sus ingresos y su participación en un plan de jubilación patrocinado por el empleador)."
+    },
+    "dcplan401k": {
+      "title": "Plan 401(k)",
+      "definition": "Un plan 401(k) es un plan de contribución definida que permite a los empleados destinar una parte de su salario, mediante deducción de nómina, a una cuenta. Los impuestos federales (y generalmente también los estatales) sobre las contribuciones del empleado y las ganancias de inversión se difieren hasta que el participante reciba una distribución del plan (normalmente en la jubilación). Los empleadores también pueden contribuir a la cuenta del participante. Para el año 2025, usted puede contribuir hasta $23,500 a un plan 401(k). Si tiene 50 años o más, puede aportar $7,500 adicionales, para un total de $31,000. Si su empleador realiza aportes, el monto máximo que puede aportarse a un plan 401(k) en 2025 es el menor entre $70,000 ($76,500 si tiene 50 años o más) o el 100% de su compensación anual."
+    },
+    "keoghplan": {
+      "title": "Plan Keogh",
+      "definition": "Plan de jubilación con aportaciones definidas para personas que trabajan por cuenta propia y sus empleados, incluyendo las empresas individuales y las sociedades. Los límites de aportación varían dependiendo de si su plan Keogh es un plan de beneficios definidos, de aportaciones definidas o 401(k) calificado."
+    },
+    "simple": {
+      "title": "Plan SIMPLE",
+      "definition": "Un plan SIMPLE es un plan de jubilación con aportaciones del empleador para personas que trabajan por cuenta propia o pequeñas empresas (de 100 empleados o menos). SIMPLE significa plan de contribuciones equivalentes como incentivo de ahorro para empleados (Savings Incentive Match Plan for Employees). En 2025, usted puede aportar hasta $16,500 a su plan SIMPLE-IRA o, si usted tiene 50 años o más, puede aportar hasta $20,000."
+    },
+    "catchupprovisioniras": {
+      "title": "Un suministro de recuperacion compensatoria para contribuciones a una cuenta individual jubilatoria",
+      "definition": "La Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 autorizó límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas. La disposición de aportaciones adicionales de la nueva ley autorizó límites aun mayores para los trabajadores de 50 años o más. Para las cuentas IRA regulares y Roth, el monto de la aportación adicional es de $1,000 para 2025. Como resultado, los límites de aportación anual combinados para personas de 50 años o más aumentan a $8,000 para 2025."
+    },
+    "sep": {
+      "title": "Plan SEP",
+      "definition": "Un plan SEP es un plan de jubilación con aportaciones del empleador para personas que trabajan por cuenta propia o pequeñas empresas (de 25 empleados o menos). SEP significa pensión simplificada del empleado (Simplified Employee Pension). En 2025, su empleador puede aportar hasta $70,000 o el 25% de su compensación a su cuenta SEP-IRA."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa sus aportaciones máximas deducibles de impuestos o permitidas a una cuenta  <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#DCPlan401K\">401(k)</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Traditional IRA\">IRA Tradicional</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">Roth IRA</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#roth401K\">Roth 401(k)</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SEP\">SEP</a></span>, <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SIMPLE\">SIMPLE</a></span> y <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#KeoghPlan\">Keogh plan</a></span>. Recuerde que los límites de contribución máxima que se muestran para cada plan sólo son aplicables si usted hace aportaciones únicamente a uno de los planes. Por ejemplo, una aportación a un plan IRA Tradicional reduce el máximo que usted puede aportar a un plan Roth IRA."
+    },
+    {
+      "textLabel": "El monto que usted está autorizado a aportar a una cuenta IRA depende de su estado civil en las declaraciones tributarias, del ingreso bruto ajustado modificado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MAGI\">MAGI</a></span>) y de si usted (o su cónyuge) participa en un plan de jubilación patrocinado por el empleador como el plan 401(k) o 403(b)."
+    },
+    {
+      "textLabel": "Cuando los ingresos son más altos, se eliminan gradualmente las exenciones personales sobre sus aportaciones deducibles de impuestos a una cuenta IRA regular. De modo similar, cuando los ingresos son más altos se eliminan gradualmente las exenciones personales sobre sus aportaciones permitidas a una cuenta Roth IRA."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de los límites máximos de contribución para el plan de jubilación seleccionado para el año actual."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Límites máximos de contribución para el plan de jubilación seleccionado para el año actual"
+    }
+  ]
+}

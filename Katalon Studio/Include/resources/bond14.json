@@ -1,0 +1,838 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I buy a zero coupon bond?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares two bond investments: buying a bond at a substantial discount to par value and receiving no coupon (a zero-coupon bond ), and buying a bond with a coupon. Rates of return are provided for two periods: 1) the remaining term to maturity ) (your yield to maturity ) and 2) the number of months until you sell the bonds."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary. Treasury securities are exempt from state income taxes. Municipal bonds are exempt from federal income taxes. In some cases, muni bonds are also exempt from state income taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "With a zero-coupon bond, you must report imputed interest as income. As a result, your after-tax rate of return on a zero-coupon bond may be lower."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=discount",
+      "value": "discount"
+    }
+  },
+  {
+    "click": {
+      "id": "link=discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Discount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=par value",
+      "value": "par value"
+    }
+  },
+  {
+    "click": {
+      "id": "link=par value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Par value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The stated, or nominal, price of a bond or fixed deposit, such as a CD, when it matures. Also known as face value."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=zero-coupon bond",
+      "value": "zero-coupon bond"
+    }
+  },
+  {
+    "click": {
+      "id": "link=zero-coupon bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Zero-coupon bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A zero-coupon bond is sold at a large discount to par value that pays no coupon interest. As the bond approaches its maturity date, the price of the bond rises towards par value. This appreciation of a zero-coupon bond is called imputed interest. The IRS requires you to report imputed interest as taxable income unless you have earned it on a tax-exempt bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=maturity",
+      "value": "maturity"
+    }
+  },
+  {
+    "click": {
+      "id": "link=maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Loans: Maturity is the end of a loan term when the full amount of the loan is repaid in full to the lender. Bonds: Maturity is the date that the face value of the bond is repaid to investors."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=yield to maturity",
+      "value": "yield to maturity"
+    }
+  },
+  {
+    "click": {
+      "id": "link=yield to maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Yield-to-maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The interest rate, or internal rate of return (IRR), that makes the cash inflows equal to the price you pay for the bond. Cash inflows are made up of coupon interest and the bond principal when the bond matures."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=imputed interest",
+      "value": "imputed interest"
+    }
+  },
+  {
+    "click": {
+      "id": "link=imputed interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Imputed interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The amount of interest earned on a zero-coupon bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "click": {
+      "id": "link=rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The coupon bond will earn a higher return after taxes of −7.51%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-1",
+      "value": "Coupon"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-2",
+      "value": "Zero Coupon"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle1",
+      "value": "If you sell in 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_label",
+      "value": "Selling price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_value",
+      "value": "$9,804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondSellingPrice_result_value",
+      "value": "$8,191"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfSell_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfSell_result_value",
+      "value": "−6.77%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−8.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfSell_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfSell_result_value",
+      "value": "−7.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldAfterTaxesIfSell_result_value",
+      "value": "−8.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle2",
+      "value": "If you hold to maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfHoldToMaturity_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "−1.89%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "2.13%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldAfterTaxesIfHoldToMaturity_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "−1.89%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "2.13%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "At Sale"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Sale Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "At Maturity"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CouponBond-accordion",
+      "value": "Coupon Bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type-label",
+      "value": "Type of bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_Type",
+      "value": "Corporate or other Municipal: not state tax-exempt Municipal: state tax-exempt Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ZeroCouponBond-accordion",
+      "value": "Zero Coupon Bond"
+    }
+  },
+  {
+    "click": {
+      "id": "ZeroCouponBond-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondPurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_ZeroCouponBondPurchasePrice",
+      "value": "90.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondPurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondFaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_ZeroCouponBondFaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondFaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondMonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_ZeroCouponBondMonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondMonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "SharedBondInfo-accordion",
+      "value": "Shared Bond Info"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsSincePurchase-label",
+      "value": "Months until you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday-label",
+      "value": "Market rate when you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MarketRateToday_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption-label",
+      "value": "Your coupon income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "CouponBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "108.75"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "25,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "7.92"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "72"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_Type",
+      "value": "label=Treasury security"
+    }
+  },
+  {
+    "click": {
+      "id": "ZeroCouponBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_ZeroCouponBondPurchasePrice",
+      "value": "85.12"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_ZeroCouponBondFaceValue",
+      "value": "25,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_ZeroCouponBondMonthsToMaturity",
+      "value": "45"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsSincePurchase",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MarketRateToday",
+      "value": "6.39"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.46"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Head of household"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "150,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.51"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The coupon bond will earn a higher return after taxes of 3.92%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_value",
+      "value": "$26,267"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondSellingPrice_result_value",
+      "value": "$22,362"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfSell_result_value",
+      "value": "5.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldBeforeTaxesIfSell_result_value",
+      "value": "2.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfSell_result_value",
+      "value": "3.92%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldAfterTaxesIfSell_result_value",
+      "value": "2.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "6.13%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "4.39%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_ZeroCouponBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "4.31%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_YieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "4.39%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

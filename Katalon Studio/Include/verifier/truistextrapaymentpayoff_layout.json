@@ -1,0 +1,534 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "homeInfo"
+      ],
+      "homeInfo": {
+        "tabLabel": "",
+        "selected": true,
+        "fields": [
+          "CurrentLoanBalance",
+          "RemainingTerm",
+          "IntRate",
+          "CurrentLoanPayment",
+          "ExtraPmtStartDate",
+          "TargetPayoffDate",
+          "NextPmtDueDate"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "No extra payments",
+        "Extra payments"
+      ],
+      "fields": [
+        [
+          "TotIntPaid",
+          "TotIntPaid2"
+        ],
+        [
+          "YearUntilPayoff",
+          "YearUntilPayoff2"
+        ],
+        [
+          "TotPay",
+          "TotPay2"
+        ]
+      ]
+    },
+    "results_fields": {
+      "TotPay": {
+        "fieldLabel": "Principal & interest payment"
+      },
+      "TotPay2": {
+        "fieldLabel": "Principal & interest payment"
+      },
+      "YearUntilPayoff": {
+        "fieldLabel": "Years until payoff"
+      },
+      "YearUntilPayoff2": {
+        "fieldLabel": "Years until payoff"
+      },
+      "TotIntPaid": {
+        "fieldLabel": "Total interest paid"
+      },
+      "TotIntPaid2": {
+        "fieldLabel": "Total interest paid "
+      }
+    },
+    "date_fields_default": {
+      "ExtraPmtStartDate": {
+        "days": 0,
+        "months": 1,
+        "years": 0,
+        "adjustBottom": 360
+      },
+      "TargetPayoffDate": {
+        "days": 0,
+        "months": 240,
+        "years": 0,
+        "adjustBottom": 360
+      },
+      "NextPmtDueDate": {
+        "days": 0,
+        "months": 1,
+        "years": 0,
+        "adjustBottom": 460
+      }
+    },
+    "fields": {
+      "TargetPayoffDate": {
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "inputTypeChar": false,
+        "inputTypeDate": true,
+        "calendarWidget": true,
+        "cellClass": "TargetPayoffDate lf-date-input",
+        "dataHighlight": "true",
+        "defaultValue": "",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "999999999",
+        "widgetStep": "",
+        "value": "30",
+        "format": "number",
+        "fieldLabel": "Target payoff date"
+      },
+      "NextPmtDueDate": {
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "inputTypeChar": false,
+        "inputTypeDate": true,
+        "calendarWidget": true,
+        "cellClass": "NextPmtDueDate lf-date-input",
+        "dataHighlight": "true",
+        "defaultValue": "",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "999999999",
+        "widgetStep": "",
+        "value": "30",
+        "format": "number",
+        "fieldLabel": "Next payment due date"
+      },
+      "ExtraPmtStartDate": {
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "inputTypeChar": false,
+        "inputTypeDate": true,
+        "calendarWidget": true,
+        "cellClass": "ExtraPmtStartDate lf-date-input",
+        "dataHighlight": "true",
+        "defaultValue": "",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "999999999",
+        "widgetStep": "",
+        "value": "30",
+        "format": "number",
+        "fieldLabel": "Extra payment start date"
+      },
+      "CurrentLoanPayment": {
+        "fieldLabel": "Principal & interest payment",
+        "smallLabel": "",
+        "format": "currency",
+        "defaultValue": "900",
+        "value": "900",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "12",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "AdditionalPmt": {
+        "fieldLabel": "Additional payment",
+        "smallLabel": "",
+        "glossaryTerm": "additionalmonthlypayments",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DownPmtPct": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Down payment",
+        "defaultValue": "20",
+        "glossaryTerm": "downpayment",
+        "inputType": "text",
+        "precision": "0",
+        "sliderMinVal": 0,
+        "sliderMaxVal": "40",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "99",
+        "widgetStep": "1",
+        "value": "20",
+        "format": "percent"
+      },
+      "ExtraPmtsLoanType": {
+        "fieldLabel": "Loan type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "New",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Existing",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "AppVal": {
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Purchase price",
+        "defaultValue": "200000",
+        "glossaryTerm": "appraisalvalue",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "maxlength": "10",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "1",
+        "maximumValue": "10000000",
+        "widgetStep": "20000",
+        "value": "200000",
+        "format": "currency",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false
+      },
+      "TermYrs": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Term",
+        "defaultValue": "30",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "30",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "40",
+        "widgetStep": "1",
+        "value": "30",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "CurrentLoanBalance": {
+        "fieldLabel": "Current loan balance",
+        "smallLabel": "",
+        "glossaryTerm": "loanprincipal",
+        "glossaryDefinition": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero.",
+        "glossaryTitle": "Loan principal",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "maxlength": "16",
+        "precision": 2,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "2000000",
+        "widgetStep": "20000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "IntRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Interest rate",
+        "defaultValue": "5.000",
+        "glossaryTerm": "interestrate",
+        "inputType": "text",
+        "precision": 3,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.000",
+        "widgetStep": "0.1",
+        "value": "5.000",
+        "format": "percent"
+      },
+      "RemainingTerm": {
+        "fieldLabel": "Remaining term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "defaultValue": "48",
+        "glossaryTerm": "term",
+        "inputType": "text",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "360",
+        "maxlength": "3",
+        "safeType": "number",
+        "value": "240",
+        "minimumValue": "1",
+        "maximumValue": "540",
+        "widgetStep": "1",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% months",
+        "format": "number"
+      },
+      "ExtraPmtType": {
+        "fieldLabel": "Extra payment type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "2",
+            "optionText": "Lump sum",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Recurring",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExtraPmtFreq": {
+        "fieldLabel": "Payment frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "Annual",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Monthly",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExtraPmtsEnd": {
+        "fieldLabel": "Extra payments end",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "At end of loan term",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Before end of loan term",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Interest payed",
+    "title": "What extra monthly payment is needed to pay off my loan by a specific date?",
+    "answer": "An extra monthly payment of <span class='lf-bold'>$%result%</span> will pay off your loan by <span class='lf-bold'>%date%</span> and save you <span class='lf-bold'>$%interest%</span> in interest.",
+    "selectors": [
+      {
+        "label": "Interest Paid",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Payment Schedule - Without Extra Payments ",
+            "label": "Without Extra Payments "
+          },
+          {
+            "index": "1",
+            "title": "Payment Schedule - With Extra Payments",
+            "label": "With Extra Payments"
+          }
+        ]
+      }
+    ],
+    "moreThan": "more than",
+    "lessThan": "less than",
+    "sameAs": "the same as",
+    "principalInterest": "Principal & Interest",
+    "pmi": "PMI",
+    "taxesInsurance": "Taxes & Insurance",
+    "categories": [
+      "Fixed",
+      "Adjustable"
+    ],
+    "TotPay": "Fixed",
+    "TotPmtHome": "Adjustable",
+    "TotIntPaid": "No Extra Payments",
+    "TotIntPaid2": "Extra Payments",
+    "tableHeaders": [
+      [
+        "Month",
+        "Principal & Interest",
+        "Principal paid",
+        "Interest paid",
+        "Ending Balance"
+      ],
+      [
+        "Month",
+        "Principal & Interest",
+        "Principal paid",
+        "Interest paid",
+        "Ending Balance"
+      ]
+    ],
+    "more_prefix": " more ",
+    "less_prefix": " less "
+  },
+  "glossaryItems": {
+    "interestrate": {
+      "title": "Interest rate",
+      "definition": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    },
+    "loanprincipal": {
+      "title": "Loan principal",
+      "definition": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the additional monthly principal payment required to pay off a loan by a specific date and the resulting interest savings. The entire amount of additional payments is applied to amortizing the loan principal. Some mortgage loans may have a prepayment penalty. Check with your lender to verify whether your loan has such a penalty."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the difference between the total interest paid on the loan with extra payments and the loan without extra payments."
+    },
+    {
+      "title": "Amortization"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Difference between the total interest paid on the loan with extra payments and the loan without extra payments"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "fields": [
+          "Global_CurrentSavings",
+          "Savings_YearsDeposited",
+          "Global_SavingsInterestRate"
+        ]
+      },
+      "advanced": {
+        "fields": [
+          "Global_FederalTaxRate",
+          "Global_StateTaxRate",
+          "Global_InflationRate"
+        ]
+      }
+    },
+    "results": {
+      "result": "fv_Both",
+      "fields": [
+        [
+          "fv_None"
+        ],
+        [
+          "fv_TaxOnly"
+        ],
+        [
+          "fv_Both"
+        ]
+      ]
+    },
+    "results_fields": {
+      "fv_None": {
+        "fieldLabel": "Ending balance before taxes"
+      },
+      "fv_TaxOnly": {
+        "fieldLabel": "Ending balance after taxes"
+      },
+      "fv_Both": {
+        "fieldLabel": "Ending balance after taxes and inflation"
+      }
+    },
+    "fields": {
+      "Global_CurrentSavings": {
+        "fieldLabel": "Current savings",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Years deposited",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maximumValue": "90",
+        "maxlength": "2",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "solverCommand": "1",
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Annual rate of return",
+        "defaultValue": "1.00",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "widgetStep": "1.00",
+        "value": "1.00",
+        "format": "percent"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Your federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "25.00",
+        "value": "25.00",
+        "minimumValue": "0",
+        "maximumValue": "80.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Your state tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.80",
+        "value": "6.80",
+        "minimumValue": "0.00",
+        "maximumValue": "20.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflation",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Amount",
+    "title": "How will taxes and inflation affect my savings?",
+    "answer": "Your savings will be worth <span class='lf-bold'>%result%</span> after taxes and inflation",
+    "selectors": [
+      {
+        "label": "Savings after Taxes and Inflation",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "chart1_title": "",
+    "chart2_title": "",
+    "beforeTaxes": "Before Taxes",
+    "afterTaxes": "After Taxes",
+    "afterBoth": "After Taxes & Inflation"
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Taxable account",
+      "definition": "An account that does not receive the tax breaks that either a tax-exempt account or tax-deferred account are eligible to receive. "
+    },
+    "inflationrate": {
+      "title": "Inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    },
+    "futurevalue": {
+      "title": "Future value",
+      "definition": "The amount to which your investment grows in the future. For example, the future value of $100 invested monthly at 8% is $1,245 after 12 months. "
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "discount": {
+      "title": "Discount",
+      "definition": "A price that is less than the regular sale price. In bond investing, a discount is a bond price that is less than the par value of the bond. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "taxadvantagedaccount": {
+      "title": "Tax-advantaged account",
+      "definition": "An investment account with tax-deferred or tax-exempt features that are used to save for retirement, college, and other educational expenses. "
+    },
+    "taxdeferred": {
+      "title": "Tax-deferred contribution",
+      "definition": "A tax-deferred contribution is not taxed at the time the contribution is made to a 401(k) plan or other tax-advantaged account but rather in the year that you withdraw it from the account."
+    },
+    "incometaxrate": {
+      "title": "Income tax rates",
+      "definition": "Income tax rates for 2025 are 37%, 35%, 32%, 24%, 22%, 12%, and 10%."
+    },
+    "inflation": {
+      "title": "Inflation",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the effect of <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#inflation\">inflation</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#IncomeTaxRate\">income taxes</a></span> on your savings plan. You enter how much you currently have saved, number of years to invest, and a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SavingsInterestRate\">savings interest rate</a></span>. Additional contributions are ignored."
+    },
+    {
+      "textLabel": "The <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FutureValue\">future value</a></span> of your savings is <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Discount\">discounted</a></span> by the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#InflationRate\">inflation rate</a></span> that you choose. For example, $1,000 today is worth only $971 a year from now if inflation is 3% a year."
+    },
+    {
+      "textLabel": "The calculator assumes you save with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">taxable</a></span> account. Income taxes on interest earned with a taxable account erode the future value of your savings plan."
+    },
+    {
+      "textLabel": "If you want to simulate saving with a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">tax-advantaged</a></span> account, enter a zero in the fields for federal and state income tax rates."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the savings balance in a certain number of years before taxes, after taxes, and after taxes and inflation."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Savings balance in a certain number of years before taxes, after taxes, and after taxes and inflation"
+    }
+  ]
+}

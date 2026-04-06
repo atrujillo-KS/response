@@ -1,0 +1,682 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "NewVehicleLoan",
+        "NewVehicleCost",
+        "UsedVehicleLoan",
+        "UsedVehicleCost",
+        "TaxesDepreciation"
+      ],
+      "NewVehicleLoan": {
+        "tabLabel": "New Vehicle Loan",
+        "fields": [
+          "Global_AutoPurchasePrice",
+          "Global_AutoDownPayment",
+          "Global_AutoInterestRate",
+          "Global_AutoLoanTerm"
+        ]
+      },
+      "NewVehicleCost": {
+        "tabLabel": "New Vehicle Cost",
+        "fields": [
+          "Auto_YearsOwned",
+          "Auto_MonthlyMaintenance",
+          "Auto_MonthlyInsurance",
+          "Auto_Registration"
+        ]
+      },
+      "UsedVehicleLoan": {
+        "tabLabel": "Used Vehicle Loan",
+        "fields": [
+          "Auto_UsedVehiclePurchasePrice",
+          "Auto_UsedVehicleDownPayment",
+          "Auto_UsedVehicleInterestRate",
+          "Auto_UsedVehicleLoanTerm"
+        ]
+      },
+      "UsedVehicleCost": {
+        "tabLabel": "Used Vehicle Cost",
+        "fields": [
+          "Auto_UsedVehicleAgeInYears",
+          "Auto_YearsUsedVehicleOwned",
+          "Auto_UsedVehicleMonthlyMaintenance",
+          "Auto_UsedVehicleMonthlyInsurance",
+          "Auto_UsedVehicleRegistration"
+        ]
+      },
+      "TaxesDepreciation": {
+        "tabLabel": "Taxes & Depreciation",
+        "fields": [
+          "Global_FederalAndStateTaxRate",
+          "Auto_FutureDepreciation",
+          "Global_SavingsInterestRate"
+        ]
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15000",
+        "value": "15000",
+        "minimumValue": "0",
+        "maxlength": "9",
+        "maximumValue": "1000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "fieldSetLabel": "New Vehicle Loan",
+        "crossFields": [
+          "Global_AutoPurchasePrice",
+          "Global_AutoDownPayment"
+        ],
+        "crossFieldError": "err_purchase_price_new",
+        "enclosingButtonID": "NewVehicleLoan-accordion",
+        "crossFieldErrorOrder": 1
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Down payment",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "249999",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "fieldSetLabel": "New Vehicle Loan",
+        "crossFieldError": "err_purchase_price_new",
+        "enclosingButtonID": "NewVehicleLoan-accordion"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.00",
+        "value": "5.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "5",
+        "maximumValue": "50.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Loan term",
+        "smallLabel": "(months)",
+        "glossaryTerm": "loanterm",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "1",
+        "maxlength": "3",
+        "maximumValue": "360",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "84",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_YearsOwned": {
+        "fieldLabel": "Years you will own vehicle",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "1",
+        "maxlength": "2",
+        "maximumValue": "30",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_MonthlyMaintenance": {
+        "fieldLabel": "Monthly maintenance costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "1",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_MonthlyInsurance": {
+        "fieldLabel": "Monthly insurance costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "75",
+        "value": "75",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_Registration": {
+        "fieldLabel": "Registration costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "500",
+        "value": "500",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehiclePurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "12000",
+        "value": "12000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "250000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "fieldSetLabel": "Used Vehicle Loan",
+        "crossFields": [
+          "Auto_UsedVehiclePurchasePrice",
+          "Auto_UsedVehicleDownPayment"
+        ],
+        "crossFieldError": "err_purchase_price_used",
+        "enclosingButtonID": "UsedVehicleLoan-accordion"
+      },
+      "Auto_UsedVehicleDownPayment": {
+        "fieldLabel": "Down payment",
+        "fieldSetLabel": "Used Vehicle Loan",
+        "smallLabel": "",
+        "glossaryTerm": "downpayment",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maxlength": "7",
+        "maximumValue": "249999",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFieldError": "err_purchase_price_used",
+        "enclosingButtonID": "UsedVehicleLoan-accordion"
+      },
+      "Auto_UsedVehicleInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "5.50",
+        "value": "5.50",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "5",
+        "maximumValue": "50.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": "0.1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehicleLoanTerm": {
+        "fieldLabel": "Loan term ",
+        "smallLabel": "(months)",
+        "glossaryTerm": "loanterm",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "1",
+        "maxlength": "3",
+        "maximumValue": "360",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "84",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehicleAgeInYears": {
+        "fieldLabel": "Vehicle age",
+        "smallLabel": "(years)",
+        "glossaryTerm": "term",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "3",
+        "value": "3",
+        "minimumValue": "1",
+        "maxlength": "2",
+        "maximumValue": "30",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_YearsUsedVehicleOwned": {
+        "fieldLabel": "Years you will own vehicle",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "1",
+        "maxlength": "2",
+        "maximumValue": "30",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "YrsOwnAuto": {
+        "fieldLabel": "Years you will own vehicle",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "1",
+        "maxlength": "2",
+        "maximumValue": "30",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehicleMonthlyMaintenance": {
+        "fieldLabel": "Monthly maintenance costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehicleMonthlyInsurance": {
+        "fieldLabel": "Monthly insurance costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_UsedVehicleRegistration": {
+        "fieldLabel": "Registration costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maxlength": "6",
+        "maximumValue": "10000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your state & federal tax rate",
+        "defaultValue": "33.80",
+        "glossaryTerm": "taxrates",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "maxlength": "5",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "widgetStep": "1.00",
+        "value": "",
+        "format": "percent"
+      },
+      "Auto_FutureDepreciation": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Future depreciation",
+        "glossaryTerm": "depreciation",
+        "smallLabel": "",
+        "errorMessage": "Error message for dropdown list here",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "true",
+            "optionValue": "0",
+            "optionText": "Low"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "1",
+            "optionText": "Average"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "2",
+            "optionText": "High"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your savings interest rate",
+        "defaultValue": "1.00",
+        "glossaryTerm": "savingrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "widgetStep": "1.00",
+        "value": "",
+        "format": "percent"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "New",
+        "Used"
+      ],
+      "fields": [
+        [
+          "AveCostPerYrAuto01",
+          "AveCostPerYr2Auto01"
+        ],
+        [
+          "MonPmtAuto01",
+          "MonPmt2Auto01"
+        ],
+        [
+          "TotIntPaidAuto01",
+          "TotIntPaid2Auto01"
+        ],
+        [
+          "TotDepAuto01",
+          "TotDep2Auto01"
+        ]
+      ]
+    },
+    "results_fields": {
+      "AveCostPerYrAuto01": {
+        "fieldLabel": "Average cost per year",
+        "value": "$7,735"
+      },
+      "AveCostPerYr2Auto01": {
+        "fieldLabel": "",
+        "value": "$3,193"
+        },
+      "MonPmtAuto01": {
+        "fieldLabel": "Monthly payment",
+        "value": "$875"
+      },
+      "MonPmt2Auto01": {
+        "fieldLabel": "",
+        "value": "$233"
+        },
+      "TotIntPaidAuto01": {
+        "fieldLabel": "Total interest paid",
+        "value": "$4,005"
+      },
+      "TotIntPaid2Auto01": {
+        "fieldLabel": "",
+        "value": "$1,163"
+        },
+      "TotDepAuto01": {
+        "fieldLabel": "Total depreciation",
+        "value": "$20,020"
+      },
+      "TotDep2Auto01": {
+        "fieldLabel": "",
+        "value": "$5,588"}
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Average Cost Per Year",
+    "dataTableCategory2": "Monthly Payment",
+    "title": "Which is better: a new or used vehicle?",
+    "answer": "The used vehicle will cost you $4,542 less on average each year",
+    "answer_same": "Considering financing, maintenance and other costs, the new vehicle purchased at a price of <span class='lf-bold'>%newPrice%</span> will cost you <span class='lf-bold'>the same</span> on average each year as the used vehicle purchased for <span class='lf-bold'>%usedPrice%</span>.",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Average Cost",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payments",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "Used": "used vehicle",
+    "New": "new vehicle",
+    "newPayment": "New",
+    "usedPayment": "Used"
+  },
+  "glossaryItems": {
+    "loanterm": {
+      "title": "Loan term",
+      "definition": "The length, or period, of a loan. It is usually measured in years. "
+    },
+    "firstyeardepreciation": {
+      "title": "First year's depreciation",
+      "definition": "First year's depreciation is the dollar amount of depreciation expense. It is deducted from the purchase price to calculate the vehicle's residual, or book, value. Depreciation expense is highest in the early years of ownership, particularly for new vehicles. Depreciation of a vehicle with a high depreciation rate is greater than the expense of one with a low rate."
+    },
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "downpayment": {
+      "title": "Down payment",
+      "definition": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    },
+    "depreciation": {
+      "title": "Depreciation",
+      "definition": "The decline in an asset's value over the course of its useful life due to wear and tear and obsolescence. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The decision to buy a new vehicle instead of a used one requires that you consider the following:"
+    },
+    {
+      "textLabel": "<i>Purchase price.</i> A new vehicle will clearly cost you more than a used vehicle of the same make and model. The extent to which the new or used car will drop in value is based on the depreciation rate chosen - average, high or low."
+    },
+    {
+      "textLabel": "<i>Depreciation.</i> Some vehicles depreciate faster than others do. The slower the depreciation rate of the vehicle, the higher its resale value."
+    },
+    {
+      "textLabel": "<i>Operating costs.</i> A used vehicle is likely to require more maintenance and repair than a new one. Also, fuel consumption may be less efficient."
+    },
+    {
+      "textLabel": "<i>Years of ownership.</i> The longer you own the vehicle, the lower the average annual cost, as acquisition costs are spread out over more years."
+    },
+    {
+      "textLabel": "<i>Financing cost.</i> Interest rates for new vehicle loans are generally lower than for used vehicle loans."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing the average cost per year of the new vehicle and the used vehicle."
+    },
+    {
+      "title": "Column chart comparing the monthly payment for the new vehicle and the used vehicle."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Average cost per year of the new vehicle and the used vehicle"
+    },
+    {
+      "title": "Monthly payment for the new vehicle and the used vehicle"
+    }
+  ]
+}

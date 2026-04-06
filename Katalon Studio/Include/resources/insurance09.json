@@ -1,0 +1,450 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much homeowners insurance do I need?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "Homeowners insurance provides coverage to repair or rebuild your home after events like fire, smoke, theft, a falling tree, or damage caused by weather. It is important because it protects you from enormous financial loss and can also help cover the cost of paying for bodily injury to others or damage to their property. As a starting point, this tool helps you estimate your homeowners insurance coverage needs based on your net worth, deductible and premium preference, and the cost to rebuild your home and replace your belongings. For further information, please consult an insurance professional."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/h2",
+      "value": "Your estimated coverage needs:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DwellingCoverage_result_label",
+      "value": "Dwelling i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_DwellingCoverage_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_DwellingCoverage_tooltip']/div"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DwellingCoverage_result_value",
+      "value": "$150,000 - $300,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PersonalPropertyCoverage_result_label",
+      "value": "Personal property i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_PersonalPropertyCoverage_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_PersonalPropertyCoverage_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Personal property coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Personal property coverage pays to repair or replace belongings — clothing, furniture, electronics, jewelry, etc. — after a covered loss."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PersonalPropertyCoverage_result_value",
+      "value": "$50,000 - $150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeInsuranceLiabilityCoverage_result_label",
+      "value": "Liability i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeInsuranceLiabilityCoverage_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeInsuranceLiabilityCoverage_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Personal liability coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Personal liability coverage protects you if you or members of your household are liable for injury for property damage, in or out of your home."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeInsuranceLiabilityCoverage_result_value",
+      "value": "$100,000 - $300,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeInsuranceDeductible_result_label",
+      "value": "Deductible i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeInsuranceDeductible_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeInsuranceDeductible_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Deductible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A deductible is the dollar amount that you must pay on an insurance policy before the insurance company begins to pay your claim. A higher deductible means you pay more before the insurer begins to pay. The benefit of having a higher deductible is that you will pay a smaller premium."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeReplacementCost-label",
+      "value": "Cost to rebuild your home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeReplacementCost",
+      "value": "Under $150,000 $150,000 - $300,000 $300,001 - $600,000 Over $600,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_HomeReplacementCost",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeReplacementCost_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_HomeReplacementCost_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Cost to rebuild your home"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BelongingsReplacementCost-label",
+      "value": "Cost to replace your belongings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BelongingsReplacementCost",
+      "value": "Under $50,000 $50,000 - $150,000 Over $150,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_BelongingsReplacementCost",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_BelongingsReplacementCost_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_BelongingsReplacementCost_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Cost to replace your belongings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount it costs to fully replace your personal possessions of similar kind and quality if they are damaged or destroyed by a covered loss."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_NetWorth-label",
+      "value": "Your net worth"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_NetWorth",
+      "value": "Under $100,000 $100,000 - $300,000 $300,001 - $500,000 Over $500,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_NetWorth",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_NetWorth_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_NetWorth_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Personal net worth"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Net worth, also called total equity, is equal to assets you own minus liabilities you owe."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeductibleAndPremiumPreference-label",
+      "value": "Deductible and premium preference"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeductibleAndPremiumPreference",
+      "value": "Higher deductible, lower premium Lower deductible, higher premium A balance between the two"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_DeductibleAndPremiumPreference",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_DeductibleAndPremiumPreference_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_DeductibleAndPremiumPreference_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Deductible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A deductible is the dollar amount that you must pay on an insurance policy before the insurance company begins to pay your claim. A higher deductible means you pay more before the insurer begins to pay. The benefit of having a higher deductible is that you will pay a smaller premium."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_HomeReplacementCost"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_HomeReplacementCost",
+      "value": "label=Over $600,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='3']"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_BelongingsReplacementCost"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_BelongingsReplacementCost",
+      "value": "label=Over $150,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Insurance_BelongingsReplacementCost']/option[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_NetWorth"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_NetWorth",
+      "value": "label=Over $500,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Global_NetWorth']/option[4]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_DeductibleAndPremiumPreference"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_DeductibleAndPremiumPreference",
+      "value": "label=Lower deductible, higher premium"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Insurance_DeductibleAndPremiumPreference']/option[2]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DwellingCoverage_result_value",
+      "value": "Over $600,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PersonalPropertyCoverage_result_value",
+      "value": "Over $150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeInsuranceLiabilityCoverage_result_value",
+      "value": "Over $500,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_HomeInsuranceDeductible_result_value",
+      "value": "$500"
+    }
+  }
+]

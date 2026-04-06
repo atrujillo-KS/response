@@ -1,0 +1,430 @@
+{
+  "layout": {
+    "tabs": {
+      "SharedLoanInfo": {
+        "tabLabel": "Información del préstamo compartida"
+      },
+      "Loan1": {
+        "tabLabel": "Préstamo 1",
+        "adjustmentTerms": {
+          "sectionLabelH2": "Términos de ajuste",
+          "sectionLabel": ""
+        }
+      },
+      "Loan2": {
+        "tabLabel": "Préstamo 2",
+        "adjustmentTerms": {
+          "sectionLabelH2": "Términos de ajuste",
+          "sectionLabel": ""
+        }
+      },
+      "TaxesInsurance": {
+        "tabLabel": "Impuestos y seguro"
+      },
+      "results": {
+        "tabLabel": "Resultados"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo 1",
+        "Préstamo 2"
+      ]
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Usted predice que las tasas",
+        "dropdownOptions": [
+          {
+            "optionText": "Sigue igual"
+          },
+          {
+            "optionText": "Aumentar"
+          },
+          {
+            "optionText": "Disminuirá(n)"
+          }
+        ]
+      },
+      "Home_SecondARMInterestRateChangePrediction": {
+        "fieldLabel": "Usted predice que las tasas",
+        "dropdownOptions": [
+          {
+            "optionText": "Sigue igual"
+          },
+          {
+            "optionText": "Aumentar"
+          },
+          {
+            "optionText": "Disminuirá(n)"
+          }
+        ]
+      },
+      "Home_InterestRateType": {
+        "fieldLabel": "Tipo de préstamo",
+        "dropdownOptions": [
+          {
+            "optionText": "Fijo(a)"
+          },
+          {
+            "optionText": "Variable"
+          }
+        ]
+      },
+      "Home_SecondLoanInterestRateType": {
+        "fieldLabel": "Tipo de préstamo",
+        "dropdownOptions": [
+          {
+            "optionText": "Fijo(a)"
+          },
+          {
+            "optionText": "Variable"
+          }
+        ]
+      },
+      "Home_ARMMaximumRateAdjustment": {
+        "fieldLabel": "Ajuste de tasa máxima"
+      },
+      "Home_SecondARMMaximumRateAdjustment": {
+        "fieldLabel": "Ajuste de tasa máxima"
+      },
+      "Home_ARMMaximumRate": {
+        "fieldLabel": "Tasa máxima"
+      },
+      "Home_SecondARMMaximumRate": {
+        "fieldLabel": "Tasa máxima"
+      },
+      "Home_ARMMargin": {
+        "fieldLabel": "Margen"
+      },
+      "Home_SecondARMMargin": {
+        "fieldLabel": "Margen"
+      },
+      "Home_ARMIndexRate": {
+        "fieldLabel": "Tasa de índice "
+      },
+      "Home_SecondARMIndexRate": {
+        "fieldLabel": "Tasa de índice "
+      },
+      "Home_ARMMonthsBetweenIndexAdjustments": {
+        "fieldLabel": "Cantidad de meses entre los ajustes del índice "
+      },
+      "Home_SecondARMMonthsBetweenIndexAdjustments": {
+        "fieldLabel": "Cantidad de meses entre los ajustes del índice "
+      },
+      "Home_ARMIndexRateChangeBetweenIndexAdjustments": {
+        "fieldLabel": "Fluctuación de la tasa del índice entre los ajustes del índice "
+      },
+      "Home_SecondARMIndexRateChangeBetweenIndexAdjustments": {
+        "fieldLabel": "Fluctuación de la tasa del índice entre los ajustes del índice "
+      },
+      "Home_ARMMinimumRate": {
+        "fieldLabel": "Tasa mínima"
+      },
+      "Home_SecondARMMinimumRate": {
+        "fieldLabel": "Tasa mínima"
+      },
+      "Home_OriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_DiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_OtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Home_SecondLoanOtherClosingCosts": {
+        "fieldLabel": "Otros cargos por liquidación "
+      },
+      "Home_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_SecondLoanOriginationCharge": {
+        "fieldLabel": "Cargo por originación"
+      },
+      "Home_SecondLoanDiscountPoints": {
+        "fieldLabel": "Puntos de descuento"
+      },
+      "Home_ARMMonthsBeforeFirstAdjustment": {
+        "fieldLabel": "Cantidad de meses antes del primer ajuste"
+      },
+      "Home_SecondARMMonthsBeforeFirstAdjustment": {
+        "fieldLabel": "Cantidad de meses antes del primer ajuste"
+      },
+      "Home_ExpectedYearsInHome": {
+        "fieldLabel": "Años que espera vivir en la vivienda"
+      },
+      "Home_ARMMonthsBetweenRateAdjustments": {
+        "fieldLabel": "Cantidad de meses entre los ajustes de la tasa"
+      },
+      "Home_SecondARMMonthsBetweenRateAdjustments": {
+        "fieldLabel": "Cantidad de meses entre los ajustes de la tasa"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal + federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa sobre sus ahorros"
+      }
+    },
+    "results_fields": {
+      "PrincAndIntHome14": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "PrincAndInt2Home14": {},
+      "MortInsHome14": {
+        "fieldLabel": "Seguro hipotecario privado"
+      },
+      "MortIns2Home14": {},
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TaxAndIns2": {},
+      "TotPmtHome14": {
+        "fieldLabel": "Pago mensual total"
+      },
+      "TotPmt2Home14": {}
+    }
+  },
+  "labels": {
+    "title": "¿Qué entidad prestamista ofrece el mejor préstamo?",
+    "answer": "El préstamo 1 le costará, en dólares actuales, <span class='lf-bold'>%amount% %which%</span> el préstamo 2 en el plazo de los %years% años",
+    "principalInterest": "Capital e intereses",
+    "pmi": "Seguro hipotecario privado ",
+    "taxesInsurance": "Impuestos y seguro",
+    "moreThan": "más que",
+    "lessThan": "menos que",
+    "overThe": "durante los",
+    "sameAs": "lo mismo que",
+    "TotPmtHome14": "Préstamo 1",
+    "TotPmt2Home14": "Préstamo 2",
+    "cost": "Diferencia de costos",
+    "categories": [
+      "Préstamo 1",
+      "Préstamo 2"
+    ],
+    "selectors": [
+      {
+        "label": "Diferencia de costos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo 1",
+            "label": "Préstamo 1"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo 2",
+            "label": "Préstamo 2"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés acumulado ",
+        "Ahorros fiscales máximos"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestratefloor": {
+      "title": "Piso de la tasa de interés",
+      "definition": "Tasa de interés mínima que se puede cobrar sobre un préstamo a tasa variable durante el plazo del préstamo."
+    },
+    "anniversarydate": {
+      "title": "Fecha del aniversario",
+      "definition": "En una hipoteca a tasa ajustable, fecha periódica, habitualmente una vez por año, en la que se vuelve a fijar la tasa de interés."
+    },
+    "lifetimecap": {
+      "title": "Tope de por vida",
+      "definition": "Un tope de por vida es el límite respecto de cuánto puede aumentar la tasa de interés sobre un préstamo a tasa ajustable durante el plazo del préstamo."
+    },
+    "pmi": {
+      "title": "Seguro hipotecario privado (PMI)",
+      "definition": "Póliza de seguro que protege al prestamista del riesgo de que el prestatario no cumpla con el pago del préstamo. Típicamente se requiere cuando la relación préstamo-valor supera el 80%."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "yield": {
+      "title": "Rentabilidad",
+      "definition": "La rentabilidad se utiliza para medir el rendimiento de inversión de un título. Para fondos mutualistas, el rendimiento se mide generalmente en forma de dividendos como un porcentaje del precio de una cuotaparte de un fondo. En el caso de los bonos, el rendimiento a menudo se calcula de una o más de tres maneras principales: rentabilidad actual, rentabilidad al vencimiento y rentabilidad hasta el rescate anticipado. El retorno actual es la tasa del cupón del bono dividida por el precio actual. Es un método rápido pero incompleto para calcular la rentabilidad. Rentabilidad al vencimiento (YTM) es la rentabilidad esperada que un inversionista obtiene por mantener un bono hasta su vencimiento. La YTM incluye ingresos por cupón y cualquier prima o descuento que el inversionista paga. La rentabilidad hasta el rescate anticipado es la rentabilidad esperada que un inversionista obtiene si el bono se mantiene hasta su primera fecha de rescate, cuando se supone que será rescatado por la compañía que emitió los bonos. La diferencia en la rentabilidad de los bonos se denomina spread de rentabilidad o spread de crédito. El spread de rentabilidad mide la rentabilidad adicional que un bono debe pagar para compensar por el riesgo adicional sobre un bono sin riesgo. Por ejemplo, si un bono corporativo a 10 años obtiene una rentabilidad del 6.25% y un bono del Tesoro de los EE.UU. a 10 años tiene una rentabilidad del 5.75%, el spread de rentabilidad es de 50 puntos básicos."
+    },
+    "indexrate": {
+      "title": "Tasa índice",
+      "definition": "Tasa de interés muy difundida, que los prestamistas usan para fijar la tasa de interés sobre los préstamos y las tarjetas de crédito."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "predictedfutureinterestrate": {
+      "title": "Tasa de interés futura proyectada",
+      "definition": "Su predicción de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se parte del supuesto de que las tasas futuras cambian en la misma medida todos los años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "arm": {
+      "title": "Hipoteca a tasa ajustable (ARM)",
+      "definition": "Tipo de préstamo hipotecario en el que la tasa de interés que se paga por el saldo pendiente varía de acuerdo con un indicador específico."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "impounds": {
+      "title": "Reservas",
+      "definition": "Las reservas son pagos que usted realiza por anticipado por primas del seguro del propietario de vivienda e impuestos inmobiliarios. Usted realiza estos pagos a una cuenta en garantía al cerrar el préstamo, y periódicamente deposita dinero en la cuenta. Un agente de depósito en garantía paga a la autoridad fiscal local y al asegurador con fondos de esta cuenta.  Los analistas calculan reservas para dos meses. Los requerimientos locales de los prestamistas respecto del financiamiento de la cuenta en garantía varían."
+    },
+    "chargeforspecificinterestrate": {
+      "title": "Cargo por tasa de interés específica",
+      "definition": "Cargo adicional, expresado como un porcentaje del monto del préstamo, por obtener una tasa de interés más baja."
+    },
+    "margin": {
+      "title": "Margen",
+      "definition": "Monto fijo que un prestamista agrega a la tasa de interés base de un préstamo hipotecario a tasa variable para establecer la tasa del préstamo."
+    },
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "periodicratecap": {
+      "title": "Tope de la tasa periódica",
+      "definition": "El tope de la tasa de interés periódica es el monto máximo que puede cambiar la tasa del préstamo en una hipoteca a tasa variable en la fecha del aniversario. Las tasas de los préstamos ARM a menudo se ajustan una vez al año una vez que vence el período inicial. A menudo existe un tope de por vida. Un tope de por vida limita la tasa máxima del préstamo que se puede cobrar."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "treasurybills": {
+      "title": "Letras del Tesoro",
+      "definition": "Las letras del Tesoro de los EE.UU. son obligaciones de deuda a corto plazo del Tesoro de los EE.UU. Las letras del Tesoro se emiten habitualmente con un vencimiento a tres o seis meses. Los precios para las letras del Tesoro se consignan como un descuento sobre el valor nominal. Por ejemplo, una letra del Tesoro cuyo precio es de 99.65 se vende por el 99.65% de su valor nominal. Las letras del Tesoro se subastan semanalmente y se utilizan para pagar las operaciones del gobierno federal. Se considera que las letras del Tesoro están entre las inversiones más seguras y más líquidas."
+    },
+    "spread": {
+      "title": "Spread",
+      "definition": "Diferencia aritmética entre dos tasas de interés, habitualmente expresada en puntos básicos. Un punto porcentual consiste en 100 puntos básicos."
+    },
+    "monthsbetweenrateadjustments": {
+      "title": "Meses entre ajustes de la tasa",
+      "definition": "Frecuencia a la que cambia o se vuelve a establecer la tasa de interés sobre un préstamo hipotecario a tasa variable."
+    },
+    "adjustmentperiod": {
+      "title": "Período de ajuste",
+      "definition": "Período inicial con una tasa de interés fija en un préstamo hipotecario a tasa variable. Por ejemplo, una ARM de 5 años tendría un período de ajuste de 60 meses."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "othersettlementservices": {
+      "title": "Otros servicios de liquidación",
+      "definition": "Comisiones abonadas por servicios asociados a la compra de una vivienda y que no constituyen una compensación para el prestamista o el corredor por la originación del préstamo."
+    },
+    "origchargeamount": {
+      "title": "Cargos por originación",
+      "definition": "Suma de todos los cargos y honorarios por concepto de servicios de originación. Representa el total de la compensación que recibirá el prestamista o el corredor a cambio de originar el préstamo."
+    },
+    "monthsbetweenindexadjustments": {
+      "title": "Meses entre ajustes del índice",
+      "definition": "La frecuencia de cambio del índice, el tipo de interés de referencia al que está vinculada una hipoteca de tipo variable."
+    },
+    "pandi": {
+      "title": "P+I",
+      "definition": "Siglas que designan el capital y los interés que usted paga sobre un préstamo hipotecario."
+    },
+    "originationfees": {
+      "title": "Comisión por originación",
+      "definition": "Un prestamista podría cobrar una comisión por originación además de los puntos de hipoteca que tú pagas. Las comisiones por originación son los cargos que aplica el prestamista por financiar tu hipoteca con un corredor hipotecario. El proceso de financiamiento de tu préstamo se denomina originación."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "interestratecap": {
+      "title": "Tope de la tasa de interés",
+      "definition": "Tasa de interés máxima que se puede cobrar sobre un préstamo a tasa variable préstamo durante el plazo del préstamo."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa cuál de dos préstamos hipotecarios es el más conveniente. Cualquiera de ellos o ambos pueden ser préstamos a tasa fija o ajustable (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#arm\">ARM</a></span>)."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras que compara la diferencia en el costo total, en dólares de hoy, para ambos préstamos durante los años esperados en el hogar."
+    },
+    {
+      "title": "Gráfico de columnas apiladas con el desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro para propietarios de viviendas para ambos préstamos."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo total, en dólares de hoy, para ambos préstamos durante los años esperados en el hogar"
+    },
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, seguro hipotecario privado e impuestos a la propiedad y seguro para propietarios de viviendas para ambos préstamos"
+    }
+  ]
+}

@@ -1,0 +1,1041 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "ExistingCreditCards",
+        "ConsolidationCard",
+        "results"
+      ],
+      "ExistingCreditCards": {
+        "selected": true,
+        "tabLabel": "Existing Credit Cards",
+        "pageTitle": "Your existing credit cards",
+        "pageDesc": "Enter information for all existing credit cards that you intend to consolidate into one credit card.",
+        "custom": "new-standard-3col",
+        "sections": [
+          "balance",
+          "interest",
+          "minPayment",
+          "fee"
+        ],
+        "balance": {
+          "sectionLabel": "",
+          "fieldSets": "4",
+          "inputColumns": "lf-4-column-input",
+          "rows": [
+            {
+              "rowLabel": "ExistingCreditCards_Card1",
+              "fields": [
+                "Card_CardOneBalance"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card2",
+              "fields": [
+                "Card_CardTwoBalance"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card3",
+              "fields": [
+                "Card_CardThreeBalance"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card4",
+              "fields": [
+                "Card_CardFourBalance"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card5",
+              "fields": [
+                "Card_CardFiveBalance"
+              ]
+            }
+          ]
+        },
+        "interest": {
+          "sectionLabel": "",
+          "fieldSets": "4b",
+          "inputColumns": "lf-4-column-input",
+          "rows": [
+            {
+              "rowLabel": "ExistingCreditCards_Card1",
+              "fields": [
+                "Card_CardOneInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card2",
+              "fields": [
+                "Card_CardTwoInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card3",
+              "fields": [
+                "Card_CardThreeInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card4",
+              "fields": [
+                "Card_CardFourInterestRate"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card5",
+              "fields": [
+                "Card_CardFiveInterestRate"
+              ]
+            }
+          ]
+        },
+        "minPayment": {
+          "sectionLabel": "",
+          "fieldSets": "4b",
+          "inputColumns": "lf-4-column-input",
+          "rows": [
+            {
+              "rowLabel": "ExistingCreditCards_Card1",
+              "fields": [
+                "Card_CardOneMinimumMonthlyPaymentAmount"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card2",
+              "fields": [
+                "Card_CardTwoMinimumMonthlyPaymentAmount"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card3",
+              "fields": [
+                "Card_CardThreeMinimumMonthlyPaymentAmount"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card4",
+              "fields": [
+                "Card_CardFourMinimumMonthlyPaymentAmount"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card5",
+              "fields": [
+                "Card_CardFiveMinimumMonthlyPaymentAmount"
+              ]
+            }
+          ]
+        },
+        "fee": {
+          "sectionLabel": "",
+          "fieldSets": "4b",
+          "inputColumns": "lf-4-column-input",
+          "rows": [
+            {
+              "rowLabel": "ExistingCreditCards_Card1",
+              "fields": [
+                "Card_CardOneAnnualFee"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card2",
+              "fields": [
+                "Card_CardTwoAnnualFee"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card3",
+              "fields": [
+                "Card_CardThreeAnnualFee"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card4",
+              "fields": [
+                "Card_CardFourAnnualFee"
+              ]
+            },
+            {
+              "rowLabel": "ExistingCreditCards_Card5",
+              "fields": [
+                "Card_CardFiveAnnualFee"
+              ]
+            }
+          ]
+        }
+      },
+      "ConsolidationCard": {
+        "tabLabel": "Consolidation Card",
+        "pageTitle": "Consolidation Card",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageDesc": "Enter information for the credit card into which you would like to consolidate your other credit cards.",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "Card_ConsolidationCardInterestRate",
+                "Card_ConsolidationCardAnnualFee",
+                "Global_PayoffPlan",
+                "Card_ConsolidationCardMonthsToPayOff",
+                "Card_ConsolidationCardMonthlyPayment",
+                "Global_FederalAndStateTaxRate",
+                "Global_SavingsInterestRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Existing Cards",
+        "Consolidation Card"
+      ],
+      "fields": [
+        [
+          "Card_ExistingPayoffMonths",
+          "Card_ConsolidationPayoffMonths"
+        ],
+        [
+          "Card_ExistingMonthlyPayment",
+          "Card_ConsolidationMonthlyPayment"
+        ],
+        [
+          "Card_ExistingTotalInterest",
+          "Card_ConsolidationTotalInterest"
+        ],
+        [
+          "Card_ExistingTotalFees",
+          "Card_ConsolidationTotalFees"
+        ],
+        [
+          "Card_ExistingNetPresentCost",
+          "Card_ConsolidationNetPresentCost"
+        ]
+      ]
+    },
+    "fields": {
+      "Card_CardOneBalance": {
+        "fieldLabel": "Balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Balance",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardOneInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Interest rate",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardOneMinimumMonthlyPaymentAmount": {
+        "fieldLabel": "Min. monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Min. monthly payment",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardOneAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "ariaLegendLabel": "Annual fee",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardTwoBalance": {
+        "fieldLabel": "Balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardTwoInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardTwoMinimumMonthlyPaymentAmount": {
+        "fieldLabel": "Min. monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardTwoAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardThreeBalance": {
+        "fieldLabel": "Balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardThreeInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardThreeMinimumMonthlyPaymentAmount": {
+        "fieldLabel": "Min. monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardThreeAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFourBalance": {
+        "fieldLabel": "Balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFourInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFourMinimumMonthlyPaymentAmount": {
+        "fieldLabel": "Min. monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFourAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFiveBalance": {
+        "fieldLabel": "Balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFiveInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFiveMinimumMonthlyPaymentAmount": {
+        "fieldLabel": "Min. monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_CardFiveAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "label-visually-hidden",
+        "sliderClass": "lf-4-column-input-slider",
+        "safeType": "number"
+      },
+      "Card_ConsolidationCardInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "9.50",
+        "value": "9.50",
+        "minimumValue": "0.00",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Card_ConsolidationCardAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_PayoffPlan": {
+        "fieldLabel": "Payoff plan",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Fixed timeframe",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Fixed payment",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Card_ConsolidationCardMonthsToPayOff": {
+        "fieldLabel": "Months to pay off",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "months",
+        "format": "number",
+        "defaultValue": "36",
+        "value": "36",
+        "minimumValue": "0",
+        "maximumValue": "360",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Card_ConsolidationCardMonthlyPayment": {
+        "fieldLabel": "Monthly payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Your state & federal tax rate",
+        "smallLabel": "",
+        "glossaryTerm": "taxrates",
+        "format": "percent",
+        "defaultValue": "33.80",
+        "value": "33.80",
+        "minimumValue": "0",
+        "maximumValue": "90.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "40.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "safeType": "number"
+      },
+      "Global_SavingsInterestRate": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Your savings rate",
+        "defaultValue": "1.00",
+        "glossaryTerm": "savingsinterestrate",
+        "inputType": "text",
+        "precision": "2",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "maxlength": "6",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "widgetStep": ".10",
+        "value": "",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "format": "percent"
+      }
+    },
+    "results_fields": {
+      "Card_ConsolidationPayoffMonths": {
+        "fieldLabel": "Months to pay off"
+      },
+      "Card_ExistingPayoffMonths": {
+        "fieldLabel": "Months to pay off"
+      },
+      "Card_ExistingMonthlyPayment": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Card_ConsolidationMonthlyPayment": {
+        "fieldLabel": "Monthly payment"
+      },
+      "Card_ExistingTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Card_ConsolidationTotalInterest": {
+        "fieldLabel": "Total interest"
+      },
+      "Card_ExistingTotalFees": {
+        "fieldLabel": "Total fees"
+      },
+      "Card_ConsolidationTotalFees": {
+        "fieldLabel": "Total fees"
+      },
+      "Card_ConsolidationNetPresentCost": {
+        "fieldLabel": "Total cost in today's dollars"
+      },
+      "Card_ExistingNetPresentCost": {
+        "fieldLabel": "Total cost in today's dollars"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total Cost",
+    "dataTableCategory2": "Monthly Payment",
+    "dataTableCategory3": "Months to Pay Off",
+    "title": "Should I consolidate my credit cards?",
+    "answer": "Based on a payoff in <span class='lf-bold'>%month% %monthlabel%</span>, the %whichcardless% will <span class='lf-bold'>save</span> you <span class='lf-bold'>%amount%</span> in today's dollars.",
+    "answer1": "Based on a monthly payment of <span class='lf-bold'>%amount%</span>, the consolidation card will be paid off in <span class='lf-bold'>%month% %monthlabel%</span>, <span class='lf-bold'>%month_sooner% %monthlabel2%</span> sooner than your existing cards would be paid off.",
+    "same_as_answer": "Based on a payoff in <span class='lf-bold'>%month% %monthlabel%</span>, the consolidation card will <span class='lf-bold'>not save</span> you <span class='lf-bold'>any money</span> in today's dollars.",
+    "same_as_answer2": "Based on a monthly payment of <span class='lf-bold'>%amount%</span>, the consolidation card will be paid off in <span class='lf-bold'>%month% %monthlabel%</span>, the same length of time as your original cards.",
+    "same_prefix": "the same",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Total Costs",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Payments",
+        "width": "33%"
+      },
+      {
+        "index": 3,
+        "label": "Payoff",
+        "width": "33%",
+        "last": true
+      }
+    ],
+    "save": "save",
+    "cost": "cost",
+    "month": "months",
+    "existingCards": "Existing Cards",
+    "consolidation": "Consolidation Card",
+    "ExistingCreditCards_Card1": "Card 1",
+    "ExistingCreditCards_Card2": "Card 2",
+    "ExistingCreditCards_Card3": "Card 3",
+    "ExistingCreditCards_Card4": "Card 4",
+    "ExistingCreditCards_Card5": "Card 5",
+    "months_prefix": "Based on a payoff in ",
+    "cost_prefix": " will save you ",
+    "months_prefix1": " be paid off in ",
+    "ariaTotalCosts": "Total cost chart, existing cards $%existing%, consolidation card $%consolidation%",
+    "ariaPayments": "Payments chart, existing cards $%existing%, consolidation card $%consolidation%",
+    "ariaPayoff": "Payoff chart, existing cards %existing% months, consolidation card %consolidation% months"
+  },
+  "glossaryItems": {
+    "taxrates": {
+      "title": "Tax rates",
+      "definition": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases. "
+    },
+    "netpresentcost": {
+      "title": "Net present cost",
+      "definition": "The value of your cost savings, in today's dollars, that you can earn by consolidating debt. Your potential cost savings include lower total interest expense and fees. "
+    },
+    "savingsinterestrate": {
+      "title": "Savings interest rate",
+      "definition": "The yearly interest rate you earn on your savings."
+    },
+    "consolidation": {
+      "title": "Consolidation",
+      "definition": "Loan consolidation combines multiple loans into a single loan to reduce payments, pay off debt quicker, and/or switch from a fixed-rate to variable-rate loan or vice versa."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares the total cost of keeping multiple credit cards with consolidating the debts into one card. Debt consolidation allows a borrower to combine payments to various creditors into a single loan, hopefully at a favorable interest rate. In this case, all the other creditors are assumed to be credit card companies. "
+    },
+    {
+      "textLabel": "Total cost is discounted to present value, which is the value of a payment, or series of payments, in today's dollars."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the net present value difference in the total costs of the existing cards vs. the consolidation card, discounted back to the present using the after-tax savings rate."
+    },
+    {
+      "title": "Column chart comparing the total monthly payment of the existing cards and the monthly payment of the consolidation card."
+    },
+    {
+      "title": "Bar chart comparing the number of months it will take to payoff the existing cards and the consolidation card."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Net present value difference in the total costs of the existing cards vs. the consolidation card, discounted back to the present using the after-tax savings rate"
+    },
+    {
+      "title": "Total monthly payment of the existing cards and the monthly payment of the consolidation card"
+    },
+    {
+      "title": "Number of months it will take to payoff the existing cards and the consolidation card"
+    }
+  ]
+}

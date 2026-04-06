@@ -1,0 +1,403 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc-sp/calc/pcardspanish?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(//th[@id='lf_Commercial_TotalAnnualBenefits_result_label'])[2]",
+      "value": "Total de beneficios anuales"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total de beneficios anuales'])[2]/following::td[1]",
+      "value": "$7,955.79"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//th[@id='lf_Commercial_ValueOfCardRewardsEarned_result_label'])[2]",
+      "value": "Recompensas ganadas"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//td[@id='lf_Commercial_ValueOfCardRewardsEarned_result_value'])[2]",
+      "value": "$5,625.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//th[@id='lf_Commercial_TransactionCostReduction_result_label'])[2]",
+      "value": "Ahorros por uso reducido de cheques"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ahorros por uso reducido de cheques'])[2]/following::td[1]",
+      "value": "$276.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//th[@id='lf_Commercial_ValueOfExtendedFloatOnCapital_result_label'])[2]",
+      "value": "Valor de los plazos de pago extendidos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Valor de los plazos de pago extendidos'])[2]/following::td[1]",
+      "value": "$2,054.79"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Chart"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Categoría"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Series 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Recompensas ganadas"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "5,625"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/th",
+      "value": "Ahorros por uso reducido de cheques"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td",
+      "value": "276"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/th",
+      "value": "Valor de los plazos de pago extendidos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[3]/td",
+      "value": "2,054.79"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inputs'])[1]/following::button[1]",
+      "value": "Básico"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualChecksWritten-label",
+      "value": "¿Cuántos cheques extiende por año?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualChecksWritten",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualChecksWritten-error-message",
+      "value": "Debe ubicarse entre 1 y 50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCheckPayments-label",
+      "value": "¿Cuál es el monto?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCheckPayments",
+      "value": "2,500,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCheckPayments-error-message",
+      "value": "Debe ubicarse entre $1 y $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Básico'])[1]/following::button[1]",
+      "value": "Avanzado"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment-label",
+      "value": "Costo de franqueo y sobre por pago de cheque"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment",
+      "value": "0.67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment-error-message",
+      "value": "Debe ubicarse entre $0.50 y $2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank-label",
+      "value": "Costos bancarios por pago de cheque"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank",
+      "value": "0.25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank-error-message",
+      "value": "Debe ubicarse entre $0.00 y $1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CostOfCapital-label",
+      "value": "Costo del capital"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CostOfCapital",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CostOfCapital-error-message",
+      "value": "Debe ubicarse entre 1.00% y 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_Commercial_CostOfCapital_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_Commercial_CostOfCapital_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Costo del capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El costo promedio ponderado del financiamiento de deudas y activos netos, o la tasa de rendimiento requerida que una empresa espera obtener sobre sus inversiones. El costo del capital se utiliza para descontar flujos de efectivo futuros al valor actual."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_AnnualChecksWritten",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_AnnualCheckPayments",
+      "value": "200000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment",
+      "value": "1.20"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank",
+      "value": ".52"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_CostOfCapital",
+      "value": "1.50"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(//td[@id='lf_Commercial_TotalAnnualBenefits_result_value'])[2]",
+      "value": "$1,789.32"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//td[@id='lf_Commercial_ValueOfCardRewardsEarned_result_value'])[2]",
+      "value": "$450.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//td[@id='lf_Commercial_TransactionCostReduction_result_value'])[2]",
+      "value": "$1,290.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(//td[@id='lf_Commercial_ValueOfExtendedFloatOnCapital_result_value'])[2]",
+      "value": "$49.32"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-5']/tbody/tr/td",
+      "value": "450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-5']/tbody/tr[2]/td",
+      "value": "1,290"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-5']/tbody/tr[3]/td",
+      "value": "49.32"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//span[@id='lf_terms_of_use_label']/b",
+      "value": "Términos de uso"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='disclaimer_text']/p",
+      "value": "Con la tarjeta Commercial Rewards de PNC, ganas puntos por las compras, los cuales puedes canjear por reembolsos en efectivo o artículos, como tarjetas de regalo y viajes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='disclaimer_text']/p[2]",
+      "value": "Al realizar la transición a esta tarjeta de crédito, puedes ganar recompensas dependiendo de tus compras. Las recompensas y demás información que se muestra son para fines de informativos generales únicamente y se basan en la información que proporciones. Las recompensas reales pueden variar dependiendo de tu situación específica."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='disclaimer_text']/p[3]",
+      "value": "Los servicios de tarjeta y algunos otros productos y servicios requieren aprobación crediticia y están sujetos a los términos y condiciones."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='disclaimer_text']/p[4]",
+      "value": "Esta herramienta y la información proporcionada se prepararon solo para fines de información general, por lo que no pretenden ser consejos legales, fiscales o contables, ni recomendaciones para llevar a cabo ninguna transacción específica, ni pretende ser exhaustiva. Bajo ninguna circunstancia se debe considerar que la información proporcionada, incluida la herramienta y los resultados generados por esta, es una oferta o compromiso, ni una solicitud de oferta o compromiso para participar en cualquier transacción o estrategia en particular. Podrás confiar en la información proporcionada bajo tu total y exclusiva responsabilidad, y no se garantiza la precisión, la oportunidad ni la integridad de dicha información. Consulta con tu asesor legal, contable u otro asesor sobre tu situación particular. Toda opinión o información proporcionada está sujeta a cambios sin previo aviso."
+    }
+  },
+  {
+    "click": {
+      "id": "//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  }
+]

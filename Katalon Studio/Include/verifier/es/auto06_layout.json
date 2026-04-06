@@ -1,0 +1,170 @@
+{
+  "layout": {
+    "tabs": {
+      "Loan1": {
+        "tabLabel": "Préstamo 1"
+      },
+      "Loan2": {
+        "tabLabel": "Préstamo 2"
+      },
+      "TaxSavingsRates": {
+        "tabLabel": "Tasas fiscales y sobre los ahorros"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo 1",
+        "Préstamo 2"
+      ]
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo ",
+        "smallLabel": "(meses)"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_SecondLoanPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Auto_SecondLoanDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Auto_SecondLoanTerm": {
+        "fieldLabel": "Plazo del préstamo ",
+        "smallLabel": "(meses)"
+      },
+      "Auto_SecondLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results_fields": {
+      "MonPmtAuto06": {
+        "fieldLabel": "Pago mensual"
+      },
+      "TotIntPaidAuto06": {
+        "fieldLabel": "Intereses totales pagados"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory2": "Pago Mensual",
+    "dataTableCategory": "Costo Total",
+    "title": "¿Qué préstamo de vehículo es mejor?",
+    "answer": "El <span class='lf-bold'>%lessOption%</span> le costará, en dólares actuales, <span class='lf-bold'>%result% menos</span> que el <span class='lf-bold'>%moreOption%</span>",
+    "answer_same": "El préstamo 1 le costará <span class='lf-bold'>lo mismo que</span> el préstamo 2.",
+    "total_cost": "Diferencia de costos",
+    "loan1": "Préstamo 1",
+    "loan2": "Préstamo 2",
+    "less_prefix": " menos ",
+    "more_prefix": " más ",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Diferencia de costos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo 1",
+            "label": "Préstamo 1"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo 2",
+            "label": "Préstamo 2"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le ayuda a decidir, entre dos préstamos para comprar un vehículo, cuál es el más ventajoso. En el caso de dos préstamos con la misma tasa de interés, el pago mensual es mayor para el préstamo de menor plazo. Sin embargo, puede cancelar el préstamo con anterioridad e invertir los ahorros en una cuenta con pago de intereses. Si la tasa de retorno de sus ahorros es mucho mayor que la tasa de interés del préstamo para comprar un vehículo, podría ser mejor invertir el dinero y financiar la compra del vehículo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de la diferencia de costo total, en dólares de hoy, entre el préstamo 1 y el préstamo 2."
+    },
+    {
+      "title": "Gráfico de columnas que compara los pagos mensuales del Préstamo 1 y del Préstamo 2."
+    },
+    {
+      "title": "Tabla de amortización"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia de costo total, en dólares de hoy, entre el préstamo 1 y el préstamo 2"
+    },
+    {
+      "title": "Pagos mensuales del Préstamo 1 y Préstamo 2"
+    }
+  ]
+}

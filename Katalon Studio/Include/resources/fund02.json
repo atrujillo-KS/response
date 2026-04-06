@@ -1,0 +1,787 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I sell my fund now and invest the money elsewhere?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates how brokerage fees and taxes affect a potential decision to replace shares of a mutual fund you currently own with shares of another fund."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Dividends and capital gains are reinvested at the specified interest rate or spent. Reinvesting the income you receive on an investment may boost your rate of return."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "You may pay brokerage fees to sell your current shares and buy new ones. You may also owe capital gains taxes on the sale of your shares. As a result, an investment in a new fund requires a higher rate of return to justify the transactions."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "You may wish to consult a financial adviser before making the investment decision."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=brokerage fees",
+      "value": "brokerage fees"
+    }
+  },
+  {
+    "click": {
+      "id": "link=brokerage fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Brokerage commission"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The fees that you pay a broker to buy or sell stocks, bonds, or other securities. They are also called transaction fees, trading fees, brokerage fees, or simply, commissions."
+    }
+  },
+    {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=mutual fund",
+      "value": "mutual fund"
+    }
+  },
+  {
+    "click": {
+      "id": "link=mutual fund"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Mutual fund"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "A mutual fund invests in a portfolio of stocks, bonds, or other investments and sells individual shares of the portfolio to investors."
+    }
+  },
+      {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=reinvested",
+      "value": "reinvested"
+    }
+  },
+  {
+    "click": {
+      "id": "link=reinvested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Reinvesting"
+    }
+  },
+      {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=rate of return",
+      "value": "rate of return"
+    }
+  },
+  {
+    "click": {
+      "id": "link=rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Rate of return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+      {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=capital gains taxes",
+      "value": "capital gains taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "link=capital gains taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-term",
+      "value": "Capital gains tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-tooltip-text",
+      "value": "Taxes that you owe on capital gains. The capital gains tax rate on assets held for less than a year is the same as if it were ordinary income. For long-term capital gains (assets held for at least one year), the tax rate for single taxpayers is 0% on taxable income up to $48,350, 15% on taxable income between $48,351 and $533,400 and 20% on taxable income over $533,401. For married taxpayers filing jointly, the tax rate is 0% for taxable income up to $96,700, 15% for taxable income between $96,701 and $600,050, and 20% for taxable income over $600,051."
+    }
+  },
+      {
+    "click": {
+      "id": "lf-help-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Minimum return needed on the new investment to justify selling: 14.60%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-results-table']/table/caption",
+      "value": "By selling your current investment and reinvesting the proceeds in a new one, you'll incur the following costs:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFees_result_label",
+      "value": "Brokerage fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFees_result_value",
+      "value": "$620"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxes_result_label",
+      "value": "Taxes upon sale"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxes_result_value",
+      "value": "$1,710"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalCost_result_label",
+      "value": "Total cost to sell and reinvest:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalCost_result_value",
+      "value": "$2,329"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-results-table']/table[2]/caption",
+      "value": "Minimum return needed on the new investment to cover the these costs and \"catch up\" to the value your current investment might have reached in 60 months:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxes_result_label",
+      "value": "Return needed before taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxes_result_value",
+      "value": "16.86%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxes_result_label",
+      "value": "Return needed after taxes and fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxes_result_value",
+      "value": "14.60%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Return %']/parent::*",
+      "value": "Return %"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::caption[1]",
+      "value": "Minimum return needed on the new investment, before and after taxes, to cover fees, taxes, and future value of current investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::th[1]",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/following::th[1]",
+      "value": "Before Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Before Taxes'])[2]/following::th[1]",
+      "value": "After Taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='After Taxes'])[2]/following::th[1]",
+      "value": "Minimum Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='After Taxes'])[2]/following::td[1]",
+      "value": "16.86%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='After Taxes'])[2]/following::td[2]",
+      "value": "14.60%"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Costs In-curred"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePurchasePrice-label",
+      "value": "Share purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "30.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharesPurchased-label",
+      "value": "Shares purchased"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "300.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_AdditionalInvestment-label",
+      "value": "Additional investment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_InvestmentFrequency-label",
+      "value": "Investment Frequency"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_MonthsOwned-label",
+      "value": "Months owned"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_SharePriceToday-label",
+      "value": "Share price today"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_SharePriceToday",
+      "value": "35.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FeesTaxes-accordion",
+      "value": "Fees & Taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FrontendLoad-label",
+      "value": "Front-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "3.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_BackendLoad-label",
+      "value": "Back-end load"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Income-accordion",
+      "value": "Income"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (long term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare-label",
+      "value": "Yearly gains per share (short term)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains-label",
+      "value": "Yearly increase in dividends & gains"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (fed tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (state tax-exempt)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare-label",
+      "value": "Quarterly dividends per share (non-taxable)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption-label",
+      "value": "Dividends & gains are"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "2"
+    }
+  },
+  {
+    "click": {
+      "id": "Investment-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePurchasePrice",
+      "value": "18.459"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharesPurchased",
+      "value": "1,500.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_AdditionalInvestment",
+      "value": "200"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_InvestmentFrequency",
+      "value": "label=Biweekly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_MonthsOwned",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_SharePriceToday",
+      "value": "10.236"
+    }
+  },
+  {
+    "click": {
+      "id": "FeesTaxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FrontendLoad",
+      "value": "1.555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_BackendLoad",
+      "value": "3.444"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "100,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "12.56"
+    }
+  },
+  {
+    "click": {
+      "id": "Income-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_LongTermYearlyGainsPerShare",
+      "value": "0.36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_ShortTermYearlyGainsPerShare",
+      "value": "0.25"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_TaxableQuarterlyDividendsPerShare",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_YearlyIncreaseInDividendsAndGains",
+      "value": "1.26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_FederalTaxExemptQuarterlyDividendsPerShare",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_StateTaxExemptQuarterlyDividendsPerShare",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Fund_NonTaxableQuarterlyDividendsPerShare",
+      "value": "4"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Fund_DividendsAndGainsReinvestmentOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.56"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Minimum return needed on the new investment to justify selling: 93.20%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalFees_result_value",
+      "value": "$1,355"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalTaxes_result_value",
+      "value": "$3,056"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_TotalCost_result_value",
+      "value": "$4,411"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnBeforeTaxes_result_value",
+      "value": "97.42%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Fund_RateOfReturnAfterTaxes_result_value",
+      "value": "93.20%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

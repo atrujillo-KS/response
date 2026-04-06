@@ -1,0 +1,220 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic",
+        "advanced"
+      ],
+      "basic": {
+        "selected": true,
+        "fields": [
+          "Global_AnnualGrossIncome",
+          "Global_CurrentAge",
+          "Global_RetirementAge",
+          "Global_IncomeGrowthRate",
+          "Global_InvestmentRate"
+        ]
+      },
+      "advanced": {
+        "fields": []
+      }
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Retirement age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "67",
+        "value": "67",
+        "minimumValue": "2",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "crossFields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge"
+        ]
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Current annual income",
+        "smallLabel": "",
+        "glossaryTerm": "grossincome",
+        "format": "currency",
+        "defaultValue": "75000",
+        "value": "75000",
+        "minimumValue": "1",
+        "maximumValue": "100000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_IncomeGrowthRate": {
+        "fieldLabel": "Estimated income growth rate",
+        "smallLabel": "",
+        "glossaryTerm": "incomegrowthrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.2",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InvestmentRate": {
+        "fieldLabel": "Investment rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "rateofreturn",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "0.2",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "result": "Insurance_PresentValueOfFutureEarnings",
+      "columnHeaders": [],
+      "fields": []
+    }
+  },
+  "labels": {
+    "age": "Age",
+    "dataTableCategoryTitle": "Age",
+    "title": "What is the present value of my future earnings?",
+    "answer": "The present value of your future earnings is <span class='lf-bold'>%result%</span>",
+    "earnings": "Earnings",
+    "annualEarnings": "Annual Earnings",
+    "presentValue": "Present Value",
+    "selectors": [
+      {
+        "label": "Annual Earnings",
+        "width": "50%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Annual earnings and their present value",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Year",
+        "Age",
+        "Annual earnings",
+        "Present value"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "grossincome": {
+      "title": "Gross income",
+      "definition": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    },
+    "incomegrowthrate": {
+      "title": "Income growth rate",
+      "definition": "Annual percent increase you expect in your annual income."
+    },
+    "rateofreturn": {
+      "title": "Rate of return",
+      "definition": "The percentage gain or loss on an investment expressed as a yearly rate."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Human Life Value (HLV) is the present value of all future income you would expect to earn for your loved ones. It is an indicator of the the economic loss your family would suffer in the unfortunate event of your early death. This tool helps you calculate HLV, an important factor in determining the life insurance coverage amount you need to financially protect your family's future. For further information, please consult an insurance professional."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Area chart that compares annual earnings and the present value of those earnings from current age until retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Comparison between annual earnings and the present value of those earnings from current age until retirement"
+    }
+  ]
+}

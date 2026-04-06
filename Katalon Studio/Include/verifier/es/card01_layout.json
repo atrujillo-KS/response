@@ -1,0 +1,112 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Global_TotalCardDebt": {
+        "fieldLabel": "Saldo de la tarjeta"
+      },
+      "Global_CardInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_CardAnnualFee": {
+        "fieldLabel": "Comisión anual"
+      },
+      "Global_FutureMonthlyChargesOnCard": {
+        "fieldLabel": "Cargos mensuales futuros"
+      },
+      "Card_MonthlyPayment": {
+        "fieldLabel": "Pagos mensuales futuros"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "noPayoff": "Es poco probable que la deuda se salde con los valores de entrada proporcionados.",
+    "title": "¿Qué tan importante es la tasa de interés?",
+    "answer": "Después de <span class='lf-bold'>%numberOfYears% %yearlabel% %and% %numberOfMonths% %monthlabel%</span>, la deuda de su tarjeta de crédito será de <span class='lf-bold'>%balance%</span>",
+    "answer_noCardBalance": "No tiene deuda de tarjeta de crédito.",
+    "balance": "Saldo",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "month": "Mes",
+    "and": "y",
+    "dataTableCategoryTitle": "Mes",
+    "dataTableCategoryTitle2": "Tasa de Interés (%)",
+    "interest_rate_percent": "Tasa de interés (%)",
+    "months_to_pay_off": "Meses para pagar",
+    "months": "Meses",
+    "rate": "Tasa",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Saldo",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pago",
+        "width": "33%"
+      },
+      {
+        "label": "Estado de cuenta",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Estado de cuenta mensual"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "futuremonthlypayments": {
+      "title": "Pagos mensuales futuros",
+      "definition": "Monto que usted paga mensualmente sobre el saldo de su tarjeta de crédito. Si sus pagos son menores que los gastos por intereses para el período, los intereses impagos se suman al saldo de su tarjeta."
+    },
+    "futuremonthlycharges": {
+      "title": "Cargos mensuales futuros",
+      "definition": "Monto neto que usted gasta mensualmente con su tarjeta de crédito, descontando cualquier retorno que se acredite en el saldo de su tarjeta."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora le muestra cómo las tasas de interés de la tarjetas de crédito influyen sobre el monto de los cargos por financiamiento y, por lo tanto, el número de meses que le toma saldar la deuda de la tarjeta de crédito. La deuda de su tarjeta de crédito puede aumentar dramáticamente con tasas de interés más elevadas. Es esencial comparar las tasas de interés de las tarjetas de crédito para encontrar las mejores condiciones, así como entender la manera como las compañías de tarjetas de crédito aplican los intereses a los saldos de las tarjetas."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de líneas del saldo de la tarjeta a lo largo del tiempo."
+    },
+    {
+      "title": "Gráfico de columnas del tiempo necesario para liquidar la tarjeta a distintas tasas de interés."
+    },
+    {
+      "title": "Calendario de amortización de la tarjeta de crédito."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Saldo de la tarjeta a lo largo del tiempo"
+    },
+    {
+      "title": "Tiempo necesario para liquidar la tarjeta a diferentes tipos de interés"
+    }
+  ]
+}

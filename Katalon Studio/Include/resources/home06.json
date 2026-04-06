@@ -1,0 +1,996 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: 15- or 30-year loan term?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates total cost and monthly payments for two fixed-rate mortgage loans of different terms and helps you determine which loan is the best option. Loan terms do not have to be 15 or 30 years. Since these are the two most popular fixed-rate mortgage terms, they are used as defaults."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Both types of mortgages have their advantages and disadvantages. With a 15-year mortgage, you will pay higher monthly payments but significantly less total interest over the life of the loan. In addition, your mortgage will be paid off in half the time. Deciding between the two depends on your financial situation, including your credit score and history, your down payment and how much monthly cash you have on hand."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The 15 year loan will cost you $466 more monthly and save you $98,526 in total interest compared to the 30 year loan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Shorter term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestLongerTermLoan_result_value",
+      "value": "$164,813"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestShorterTermLoan_result_label",
+      "value": "Total interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestShorterTermLoan_result_value",
+      "value": "$66,288"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestLongerTermLoan_result_value",
+      "value": "$164,813"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PrincipalAndInterestPaymentShorterTermLoan_result_label",
+      "value": "Principal and interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PrincipalAndInterestPaymentShorterTermLoan_result_value",
+      "value": "$1,479"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PrincipalAndInterestPaymentLongerTermLoan_result_value",
+      "value": "$1,013"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TaxesAndInsuranceShorterTermLoan_result_label",
+      "value": "Taxes & insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TaxesAndInsuranceShorterTermLoan_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TaxesAndInsuranceLongerTermLoan_result_value",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalMonthlyPaymentShorterTermLoan_result_label",
+      "value": "Total monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalMonthlyPaymentShorterTermLoan_result_value",
+      "value": "$1,834"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalMonthlyPaymentLongerTermLoan_result_value",
+      "value": "$1,368"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Total Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Payment Schedule - Shorter Term Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Shorter Term Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td",
+      "value": "84"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[2]",
+      "value": "$1,479"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[3]",
+      "value": "$121,367"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[4]",
+      "value": "$1,071"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[5]",
+      "value": "$408"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[6]",
+      "value": "$45,635"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td",
+      "value": "180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td[2]",
+      "value": "$1,479"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td[4]",
+      "value": "$1,474"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td[5]",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td[6]",
+      "value": "$66,288"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div[2]/span",
+      "value": "Payment Schedule - Longer Term Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Payment Schedule - Longer Term Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td",
+      "value": "84"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[84]/td[2]",
+      "value": "$1,013"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[3]",
+      "value": "$174,053"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[4]",
+      "value": "$359"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[5]",
+      "value": "$654"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr[84]/td[6]",
+      "value": "$59,176"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[2]",
+      "value": "$1,013"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[4]",
+      "value": "$1,010"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[5]",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[360]/td[6]",
+      "value": "$164,813"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "HomeInfo-accordion",
+      "value": "Home Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue-error-message",
+      "value": "Must be between $1 and $1,000,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-label",
+      "value": "Down payment ($50K)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "20.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage-error-message",
+      "value": "Must be between 0.000% and 99.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_DownPaymentPercentage_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ShorterTerm-accordion",
+      "value": "Shorter Term"
+    }
+  },
+  {
+    "click": {
+      "id": "ShorterTerm-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_FifteenYearLoanTermInYears-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_FifteenYearLoanTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_FifteenYearLoanTermInYears-error-message",
+      "value": "Must be between 1 and 40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_FifteenYearLoanTermInYears_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_FifteenYearLoanTermInYears_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ShorterTermInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_ShorterTermInterestRate",
+      "value": "4.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ShorterTermInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_ShorterTermInterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_ShorterTermInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LongerTerm-accordion",
+      "value": "Longer Term"
+    }
+  },
+  {
+    "click": {
+      "id": "LongerTerm-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanTermInYears-label",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanTermInYears",
+      "value": "30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanTermInYears-error-message",
+      "value": "Must be between 1 and 40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanTermInYears_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_SecondLoanTermInYears_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_SecondLoanInterestRate",
+      "value": "4.500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_SecondLoanInterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_SecondLoanInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "TaxesInsurance-accordion",
+      "value": "Taxes & Insurance"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxesInsurance-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-label",
+      "value": "Property tax (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "3,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyPropertyTax_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Property tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-label",
+      "value": "Homeowners insurance (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance-error-message",
+      "value": "Must be between $0 and $4,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_YearlyHomeownersInsurance_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Homeowner's insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyHOA-label",
+      "value": "Monthly HOA fee (yearly)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Home_MonthlyHOA",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyHOA-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_MonthlyHOA_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Home_MonthlyHOA_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Homeowners association fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Homeowner association (HOA) fees are monthly dues that condo owners - and homeowners in some single family neighborhoods - pay to cover the costs of maintaining common areas or shared amenities such as clubhouses, pools, landscaping, security, etc."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "HomeInfo-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeAppraisedValue"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "450,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_DownPaymentPercentage",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td",
+      "value": "180"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td",
+      "value": "180"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[180]/td",
+      "value": "180"
+    }
+  },
+  {
+    "click": {
+      "id": "ShorterTerm-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_FifteenYearLoanTermInYears",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_ShorterTermInterestRate",
+      "value": "2.568"
+    }
+  },
+  {
+    "click": {
+      "id": "LongerTerm-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_SecondLoanTermInYears",
+      "value": "35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_SecondLoanInterestRate",
+      "value": "3.567"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxesInsurance-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "5,555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Home_MonthlyHOA",
+      "value": "450"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The 19 year loan will cost you $499 more monthly and save you $186,429 in total interest compared to the 35 year loan."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestShorterTermLoan_result_value",
+      "value": "$101,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalInterestLongerTermLoan_result_value",
+      "value": "$287,703"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PrincipalAndInterestPaymentShorterTermLoan_result_value",
+      "value": "$2,122"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PrincipalAndInterestPaymentLongerTermLoan_result_value",
+      "value": "$1,596"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TaxesAndInsuranceShorterTermLoan_result_value",
+      "value": "$588"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TaxesAndInsuranceLongerTermLoan_result_value",
+      "value": "$588"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_HOAFeesShorterTermLoan_result_value",
+      "value": "$450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_HOAFeesLongerTermLoan_result_value",
+      "value": "$450"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PMIShorterTermLoan_result_value",
+      "value": "$80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_PMILongerTermLoan_result_value",
+      "value": "$107"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalMonthlyPaymentShorterTermLoan_result_value",
+      "value": "$3,240"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Home_TotalMonthlyPaymentLongerTermLoan_result_value",
+      "value": "$2,741"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

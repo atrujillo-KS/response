@@ -1,0 +1,2294 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Income",
+        "Taxes",
+        "deductions",
+        "results"
+      ],
+      "Income": {
+        "selected": true,
+        "tabLabel": "Income",
+        "pageTitle": "Income information",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "GrossIncome",
+                "PayPeriod",
+                "GrossIncomeYTD",
+                "PayFreq"
+              ]
+            }
+          ]
+        }
+      },
+      "Taxes": {
+        "tabLabel": "Taxes",
+        "pageTitle": "Tax information",
+        "sections": [
+          "default"
+        ],
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "FilingStatus",
+                "Exemptions",
+                "AddFedTax",
+                "StateTaxOpt",
+                "StateTaxRatePaycheck",
+                "StateTaxRateFIT"
+              ]
+            }
+          ]
+        }
+      },
+      "deductions": {
+        "custom": true,
+        "tabLabel": "Deductions",
+        "pageTitle": "Tax deductions<br><span style='font-size:0.90em'>Enter information for any item or expenditure subtracted from gross income to reduce your taxable income.</span>",
+        "sections": [
+          "deduction1",
+          "deduction2",
+          "deduction3",
+          "deduction4",
+          "deduction5",
+          "deduction6",
+          "deduction7",
+          "deduction8"
+        ],
+        "deduction1": {
+          "sectionID": "deduction1",
+          "sectionLabel": "Deduction #1",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_0_DeductionName",
+                "DeductionList_0_DeductionAmount",
+                "DeductionList_0_DeductionType",
+                "ExemptFromWhichTaxes0",
+                "DeductionList_0_FederalTaxExempt",
+                "DeductionList_0_StateTaxExempt",
+                "DeductionList_0_MedicareTaxExempt",
+                "DeductionList_0_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction2": {
+          "sectionID": "deduction2",
+          "sectionLabel": "Deduction #2",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_1_DeductionName",
+                "DeductionList_1_DeductionAmount",
+                "DeductionList_1_DeductionType",
+                "ExemptFromWhichTaxes1",
+                "DeductionList_1_FederalTaxExempt",
+                "DeductionList_1_StateTaxExempt",
+                "DeductionList_1_MedicareTaxExempt",
+                "DeductionList_1_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction3": {
+          "sectionID": "deduction3",
+          "sectionLabel": "Deduction #3",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_2_DeductionName",
+                "DeductionList_2_DeductionAmount",
+                "DeductionList_2_DeductionType",
+                "ExemptFromWhichTaxes2",
+                "DeductionList_2_FederalTaxExempt",
+                "DeductionList_2_StateTaxExempt",
+                "DeductionList_2_MedicareTaxExempt",
+                "DeductionList_2_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction4": {
+          "sectionID": "deduction4",
+          "sectionLabel": "Deduction #4",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_3_DeductionName",
+                "DeductionList_3_DeductionAmount",
+                "DeductionList_3_DeductionType",
+                "ExemptFromWhichTaxes3",
+                "DeductionList_3_FederalTaxExempt",
+                "DeductionList_3_StateTaxExempt",
+                "DeductionList_3_MedicareTaxExempt",
+                "DeductionList_3_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction5": {
+          "sectionID": "deduction5",
+          "sectionLabel": "Deduction #5",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_4_DeductionName",
+                "DeductionList_4_DeductionAmount",
+                "DeductionList_4_DeductionType",
+                "ExemptFromWhichTaxes4",
+                "DeductionList_4_FederalTaxExempt",
+                "DeductionList_4_StateTaxExempt",
+                "DeductionList_4_MedicareTaxExempt",
+                "DeductionList_4_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction6": {
+          "sectionID": "deduction6",
+          "sectionLabel": "Deduction #6",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_5_DeductionName",
+                "DeductionList_5_DeductionAmount",
+                "DeductionList_5_DeductionType",
+                "ExemptFromWhichTaxes5",
+                "DeductionList_5_FederalTaxExempt",
+                "DeductionList_5_StateTaxExempt",
+                "DeductionList_5_MedicareTaxExempt",
+                "DeductionList_5_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction7": {
+          "sectionID": "deduction7",
+          "sectionLabel": "Deduction #7",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_6_DeductionName",
+                "DeductionList_6_DeductionAmount",
+                "DeductionList_6_DeductionType",
+                "ExemptFromWhichTaxes6",
+                "DeductionList_6_FederalTaxExempt",
+                "DeductionList_6_StateTaxExempt",
+                "DeductionList_6_MedicareTaxExempt",
+                "DeductionList_6_FICATaxExempt"
+              ]
+            }
+          ]
+        },
+        "deduction8": {
+          "sectionID": "deduction8",
+          "sectionLabel": "Deduction #8",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "DeductionList_7_DeductionName",
+                "DeductionList_7_DeductionAmount",
+                "DeductionList_7_DeductionType",
+                "ExemptFromWhichTaxes7",
+                "DeductionList_7_FederalTaxExempt",
+                "DeductionList_7_StateTaxExempt",
+                "DeductionList_7_MedicareTaxExempt",
+                "DeductionList_7_FICATaxExempt"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          "CalcGrossIncome"
+        ],
+        [
+          "CalcFedTax"
+        ],
+        [
+          "CalcStateTax"
+        ],
+        [
+          "CalcFICA"
+        ],
+        [
+          "CalcMedicare"
+        ],
+        [
+          "CalcDeductions"
+        ],
+        [
+          "CalcNetIncome"
+        ]
+      ]
+    },
+    "fields": {
+      "GrossIncome": {
+        "fieldLabel": "Gross income",
+        "smallLabel": "",
+        "glossaryTerm": "grossincome",
+        "format": "currency",
+        "defaultValue": "35000",
+        "value": "35000",
+        "minimumValue": "1",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Exemptions": {
+        "fieldLabel": "Total exemptions",
+        "smallLabel": "",
+        "glossaryTerm": "totalexemptions",
+        "valueTextLabel": "exemptions",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "8",
+        "maxlength": "1",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "8",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "AddFedTax": {
+        "fieldLabel": "Additional income withheld by IRS",
+        "smallLabel": "",
+        "glossaryTerm": "additionalwithholdings",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "StateTaxRatePaycheck": {
+        "fieldLabel": "% of gross pay",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "StateTaxRateFIT": {
+        "fieldLabel": "% of federal taxes",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "minimumValue": "0",
+        "maximumValue": "50.00",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "PayPeriod": {
+        "fieldLabel": "Per",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Year",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Pay period",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "GrossIncomeYTD": {
+        "fieldLabel": "Gross income",
+        "smallLabel": "(year to date)",
+        "glossaryTerm": "grossincomeytd",
+        "format": "currency",
+        "defaultValue": "20000",
+        "value": "20000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "adaAriaLabel": "Gross income, year to date",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "PayFreq": {
+        "fieldLabel": "Pay period frequency",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Daily",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Bi-weekly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Semi-monthly",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Monthly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "5",
+            "optionText": "Quarterly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "6",
+            "optionText": "Semi-yearly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "7",
+            "optionText": "Yearly",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "FilingStatus": {
+        "fieldLabel": "Tax filing status",
+        "smallLabel": "",
+        "glossaryTerm": "taxfilingstatus",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Single",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Married filing jointly",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Married filing single",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Head of household",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "StateTaxOpt": {
+        "fieldLabel": "State income taxes",
+        "smallLabel": "",
+        "glossaryTerm": "stateincometaxes",
+        "dropdownOptions": [
+          {
+            "optionValue": "1",
+            "optionText": "% of gross pay",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "2",
+            "optionText": "% of federal taxes",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "0",
+            "optionText": "No state taxes",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_0_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_0_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_0_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "containerDivEnd": true,
+        "safeType": "number"
+      },
+      "DeductionList_0_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_0_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_0_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_0_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "containerDivEnd": true,
+        "safeType": "number"
+      },
+      "DeductionList_1_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_1_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_1_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_1_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_1_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_1_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_1_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_2_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_2_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_3_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_3_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_4_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_4_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_5_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_5_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "containerDivBegin": "lf-deduction-fields-1",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_6_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_6_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_DeductionName": {
+        "fieldLabel": "Purpose",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "",
+        "maximumValue": "",
+        "maxlength": "30",
+        "precision": 0,
+        "sliderMinVal": "",
+        "sliderMaxVal": "",
+        "widgetStep": "",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeChar": true,
+        "cellClass": "DeductionName",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_DeductionAmount": {
+        "fieldLabel": "Amount per pay period",
+        "smallLabel": "",
+        "glossaryTerm": "payperioddeduction",
+        "valueTextLabel": "percent",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "DeductionAmount",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputContainerDiv": "lf-deduction-fields-input-container",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "DeductionList_7_DeductionType": {
+        "fieldLabel": "Type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "%",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "$",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "DeductionType",
+        "containerDivEnd": true,
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_FederalTaxExempt": {
+        "fieldLabel": "Federal",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_StateTaxExempt": {
+        "fieldLabel": "State",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_MedicareTaxExempt": {
+        "fieldLabel": "Medicare",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "DeductionList_7_FICATaxExempt": {
+        "fieldLabel": "FICA",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "taxExempt",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes0": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes1": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes2": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes3": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes4": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes5": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes6": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ExemptFromWhichTaxes7": {
+        "fieldLabel": "<a class='lf-hover-tooltip' href='#taxexemptdeduction'>Exempt from which taxes</a>",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "",
+        "value": "",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "inputTypeLabel": true,
+        "cellClass": "ExemptFromWhichTaxes",
+        "containerDivBegin": "lf-deduction-fields-2",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "CalcGrossIncome": {
+        "fieldLabel": "Gross income per paycheck"
+      },
+      "CalcFedTax": {
+        "fieldLabel": "Federal income taxes"
+      },
+      "CalcStateTax": {
+        "fieldLabel": "State income taxes"
+      },
+      "CalcFICA": {
+        "fieldLabel": "Social Security taxes"
+      },
+      "CalcMedicare": {
+        "fieldLabel": "Medicare taxes"
+      },
+      "CalcDeductions": {
+        "fieldLabel": "Deductions"
+      },
+      "CalcNetIncome": {
+        "fieldLabel": "Net income per paycheck"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "How much is my take-home pay as a salaried employee?",
+    "answer": "Your take-home pay each pay period is <span class='lf-bold'>%result%</span>",
+    "federalIncomeTaxes": "Federal Income Taxes",
+    "stateIncomeTaxes": "State Income Taxes",
+    "socialSecurityTaxes": "Social Security Taxes",
+    "medicareTaxes": "Medicare Taxes",
+    "deductions": "Deductions",
+    "netIncome": "Net Income",
+    "selectors": [
+      {
+        "label": "Take-home Pay",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxexemptdeduction": {
+      "title": "Deduction exempt from the following taxes",
+      "definition": "For each deduction that you enter (other than for contributions to a 401(k) plan), enter the types of taxes from which the deduction is exempt. The four types include Social Security, Medicare, state income, and federal income taxes."
+    },
+    "dcplan": {
+      "title": "Defined-contribution retirement plan",
+      "definition": "An employer-sponsored plan in which contributions are made to individual participant accounts and the final benefit consists solely of assets (including investment returns) that have accumulated in these individual accounts."
+    },
+    "taxfilingstatus": {
+      "title": "Tax filing status",
+      "definition": "A category closely tied to marital status that defines the type of tax return form an individual will use."
+    },
+    "medicaretaxes": {
+      "title": "Medicare taxes",
+      "definition": "Medicare taxes are paid to the Medicare (HI) fund."
+    },
+    "dcplan401k": {
+      "title": "401(k) plan",
+      "definition": "A 401(k) plan is a defined-contribution plan that permits employees to have a portion of their salary deducted from their paycheck and contributed to an account. Federal (and usually state) taxes on the employee contributions and investment earnings are deferred until the participant receives a distribution from the plan (typically at retirement). Employers may also contribute to the account of a participant. For 2025, you may contribute up to $23,500 to a 401(k) plan. If you are age 50 or older, you may contribute an additional $7,500, or a total of $31,000. If your employer makes contributions, the most that may be contributed to a 401(k) plan for 2025 is the lesser of $70,000 ($76,500 if age 50 or older) or 100% of your annual compensation."
+    },
+    "socialsecuritytaxes": {
+      "title": "Social Security taxes",
+      "definition": "Social Security taxes are paid to Old Age Survivors and Disability Insurance (OASDI) and Medicare."
+    },
+    "catchupprovisiondcplans": {
+      "title": "Catch-up provision for contributions to retirement plans",
+      "definition": "A provision of The Economic Growth and Tax Relief Reconciliation Act of 2001 that authorizes higher yearly contribution limits to IRAs, 401(k) plans, and other defined-contribution retirement plans for workers who are age 50 or older."
+    },
+    "amountwithheldbyirs": {
+      "title": "Amount withheld by IRS",
+      "definition": "The amount of your income that is withheld each pay period for payment of federal income taxes. Your employer sends this amount to the IRS on your behalf."
+    },
+    "stateincometaxes": {
+      "title": "State income taxes",
+      "definition": "The taxes you pay, if applicable, to the treasury or revenue board of the state of your legal domicile. "
+    },
+    "grossincome": {
+      "title": "Gross income",
+      "definition": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    },
+    "fica": {
+      "title": "FICA",
+      "definition": "An acronym for the Federal Insurance Contributions Act, otherwise known as Social Security. FICA consists of Old Age Survivors and Disability Insurance (OASDI) and Medicare."
+    },
+    "payperiodfrequency": {
+      "title": "Pay period frequency",
+      "definition": "Select the appropriate pay-period frequency from the drop-down menu. Choices include daily, weekly, bi-weekly (26 periods in a year), semi-monthly (twice a month), monthly, quarterly, semi-yearly (twice a year), and yearly. Most pay periods are bi-weekly, semi-monthly, or monthly."
+    },
+    "totalexemptions": {
+      "title": "Total exemptions",
+      "definition": "Either the number of exemptions from your individual income tax return (IRS 1040) or the number of allowances from your withholding allowance certificate (W-4 form)."
+    },
+    "contribution": {
+      "title": "Contribution",
+      "definition": "The amount you invest in a taxable or tax-advantaged account."
+    },
+    "grossincomeytd": {
+      "title": "Gross income (year-to-date)",
+      "definition": "Gross income (year-to-date) is your total income through the most recent pay period for the current calendar year."
+    },
+    "yourtaxfilingstatus": {
+      "title": "Your tax filing status",
+      "definition": "While the IRS has five tax-filing statuses, you will see that a tax filing status called \"Supplemental\" has been automatically selected. This is used to identify the bonus as supplemental income, which the calculator assumes to be taxed at a flat rate of 28%."
+    },
+    "additionalwithholdings": {
+      "title": "Additional income withheld by the IRS",
+      "definition": "Enter any additional amounts that you have requested the IRS withhold from your pay."
+    },
+    "deductionsfrompay": {
+      "title": "Deductions from pay",
+      "definition": "The total amount of deductions taken from each paycheck, including your 401(k) plan contributions."
+    },
+    "netincome": {
+      "title": "Net income",
+      "definition": "Individuals: Net income is the amount of income left after all deductions and taxes. Corporations: Net income is a company's profit for a given period of time after it pays taxes and all other expenses."
+    },
+    "incometaxrate": {
+      "title": "Income tax rates",
+      "definition": "Income tax rates for 2025 are 37%, 35%, 32%, 24%, 22%, 12%, and 10%."
+    },
+    "payperioddeduction": {
+      "title": "Amount per pay period for this tax deduction",
+      "definition": "Payroll deduction is an automated process that deducts pre-set amounts from the gross pay of employees for making employee contributions to retirement plans and cafeteria plans."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates your salary per pay period after deducting <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#incometaxrate\">federal income</a></span> and <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FICA\">FICA taxes</a></span>, state taxes, and any deductions that you specify, including <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#contribution\">contributions</a></span> to a <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#dcplan401k\">401(k)</a></span> or similar employer-sponsored retirement plan."
+    },
+    {
+      "textLabel": "Because contributions to a 401(k) or other qualified retirement plan are deducted from <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#grossIncome\">gross income</a></span>, you reduce the amount of income on which you owe taxes."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Pie chart of the breakdown of gross income per pay period by federal income taxes,state income taxes, Social Security taxes, Medicare taxes, deductions and net income."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Breakdown of gross income per pay period by federal income taxes,state income taxes, Social Security taxes, Medicare taxes, deductions and net income"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "layout": {
+    "fields": {
+      "Stock_SharePurchasePrice": {
+        "fieldLabel": "Precio de compra de la acción"
+      },
+      "Stock_SharesPurchased": {
+        "fieldLabel": "Acciones compradas"
+      },
+      "Stock_YearlySharePriceIncrease": {
+        "fieldLabel": "Aumento del precio de las acciones por año"
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Impuestos pagados",
+        "Rendimiento"
+      ]
+    },
+    "results_fields": {
+      "TotTaxBefStock02": {
+        "fieldLabel": "Si vende un día antes de los 12 meses"
+      },
+      "TotTaxAftStock02": {
+        "fieldLabel": "Si vende un día después de los 12 meses"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Rendimiento",
+    "dataTableCategory2": "Impuestos pagados",
+    "title": "¿Debo esperar un año para vender mis acciones?",
+    "answer": "Vender su valor después de un año, le hará ganar un rendimiento <span class='lf-bold'>%return% </span>",
+    "selectors": [
+      {
+        "label": "Rendimiento",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Impuestos pagados",
+        "width": "50%",
+        "last": true
+      }
+    ],
+    "before": "Vender el día antes de los 12 meses",
+    "after": "Vender el día después de los 12 meses",
+    "higher": "más alto",
+    "lower": "más bajo",
+    "same": "igual"
+  },
+  "glossaryItems": {
+    "rateofreturn": {
+      "title": "Tasa de rendimiento",
+      "definition": "La ganancia o pérdida porcentual de una inversión expresada como una tasa anual."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "capitalgainstaxes": {
+      "title": "Impuesto sobre las ganancias de capital",
+      "definition": "Impuestos que usted debe sobre ganancias de capital. La tasa de impuestos sobre las ganancias de capital que se aplica sobre activos que se han mantenido durante menos de un año es igual a la tasa para ingresos ordinarios. Para las ganancias de capital a largo plazo (activos que se han mantenido durante al menos un año), la tasa de impuestos para contribuyentes solteros es del 0 % sobre los ingresos imponibles hasta $47,025 del 15 % sobre los ingresos imponibles entre $47,026 y $518,900 y del 20 % sobre los ingresos imponibles de más de $518,901. Para los contribuyentes casados que presentan una declaración conjunta, la tasa de impuestos es del 0 % sobre los ingresos imponibles hasta $94,050, del 15 % sobre los ingresos imponibles entre $94,051 y $583,750 y del 20 % sobre los ingresos imponibles de más de $583,751."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula la diferencia en su <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RateOfReturn\">tasa de rendimiento</a></span>  anual si usted mantiene sus acciones durante el tiempo suficiente como para calificar para la tasa <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CapitalGainsTaxes\">de impuestos sobre ganancias de capital</a></span>  a largo plazo."
+    },
+    {
+      "textLabel": "Las ganancias en inversiones imponibles que se mantienen durante más de un año se gravan con una tasa más baja que las ganancias a corto plazo, que se gravan a la misma tasa que los ingresos ordinarios. Los dividendos se ignoran en el cálculo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara la rentabilidad si el stock se vende un día antes de los 12 meses y un día después de los 12 meses."
+    },
+    {
+      "title": "Gráfico de columnas que compara los impuestos pagados si la acción se vende un día antes de los 12 meses y un día después de los 12 meses."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rentabilidad si el stock se vende un día antes de los 12 meses y un día después de los 12 meses"
+    },
+    {
+      "title": "Impuestos pagados si la acción se vende un día antes de los 12 meses y un día después de los 12 meses"
+    }
+  ]
+}

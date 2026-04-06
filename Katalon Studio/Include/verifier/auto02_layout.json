@@ -1,0 +1,152 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": [
+          "Global_AutoPurchasePrice",
+          "Auto_VehicleAgeInYears",
+          "Auto_YearsOwned",
+          "Auto_FutureDepreciation"
+        ]
+      }
+    },
+    "results": {
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Purchase price",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "40000",
+        "value": "40000",
+        "minimumValue": "0",
+        "maxlength": "9",
+        "maximumValue": "1000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_VehicleAgeInYears": {
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "fieldLabel": "Vehicle age",
+        "defaultValue": "0",
+        "glossaryTerm": "",
+        "inputType": "text",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "maxlength": "2",
+        "safeType": "number",
+        "smallLabel": "(years)",
+        "valueTextLabel": "years",
+        "minimumValue": "1",
+        "maximumValue": "30",
+        "widgetStep": "1",
+        "value": "",
+        "errorMessage": "Must be between %minimumValue% and %maximumValue% years",
+        "format": "number"
+      },
+      "Auto_YearsOwned": {
+        "fieldLabel": "Years you will own vehicle",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "4",
+        "value": "4",
+        "minimumValue": "1",
+        "maxlength": "2",
+        "maximumValue": "30",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Auto_FutureDepreciation": {
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "fieldLabel": "Future depreciation",
+        "glossaryTerm": "depreciation",
+        "smallLabel": "",
+        "errorMessage": "Error message for dropdown list here",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "false",
+            "optionValue": "0",
+            "optionText": "Low"
+          },
+          {
+            "defaultSelection": "true",
+            "optionValue": "1",
+            "optionText": "Average"
+          },
+          {
+            "defaultSelection": "false",
+            "optionValue": "2",
+            "optionText": "High"
+          }
+        ]
+      }
+    }
+  },
+  "labels": {
+    "title": "How much will depreciation cost me?",
+    "answer": "Depreciation will cost you $20,020",
+    "selectors": [
+      {
+        "label": "Depreciation",
+        "width": "50%",
+        "first": true
+      }
+    ],
+    "dataTableCategory": "Depreciation",
+    "firstYear": "First Year",
+    "total": "Total"
+  },
+  "glossaryItems": {
+    "firstyeardepreciation": {
+      "title": "First year's depreciation",
+      "definition": "First year's depreciation is the dollar amount of depreciation expense. It is deducted from the purchase price to calculate the vehicle's residual, or book, value. Depreciation expense is highest in the early years of ownership, particularly for new vehicles. Depreciation of a vehicle with a high depreciation rate is greater than the expense of one with a low rate."
+    },
+    "depreciation": {
+      "title": "Depreciation",
+      "definition": "The decline in an asset's value over the course of its useful life due to wear and tear and obsolescence. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "The annual depreciation expense is calculated by applying a depreciation rate (average, high or low) to the new vehicle. Total depreciation is calculated for the number of years you expect to own the vehicle."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of the first year's depreciation cost and total depreciation cost."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "First year's depreciation cost and total depreciation cost"
+    }
+  ]
+}

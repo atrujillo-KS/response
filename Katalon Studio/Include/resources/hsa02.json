@@ -1,0 +1,886 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How do my health care options compare?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares two health plans to help you evaluate which is the more cost effective. If one or both of the plans is an HSA plan, the deductible counts against the out-of-pocket maximums."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "You can learn more about health savings accounts at the IRS web site. For IRS help concerning health savings accounts, refer to IRS Publication 969 and IRS Publication 502."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=IRS Publication 969",
+      "value": "IRS Publication 969"
+    }
+  },
+  {
+    "click": {
+      "id": "link=IRS Publication 969"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//ol/li[3]",
+      "value": "Publication 969 (2025), Health Savings Accounts and Other Tax-Favored Health Plans"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=IRS Publication 502",
+      "value": "IRS Publication 502"
+    }
+  },
+  {
+    "click": {
+      "id": "link=IRS Publication 502"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Publications'])[1]/following::li[1]",
+      "value": "Publication 502 (2025), Medical and Dental Expenses"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Plan 1 will cost you the same as Plan 2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Plan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Plan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle1",
+      "value": "In network costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthPremiumPlanA_result_label",
+      "value": "Yearly premium cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthPremiumPlanA_result_value",
+      "value": "$12,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthPremiumPlanB_result_value",
+      "value": "$12,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthCopayPlanA_result_label",
+      "value": "Yearly copayment cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthCopayPlanA_result_value",
+      "value": "$30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthCopayPlanB_result_value",
+      "value": "$30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthStandDeductablePlanA_result_label",
+      "value": "Standard deductibles"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthStandDeductablePlanA_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthStandDeductablePlanB_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[2]/following::th[1]",
+      "value": "Out-of-network costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthDeductablePlanA_result_label",
+      "value": "Coinsurance deductibles"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthDeductablePlanA_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthDeductablePlanB_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthPaymentsPlanA_result_label",
+      "value": "Coinsurance payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthPaymentsPlanA_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthPaymentsPlanB_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthTotalCostPlanA_result_label",
+      "value": "Total cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthTotalCostPlanA_result_value",
+      "value": "$12,030"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthTotalCostPlanB_result_value",
+      "value": "$12,030"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Total cost of each health plan broken down by in-network costs and out-of-network costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "In Network"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Out-of-network"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "Plan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "$12,030"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/th",
+      "value": "Plan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td",
+      "value": "$12,030"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr[2]/td[2]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-axis-labels.highcharts-xaxis-labels > text",
+      "value": "Plan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-GeneralInfo-tab-label",
+      "value": "General Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-GeneralInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-GeneralInfo-page-title']/h2",
+      "value": "General information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnualDoctorVisits_field_label",
+      "value": "Yearly doctor visits"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnualDoctorVisits",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AnnualDoctorVisits-error-message",
+      "value": "Must be between 0 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InMedicalSpend_field_label",
+      "value": "Yearly in-network medical care costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InMedicalSpend",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InMedicalSpend-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutMedicalSpend_field_label",
+      "value": "Yearly out-of-network medical care costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OutMedicalSpend",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutMedicalSpend-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-PlanInfo-tab-label",
+      "value": "Plan Info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PlanInfo-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-page-title']/h2",
+      "value": "Plan information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Plan 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-PlanInfo-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Plan 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HSAplan_label']/span[2]",
+      "value": "This is an HSA plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAplan",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAplan",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HSAplan2",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HSAplan2",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_HealthPremiumPlanA_label']/span",
+      "value": "Monthly premium"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HealthPremiumPlanA",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPremiumPlanA-error-message",
+      "value": "Must be between $0 and $25,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HealthPremiumPlanB",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthPremiumPlanB-error-message",
+      "value": "Must be between $0 and $25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_OutHealthMaxPlanA_label']/span",
+      "value": "Out-of-network out-of-pocket maximum"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OutHealthMaxPlanA",
+      "value": "15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthMaxPlanA-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OutHealthMaxPlanB",
+      "value": "15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthMaxPlanB-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_InHealthCopayPlanA_label']/span",
+      "value": "In-network co-pay"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthCopayPlanA",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthCopayPlanA-error-message",
+      "value": "Must be between $0 and $100"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthCopayPlanB",
+      "value": "15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthCopayPlanB-error-message",
+      "value": "Must be between $0 and $100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_InHealthCoinsPlanA_label']/span",
+      "value": "In-network coinsurance rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthCoinsPlanA",
+      "value": "70.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthCoinsPlanA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthCoinsPlanB",
+      "value": "70.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthCoinsPlanB-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_InHealthDeductablePlanA_label']/span",
+      "value": "Standard in-network deductible"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthDeductablePlanA",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthDeductablePlanA-error-message",
+      "value": "Must be between $0 and $5,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InHealthDeductablePlanB",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthDeductablePlanB-error-message",
+      "value": "Must be between $0 and $5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_OutHealthCoinsPlanA_label']/span",
+      "value": "Out-of-network coinsurance rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OutHealthCoinsPlanA",
+      "value": "20.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthCoinsPlanA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OutHealthCoinsPlanB",
+      "value": "20.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthCoinsPlanB-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-GeneralInfo-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AnnualDoctorVisits",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InMedicalSpend",
+      "value": "2,499"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutMedicalSpend",
+      "value": "1,500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PlanInfo-tab-label"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSAplan",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HealthPremiumPlanA",
+      "value": "450"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthMaxPlanA",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthCopayPlanA",
+      "value": "35"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthCoinsPlanA",
+      "value": "85.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthDeductablePlanA",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthCoinsPlanA",
+      "value": "15.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthDeductablePlanA",
+      "value": "250"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HSAplan2",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_HealthPremiumPlanB",
+      "value": "350"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthMaxPlanB",
+      "value": "4,555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthCopayPlanB",
+      "value": "40"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthCoinsPlanB",
+      "value": "80.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_InHealthDeductablePlanB",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthCoinsPlanB",
+      "value": "22.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OutHealthDeductablePlanB",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Plan 1 will cost you $1,244 more than Plan 2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthPremiumPlanA_result_value",
+      "value": "$5,400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthPremiumPlanB_result_value",
+      "value": "$4,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthCopayPlanA_result_value",
+      "value": "$132"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InAnnHealthCopayPlanB_result_value",
+      "value": "$147"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthStandDeductablePlanA_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InHealthStandDeductablePlanB_result_value",
+      "value": "$200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthDeductablePlanA_result_value",
+      "value": "$250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthDeductablePlanB_result_value",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthPaymentsPlanA_result_value",
+      "value": "$1,063"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OutHealthPaymentsPlanB_result_value",
+      "value": "$1,053"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthTotalCostPlanA_result_value",
+      "value": "$6,994"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HealthTotalCostPlanB_result_value",
+      "value": "$5,750"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "$5,682"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td[2]",
+      "value": "$1,313"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/td",
+      "value": "$4,547"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[2]/td[2]",
+      "value": "$1,203"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

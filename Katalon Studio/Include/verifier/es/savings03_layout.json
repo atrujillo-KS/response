@@ -1,0 +1,109 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results": {
+      "text": "Para lograr un ahorro de <span class='lf-bold'>$%savings%</span>, usted necesitará:<br><br><ul><li>%direction1% la cantidad que usted invierte ahora %startAmount%, o</li><li>%direction2% su inversión mensual para %investMonthly%, o</li><li>Gane una tasa de retorno de %rateOfReturn%</li></ul>"
+    },
+    "fields": {
+      "Savings_Goal": {
+        "fieldLabel": "Cantidad que necesita"
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Ahorro actual "
+      },
+      "Savings_MonthlyInvestment": {
+        "fieldLabel": "Ahorros para invertir mensualmente"
+      },
+      "Savings_DurationInMonths": {
+        "fieldLabel": "Cantidad de meses que desea ahorrar"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Qué debo hacer para ahorrar para comprar un vehículo, una vivienda, etc.?",
+    "answer": "Sus ahorros equivaldrán a <span class='lf-bold'>%worth%</span>.",
+    "interest": "Intereses",
+    "startingBalance": "Saldo inicial ",
+    "contributions": "Aportes",
+    "increase": "Aumentar",
+    "decrease": "Disminuirá(n)",
+    "starting_prefix": "invierte ",
+    "contribution_prefix": " ahora y ",
+    "time_Prefix": " por mes durante  ",
+    "amount_prefix": " acumulará ",
+    "investNow_suffix": ", o",
+    "direction_prefix": "Aumentar",
+    "rateOfReturn_prefix": "retorno de ",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "compoundedinterest": {
+      "title": "Interés compuesto",
+      "definition": "El interés compuesto es el interés que usted gana en un depósito o inversión que utiliza este tipo de interés. Los bancos y las instituciones financieras habitualmente usan intereses compuestos para pagarle una tasa de interés más alta. Por ejemplo, un banco puede estar ofreciendo un certificado de depósito que paga intereses al 10 %. Si el banco no tiene intereses compuestos, usted recibirá el 10 % de su inversión como ingreso de intereses al final del año. Sin embargo, si el banco tiene intereses compuestos cada tres meses, usted ganará una tasa de interés del 10.38 %. Si el banco tiene intereses compuestos mensuales, usted ganará 10.47 %. Si tiene intereses compuestos diarios, ganará 10.52 %. Por un depósito de $10,000, esto implica $52 adicionales en intereses que usted gana."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestment": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora calcula las diferentes combinaciones para ahorrar una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#LumpSumInvestment\">suma global</a></span> que piensa usar para comprar un automóvil, una vivienda u otra compra grande."
+    },
+    {
+      "textLabel": "Sus ahorros aumentarán con el paso del tiempo debido a los depósitos mensuales y al <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CompoundedInterest\">interés compuesto</a></span>. Sin embargo, el monto que acumule se reducirá como consecuencia de los impuestos que pague sobre el interés obtenido."
+    },
+    {
+      "textLabel": "La calculadora supone que usted ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">tributable</a></span>. Si quiere simular ahorros con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>, ingrese cero en los campos correspondientes a tasas de impuesto sobre la renta federal y estatal. (Las cuentas con ventajas impositivas pueden tener restricciones para tomar distribuciones prematuras libres de penalidades. Es posible que desee consultar a un asesor financiero)."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del saldo final de ahorro por intereses, saldo inicial y contribuciones."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Saldo final de ahorro por intereses, saldo inicial y aportaciones"
+    }
+  ]
+}

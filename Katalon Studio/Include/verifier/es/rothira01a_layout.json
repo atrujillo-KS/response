@@ -1,0 +1,188 @@
+{
+  "layout": {
+    "tabs": {
+      "Contributions": {
+        "tabLabel": "CONTRIBUCIONES"
+      },
+      "AboutYou": {
+        "tabLabel": "ACERCA DE USTED",
+        "smallLabel": "rebaterate"
+      },
+      "Returns": {
+        "tabLabel": "RENDIMIENTO"
+      }
+    },
+    "fields": {
+      "ContribAmt": {
+        "fieldLabel": "Contribución anual"
+      },
+      "ContribOpt": {
+        "fieldLabel": "Las contribuciones se invierten",
+        "dropdownOptions": [
+          {
+            "optionText": "Después de impuestos"
+          },
+          {
+            "optionText": "Antes de impuestos"
+          },
+          {
+            "optionText": "Sin relación con los impuestos"
+          }
+        ]
+      },
+      "CurrAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "RetAge": {
+        "fieldLabel": "Edad para comenzar a retirar"
+      },
+      "DeathAge": {
+        "fieldLabel": "Expectativa de vida"
+      },
+      "TaxRateBef": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(antes de la jubilación)"
+      },
+      "TaxRateAft": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(después de la jubilación)"
+      },
+      "DeathFunds": {
+        "fieldLabel": "Fondos que desea dejar al momento de su fallecimiento"
+      },
+      "IRARateRothIRA": {
+        "fieldLabel": "Tasa de rendimiento estimado de la cuenta IRA"
+      },
+      "SavRate": {
+        "fieldLabel": "Rendimiento estimado de otros activos"
+      }
+    },
+    "results_fields": {
+      "MonIncTradeRothIRA01a": {
+        "fieldLabel": "Cuenta IRA tradicional"
+      },
+      "LumpSumTradeRothIRA01a": {
+        "fieldLabel": "Cuenta IRA tradicional"
+      },
+      "MonIncRothRothIRA01a": {
+        "fieldLabel": "Cuenta IRA Roth"
+      },
+      "LumpSumRothRothIRA01a": {
+        "fieldLabel": "Cuenta IRA Roth"
+      },
+      "MonIncTaxedRothIRA01a": {
+        "fieldLabel": "Cuenta IRA no deducible"
+      },
+      "LumpSumTaxedRothIRA01a": {
+        "fieldLabel": "Cuenta IRA no deducible"
+      },
+      "MonIncInvestRothIRA01a": {
+        "fieldLabel": "Cuenta imponible"
+      },
+      "LumpSumInvest": {
+        "fieldLabel": "Cuenta imponible"
+      }
+    },
+    "results": {
+      "result": "",
+      "columnHeaders": [
+        "Ingresos mensuales de jubilación",
+        "Suma global al momento de la jubilación (antes de impuestos)"
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Ingresos mensuales de jubilación",
+    "dataTableCategory2": "Suma global al momento de la jubilación (antes de impuestos)",
+    "title": "¿Qué cuenta le proporcionará la mayor cantidad de ingresos de jubilación?",
+    "answer": "La %name% proporcionará la mayor cantidad de ingresos de jubilación a <span class='lf-bold'>$%value%</span> por mes.",
+    "MonIncTradeRothIRA01a": "Cuenta IRA tradicional",
+    "MonIncRothRothIRA01a": "Cuenta IRA Roth",
+    "MonIncTaxedRothIRA01a": "Cuenta IRA no deducible",
+    "MonIncInvestRothIRA01a": "Cuenta imponible",
+    "selectors": [
+      {
+        "label": "Ingresos",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Suma global",
+        "width": "50%",
+        "last": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "regularira": {
+      "title": "Cuenta IRA regular",
+      "definition": "Una cuenta IRA regular también se llama IRA tradicional. Es una cuenta de jubilación con impuestos diferidos. En 2025, usted tiene permitido hacer una contribución con impuestos diferidos de $7,000 a una cuenta IRA regular. Esta cuenta crece con impuestos diferidos hasta que usted comience a tomar las distribuciones, lo que puede hacer sin penalización después de alcanzar la edad de 59 años y medio. Para las personas de 50 años o más, existe una disposición especial de la Ley tributaria de 2001 para ponerse al día que le permite contribuir $1,000 adicionales o un total de $8,000."
+    },
+    "lumpsumbeforetax": {
+      "title": "Cantidad a tanto alzado antes de impuestos",
+      "definition": "El valor acumulado de sus cuentas individuales de jubilación (IRA) y de cualquier inversión imponible antes del impuesto sobre la renta. No se tienen en cuenta las inversiones en otras cuentas de jubilación, como un plan 401(k)."
+    },
+    "nondeductibleira": {
+      "title": "Cuenta IRA no deducible",
+      "definition": "Una cuenta de jubilación individual cuyas contribuciones están parcial o completamente financiadas con contribuciones que no son deducibles de impuestos. Usted puede contribuir hasta $7,000 o $8,000 (según la edad, límites de ingresos y participación en un plan de jubilación patrocinado por el empleador) en 2025. Una cuenta IRA no deducible se beneficia de un crecimiento compuesto con impuestos diferidos."
+    },
+    "rothira": {
+      "title": "IRA Roth",
+      "definition": "Una cuenta de jubilación con ventajas de impuestos que le permite hacer una contribución después de impuestos de hasta $7,000 para 2025, o hasta $8,000 si tiene 50 años o más. Si usted mantiene una IRA Roth durante al menos cinco años y tiene al menos 59 años y medio de edad cuando comienza a hacer retiros de la cuenta, la cuenta entera puede ser distribuida sin pagar impuestos ni penalidades."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "deductibleira": {
+      "title": "IRA deducible",
+      "definition": "Una cuenta IRA deducible es una cuenta de jubilación individual financiada con aportaciones deducibles de impuestos. En 2025, usted puede aportar hasta $7,000 o $8,000 (dependiendo de su edad, sus ingresos y su participación en un plan de jubilación patrocinado por el empleador)."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "catchupprovisioniras": {
+      "title": "Un suministro de recuperacion compensatoria para contribuciones a una cuenta individual jubilatoria",
+      "definition": "La Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 autorizó límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas. La disposición de aportaciones adicionales de la nueva ley autorizó límites aun mayores para los trabajadores de 50 años o más. Para las cuentas IRA regulares y Roth, el monto de la aportación adicional es de $1,000 para 2025. Como resultado, los límites de aportación anual combinados para personas de 50 años o más aumentan a $8,000 para 2025."
+    },
+    "monthlyretincome": {
+      "title": "Ingresos mensuales por jubilación (IRAs)",
+      "definition": "La cantidad de ingresos mensuales, después de impuestos, que puede esperar de sus cuentas de jubilación."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta compara los beneficios de las siguientes cuatro alternativas de inversión y proporciona un resumen de la suma global recibida al momento de la jubilación y como ingreso mensual de jubilación: una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">cuenta IRA tradicional</a></span>, una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">cuenta IRA Roth</a></span>, una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#nonDeductibleIRA\">cuenta IRA no deducible</a></span>, y depósitos en una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">cuenta imponible</a></span>."
+    },
+    {
+      "textLabel": "Los supuestos clave de esta herramienta incluyen:"
+    },
+    {
+      "textLabel": "Si las contribuciones se invierten antes o después de impuestos y el monto excede el máximo permitido, la contribución se maximiza por primera vez en las cuentas IRA. El monto restante se deposita en una cuenta de ahorros imponible. El escenario en el que las contribuciones se invierten sin tener en cuenta los impuestos no tiene una cuenta de ahorros."
+    },
+    {
+      "textLabel": "Los depósitos se acumulan mensualmente."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los ingresos mensuales de jubilación proporcionados por la IRA tradicional, la IRA Roth, la IRA no deducible y la cuenta imponible."
+    },
+    {
+      "title": "Gráfico de columnas que compara la suma global proporcionada al jubilarse antes de impuestos por la IRA tradicional, la IRA Roth, la IRA no deducible y las cuentas imponibles."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Ingresos mensuales de jubilación proporcionados por la IRA tradicional, la IRA Roth, la IRA no deducible y la cuenta imponible"
+    },
+    {
+      "title": "Suma global proporcionada al jubilarse antes de impuestos por la IRA tradicional, la IRA Roth, la IRA no deducible y las cuentas imponibles"
+    }
+  ]
+}

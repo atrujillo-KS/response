@@ -1,0 +1,750 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "GeneralInfo",
+        "PlanInfo",
+        "results"
+      ],
+      "GeneralInfo": {
+        "selected": true,
+        "tabLabel": "General Info",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "General information",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "header": "",
+              "fields": [
+                "AnnualDoctorVisits",
+                "InMedicalSpend",
+                "OutMedicalSpend"
+              ]
+            }
+          ]
+        }
+      },
+      "PlanInfo": {
+        "tabLabel": "Plan Info",
+        "pageTitle": "Plan information",
+        "custom": "new-standard-3col",
+        "sections": [
+          "plan1",
+          "plan2"
+        ],
+        "plan1": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "This is an HSA plan",
+              "fields": [
+                "HSAplan"
+              ]
+            },
+            {
+              "rowLabel": "Monthly premium",
+              "fields": [
+                "HealthPremiumPlanA"
+              ]
+            },
+            {
+              "rowLabel": "Out-of-network out-of-pocket maximum",
+              "fields": [
+                "OutHealthMaxPlanA"
+              ]
+            },
+            {
+              "rowLabel": "In-network co-pay",
+              "fields": [
+                "InHealthCopayPlanA"
+              ]
+            },
+            {
+              "rowLabel": "In-network coinsurance rate",
+              "fields": [
+                "InHealthCoinsPlanA"
+              ]
+            },
+            {
+              "rowLabel": "Standard in-network deductible",
+              "fields": [
+                "InHealthDeductablePlanA"
+              ]
+            },
+            {
+              "rowLabel": "Out-of-network coinsurance rate",
+              "fields": [
+                "OutHealthCoinsPlanA"
+              ]
+            },
+            {
+              "rowLabel": "Coinsurance deductibles",
+              "fields": [
+                "OutHealthDeductablePlanA"
+              ]
+            }
+          ]
+        },
+        "plan2": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "This is an HSA plan",
+              "fields": [
+                "HSAplan2"
+              ]
+            },
+            {
+              "rowLabel": "Monthly premium",
+              "fields": [
+                "HealthPremiumPlanB"
+              ]
+            },
+            {
+              "rowLabel": "Out-of-network out-of-pocket maximum",
+              "fields": [
+                "OutHealthMaxPlanB"
+              ]
+            },
+            {
+              "rowLabel": "In-network co-pay",
+              "fields": [
+                "InHealthCopayPlanB"
+              ]
+            },
+            {
+              "rowLabel": "In-network coinsurance rate",
+              "fields": [
+                "InHealthCoinsPlanB"
+              ]
+            },
+            {
+              "rowLabel": "Standard in-network deductible",
+              "fields": [
+                "InHealthDeductablePlanB"
+              ]
+            },
+            {
+              "rowLabel": "Out-of-network coinsurance rate",
+              "fields": [
+                "OutHealthCoinsPlanB"
+              ]
+            },
+            {
+              "rowLabel": "Coinsurance deductibles",
+              "fields": [
+                "OutHealthDeductablePlanB"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "subtitle": "In network costs",
+      "columnHeaders": [
+        "Plan 1",
+        "Plan 2"
+      ],
+      "fields": [
+        [
+          "InAnnHealthPremiumPlanA",
+          "InAnnHealthPremiumPlanB"
+        ],
+        [
+          "InAnnHealthCopayPlanA",
+          "InAnnHealthCopayPlanB"
+        ],
+        [
+          "InHealthStandDeductablePlanA",
+          "InHealthStandDeductablePlanB"
+        ]
+      ]
+    },
+    "results2": {
+      "subtitle": "Out-of-network costs",
+      "fields": [
+        [
+          "OutHealthDeductablePlanA",
+          "OutHealthDeductablePlanB"
+        ],
+        [
+          "OutHealthPaymentsPlanA",
+          "OutHealthPaymentsPlanB"
+        ],
+        [
+          "HealthTotalCostPlanA",
+          "HealthTotalCostPlanB"
+        ]
+      ]
+    },
+    "fields": {
+      "AnnualDoctorVisits": {
+        "fieldLabel": "Yearly doctor visits",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "yearlyVISITs",
+        "format": "number",
+        "defaultValue": "2",
+        "value": "2",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "InMedicalSpend": {
+        "fieldLabel": "Yearly in-network medical care costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "OutMedicalSpend": {
+        "fieldLabel": "Yearly out-of-network medical care costs",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "HSAplan": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label",
+        "selectFieldClass": "lf-double-input-select",
+        "ariaLegendLabel": "Plan 1"
+      },
+      "HSAplan2": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "false",
+            "optionText": "No",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "true",
+            "optionText": "Yes",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "lf-second-select",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "ariaLegendLabel": "Plan 2",
+        "Legendcolumn": "lf-legend-column-2",
+        "inputClass": "label-visually-hidden",
+        "selectFieldClass": "lf-double-input-select "
+      },
+      "HealthPremiumPlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "25000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "selectFieldClass": "",
+        "safeType": "number"
+      },
+      "HealthPremiumPlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1000",
+        "value": "1000",
+        "minimumValue": "0",
+        "maximumValue": "25000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "OutHealthMaxPlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15000",
+        "value": "15000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "selectFieldClass": "",
+        "safeType": "number"
+      },
+      "OutHealthMaxPlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15000",
+        "value": "15000",
+        "minimumValue": "0",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "500000",
+        "widgetStep": "5000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "InHealthCopayPlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "selectFieldClass": "",
+        "safeType": "number"
+      },
+      "InHealthCopayPlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "InHealthCoinsPlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "70.00",
+        "value": "70.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "currencyInput": "lf-double-line",
+        "safeType": "number"
+      },
+      "InHealthCoinsPlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "70.00",
+        "value": "70.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "InHealthDeductablePlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "selectFieldClass": "",
+        "safeType": "number"
+      },
+      "InHealthDeductablePlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "OutHealthCoinsPlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "20.00",
+        "value": "20.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "OutHealthCoinsPlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "20.00",
+        "value": "20.00",
+        "minimumValue": "0",
+        "maximumValue": "100.00",
+        "maxlength": "6",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "OutHealthDeductablePlanA": {
+        "fieldLabel": "Plan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "OutHealthDeductablePlanB": {
+        "fieldLabel": "Plan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15",
+        "value": "15",
+        "minimumValue": "0",
+        "maximumValue": "5000",
+        "maxlength": "5",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "5000",
+        "widgetStep": "50",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "InAnnHealthPremiumPlanA": {
+        "fieldLabel": "Yearly premium cost"
+      },
+      "InAnnHealthPremiumPlanB": {
+        "fieldLabel": ""
+      },
+      "InAnnHealthCopayPlanA": {
+        "fieldLabel": "Yearly copayment cost"
+      },
+      "InAnnHealthCopayPlanB": {
+        "fieldLabel": ""
+      },
+      "InHealthStandDeductablePlanA": {
+        "fieldLabel": "Standard deductibles"
+      },
+      "InHealthStandDeductablePlanB": {
+        "fieldLabel": ""
+      },
+      "OutHealthDeductablePlanA": {
+        "fieldLabel": "Coinsurance deductibles"
+      },
+      "OutHealthDeductablePlanB": {
+        "fieldLabel": ""
+      },
+      "OutHealthPaymentsPlanA": {
+        "fieldLabel": "Coinsurance payments"
+      },
+      "OutHealthPaymentsPlanB": {
+        "fieldLabel": ""
+      },
+      "HealthTotalCostPlanA": {
+        "fieldLabel": "Total cost"
+      },
+      "HealthTotalCostPlanB": {
+        "fieldLabel": ""
+      }
+    }
+  },
+  "labels": {
+    "title": "How do my health care options compare?",
+    "answer": "Plan 1 will cost you <span class='lf-bold'>%result% </span> Plan 2",
+    "lessThan": "less than",
+    "moreThan": "more than",
+    "same": "the same as",
+    "categories": [
+      "Plan 1",
+      "Plan 2"
+    ],
+    "inNetwork": "In Network",
+    "outNetwork": "Out-of-network",
+    "selectors": [
+      {
+        "label": "Plan costs",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "hsaplan": {
+      "title": "HSA Plan",
+      "definition": "Indicates that the health plan type being described is a Health Savings Account plan."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool compares two health plans to help you evaluate which is the more cost effective. If one or both of the plans is an HSA plan, the deductible counts against the out-of-pocket maximums."
+    },
+    {
+      "textLabel": "You can learn more about health savings accounts at the IRS web site. For IRS help concerning health savings accounts, refer to <a target=\"_blank\" href=\"https://www.irs.gov/publications/p969\">IRS Publication 969</a> and <a target=\"_blank\" href=\"https://www.irs.gov/publications/p502\">IRS Publication 502</a>."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Table of the total cost of each health plan broken down by in-network costs and out-of-network costs."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total cost of each health plan broken down by in-network costs and out-of-network costs"
+    }
+  ]
+}

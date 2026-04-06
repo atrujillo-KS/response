@@ -1,0 +1,944 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "LowerExpenses",
+        "HigerExpenses",
+        "Projections",
+        "results"
+      ],
+      "LowerExpenses": {
+        "selected": true,
+        "tabLabel": "Lower Expenses",
+        "custom": "new-standard-3col",
+        "pageDesc": "The following monthly expenses are typically lower during retirement.",
+        "sections": [
+          "Current",
+          "Retirement"
+        ],
+        "Current": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "LowerExpenses_Housing",
+              "fields": [
+                "CurrHouse"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_LifeInsurance",
+              "fields": [
+                "CurrLifeIns"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Transportation",
+              "fields": [
+                "CurrTrans"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Clothing",
+              "fields": [
+                "CurrCloth"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_DebtPayments",
+              "fields": [
+                "CurrDebt"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Education",
+              "fields": [
+                "CurrEdu"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Other",
+              "fields": [
+                "CurrOther"
+              ]
+            }
+          ]
+        },
+        "Retirement": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "rows": [
+            {
+              "rowLabel": "LowerExpenses_Housing",
+              "fields": [
+                "EstHouse"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_LifeInsurance",
+              "fields": [
+                "EstLifeIns"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Transportation",
+              "fields": [
+                "EstTrans"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Clothing",
+              "fields": [
+                "EstCloth"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_DebtPayments",
+              "fields": [
+                "EstDebt"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Education",
+              "fields": [
+                "EstEdu"
+              ]
+            },
+            {
+              "rowLabel": "LowerExpenses_Other",
+              "fields": [
+                "EstOther"
+              ]
+            }
+          ]
+        }
+      },
+      "HigerExpenses": {
+        "tabLabel": "Higher Expenses",
+        "custom": "new-standard-3col",
+        "pageDesc": "The following monthly expenses are typically higher during retirement.",
+        "sections": [
+          "Current",
+          "Retirement"
+        ],
+        "Current": {
+          "sectionLabel": "",
+          "fieldSets": "2",
+          "rows": [
+            {
+              "rowLabel": "HigerExpenses_Medical",
+              "fields": [
+                "CurrMed"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_Food",
+              "fields": [
+                "CurrFood"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_Recreation",
+              "fields": [
+                "CurrRec"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_PropertyInsurance",
+              "fields": [
+                "CurrPropIns"
+              ]
+            }
+          ]
+        },
+        "Retirement": {
+          "sectionLabel": "",
+          "fieldSets": "",
+          "rows": [
+            {
+              "rowLabel": "HigerExpenses_Medical",
+              "fields": [
+                "EstMed"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_Food",
+              "fields": [
+                "EstFood"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_Recreation",
+              "fields": [
+                "EstRec"
+              ]
+            },
+            {
+              "rowLabel": "HigerExpenses_PropertyInsurance",
+              "fields": [
+                "EstPropIns"
+              ]
+            }
+          ]
+        }
+      },
+      "Projections": {
+        "tabLabel": "Projections",
+        "pageTitle": "",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageDesc": "",
+        "sections": [
+          "default"
+        ],
+        "inputClass": "lf-single-input lf-single-input-select",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label",
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "TermRetire01",
+                "InflationRate"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "loadGraphData": true,
+        "tabLabel": "Results"
+      }
+    },
+    "fields": {
+      "InflationRate": {
+        "cellClass": "lf-percent",
+        "dataHighlight": "true",
+        "fieldLabel": "Inflation rate",
+        "defaultValue": "1.00",
+        "inputType": "text",
+        "showTooltip": "lf-show-tooltip",
+        "glossaryTerm": "inflation",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "maxlength": "5",
+        "showDollar": "lf-hidden",
+        "showPercentage": "lf-after-input",
+        "safeType": "number",
+        "smallLabel": "",
+        "minimumValue": "0.00",
+        "maximumValue": "90.00",
+        "widgetStep": ".10",
+        "precision": 2,
+        "value": "0",
+        "format": "percent",
+        "glossaryClass": "lf-glossary-label",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "CurrHouse": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1700",
+        "value": "1700",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "ariaLegendLabel": "Current",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrLifeIns": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrTrans": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrCloth": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "250",
+        "value": "250",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrDebt": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "400",
+        "value": "400",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrEdu": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "350",
+        "value": "350",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrOther": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "300",
+        "value": "300",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstHouse": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1200",
+        "value": "1200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "ariaLegendLabel": "During Retirement",
+        "inputClass": "label-visually-hidden",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "Legendcolumn": "lf-legend-column-2"
+      },
+      "EstLifeIns": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "40",
+        "value": "40",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstTrans": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstCloth": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstDebt": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstEdu": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstOther": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrMed": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "80",
+        "value": "80",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "ariaLegendLabel": "Current",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrFood": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrRec": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "60",
+        "value": "60",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CurrPropIns": {
+        "fieldLabel": "Current",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "20",
+        "value": "20",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstMed": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "200",
+        "value": "200",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "ariaLegendLabel": "During Retirement",
+        "inputClass": "label-visually-hidden",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "Legendcolumn": "lf-legend-column-2",
+        "safeType": "number"
+      },
+      "EstFood": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "400",
+        "value": "400",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstRec": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1500",
+        "value": "1500",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "EstPropIns": {
+        "fieldLabel": "During Retirement",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "30",
+        "value": "30",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "TermRetire01": {
+        "fieldLabel": "Years until you retire",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "20",
+        "value": "20",
+        "minimumValue": "1",
+        "maximumValue": "115",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "50",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "TotMaxDep": {
+        "fieldLabel": "Total maximum contribution"
+      },
+      "TotDepRetire02C": {
+        "fieldLabel": "Total amount contributed"
+      },
+      "TotTaxRetire02C": {
+        "fieldLabel": "Total income tax & penalties"
+      },
+      "TotIntRetire02C": {
+        "fieldLabel": "Total interest earnings"
+      },
+      "ContYr1": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr1": {
+        "fieldLabel": ""
+      },
+      "ContYr2": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr2": {
+        "fieldLabel": ""
+      },
+      "ContYr3": {
+        "fieldLabel": ""
+      },
+      "SpouseContYr3": {
+        "fieldLabel": ""
+      },
+      "CurrExp": {
+        "fieldLabel": "Current"
+      },
+      "EstExp": {
+        "fieldLabel": "During Retirement"
+      },
+      "EstExpAdj": {
+        "fieldLabel": "During Retirement"
+      }
+    },
+    "results": {
+      "result": "ActualSpending",
+      "columnHeaders": [
+        "Not adjusted for inflation",
+        "Adjusted for inflation"
+      ],
+      "fields": [
+        [
+          "CurrExp",
+          "CurrExp"
+        ],
+        [
+          "EstExp",
+          "EstExpAdj"
+        ]
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Adjusted for Inflation",
+    "dataTableCategory2": "Total",
+    "dataTableCategory3": "Total",
+    "title": "How will retirement affect my expenses?",
+    "answer": "Adjusted for inflation, your monthly living expenses will be <span class='lf-bold'>%result%</span> during retirement",
+    "selectors": [
+      {
+        "label": "Comparison",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Current",
+        "width": "33%",
+        "getGraphData": true
+      },
+      {
+        "label": "During Retirement ",
+        "width": "33%",
+        "last": true,
+        "getGraphData": true
+      }
+    ],
+    "current": "Current",
+    "duringRetirement": "During Retirement",
+    "housing": "Housing",
+    "lifeInsurance": "Life Insurance",
+    "transportation": "Transportation",
+    "clothing": "Clothing",
+    "debt": "Debt",
+    "education": "Education",
+    "other": "Other",
+    "medical": "Medical",
+    "food": "Food",
+    "recreation": "Recreation",
+    "propIns": "Prop. Ins.",
+    "LowerExpenses_Housing": "Housing",
+    "LowerExpenses_LifeInsurance": "Life Insurance",
+    "LowerExpenses_Transportation": "Transportation",
+    "LowerExpenses_Clothing": "Clothing",
+    "LowerExpenses_DebtPayments": "Debt payments",
+    "LowerExpenses_Education": "Education",
+    "LowerExpenses_Other": "Other",
+    "HigerExpenses_Medical": "Medical",
+    "HigerExpenses_Food": "Food",
+    "HigerExpenses_Recreation": "Recreation",
+    "HigerExpenses_PropertyInsurance": "Property insurance"
+  },
+  "glossaryItems": {
+    "inflationadjustedvalue": {
+      "title": "Inflation-adjusted",
+      "definition": "An inflation-adjusted amount is an amount that is adjusted to compensate for expected or actual inflation. For example, if you contribute $10,000 a year to your 401(k) plan and want to make an inflation-adjusted contribution next year to compensate for an expected inflation rate of 3%, your inflation-adjusted contribution is $10,300."
+    },
+    "inflation": {
+      "title": "Inflation",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. "
+    },
+    "estateplanning": {
+      "title": "Estate planning",
+      "definition": "The set-up and administration of your estate to ensure that your desired beneficiaries are provided for. "
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you estimate your monthly expenses in retirement adjusted for <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Inflation\">inflation</a></span>. Inflation has averaged between 2 and 3 percent over the past 15 or 20 years. Since your expenses in retirement change over time, it helps to think of retirement in stages."
+    },
+    {
+      "textLabel": "Your early retirement years may include spending on travel, education, and recreation. You may also be caring for elderly parents. Your expenses are likely to be highest in this stage of retirement. You will want to begin thinking about <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#EstatePlanning\">estate planning</a></span> if you haven't already."
+    },
+    {
+      "textLabel": "In your middle-retirement years, you are likely to have paid off your mortgage and other debts. Higher medical expenses may creep up on you. A budget-conscious lifestyle becomes more important."
+    },
+    {
+      "textLabel": "Finally, in your late-retirement years, you may face larger medical bills. Sticking to a strict budget may be more likely. "
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart comparing total current expenses and total expenses during retirement, adjusted for inflation."
+    },
+    {
+      "title": "Pie chart of the breakdown of current monthly expenses."
+    },
+    {
+      "title": "Pie chart of the breakdown of monthly expenses during retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total current expenses and total expenses during retirement, adjusted for inflation"
+    },
+    {
+      "title": "Breakdown of current monthly expenses"
+    },
+    {
+      "title": "Breakdown of monthly expenses during retirement"
+    }
+  ]
+}

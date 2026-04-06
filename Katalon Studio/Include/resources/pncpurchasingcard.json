@@ -1,0 +1,278 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc/calc/pcard?newuser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How much can I save and earn by switching to the PNC Commercial Rewards Card®?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TotalAnnualBenefits_result_label",
+      "value": "Total annual benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TotalAnnualBenefits_result_value",
+      "value": "$7,955.79"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfCardRewardsEarned_result_label",
+      "value": "Rewards earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfCardRewardsEarned_result_value",
+      "value": "$5,625.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TransactionCostReduction_result_label",
+      "value": "Savings from reduced check usage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TransactionCostReduction_result_value",
+      "value": "$276.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfExtendedFloatOnCapital_result_label",
+      "value": "Value of extended payment terms"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfExtendedFloatOnCapital_result_value",
+      "value": "$2,054.79"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_tab_basic.lf-legend.lf-secondary-gradient.lf-open.lf-tab-basic",
+      "value": "Basic"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualChecksWritten-label",
+      "value": "How many checks do you write a year?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualChecksWritten",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualChecksWritten-error-message",
+      "value": "Must be between 1 and 50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCheckPayments-label",
+      "value": "What is the amount?"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCheckPayments",
+      "value": "2,500,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCheckPayments-error-message",
+      "value": "Must be between $1 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_tab_advanced.lf-legend.lf-secondary-gradient.lf-tab-advanced",
+      "value": "Advanced"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment-label",
+      "value": "Postage & envelope cost per check payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment",
+      "value": "0.67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment-error-message",
+      "value": "Must be between $0.50 and $2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank-label",
+      "value": "Bank costs per check payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank",
+      "value": "0.25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank-error-message",
+      "value": "Must be between $0.00 and $1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CostOfCapital-label",
+      "value": "Cost of capital"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CostOfCapital",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CostOfCapital-error-message",
+      "value": "Must be between 1.00% and 10.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CostOfCapital_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Commercial_CostOfCapital_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Cost of capital"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The weighted-average cost of debt and equity financing; or the required rate of return a business expects to earn on its investments. Cost of capital is used to discount future cash flows to present value."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_AnnualChecksWritten",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_AnnualCheckPayments",
+      "value": "2,700,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_PostageAndEnvelopeCostPerCheckPayment",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_OtherVariableUnitCostsFromBank",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Commercial_CostOfCapital",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TotalAnnualBenefits_result_value",
+      "value": "$9,044.18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfCardRewardsEarned_result_value",
+      "value": "$6,075.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_TransactionCostReduction_result_value",
+      "value": "$750.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_ValueOfExtendedFloatOnCapital_result_value",
+      "value": "$2,219.18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_terms_of_use_label",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2025 Leadfusion"
+    }
+  },
+   {
+    "verifyText": {
+      "id": "disclaimer_text",
+      "value": "With the PNC Commercial Rewards Card, you earn points on purchases which can be redeemed for cash back or items such as gift cards and travel. When transitioning to this credit card, you can earn rewards based on purchases. Rewards and other information shown are for general informational purposes only, and based on information you provide. Actual rewards may vary based on your specific situation. Card Services and certain other products and services require credit approval, and are subject to terms and conditions. This tool and information provided were prepared for general information purposes only and are not intended as legal, tax or accounting advice or as recommendations to engage in any specific transaction, and do not purport to be comprehensive. Under no circumstances should any information provided, including with the tool and its results, be considered as an offer or commitment, or a solicitation of an offer or commitment to participate in any particular transaction or strategy. Any reliance upon any such information is solely and exclusively at your own risk, and such information is not guaranteed as to its accuracy, timeliness, or completeness. Please consult your own counsel, accountant or other advisor regarding your specific situation. Any opinions or information provided are subject to change without notice."
+    }
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "layout": {
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Auto_VehicleAgeInYears": {
+        "fieldLabel": "Antigüedad del vehículo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Auto_YearsOwned": {
+        "fieldLabel": "Años que tendrá vehículo "
+      },
+      "Auto_FutureDepreciation": {
+        "fieldLabel": "Depreciación futura",
+        "dropdownOptions": [
+          {
+            "optionText": "Baja"
+          },
+          {
+            "optionText": "Promedio"
+          },
+          {
+            "optionText": "Elevado(a)"
+          }
+        ]
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuánto me costará la depreciación?",
+    "dataTableCategory": "Depreciación",
+    "answer": "La depreciación le costará <span class='lf-bold'>%result%</span>",
+    "firstYear": "Primer año",
+    "total": "Total"
+  },
+  "glossaryItems": {
+    "firstyeardepreciation": {
+      "title": "Depreciación del primer año",
+      "definition": "La depreciación del primer año es el monto en dólares de costo por depreciación. Se deduce del precio de compra para calcular el valor residual o el valor libro del vehículo. El costo por depreciación es más alto en los primeros años de titularidad, particularmente en el caso de vehículos nuevos. La depreciación de un vehículo con una alta tasa de depreciación es mayor que el gasto de uno cuya tasa es baja."
+    },
+    "depreciation": {
+      "title": "Depreciación",
+      "definition": "La disminución del valor de un activo durante el transcurso de su vida útil debido al desgaste y la obsolescencia."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El costo por depreciación anual se calcula aplicando una tasa de depreciación (promedio, alta o baja) al nuevo vehículo. La depreciación total se calcula para la cantidad de años que usted proyecta conservar el vehículo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del costo de depreciación del primer año y el costo de depreciación total."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo de depreciación del primer año y el costo de depreciación total"
+    }
+  ]
+}

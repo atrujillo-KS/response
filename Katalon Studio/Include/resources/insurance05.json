@@ -1,0 +1,924 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: term or whole life insurance?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool compares rates of return for term and whole life insurance policies for two periods:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/div/ul/li",
+      "value": "Between now and the time that you receive full cash value for your whole life policy."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/div/ul/li[2]",
+      "value": "Between now and the time you die."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-help-content",
+      "value": "This tool compares rates of return for term and whole life insurance policies for two periods: Between now and the time that you receive full cash value for your whole life policy. Between now and the time you die. After-tax returns are provided for the following: The whole life policy. The term life policy. The term life policy, with premium savings invested in a taxable account. Since whole life policy premiums are higher, the premium difference (the annual premium amount saved with a term life policy) is invested. Generally, term life insurance policy premiums are initially lower than whole life premiums, which generally are constant. Term life premiums climb, however, past the premium amount for whole life policies as you age and have to renew your term life policy."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/div[2]/ul/li",
+      "value": "The whole life policy."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf-help-content']/div[2]/ul/li[2]",
+      "value": "The term life policy."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Term life policy + investment provides the best after-tax rate of return at death at 3.18%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "In 25 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "At death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermLife_result_label",
+      "value": "Term only"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermLife_result_value",
+      "value": "−100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnTermLife_result_value",
+      "value": "2.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermInvestment_result_label",
+      "value": "Term + investment of premium savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermInvestment_result_value",
+      "value": "−8.24%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnTermInvestment_result_value",
+      "value": "3.18%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnWholeLife_result_label",
+      "value": "Whole life"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnWholeLife_result_value",
+      "value": "7.13%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnWholeLife_result_value",
+      "value": "3.12%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Rate of return %']/parent::*",
+      "value": "Rate of return %"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "After-tax rates of return of the term life policy, the term policy with premium savings invested in a taxable account, and the whole life insurance policy at death"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Category"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Term + Investment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[4]",
+      "value": "Whole"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/th",
+      "value": "After-tax Rates of Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "2.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "3.18%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[3]",
+      "value": "3.12%"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.highcharts-no-tooltip"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Personal-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Personal-details']/div/div/div/h3",
+      "value": "Personal information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge_label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy_label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_LifeExpectancy-error-message",
+      "value": "Must be between 5 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_field_label",
+      "value": "Your state + federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Global_FederalAndStateTaxRate_label']/a",
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ExpectedInterestRate_field_label",
+      "value": "Your savings interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_ExpectedInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_ExpectedInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_ExpectedInterestRate_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_ExpectedInterestRate_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The yearly interest rate you earn on your savings."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-TermLife-tab-label",
+      "value": "Term Life"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-TermLife-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-TermLife-details']/div/div/div/h3",
+      "value": "Term life insurance policy information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_TermLifeDeathBenefit_field_label",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_TermLifeDeathBenefit",
+      "value": "100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_TermLifeDeathBenefit-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_TermLifeDeathBenefit_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_TermLifeDeathBenefit_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An amount that is paid to the beneficiary of a life insurance policy upon the death of the insured. The amount may be a lump sum or an annuity."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PolicyTermInYears_field_label",
+      "value": "Policy term (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_PolicyTermInYears",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PolicyTermInYears-error-message",
+      "value": "Must be between 1 and 50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_TermLifePremium_field_label",
+      "value": "Premium amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_TermLifePremium",
+      "value": "45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_TermLifePremium-error-message",
+      "value": "Must be between $1 and $4,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_TermLifePremium_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_TermLifePremium_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Premium"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Insurance: The amount an insurance policyholder pays periodically to maintain insurance coverage. Premium: A price more than the face value of the bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-WholeLife-tab-label",
+      "value": "Whole Life"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-WholeLife-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-WholeLife-details']/div/div/div/h3",
+      "value": "Whole life insurance policy information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathBenefit_field_label",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_DeathBenefit",
+      "value": "100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathBenefit-error-message",
+      "value": "Must be between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_DeathBenefit_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_DeathBenefit_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Death benefit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An amount that is paid to the beneficiary of a life insurance policy upon the death of the insured. The amount may be a lump sum or an annuity."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_Premium_field_label",
+      "value": "Premium amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_Premium",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_Premium-error-message",
+      "value": "Must be between $1 and $4,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_Premium_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_Premium_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Premium"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Insurance: The amount an insurance policyholder pays periodically to maintain insurance coverage. Premium: A price more than the face value of the bond."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PremiumPaymentsPerYear_label",
+      "value": "Premium payments per year"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_PremiumPaymentsPerYear",
+      "value": "4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_PremiumPaymentsPerYear-error-message",
+      "value": "Must be between 1 and 12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_AverageAnnualDividend_field_label",
+      "value": "Average annual dividend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_AverageAnnualDividend",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_AverageAnnualDividend-error-message",
+      "value": "Must be between $0 and $4,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_AverageAnnualDividend_label']/a",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_AverageAnnualDividend_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Dividends (insurance policy)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A return of insurance premiums to the policyholder. If the investments that an insurance company makes perform better than expected, the insurer returns some of the previously paid premiums."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DividendIncomeSpendingOption_label",
+      "value": "Your dividend income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DividendIncomeSpendingOption",
+      "value": "Applied toward future premiums Invested elsewhere Spent within 2 months"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_DividendIncomeSpendingOption",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-WholeLife-details']/div[2]/div/div/h3",
+      "value": "Cash Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-WholeLife-details']/div[2]/div/div[2]/span",
+      "value": "You may want or need to cash in your life insurance policy at some point before death. Enter the following information to include this scenario in the results."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy_label",
+      "value": "Years until you might cash in the policy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureCashValue_field_label",
+      "value": "Estimated cash value at that time"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_FutureCashValue",
+      "value": "50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureCashValue-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_Insurance_FutureCashValue_label']/a/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_Insurance_FutureCashValue_label']/a"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Cash value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A dollar value that is returned to an insurance policyholder if the policy is canceled."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Personal-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentAge",
+      "value": "50"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_LifeExpectancy",
+      "value": "100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "23.70"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_ExpectedInterestRate",
+      "value": "5.66"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-TermLife-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_TermLifeDeathBenefit",
+      "value": "150,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_PolicyTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_TermLifePremium",
+      "value": "85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_TermLifePremiumPaymentsPerYear",
+      "value": "11"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_PremiumIncreasePerRenewal",
+      "value": "5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-WholeLife-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_DeathBenefit",
+      "value": "180,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_Premium",
+      "value": "250"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_PremiumPaymentsPerYear",
+      "value": "8"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_AverageAnnualDividend",
+      "value": "300"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_DividendIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_YearsUntilCashInPolicy",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Insurance_FutureCashValue",
+      "value": "100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Term life policy + investment provides the best after-tax rate of return at death at 4.73%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermLife_result_value",
+      "value": "−100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnTermLife_result_value",
+      "value": "3.70%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnTermInvestment_result_value",
+      "value": "−0.74%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnTermInvestment_result_value",
+      "value": "4.73%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FutureRateOfReturnWholeLife_result_value",
+      "value": "9.17%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_DeathRateOfReturnWholeLife_result_value",
+      "value": "1.53%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "layout": {
+    "tabs": {
+      "SharedLoanInfo": {
+        "tabLabel": "Información del préstamo compartida"
+      },
+      "HomeEquityLoan": {
+        "tabLabel": "Préstamo sobre el patrimonio inmobiliario"
+      },
+      "VehicleLoan": {
+        "tabLabel": "Préstamo de vehículo"
+      },
+      "TaxSavingsRates": {
+        "tabLabel": "Tasas fiscales y sobre los ahorros"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo sobre el patrimonio inmobiliario",
+        "Préstamo de vehículo"
+      ]
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_HomeEquityUpfrontCosts": {
+        "fieldLabel": "Costos iniciales"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results_fields": {
+      "Pmt2CreditLn03": {
+        "fieldLabel": "Pago mensual"
+      },
+      "TotInt2CreditLn03": {
+        "fieldLabel": "Intereses totales pagados"
+      },
+      "TaxSavings2CreditLn03": {
+        "fieldLabel": "Ahorros fiscales totales"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "dataTableCategory2": "Pago mensual",
+    "title": "¿Debo utilizar un préstamo sobre el patrimonio inmobiliario en lugar de un préstamo de vehículo?",
+    "answer": "El <span class='lf-bold'>%lessOption%</span> le costará, en dólares actuales, <span class='lf-bold'>%result% menos</span> que el <span class='lf-bold'>%moreOption%</span>",
+    "answer_same": "El préstamo sobre el patrimonio inmobiliario le costará, en dólares actuales, <span class='lf-bold'>lo mismo que</span> el préstamo de vehículo",
+    "total_cost": "Diferencia de costos",
+    "loan1": "Préstamo sobre el patrimonio inmobiliario",
+    "loan2": "Préstamo de vehículo",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "Diferencia de costos",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos - Préstamo sobre el patrimonio inmobiliario",
+            "label": "Préstamo sobre el patrimonio inmobiliario"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos - Préstamo de vehículo",
+            "label": "Préstamo de vehículo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ],
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "savingrate": {
+      "title": "Tasa de ahorro",
+      "definition": "La tasa de ahorro es el porcentaje de ingresos que usted ahorra. La tasa de interés de ahorro es la tasa de interés anual que tú obtienes sobre tus ahorros. Se utiliza para calcular el costo de oportunidad de pagar en efectivo."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "homeequityloan": {
+      "title": "Préstamo hipotecario sobre el valor neto de la vivienda",
+      "definition": "Préstamo hipotecario amortizable que permite a los propietarios de viviendas tomar un préstamo garantizado por el valor residual de su vivienda para realizar reparaciones u otras mejoras a la vivienda, consolidar deudas o utilizar el dinero para fines generales."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "upfrontcosts": {
+      "title": "Costos abonados por adelantado",
+      "definition": "Denominados también costos de cierre, son los cargos y demás costos que usted paga al cierre de un préstamo."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora muestra qué préstamo le permite ahorrar más dinero, comparando los plazos del préstamo hipotecario sobre el valor neto de la vivienda y del préstamo para automóvil. Los intereses de la mayoría de los préstamos hipotecarios sobre el valor neto de la vivienda se pueden deducir de los impuestos federales sobre la renta. Esto da como resultado una tasa de interés efectiva menor. No obstante, aún necesitará comparar los gastos de cierre de la operación y las tasas de interés después de deducir los impuestos de ambos préstamos para decidir qué préstamo es más económico."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras de la diferencia en el costo total, en dólares de hoy, entre el préstamo con garantía hipotecaria y el préstamo del vehículo."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual del préstamo con garantía hipotecaria y el préstamo del vehículo."
+    },
+    {
+      "title": "Tabla de amortización"
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia en el costo total, en dólares de hoy, entre el préstamo con garantía hipotecaria y el préstamo del vehículo"
+    },
+    {
+      "title": "Pago mensual del préstamo con garantía hipotecaria y del préstamo del vehículo"
+    }
+  ]
+}

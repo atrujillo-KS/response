@@ -1,0 +1,607 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "What will it take to pay off my line of credit?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows either the number of months necessary to repay a home equity line of credit – if the debt is paid off in the desired timeframe entered – or how much debt you will have at the end of the period. In case the interest rate is variable, the calculator allows you to enter a forecast."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "You may enter future monthly payments as either a fixed amount or a variable amount that amortizes the credit line balance by a fixed percentage of the outstanding loan balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Payoff will take 27 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Months to pay off']/parent::*",
+      "value": "Months to pay off"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Balance']/parent::*",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payoff vs. Payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Monthly payment']/parent::*",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/caption",
+      "value": "Months to pay off the line of credit at various monthly payment amounts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th",
+      "value": "Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/thead/tr/th[2]",
+      "value": "Months to pay off"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/th",
+      "value": "$200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr/td",
+      "value": "58"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[5]/th",
+      "value": "$600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[5]/td",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[10]/th",
+      "value": "$1,100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-1']/tbody/tr[10]/td",
+      "value": "10"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-1']/span",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-2']/span",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-3']/span",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-4']/span",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-5']/span",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//th[@id='col-6']/span",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$9,713"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$367"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$33"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td",
+      "value": "27"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td[2]",
+      "value": "$331"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td[4]",
+      "value": "$329"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td[5]",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[27]/td[6]",
+      "value": "$491"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LineofCreditInfo-accordion",
+      "value": "Line of Credit Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-label",
+      "value": "Loan amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_CashNeededFromEquity-error-message",
+      "value": "Must be between $1 and $2,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeEquityLoanInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_HomeEquityLoanInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_HomeEquityLoanInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_HomeEquityLoanInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_PayoffGoalInMonths-label",
+      "value": "Payoff goal (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_PayoffGoalInMonths",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_PayoffGoalInMonths-error-message",
+      "value": "Must be between 1 and 480"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AnnualFee-label",
+      "value": "Annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_AnnualFee",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_AnnualFee-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FutureMonthlyPayments-accordion",
+      "value": "Future Monthly Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "FutureMonthlyPayments-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_FutureMonthlyPayment-label",
+      "value": "Payment type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_FutureMonthlyPayment",
+      "value": "Fixed amount % of balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_FutureMonthlyPayment",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_FutureFixedMonthlyPayment-label",
+      "value": "Fixed monthly payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CreditLine_FutureFixedMonthlyPayment",
+      "value": "400"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditLine_FutureFixedMonthlyPayment-error-message",
+      "value": "Must be between $0 and $15,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InterestRateChangePrediction-label",
+      "value": "Predicted rate change"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "None Increase 0.5% per year Decrease 0.5% per year"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_InterestRateChangePrediction_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future interest rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The future interest rate is your prediction of the magnitude of change in the interest rate used to price your loan. Future rates are assumed to change at the same rate every year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "LineofCreditInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_CashNeededFromEquity",
+      "value": "15,787"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_HomeEquityLoanInterestRate",
+      "value": "5.14"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_PayoffGoalInMonths",
+      "value": "24"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_AnnualFee",
+      "value": "45"
+    }
+  },
+  {
+    "click": {
+      "id": "FutureMonthlyPayments-accordion"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_CreditLine_FutureMonthlyPayment",
+      "value": "label=% of balance"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_PercentagePaymentOfOutstandingBalance",
+      "value": "7.26"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CreditLine_FutureMinimumMonthlyPayment",
+      "value": "150"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_InterestRateChangePrediction",
+      "value": "label=Decrease 0.5% per year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "You will still have a balance of $2,879 at the end of 24 months"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+    {
+    "delay": {
+      "value": "3"
+    }
+  },
+    {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/caption",
+      "value": "Outstanding balance of the home equity line of credit over the course of the payoff period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[1]/th",
+      "value": "$1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[1]/td",
+      "value": "$14,745"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[5]/th",
+      "value": "$13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[5]/td",
+      "value": "$6,322"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[9]/th",
+      "value": "$24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-10']/tbody/tr[9]/td",
+      "value": "$2,879"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

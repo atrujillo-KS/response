@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_The length, or period, of a loan. It is u_528915</name>
+   <tag></tag>
+   <elementGuidId>a451b54f-216d-436a-9b61-8732eb69c9da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='lf-tooltip-text']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lf-tooltip-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;The length, or period, of a loan. It is usually measured in years.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>131b6c99-2c29-4797-b8af-311f287ff441</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lf-tooltip-text</value>
+      <webElementGuid>82d9a2d2-cc0b-4738-9a4e-0aa105ec07cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>The length, or period, of a loan. It is usually measured in years. </value>
+      <webElementGuid>c58911e4-a2d8-4257-84db-cbf5f890f7c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lf-tooltip-text&quot;)</value>
+      <webElementGuid>a0469828-0878-4474-8aa7-531e793e7186</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='lf-tooltip-text']</value>
+      <webElementGuid>594e3d72-4d44-4ccd-a1c9-aa537648a3d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lf-tooltip']/p</value>
+      <webElementGuid>f5bdc9a8-0dd1-400f-87fb-b4cf68608232</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loan term'])[3]/following::p[1]</value>
+      <webElementGuid>6316f593-6ebd-4fb8-bbba-44d98f356738</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[2]/following::p[1]</value>
+      <webElementGuid>264140ee-15d8-4d2e-89dc-da9fc65d5a75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Steps'])[3]/preceding::p[1]</value>
+      <webElementGuid>557158b0-bda0-48e3-8ea5-5c6553b25c68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Click Here'])[3]/preceding::p[1]</value>
+      <webElementGuid>d7fa70ce-6d08-4578-849d-4f4e6d1651e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='The length, or period, of a loan. It is usually measured in years.']/parent::*</value>
+      <webElementGuid>e4583581-6dea-4227-8233-65bf8f1d9531</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/p</value>
+      <webElementGuid>649472c6-bdfc-47f8-9089-5ce8bef485f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'lf-tooltip-text' and (text() = 'The length, or period, of a loan. It is usually measured in years. ' or . = 'The length, or period, of a loan. It is usually measured in years. ')]</value>
+      <webElementGuid>eab446de-69da-45f4-9bd9-e6c401e1dfc9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,146 @@
+{
+  "layout": {
+    "tabs": {
+      "YourSpendings": {
+        "tabLabel": "SU GASTO"
+      },
+      "CashBackRates": {
+        "tabLabel": "TASAS DE DEVOLUCIÓN DE EFECTIVO"
+      },
+      "CashBackLimits": {
+        "tabLabel": "LÍMITES DE DEVOLUCIÓN DE EFECTIVO"
+      },
+      "OneTimeSignupBonus": {
+        "tabLabel": "BONIFICACIÓN POR ÚNICA VEZ POR ADQUISICIÓN DE TARJETA"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Reembolso de efectivo"
+      ]
+    },
+    "fields": {
+      "Card_SpendingPeriod": {
+        "fieldLabel": "¿Cuánto gasta cada...",
+        "dropdownOptions": [
+          {
+            "optionText": "1 mes"
+          },
+          {
+            "optionText": "3 meses"
+          },
+          {
+            "optionText": "1 año"
+          }
+        ]
+      },
+      "Card_SpendingCategoryOneAmount": {
+        "fieldLabel": "En restaurantes"
+      },
+      "Card_SpendingCategoryTwoAmount": {
+        "fieldLabel": "En gasolina"
+      },
+      "Card_SpendingCategoryThreeAmount": {
+        "fieldLabel": "En tiendas de comestibles"
+      },
+      "Card_SpendingCategoryFourAmount": {
+        "fieldLabel": "En farmacias"
+      },
+      "Card_SpendingCategoryFiveAmount": {
+        "fieldLabel": "En todas las otras compras"
+      },
+      "Card_SpendingCategoryOneCashBackRate": {
+        "fieldLabel": "Restaurantes"
+      },
+      "Card_SpendingCategoryTwoCashBackRate": {
+        "fieldLabel": "Gasolina"
+      },
+      "Card_SpendingCategoryThreeCashBackRate": {
+        "fieldLabel": "Tiendas de comestibles"
+      },
+      "Card_SpendingCategoryFourCashBackRate": {
+        "fieldLabel": "Farmacias"
+      },
+      "Card_SpendingCategoryFiveCashBackRate": {
+        "fieldLabel": "Todas las demás compras"
+      },
+      "Card_CashBackLimitAmount": {
+        "fieldLabel": "Las tarifas son aplicables para gastos de hasta"
+      },
+      "Card_CashBackLimitPeriod": {
+        "fieldLabel": "Para cada...",
+        "dropdownOptions": [
+          {
+            "optionText": "Trimestre calendario"
+          },
+          {
+            "optionText": "Año calendario"
+          }
+        ]
+      },
+      "Card_RateAfterCashBackLimitReached": {
+        "fieldLabel": "Tasa después de que se alcanzó el límite"
+      },
+      "Card_CashBonusAmount": {
+        "fieldLabel": "Bonificación en efectivo"
+      },
+      "Card_CashBonusSpendingThreshold": {
+        "fieldLabel": "Después de que usted gasta"
+      },
+      "Card_CashBonusSpendingPeriod": {
+        "fieldLabel": "En un plazo de (cantidad de meses)"
+      }
+    },
+    "results_fields": {
+      "Card_CashBackRestaurants": {
+        "fieldLabel": "Restaurantes"
+      },
+      "Card_CashBackGas": {
+        "fieldLabel": "Gasolina"
+      },
+      "Card_CashBackGroceryStores": {
+        "fieldLabel": "Tiendas de comestibles"
+      },
+      "Card_CashBackDrugStores": {
+        "fieldLabel": "Farmacias"
+      },
+      "Card_CashBackOthers": {
+        "fieldLabel": "Todas las demás compras"
+      },
+      "Card_CashBackSignupBonus": {
+        "fieldLabel": "Bonificación por única vez por adquisición de tarjeta"
+      },
+      "Card_CashBackTotal": {
+        "fieldLabel": "Total"
+      }
+    }
+  },
+  "labels": {
+    "cashBack": "Reembolso de efectivo",
+    "title": "¿Cuánto dinero en efectivo recuperaría con una tarjeta de recompensas de efectivo?",
+    "answer": "Usted ganará <span class='lf-bold'>%amount%</span> en efectivo después de <span class='lf-bold'>%period%</span>",
+    "selectors": [
+      {
+        "label": "Cash back by category",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {},
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar la devolución de efectivo que usted puede obtener con una tarjeta de crédito que ofrece recompensas en efectivo en función de sus hábitos de gasto y los atributos de la tarjeta."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular que muestra el desglose del reembolso total de efectivo obtenido para cada categoría de gasto y el bono de registro único, si corresponde."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del reembolso total de efectivo obtenido para cada categoría de gasto y el bono de registro único, si corresponde"
+    }
+  ]
+}

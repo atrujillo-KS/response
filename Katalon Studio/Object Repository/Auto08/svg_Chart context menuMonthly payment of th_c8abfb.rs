@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_Chart context menuMonthly payment of th_c8abfb</name>
+   <tag></tag>
+   <elementGuidId>b1936794-4b58-4ad3-a984-91a6f83793ea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#highcharts-sggyezt-3 > svg.highcharts-root</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='The chart has 1 Y axis displaying values. Data ranges from 858 to 875.'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=img[name=&quot;Interactive chart&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>03ad8a5f-20d5-4250-90f6-4d16273679e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>version</name>
+      <type>Main</type>
+      <value>1.1</value>
+      <webElementGuid>d2ecc2f4-6636-45e9-8279-4ab9b686db58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>highcharts-root</value>
+      <webElementGuid>65bda6c2-f586-4ad1-b156-88d7c7b21d04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>69582dd4-8117-46fd-a093-303be9341e57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>598</value>
+      <webElementGuid>e2cf8d3b-7eea-4edd-a269-fb5834515291</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>400</value>
+      <webElementGuid>b3c6f4f5-4866-431a-984f-712c020cbe74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 598 400</value>
+      <webElementGuid>f5df2454-0d15-460a-8625-6115e291c812</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>837b3ce6-ec73-4e62-b8d7-2c787f18dab2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Interactive chart</value>
+      <webElementGuid>b6638d65-f482-458b-a470-6ab104a1ff2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Chart context menuMonthly payment of the home equity loan and the vehicle loanHome EquityVehicle01000250500750</value>
+      <webElementGuid>c35d5017-d769-434f-9921-a935306004f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;highcharts-sggyezt-3&quot;)/svg[@class=&quot;highcharts-root&quot;]</value>
+      <webElementGuid>203be6a7-b7a2-4ede-8eb4-e367d75531c4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The chart has 1 Y axis displaying values. Data ranges from 858 to 875.'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>b273b798-6e0b-477d-a913-0c6303782522</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The chart has 1 X axis displaying categories.'])[2]/following::*[name()='svg'][1]</value>
+      <webElementGuid>c932a374-c5a1-4b0a-a7a6-7d3f74b47af2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[(text() = 'Chart context menuMonthly payment of the home equity loan and the vehicle loanHome EquityVehicle01000250500750' or . = 'Chart context menuMonthly payment of the home equity loan and the vehicle loanHome EquityVehicle01000250500750')]</value>
+      <webElementGuid>117fd074-4b3d-40c4-af2d-02af550c65a1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

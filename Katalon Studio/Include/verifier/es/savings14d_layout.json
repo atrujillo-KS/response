@@ -1,0 +1,68 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "Savings_Goal": {
+        "fieldLabel": "Meta de ahorro"
+      },
+      "Global_CurrentSavings": {
+        "fieldLabel": "Depósito inicial"
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Invertido(a) durante años",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Savings_MonthsInvested": {
+        "fieldLabel": "y meses",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cuánto tengo que depositar cada mes para alcanzar mi meta de ahorro?",
+    "answer": "Usted deberá depositar <span class='lf-bold'>%result%</span> cada mes para alcanzar su meta",
+    "monthlyDeposit": "Depósito mensual"
+  },
+  "glossaryItems": {
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a determinar la cantidad que tendrá que ahorrar mensualmente para alcanzar un objetivo de ahorro. Debido a que no ingresa tasas de impuestos sobre la renta, la calculadora supone que usted ahorra con una cuenta con ventajas de impuestos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de barras del monto del depósito mensual necesario para alcanzar su objetivo de ahorro."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Monto del depósito mensual necesario para alcanzar su objetivo de ahorro"
+    }
+  ]
+}

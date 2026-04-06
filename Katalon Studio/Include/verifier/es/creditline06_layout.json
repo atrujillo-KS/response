@@ -1,0 +1,147 @@
+{
+  "layout": {
+    "tabs": {
+      "LineofCreditInfo": {
+        "tabLabel": "Información de la línea de crédito"
+      },
+      "FutureMonthlyPayments": {
+        "tabLabel": "Pagos mensuales futuros"
+      }
+    },
+    "fields": {
+      "CreditLine_AnnualFee": {
+        "fieldLabel": "Comisión anual"
+      },
+      "CreditLine_FutureMinimumMonthlyPayment": {
+        "fieldLabel": "Pago mínimo"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Cambio de tasa previsto ",
+        "dropdownOptions": [
+          {
+            "optionText": "Ninguno"
+          },
+          {
+            "optionText": "Aumentará 0.5% al año"
+          },
+          {
+            "optionText": "Disminuirá 0.5% al año"
+          }
+        ]
+      },
+      "CreditLine_PayoffGoalInMonths": {
+        "fieldLabel": "Meta de liquidación (meses)"
+      },
+      "CreditLine_FutureMonthlyPayment": {
+        "fieldLabel": "Tipo de pago",
+        "dropdownOptions": [
+          {
+            "optionText": "Cantidad fija"
+          },
+          {
+            "optionText": "% del saldo"
+          }
+        ]
+      },
+      "CreditLine_FutureFixedMonthlyPayment": {
+        "fieldLabel": "Pago mensual fijo"
+      },
+      "CreditLine_PercentagePaymentOfOutstandingBalance": {
+        "fieldLabel": "% del saldo pendiente"
+      },
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Mes",
+    "dataTableCategoryTitle2": "Pago",
+    "title": "¿Qué debo hacer para terminar de pagar mi línea de crédito?",
+    "answer": "La liquidación de la deuda tardará <span class='lf-bold'>%month% %monthlabel%</span>",
+    "answer1": "Todavía tendrá un saldo de <span class='lf-bold'>%value%</span> después de <span class='lf-bold'>%month% %monthlabel%</span>",
+    "month": "Mes",
+    "months": "Meses",
+    "balance": "Saldo",
+    "Payment": "Pago",
+    "monthsToPayoff": "Cantidad de meses en que terminará de pagar ",
+    "monthlyPayment": "Pago mensual",
+    "selectors": [
+      {
+        "label": "Liquidación",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Liquidación vs. pago",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "apr": {
+      "title": "Tasa porcentual anual (APR)",
+      "definition": "Es el costo real que usted paga para tomar un préstamo, expresado como un porcentaje anual del monto del préstamo. Esto a veces se denomina costo efectivo de tomar un préstamo. Para préstamos para automóviles y préstamos hipotecarios, los gastos de cierre de la operación y los puntos de descuento se suman para calcular la APR. Por ejemplo, si usted paga $500 en concepto de gastos de cierre de la operación para obtener un préstamo de $10,000, la APR será mayor que la tasa de interés, dado que, efectivamente, usted está tomando un préstamo de $9,500, pero adeudará $10,000. La Ley de Honestidad en los Préstamos (Truth-in-Lending Act) exige que el prestamista le informe la APR. En el caso de las tarjetas de crédito, a menudo la comisión anual no está incluida en el cálculo de la APR. Como resultado, la APR de una tarjeta de crédito habitualmente es su tasa de interés simple."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora muestra la cantidad de meses necesarios para cancelar una línea de crédito sobre el capital de una vivienda, si la deuda se cancela en el plazo deseado que usted indique, o cuál será la deuda que tendrá cuando finalice el plazo. En el caso de que la tasa de interés sea variable, la calculadora le permite ingresar una proyección."
+    },
+    {
+      "textLabel": "Puede ingresar los pagos mensuales futuros como un monto fijo o un monto variable que amortiza el saldo de la línea de crédito con base en un porcentaje fijo del saldo del préstamo pendiente."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del saldo pendiente de la línea de crédito con garantía hipotecaria durante el transcurso del período de liquidación."
+    },
+    {
+      "title": "Gráfico de columnas de los meses para liquidar la línea de crédito en varios montos de pago mensual."
+    },
+    {
+      "title": "Tabla de amortización de la línea de crédito con garantía hipotecaria."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Saldo pendiente de la línea de crédito con garantía hipotecaria durante el transcurso del período de liquidación"
+    },
+    {
+      "title": "Meses para cancelar la línea de crédito en varios montos de pago mensual"
+    }
+  ]
+}

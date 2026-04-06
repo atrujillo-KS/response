@@ -1,0 +1,156 @@
+{
+  "layout": {
+    "tabs": {
+      "AboutYou": {
+        "tabLabel": "ACERCA DE USTED"
+      },
+      "YourSpouse": {
+        "tabLabel": "SU CÓNYUGE"
+      }
+    },
+    "fields": {
+      "CurrAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "MAGI": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "UserWorkPlanRothIRA03": {
+        "fieldLabel": "¿Participa en el plan de jubilación de su trabajo?",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      },
+      "FilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "SpsAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "SpouseMAGI": {
+        "fieldLabel": "Ingreso bruto ajustado modificado "
+      },
+      "SpouseWorkPlanRothIRA03": {
+        "fieldLabel": "¿Participa en el plan de jubilación de su trabajo?",
+        "dropdownOptions": [
+          {
+            "optionText": "Si"
+          },
+          {
+            "optionText": "No"
+          }
+        ]
+      }
+    },
+    "results_fields": {
+      "IRAContYr1": {
+        "fieldLabel": "2024"
+      },
+      "IRAContYr2": {
+        "fieldLabel": "2025 (estimado)"
+      },
+      "IRAContYr3": {
+        "fieldLabel": "2026 (estimado)"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Cuenta IRA tradicional",
+        "IRA Roth"
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Año",
+    "title": "¿Cuánto puedo contribuir a una cuenta IRA?",
+    "answer": "En %year%, usted puede contribuir hasta un máximo de <span class='lf-bold'>%traditional%</span> (IRA tradicional) o <span class='lf-bold'>%roth%</span> (IRA Roth)",
+    "TraditionalIRA": "Cuenta IRA tradicional",
+    "rothIRA": "IRA Roth",
+    "contributionLimit": "límit de contribución",
+    "selectors": [
+      {
+        "label": "Contribution limits",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "regularira": {
+      "title": "Cuenta IRA regular",
+      "definition": "Una cuenta IRA regular también se llama IRA tradicional. Es una cuenta de jubilación con impuestos diferidos. En 2025, usted tiene permitido hacer una contribución con impuestos diferidos de $7,000 a una cuenta IRA regular. Esta cuenta crece con impuestos diferidos hasta que usted comience a tomar las distribuciones, lo que puede hacer sin penalización después de alcanzar la edad de 59 años y medio. Para las personas de 50 años o más, existe una disposición especial de la Ley tributaria de 2001 para ponerse al día que le permite contribuir $1,000 adicionales o un total de $8,000."
+    },
+    "nondeductibleira": {
+      "title": "Cuenta IRA no deducible",
+      "definition": "Una cuenta de jubilación individual cuyas contribuciones están parcial o completamente financiadas con contribuciones que no son deducibles de impuestos. Usted puede contribuir hasta $7,000 o $8,000 (según la edad, límites de ingresos y participación en un plan de jubilación patrocinado por el empleador) en 2025. Una cuenta IRA no deducible se beneficia de un crecimiento compuesto con impuestos diferidos."
+    },
+    "taxdeductible": {
+      "title": "Deducibles de impuestos",
+      "definition": "Un artículo o gasto restado de los ingresos brutos ajustados para reducir el importe de los ingresos sujetos a impuestos."
+    },
+    "rothira": {
+      "title": "IRA Roth",
+      "definition": "Una cuenta de jubilación con ventajas de impuestos que le permite hacer una contribución después de impuestos de hasta $7,000 para 2025, o hasta $8,000 si tiene 50 años o más. Si usted mantiene una IRA Roth durante al menos cinco años y tiene al menos 59 años y medio de edad cuando comienza a hacer retiros de la cuenta, la cuenta entera puede ser distribuida sin pagar impuestos ni penalidades."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "deductibleira": {
+      "title": "IRA deducible",
+      "definition": "Una cuenta IRA deducible es una cuenta de jubilación individual financiada con aportaciones deducibles de impuestos. En 2025, usted puede aportar hasta $7,000 o $8,000 (dependiendo de su edad, sus ingresos y su participación en un plan de jubilación patrocinado por el empleador)."
+    },
+    "rmd": {
+      "title": "Distribución mínima requerida (RMD)",
+      "definition": "Las distribuciones mínimas requeridas son la cantidad mínima que usted debe retirar en un año de una cuenta IRA regular. Las distribuciones mínimas requeridas se llaman RMD y MRD. Es obligatorio que usted comience a recibir las RMD de una cuenta IRA regular en el año que cumpla 73 años y medio. Las cuentas IRA Roth no tienen distribuciones mínimas requeridas. Las cantidades para las distribuciones mínimas requeridas se basan en su edad, saldo de la cuenta IRA y expectativa de vida. Para calcular una RMD, divida su saldo de cuenta IRA de final de año (ajustado para ciertas aportaciones y distribuciones) entre el divisor correspondiente de la Tabla III: Uniform Lifetime Table [Tabla uniforme de expectativas de vida], que se encuentra en el Apéndice C de la publicación 590-B del IRS."
+    },
+    "increasediracontributions": {
+      "title": "Mayores contribuciones a cuentas de jubilación individuales",
+      "definition": "La Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 autoriza límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas. Para las cuentas IRA regulares e IRA Roth, el límite anual es de $7,000 en 2025. La disposición de aportaciones adicionales de la nueva ley autoriza límites aun mayores para los trabajadores de 50 años o más. Para estos inversionistas, el límite anual combinado es de $8,000 en 2025. Los empleados que participan en un plan 401(k) ahora pueden abrir una cuenta 401(k) regular o una cuenta 401(k) Roth dentro de la cuenta del plan."
+    },
+    "catchupprovisioniras": {
+      "title": "Un suministro de recuperacion compensatoria para contribuciones a una cuenta individual jubilatoria",
+      "definition": "La Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 autorizó límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas. La disposición de aportaciones adicionales de la nueva ley autorizó límites aun mayores para los trabajadores de 50 años o más. Para las cuentas IRA regulares y Roth, el monto de la aportación adicional es de $1,000 para 2025. Como resultado, los límites de aportación anual combinados para personas de 50 años o más aumentan a $8,000 para 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el máximo deducible de impuestos o contribuciones permitidas para las <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">cuentas IRA tradicionales</a></span> o <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">IRA Roth</a></span>. Tenga en cuenta que los límites máximos de contribución que se muestran para cada plan solo son aplicables si usted contribuye a solo uno de los planes. Por ejemplo, una contribución a un plan con una cuenta IRA tradicional reduce el máximo que a usted se le permite contribuir a una cuenta IRA Roth."
+    },
+    {
+      "textLabel": "El monto que tiene permitido contribuir a una cuenta IRA depende de su estado civil para la declaración de impuestos, el ingreso bruto ajustado modificado (<span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#MAGI\">MAGI</a></span>) y si usted (o su cónyuge) participa en un plan de jubilación patrocinado por el empleador como un plan 401(k) o 403(b)."
+    },
+    {
+      "textLabel": "En ingresos más altos, su contribución deducible de impuestos a una cuenta IRA regular se elimina por fases. De manera similar, las contribuciones permitidas a una cuenta IRA Roth se eliminan por fases en ingresos más altos."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara los límites máximos de contribución para una IRA tradicional y una IRA Roth para el año actual."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Límites máximos de contribución para una IRA tradicional y una IRA Roth para el año actual"
+    }
+  ]
+}

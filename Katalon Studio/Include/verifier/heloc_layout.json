@@ -1,0 +1,863 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "CommonLoan",
+        "PNC",
+        "OtherLoan",
+        "hidden"
+      ],
+      "CommonLoan": {
+        "tabLabel": "GENERAL INFO",
+        "fields": [
+          "ZipCode",
+          "CreditLine_CashNeededFromEquity",
+          "CreditLine_InitialDrawAmount",
+          "Global_PropertyUse",
+          "Global_OutstandingMortgagePrincipal",
+          "Global_HomeAppraisedValue"
+        ]
+      },
+      "PNC": {
+        "tabLabel": "PNC LINE OF CREDIT",
+        "fields": [
+          "PNC_LOCInterestRate",
+          "PNC_LOCAnnualFee",
+          "PNC_LOCTypeOfPayments",
+          "PNC_LOC_HasIntroductoryRate",
+          "PNC_LOC_IntroductoryRate",
+          "PNC_LOC_IntroductoryTerm"
+        ]
+      },
+      "OtherLoan": {
+        "tabLabel": "OTHER LOAN",
+        "fields": [
+          "CreditLine_LoanType",
+          "CreditLine_HasIntroductoryRate",
+          "CreditLine_IntroductoryRate",
+          "CreditLine_IntroductoryTerm",
+          "CreditLine_RegularInterestRate",
+          "CreditLine_AnnualFee",
+          "CreditLine_DrawPeriod",
+          "CreditLine_RepaymentPeriod",
+          "Global_HomeEquityLoanInterestRate",
+          "CreditLine_MonthsToPayOff",
+          "CreditLine_ClosingCosts"
+        ]
+      },
+      "hidden": {
+        "tabLabel": "Hidden",
+        "fields": [
+          "PNC_LOCInitialPeriod",
+          "PNC_LOCRepaymentPeriod",
+          "CreditLine_PercentageOfBalancePayment",
+          "CreditLine_MinimumPayment"
+        ]
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "PNC Line of Credit",
+        "Other Loan"
+      ],
+      "fields": [
+        [
+          "CreditLine_TotalPrincipalPaidNoTeaserRate",
+          "CreditLine_TotalPrincipalPaidOtherLoan"
+        ],
+        [
+          "CreditLine_TotalInterestPaidNoTeaserRate",
+          "CreditLine_TotalInterestPaidOtherLoan"
+        ],
+        [
+          "CreditLine_TotalFeesPaidNoTeaserRate",
+          "CreditLine_TotalFeesPaidOtherLoan"
+        ],
+        [
+          "CreditLine_TotalCostNoTeaserRate",
+          "CreditLine_TotalCostOtherLoan"
+        ],
+        [
+          "CreditLine_3YearCostNoTeaserRate",
+          "CreditLine_3YearCostOtherLoan"
+        ],
+        [
+          "CreditLine_5YearCostNoTeaserRate",
+          "CreditLine_5YearCostOtherLoan"
+        ],
+        [
+          "CreditLine_10YearCostNoTeaserRate",
+          "CreditLine_10YearCostOtherLoan"
+        ],
+        [
+          "CreditLine_AverageMonthlyPaymentNoTeaserRate",
+          "CreditLine_AverageMonthlyPaymentOtherLoan"
+        ],
+        [
+          "CreditLine_EffectiveInterestRateNoTeaserRate",
+          "CreditLine_EffectiveInterestRateOtherLoan"
+        ]
+      ]
+    },
+    "results_fields": {
+      "CreditLine_TotalPrincipalPaidNoTeaserRate": {
+        "fieldLabel": "Total principal paid"
+      },
+      "CreditLine_TotalPrincipalPaidOtherLoan": {
+        "fieldLabel": "Total principal paid"
+      },
+      "CreditLine_TotalInterestPaidNoTeaserRate": {
+        "fieldLabel": "Total interest paid"
+      },
+      "CreditLine_TotalInterestPaidOtherLoan": {
+        "fieldLabel": "Total interest paid"
+      },
+      "CreditLine_TotalFeesPaidNoTeaserRate": {
+        "fieldLabel": "Total fees and closing costs paid"
+      },
+      "CreditLine_TotalFeesPaidOtherLoan": {
+        "fieldLabel": "Total fees and closing costs paid"
+      },
+      "CreditLine_TotalCostNoTeaserRate": {
+        "fieldLabel": "Total cost"
+      },
+      "CreditLine_TotalCostOtherLoan": {
+        "fieldLabel": "Total cost"
+      },
+      "CreditLine_3YearCostNoTeaserRate": {
+        "fieldLabel": "Cost after 3 years"
+      },
+      "CreditLine_5YearCostNoTeaserRate": {
+        "fieldLabel": "Cost after 5 years"
+      },
+      "CreditLine_10YearCostNoTeaserRate": {
+        "fieldLabel": "Cost after 10 years"
+      },
+      "CreditLine_3YearCostOtherLoan": {
+        "fieldLabel": "Cost after 3 years"
+      },
+      "CreditLine_5YearCostOtherLoan": {
+        "fieldLabel": "Cost after 5 years"
+      },
+      "CreditLine_10YearCostOtherLoan": {
+        "fieldLabel": "Cost after 10 years"
+      },
+      "CreditLine_AverageMonthlyPaymentNoTeaserRate": {
+        "fieldLabel": "Average payment"
+      },
+      "CreditLine_AverageMonthlyPaymentOtherLoan": {
+        "fieldLabel": "Average payment"
+      },
+      "CreditLine_EffectiveInterestRateNoTeaserRate": {
+        "fieldLabel": "Effective interest rate",
+        "precision": 2
+      },
+      "CreditLine_EffectiveInterestRateOtherLoan": {
+        "fieldLabel": "Effective interest rate"
+      }
+    },
+    "fields": {
+      "CreditLine_ClosingCosts": {
+        "fieldLabel": "Closing costs/one-time fees",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100",
+        "value": "100",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOC_IntroductoryTerm": {
+        "fieldLabel": "Introductory term",
+        "smallLabel": "(in months)",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "9",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOC_IntroductoryRate": {
+        "fieldLabel": "Introductory rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOC_HasIntroductoryRate": {
+        "fieldLabel": "Has introductory rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Value of home",
+        "smallLabel": "",
+        "glossaryTerm": "appraisalvalue",
+        "format": "currency",
+        "defaultValue": "250000",
+        "value": "250000",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "maxlength": "11",
+        "sliderMinVal": "10000",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_MinimumPayment": {
+        "fieldLabel": "Minimum payment",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "25",
+        "value": "25",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_PercentageOfBalancePayment": {
+        "fieldLabel": "Payment",
+        "smallLabel": "(percentage of balance)",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "1.00",
+        "value": "1.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOCTypeOfPayments": {
+        "fieldLabel": "Type of payments",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Principal and interest",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Interest only",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_PropertyUse": {
+        "fieldLabel": "Home use",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Primary residence",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Secong home",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_OutstandingMortgagePrincipal": {
+        "fieldLabel": "Amount owed on home",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "150000",
+        "value": "150000",
+        "minimumValue": "10000",
+        "maximumValue": "1000000000",
+        "maxlength": "11",
+        "sliderMinVal": "10000",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_InitialDrawAmount": {
+        "fieldLabel": "Initial draw amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50000",
+        "value": "50000",
+        "minimumValue": "10000",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "sliderMinVal": "10000",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "ZipCode": {
+        "fieldLabel": "ZIP Code",
+        "format": "number",
+        "maxlength": "5",
+        "inputTypeChar": true,
+        "inputType": "text",
+        "defaultValue": "",
+        "value": "",
+        "errorMessage": "Please enter a valid 5 digit Zip Code."
+      },
+      "PNC_LOCInitialPeriod": {
+        "fieldLabel": "Initial period",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "120",
+        "value": "120",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "9",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOCRepaymentPeriod": {
+        "fieldLabel": "Repayment period",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "240",
+        "value": "240",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "9",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_CashNeededFromEquity": {
+        "fieldLabel": "Total line amount",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "100000",
+        "value": "100000",
+        "minimumValue": "10000",
+        "maximumValue": "1000000",
+        "maxlength": "9",
+        "sliderMinVal": "10000",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOCInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "4.20",
+        "value": "4.20",
+        "minimumValue": "0.000",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "50.00",
+        "widgetStep": "0.10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "PNC_LOCAnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_HasIntroductoryRate": {
+        "fieldLabel": "Has introductory rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Yes",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "No",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_LoanType": {
+        "fieldLabel": "Loan type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Line of credit",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Interest only line of credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Term loan",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Credit card",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_IntroductoryRate": {
+        "fieldLabel": "Introductory rate",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "3.50",
+        "value": "8.000",
+        "minimumValue": "0.00",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_IntroductoryTerm": {
+        "fieldLabel": "Introductory term",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_RegularInterestRate": {
+        "fieldLabel": "Regular interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "6.00",
+        "value": "6.00",
+        "minimumValue": "0.00",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.000",
+        "sliderMaxVal": "10.000",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_AnnualFee": {
+        "fieldLabel": "Annual fee",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "50",
+        "value": "50",
+        "minimumValue": "0",
+        "maximumValue": "10000",
+        "maxlength": "6",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000",
+        "widgetStep": "10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_DrawPeriod": {
+        "fieldLabel": "Draw period",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "120",
+        "value": "120",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_RepaymentPeriod": {
+        "fieldLabel": "Repayment period",
+        "smallLabel": "(in months)",
+        "valueTextLabel": "months",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "240",
+        "value": "240",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_HomeEquityLoanInterestRate": {
+        "fieldLabel": "Interest rate",
+        "smallLabel": "",
+        "glossaryTerm": "interestrate",
+        "format": "percent",
+        "defaultValue": "6.00",
+        "value": "6.00",
+        "minimumValue": "0.000",
+        "maximumValue": "50",
+        "maxlength": "5",
+        "precision": 2,
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "10.00",
+        "widgetStep": ".10",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "CreditLine_MonthsToPayOff": {
+        "fieldLabel": "Term",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "number",
+        "defaultValue": "240",
+        "value": "240",
+        "minimumValue": "1",
+        "maximumValue": "480",
+        "maxlength": "3",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "480",
+        "widgetStep": "12",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    }
+  },
+  "labels": {
+    "PNC_PI": "Amortization Schedule (PNC Line of Credit - Principal & Interest)",
+    "PNC_I": "Amortization Schedule (PNC Line of Credit - Interest Only)",
+    "OTHER_PI": "Amortization Schedule (Other Loan - Principal & Interest LOC)",
+    "OTHER_I": "Amortization Schedule (Other Loan - Interest Only LOC)",
+    "OTHER_TERM": "Amortization Schedule (Other Loan - Term Loan)",
+    "OTHER_CREDIT_CARD": "Amortization Schedule (Other Loan - Credit Card)",
+    "selectors": [
+      {
+        "label": "Total Cost",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Amortization Schedule (PNC Line of Credit)",
+            "label": "PNC Line of Credit"
+          },
+          {
+            "index": "1",
+            "title": "Amortization Schedule (Other Loan)",
+            "label": "Other Loan"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Month",
+        "Interest Rate",
+        "Starting Balance",
+        "Monthly Payment",
+        "Principal Paid",
+        "Fees Paid",
+        "Interest Paid",
+        "Cumulative Interest",
+        "Balance"
+      ],
+      [
+        "Month",
+        "Interest Rate",
+        "Starting Balance",
+        "Monthly Payment",
+        "Principal Paid",
+        "Fees Paid",
+        "Interest Paid",
+        "Cumulative Interest",
+        "Balance"
+      ]
+    ],
+    "title": "What is my estimated payment and rate on a home equity line of credit?",
+    "answer": "The PNC line of credit will save you <span class='lf-bold'>%result1%</span> overall, <span class='lf-bold'>%result3%</span> after 5 years, and <span class='lf-bold'>%result4%</span> monthly on average.",
+    "fees": "Fees",
+    "interest": "Interest",
+    "principal": "Principal",
+    "categories": [
+      "PNC Line of Credit",
+      "Other Loan"
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Appraisal value",
+      "definition": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  "help": [],
+  "chartTitles": [
+    {
+      "title": "Stacked column chart comparing the total cost of the PNC line of credit with the other loan."
+    },
+    {
+      "title": "Amortization table for the adjustable rate loan."
+    },
+    {
+      "title": "Amortization table for the adjustable rate loan."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total cost of the PNC line of credit with the other loan"
+    }
+  ]
+}

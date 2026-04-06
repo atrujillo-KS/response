@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>caption_Average cost per year of the new ve_56ea73</name>
+   <tag></tag>
+   <elementGuidId>c8e2d491-b8d9-4b7d-86aa-93fdd232c8cb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>caption.highcharts-table-caption</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='highcharts-data-table-0']/caption</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>caption</value>
+      <webElementGuid>ef764dc9-1da6-4b7c-a5e2-4c2a4e56f44c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>highcharts-table-caption</value>
+      <webElementGuid>8fe2c930-29c9-4a7e-a653-4b40f32c932d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Average cost per year of the new vehicle and the used vehicle</value>
+      <webElementGuid>233e7f2a-b449-4491-99fc-f33077a47cfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;highcharts-data-table-0&quot;)/caption[@class=&quot;highcharts-table-caption&quot;]</value>
+      <webElementGuid>7165fb87-7523-460a-8367-baf9567b5703</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='highcharts-data-table-0']/caption</value>
+      <webElementGuid>5eb62e16-ed34-4922-975e-85f8ce2953ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End of interactive chart.'])[1]/following::caption[1]</value>
+      <webElementGuid>7f89eac5-bda3-4816-9d22-31e00d76cc9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$3,193'])[2]/following::caption[1]</value>
+      <webElementGuid>f1bf2205-a181-447c-bd93-a72bc815bb2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/preceding::caption[1]</value>
+      <webElementGuid>45792fa7-4006-42c9-a26e-3e143c2b51bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New'])[3]/preceding::caption[1]</value>
+      <webElementGuid>da78b79b-4da7-4e3f-b0fc-74ef100444b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/table/caption</value>
+      <webElementGuid>4f6886a5-ffee-49e8-acac-d5cfa66c3bff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//caption[(text() = 'Average cost per year of the new vehicle and the used vehicle' or . = 'Average cost per year of the new vehicle and the used vehicle')]</value>
+      <webElementGuid>5e82565a-a606-40d2-8ca5-8140f3a2b429</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

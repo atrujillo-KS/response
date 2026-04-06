@@ -1,0 +1,137 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_CashRebate": {
+        "fieldLabel": "Reembolso de efectivo"
+      },
+      "Auto_TradeInValue": {
+        "fieldLabel": "Valor de recompra"
+      },
+      "Auto_OutstandingLoanAmount": {
+        "fieldLabel": "Cantidad adeudada en la negociación "
+      }
+    },
+    "results_fields": {
+      "PrincipalAuto05": {
+        "fieldLabel": "Importe del préstamo"
+      },
+      "Auto_TotalInterestPaid": {
+        "fieldLabel": "Interés total pagado"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategoryTitle": "Año",
+    "dataTableCategoryTitle2": "Plazo del préstamo (meses)",
+    "title": "¿De cuánto serán los pagos de mi vehículo?",
+    "answer": "Pago mensual: <span class='lf-bold'>%result%</span>",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "year": "Año:",
+    "payment": "Pago",
+    "loanTermMonths": "Plazo del préstamo (meses)",
+    "selectors": [
+      {
+        "index": 1,
+        "label": "En el tiempo ",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "index": 2,
+        "label": "Varios términos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ],
+    "xAxisLabelForChartOptions1": "Año"
+  },
+  "glossaryItems": {
+    "tradeinvalue": {
+      "title": "Valor como parte de pago",
+      "definition": "Precio que usted puede esperar que le ofrezcan por su automóvil usado si lo entrega al concesionario como parte del pago para comprar un vehículo nuevo."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    },
+    "cashrebate": {
+      "title": "Reembolso de efectivo",
+      "definition": "Oferta a los consumidores, que se hace como incentivo para la compra, que reduce el precio de compra de un bien en una cantidad equivalente al monto del reembolso en efectivo."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El volumen de su pago mensual depende del monto del préstamo, el plazo del préstamo y la tasa de interés. El monto del préstamo es igual al precio de compra del vehículo menos el pago inicial, el reembolso (si corresponde), y el valor neto como parte de pago. El valor neto como parte de pago es igual al valor del vehículo como parte de pago menos el monto adeudado sobre el vehículo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas apiladas de los montos aplicados al principal y al interés en diferentes intervalos durante el transcurso del plazo del préstamo."
+    },
+    {
+      "title": "Gráfico de columnas apiladas que muestra cómo disminuye el pago mensual a medida que aumenta el plazo del préstamo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Importes aplicados al principal y los intereses en diferentes intervalos durante el transcurso del plazo del préstamo"
+    },
+    {
+      "title": "Muestra cómo disminuye el pago mensual a medida que aumenta el plazo del préstamo"
+    },
+    {
+      "title": "Tabla de amortización del préstamo"
+    }
+  ]
+}

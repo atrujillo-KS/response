@@ -1,0 +1,895 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which is better: flight card or low rate card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine which is the better deal: a credit card that earns flight mileage or a regular credit card. Frequent-flier reward cards allow you to accumulate miles when you make purchases. Often, the reward card comes with a higher annual fee than an ordinary credit card and may have a higher interest rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The low rate card will cost you $184 less over a 3 year period."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Flight card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Low rate card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalCost_result_label",
+      "value": "Total net cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalCost_result_value",
+      "value": "$13,230"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalCost_result_value",
+      "value": "$13,046"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalInterestAndFees_result_label",
+      "value": "Interest and fees paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalInterestAndFees_result_value",
+      "value": "$1,030"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalInterestAndFees_result_value",
+      "value": "$846"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightMilesEarned_result_label",
+      "value": "Flight miles earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightMilesEarned_result_value",
+      "value": "17,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateMilesEarned_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTicketsEarned_result_label",
+      "value": "Number of tickets earned"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTicketsEarned_result_value",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTicketsEarned_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalTicketValue_result_label",
+      "value": "Value of tickets"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalTicketValue_result_value",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalTicketValue_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FlightCard-accordion",
+      "value": "Flight Card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardIntroductoryInterestRate-label",
+      "value": "Introductory interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardIntroductoryInterestRate",
+      "value": "4.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardIntroductoryInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory interest rate'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory interest rate'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Introductory rate'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardIntroductoryTerm-label",
+      "value": "Introductory term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardIntroductoryTerm",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardIntroAnnualFee-label",
+      "value": "Introductory annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardIntroAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardIntroAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardInterestRate",
+      "value": "10.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardAnnualFee-label",
+      "value": "Regular annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "FlightRewards-accordion",
+      "value": "Flight Rewards"
+    }
+  },
+  {
+    "click": {
+      "id": "FlightRewards-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMilesEarnedPerDollarSpent-label",
+      "value": "Miles earned per dollar spent"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardMilesEarnedPerDollarSpent",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMilesEarnedForApplying-label",
+      "value": "Miles earned for applying"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardMilesEarnedForApplying",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMilesEarnedForApplying-error-message",
+      "value": "Must be between 0 and 100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMaximumMilesEarnedYearly-label",
+      "value": "Maximum miles earned yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardMaximumMilesEarnedYearly",
+      "value": "60,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMilesRequiredForFreeTicket-label",
+      "value": "Miles required for free ticket"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardMilesRequiredForFreeTicket",
+      "value": "25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardMilesRequiredForFreeTicket-error-message",
+      "value": "Must be between 1 and 100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardRegularCostOfTicket-label",
+      "value": "Regular cost of ticket"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FlightCardRegularCostOfTicket",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightCardRegularCostOfTicket-error-message",
+      "value": "Must be between $1 and $10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "LowRateCard-accordion",
+      "value": "Low Rate Card"
+    }
+  },
+  {
+    "click": {
+      "id": "LowRateCard-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate-label",
+      "value": "Introductory interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate",
+      "value": "2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Card_FeeCardIntroductoryInterestRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Card_FeeCardIntroductoryInterestRate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The discounted interest rate, sometimes called the teaser rate, you receive during an introductory period of using a new credit card."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryTerm-label",
+      "value": "Introductory term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryTerm",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryTerm-error-message",
+      "value": "Must be between 0 and 120"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[2]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='(months)'])[2]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Introductory period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of an introductory or \"teaser\"; interest rate on a credit card, often lasting three to six months."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee-label",
+      "value": "Introductory annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardInterestRate-label",
+      "value": "Regular interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardInterestRate",
+      "value": "9.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardAnnualFee-label",
+      "value": "Regular annual fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_FeeCardAnnualFee",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FeeCardAnnualFee-error-message",
+      "value": "Must be between $0 and $1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CardActivity-accordion",
+      "value": "Card Activity"
+    }
+  },
+  {
+    "click": {
+      "id": "CardActivity-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-label",
+      "value": "Card balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TotalCardDebt-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsCardToBeUsed-label",
+      "value": "Years you'll use card"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_YearsCardToBeUsed",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_YearsCardToBeUsed-error-message",
+      "value": "Must be between 1 and 30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-label",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly charges'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly charges'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly charges"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The net amount you charge on your credit card on a monthly basis, deducting any returns that are credited to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-label",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_MonthlyPayment-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly payments'])[1]/following::div[1]",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Future monthly payments'])[1]/following::div[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Future monthly payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you intend to pay on your credit card balance on a monthly basis. If your payments are less than the interest expense for the period, unpaid interest is added to your card balance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "FlightCard-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardIntroductoryInterestRate",
+      "value": "5.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardIntroductoryTerm",
+      "value": "6"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardIntroAnnualFee",
+      "value": "40"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardInterestRate",
+      "value": "12.89"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardAnnualFee",
+      "value": "65"
+    }
+  },
+  {
+    "click": {
+      "id": "FlightRewards-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardMilesEarnedPerDollarSpent",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardMilesEarnedForApplying",
+      "value": "20,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardMaximumMilesEarnedYearly",
+      "value": "70,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardMilesRequiredForFreeTicket",
+      "value": "30,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FlightCardRegularCostOfTicket",
+      "value": "400"
+    }
+  },
+  {
+    "click": {
+      "id": "LowRateCard-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryInterestRate",
+      "value": "3.78"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryTerm",
+      "value": "13"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardIntroductoryAnnualFee",
+      "value": "80"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardInterestRate",
+      "value": "13.89"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_FeeCardAnnualFee",
+      "value": "80"
+    }
+  },
+  {
+    "click": {
+      "id": "CardActivity-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_TotalCardDebt",
+      "value": "2,300"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_YearsCardToBeUsed",
+      "value": "4"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Card_MonthlyPayment",
+      "value": "600"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The flight card will cost you $3,985 less over a 4 year period."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalCost_result_value",
+      "value": "$22,819"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalCost_result_value",
+      "value": "$26,804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalInterestAndFees_result_value",
+      "value": "$519"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalInterestAndFees_result_value",
+      "value": "$504"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightMilesEarned_result_value",
+      "value": "300,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateMilesEarned_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTicketsEarned_result_value",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTicketsEarned_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_FlightTotalTicketValue_result_value",
+      "value": "$4,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Card_LowRateTotalTicketValue_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

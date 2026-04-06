@@ -1,0 +1,277 @@
+{
+  "layout": {
+    "tabs": {
+      "SharedLoanInfo": {
+        "tabLabel": "INFORMACIÓN DEL PRÉSTAMO COMPARTIDA"
+      },
+      "Loan": {
+        "tabLabel": "PRÉSTAMO"
+      },
+      "LineofCredit": {
+        "tabLabel": "LÍNEA DE CRÉDITO"
+      },
+      "Assumptions ": {
+        "tabLabel": "PRESUNCIONES"
+      }
+    },
+    "fields": {
+      "Business_CreditNeeded": {
+        "fieldLabel": "El dinero que necesita"
+      },
+      "Business_LoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)"
+      },
+      "Business_ClosingCosts": {
+        "fieldLabel": "Costos de cierre"
+      },
+      "Business_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_InterestRateType": {
+        "fieldLabel": "Tasa de interés es",
+        "dropdownOptions": [
+          {
+            "optionText": "Fijo"
+          },
+          {
+            "optionText": "Variable"
+          }
+        ]
+      },
+      "Business_LoanAnnualFee": {
+        "fieldLabel": "Cargo annual"
+      },
+      "Business_LOCInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Business_LOCInterestRateType": {
+        "fieldLabel": "Tasa de interés es",
+        "dropdownOptions": [
+          {
+            "optionText": "Fijo"
+          },
+          {
+            "optionText": "Variable"
+          }
+        ]
+      },
+      "Business_LOCAnnualFee": {
+        "fieldLabel": "Cargo annual"
+      },
+      "Business_FederalTaxRate": {
+        "fieldLabel": "Tasa de impuestos federales"
+      },
+      "Business_StateTaxRate": {
+        "fieldLabel": "Tasa de impuestos estatales"
+      },
+      "Business_SavingsRate": {
+        "fieldLabel": "Ahorros con la tasa de interés"
+      },
+      "Global_InterestRateChangePrediction": {
+        "fieldLabel": "Cambio previsto en la tasa de interés variable",
+        "dropdownOptions": [
+          {
+            "optionText": "Sin cambios"
+          },
+          {
+            "optionText": "Aumento"
+          },
+          {
+            "optionText": "Disminución"
+          }
+        ]
+      },
+      "Global_InterestRateChangePredictionAmount": {
+        "fieldLabel": "Cambio en la tasa que usted prevé"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Préstamo",
+        "Línea de crédito"
+      ]
+    },
+    "results_fields": {
+      "TotalPmts1Business05": {
+        "fieldLabel": "Total de pagoss"
+      },
+      "TotalPmts2Business05": {
+        "fieldLabel": "Total de pagoss"
+      },
+      "TaxSavings1Business05": {
+        "fieldLabel": "- Ahorros de impuestos"
+      },
+      "TaxSavings2Business05": {
+        "fieldLabel": "- Ahorros de impuestos"
+      },
+      "NetPaid1Business05": {
+        "fieldLabel": "Monto neto pagado"
+      },
+      "NetPaid2Business05": {
+        "fieldLabel": "Monto neto pagado"
+      },
+      "NPVLoan": {
+        "fieldLabel": "Costo total en dólares actuales"
+      },
+      "NPVLOC": {
+        "fieldLabel": "Costo total en dólares actuales"
+      },
+      "TotalInterest1Business05": {
+        "fieldLabel": "Total de intereses pagados"
+      },
+      "TotalInterest2Business05": {
+        "fieldLabel": "Total de intereses pagados"
+      },
+      "TotalFees1": {
+        "fieldLabel": "Total de cargos pagados"
+      },
+      "TotalFees2": {
+        "fieldLabel": "Total de cargos pagados"
+      },
+      "MonthlyPmt1Business05": {
+        "fieldLabel": "Pago mensual inicial"
+      },
+      "MonthlyPmt2Business05": {
+        "fieldLabel": "Pago mensual inicial"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Costo total",
+    "dataTableCategory2": "Pago mensual",
+    "title": "¿Debería obtener un préstamo o una línea de crédito?",
+    "answer": "El préstamo le costará, en dólares actuales, <span class='lf-bold'>$%amount% %which%</span> la línea de crédito",
+    "morethan": "más que",
+    "lessthan": "menos que",
+    "sameas": "lo mismo que",
+    "loan": "Préstamo",
+    "LineofCredit": "Línea de crédito",
+    "selectors": [
+      {
+        "label": "Costo total",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Pagos",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Cronograma de pagos netos: préstamo",
+            "label": "Préstamo"
+          },
+          {
+            "index": "1",
+            "title": "Cronograma de pagos netos: línea de crédito",
+            "label": "Línea de crédito"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Saldo",
+        "Tasa de interés",
+        "Intereses",
+        "Ahorros de impuestos",
+        "Pago neto"
+      ],
+      [
+        "Mes",
+        "Tasa de interés",
+        "Monto que pagó",
+        "Cargos",
+        "Ahorros de impuestos",
+        "Pago neto"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "costofcapital": {
+      "title": "Costo del capital",
+      "definition": "El costo promedio ponderado del financiamiento de deudas y activos netos, o la tasa de rendimiento requerida que una empresa espera obtener sobre sus inversiones. El costo del capital se utiliza para descontar flujos de efectivo futuros al valor actual."
+    },
+    "principal": {
+      "title": "Capital",
+      "definition": "También se denomina saldo del préstamo y es el monto adeudado de un préstamo."
+    },
+    "loanterm": {
+      "title": "Plazo del préstamo.",
+      "definition": "Duración o el período de un préstamo. Habitualmente se mide en años."
+    },
+    "lineofcredit": {
+      "title": "Línea de crédito",
+      "definition": "Una forma de crédito renovable mediante el cual el prestatario solo puede retirar el monto que necesita, hasta el monto del límite de crédito. El prestatario solo paga intereses sobre el monto retirado, o desembolsado."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxsavings": {
+      "title": "Ahorros por impuestos",
+      "definition": "La cantidad que puede ahorrar en impuestos de una deducción de impuestos o un crédito tributario."
+    },
+    "amortized": {
+      "title": "Amortización",
+      "definition": "La reducción gradual del capital de un préstamo que tiene lugar a medida que usted hace los pagos periódicos del préstamo."
+    },
+    "presentvalue": {
+      "title": "Valor actual",
+      "definition": "El valor de un pago futuro o una serie de pagos futuros con descuento a la tasa de interés correspondiente para determinar el valor en dólares actuales."
+    },
+    "futureinterestrates": {
+      "title": "Tasas de interés futuras",
+      "definition": "La tasa de interés futura es su proyección de cuál será la magnitud del cambio en la tasa de interés utilizada para establecer el precio de su préstamo. Se supone que las tasas futuras cambian conforme a la misma tasa todos los años."
+    },
+    "disbursment": {
+      "title": "Desembolso",
+      "definition": "El proceso de proporcionar fondos al prestatario. Una línea de crédito que se desembolsa completamente es aquella en la que el prestatario ha tomado prestado todo el dinero que está autorizado a pedir."
+    },
+    "cashflows": {
+      "title": "Flujos de efectivo",
+      "definition": "El flujo de ingresos o gastos que cambia una cuenta de efectivo para usted o su empresa. El flujo de efectivo es fundamental para la supervivencia de una entidad. Tener una buena cantidad de efectivo a mano asegurará el pago puntual a los acreedores, los empleados y otras personas."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta le ayuda a evaluar cuál es la mejor fuente de financiamiento: un préstamo o una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#LineOfCredit\"> línea de crédito</a></span> <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Amortized\">amortizables</a></span>."
+    },
+    {
+      "textLabel": "El préstamo amortizable se <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Disbursment\">desembolsará</a></span> completamente cuando usted cierre el préstamo. Es un producto ideal para financiamiento si prefiere la disciplina y el concepto de pagos consistentes y regulares para cumplir con sus obligaciones de deuda. Además, a menudo tiene la capacidad de congelar una tasa de interés. Sin embargo, los pagos de <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Principal\">capital</a></span> e intereses pueden no coincidir con los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#CashFlows\">flujos de efectivo</a></span> de su empresa. Otro punto que debe considerar es que podría tener la necesidad de obtener otro préstamo si requiere fondos adicionales. Otro préstamo puede requerir otro proceso de aprobación y cargos adicionales de préstamos."
+    },
+    {
+      "textLabel": "Una línea de crédito es una forma de crédito renovable que le proporciona la flexibilidad de poder hacer retiros de la línea de crédito si paga el saldo. También puede hacer pagos de solo intereses sobre la línea de crédito para igualar los flujos de efectivo de su empresa."
+    },
+    {
+      "textLabel": "Esta herramienta supone pagos mensuales mínimos durante el transcurso del préstamo y la línea de crédito, respectivamente."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el costo total, en dólares de hoy, del préstamo y la línea de crédito."
+    },
+    {
+      "title": "Gráfico de columnas que compara el pago mensual del Préstamo 1 y el Préstamo 2."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Costo total, en dólares de hoy, del préstamo y la línea de crédito"
+    },
+    {
+      "title": "Pago mensual del préstamo 1 y del préstamo 2"
+    }
+  ]
+}

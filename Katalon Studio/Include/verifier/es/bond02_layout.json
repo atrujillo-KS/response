@@ -1,0 +1,138 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "BÁSICO"
+      },
+      "advanced": {
+        "tabLabel": "AVANZADO"
+      }
+    },
+    "fields": {
+      "Bond_PurchasePrice": {
+        "fieldLabel": "Precio del bono",
+        "smallLabel": "(% del valor nominal)"
+      },
+      "Bond_FaceValue": {
+        "fieldLabel": "Valor nominal"
+      },
+      "Bond_CouponRate": {
+        "fieldLabel": "Tasa de interés nominal"
+      },
+      "Bond_Type": {
+        "fieldLabel": "Tipo de bono",
+        "dropdownOptions": [
+          {
+            "optionText": "Corporativo u otro"
+          },
+          {
+            "optionText": "Municipal: no exento de impuestos estatales"
+          },
+          {
+            "optionText": "Municipal: exento de impuestos estatales"
+          },
+          {
+            "optionText": "Valor del Tesoro"
+          }
+        ]
+      },
+      "Global_TaxFilingStatus": {
+        "fieldLabel": "Estado civil para la declaración de impuestos",
+        "dropdownOptions": [
+          {
+            "optionText": "Soltero(a)"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración conjunta"
+          },
+          {
+            "optionText": "Casado(a) que presenta una declaración por separado"
+          },
+          {
+            "optionText": "Jefe de familia"
+          }
+        ]
+      },
+      "Global_ModifiedAdjustedGrossIncome": {
+        "fieldLabel": "Ingreso bruto ajustado modificado"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa de impuestos estatales"
+      }
+    },
+    "results_fields": {
+      "Bond_CouponYieldBeforeTaxes": {
+        "fieldLabel": "Rendimiento actual antes de impuestos"
+      },
+      "Bond_CouponYieldAfterTaxes": {
+        "fieldLabel": "Rendimiento actual después de impuestos"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Cuál es mi rendimiento actual sobre el ingreso por cupones recibido?",
+    "answer": "Su rendimiento actual después de impuestos es del <span class='lf-bold'>%rate%</span>.",
+    "dataTableCategory": "Rendimiento (%)",
+    "Bond_CouponYieldBeforeTaxes": "Antes de impuestos",
+    "Bond_CouponYieldAfterTaxes": "Después de impuestos",
+    "price": "Precio",
+    "Yield": "Rendimiento",
+    "selectors": [
+      {
+        "label": "Rendimiento actual",
+        "width": "33%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "bondprice": {
+      "title": "Precio del bono",
+      "definition": "El precio actual de un bono en el mercado, según lo determinado por la oferta y la demanda. Por lo general, los precios de los bonos se indican como un porcentaje de su valor nominal. Por ejemplo, un bono de $1,000 que se cotiza a un precio de 98.00 se comercializa a $980."
+    },
+    "facevalue": {
+      "title": "Valor nominal",
+      "definition": "El precio asignado, o nominal, de un bono o de un depósito fijo, como un certificado de depósito, a su vencimiento. También conocido como valor a la par."
+    },
+    "currentyield": {
+      "title": "Rendimiento corriente",
+      "definition": "Cupón de bono dividido por su precio actual."
+    },
+    "bondtypes": {
+      "title": "Tipos de bonos",
+      "definition": "Los cuatro tipos principales de bonos, definidos por categoría de emisores, son los bonos del Estado de EE.UU., los corporativos, los de agencias y los municipales. Los bonos del gobierno de EE.UU. incluyen los valores del Tesoro de EE.UU.. Los bonos corporativos incluyen los vendidos por empresas privadas para recaudar fondos. Los bonos de agencia incluyen los vendidos por empresas patrocinadas por el gobierno, como Ginnie Mae, Fannie Mae y Freddie Mac. Los bonos municipales incluyen los vendidos por gobiernos estatales y locales."
+    },
+    "couponrate": {
+      "title": "Tasa de interés nominal",
+      "definition": "La tasa de interés de un bono, expresada como porcentaje del valor nominal del bono. Por ejemplo, un bono de $1,000 que paga $60 en intereses al año tiene una tasa de interés nominal del 6 %."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "taxfilingstatus": {
+      "title": "Estado civil para la declaración de impuestos",
+      "definition": "Una categoría estrechamente ligada al estado civil que define el tipo de declaración de impuestos que usará una persona."
+    },
+    "munibonds": {
+      "title": "Bono municipal",
+      "definition": "Los estados y los municipios emiten bonos municipales. Los inversores suelen comprar bonos municipales emitidos por el estado o el municipio en el que residen para obtener el mayor beneficio en impuestos sobre la renta."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta calcula el rendimiento actual de un bono, antes y después de impuestos. El rendimiento actual es igual al pago anual de intereses del bono dividido por el precio actual del bono. Dependiendo del tipo de bono, los impuestos que se aplican podrían variar."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas del rendimiento actual del bono antes y después de impuestos."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Rendimiento actual del bono antes y después de impuestos"
+    }
+  ]
+}

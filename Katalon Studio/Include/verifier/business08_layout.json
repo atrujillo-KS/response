@@ -1,0 +1,1012 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "Assets",
+        "Liabilities",
+        "results"
+      ],
+      "Assets": {
+        "selected": true,
+        "tabLabel": "Assets",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "pageTitle": "Assets",
+        "pageDesc": "Enter actual or current fair market values.",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_CheckingAccountBalances",
+                "Business_SavingsAccountsValue",
+                "Business_MoneyMarketAccountsBalance",
+                "Business_CDsBalance",
+                "Business_AccountsReceivable",
+                "Business_NotesReceivable",
+                "Business_InventoryValue",
+                "Business_FixturesValue",
+                "Business_FurnitureValue",
+                "Business_EquipmentValue",
+                "Business_VehiclesValue",
+                "Business_PropertyValue",
+                "Business_PatentsValue",
+                "Business_OtherAssets"
+              ]
+            }
+          ]
+        }
+      },
+      "Liabilities": {
+        "tabLabel": "Liabilities",
+        "pageTitle": "Liabilities",
+        "custom": "new-standard-3col",
+        "fieldSets": "1",
+        "sections": [
+          "default"
+        ],
+        "default": {
+          "sectionLabel": "",
+          "columns": [
+            {
+              "fields": [
+                "Business_AccountsPayable",
+                "Business_TaxesPayable",
+                "Business_CreditCardOneBalance",
+                "Business_CreditCardTwoBalance",
+                "Business_LoanOneType",
+                "Business_LoanOneBalance",
+                "Business_LoanTwoType",
+                "Business_LoanTwoBalance",
+                "Business_LoanThreeType",
+                "Business_LoanThreeBalance",
+                "Business_LoanFourType",
+                "Business_LoanFourBalance",
+                "Business_LeasingObligations",
+                "Business_OtherLiabilities"
+              ]
+            }
+          ]
+        }
+      },
+      "results": {
+        "tabLabel": "Results"
+      }
+    },
+    "results": {
+      "fields": [
+        [
+          "TotalAssetsBusiness08"
+        ],
+        [
+          "TotalLiab"
+        ],
+        [
+          "Business_NetWorth"
+        ]
+      ]
+    },
+    "fields": {
+      "Business_LeasingObligations": {
+        "fieldLabel": "Leasing obligations",
+        "smallLabel": "",
+        "glossaryTerm": "leasingobligations",
+        "format": "currency",
+        "defaultValue": "22000",
+        "value": "22000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_OtherLiabilities": {
+        "fieldLabel": "Other liabilities",
+        "smallLabel": "",
+        "glossaryTerm": "otherliabilities",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanThreeType": {
+        "fieldLabel": "Loan 3 type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Business",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Equipment",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Line of Credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Real Estate",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Vehicle",
+            "defaultSelection": true
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanFourType": {
+        "fieldLabel": "Loan 4 type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Business",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Equipment",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Line of Credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Real Estate",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Vehicle",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanTwoBalance": {
+        "fieldLabel": "Loan 2",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "14500",
+        "value": "14500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanThreeBalance": {
+        "fieldLabel": "Loan 3",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "15600",
+        "value": "15600",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanFourBalance": {
+        "fieldLabel": "Loan 4",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanTwoType": {
+        "fieldLabel": "Loan 2 type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Business",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Equipment",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Line of Credit",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Real Estate",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Vehicle",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanOneBalance": {
+        "fieldLabel": "Loan 1",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "10000",
+        "value": "10000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_LoanOneType": {
+        "fieldLabel": "Loan 1 type",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "dropdownOptions": [
+          {
+            "optionValue": "0",
+            "optionText": "Business",
+            "defaultSelection": true
+          },
+          {
+            "optionValue": "1",
+            "optionText": "Equipment ",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "2",
+            "optionText": "Line of Credit",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "3",
+            "optionText": "Real Estate",
+            "defaultSelection": false
+          },
+          {
+            "optionValue": "4",
+            "optionText": "Vehicle",
+            "defaultSelection": false
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "selectClass": "lf-single-select-label",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CreditCardTwoBalance": {
+        "fieldLabel": "Credit card 2 balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "1300",
+        "value": "1300",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CreditCardOneBalance": {
+        "fieldLabel": "Credit card 1 balance",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "4200",
+        "value": "4200",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_TaxesPayable": {
+        "fieldLabel": "Taxes payable",
+        "smallLabel": "",
+        "glossaryTerm": "taxespayable",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_AccountsPayable": {
+        "fieldLabel": "Accounts payable",
+        "smallLabel": "",
+        "glossaryTerm": "accountspayable",
+        "format": "currency",
+        "defaultValue": "25000",
+        "value": "25000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_OtherAssets": {
+        "fieldLabel": "Other assets",
+        "smallLabel": "",
+        "glossaryTerm": "otherassets",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_PatentsValue": {
+        "fieldLabel": "Patents or trademarks",
+        "smallLabel": "",
+        "glossaryTerm": "intellectualproperty",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_PropertyValue": {
+        "fieldLabel": "Property or real estate",
+        "smallLabel": "",
+        "glossaryTerm": "property",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_VehiclesValue": {
+        "fieldLabel": "Vehicles",
+        "smallLabel": "",
+        "glossaryTerm": "vehicles",
+        "format": "currency",
+        "defaultValue": "24000",
+        "value": "24000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_EquipmentValue": {
+        "fieldLabel": "Equipment, machinery, tools",
+        "smallLabel": "",
+        "glossaryTerm": "equipment",
+        "format": "currency",
+        "defaultValue": "45000",
+        "value": "45000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_FurnitureValue": {
+        "fieldLabel": "Furniture",
+        "smallLabel": "",
+        "glossaryTerm": "furniture",
+        "format": "currency",
+        "defaultValue": "15000",
+        "value": "15000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_FixturesValue": {
+        "fieldLabel": "Fixtures",
+        "smallLabel": "",
+        "glossaryTerm": "fixtures",
+        "format": "currency",
+        "defaultValue": "4500",
+        "value": "4500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_InventoryValue": {
+        "fieldLabel": "Inventory",
+        "smallLabel": "",
+        "glossaryTerm": "inventory",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_NotesReceivable": {
+        "fieldLabel": "Notes receivable",
+        "smallLabel": "",
+        "glossaryTerm": "notesreceivable",
+        "format": "currency",
+        "defaultValue": "12500",
+        "value": "12500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_AccountsReceivable": {
+        "fieldLabel": "Accounts receivable",
+        "smallLabel": "",
+        "glossaryTerm": "accountsreceivable",
+        "format": "currency",
+        "defaultValue": "12500",
+        "value": "12500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CDsBalance": {
+        "fieldLabel": "CDs",
+        "smallLabel": "",
+        "glossaryTerm": "cd",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_MoneyMarketAccountsBalance": {
+        "fieldLabel": "Money market accounts",
+        "smallLabel": "",
+        "glossaryTerm": "mma",
+        "format": "currency",
+        "defaultValue": "6500",
+        "value": "6500",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_CheckingAccountBalances": {
+        "fieldLabel": "Checking accounts",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "8000",
+        "value": "8000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      },
+      "Business_SavingsAccountsValue": {
+        "fieldLabel": "Savings accounts",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "minimumValue": "0",
+        "maximumValue": "10000000",
+        "maxlength": "10",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "inputClass": "lf-single-input",
+        "sliderClass": "lf-single-input-slider",
+        "inputLabelClass": "lf-single-input-label"
+      }
+    },
+    "results_fields": {
+      "Business_NetWorth": {
+        "fieldLabel": "Net worth"
+      },
+      "TotalLiab": {
+        "fieldLabel": " - Total liabilities"
+      },
+      "TotalAssetsBusiness08": {
+        "fieldLabel": "Total assets"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "title": "What is my business worth today?",
+    "answer": "Your business has a net worth of <span class='lf-bold'>%result%</span>",
+    "selectors": [
+      {
+        "label": "Assets and Liabilities",
+        "width": "100%",
+        "first": true
+      }
+    ],
+    "assets": "Assets",
+    "liabilities": "Liabilities"
+  },
+  "glossaryItems": {
+    "mma": {
+      "title": "Money market account (MMA)",
+      "definition": "A bank account that invests in the safest of short-term securities. Opening a money market account generally requires a larger deposit than a checking account since it pays a higher interest rate than demand deposits. The FDIC insures money market accounts for up to $250,000 per institution per depositor."
+    },
+    "cd": {
+      "title": "Certificate of deposit (CD)",
+      "definition": "A time deposit that you make at a bank generally ranging in amount from $500 to $250,000. The FDIC insures CDs for up to $250,000 per institution per depositor."
+    },
+    "creditcardbalance": {
+      "title": "Credit card balance",
+      "definition": "The amount you owe on your credit card(s) and on which you pay interest."
+    },
+    "notesreceivable": {
+      "title": "Notes receivable",
+      "definition": "An asset account that represents those claims you have on debtors. Notes are like bank loans since they are used as a source of debt financing."
+    },
+    "vehicles": {
+      "title": "Vehicles",
+      "definition": "An asset account that includes passenger cars, delivery trucks, and  other motorized (or non-motorized) means to distribute your goods and services."
+    },
+    "equipment": {
+      "title": "Equipment",
+      "definition": "An asset account that represents assets considered an essential part of a plant or other real estate such as machinery, tools, and any other fixed assets required to produce your goods or service. "
+    },
+    "inventory": {
+      "title": "Inventory",
+      "definition": "An asset that reflects the products you are holding for sale. Inventory is a current asset, which means you should expect to be able to sell the inventory over the next operating cycle (usually 12 months)."
+    },
+    "fmv": {
+      "title": "Fair market value",
+      "definition": "The value or price at which a commodity would change hands, assuming a willing buyer and a willing seller and no duress."
+    },
+    "fixtures": {
+      "title": "Fixtures",
+      "definition": "An asset account that represent irremovable assets considered a part of a plant or other real estate such as lighting, flooring, paneling, sinks, toilets, etc."
+    },
+    "accountspayable": {
+      "title": "Accounts payable",
+      "definition": "A liability that reflects the bills you owe other companies. Accounts payable is a current liability, which means you expect to pay off the accounts over the next operating cycle (usually 12 months)."
+    },
+    "intellectualproperty": {
+      "title": "Intellectual property",
+      "definition": "Intangible assets such as patents, copyrights, trademarks, and service marks that create value for the company that owns the assets but that cannot easily be measured."
+    },
+    "furniture": {
+      "title": "Furniture",
+      "definition": "An asset account that represents removable assets considered a part of a plant or other real estate such as desks, chairs, sofas, and tables, etc."
+    },
+    "otherassets": {
+      "title": "Other assets",
+      "definition": "Those assets that are not neatly categorized in a more common asset. Generally, other assets constitute less than 5% of a company's assets."
+    },
+    "personalnetworth": {
+      "title": "Personal net worth",
+      "definition": "Net worth, also called total equity, is equal to assets minus liabilities."
+    },
+    "taxespayable": {
+      "title": "Taxes payable",
+      "definition": "A liability that reflects the taxes you owe federal, state, and local tax authorities. Taxes payable is a current liability, which means you expect to pay off the accounts over the next operating cycle (usually 12 months)."
+    },
+    "property": {
+      "title": "Property",
+      "definition": "Property, also called real estate or fixed asset, is an asset account of your business."
+    },
+    "otherliabilities": {
+      "title": "Other liabilities",
+      "definition": "Liabilities that are not categorized into another commonly used category of liabilities. Generally, other liabilities constitute less than 5% of the total liabilities of a company."
+    },
+    "accountsreceivable": {
+      "title": "Accounts receivable",
+      "definition": "An asset that reflects the bills that are owed your company. Accounts receivable is a current asset, which means you expect to collect on the accounts over the next operating cycle (usually 12 months)."
+    },
+    "leasingobligations": {
+      "title": "Leasing obligations",
+      "definition": "A commitment and contingency that are included in the notes of financial statements. Since operating lease agreements may be canceled, such obligations are excluded from the balance sheet."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool calculates the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#PersonalNetWorth\">net worth</a></span> of your business. Net worth is based on your estimate of the <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FMV\">fair market value</a></span> of the firm's assets and the outstanding amounts due on the firm's debts as of a certain date. Net worth is the net value of your ownership in the business. It is calculated by subtracting the liabilities of your business from its assets."
+    },
+    {
+      "textLabel": "Since determining the fair market value of your assets is a subjective practice, you should consult a financial or tax adviser."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart of total assets, total liabilities and net worth."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total assets, total liabilities and net worth"
+    }
+  ]
+}

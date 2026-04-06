@@ -1,0 +1,163 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "BÁSICO"
+      },
+      "advanced": {
+        "tabLabel": "AVANZADO"
+      }
+    },
+    "fields": {
+      "Global_HomeAppraisedValue": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Home_DownPaymentPercentage": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Home_LoanTermInYears": {
+        "fieldLabel": "Plazo",
+        "smallLabel": "(años)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "Home_InterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Home_YearlyPropertyTax": {
+        "fieldLabel": "Impuesto predial/Impuesto sobre bienes inmuebles",
+        "smallLabel": "(anual)"
+      },
+      "Home_YearlyHomeownersInsurance": {
+        "fieldLabel": "Seguro de propietario",
+        "smallLabel": "(anual)"
+      }
+    },
+    "results_fields": {
+      "PrincAndInt": {
+        "fieldLabel": "Capital e intereses"
+      },
+      "TaxAndIns": {
+        "fieldLabel": "Impuestos y seguro de la propiedad"
+      },
+      "TotPay": {
+        "fieldLabel": "Pago inicial total"
+      },
+      "MortIns": {
+        "fieldLabel": "Prima de seguro hipotecario"
+      },
+      "LoanAmtOut": {
+        "fieldLabel": "Monto inicial del préstamo"
+      },
+      "MortIns2": {
+        "fieldLabel": "Prima de depósito del seguro hipotecario"
+      },
+      "LoanTotal": {
+        "fieldLabel": "Monto total del préstamo"
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "dataTableCategory": "Desglose",
+    "title": "¿De cuánto serán mis pagos del préstamo de la Administración Federal de la Vivienda ?",
+    "answer": "Su pago total será de <span class='lf-bold'>%result%</span>",
+    "payments_over_time": "See your annual payments over time.",
+    "selectors": [
+      {
+        "label": "Desglose",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "En el tiempo",
+        "width": "33%"
+      },
+      {
+        "label": "Amortización",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Cronograma de pagos"
+          }
+        ]
+      }
+    ],
+    "year_1": "1 año",
+    "year_2": "2 años",
+    "year_3": "3 años",
+    "year_4": "4 años",
+    "year_5": "5 años",
+    "year_10": "10 años",
+    "year_15": "15 años",
+    "year_20": "20 años",
+    "year_30": "30 años",
+    "year": "años",
+    "PrincAndInt": "Capital e intereses",
+    "MortIns": "PMI",
+    "TaxAndIns": "Impuestos y seguro de la propiedad",
+    "principal": "Capital",
+    "interest": "Intereses",
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Interés pagado",
+        "Interés acumulativo"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "appraisalvalue": {
+      "title": "Valor de tasación",
+      "definition": "El valor de tasación es el valor de mercado de un activo, que resulta del proceso de tasación. El método utilizado para la tasación del activo variará según el activo en cuestión. Para las viviendas, los tasadores a menudo utilizan un método que incluye datos de ventas recientes de viviendas comparables. Asimismo, pueden utilizar el método de reemplazo, que es el costo que implicaría reemplazar la vivienda según los precios actuales."
+    },
+    "interestrate": {
+      "title": "Tasa de interés",
+      "definition": "Monto que el prestamista cobra al prestatario por el uso del dinero, expresado como un porcentaje de capital."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "homeownersinsurance": {
+      "title": "Seguro para propietarios de casas",
+      "definition": "Protege al propietario de daños relacionados con el clima, así como la posible responsabilidad de los eventos que ocurren en la propiedad. Normalmente requerido por los prestamistas."
+    },
+    "propertytax": {
+      "title": "Impuesto sobre la propiedad",
+      "definition": "Impuesto sobre los bienes inmuebles gravado por el gobierno local, por lo general con base en el valor del inmueble (incluyendo el terreno) que usted posee."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Los préstamos de la FHA son hipotecas aseguradas por la Administración Federal de la Vivienda (FHA, por sus siglas en inglés), una agencia gubernamental del Departamento de Vivienda y Desarrollo Urbano de Estados Unidos. Debido a que los préstamos de la FHA están respaldados por el gobierno federal, requieren pagos iniciales bajos (solo el 3.5 % para la mayoría de los prestatarios), los costos de cierre son más bajos y los requisitos de calificación son menos exigentes.</br></br>Los prestatarios con préstamos de la FHA pagan el seguro hipotecario, lo que protege al prestamista de una pérdida si el prestatario incumple el pago del préstamo. Todos los préstamos de la FHA requieren dos primas de seguro hipotecario: La prima de depósito es del 1.75 % del monto del préstamo y se paga cuando el prestatario obtiene el préstamo. Esta herramienta supone que la prima de depósito se financia como parte del monto del préstamo en lugar de pagarla en efectivo. La segunda prima de seguro de los préstamos de la FHA se denomina prima anual, aunque se paga mensualmente. Varía según el plazo del préstamo, el monto del préstamo y el coeficiente inicial de la relación préstamo-valor objetivo o LTV."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico circular del desglose del pago mensual total por principal e intereses, prima del seguro hipotecario e impuestos sobre la propiedad y seguro para propietarios de viviendas."
+    },
+    {
+      "title": "Stacked column chart of the amounts applied to principal and interest at different intervals over the course of the loan term."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Desglose del pago mensual total por principal e intereses, prima del seguro hipotecario e impuestos sobre la propiedad y seguro de propietarios"
+    },
+    {
+      "title": "Importes aplicados al principal y los intereses en diferentes intervalos durante el plazo del préstamo"
+    }
+  ]
+}

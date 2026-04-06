@@ -1,0 +1,621 @@
+[
+  {
+    "click": {
+      "id": "lf_title_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will my vehicle payments be?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "The size of your monthly payment depends on loan amount, loan term, and interest rate. Loan amount equals vehicle purchase price minus down payment, rebate (if applicable), and net trade-in value. Net trade-in value is equal to the vehicle trade-in value minus the amount owed on the vehicle."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Monthly payment: $875"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_more_info",
+      "value": "Show details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincipalAuto05_result_label",
+      "value": "Loan amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincipalAuto05_result_value",
+      "value": "$38,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_TotalInterestPaid_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_TotalInterestPaid_result_value",
+      "value": "$4,005"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=text.highcharts-axis-title",
+      "value": "Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Over Time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Various Terms"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Loan term (months)']/parent::*",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortization"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+    
+  },
+  {
+    "verifyVisible": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links",
+      "value": "SEE TABLE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Your payments over time"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Principal paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Cumulative interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$37,283"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$717"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[2]",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[4]",
+      "value": "$871"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[5]",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[6]",
+      "value": "$4,005"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_basic",
+      "value": "BASIC"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-error-message",
+      "value": "Must be between $0 and $249,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_AutoDownPayment_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_AutoDownPayment_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-label",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-small-label",
+      "value": "(months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-error-message",
+      "value": "Must be between 1 and 360 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Global_AutoLoanTerm_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_AutoLoanTerm_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tab_advanced",
+      "value": "ADVANCED"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_CashRebate-label",
+      "value": "Cash rebate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_CashRebate",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_CashRebate-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Auto_CashRebate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Auto_CashRebate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Cash rebate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "An offer to consumers - as an incentive to buy - that reduces the purchase price of a good by the amount of the rebate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_TradeInValue-label",
+      "value": "Trade-in value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_TradeInValue",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_TradeInValue-error-message",
+      "value": "Must be between $0 and $200,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Auto_TradeInValue_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Auto_TradeInValue_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Trade-in value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The price you can expect to be offered for your used car if you sell it to a dealer as part of buying a new car."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_OutstandingLoanAmount-label",
+      "value": "Amount owed on trade-in"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_OutstandingLoanAmount",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_OutstandingLoanAmount-error-message",
+      "value": "Must be between $0 and $200,000"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_tab_basic"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "37,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "6.78"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tab_advanced"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_CashRebate",
+      "value": "2,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_TradeInValue",
+      "value": "15,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_OutstandingLoanAmount",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Monthly payment: $1,743"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PrincipalAuto05_result_value",
+      "value": "$25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_TotalInterestPaid_result_value",
+      "value": "$1,145"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

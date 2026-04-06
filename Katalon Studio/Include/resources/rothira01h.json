@@ -1,0 +1,701 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How will a large withdrawal affect the decision?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the effect of an early one-time withdrawal on the monthly retirement income for the following four investment alternatives: a traditional IRA, Roth IRA, nondeductible IRA, and depositing into a taxable account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[1]",
+      "value": "Key assumptions of this tool include:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[2]",
+      "value": "If contributions are invested before or after taxes and the amount exceeds the maximum allowed, the contribution is first maximized into the IRAs. The remaining amount is assumed to be deposited in a taxable savings account. The scenario where contributions are invested without regard to taxes does not have a savings account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='taxable account'])[1]/following::p[3]",
+      "value": "Deposits are compounded monthly"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=traditional IRA",
+      "value": "traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Roth IRA",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=nondeductible IRA",
+      "value": "nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=taxable account",
+      "value": "taxable account"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Traditional IRA will provide the most retirement income at $2,003 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,003'])[2]/following::th[1]",
+      "value": "Total withdrawn (incl. taxes and penalties)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total withdrawn (incl. taxes and penalties)'])[1]/following::th[1]",
+      "value": "Monthly retirement income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTrad_result_label",
+      "value": "Traditional IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTrad_result_value",
+      "value": "$15,106"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTradRothIRA01h_result_value",
+      "value": "$2,003"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtRothRothIRA01h_result_label",
+      "value": "Roth IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtRothRothIRA01h_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncRothRothIRA01h_result_value",
+      "value": "$1,838"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTaxed_result_label",
+      "value": "Nondeductible IRA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTaxed_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTaxedRothIRA01h_result_value",
+      "value": "$1,322"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtInvest_result_label",
+      "value": "Taxable Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtInvest_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncInvestRothIRA01h_result_value",
+      "value": "$121"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Contributions-accordion",
+      "value": "Contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-label",
+      "value": "Annual contribution"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribAmt",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribAmt-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt-label",
+      "value": "Contributions are invested"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ContribOpt",
+      "value": "After taxes Before taxes Disregarding taxes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ContribOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Withdrawal-accordion",
+      "value": "Withdrawal"
+    }
+  },
+  {
+    "click": {
+      "id": "Withdrawal-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OneTimeAge-label",
+      "value": "Age at withdrawal"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OneTimeAge",
+      "value": "50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OneTimeAge-error-message",
+      "value": "Must be between 1 and 71"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OneTimeAmt-label",
+      "value": "Withdrawal amount"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OneTimeAmt",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OneTimeAmt-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PenaltyOpt-label",
+      "value": "Early-withdrawal penalty"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PenaltyOpt_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Early-withdrawal penalty"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "A penalty on the amount of any unauthorized withdrawal from a tax-advantaged account. In the case of 401(k) plans and IRAs, the IRS levies a 10 percent penalty on the amount that you withdraw before age 59.5. This is in addition to what you owe in income taxes."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PenaltyOpt",
+      "value": "Yes No"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PenaltyOpt",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "AboutYou-accordion",
+      "value": "About You"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-label",
+      "value": "Current age"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrAge",
+      "value": "37"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrAge-error-message",
+      "value": "Must be between 1 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-label",
+      "value": "Age to begin withdrawing"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RetAge",
+      "value": "67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RetAge-error-message",
+      "value": "Must be between 60 and 71"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-label",
+      "value": "Life expectancy"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathAge",
+      "value": "98"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathAge-error-message",
+      "value": "Must be between 5 and 100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-label",
+      "value": "Your state + federal tax rate (before retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateBef",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef-error-message",
+      "value": "Must be between 0.00% and 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateBef_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateBef_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft-label",
+      "value": "Your state + federal tax rate (after retirement)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxRateAft",
+      "value": "15.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxRateAft_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TaxRateAft_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The percentage of your taxable income that is owed to the state and federal governments. The tax rate increases as the taxable base amount increases."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-label",
+      "value": "Funds you wish to leave at death"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DeathFunds",
+      "value": "20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_DeathFunds-error-message",
+      "value": "Must be between $0 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Returns-accordion",
+      "value": "Returns"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-label",
+      "value": "Estimated rate of return on IRA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IRARateRothIRA",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IRARateRothIRA-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-label",
+      "value": "Estimated return on other assets"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SavRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "Contributions-accordion"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ContribAmt"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ContribAmt"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ContribAmt",
+      "value": "18,111"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ContribOpt",
+      "value": "label=Disregarding taxes"
+    }
+  },
+  {
+    "click": {
+      "id": "Withdrawal-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OneTimeAge",
+      "value": "43"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OneTimeAmt",
+      "value": "65,000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_PenaltyOpt",
+      "value": "label=No"
+    }
+  },
+  {
+    "click": {
+      "id": "AboutYou-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrAge",
+      "value": "29"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RetAge",
+      "value": "64"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathAge",
+      "value": "85"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateBef",
+      "value": "17.33"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TaxRateAft",
+      "value": "12.56"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_DeathFunds",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "Returns-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IRARateRothIRA",
+      "value": "6.55"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_SavRate",
+      "value": "1.23"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Roth IRA will provide the most retirement income at $9,214 per month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTrad_result_value",
+      "value": "$65,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtRothRothIRA01h_result_value",
+      "value": "$65,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtTaxed_result_value",
+      "value": "$65,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_WithAmtInvest_result_value",
+      "value": "$65,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTradRothIRA01h_result_value",
+      "value": "$8,243"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncRothRothIRA01h_result_value",
+      "value": "$9,214"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncTaxedRothIRA01h_result_value",
+      "value": "$8,243"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonIncInvestRothIRA01h_result_value",
+      "value": "$3,031"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

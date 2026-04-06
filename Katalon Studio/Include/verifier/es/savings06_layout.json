@@ -1,0 +1,132 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Ahorros"
+      ]
+    },
+    "results_fields": {
+      "fv_None": {
+        "fieldLabel": "Saldo final antes de impuestos"
+      },
+      "fv_TaxOnly": {
+        "fieldLabel": "Saldo final después de impuestos"
+      },
+      "fv_Both": {
+        "fieldLabel": "Saldo final después de impuestos e inflación"
+      }
+    },
+    "fields": {
+      "Global_CurrentSavings": {
+        "fieldLabel": "Ahorro actual "
+      },
+      "Savings_YearsDeposited": {
+        "fieldLabel": "Años depositados"
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "Tasa de rendimiento anual"
+      },
+      "Global_FederalTaxRate": {
+        "fieldLabel": "Su tasa impositiva federal"
+      },
+      "Global_StateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Tasa de inflación"
+      },
+      "fv_None": {
+        "fieldLabel": "Saldo final antes de impuestos"
+      }
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Cantidad",
+    "title": "¿Cómo los impuestos y la inflación afectarán mis ahorros?",
+    "answer": "Sus ahorros equivaldrán a <span class='lf-bold'>%result%</span> después de impuestos y ajuste por inflación",
+    "beforeTaxes": "Antes de impuestos ",
+    "afterTaxes": "Después de impuestos",
+    "afterBoth": "Después de impuestos e inflación ",
+    "selectors": [
+      {
+        "label": "Gráfico",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "inflationrate": {
+      "title": "Tasa de inflación",
+      "definition": "Aumento porcentual anual de los precios. La tasa de inflación anual en los EE.UU. alcanzó un promedio de alrededor de 2- 3% en los últimos 10 años."
+    },
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "discount": {
+      "title": "Descuento",
+      "definition": "Un precio que es inferior al precio regular de venta. En el contexto de inversión en bonos, un descuento es un precio de bono inferior al valor nominal del bono."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "taxdeferred": {
+      "title": "Contribución con diferimiento de impuestos",
+      "definition": "Una contribución con diferimiento de impuestos no es tributable al momento en que se realiza la contribución a un plan 401(k) a otra cuenta con ventajas impositivas, sino en el año en que usted la retira de la cuenta."
+    },
+    "incometaxrate": {
+      "title": "Tasas del impuesto sobre la renta",
+      "definition": "Las tasas del impuesto sobre la renta para 2025 son 37%, 35%, 32%, 24%, 22%, 12% y 10%."
+    },
+    "inflation": {
+      "title": "Inflación",
+      "definition": "Aumento general de los precios que usted paga por bienes y servicios, consignada como una tasa anual."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora calcula el efecto de la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#inflation\">inflación</a></span> y los <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#IncomeTaxRate\">impuestos sobre la renta</a></span> sobre su plan de ahorro. Usted ingresa el monto que ha ahorrado hasta el momento, la cantidad de años para invertir y una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#SavingsInterestRate\">tasa de interés de ahorro</a></span>. Las aportaciones adicionales se omiten."
+    },
+    {
+      "textLabel": "El <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#FutureValue\">valor futuro</a></span> de sus ahorros es <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#Discount\">descontado</a></span> según la <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#InflationRate\">tasa de inflación</a></span> que usted elija. Por ejemplo, $1,000 hoy valdrán solamente $971 dentro de un año si la inflación es del 3% anual."
+    },
+    {
+      "textLabel": "Dado que usted ingresa tasas de impuesto sobre la renta, la calculadora supone que usted ahorra con una cuenta <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">tributable</a></span>. Los impuestos sobre la renta por intereses obtenidos con una cuenta tributable afectarán el valor futuro de su plan de ahorro."
+    },
+    {
+      "textLabel": "Si quiere simular ahorros con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>, ingrese cero en los campos correspondientes a tasas de impuesto sobre la renta federal y estatal."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas que compara el saldo de ahorros en un cierto número de años antes de impuestos, después de impuestos y después de impuestos e inflación."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Saldo de ahorro en un cierto número de años antes de impuestos, después de impuestos y después de impuestos e inflación"
+    }
+  ]
+}

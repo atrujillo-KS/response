@@ -1,0 +1,84 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      }
+    },
+    "fields": {
+      "PmtSavings14": {
+        "fieldLabel": "Depósitos recurrentes"
+      },
+      "DepositTypeSavings14": {
+        "fieldLabel": "Frecuencia de depósito",
+        "dropdownOptions": [
+          {
+            "optionText": "Semanal"
+          },
+          {
+            "optionText": "Mensual"
+          },
+          {
+            "optionText": "Anual"
+          }
+        ]
+      },
+      "YearsInvestedSavings14": {
+        "fieldLabel": "Invertido(a) durante años",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% año"
+      },
+      "MonthsInvested": {
+        "fieldLabel": "y meses",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "FutureValueSavings14": {
+        "fieldLabel": "Meta de ahorro"
+      },
+      "DownPmtSavings14": {
+        "fieldLabel": "Depósito inicial"
+      }
+    },
+    "results": {}
+  },
+  "labels": {},
+  "glossaryItems": {
+    "futurevalue": {
+      "title": "Valor futuro",
+      "definition": "Monto al que crece su inversión en el futuro. Por ejemplo, el valor futuro de $100 invertidos por mes al 8% es de $1,245 al cabo de 12 meses."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "taxadvantagedaccount": {
+      "title": "Cuenta con ventajas impositivas",
+      "definition": "Cuenta de inversión con características de diferimiento de impuestos o exención de impuestos, usada para ahorrar para la jubilación o para gastos de educación universitaria u otros gastos de educación."
+    },
+    "lumpsuminvestments": {
+      "title": "Inversiones de una suma global",
+      "definition": "Una inversión de una suma global es una inversión que usted realiza para abrir una cuenta de inversión o de ahorro. Se utiliza para iniciar con refuerzo una cuenta de inversión o de ahorro. Las posibles fuentes de inversiones de sumas globales incluyen herencias, distribuciones de sumas globales de planes jubilatorios y fondos provenientes de una póliza de seguro de vida."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora computa el <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#futurevalue\">valor futuro</a></span> de sus ahorros con base en la información que usted proporciona. También le permite calcular a la inversa, ya que usted puede modificar el objetivo de ahorros y seleccionar el dato que deberá ajustar la calculadora: el monto que ahorra actualmente, montos de depósito adicionales, plazo de ahorro o tasa de rentabilidad anual. En otras palabras, para un objetivo de ahorro dado, asumiendo que todos los demás datos siguen siendo los mismos, usted puede calcular en retrospectiva para encontrar la respuesta a cualquiera de las siguientes preguntas:"
+    },
+    {
+      "textLabel": "¿Cuánto tendré que invertir de entrada?"
+    },
+    {
+      "textLabel": "¿Cuánto tendré que ahorrar regularmente?"
+    },
+    {
+      "textLabel": "¿Cuánto tiempo tendré que estar ahorrando?"
+    },
+    {
+      "textLabel": "¿Qué tasa de rentabilidad necesitaré obtener?"
+    },
+    {
+      "textLabel": "La calculadora asume que usted ahorra con una cuenta con <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxAdvantagedAccount\">ventajas impositivas</a></span>."
+    }
+  ],
+  "chartTitles": [],
+  "tableTitles": []
+}

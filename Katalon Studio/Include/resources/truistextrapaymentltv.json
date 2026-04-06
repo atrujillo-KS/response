@@ -1,0 +1,534 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-truist/calc/truistextrapaymentltv?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Truist Custom Calculator",
+      "value": "Truist Custom Calculator"
+    }
+  },
+  {
+    "CustomDate1": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "2,0,0" 
+	}
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "An extra monthly payment of $325 is needed to reach your target 80% LTV by {{CustomDate1}}."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "No extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Extra payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_label",
+      "value": "Years until payoff"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "26"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_label",
+      "value": "Principal & interest payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$969"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$1,325"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AppVal-label",
+      "value": "Estimated home value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AppVal",
+      "value": "200,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AppVal-error-message",
+      "value": "Must be between $1.00 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_AppVal_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_AppVal_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Appraisal value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Appraisal value is the market value of an asset that is derived from the appraisal process. Depending on the asset, the method used to appraise the asset will differ. For homes, appraisers often use a method that includes recent sales data of comparable homes. They may also use the replacement method, which is the cost to replace the home at today's prices."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanBalance-label",
+      "value": "Current loan balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrentLoanBalance",
+      "value": "175,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanBalance-error-message",
+      "value": "Must be between $1.00 and $1,000,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_CurrentLoanBalance_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_CurrentLoanBalance_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Loan principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The unpaid portion of the loan amount. Loan principal is amortized over the term of the loan so that the principal at the end of the term is zero."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OrigTerm-label",
+      "value": "Original term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_OrigTerm",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_OrigTerm-error-message",
+      "value": "Must be between 1 and 600 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RemainingTerm-label",
+      "value": "Remaining term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_RemainingTerm",
+      "value": "336"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_RemainingTerm-error-message",
+      "value": "Must be between 1 and 540 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IntRate",
+      "value": "5.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_IntRate-error-message",
+      "value": "Must be between 0.000% and 50.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_IntRate_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_IntRate_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExtraPmtStartDate-label",
+      "value": "Extra payment start date"
+    }
+  },
+    {
+    "CustomDate2": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,1,0" 
+	}
+  },
+  {
+    "verifyValue": {
+      "id": "ExtraPmtStartDate_date",
+      "value": "{{CustomDate2}}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanPayment-label",
+      "value": "Principal & interest payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrentLoanPayment",
+      "value": "1,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CurrentLoanPayment-error-message",
+      "value": "Must be between $0.00 and $1,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NextPmtDueDate-label",
+      "value": "Next payment due date"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "NextPmtDueDate_date",
+      "value": "{{CustomDate2}}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ltv-accordion",
+      "value": "LOAN-TO-VALUE INFO"
+    }
+  },
+  {
+    "click": {
+      "id": "ltv-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TargetLTVRatio-label",
+      "value": "Target Loan-To-Value ratio"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TargetLTVRatio",
+      "value": "80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TargetLTVRatio-error-message",
+      "value": "Must be between 1% and 99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_TargetLTVRatio_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_TargetLTVRatio_tooltip']/div"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Loan-to-value ratio (LTV)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "LTV is a lending risk assessment ratio that lenders examine before approving a mortgage. It is calculated by dividing the mortgage loan amount by the fair market value of the home."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TargetLTVDate-label",
+      "value": "Target Loan-To-Value date"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "TargetLTVDate_date",
+      "value": "{{CustomDate1}}"
+    }
+  },
+  {
+    "click": {
+      "id": "homeInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_AppVal",
+      "value": "500,000.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrentLoanBalance",
+      "value": "425,000.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_OrigTerm",
+      "value": "180"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_RemainingTerm",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_IntRate",
+      "value": "2.785"
+    }
+  },
+   {
+    "CustomDate3": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,3,0" 
+	}
+  },
+  {
+    "setTextAndWait": {
+      "id": "ExtraPmtStartDate_date",
+      "value": "{{CustomDate3}}"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_CurrentLoanPayment",
+      "value": "1,500.00"
+    }
+  },
+  {
+    "CustomDate4": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "0,2,0" 
+	}
+  },
+  {
+    "setTextAndWait": {
+      "id": "NextPmtDueDate_date",
+      "value": "{{CustomDate4}}"
+    }
+  },
+  {
+    "click": {
+      "id": "ltv-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_TargetLTVRatio",
+      "value": "77"
+    }
+  },
+    {
+    "CustomDate5": { 
+      "dataFormat": "Date",
+	  "futureDateIn": "Years,Months,Days", 
+	  "futureValue": "4,0,0" 
+	}
+  },
+  {
+    "setTextAndWait": {
+      "id": "TargetLTVDate_date",
+      "value": "{{CustomDate5}}"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "An extra monthly payment of $300 is needed to reach your target 77% LTV by {{CustomDate5}}."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff_result_value",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_YearUntilPayoff2_result_value",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay_result_value",
+      "value": "$3,358"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotPay2_result_value",
+      "value": "$1,800"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  }
+]

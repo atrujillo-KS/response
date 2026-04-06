@@ -1,0 +1,137 @@
+{
+  "layout": {
+    "tabs": {
+      "basic": {
+        "tabLabel": "Básico"
+      },
+      "advanced": {
+        "tabLabel": "Avanzado"
+      }
+    },
+    "fields": {
+      "Global_AutoPurchasePrice": {
+        "fieldLabel": "Precio de compra"
+      },
+      "Global_AutoDownPayment": {
+        "fieldLabel": "Cuota inicial"
+      },
+      "Global_AutoLoanTerm": {
+        "fieldLabel": "Plazo del préstamo",
+        "smallLabel": "(meses)",
+        "errorMessage": "Debe estar entre %minimumValue% y %maximumValue% mes"
+      },
+      "Global_AutoInterestRate": {
+        "fieldLabel": "Tasa de interés"
+      },
+      "Auto_YearsOwned": {
+        "fieldLabel": "Años que tendrá vehículo "
+      },
+      "Global_FederalAndStateTaxRate": {
+        "fieldLabel": "Su tasa impositiva estatal y federal"
+      },
+      "DepRate": {
+        "fieldLabel": "Depreciación futura",
+        "dropdownOptions": [
+          {
+            "optionText": "Baja"
+          },
+          {
+            "optionText": "Promedio"
+          },
+          {
+            "optionText": "Elevado(a)"
+          }
+        ]
+      },
+      "Global_SavingsInterestRate": {
+        "fieldLabel": "La tasa de interés sobre sus ahorros "
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "title": "¿Debo financiar la compra de un vehículo o pagarlo al contado?",
+    "answer": "<span class='lf-bold'>%lessOption%</span> le costará <span class='lf-bold'>%difference% menos</span> que <span class='lf-bold'>%moreOption%</span> en <span class='lf-bold'>%months% %monthlabel%</span>",
+    "answer_same": "Pagar al contado un vehículo le costará <span class='lf-bold'>lo mismo que</span> financiar la compra en <span class='lf-bold'>%months% %monthlabel%</span>",
+    "financing": "Financiamiento",
+    "dataTableCategory": "Costo de Financiamiento",
+    "payingCash": "Pagar al contado",
+    "months_prefix": " durante ",
+    "Finance": "Financiar la compra",
+    "Cash": "Pagar al contado",
+    "selectors": [
+      {
+        "label": "Costo total",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Sus pagos en el tiempo"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Mes",
+        "Pago mensual",
+        "Saldo",
+        "Capital pagado",
+        "Intereses pagados",
+        "Interés acumulado "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "costanalysis": {
+      "title": "Análisis del costo en función de los beneficios",
+      "definition": "Análisis de la eficacia en función de los costos de las distintas opciones con el fin de ver si las ventajas superan los costos. "
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "savingsinterestrate": {
+      "title": "Tasa de interés de ahorro",
+      "definition": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    },
+    "term": {
+      "title": "Plazo",
+      "definition": "Plazo de un préstamo, que habitualmente se mide en años. En los préstamos para automóvil: generalmente va de dos a cinco años. En los préstamos hipotecarios generalmente es de 15 a 30 años."
+    },
+    "downpayment": {
+      "title": "Pago inicial",
+      "definition": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta calculadora muestra si es más económico tomar dinero en préstamo para comprar un vehículo o pagarlo en efectivo."
+    },
+    {
+      "textLabel": "Por lo general, si la tasa de interés que usted gana con sus ahorros es menor que el costo de tomar un préstamo después de deducir los impuestos, es más económico pagar en efectivo."
+    },
+    {
+      "textLabel": "No obstante, usted tiene que afrontar una potencial pérdida de flexibilidad financiera. Por ejemplo, como resultado, puede haber agotado sus fondos reservados para emergencias. No contar con un fondo para emergencias suficiente puede ser un riesgo que usted no está dispuesto a aceptar a cambio de pagar en efectivo."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas de la diferencia de costo total entre financiar un vehículo y pagar en efectivo."
+    },
+    {
+      "title": "Tabla de amortización del préstamo."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Diferencia de costo total entre financiar un vehículo y pagar en efectivo"
+    }
+  ]
+}

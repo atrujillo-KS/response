@@ -1,0 +1,1014 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much will it cost to raise a child?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool shows the cost of raising a child, in total and by year, from the age of zero until 20. The figures are not adjusted for inflation."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-results-tab-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Raising a child will cost approximately $196,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "By Age"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ChildcareEducation-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf-ChildcareEducation-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Starting age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-ChildcareEducation-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Ending age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-ChildcareEducation-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Annual amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualDayCareStartingAge_label']/span[2]",
+      "value": "Day care"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualBabySittingStartingAge_label']/span",
+      "value": "Babysitting"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualEducationStartingAge_label']/span",
+      "value": "Education"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDayCareStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDayCareStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDayCareEndingAge",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDayCareEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDayCareCosts",
+      "value": "5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDayCareCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBabySittingStartingAge",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBabySittingStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBabySittingEndingAge",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBabySittingEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBabySittingCosts",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBabySittingCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualEducationStartingAge",
+      "value": "5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualEducationStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualEducationEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualEducationEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualEducationCosts",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualFurnishingsCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "FoodClothingHealthcare-link"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next >'])[1]/following::h2[1]",
+      "value": "Estimated Food, Clothing & Healthcare Costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-FoodClothingHealthcare-details']/div[3]/div[1]/div/div/fieldset/legend",
+      "value": "Starting age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-FoodClothingHealthcare-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Ending age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-FoodClothingHealthcare-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Annual amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualGroceriesStartingAge_label']/span[2]",
+      "value": "Groceries"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualClothingStartingAge_label']/span",
+      "value": "Clothing"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualMedicalStartingAge_label']/span",
+      "value": "Medical bills"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualDentalBillsStartingAge_label']/span",
+      "value": "Dental bills"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualExtraInsuranceStartingAge_label']/span",
+      "value": "Extra insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualGroceriesStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualGroceriesStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualGroceriesEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualGroceriesEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualGroceriesCosts",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualGroceriesCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualClothingStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualClothingEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualClothingEndingAge",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualClothingEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualClothingCosts",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualClothingCosts-error-message",
+      "value": "Must be between $0 and $10,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMedicalStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMedicalStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMedicalEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMedicalEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMedicalCosts",
+      "value": "150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMedicalCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDentalBillsStartingAge",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDentalBillsStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDentalBillsEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDentalBillsEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualDentalBillsCosts",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualDentalBillsCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualExtraInsuranceStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualExtraInsuranceStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualExtraInsuranceEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualExtraInsuranceEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualExtraInsuranceCosts",
+      "value": "300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualExtraInsuranceCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-HousingTransportation-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-HousingTransportation-page-title']/h2",
+      "value": "Estimated Housing & Transportation Costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-HousingTransportation-details']/div[3]/div[1]/div/div/fieldset/legend",
+      "value": "Starting age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-HousingTransportation-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Ending age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf-HousingTransportation-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Annual amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualBiggerHomeStartingAge_label']/span[2]",
+      "value": "Bigger home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualBiggerCarStartingAge_label']/span",
+      "value": "Bigger car"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerHomeStartingAge",
+      "value": "3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerHomeStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerHomeEndingAge",
+      "value": "13"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerHomeEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerHomeCosts",
+      "value": "6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerHomeCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerCarStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerCarStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerCarEndingAge",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerCarEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualBiggerCarCosts",
+      "value": "3,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualBiggerCarCosts-error-message",
+      "value": "Must be between $0 and $50,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualFurnishingsStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualFurnishingsStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualFurnishingsEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualFurnishingsEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualFurnishingsCosts",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualFurnishingsCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Recreation-tab-label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next >'])[3]/following::h2[1]",
+      "value": "Estimated Recreation & Miscellaneous Costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf-Recreation-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Starting age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Recreation-details']/div[3]/div[2]/div/div/fieldset/legend",
+      "value": "Ending age"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-Recreation-details']/div[3]/div[3]/div/div/fieldset/legend",
+      "value": "Annual amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualActivitiesStartingAge_label']/span[2]",
+      "value": "Activities"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//label[@id='lf_Budget_AnnualVacationStartingAge_label']/span",
+      "value": "Family vacations"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualActivitiesStartingAge",
+      "value": "6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualActivitiesStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualActivitiesEndingAge",
+      "value": "18"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualActivitiesEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualActivitiesCosts",
+      "value": "500"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualVacationStartingAge",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualVacationStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualVacationEndingAge",
+      "value": "16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualVacationEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualVacationCosts",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualVacationCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMiscellaneousStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMiscellaneousStartingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMiscellaneousEndingAge",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMiscellaneousEndingAge-error-message",
+      "value": "Must be between 0 and 19"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Budget_AnnualMiscellaneousCosts",
+      "value": "1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Budget_AnnualMiscellaneousCosts-error-message",
+      "value": "Must be between $0 and $100,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-ChildcareEducation-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDayCareStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDayCareEndingAge",
+      "value": "6"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDayCareCosts",
+      "value": "6,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBabySittingStartingAge",
+      "value": "3"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBabySittingEndingAge",
+      "value": "11"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBabySittingCosts",
+      "value": "850"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualEducationStartingAge",
+      "value": "6"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualEducationEndingAge",
+      "value": "23"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualEducationEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualEducationCosts",
+      "value": "1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-FoodClothingHealthcare-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualGroceriesEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualGroceriesCosts",
+      "value": "2,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualClothingEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualClothingCosts",
+      "value": "400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualMedicalEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualMedicalCosts",
+      "value": "200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDentalBillsStartingAge",
+      "value": "2"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDentalBillsEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualDentalBillsCosts",
+      "value": "150"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualExtraInsuranceEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualExtraInsuranceCosts",
+      "value": "250"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-HousingTransportation-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerHomeStartingAge",
+      "value": "0"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerHomeEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerHomeCosts",
+      "value": "5,555"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerCarStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerCarEndingAge",
+      "value": "16"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualBiggerCarCosts",
+      "value": "2,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualFurnishingsStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualFurnishingsEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualFurnishingsCosts",
+      "value": "200"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-Recreation-tab-label"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualActivitiesStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualActivitiesEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualActivitiesCosts",
+      "value": "400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualVacationStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualVacationEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualVacationCosts",
+      "value": "400"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualMiscellaneousStartingAge",
+      "value": "1"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualMiscellaneousEndingAge",
+      "value": "19"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Budget_AnnualMiscellaneousCosts",
+      "value": "150"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Previous'])[3]/following::button[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Raising a child will cost approximately $292,300"
+    }
+  }
+]

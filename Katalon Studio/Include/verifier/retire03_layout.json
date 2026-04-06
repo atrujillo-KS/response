@@ -1,0 +1,734 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "AboutYou",
+        "RetirementPlan",
+        "Assumptions"
+      ],
+      "AboutYou": {
+        "tabLabel": "About You",
+        "fields": [
+          "Global_CurrentAge",
+          "Global_RetirementAge",
+          "Global_AnnualGrossIncome"
+        ]
+      },
+      "RetirementPlan": {
+        "tabLabel": "Retirement Plan",
+        "fields": [
+          "Retirement_CurrentSavings",
+          "Retirement_PercentageOfIncomeToSave",
+          "Retirement_InvestmentStyleBeforeRetirement",
+          "Retirement_InvestmentStyleDuringRetirement",
+          "Retirement_ExpectedMonthlySocialSecurityBenefits",
+          "Retirement_MonthlyPensionPayment",
+          "Retirement_OtherMonthlyIncome"
+        ]
+      },
+      "Assumptions": {
+        "tabLabel": "Assumptions",
+        "fields": [
+          "Retirement_RetirementSpendingPercentage",
+          "Global_LifeExpectancy",
+          "Global_EstimatedAnnualIncreaseInIncome",
+          "Global_InflationRate",
+          "Global_MaritalStatus"
+        ]
+      }
+    },
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Current age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "37",
+        "value": "37",
+        "minimumValue": "1",
+        "maximumValue": "100",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Retirement age",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "67",
+        "value": "67",
+        "minimumValue": "2",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Annual household income",
+        "smallLabel": "",
+        "glossaryTerm": "grosshouseholdincome",
+        "format": "currency",
+        "defaultValue": "75000",
+        "value": "75000",
+        "minimumValue": "1",
+        "maximumValue": "1000000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Retirement_CurrentSavings": {
+        "fieldLabel": "Current retirement savings",
+        "smallLabel": "",
+        "glossaryTerm": "currentretirementsavings",
+        "format": "currency",
+        "defaultValue": "75000",
+        "value": "75000",
+        "minimumValue": "0",
+        "maximumValue": "1000000000",
+        "maxlength": "11",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "1000000",
+        "widgetStep": "10000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Retirement_PercentageOfIncomeToSave": {
+        "fieldLabel": "Percentage of income to save",
+        "smallLabel": " (#AMOUNT# annually)",
+        "glossaryTerm": "retirementcontributionpercentage",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Retirement_InvestmentStyleBeforeRetirement": {
+        "glossaryTerm": "investmentstyle",
+        "dropdown": true,
+        "fieldLabel": "Investment style before retirement",
+        "smallLabel": " (#PERCENT#% assumed rate of return)",
+        "precision": 0,
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "dataField": "Global_PreservationInvestmentStyleRateOfReturn",
+            "optionText": "Preservation"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "dataField": "Global_ConservativeInvestmentStyleRateOfReturn",
+            "optionText": "Conservative"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "dataField": "Global_ModerateInvestmentStyleRateOfReturn",
+            "optionText": "Moderate"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "dataField": "Global_BalancedInvestmentStyleRateOfReturn",
+            "optionText": "Balanced"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "4",
+            "dataField": "Global_GrowthInvestmentStyleRateOfReturn",
+            "optionText": "Growth"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "5",
+            "dataField": "Global_AggressiveInvestmentStyleRateOfReturn",
+            "optionText": "Aggressive"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Retirement_InvestmentStyleDuringRetirement": {
+        "glossaryTerm": "investmentstyle",
+        "dropdown": true,
+        "fieldLabel": "Investment style during retirement",
+        "smallLabel": " (#PERCENT#% assumed rate of return)",
+        "precision": 0,
+        "dropdownOptions": [
+          {
+            "defaultSelection": "",
+            "optionValue": "0",
+            "dataField": "Global_PreservationInvestmentStyleRateOfReturn",
+            "optionText": "Preservation"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "dataField": "Global_ConservativeInvestmentStyleRateOfReturn",
+            "optionText": "Conservative"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "2",
+            "dataField": "Global_ModerateInvestmentStyleRateOfReturn",
+            "optionText": "Moderate"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "3",
+            "dataField": "Global_BalancedInvestmentStyleRateOfReturn",
+            "optionText": "Balanced"
+          },
+          {
+            "defaultSelection": "selected",
+            "optionValue": "4",
+            "dataField": "Global_GrowthInvestmentStyleRateOfReturn",
+            "optionText": "Growth"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "5",
+            "dataField": "Global_AggressiveInvestmentStyleRateOfReturn",
+            "optionText": "Aggressive"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Retirement_ExpectedMonthlySocialSecurityBenefits": {
+        "fieldLabel": "Monthly Social Security benefits",
+        "smallLabel": "",
+        "glossaryTerm": "socialsecurity",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number",
+        "link": "<div class='lf-field-link'><a target=\"_blank\" href='https://www.ssa.gov/OACT/quickcalc/index.html' target='_blank' title='Get quick estimate from ssa.gov'>Get quick estimate from ssa.gov</a></div>"
+      },
+      "Retirement_MonthlyPensionPayment": {
+        "fieldLabel": "Monthly pension benefits",
+        "smallLabel": "",
+        "glossaryTerm": "pension",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Retirement_OtherMonthlyIncome": {
+        "fieldLabel": "Other monthly retirement income",
+        "smallLabel": "",
+        "glossaryTerm": "alternativeretirementincomesources",
+        "format": "currency",
+        "defaultValue": "0",
+        "value": "0",
+        "minimumValue": "0",
+        "maximumValue": "100000",
+        "maxlength": "7",
+        "precision": 0,
+        "sliderMinVal": "0",
+        "sliderMaxVal": "10000",
+        "widgetStep": "100",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Retirement_RetirementSpendingPercentage": {
+        "fieldLabel": "Retirement spending",
+        "smallLabel": "(% of pre-retirement income)",
+        "glossaryTerm": "retirementspending",
+        "format": "percent",
+        "defaultValue": "80.00",
+        "value": "80.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "200.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_LifeExpectancy": {
+        "fieldLabel": "Life expectancy",
+        "smallLabel": "",
+        "glossaryTerm": "lifeexpectancy",
+        "valueTextLabel": "years",
+        "format": "number",
+        "defaultValue": "80",
+        "value": "80",
+        "minimumValue": "5",
+        "maximumValue": "120",
+        "maxlength": "3",
+        "precision": 0,
+        "sliderMinVal": "5",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "solverEditable": true,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_EstimatedAnnualIncreaseInIncome": {
+        "fieldLabel": "Expected income growth rate",
+        "smallLabel": "",
+        "glossaryTerm": "expectedincomegrowthrate",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflationrate",
+        "format": "percent",
+        "defaultValue": "3.00",
+        "value": "3.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "5",
+        "maximumValue": "90.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "90.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_MaritalStatus": {
+        "glossaryTerm": "maritalstatusandsocialsecurity",
+        "dropdown": true,
+        "fieldLabel": "Marital status",
+        "smallLabel": "",
+        "dropdownOptions": [
+          {
+            "defaultSelection": "selected",
+            "optionValue": "0",
+            "optionText": "Single"
+          },
+          {
+            "defaultSelection": "",
+            "optionValue": "1",
+            "optionText": "Married"
+          }
+        ],
+        "inputTypeDDL": true,
+        "inputTypeText": false,
+        "inputTypeRadio": false
+      },
+      "Global_PreservationInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Preservation investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "0.00",
+        "value": "0.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ConservativeInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Conservative investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "2.00",
+        "value": "2.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_ModerateInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Moderate investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "4.00",
+        "value": "4.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_BalancedInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Balanced investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "6.00",
+        "value": "6.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_GrowthInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Growth investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "8.00",
+        "value": "8.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_AggressiveInvestmentStyleRateOfReturn": {
+        "fieldLabel": "Aggressive investment style rate of return",
+        "smallLabel": "",
+        "glossaryTerm": "",
+        "format": "percent",
+        "defaultValue": "10.00",
+        "value": "10.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "100.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "100.00",
+        "widgetStep": "1.0",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results_fields": {
+      "Retirement_AgeSavingsRunsOut": {
+        "fieldLabel": "Expected age retirement savings will run out"
+      },
+      "Retirement_AdditionalSavingsNeeded": {
+        "fieldLabel": "Additional savings needed to fully fund retirement"
+      },
+      "Retirement_SurplusSavings": {
+        "fieldLabel": "Surplus of retirement savings"
+      },
+      "Retirement_PlannedSavings": {
+        "fieldLabel": "Planned retirement savings"
+      },
+      "Retirement_RequiredSavings": {
+        "fieldLabel": "Required retirement savings"
+      },
+      "Retirement_SuggestedRetirementAge": {
+        "fieldLabel": "Delay your retirement until age"
+      },
+      "Retirement_SuggestedContributionAmount": {
+        "fieldLabel": "Suggested retirement contribution amount"
+      },
+      "Retirement_SuggestedContributionPercentage": {
+        "fieldLabel": "Suggested retirement contribution percentage"
+      },
+      "Retirement_SuggestedRateOfReturn": {
+        "fieldLabel": "Suggested rate of return before retirement"
+      },
+      "Retirement_SuggestedRetirementSpendingPercentage": {
+        "fieldLabel": "Suggested retirement spending percentage"
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "columnHeaders": [
+        ""
+      ],
+      "fields": [
+        [
+          "Retirement_SuggestedRetirementAge"
+        ]
+      ]
+    }
+  },
+  "labels": {
+    "dataTableCategory": "Total",
+    "dataTableCategoryTitle2": "Age",
+    "answerDetails": "<div class='lf-answer-details-custom'><div class='lf-answer-details-custom-header'>Some possible ways to get on track:</div><ul><li class='lf-delay-retirement'>Delay your retirement until age #Retirement_SuggestedRetirementAge#</li><li class='lf-row-annual-contrib'>Increase your annual retirement contribution to $#Retirement_SuggestedContributionAmount# (#Retirement_SuggestedContributionPercentage#% of income)</li><li class='lf-row-rate-before-retirement'>Increase your rate of return before retirement to #Retirement_SuggestedRateOfReturn#%</li><li>Decrease your retirement spending</li></ul></div>",
+    "title": "How much do I need to save for retirement?",
+    "answer": "Congratulations. Based on your inputs, you are on track for retirement. You will have an estimated surplus of <span class='lf-bold'>$#Retirement_SurplusSavings#</span> in savings.",
+    "answer2": "Based on your inputs, your retirement savings is expected to run out at age <span class='lf-bold'>%RUN_OUT_AGE%</span>. You will need to save an additional <span class='lf-bold'>$%ADD_SAVINGS%</span> to retire at age <span class='lf-bold'>%RETIRE_AGE%</span>.",
+    "selectors": [
+      {
+        "label": "Planned vs. Required Savings",
+        "width": "33%",
+        "first": true
+      },
+      {
+        "label": "Savings Over Time",
+        "width": "33%",
+        "getTableData": true
+      },
+      {
+        "label": "Planned Savings",
+        "width": "33%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "index": "0",
+            "title": "Planned Savings - Balances By Year",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Age",
+        "Balance",
+        "Investment Growth",
+        "Income",
+        "Contributions",
+        "Retirement Expenses",
+        "Other Retirement Income",
+        "Account Withdrawals",
+        "Ending Balance"
+      ]
+    ],
+    "plannedSavings": "Planned Savings",
+    "requiredSavings": "Required Savings",
+    "balance": "Balance"
+  },
+  "glossaryItems": {
+    "currentretirementsavings": {
+      "title": "Current retirement savings",
+      "definition": "Total amount that you currently have saved toward your retirement in accounts such as 401(k)s, IRAs and annuities."
+    },
+    "investmentstyle": {
+      "title": "Investment style",
+      "definition": "An aggressive investment portfolio is more appropriate for those who have a higher risk tolerance, a longer time horizon, and an appetite for higher returns. Such a strategy would have an asset allocation with a substantial weighting in stocks and possibly little or no allocation to bonds or cash. A conservative investment strategy is best suited for those who have a lower risk tolerance, a shorter time horizon, and a desire for steady returns that prioritize preserving capital. In a conservative investing strategy more than half of a portfolio will generally be held in debt securities and cash equivalents rather than equities or other risky assets."
+    },
+    "grosshouseholdincome": {
+      "title": "Gross household income",
+      "definition": "Your pre-tax income income, including your spouse's income, from salary and investments."
+    },
+    "expectedincomegrowthrate": {
+      "title": "Expected income growth rate",
+      "definition": "The percentage increase in household income you expect to receive until retirement."
+    },
+    "retirementcontributionpercentage": {
+      "title": "Retirement contribution percentage",
+      "definition": "When saving for retirement, most experts recommend an annual retirement savings goal of 10% to 15% of your pre-tax income, including any employer match. This calculator assumes that you make one annual contribution at the end of each year, and any withdrawals happen once per year at the end of the year."
+    },
+    "retirementspending": {
+      "title": "Retirement spending",
+      "definition": "Most experts agree that you will need 70-80% of your pre-retirement income to maintain your standard of living in retirement. This amount is based on the household income earned during the year immediately before your retirement. "
+    },
+    "alternativeretirementincomesources": {
+      "title": "Alternative retirement income sources",
+      "definition": "Common retirement income sources besides investment accounts, Social Security benefits, and pensions include rental income, reverse mortgage, and part-time work."
+    },
+    "inflationrate": {
+      "title": "Inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate. A common measure of inflation in the U.S. is the Consumer Price Index (CPI)."
+    },
+    "pension": {
+      "title": "Pension",
+      "definition": "An employer-sponsored retirement plan that pays retirees a fixed amount that is based on number of years of service and salary history. "
+    },
+    "maritalstatusandsocialsecurity": {
+      "title": "Marital status and Social Security",
+      "definition": "Married couples have 1.5 times the maximum Social Security benefit than single wage earners. This calculator assumes that only one spouse works. If you are married and both you and your spouse work, it is recommended that you run the calculation twice - once for each spouse and their respective income. "
+    },
+    "socialsecurity": {
+      "title": "Social Security",
+      "definition": "The federal retirement income security program in the U.S. If eligible, you may start receiving benefits when you reach age 62. The minimum age for receiving full benefits is 66 if you were born from 1943 to 1954. The full retirement age increases gradually if you were born from 1955 to 1960 until it reaches 67. For anyone born 1960 or later, full retirement benefits are payable at age 67."
+    },
+    "lifeexpectancy": {
+      "title": "Life expectancy",
+      "definition": "Your life expectancy is the number of years that you are expected to live, statistically. Your life expectancy is based on the actual life span of the same set of  population that shares similar risk characteristics. These risk characteristics include smoking and drinking habits, level of exercise, and hereditary or congenital health problems. Life expectancy is used to calculate life insurance premiums and required minimum distributions from IRAs, among other reasons."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "This tool helps you determine whether you're on track for the retirement you want and map out different paths to reach your target. All projections are hypothetical in nature, do not reflect actual investment results, and are not guarantees of future results. You should consult with your advisor regarding your individual situation."
+    },
+    {
+      "textLabel": "This tool assumes that you make one annual contribution to your retirement savings at the end of each year, and that the year you retire, you do not make any contributions. Any withdrawals during retirement happened once per year at the end of the year."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart that compares the total planned savings at retirement with the savings required to fully fund your retirement."
+    },
+    {
+      "title": "Area chart that illustrates the build-up of planned and required savings (if applicable) until retirement and the drawdown of the balances during retirement."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Total planned savings at retirement with the savings required to fully fund your retirement"
+    },
+    {
+      "title": "Build-up of planned and required savings (if applicable) until retirement and the drawdown of the balances during retirement"
+    }
+  ]
+}

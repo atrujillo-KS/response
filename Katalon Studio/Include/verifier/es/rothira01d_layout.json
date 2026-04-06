@@ -1,0 +1,170 @@
+{
+  "layout": {
+    "tabs": {
+      "Contributions": {
+        "tabLabel": "CONTRIBUCIONES"
+      },
+      "AboutYou": {
+        "tabLabel": "ACERCA DE USTED"
+      },
+      "Returns": {
+        "tabLabel": "RENDIMIENTO"
+      }
+    },
+    "fields": {
+      "ContribAmt": {
+        "fieldLabel": "Contribución anual"
+      },
+      "ContribOpt": {
+        "fieldLabel": "Las contribuciones se invierten",
+        "dropdownOptions": [
+          {
+            "optionText": "Después de impuestos"
+          },
+          {
+            "optionText": "Antes de impuestos"
+          },
+          {
+            "optionText": "Sin relación con los impuestos"
+          }
+        ]
+      },
+      "CurrAge": {
+        "fieldLabel": "Edad actual"
+      },
+      "RetAge": {
+        "fieldLabel": "Edad para comenzar a retirar"
+      },
+      "DeathAge": {
+        "fieldLabel": "Expectativa de vida"
+      },
+      "TaxRateBef": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(antes de la jubilación)"
+      },
+      "TaxRateAft": {
+        "fieldLabel": "Su tasa de impuestos estatal + federal",
+        "smallLabel": "(después de la jubilación)"
+      },
+      "IRARateRothIRA": {
+        "fieldLabel": "Tasa de rendimiento estimado de la cuenta IRA"
+      },
+      "SavRate": {
+        "fieldLabel": "Rendimiento estimado de otros activos"
+      }
+    },
+    "results_fields": {
+      "TaxExpTrad": {
+        "fieldLabel": "Cuenta IRA tradicional"
+      },
+      "EstateTrad": {
+        "fieldLabel": "Cuenta IRA tradicional"
+      },
+      "TaxExpRoth": {
+        "fieldLabel": "Cuenta IRA Roth"
+      },
+      "EstateRoth": {
+        "fieldLabel": "Cuenta IRA Roth"
+      },
+      "TaxExpTaxed": {
+        "fieldLabel": "Cuenta IRA no deducible"
+      },
+      "EstateTaxed": {
+        "fieldLabel": "Cuenta IRA no deducible"
+      },
+      "TaxExpInvest": {
+        "fieldLabel": "Cuenta imponible"
+      },
+      "EstateInvest": {
+        "fieldLabel": "Cuenta imponible"
+      }
+    },
+    "results": {
+      "columnHeaders": [
+        "Porción con impuestos diferidos",
+        "Herencia total"
+      ]
+    }
+  },
+  "labels": {
+    "title": "¿Qué opción es mejor para la planificación de los bienes?",
+    "answer": "Suponiendo que no se produzca ningún retiro durante la jubilación, la <span class='lf-bold'>%name%</span> proporcionará la herencia más grande.",
+    "EstateTrad": "Cuenta IRA tradicional",
+    "EstateRoth": "Cuenta IRA Roth",
+    "EstateTaxed": "Cuenta IRA no deducible",
+    "EstateInvest": "Cuenta imponible",
+    "TaxDeferred": "Con impuestos diferidos",
+    "Taxable": "Imponible",
+    "categories": [
+      "Cuenta IRA tradicional",
+      "Cuenta IRA Roth",
+      "Cuenta IRA no deducible",
+      "Cuenta imponible"
+    ],
+    "selectors": [
+      {
+        "label": "Herencia",
+        "width": "100%",
+        "first": true
+      }
+    ]
+  },
+  "glossaryItems": {
+    "taxableaccount": {
+      "title": "Cuenta imponible",
+      "definition": "Una cuenta que no recibe los beneficios fiscales que una cuenta exenta de impuestos o una cuenta con impuestos diferidos son elegibles para recibir."
+    },
+    "regularira": {
+      "title": "Cuenta IRA regular",
+      "definition": "Una cuenta IRA regular también se llama IRA tradicional. Es una cuenta de jubilación con impuestos diferidos. En 2025, usted tiene permitido hacer una contribución con impuestos diferidos de $7,000 a una cuenta IRA regular. Esta cuenta crece con impuestos diferidos hasta que usted comience a tomar las distribuciones, lo que puede hacer sin penalización después de alcanzar la edad de 59 años y medio. Para las personas de 50 años o más, existe una disposición especial de la Ley tributaria de 2001 para ponerse al día que le permite contribuir $1,000 adicionales o un total de $8,000."
+    },
+    "nondeductibleira": {
+      "title": "Cuenta IRA no deducible",
+      "definition": "Una cuenta de jubilación individual cuyas contribuciones están parcial o completamente financiadas con contribuciones que no son deducibles de impuestos. Usted puede contribuir hasta $7,000 o $8,000 (según la edad, límites de ingresos y participación en un plan de jubilación patrocinado por el empleador) en 2025. Una cuenta IRA no deducible se beneficia de un crecimiento compuesto con impuestos diferidos."
+    },
+    "rothira": {
+      "title": "IRA Roth",
+      "definition": "Una cuenta de jubilación con ventajas de impuestos que le permite hacer una contribución después de impuestos de hasta $7,000 para 2025, o hasta $8,000 si tiene 50 años o más. Si usted mantiene una IRA Roth durante al menos cinco años y tiene al menos 59 años y medio de edad cuando comienza a hacer retiros de la cuenta, la cuenta entera puede ser distribuida sin pagar impuestos ni penalidades."
+    },
+    "magi": {
+      "title": "Ingreso bruto ajustado modificado (MAGI)",
+      "definition": "Una medida de ingresos utilizada para determinar la cantidad de una contribución deducible de impuestos que puede hacerse a una cuenta IRA tradicional o una contribución no deducible de impuestos a una cuenta IRA Roth."
+    },
+    "deductibleira": {
+      "title": "IRA deducible",
+      "definition": "Una cuenta IRA deducible es una cuenta de jubilación individual financiada con aportaciones deducibles de impuestos. En 2025, usted puede aportar hasta $7,000 o $8,000 (dependiendo de su edad, sus ingresos y su participación en un plan de jubilación patrocinado por el empleador)."
+    },
+    "taxrates": {
+      "title": "Tasas de impuestos",
+      "definition": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    },
+    "catchupprovisioniras": {
+      "title": "Un suministro de recuperacion compensatoria para contribuciones a una cuenta individual jubilatoria",
+      "definition": "La Ley de Reconciliación de Crecimiento Económico y Exención de Impuestos (Economic Growth and Tax Relief Reconciliation Act) de 2001 autorizó límites mayores de aportación anual para las cuentas IRA, planes 401(k) y otros planes de jubilación con aportaciones definidas. La disposición de aportaciones adicionales de la nueva ley autorizó límites aun mayores para los trabajadores de 50 años o más. Para las cuentas IRA regulares y Roth, el monto de la aportación adicional es de $1,000 para 2025. Como resultado, los límites de aportación anual combinados para personas de 50 años o más aumentan a $8,000 para 2025."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "Esta herramienta muestra el monto total que queda como herencia, si usted no usa ninguno de los fondos de jubilación como fuente de ingresos, para cuatro alternativas de inversión: una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RegularIRA\">cuenta IRA tradicional</a></span>, una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#RothIRA\">cuenta IRA Roth</a></span>, una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#nonDeductibleIRA\">cuenta IRA no deducible</a></span>, y depósitos en una <span class=\"lf-helpTab-tooltip-container\"><a class=\"lf-helpTab-tooltip\" href=\"#TaxableAccount\">cuenta imponible</a></span>."
+    },
+    {
+      "textLabel": "Los supuestos clave de esta herramienta incluyen:"
+    },
+    {
+      "textLabel": "Si las contribuciones se invierten antes o después de impuestos y el monto excede el máximo permitido, la contribución se maximiza por primera vez en las cuentas IRA. El monto restante se deposita en una cuenta de ahorros imponible. El escenario en el que las contribuciones se invierten sin tener en cuenta los impuestos no tiene una cuenta de ahorros."
+    },
+    {
+      "textLabel": "Los depósitos se acumulan mensualmente."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de columnas apiladas que compara la herencia proporcionada (con impuestos diferidos, imponible y total) por la IRA tradicional, la IRA Roth, la IRA no deducible y la cuenta imponible."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Herencia proporcionada (con impuestos diferidos, imponible y total) por la IRA tradicional, la IRA Roth, la IRA no deducible y la cuenta imponible"
+    }
+  ]
+}

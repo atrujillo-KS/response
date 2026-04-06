@@ -1,0 +1,96 @@
+{
+  "layout": {
+    "fields": {
+      "Global_CurrentAge": {
+        "fieldLabel": "Edad actual",
+        "valueTextLabel": "años"
+      },
+      "Global_RetirementAge": {
+        "fieldLabel": "Edad de retiro",
+        "valueTextLabel": "años"
+      },
+      "Global_AnnualGrossIncome": {
+        "fieldLabel": "Ingresos brutos anuales"
+      },
+      "Global_IncomeGrowthRate": {
+        "fieldLabel": "Tasa estimada de crecimiento de ingresos"
+      },
+      "Global_InvestmentRate": {
+        "fieldLabel": "Tasa de retorno de la inversión"
+      }
+    },
+    "tabs": {
+      "tabOrder": [
+        "basic"
+      ],
+      "basic": {
+        "fields": []
+      }
+    },
+    "results": {}
+  },
+  "labels": {
+    "age": "Edad",
+    "dataTableCategoryTitle": "Edad",
+    "title": "¿Cuál es el valor presente de mis ganancias futuras?",
+    "answer": "El valor presente de sus ganancias futuras es de <span class='lf-bold'>%result%</span>",
+    "earnings": "Ganancias",
+    "annualEarnings": "Ganancias Anuales",
+    "presentValue": "Valor Presente",
+    "selectors": [
+      {
+        "label": "Ganancias Anuales",
+        "width": "50%",
+        "first": true
+      },
+      {
+        "label": "Amortización",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Ganancias anuales y su valor presente"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Año",
+        "Edad",
+        "Ganancias anuales",
+        "Valor presente"
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "grossincome": {
+      "title": "Ingresos brutos",
+      "definition": "El IRS define ingreso bruto como todo ingreso que no está exento de impuestos. El ingreso bruto puede recibirse como dinero, bienes, propiedades o servicios."
+    },
+    "incomegrowthrate": {
+      "title": "Tasa de crecimiento de ingresos",
+      "definition": "Aumento porcentual anual que espera en su ingreso anual."
+    },
+    "rateofreturn": {
+      "title": "Tasa de retorno",
+      "definition": "El porcentaje de ganancia o pérdida de una inversión expresada como una tasa anual."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "El valor de la vida humana (HLV) es el valor actual de todos los ingresos futuros que esperaría obtener para sus seres queridos. Es un indicador de la pérdida económica que sufriría su familia en el caso desafortunado de su muerte prematura. Esta herramienta lo ayuda a calcular HLV, un factor importante para determinar el monto de la cobertura de seguro de vida que necesita para proteger financieramente el futuro de su familia. Para obtener más información, consulte a un profesional de seguros."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Gráfico de áreas que compara las ganancias anuales y el valor actual de esas ganancias desde la edad actual hasta la jubilación."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Comparación entre las ganancias anuales y el valor presente de esas ganancias desde la edad actual hasta la jubilación"
+    }
+  ]
+}

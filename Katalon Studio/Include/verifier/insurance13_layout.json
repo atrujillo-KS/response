@@ -1,0 +1,280 @@
+{
+  "layout": {
+    "tabs": {
+      "tabOrder": [
+        "yourInformation",
+        "disabilityInformation"
+      ],
+      "yourInformation": {
+        "tabLabel": "Your Information",
+        "fields": [
+          "Global_MonthlyExpenses",
+          "Insurance_MonthsOfDisability",
+          "Global_InflationRate"
+        ]
+      },
+      "disabilityInformation": {
+        "tabLabel": "Disability Information",
+        "fields": [
+          "Insurance_CurrentMonthlyDisabilityCoverage",
+          "Insurance_MonthsOfDisabilityCoverage"
+        ]
+      }
+    },
+    "fields": {
+      "Global_MonthlyExpenses": {
+        "fieldLabel": "Monthly expenses",
+        "smallLabel": "",
+        "glossaryTerm": "monthlyexpenses",
+        "format": "currency",
+        "defaultValue": "5000",
+        "value": "5000",
+        "precision": "0",
+        "minimumValue": "0",
+        "maxlength": "9",
+        "maximumValue": "10000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_MonthsOfDisability": {
+        "fieldLabel": "Months of disability",
+        "smallLabel": "",
+        "glossaryTerm": "monthsofdisability",
+        "format": "number",
+        "defaultValue": "12",
+        "value": "12",
+        "precision": "0",
+        "minimumValue": "1",
+        "maxlength": "3",
+        "maximumValue": "360",
+        "sliderMinVal": "1",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Global_InflationRate": {
+        "fieldLabel": "Annual inflation rate",
+        "smallLabel": "",
+        "glossaryTerm": "inflation",
+        "format": "percent",
+        "defaultValue": "0",
+        "value": "1.00",
+        "precision": "2",
+        "minimumValue": "0.00",
+        "maxlength": "6",
+        "maximumValue": "90.00",
+        "sliderMinVal": "0.00",
+        "sliderMaxVal": "20.00",
+        "widgetStep": "1.00",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_CurrentMonthlyDisabilityCoverage": {
+        "fieldLabel": "Current monthly coverage",
+        "smallLabel": "",
+        "glossaryTerm": "currentbonthlydisabilitycoverage",
+        "format": "currency",
+        "defaultValue": "2000",
+        "value": "2000",
+        "precision": "0",
+        "minimumValue": "0.00",
+        "maxlength": "9",
+        "maximumValue": "10000000",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100000",
+        "widgetStep": "1000",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      },
+      "Insurance_MonthsOfDisabilityCoverage": {
+        "fieldLabel": "Months of coverage",
+        "smallLabel": "",
+        "glossaryTerm": "monthsofdisabilitycoverage",
+        "format": "number",
+        "defaultValue": "6",
+        "value": "6",
+        "precision": "0",
+        "minimumValue": "1",
+        "maxlength": "3",
+        "maximumValue": "360",
+        "sliderMinVal": "0",
+        "sliderMaxVal": "100",
+        "widgetStep": "1",
+        "inputTypeDDL": false,
+        "inputTypeText": true,
+        "inputTypeRadio": false,
+        "cellClass": "",
+        "dataHighlight": "true",
+        "inputType": "text",
+        "safeType": "number"
+      }
+    },
+    "results": {
+      "loadGraphData": true,
+      "simpleLayout": true,
+      "columnHeaders": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    "results1": {
+      "fields": [
+        [
+          "Global_MonthlyExpensesInflationAdjusted"
+        ],
+        [
+          "Insurance_CurrentMonthlyDisabilityCoverage"
+        ],
+        [
+          "Insurance_DisabilityCoverageSurplusOrShortage"
+        ]
+      ]
+    },
+    "results2": {
+      "fields": [
+        [
+          "Insurance_MonthsOfDisability"
+        ],
+        [
+          "Insurance_MonthsOfDisabilityCoverage"
+        ],
+        [
+          "Insurance_DisabilityCoverageMonthsSurplusOrShortage"
+        ]
+      ]
+    },
+    "results_fields": {
+      "Global_MonthlyExpensesInflationAdjusted": {
+        "fieldLabel": "Monthly expenses"
+      },
+      "Insurance_CurrentMonthlyDisabilityCoverage": {
+        "fieldLabel": "Disability coverage"
+      },
+      "Insurance_DisabilityCoverageSurplusOrShortage": {
+        "fieldLabel": "%surplus%"
+      },
+      "Insurance_MonthsOfDisability": {
+        "fieldLabel": "Months of disability"
+      },
+      "Insurance_MonthsOfDisabilityCoverage": {
+        "fieldLabel": "Months of coverage"
+      },
+      "Insurance_DisabilityCoverageMonthsSurplusOrShortage": {
+        "fieldLabel": "%shortage%"
+      }
+    }
+  },
+  "labels": {
+    "SHORTFALL": "Shortfall",
+    "SURPLUS": "Surplus",
+    "month": "Month",
+    "dataTableCategoryTitle": "Month",
+    "title": "How much disability insurance will I need? ",
+    "answer1": "In order to meet your disability insurance needs, you will have to extend your disability coverage by <span class='lf-bold'>%result1% %MONTHS%</span> and you will need to increase your disability coverage by <span class='lf-bold'>%result2%</span>.",
+    "answer2": "Your current disability coverage is adequate to cover your inflation adjusted expenses of <span class='lf-bold'>%result3%</span> but falls short by <span class='lf-bold'>%result4% %MONTHS%</span> in length of coverage.",
+    "answer3": "Your disability coverage is adequate to meet the <span class='lf-bold'>%result5% %MONTHS%</span> of required coverage, but falls short by <span class='lf-bold'>%result2%</span> in meeting your monthly expense needs.",
+    "answer": "Your disability coverage is adequate to meet your disability needs.",
+    "monthlyExpenses": "Monthly expenses",
+    "disabilityCoverage": "Disability coverage",
+    "selectors": [
+      {
+        "label": "Monthly Expenses",
+        "width": "50%",
+        "first": true,
+        "getTableData": true
+      },
+      {
+        "label": "Amortization",
+        "width": "50%",
+        "last": true,
+        "table": true,
+        "tables": [
+          {
+            "title": "Disability Needs vs. Coverage",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "tableHeaders": [
+      [
+        "Month",
+        "Monthly Expenses",
+        "Disability Coverage "
+      ]
+    ]
+  },
+  "glossaryItems": {
+    "monthlyexpenses": {
+      "title": "Monthly expenses",
+      "definition": "Your monthly living expenses, less any expenses you might incur by going to work (such as fuel costs for commuting)."
+    },
+    "monthsofdisability": {
+      "title": "Months of disability",
+      "definition": "The number of months you might expect to be disabled or that you would require disability coverage."
+    },
+    "inflation": {
+      "title": "Annual inflation rate",
+      "definition": "A general increase in prices that you pay for goods and services, stated as a yearly rate."
+    },
+    "currentbonthlydisabilitycoverage": {
+      "title": "Current monthly disability coverage",
+      "definition": "Your current monthly dollar amount of disability coverage."
+    },
+    "monthsofdisabilitycoverage": {
+      "title": "Months of disability coverage",
+      "definition": "The months of disability coverage your curently have coverage for with an existing disability insurance plan."
+    }
+  },
+  "help": [
+    {
+      "textLabel": "One of the most important assets you have is the ability to work and earn an income. Disability insurance replace a portion of your income if you become sick or injured and are unable to work. This type of insurance is available available through both public and private programs. As a starting point, this tool helps you estimate the amount and duration of disability insurance needed for your specific situation. For further information, please consult an insurance professional."
+    }
+  ],
+  "chartTitles": [
+    {
+      "title": "Column chart that compares expenses and disability coverage for each month of disability."
+    }
+  ],
+  "tableTitles": [
+    {
+      "title": "Disability Needs vs. Coverage"
+    }
+  ]
+}

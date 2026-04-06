@@ -1,0 +1,702 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I buy a tax-exempt or taxable bond?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool calculates rates of return, before and after taxes, for a taxable and tax-exempt bond. Rates of return are shown for two scenarios: holding the bond to maturity and selling before maturity."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "Tax-exempt bonds generate a lower rate of return because the interest that they pay is generally exempt from federal (and sometimes state) income taxes. The yield on a taxable bond that is equivalent to the yield on a tax-exempt bond is called the taxable-equivalent yield."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Taxable-equivalent yield depends on the investor's income tax rate. For example, an investor in the 25% tax bracket that owns a tax-exempt bond that yields 5% would require a yield of 6.67% on a taxable bond in order to make the taxable bond equally attractive."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "This tool assumes that the taxable bond is taxed using the regular federal and state taxes, i.e. it is treated as a corporate bond."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_4",
+      "value": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Buying a tax-exempt bond will earn a higher return after taxes of −7.55%"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer_more_info",
+      "value": "Show details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "true"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-1",
+      "value": "Tax-exempt bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-2",
+      "value": "Taxable bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle1",
+      "value": "If you sell in 12 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_label",
+      "value": "Selling price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_value",
+      "value": "$9,087"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondSellingPrice_result_value",
+      "value": "$9,804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfSell_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−7.55%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−10.87%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfSell_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfSell_result_value",
+      "value": "−7.55%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldAfterTaxesIfSell_result_value",
+      "value": "−10.87%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_result_subtitle2",
+      "value": "If you hold to maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity_result_label",
+      "value": "Return before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "header-1",
+      "value": "Tax-exempt bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "−0.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "−1.89%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity_result_label",
+      "value": "Return after taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "−0.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "−1.89%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForAttribute": {
+      "id": "lf_answer_more_info",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "At Sale"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Sale Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "At Maturity"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "ExemptBond-accordion",
+      "value": "Tax-Exempt Bond"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondPurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxExemptBondPurchasePrice",
+      "value": "101.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondPurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondFaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxExemptBondFaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondFaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondCouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxExemptBondCouponRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondCouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondMonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxExemptBondMonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondMonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "TaxableBond-accordion",
+      "value": "Taxable Bond"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxableBond-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice-label",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "110.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_PurchasePrice_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue-label",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_FaceValue",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_FaceValue_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate-label",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_CouponRate",
+      "value": "4.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity-label",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsToMaturity_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "SharedBondInfo-accordion",
+      "value": "Shared Bond Info"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_MonthsTaxExemptBondOwned-label",
+      "value": "Months until you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_MonthsTaxExemptBondOwned",
+      "value": "12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondMarketRateToday-label",
+      "value": "Market rate when you sell"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Bond_TaxExemptBondMarketRateToday",
+      "value": "5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxExemptBondMarketRateToday_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption-label",
+      "value": "Your coupon income is"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "Spent when received Invested elsewhere"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus-label",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "Single Married filing jointly Married filing separately Head of household"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_TaxFilingStatus_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome-label",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "click": {
+      "id": "ExemptBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxExemptBondPurchasePrice",
+      "value": "99.11"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxExemptBondFaceValue",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxExemptBondCouponRate",
+      "value": "4."
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxExemptBondMonthsToMaturity",
+      "value": "48"
+    }
+  },
+  {
+    "click": {
+      "id": "TaxableBond-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "150.00"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_FaceValue",
+      "value": "5,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_CouponRate",
+      "value": "8.97"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "48"
+    }
+  },
+  {
+    "click": {
+      "id": "SharedBondInfo-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_MonthsTaxExemptBondOwned",
+      "value": "18"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Bond_TaxExemptBondMarketRateToday",
+      "value": "10.00"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Bond_CouponIncomeSpendingOption",
+      "value": "label=Invested elsewhere"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "8.45"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_TaxFilingStatus",
+      "value": "label=Single"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "78,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.11"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Buying a tax-exempt bond will earn a higher return after taxes of −6.36%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_SellingPrice_result_value",
+      "value": "$4,331"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondSellingPrice_result_value",
+      "value": "$4,869"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−6.36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldBeforeTaxesIfSell_result_value",
+      "value": "−17.98%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfSell_result_value",
+      "value": "−6.36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldAfterTaxesIfSell_result_value",
+      "value": "−19.95%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "4.37%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldBeforeTaxesIfHoldToMaturity_result_value",
+      "value": "−1.48%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "4.37%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Bond_TaxableBondYieldAfterTaxesIfHoldToMaturity_result_value",
+      "value": "−3.75%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

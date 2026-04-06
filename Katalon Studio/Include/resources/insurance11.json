@@ -1,0 +1,729 @@
+[
+  {
+    "waitForText": {
+      "id": "lf_title_label",
+      "value": "How much car insurance coverage do I need?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool serves as an informational starting point to help you determine the right car insurance level and options for your needs. Car insurance laws vary by state. They require different minimum liability limits, and some require uninsured/underinsured motorist coverage and personal injury protection. Those state minimums, however, are typically insufficient to protect you and your car in the event of an accident. This tool does not represent an actual insurance quote, nor does it present every coverage option or limit available in each state and situation. For further information, please consult an insurance professional."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf-selectors-template-placeholder']/h2",
+      "value": "Coverage options and limits:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Lower Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[3]",
+      "value": "Good Protection"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[4]",
+      "value": "Better Protection"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostBILPerPerson_result_label",
+      "value": "Bodily Injury Liability i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostBILPerPerson_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostBILPerPerson_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Bodily injury liability"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "If you are at fault for a car accident, this insurance coverage helps pay for the medical expenses, lost wages, legal bills for other drivers and passengers. The first amount listed is the maximum an insurance company will pay per injured person. The second amount is the maximum coverage for injury-related expenses per accident. The total of all the bodily injury payouts cannot exceed this amount."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostBILPerPerson_result_value",
+      "value": "$25,000 Per Person / $50,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionBILPerPerson_result_value",
+      "value": "$100,000 Per Person / $300,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionBILPerPerson_result_value",
+      "value": "$250,000 Per Person / $500,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPDL_result_label",
+      "value": "Property Damage Liability i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostPDL_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostPDL_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Property damage liability"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "If you are at fault for a car accident, this insurance coverage helps pay to repair damage you cause to another person's vehicle or property. It does not cover damage to your own vehicle."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPDL_result_value",
+      "value": "$25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionPDL_result_value",
+      "value": "$100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionPDL_result_value",
+      "value": "$250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMBIPerPerson_result_label",
+      "value": "Uninsured / Underinsured Motorist Bodily Injury i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostUMBIPerPerson_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostUMBIPerPerson_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Uninsured/underinsured motorist bodily injury"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "This insurance coverage helps pay you and the people in your car for medical bills, lost wages and pain and suffering if you're in an accident caused by someone who doesn't have insurance or enough insurance. The first amount listed is the maximum an insurance company will pay per injured person. The second amount is the maximum coverage for injury-related expenses per accident. The total of all the bodily injury payouts cannot exceed this amount."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMBIPerPerson_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionUMBIPerPerson_result_value",
+      "value": "$100,000 Per Person / $300,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionUMBIPerPerson_result_value",
+      "value": "$250,000 Per Person / $500,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMPD_result_label",
+      "value": "Uninsured Motorist Property Damage i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostUMPD_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostUMPD_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Uninsured motorist property damage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "This insurance coverage helps pay for damage to your car or other property if you're in an accident caused by someone who doesn't have insurance or enough insurance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMPD_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionUMPD_result_value",
+      "value": "$50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionUMPD_result_value",
+      "value": "$100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPIPPerPerson_result_label",
+      "value": "Personal Injury Protection i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostPIPPerPerson_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostPIPPerPerson_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Personal injury protection"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "This coverage, also known as no-fault insurance, covers medical expenses and lost wages of you and your passengers if you're injured in a car accident, regardless of who caused the accident. The first amount listed is the maximum an insurance company will pay per injured person. The second amount is the maximum coverage for injury-related expenses per accident. The total of all the payouts cannot exceed this amount."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPIPPerPerson_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionPIPPerPerson_result_value",
+      "value": "$40,000 Per Person / N/A Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionPIP_result_value",
+      "value": "State maximum"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostComprehensiveAndCollision_result_label",
+      "value": "Comprehensive and Collision i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostComprehensiveAndCollision_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_LowerCostComprehensiveAndCollision_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Comprehensive and collision coverage"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Comprehensive car insurance pays for damage to your car caused from things such as theft, fire, or other natural disasters which are not collision-related. Collision insurance covers the cost to repair or replace your car if you're in an accident with another vehicle or object, regardless of who is at fault. Financed or leased cars automatically require comprehensive and collision coverage. If you own your car and either the value is low or you can pay out-of-pocket to repair or replace it, it may not be worth it to purchase comprehensive and collision insurance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostComprehensiveAndCollision_result_value",
+      "value": "Required (suggested $250 deductible)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionComprehensiveAndCollision_result_value",
+      "value": "Required (suggested $500 deductible)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionComprehensiveAndCollision_result_value",
+      "value": "Required (suggested $1,000 deductible)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateOfResidence-label",
+      "value": "State of residence"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateOfResidence",
+      "value": "Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateOfResidence",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateOfResidence_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Global_StateOfResidence_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "State requirements for car insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Minimum liability limits vary by state, along with coverage requirements for uninsured/underinsured motorist bodily injury and property damage, personal injury protection and medical payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CarOwnershipStatus-label",
+      "value": "Car ownership status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CarOwnershipStatus",
+      "value": "It is financed It is leased I own it"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CarOwnershipStatus",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_CarOwnershipStatus_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_CarOwnershipStatus_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Car ownership status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Financed or leased cars automatically require comprehensive and collision coverage."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CarValue-label",
+      "value": "Value of your car"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_CarValue",
+      "value": "$2,000 or over Less than $2,000"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_CarValue",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_CarValue_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_CarValue_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Car value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "If the value of your car is low, it may not be worth it to purchase comprehensive and collision insurance."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FinancialState-label",
+      "value": "Can you pay out-of-pocket to replace the car?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_FinancialState",
+      "value": "No Yes"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Insurance_FinancialState",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//a[@id='lf_Insurance_FinancialState_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//a[@id='lf_Insurance_FinancialState_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Financial state"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "If you can pay out-of-pocket to repair or replace your vehicle, you may not need comprehensive and collision coverage."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Global_StateOfResidence",
+      "value": "label=Delaware"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='7']"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_CarOwnershipStatus"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_CarOwnershipStatus",
+      "value": "label=I own it"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Insurance_CarOwnershipStatus']/option[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_CarValue"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_CarValue",
+      "value": "label=Less than $2,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Insurance_CarValue']/option[2]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Insurance_FinancialState"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Insurance_FinancialState",
+      "value": "label=Yes"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_Insurance_FinancialState']/option[2]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_Insurance_LowerCostBILPerPerson_result_value",
+      "value": "$25,000 Per Person / $50,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionBILPerPerson_result_value",
+      "value": "$100,000 Per Person / $300,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionBILPerPerson_result_value",
+      "value": "$250,000 Per Person / $500,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPDL_result_value",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionPDL_result_value",
+      "value": "$100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionPDL_result_value",
+      "value": "$250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMBIPerPerson_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionUMBIPerPerson_result_value",
+      "value": "$100,000 Per Person / $300,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionUMBIPerPerson_result_value",
+      "value": "$250,000 Per Person / $500,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostUMPD_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionUMPD_result_value",
+      "value": "$50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionUMPD_result_value",
+      "value": "$100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostPIPPerPerson_result_value",
+      "value": "$15,000 Per Person / $30,000 Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionPIPPerPerson_result_value",
+      "value": "$40,000 Per Person / N/A Per Accident"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionPIP_result_value",
+      "value": "State maximum"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_LowerCostComprehensiveAndCollision_result_value",
+      "value": "May not be worth it"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_GoodProtectionComprehensiveAndCollision_result_value",
+      "value": "May not be worth it"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Insurance_BetterProtectionComprehensiveAndCollision_result_value",
+      "value": "May not be worth it"
+    }
+  }
+]

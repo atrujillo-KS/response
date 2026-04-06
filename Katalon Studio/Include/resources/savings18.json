@@ -1,0 +1,723 @@
+[
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Which savings option earns more if rates go up?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you determine which savings option provides the greater return if interest rates rise. Longer term options can still outperform even if short term rates go up."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "If rates go up annually by 25.00%, the long term CD will earn the most over the 5 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Interest Earned After 5 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Cumulative Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsInterestEarned_result_label",
+      "value": "Savings Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsInterestEarned_result_value",
+      "value": "$575"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsCumulativeReturn_result_value",
+      "value": "5.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDInterestEarned_result_label",
+      "value": "Short Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDInterestEarned_result_value",
+      "value": "$804"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDCumulativeReturn_result_value",
+      "value": "8.04%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDInterestEarned_result_label",
+      "value": "Long Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDInterestEarned_result_value",
+      "value": "$889"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDCumulativeReturn_result_value",
+      "value": "8.89%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "generalInfo-accordion",
+      "value": "General Info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DepositAmount-label",
+      "value": "Initial deposit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_DepositAmount",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_DepositAmount-error-message",
+      "value": "Must be between $0 and $1,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_DepositAmount_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD amount is the amount you deposit to buy a certificate of deposit (CD). You deposit the face amount of a CD and are repaid the face amount at maturity. During the CD term, you collect interest at a fixed or variable interest rate. CDs are sold in denominations of $500 to $250,000."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_PredictedAnnualRateIncrease-label",
+      "value": "Predicted annual rate increase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_PredictedAnnualRateIncrease",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_PredictedAnnualRateIncrease-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-label",
+      "value": "Your federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "25.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalTaxRate-error-message",
+      "value": "Must be between 0.00% and 80.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-label",
+      "value": "Your state tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "6.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_StateTaxRate-error-message",
+      "value": "Must be between 0.00% and 20.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "savingsAccount-accordion",
+      "value": "Savings Account"
+    }
+  },
+  {
+    "click": {
+      "id": "savingsAccount-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Must be between 0.00% and 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_CompoundingFrequency_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "shortTermCD-accordion",
+      "value": "Short Term CD"
+    }
+  },
+  {
+    "click": {
+      "id": "shortTermCD-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-label",
+      "value": "Deposit term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_FirstCDTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "1.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_FirstCDInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "longTermCD-accordion",
+      "value": "Long Term CD"
+    }
+  },
+  {
+    "click": {
+      "id": "longTermCD-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths-label",
+      "value": "Deposit term (in months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDTermInMonths",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDTermInMonths-error-message",
+      "value": "Must be between 1 and 120"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_ThirdCDTermInMonths_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD deposit term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "CD deposit term is the period for which you deposit money in a certificate of deposit (CD). Most common deposit terms are three, six and 12 months. If you wish to redeem your CD before its maturity date, the financial institution that holds it will likely charge an early-redemption penalty."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDInterestRate",
+      "value": "2.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDInterestRate-error-message",
+      "value": "Must be between 0.00% and 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_ThirdCDInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the annual interest rate of your certificate of deposit (CD). This rate is called the simple interest rate. If interest is compounded, you will earn an annual percentage yield (APY) that is greater than the stated rate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency-label",
+      "value": "Compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency",
+      "value": "Daily Monthly Quarterly Yearly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency",
+      "value": "1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "CD compounding frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Enter the number of times in a year that interest on your certificate of deposit (CD) is compounded. Compounding increases the amount of interest you earn on a CD. For example, if the institution compounds interest every three months (quarterly) on a CD with a simple rate of 10%, your annual percentage yield (APY) is 10.38%. If compounded monthly, you earn 10.47%. If compounded daily, you earn 10.52%. For a $10,000 deposit, daily compounding adds up to an extra $52 in interest that you earn over the simple yield."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "click": {
+      "id": "generalInfo-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_DepositAmount",
+      "value": "15,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_PredictedAnnualRateIncrease",
+      "value": "12.59"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalTaxRate",
+      "value": "26.78"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "7.90"
+    }
+  },
+  {
+    "click": {
+      "id": "savingsAccount-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.90"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_CompoundingFrequency",
+      "value": "label=Daily"
+    }
+  },
+  {
+    "click": {
+      "id": "shortTermCD-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_FirstCDTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_FirstCDInterestRate",
+      "value": "5.90"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_FirstCDCompoundingFrequency",
+      "value": "label=Quarterly"
+    }
+  },
+  {
+    "click": {
+      "id": "longTermCD-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_ThirdCDTermInMonths",
+      "value": "45"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Savings_ThirdCDInterestRate",
+      "value": "7.99"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Savings_ThirdCDCompoundingFrequency",
+      "value": "label=Yearly"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "If rates go up annually by 12.59%, the long term CD will earn the most over the 4 years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Interest Earned After 4 years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Cumulative Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsInterestEarned_result_label",
+      "value": "Savings Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsInterestEarned_result_value",
+      "value": "$1,435"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SavingsCumulativeReturn_result_value",
+      "value": "9.57%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDInterestEarned_result_label",
+      "value": "Short Term CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDInterestEarned_result_value",
+      "value": "$2,768"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ShortTermCDCumulativeReturn_result_value",
+      "value": "18.46%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDInterestEarned_result_label",
+      "value": "Long Term CD"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_LongTermCDInterestEarned_result_value",
+      "value": "$3,434"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_LongTermCDCumulativeReturn_result_value",
+      "value": "22.90%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]
