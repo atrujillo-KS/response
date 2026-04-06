@@ -1,3 +1,5 @@
+// Jenkinsfile v1.2.0 — RESPONSE
+
 pipeline {
     agent { label 'ec2-agent-01' }
 
@@ -7,16 +9,18 @@ pipeline {
     }
 
     environment {
-        KATALON_API_KEY = credentials('katalon-api-key')
-        KATALON_PROJECT  = 'RESPONSE.prj'
-        KATALON_SUITE    = 'Test Suites/Headless-PROD'
-        KATALON_BROWSER  = 'Chrome'
+        JENKINSFILE_VERSION = '1.2.0'
+        KATALON_API_KEY     = credentials('katalon-api-key')
+        KATALON_DIR         = 'Katalon Studio'
+        KATALON_PROJECT     = 'RESPONSE.prj'
+        KATALON_SUITE       = 'Test Suites/Headless-PROD'
+        KATALON_BROWSER     = 'Chrome'
     }
 
     stages {
-        stage('Checkout') {
+        stage('Info') {
             steps {
-                checkout scm
+                echo "Jenkinsfile v${env.JENKINSFILE_VERSION} | Project: ${env.KATALON_PROJECT} | Suite: ${env.KATALON_SUITE}"
             }
         }
 
@@ -27,14 +31,14 @@ pipeline {
                     echo "Workspace: $WORKSPACE"
                     hostname
                     pwd
-                    ls -la
+                    ls -la "$WORKSPACE/$KATALON_DIR/"
                     which git || true
                     git --version || true
                     which java || true
                     java -version || true
                     which katalonc || true
 
-                    test -f "$WORKSPACE/$KATALON_PROJECT"
+                    test -f "$WORKSPACE/$KATALON_DIR/$KATALON_PROJECT"
                 '''
             }
         }
@@ -47,7 +51,7 @@ pipeline {
                     katalonc \
                       -noSplash \
                       -runMode=console \
-                      -projectPath="$WORKSPACE/$KATALON_PROJECT" \
+                      -projectPath="$WORKSPACE/$KATALON_DIR/$KATALON_PROJECT" \
                       -testSuitePath="$KATALON_SUITE" \
                       -browserType="$KATALON_BROWSER" \
                       -apiKey="$KATALON_API_KEY" \
@@ -60,7 +64,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'Reports/**/*,report/**/*,reports/**/*', allowEmptyArchive: true
+            archiveArtifacts artifacts: '**/Reports/**/*,**/report/**/*', allowEmptyArchive: true
             junit testResults: '**/*.xml', allowEmptyResults: true
         }
         success {
