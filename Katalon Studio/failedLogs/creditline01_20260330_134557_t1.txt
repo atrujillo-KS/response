@@ -1,0 +1,21 @@
+🚀 MainValidator v1.4.4 | calcId=creditline01
+🌐 Opening URL: http://qa.awsc.leadfusion.com/response/qatest/calc/creditline01?newuser
+🌐 Navigate attempt 1 → http://qa.awsc.leadfusion.com/response/qatest/calc/creditline01?newuser
+✅ Loader not stuck (not visible or cleared within 10000ms) — proceeding
+❌ [soft] waitForText → Text mismatch
+  Expected: 'You may qualify for a credit line up to $172,500' but found: 'You may qualify for a credit line up to $50,000'
+❌ Test attempt 1/3 had failures (soft)
+🔁 RETRY attempt 2/3 | calcId=creditline01
+🌐 Navigate attempt 1 → http://qa.awsc.leadfusion.com/response/qatest/calc/creditline01?newuser
+✅ Loader not stuck (not visible or cleared within 10000ms) — proceeding
+❌ [soft] waitForText → Text mismatch
+  Expected: 'You may qualify for a credit line up to $172,500' but found: 'You may qualify for a credit line up to $155,000'
+❌ Test attempt 2/3 had failures (soft)
+🔁 RETRY attempt 3/3 | calcId=creditline01
+🌐 Navigate attempt 1 → http://qa.awsc.leadfusion.com/response/qatest/calc/creditline01?newuser
+✅ Loader not stuck (not visible or cleared within 10000ms) — proceeding
+❌ waitForText → Text mismatch (screenshot: C:/Users/AlejandroTrujillo/projects/qa_automated_scripts/Katalon Studio/RESPONSE/Screenshots/creditline01_t1/screenshot_20260330_134557_t1_1_waitForText_lf_answer_44becf0e.png)
+Expected: 'You may qualify for a credit line up to $172,500' but found: 'You may qualify for a credit line up to $50,000'
+❌ waitForText → Failure at waitForText: Text mismatch (screenshot: C:/Users/AlejandroTrujillo/projects/qa_automated_scripts/Katalon Studio/RESPONSE/Screenshots/creditline01_t1/screenshot_20260330_134557_t1_2_waitForText_lf_answer_44becf0e.png)
+Expected: 'You may qualify for a credit line up to $172,500' but found: 'You may qualify for a credit line up to $50,000'
+❌ Test attempt 3/3 failed: Failure at waitForText: Failure at waitForText: Text mismatch
