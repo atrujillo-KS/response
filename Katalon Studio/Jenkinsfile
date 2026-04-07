@@ -52,8 +52,7 @@ pipeline {
                       -noSplash \
                       -runMode=console \
                       -projectPath="$WORKSPACE/$KATALON_DIR/$KATALON_PROJECT" \
-                      -testSuitePath="$KATALON_SUITE" \
-                      -browserType="$KATALON_BROWSER" \
+                      -testSuiteCollectionPath="$KATALON_SUITE" \
                       -apiKey="$KATALON_API_KEY" \
                       -orgID="2333388" \
                       -retry=0
