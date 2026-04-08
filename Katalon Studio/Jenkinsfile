@@ -1,4 +1,4 @@
-// Jenkinsfile v1.8.0 — RESPONSE
+// Jenkinsfile v1.9.0 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        JENKINSFILE_VERSION = '1.8.0'
+        JENKINSFILE_VERSION = '1.9.0'
         KATALON_API_KEY     = credentials('katalon-api-key')
         KATALON_DIR         = 'Katalon Studio'
         KATALON_PROJECT     = 'RESPONSE.prj'
@@ -142,41 +142,68 @@ while IFS= read -r -d '' xml; do
 
     TC_ROWS=""
     SUITE_FAILED_TC=""
-    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time; do
+    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time tc_cmd; do
         [ -z "$tc_name" ] && continue
         tc_short="${tc_name#Test Cases/}"
 
+        # Build display message: command + failure reason
+        tc_display=""
+        if [ -n "$tc_cmd" ]; then
+            tc_display="<div class=\"cmd-line\">${tc_cmd}</div>"
+        fi
         if [ -n "$tc_msg" ]; then
-            case "$tc_msg" in
-                *StepFailedException:*) tc_msg="${tc_msg#*StepFailedException: }"; tc_msg="${tc_msg%% (Root cause:*}" ;;
-                *) tc_msg="${tc_msg%%&#xa;*}" ;;
-            esac
-            tc_msg="${tc_msg:0:200}"
+            tc_msg="${tc_msg:0:300}"
+            tc_display="${tc_display}<div class=\"fail-reason\">${tc_msg}</div>"
         fi
 
         case "$tc_status" in
             FAIL|ERROR) TC_CLASS="tc-fail"; PILL_CLASS="fail" ;; SKIP) TC_CLASS="tc-skip"; PILL_CLASS="skip" ;; *) TC_CLASS="tc-pass"; PILL_CLASS="pass" ;;
         esac
         tc_time="${tc_time:-0}"
-        TC_ROWS="${TC_ROWS}<tr class=\"${TC_CLASS}\"><td>${tc_short}</td><td><span class=\"status-pill ${PILL_CLASS}\">${tc_status}</span></td><td>${tc_time}s</td><td>${tc_msg}</td></tr>"
+        TC_ROWS="${TC_ROWS}<tr class=\"${TC_CLASS}\"><td>${tc_short}</td><td><span class=\"status-pill ${PILL_CLASS}\">${tc_status}</span></td><td>${tc_time}s</td><td>${tc_display}</td></tr>"
 
         if [ "$tc_status" = "FAIL" ] || [ "$tc_status" = "ERROR" ]; then
-            SUITE_FAILED_TC="${SUITE_FAILED_TC}<tr class=\"tc-fail\"><td>${tc_short}</td><td>${tc_time}s</td><td>${tc_msg}</td></tr>"
+            SUITE_FAILED_TC="${SUITE_FAILED_TC}<tr class=\"tc-fail\"><td>${tc_short}</td><td>${tc_time}s</td><td>${tc_display}</td></tr>"
         fi
     done < <(awk -F'"' 'BEGIN{OFS=sprintf("%c",9)}
         /<testcase / {
-            tcname=""; status="PASS"; msg=""; tctime=""
+            tcname=""; status="PASS"; msg=""; tctime=""; lastcmd=""; failmsg=""
             for(i=1;i<NF;i++) {
                 if($i ~ /name=/) tcname=$(i+1)
                 if($i ~ / time=/) tctime=$(i+1)
             }
         }
-        /<failure/ { status="FAIL"; for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1) }
-        /<error / { status="ERROR"; for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1) }
+        /<failure/ { status="FAIL" }
+        /<error / { status="ERROR" }
         /<skipped/ { status="SKIP" }
+        /Command:/ {
+            idx=index($0,"Command: ")
+            if(idx>0) lastcmd=substr($0,idx)
+        }
+        index($0,"Failed to ")>0 || index($0,"Failure at ")>0 || index($0,"StepFailedException:")>0 {
+            idx=index($0,"Failed to ")
+            if(idx==0) idx=index($0,"Failure at ")
+            if(idx>0) { failmsg=substr($0,idx) }
+            else {
+                idx=index($0,"StepFailedException: ")
+                if(idx>0) {
+                    tmp=substr($0,idx+21)
+                    paren=index(tmp," (Root cause:")
+                    if(paren>0) tmp=substr(tmp,1,paren-1)
+                    newline=index(tmp,"&#xa;")
+                    if(newline>0) tmp=substr(tmp,1,newline-1)
+                    if(failmsg=="" && tmp !~ /^at /) failmsg=tmp
+                }
+            }
+        }
         index($0,"</testcase>")>0 || (index($0,"<testcase")>0 && index($0,"/>")>0) {
-            if(tcname != "") print tcname, status, msg, tctime
-            tcname=""; status="PASS"; msg=""; tctime=""
+            if(tcname != "") {
+                if(status=="FAIL" || status=="ERROR") {
+                    if(failmsg != "") msg=failmsg
+                } else { lastcmd="" }
+                print tcname, status, msg, tctime, lastcmd
+            }
+            tcname=""; status="PASS"; msg=""; tctime=""; lastcmd=""; failmsg=""
         }
     ' "$xml")
 
@@ -273,6 +300,8 @@ cat > "$OUT" <<HTMLEOF
   .status-pill.pass { background: #D4EFDA; color: #23933B; border: 1px solid #A9DEB5; }
   .status-pill.fail { background: #FBE5E9; color: #B5001B; border: 1px solid #EE99A6; }
   .status-pill.skip { background: #EFEEEF; color: #7D797F; border: 1px solid #BEBCBF; }
+  .cmd-line { font-family: monospace; font-size: 0.8rem; color: #4545BF; margin-bottom: 4px; }
+  .fail-reason { font-size: 0.8rem; color: #B5001B; }
   h2 { color: #333034; margin-top: 1.5rem; font-size: 1rem; }
   .footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #D1D0D1; color: #7D797F; font-size: 0.8rem; }
 </style>
