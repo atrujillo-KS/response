@@ -48,6 +48,9 @@ pipeline {
                 sh '''
                     set -eux
 
+                    # Clean old reports so only this run's results are captured
+                    rm -rf "$WORKSPACE/$KATALON_DIR/Reports"
+
                     katalonc \
                       -noSplash \
                       -runMode=console \
@@ -65,80 +68,71 @@ pipeline {
     post {
         always {
             sh '''#!/bin/bash
-                set +x
-                REPORT_DIR="$WORKSPACE/$KATALON_DIR/Reports"
-                OUT="$WORKSPACE/katalon-report.html"
+set +x
+REPORT_DIR="$WORKSPACE/$KATALON_DIR/Reports"
+OUT="$WORKSPACE/katalon-report.html"
 
-                # Collect all JUnit XML files
-                XML_FILES=$(find "$REPORT_DIR" -name "*.xml" -type f 2>/dev/null)
+# Find the latest run directory (most recent timestamp folder)
+LATEST_RUN=$(find "$REPORT_DIR" -maxdepth 1 -mindepth 1 -type d 2>/dev/null | sort | tail -1)
 
-                if [ -z "$XML_FILES" ]; then
-                    echo "No JUnit XML files found — skipping report generation."
-                    exit 0
-                fi
+if [ -z "$LATEST_RUN" ]; then
+    echo "No report directories found — skipping report generation."
+    exit 0
+fi
 
-                TOTAL_TESTS=0
-                TOTAL_PASS=0
-                TOTAL_FAIL=0
-                TOTAL_ERROR=0
-                TOTAL_SKIP=0
-                TOTAL_TIME=0
-                TABLE_ROWS=""
+echo "Using reports from: $LATEST_RUN"
 
-                for xml in $XML_FILES; do
-                    # Parse testsuite attributes
-                    SUITE=$(grep -oP '(?<=name=")[^"]*' "$xml" | head -1)
-                    TESTS=$(grep -oP '(?<=tests=")[^"]*' "$xml" | head -1)
-                    FAILS=$(grep -oP '(?<=failures=")[^"]*' "$xml" | head -1)
-                    ERRORS=$(grep -oP '(?<=errors=")[^"]*' "$xml" | head -1)
-                    SKIPS=$(grep -oP '(?<=skipped=")[^"]*' "$xml" | head -1)
-                    TIME=$(grep -oP '(?<=time=")[^"]*' "$xml" | head -1)
+TOTAL_TESTS=0
+TOTAL_PASS=0
+TOTAL_FAIL=0
+TOTAL_ERROR=0
+TOTAL_SKIP=0
+TABLE_ROWS=""
 
-                    TESTS=${TESTS:-0}
-                    FAILS=${FAILS:-0}
-                    ERRORS=${ERRORS:-0}
-                    SKIPS=${SKIPS:-0}
-                    TIME=${TIME:-0}
+# Use null-delimited find to handle spaces in paths
+while IFS= read -r -d '' xml; do
+    # Parse attributes using sed (no PCRE needed)
+    SUITE=$(sed -n 's/.*<testsuite[^>]* name="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    TESTS=$(sed -n 's/.*<testsuite[^>]* tests="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    FAILS=$(sed -n 's/.*<testsuite[^>]* failures="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    ERRORS=$(sed -n 's/.*<testsuite[^>]* errors="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    SKIPS=$(sed -n 's/.*<testsuite[^>]* skipped="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    TIME=$(sed -n 's/.*<testsuite[^>]* time="\([^"]*\)".*/\1/p' "$xml" | head -1)
 
-                    PASS=$((TESTS - FAILS - ERRORS - SKIPS))
-                    [ "$PASS" -lt 0 ] && PASS=0
+    TESTS=${TESTS:-0}; FAILS=${FAILS:-0}; ERRORS=${ERRORS:-0}; SKIPS=${SKIPS:-0}; TIME=${TIME:-0}
 
-                    TOTAL_TESTS=$((TOTAL_TESTS + TESTS))
-                    TOTAL_PASS=$((TOTAL_PASS + PASS))
-                    TOTAL_FAIL=$((TOTAL_FAIL + FAILS))
-                    TOTAL_ERROR=$((TOTAL_ERROR + ERRORS))
-                    TOTAL_SKIP=$((TOTAL_SKIP + SKIPS))
+    PASS=$((TESTS - FAILS - ERRORS - SKIPS))
+    [ "$PASS" -lt 0 ] && PASS=0
 
-                    if [ "$FAILS" -gt 0 ] || [ "$ERRORS" -gt 0 ]; then
-                        ROW_CLASS="fail"
-                    elif [ "$SKIPS" -eq "$TESTS" ]; then
-                        ROW_CLASS="skip"
-                    else
-                        ROW_CLASS="pass"
-                    fi
+    TOTAL_TESTS=$((TOTAL_TESTS + TESTS))
+    TOTAL_PASS=$((TOTAL_PASS + PASS))
+    TOTAL_FAIL=$((TOTAL_FAIL + FAILS))
+    TOTAL_ERROR=$((TOTAL_ERROR + ERRORS))
+    TOTAL_SKIP=$((TOTAL_SKIP + SKIPS))
 
-                    # Collect failed test case names
-                    FAILED_CASES=$(grep -oP '(?<=<testcase[^>]*name=")[^"]*' "$xml" | while read tc; do
-                        # Check if this testcase has a failure or error child
-                        if grep -qP "<testcase[^>]*name=\"${tc}\"[^>]*/>" "$xml"; then
-                            continue
-                        fi
-                        echo "$tc"
-                    done)
+    if [ "$FAILS" -gt 0 ] || [ "$ERRORS" -gt 0 ]; then
+        ROW_CLASS="fail"
+    elif [ "$TESTS" -gt 0 ] && [ "$SKIPS" -eq "$TESTS" ]; then
+        ROW_CLASS="skip"
+    else
+        ROW_CLASS="pass"
+    fi
 
-                    TABLE_ROWS="${TABLE_ROWS}<tr class=\"${ROW_CLASS}\"><td>${SUITE}</td><td>${TESTS}</td><td>${PASS}</td><td>${FAILS}</td><td>${ERRORS}</td><td>${SKIPS}</td><td>${TIME}s</td></tr>"
-                done
+    TABLE_ROWS="${TABLE_ROWS}<tr class=\"${ROW_CLASS}\"><td>${SUITE}</td><td>${TESTS}</td><td>${PASS}</td><td>${FAILS}</td><td>${ERRORS}</td><td>${SKIPS}</td><td>${TIME}s</td></tr>"
+done < <(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f -print0 2>/dev/null)
 
-                # Determine overall status
-                if [ "$TOTAL_FAIL" -gt 0 ] || [ "$TOTAL_ERROR" -gt 0 ]; then
-                    STATUS="FAILED"
-                    STATUS_CLASS="status-fail"
-                else
-                    STATUS="PASSED"
-                    STATUS_CLASS="status-pass"
-                fi
+if [ "$TOTAL_TESTS" -eq 0 ]; then
+    echo "No JUnit XML results found in $LATEST_RUN — skipping report."
+    exit 0
+fi
 
-                cat > "$OUT" <<HTMLEOF
+if [ "$TOTAL_FAIL" -gt 0 ] || [ "$TOTAL_ERROR" -gt 0 ]; then
+    STATUS="FAILED"; STATUS_CLASS="status-fail"
+else
+    STATUS="PASSED"; STATUS_CLASS="status-pass"
+fi
+
+cat > "$OUT" <<HTMLEOF
 <!DOCTYPE html>
 <html>
 <head>
@@ -149,7 +143,7 @@ pipeline {
   h1 { color: #333; }
   .status-pass { color: #2e7d32; }
   .status-fail { color: #c62828; }
-  .summary { display: flex; gap: 2rem; margin: 1.5rem 0; }
+  .summary { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
   .summary-card { background: #fff; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); text-align: center; }
   .summary-card .number { font-size: 2rem; font-weight: bold; }
   .summary-card .label { color: #666; font-size: 0.85rem; text-transform: uppercase; }
@@ -185,10 +179,10 @@ ${TABLE_ROWS}
 </body>
 </html>
 HTMLEOF
-                echo "Report generated: katalon-report.html"
+echo "Report generated: katalon-report.html"
             '''
-            archiveArtifacts artifacts: 'katalon-report.html,**/Reports/**/*,**/report/**/*', allowEmptyArchive: true
-            junit testResults: '**/*.xml', allowEmptyResults: true
+            archiveArtifacts artifacts: 'katalon-report.html,**/Reports/**/*', allowEmptyArchive: true
+            junit testResults: '**/Reports/**/JUnit_Report.xml', allowEmptyResults: true
         }
         success {
             echo 'Katalon execution completed successfully.'
