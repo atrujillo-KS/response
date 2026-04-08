@@ -1,4 +1,4 @@
-// Jenkinsfile v1.5.0 — RESPONSE
+// Jenkinsfile v1.6.0 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        JENKINSFILE_VERSION = '1.5.0'
+        JENKINSFILE_VERSION = '1.6.0'
         KATALON_API_KEY     = credentials('katalon-api-key')
         KATALON_DIR         = 'Katalon Studio'
         KATALON_PROJECT     = 'RESPONSE.prj'
@@ -70,262 +70,36 @@ pipeline {
             sh '''#!/bin/bash
 set +x
 REPORT_DIR="$WORKSPACE/$KATALON_DIR/Reports"
-OUT="$WORKSPACE/katalon-report.html"
 
 # Find the latest run directory (most recent timestamp folder)
 LATEST_RUN=$(find "$REPORT_DIR" -maxdepth 1 -mindepth 1 -type d 2>/dev/null | sort | tail -1)
 
 if [ -z "$LATEST_RUN" ]; then
-    echo "No report directories found — skipping report generation."
+    echo "No report directories found — skipping report publish."
     exit 0
 fi
 
 echo "Using reports from: $LATEST_RUN"
 
-# Extract environment info (browser, OS, Katalon version) from the first JUnit XML
-FIRST_XML=$(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | head -1)
-ENV_BROWSER=""; ENV_OS=""; ENV_KATALON=""
-if [ -n "$FIRST_XML" ]; then
-    ENV_BROWSER=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="browser") print v}' "$FIRST_XML")
-    ENV_OS=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="os") print v}' "$FIRST_XML")
-    ENV_KATALON=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="katalonVersion") print v}' "$FIRST_XML")
-fi
-
-TOTAL_TESTS=0
-TOTAL_PASS=0
-TOTAL_FAIL=0
-TOTAL_ERROR=0
-TOTAL_SKIP=0
-DETAIL_SECTIONS=""
-FAILED_DETAILS=""
-
-# Use null-delimited find to handle spaces in paths
-while IFS= read -r -d '' xml; do
-    # Parse suite-level attributes
-    SUITE=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /name=/) print $(i+1) }' "$xml" | head -1)
-    TESTS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /tests=/) print $(i+1) }' "$xml" | head -1)
-    FAILS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /failures=/) print $(i+1) }' "$xml" | head -1)
-    ERRORS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /errors=/) print $(i+1) }' "$xml" | head -1)
-    SKIPS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /skipped=/) print $(i+1) }' "$xml" | head -1)
-    TIME=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ / time=/) print $(i+1) }' "$xml" | head -1)
-    TIMESTAMP=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /timestamp=/) print $(i+1) }' "$xml" | head -1)
-
-    TESTS=${TESTS:-0}; FAILS=${FAILS:-0}; ERRORS=${ERRORS:-0}; SKIPS=${SKIPS:-0}; TIME=${TIME:-0}
-
-    PASS=$((TESTS - FAILS - ERRORS - SKIPS))
-    [ "$PASS" -lt 0 ] && PASS=0
-
-    TOTAL_TESTS=$((TOTAL_TESTS + TESTS))
-    TOTAL_PASS=$((TOTAL_PASS + PASS))
-    TOTAL_FAIL=$((TOTAL_FAIL + FAILS))
-    TOTAL_ERROR=$((TOTAL_ERROR + ERRORS))
-    TOTAL_SKIP=$((TOTAL_SKIP + SKIPS))
-
-    SUITE_FAILS=$((FAILS + ERRORS))
-
-    # Determine dropdown state
-    if [ "$SUITE_FAILS" -gt 0 ]; then
-        SUITE_CLASS="suite-fail"
-        OPEN_ATTR=" open"
-    else
-        SUITE_CLASS="suite-pass"
-        OPEN_ATTR=""
-    fi
-
-    # Format timestamp for display (strip fractional seconds and Z)
-    TS_DISPLAY="${TIMESTAMP%%.*}"
-    TS_DISPLAY=$(echo "$TS_DISPLAY" | tr 'T' ' ')
-
-    # Parse individual test cases — outputs tab-separated: name, status, message, time
-    TC_ROWS=""
-    SUITE_FAILED_TC=""
-    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time; do
-        [ -z "$tc_name" ] && continue
-
-        # Strip "Test Cases/" prefix for cleaner display
-        tc_short="${tc_name#Test Cases/}"
-
-        # Clean failure message — extract just the assertion description
-        if [ -n "$tc_msg" ]; then
-            case "$tc_msg" in
-                *StepFailedException:*)
-                    tc_msg="${tc_msg#*StepFailedException: }"
-                    tc_msg="${tc_msg%% (Root cause:*}"
-                    ;;
-                *)
-                    tc_msg="${tc_msg%%&#xa;*}"
-                    ;;
-            esac
-            # Truncate to 200 chars
-            tc_msg="${tc_msg:0:200}"
-        fi
-
-        case "$tc_status" in
-            FAIL|ERROR) TC_CLASS="tc-fail" ;;
-            SKIP)       TC_CLASS="tc-skip" ;;
-            *)          TC_CLASS="tc-pass" ;;
-        esac
-        tc_time="${tc_time:-0}"
-        TC_ROWS="${TC_ROWS}<tr class=\"${TC_CLASS}\"><td>${tc_short}</td><td>${tc_status}</td><td>${tc_time}s</td><td>${tc_msg}</td></tr>"
-
-        # Collect failed tests for the "All Failed Tests" section
-        if [ "$tc_status" = "FAIL" ] || [ "$tc_status" = "ERROR" ]; then
-            SUITE_FAILED_TC="${SUITE_FAILED_TC}<tr class=\"tc-fail\"><td>${tc_short}</td><td>${tc_time}s</td><td>${tc_msg}</td></tr>"
-        fi
-    done < <(awk -F'"' 'BEGIN{OFS=sprintf("%c",9)}
-        /<testcase / {
-            tcname=""; status="PASS"; msg=""; tctime=""
-            for(i=1;i<NF;i++) {
-                if($i ~ /name=/) tcname=$(i+1)
-                if($i ~ / time=/) tctime=$(i+1)
-            }
-        }
-        /<failure/ {
-            status="FAIL"
-            for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1)
-        }
-        /<error / {
-            status="ERROR"
-            for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1)
-        }
-        /<skipped/ { status="SKIP" }
-        index($0,"</testcase>")>0 || (index($0,"<testcase")>0 && index($0,"/>")>0) {
-            if(tcname != "") print tcname, status, msg, tctime
-            tcname=""; status="PASS"; msg=""; tctime=""
-        }
-    ' "$xml")
-
-    # Build per-suite detail dropdown
-    DETAIL_SECTIONS="${DETAIL_SECTIONS}<details class=\"${SUITE_CLASS}\"${OPEN_ATTR}>"
-    DETAIL_SECTIONS="${DETAIL_SECTIONS}<summary><strong>${SUITE}</strong> — <span class=\"red\">${SUITE_FAILS} Failed</span> / ${TESTS} Ran | ${TS_DISPLAY} (${TIME}s)</summary>"
-    DETAIL_SECTIONS="${DETAIL_SECTIONS}<table class=\"tc-table\"><tr><th>Test Case</th><th>Status</th><th>Duration</th><th>Message</th></tr>"
-    DETAIL_SECTIONS="${DETAIL_SECTIONS}${TC_ROWS}"
-    DETAIL_SECTIONS="${DETAIL_SECTIONS}</table></details>"
-
-    # Build failed tests grouped by suite category
-    if [ -n "$SUITE_FAILED_TC" ]; then
-        FAILED_DETAILS="${FAILED_DETAILS}<h3 class=\"cat-heading\">${SUITE}</h3>"
-        FAILED_DETAILS="${FAILED_DETAILS}<table class=\"tc-table\"><tr><th>Test Case</th><th>Duration</th><th>Failure Reason</th></tr>"
-        FAILED_DETAILS="${FAILED_DETAILS}${SUITE_FAILED_TC}"
-        FAILED_DETAILS="${FAILED_DETAILS}</table>"
-    fi
-
-done < <(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f -print0 2>/dev/null)
-
-# Copy the Katalon-generated full HTML report if it exists
+# Copy the Katalon-generated HTML report to workspace for publishing
 KATALON_HTML=$(find "$LATEST_RUN" -name "index.html" -type f 2>/dev/null | head -1)
-KATALON_LINK=""
 if [ -n "$KATALON_HTML" ]; then
-    cp "$KATALON_HTML" "$WORKSPACE/katalon-full-report.html"
-    KATALON_LINK="<a href=\"katalon-full-report.html\" class=\"katalon-link\">Open Full Katalon Report</a>"
-    echo "Katalon HTML report copied: katalon-full-report.html"
-fi
-
-if [ "$TOTAL_TESTS" -eq 0 ]; then
-    echo "No JUnit XML results found in $LATEST_RUN — skipping report."
-    exit 0
-fi
-
-TOTAL_FAILED=$((TOTAL_FAIL + TOTAL_ERROR))
-
-if [ "$TOTAL_FAILED" -gt 0 ]; then
-    STATUS="FAILED"; STATUS_CLASS="status-fail"
+    mkdir -p "$WORKSPACE/katalon-report"
+    cp "$KATALON_HTML" "$WORKSPACE/katalon-report/index.html"
+    echo "Katalon report copied to: katalon-report/index.html"
 else
-    STATUS="PASSED"; STATUS_CLASS="status-pass"
+    echo "No Katalon index.html found in $LATEST_RUN"
 fi
-
-cat > "$OUT" <<HTMLEOF
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Katalon Test Report</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 2rem; background: #f5f5f5; }
-  h1 { color: #333; }
-  .status-pass { color: #2e7d32; }
-  .status-fail { color: #c62828; }
-  .env-info { background: #fff; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); margin: 1rem 0; display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.9rem; color: #555; }
-  .env-info span { white-space: nowrap; }
-  .env-info strong { color: #333; }
-  .big-stat { text-align: center; margin: 1.5rem 0; padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
-  .big-stat .number { font-size: 16px; font-weight: bold; }
-  .big-stat .count { font-size: 3rem; font-weight: bold; }
-  .big-stat .label { color: #666; font-size: 1rem; margin-top: 0.25rem; }
-  .summary { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
-  .summary-card { background: #fff; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); text-align: center; }
-  .summary-card .number { font-size: 2rem; font-weight: bold; }
-  .summary-card .label { color: #666; font-size: 0.85rem; text-transform: uppercase; }
-  .green { color: #2e7d32; }
-  .red { color: #c62828; }
-  .orange { color: #e65100; }
-  .grey { color: #757575; }
-  details { background: #fff; border-radius: 8px; margin: 0.75rem 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); overflow: hidden; }
-  details summary { padding: 0.75rem 1rem; cursor: pointer; font-size: 1rem; border-left: 4px solid #2e7d32; }
-  details summary:hover { background: #f9f9f9; }
-  details.suite-fail summary { border-left-color: #c62828; background: #fff5f5; }
-  details.suite-pass summary { border-left-color: #2e7d32; }
-  details.failed-section { border-left: 4px solid #c62828; }
-  details.failed-section summary { font-size: 16px; padding: 1rem 1.25rem; background: #fff5f5; border-left: none; }
-  .cat-heading { margin: 1.25rem 0 0.5rem 0; padding: 0.5rem 1rem; background: #37474f; color: #fff; border-radius: 4px; font-size: 0.95rem; }
-  .tc-table { width: 100%; border-collapse: collapse; margin: 0; }
-  .tc-table th { background: #546e7a; color: #fff; padding: 0.5rem 1rem; text-align: left; font-size: 0.85rem; }
-  .tc-table td { padding: 0.5rem 1rem; border-bottom: 1px solid #eee; font-size: 0.9rem; }
-  .tc-table td:last-child { max-width: 400px; word-wrap: break-word; overflow-wrap: break-word; font-size: 0.8rem; color: #666; }
-  .tc-fail td { background: #fff5f5; }
-  .tc-fail td:first-child { border-left: 3px solid #c62828; }
-  .tc-pass td:first-child { border-left: 3px solid #2e7d32; }
-  .tc-skip td:first-child { border-left: 3px solid #757575; }
-  .tc-fail td:nth-child(2) { color: #c62828; font-weight: bold; }
-  .tc-pass td:nth-child(2) { color: #2e7d32; }
-  .tc-skip td:nth-child(2) { color: #757575; }
-  h2 { color: #333; margin-top: 2rem; }
-  .katalon-link { display: inline-block; margin: 1rem 0; padding: 0.6rem 1.2rem; background: #1565c0; color: #fff; text-decoration: none; border-radius: 6px; font-size: 0.9rem; }
-  .katalon-link:hover { background: #0d47a1; }
-  .footer { margin-top: 2rem; color: #999; font-size: 0.8rem; }
-</style>
-</head>
-<body>
-<h1>Katalon Test Report — <span class="${STATUS_CLASS}">${STATUS}</span></h1>
-<p>Suite: <strong>${KATALON_SUITE}</strong> | Build: <strong>${BUILD_NUMBER}</strong> | Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></p>
-
-<div class="env-info">
-  <span>Browser: <strong>${ENV_BROWSER}</strong></span>
-  <span>OS: <strong>${ENV_OS}</strong></span>
-  <span>Katalon: <strong>${ENV_KATALON}</strong></span>
-</div>
-
-<div class="big-stat">
-  <div class="number">Test Cases (<span class="red">${TOTAL_FAILED} failures</span> / ${TOTAL_TESTS} total)</div>
-  <div class="count"><span class="red">${TOTAL_FAILED}</span> / ${TOTAL_TESTS}</div>
-</div>
-
-<div class="summary">
-  <div class="summary-card"><div class="number">${TOTAL_TESTS}</div><div class="label">Total</div></div>
-  <div class="summary-card"><div class="number green">${TOTAL_PASS}</div><div class="label">Passed</div></div>
-  <div class="summary-card"><div class="number red">${TOTAL_FAIL}</div><div class="label">Failed</div></div>
-  <div class="summary-card"><div class="number orange">${TOTAL_ERROR}</div><div class="label">Errors</div></div>
-  <div class="summary-card"><div class="number grey">${TOTAL_SKIP}</div><div class="label">Skipped</div></div>
-</div>
-
-<details class="failed-section">
-<summary><strong>Show All Failed Tests</strong> — ${TOTAL_FAILED} failures across all suites</summary>
-<div style="padding: 0.5rem 1rem;">
-${FAILED_DETAILS}
-</div>
-</details>
-
-<h2>Results by Suite</h2>
-${DETAIL_SECTIONS}
-
-${KATALON_LINK}
-<div class="footer">Generated by Jenkinsfile v${JENKINSFILE_VERSION}</div>
-</body>
-</html>
-HTMLEOF
-echo "Report generated: katalon-report.html"
             '''
-            archiveArtifacts artifacts: 'katalon-report.html,katalon-full-report.html,Katalon Studio/Reports/**/*', allowEmptyArchive: true
+            publishHTML(target: [
+                reportName: 'Katalon Test Report',
+                reportDir: 'katalon-report',
+                reportFiles: 'index.html',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+            archiveArtifacts artifacts: 'Katalon Studio/Reports/**/*', allowEmptyArchive: true
             junit testResults: 'Katalon Studio/Reports/**/JUnit_Report.xml', allowEmptyResults: true
         }
         success {
