@@ -1,4 +1,4 @@
-// Jenkinsfile v1.9.0 — RESPONSE
+// Jenkinsfile v1.10.0 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        JENKINSFILE_VERSION = '1.9.0'
+        JENKINSFILE_VERSION = '1.10.0'
         KATALON_API_KEY     = credentials('katalon-api-key')
         KATALON_DIR         = 'Katalon Studio'
         KATALON_PROJECT     = 'RESPONSE.prj'
@@ -142,14 +142,18 @@ while IFS= read -r -d '' xml; do
 
     TC_ROWS=""
     SUITE_FAILED_TC=""
-    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time tc_cmd; do
+    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time tc_cmd tc_actual; do
         [ -z "$tc_name" ] && continue
         tc_short="${tc_name#Test Cases/}"
 
-        # Build display message: command + failure reason
+        # Build display message: command (with actual value) + failure reason
         tc_display=""
         if [ -n "$tc_cmd" ]; then
-            tc_display="<div class=\"cmd-line\">${tc_cmd}</div>"
+            cmd_display="${tc_cmd}"
+            if [ -n "$tc_actual" ]; then
+                cmd_display="${cmd_display} | Actual: ${tc_actual}"
+            fi
+            tc_display="<div class=\"cmd-line\">${cmd_display}</div>"
         fi
         if [ -n "$tc_msg" ]; then
             tc_msg="${tc_msg:0:300}"
@@ -165,45 +169,56 @@ while IFS= read -r -d '' xml; do
         if [ "$tc_status" = "FAIL" ] || [ "$tc_status" = "ERROR" ]; then
             SUITE_FAILED_TC="${SUITE_FAILED_TC}<tr class=\"tc-fail\"><td>${tc_short}</td><td>${tc_time}s</td><td>${tc_display}</td></tr>"
         fi
-    done < <(awk -F'"' 'BEGIN{OFS=sprintf("%c",9)}
+    done < <(awk -F'"' 'BEGIN{OFS=sprintf("%c",9); SQ=sprintf("%c",39)}
         /<testcase / {
-            tcname=""; status="PASS"; msg=""; tctime=""; lastcmd=""; failmsg=""
+            tcname=""; status="PASS"; tctime=""; lastcmd=""; failmsg=""; actual=""
             for(i=1;i<NF;i++) {
                 if($i ~ /name=/) tcname=$(i+1)
                 if($i ~ / time=/) tctime=$(i+1)
             }
+            insysout=0
         }
         /<failure/ { status="FAIL" }
         /<error / { status="ERROR" }
         /<skipped/ { status="SKIP" }
-        /Command:/ {
+        /system-out/ { insysout=1 }
+        insysout && /Command:/ {
             idx=index($0,"Command: ")
             if(idx>0) lastcmd=substr($0,idx)
         }
-        index($0,"Failed to ")>0 || index($0,"Failure at ")>0 || index($0,"StepFailedException:")>0 {
+        insysout && (index($0,"Failed to ")>0 || index($0,"Failure at ")>0) {
             idx=index($0,"Failed to ")
             if(idx==0) idx=index($0,"Failure at ")
-            if(idx>0) { failmsg=substr($0,idx) }
-            else {
-                idx=index($0,"StepFailedException: ")
-                if(idx>0) {
-                    tmp=substr($0,idx+21)
-                    paren=index(tmp," (Root cause:")
-                    if(paren>0) tmp=substr(tmp,1,paren-1)
-                    newline=index(tmp,"&#xa;")
-                    if(newline>0) tmp=substr(tmp,1,newline-1)
-                    if(failmsg=="" && tmp !~ /^at /) failmsg=tmp
-                }
+            if(idx>0) failmsg=substr($0,idx)
+        }
+        insysout && /StepFailedException:/ {
+            idx=index($0,"StepFailedException: ")
+            if(idx>0) {
+                tmp=substr($0,idx+21)
+                paren=index(tmp," (Root cause:")
+                if(paren>0) tmp=substr(tmp,1,paren-1)
+                if(failmsg=="" && tmp !~ /^at /) failmsg=tmp
+            }
+        }
+        /actual text / {
+            pat="actual text " SQ
+            idx=index($0,pat)
+            if(idx==0) { pat="Actual text " SQ; idx=index($0,pat) }
+            if(idx>0) {
+                tmp=substr($0,idx+length(pat))
+                q=index(tmp,SQ)
+                if(q>0) actual=substr(tmp,1,q-1)
             }
         }
         index($0,"</testcase>")>0 || (index($0,"<testcase")>0 && index($0,"/>")>0) {
             if(tcname != "") {
+                msg=""
                 if(status=="FAIL" || status=="ERROR") {
                     if(failmsg != "") msg=failmsg
-                } else { lastcmd="" }
-                print tcname, status, msg, tctime, lastcmd
+                } else { lastcmd=""; actual="" }
+                print tcname, status, msg, tctime, lastcmd, actual
             }
-            tcname=""; status="PASS"; msg=""; tctime=""; lastcmd=""; failmsg=""
+            tcname=""; status="PASS"; tctime=""; lastcmd=""; failmsg=""; actual=""; insysout=0
         }
     ' "$xml")
 
