@@ -63,8 +63,147 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '**/Reports/**/*,**/report/**/*', allowEmptyArchive: true
+            sh '''#!/bin/bash
+                set +x
+                REPORT_DIR="$WORKSPACE/$KATALON_DIR/Reports"
+                OUT="$WORKSPACE/katalon-report.html"
+
+                # Collect all JUnit XML files
+                XML_FILES=$(find "$REPORT_DIR" -name "*.xml" -type f 2>/dev/null)
+
+                if [ -z "$XML_FILES" ]; then
+                    echo "No JUnit XML files found — skipping report generation."
+                    exit 0
+                fi
+
+                TOTAL_TESTS=0
+                TOTAL_PASS=0
+                TOTAL_FAIL=0
+                TOTAL_ERROR=0
+                TOTAL_SKIP=0
+                TOTAL_TIME=0
+                TABLE_ROWS=""
+
+                for xml in $XML_FILES; do
+                    # Parse testsuite attributes
+                    SUITE=$(grep -oP '(?<=name=")[^"]*' "$xml" | head -1)
+                    TESTS=$(grep -oP '(?<=tests=")[^"]*' "$xml" | head -1)
+                    FAILS=$(grep -oP '(?<=failures=")[^"]*' "$xml" | head -1)
+                    ERRORS=$(grep -oP '(?<=errors=")[^"]*' "$xml" | head -1)
+                    SKIPS=$(grep -oP '(?<=skipped=")[^"]*' "$xml" | head -1)
+                    TIME=$(grep -oP '(?<=time=")[^"]*' "$xml" | head -1)
+
+                    TESTS=${TESTS:-0}
+                    FAILS=${FAILS:-0}
+                    ERRORS=${ERRORS:-0}
+                    SKIPS=${SKIPS:-0}
+                    TIME=${TIME:-0}
+
+                    PASS=$((TESTS - FAILS - ERRORS - SKIPS))
+                    [ "$PASS" -lt 0 ] && PASS=0
+
+                    TOTAL_TESTS=$((TOTAL_TESTS + TESTS))
+                    TOTAL_PASS=$((TOTAL_PASS + PASS))
+                    TOTAL_FAIL=$((TOTAL_FAIL + FAILS))
+                    TOTAL_ERROR=$((TOTAL_ERROR + ERRORS))
+                    TOTAL_SKIP=$((TOTAL_SKIP + SKIPS))
+
+                    if [ "$FAILS" -gt 0 ] || [ "$ERRORS" -gt 0 ]; then
+                        ROW_CLASS="fail"
+                    elif [ "$SKIPS" -eq "$TESTS" ]; then
+                        ROW_CLASS="skip"
+                    else
+                        ROW_CLASS="pass"
+                    fi
+
+                    # Collect failed test case names
+                    FAILED_CASES=$(grep -oP '(?<=<testcase[^>]*name=")[^"]*' "$xml" | while read tc; do
+                        # Check if this testcase has a failure or error child
+                        if grep -qP "<testcase[^>]*name=\"${tc}\"[^>]*/>" "$xml"; then
+                            continue
+                        fi
+                        echo "$tc"
+                    done)
+
+                    TABLE_ROWS="${TABLE_ROWS}<tr class=\"${ROW_CLASS}\"><td>${SUITE}</td><td>${TESTS}</td><td>${PASS}</td><td>${FAILS}</td><td>${ERRORS}</td><td>${SKIPS}</td><td>${TIME}s</td></tr>"
+                done
+
+                # Determine overall status
+                if [ "$TOTAL_FAIL" -gt 0 ] || [ "$TOTAL_ERROR" -gt 0 ]; then
+                    STATUS="FAILED"
+                    STATUS_CLASS="status-fail"
+                else
+                    STATUS="PASSED"
+                    STATUS_CLASS="status-pass"
+                fi
+
+                cat > "$OUT" <<HTMLEOF
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Katalon Test Report</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 2rem; background: #f5f5f5; }
+  h1 { color: #333; }
+  .status-pass { color: #2e7d32; }
+  .status-fail { color: #c62828; }
+  .summary { display: flex; gap: 2rem; margin: 1.5rem 0; }
+  .summary-card { background: #fff; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); text-align: center; }
+  .summary-card .number { font-size: 2rem; font-weight: bold; }
+  .summary-card .label { color: #666; font-size: 0.85rem; text-transform: uppercase; }
+  .green { color: #2e7d32; }
+  .red { color: #c62828; }
+  .orange { color: #e65100; }
+  .grey { color: #757575; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.12); margin-top: 1.5rem; }
+  th { background: #37474f; color: #fff; padding: 0.75rem 1rem; text-align: left; }
+  td { padding: 0.6rem 1rem; border-bottom: 1px solid #eee; }
+  tr.pass td:first-child { border-left: 4px solid #2e7d32; }
+  tr.fail td:first-child { border-left: 4px solid #c62828; }
+  tr.skip td:first-child { border-left: 4px solid #757575; }
+  .footer { margin-top: 2rem; color: #999; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<h1>Katalon Test Report — <span class="${STATUS_CLASS}">${STATUS}</span></h1>
+<p>Suite: <strong>${KATALON_SUITE}</strong> | Build: <strong>${BUILD_NUMBER}</strong> | Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></p>
+<div class="summary">
+  <div class="summary-card"><div class="number">${TOTAL_TESTS}</div><div class="label">Total</div></div>
+  <div class="summary-card"><div class="number green">${TOTAL_PASS}</div><div class="label">Passed</div></div>
+  <div class="summary-card"><div class="number red">${TOTAL_FAIL}</div><div class="label">Failed</div></div>
+  <div class="summary-card"><div class="number orange">${TOTAL_ERROR}</div><div class="label">Errors</div></div>
+  <div class="summary-card"><div class="number grey">${TOTAL_SKIP}</div><div class="label">Skipped</div></div>
+</div>
+<table>
+<tr><th>Test Suite</th><th>Tests</th><th>Pass</th><th>Fail</th><th>Error</th><th>Skip</th><th>Time</th></tr>
+${TABLE_ROWS}
+<tr style="font-weight:bold;background:#eceff1;"><td>TOTAL</td><td>${TOTAL_TESTS}</td><td>${TOTAL_PASS}</td><td>${TOTAL_FAIL}</td><td>${TOTAL_ERROR}</td><td>${TOTAL_SKIP}</td><td>—</td></tr>
+</table>
+<div class="footer">Generated by Jenkinsfile v${JENKINSFILE_VERSION}</div>
+</body>
+</html>
+HTMLEOF
+                echo "Report generated: katalon-report.html"
+            '''
+            archiveArtifacts artifacts: 'katalon-report.html,**/Reports/**/*,**/report/**/*', allowEmptyArchive: true
             junit testResults: '**/*.xml', allowEmptyResults: true
+            script {
+                def reportBody = ''
+                def reportFile = "${env.WORKSPACE}/katalon-report.html"
+                if (fileExists(reportFile)) {
+                    reportBody = readFile(file: reportFile)
+                } else {
+                    reportBody = "<p>No test report generated. Check console output for details.</p>"
+                }
+                emailext(
+                    to: 'atrujillo@leadfusion.com',
+                    subject: "Katalon ${currentBuild.currentResult}: ${env.KATALON_PROJECT} — Build #${env.BUILD_NUMBER}",
+                    body: reportBody,
+                    mimeType: 'text/html',
+                    attachmentsPattern: 'katalon-report.html'
+                )
+            }
         }
         success {
             echo 'Katalon execution completed successfully.'
