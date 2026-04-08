@@ -188,22 +188,6 @@ HTMLEOF
             '''
             archiveArtifacts artifacts: 'katalon-report.html,**/Reports/**/*,**/report/**/*', allowEmptyArchive: true
             junit testResults: '**/*.xml', allowEmptyResults: true
-            script {
-                def reportBody = ''
-                def reportFile = "${env.WORKSPACE}/katalon-report.html"
-                if (fileExists(reportFile)) {
-                    reportBody = readFile(file: reportFile)
-                } else {
-                    reportBody = "<p>No test report generated. Check console output for details.</p>"
-                }
-                emailext(
-                    to: 'atrujillo@leadfusion.com',
-                    subject: "Katalon ${currentBuild.currentResult}: ${env.KATALON_PROJECT} — Build #${env.BUILD_NUMBER}",
-                    body: reportBody,
-                    mimeType: 'text/html',
-                    attachmentsPattern: 'katalon-report.html'
-                )
-            }
         }
         success {
             echo 'Katalon execution completed successfully.'
