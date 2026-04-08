@@ -90,6 +90,13 @@ if [ -n "$KATALON_HTML" ]; then
 else
     echo "No Katalon index.html found in $LATEST_RUN"
 fi
+
+# Remove collection-level JUnit XML to prevent duplicate test results in Jenkins
+COLLECTION_NAME=$(basename "$KATALON_SUITE")
+if [ -d "$LATEST_RUN/$COLLECTION_NAME" ]; then
+    echo "Removing collection-level JUnit XML from: $COLLECTION_NAME"
+    find "$LATEST_RUN/$COLLECTION_NAME" -name "JUnit_Report.xml" -type f -delete
+fi
             '''
             publishHTML(target: [
                 reportName: 'Katalon Test Report',
