@@ -181,8 +181,13 @@ ${TABLE_ROWS}
 HTMLEOF
 echo "Report generated: katalon-report.html"
             '''
-            archiveArtifacts artifacts: 'katalon-report.html,**/Reports/**/*', allowEmptyArchive: true
-            junit testResults: '**/Reports/**/JUnit_Report.xml', allowEmptyResults: true
+            sh '''
+                echo "=== JUnit XML files found ==="
+                find "$WORKSPACE" -name "JUnit_Report.xml" -type f 2>/dev/null
+                echo "=== End ==="
+            '''
+            archiveArtifacts artifacts: 'katalon-report.html,Katalon Studio/Reports/**/*', allowEmptyArchive: true
+            junit testResults: 'Katalon Studio/Reports/**/JUnit_Report.xml', allowEmptyResults: true
         }
         success {
             echo 'Katalon execution completed successfully.'
