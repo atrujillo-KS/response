@@ -1,4 +1,4 @@
-// Jenkinsfile v1.2.0 — RESPONSE
+// Jenkinsfile v1.3.0 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        JENKINSFILE_VERSION = '1.2.0'
+        JENKINSFILE_VERSION = '1.3.0'
         KATALON_API_KEY     = credentials('katalon-api-key')
         KATALON_DIR         = 'Katalon Studio'
         KATALON_PROJECT     = 'RESPONSE.prj'
@@ -87,11 +87,11 @@ TOTAL_PASS=0
 TOTAL_FAIL=0
 TOTAL_ERROR=0
 TOTAL_SKIP=0
-TABLE_ROWS=""
+DETAIL_SECTIONS=""
 
 # Use null-delimited find to handle spaces in paths
 while IFS= read -r -d '' xml; do
-    # Parse attributes using awk (avoids backslash issues in Groovy)
+    # Parse suite-level attributes
     SUITE=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /name=/) print $(i+1) }' "$xml" | head -1)
     TESTS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /tests=/) print $(i+1) }' "$xml" | head -1)
     FAILS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /failures=/) print $(i+1) }' "$xml" | head -1)
@@ -110,15 +110,53 @@ while IFS= read -r -d '' xml; do
     TOTAL_ERROR=$((TOTAL_ERROR + ERRORS))
     TOTAL_SKIP=$((TOTAL_SKIP + SKIPS))
 
-    if [ "$FAILS" -gt 0 ] || [ "$ERRORS" -gt 0 ]; then
-        ROW_CLASS="fail"
-    elif [ "$TESTS" -gt 0 ] && [ "$SKIPS" -eq "$TESTS" ]; then
-        ROW_CLASS="skip"
+    SUITE_FAILS=$((FAILS + ERRORS))
+
+    # Determine dropdown icon and open state
+    if [ "$SUITE_FAILS" -gt 0 ]; then
+        SUITE_CLASS="suite-fail"
+        OPEN_ATTR=" open"
     else
-        ROW_CLASS="pass"
+        SUITE_CLASS="suite-pass"
+        OPEN_ATTR=""
     fi
 
-    TABLE_ROWS="${TABLE_ROWS}<tr class=\"${ROW_CLASS}\"><td>${SUITE}</td><td>${TESTS}</td><td>${PASS}</td><td>${FAILS}</td><td>${ERRORS}</td><td>${SKIPS}</td><td>${TIME}s</td></tr>"
+    # Parse individual test cases using awk — outputs tab-separated: name, status, message
+    TC_ROWS=""
+    while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg; do
+        [ -z "$tc_name" ] && continue
+        case "$tc_status" in
+            FAIL|ERROR) TC_CLASS="tc-fail" ;;
+            SKIP)       TC_CLASS="tc-skip" ;;
+            *)          TC_CLASS="tc-pass" ;;
+        esac
+        TC_ROWS="${TC_ROWS}<tr class=\"${TC_CLASS}\"><td>${tc_name}</td><td>${tc_status}</td><td>${tc_msg}</td></tr>"
+    done < <(awk -F'"' '
+        /<testcase / {
+            tcname=""; status="PASS"; msg=""
+            for(i=1;i<NF;i++) if($i ~ /name=/) tcname=$(i+1)
+        }
+        /<failure/ {
+            status="FAIL"
+            for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1)
+        }
+        /<error / {
+            status="ERROR"
+            for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1)
+        }
+        /<skipped/ { status="SKIP" }
+        /<\/testcase>/ || /<testcase [^>]*\/>/ {
+            if(tcname != "") printf "%s\t%s\t%s\n", tcname, status, msg
+            tcname=""; status="PASS"; msg=""
+        }
+    ' "$xml")
+
+    DETAIL_SECTIONS="${DETAIL_SECTIONS}<details class=\"${SUITE_CLASS}\"${OPEN_ATTR}>"
+    DETAIL_SECTIONS="${DETAIL_SECTIONS}<summary><strong>${SUITE}</strong> — <span class=\"red\">${SUITE_FAILS} Failed</span> / ${TESTS} Ran (${TIME}s)</summary>"
+    DETAIL_SECTIONS="${DETAIL_SECTIONS}<table class=\"tc-table\"><tr><th>Test Case</th><th>Status</th><th>Message</th></tr>"
+    DETAIL_SECTIONS="${DETAIL_SECTIONS}${TC_ROWS}"
+    DETAIL_SECTIONS="${DETAIL_SECTIONS}</table></details>"
+
 done < <(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f -print0 2>/dev/null)
 
 if [ "$TOTAL_TESTS" -eq 0 ]; then
@@ -126,7 +164,9 @@ if [ "$TOTAL_TESTS" -eq 0 ]; then
     exit 0
 fi
 
-if [ "$TOTAL_FAIL" -gt 0 ] || [ "$TOTAL_ERROR" -gt 0 ]; then
+TOTAL_FAILED=$((TOTAL_FAIL + TOTAL_ERROR))
+
+if [ "$TOTAL_FAILED" -gt 0 ]; then
     STATUS="FAILED"; STATUS_CLASS="status-fail"
 else
     STATUS="PASSED"; STATUS_CLASS="status-pass"
@@ -143,6 +183,9 @@ cat > "$OUT" <<HTMLEOF
   h1 { color: #333; }
   .status-pass { color: #2e7d32; }
   .status-fail { color: #c62828; }
+  .big-stat { text-align: center; margin: 1.5rem 0; padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .big-stat .number { font-size: 3rem; font-weight: bold; }
+  .big-stat .label { color: #666; font-size: 1rem; text-transform: uppercase; margin-top: 0.25rem; }
   .summary { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
   .summary-card { background: #fff; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); text-align: center; }
   .summary-card .number { font-size: 2rem; font-weight: bold; }
@@ -151,18 +194,34 @@ cat > "$OUT" <<HTMLEOF
   .red { color: #c62828; }
   .orange { color: #e65100; }
   .grey { color: #757575; }
-  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.12); margin-top: 1.5rem; }
-  th { background: #37474f; color: #fff; padding: 0.75rem 1rem; text-align: left; }
-  td { padding: 0.6rem 1rem; border-bottom: 1px solid #eee; }
-  tr.pass td:first-child { border-left: 4px solid #2e7d32; }
-  tr.fail td:first-child { border-left: 4px solid #c62828; }
-  tr.skip td:first-child { border-left: 4px solid #757575; }
+  details { background: #fff; border-radius: 8px; margin: 0.75rem 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); overflow: hidden; }
+  details summary { padding: 0.75rem 1rem; cursor: pointer; font-size: 1rem; border-left: 4px solid #2e7d32; }
+  details summary:hover { background: #f9f9f9; }
+  details.suite-fail summary { border-left-color: #c62828; background: #fff5f5; }
+  details.suite-pass summary { border-left-color: #2e7d32; }
+  .tc-table { width: 100%; border-collapse: collapse; margin: 0; }
+  .tc-table th { background: #546e7a; color: #fff; padding: 0.5rem 1rem; text-align: left; font-size: 0.85rem; }
+  .tc-table td { padding: 0.5rem 1rem; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+  .tc-fail td { background: #fff5f5; }
+  .tc-fail td:first-child { border-left: 3px solid #c62828; }
+  .tc-pass td:first-child { border-left: 3px solid #2e7d32; }
+  .tc-skip td:first-child { border-left: 3px solid #757575; }
+  .tc-fail td:nth-child(2) { color: #c62828; font-weight: bold; }
+  .tc-pass td:nth-child(2) { color: #2e7d32; }
+  .tc-skip td:nth-child(2) { color: #757575; }
+  h2 { color: #333; margin-top: 2rem; }
   .footer { margin-top: 2rem; color: #999; font-size: 0.8rem; }
 </style>
 </head>
 <body>
 <h1>Katalon Test Report — <span class="${STATUS_CLASS}">${STATUS}</span></h1>
 <p>Suite: <strong>${KATALON_SUITE}</strong> | Build: <strong>${BUILD_NUMBER}</strong> | Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></p>
+
+<div class="big-stat">
+  <div class="number"><span class="red">${TOTAL_FAILED}</span> / ${TOTAL_TESTS}</div>
+  <div class="label">Failed / Total Ran</div>
+</div>
+
 <div class="summary">
   <div class="summary-card"><div class="number">${TOTAL_TESTS}</div><div class="label">Total</div></div>
   <div class="summary-card"><div class="number green">${TOTAL_PASS}</div><div class="label">Passed</div></div>
@@ -170,21 +229,15 @@ cat > "$OUT" <<HTMLEOF
   <div class="summary-card"><div class="number orange">${TOTAL_ERROR}</div><div class="label">Errors</div></div>
   <div class="summary-card"><div class="number grey">${TOTAL_SKIP}</div><div class="label">Skipped</div></div>
 </div>
-<table>
-<tr><th>Test Suite</th><th>Tests</th><th>Pass</th><th>Fail</th><th>Error</th><th>Skip</th><th>Time</th></tr>
-${TABLE_ROWS}
-<tr style="font-weight:bold;background:#eceff1;"><td>TOTAL</td><td>${TOTAL_TESTS}</td><td>${TOTAL_PASS}</td><td>${TOTAL_FAIL}</td><td>${TOTAL_ERROR}</td><td>${TOTAL_SKIP}</td><td>—</td></tr>
-</table>
+
+<h2>Results by Suite</h2>
+${DETAIL_SECTIONS}
+
 <div class="footer">Generated by Jenkinsfile v${JENKINSFILE_VERSION}</div>
 </body>
 </html>
 HTMLEOF
 echo "Report generated: katalon-report.html"
-            '''
-            sh '''
-                echo "=== JUnit XML files found ==="
-                find "$WORKSPACE" -name "JUnit_Report.xml" -type f 2>/dev/null
-                echo "=== End ==="
             '''
             archiveArtifacts artifacts: 'katalon-report.html,Katalon Studio/Reports/**/*', allowEmptyArchive: true
             junit testResults: 'Katalon Studio/Reports/**/JUnit_Report.xml', allowEmptyResults: true
