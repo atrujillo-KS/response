@@ -91,13 +91,13 @@ TABLE_ROWS=""
 
 # Use null-delimited find to handle spaces in paths
 while IFS= read -r -d '' xml; do
-    # Parse attributes using sed (no PCRE needed)
-    SUITE=$(sed -n 's/.*<testsuite[^>]* name="\([^"]*\)".*/\1/p' "$xml" | head -1)
-    TESTS=$(sed -n 's/.*<testsuite[^>]* tests="\([^"]*\)".*/\1/p' "$xml" | head -1)
-    FAILS=$(sed -n 's/.*<testsuite[^>]* failures="\([^"]*\)".*/\1/p' "$xml" | head -1)
-    ERRORS=$(sed -n 's/.*<testsuite[^>]* errors="\([^"]*\)".*/\1/p' "$xml" | head -1)
-    SKIPS=$(sed -n 's/.*<testsuite[^>]* skipped="\([^"]*\)".*/\1/p' "$xml" | head -1)
-    TIME=$(sed -n 's/.*<testsuite[^>]* time="\([^"]*\)".*/\1/p' "$xml" | head -1)
+    # Parse attributes using awk (avoids backslash issues in Groovy)
+    SUITE=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /name=/) print $(i+1) }' "$xml" | head -1)
+    TESTS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /tests=/) print $(i+1) }' "$xml" | head -1)
+    FAILS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /failures=/) print $(i+1) }' "$xml" | head -1)
+    ERRORS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /errors=/) print $(i+1) }' "$xml" | head -1)
+    SKIPS=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ /skipped=/) print $(i+1) }' "$xml" | head -1)
+    TIME=$(awk -F'"' '/<testsuite/{ for(i=1;i<NF;i++) if($i ~ / time=/) print $(i+1) }' "$xml" | head -1)
 
     TESTS=${TESTS:-0}; FAILS=${FAILS:-0}; ERRORS=${ERRORS:-0}; SKIPS=${SKIPS:-0}; TIME=${TIME:-0}
 
