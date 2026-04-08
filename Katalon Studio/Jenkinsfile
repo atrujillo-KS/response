@@ -165,7 +165,7 @@ while IFS= read -r -d '' xml; do
         esac
         tc_time="${tc_time:-0}"
         TC_ROWS="${TC_ROWS}<tr class=\"${TC_CLASS}\"><td>${tc_short}</td><td>${tc_status}</td><td>${tc_time}s</td><td>${tc_msg}</td></tr>"
-    done < <(awk -F'"' '
+    done < <(awk -F'"' 'BEGIN{OFS=sprintf("%c",9)}
         /<testcase / {
             tcname=""; status="PASS"; msg=""; tctime=""
             for(i=1;i<NF;i++) {
@@ -182,8 +182,8 @@ while IFS= read -r -d '' xml; do
             for(i=1;i<NF;i++) if($i ~ /message=/) msg=$(i+1)
         }
         /<skipped/ { status="SKIP" }
-        /<\/testcase>/ || /<testcase [^>]*\/>/ {
-            if(tcname != "") printf "%s\t%s\t%s\t%s\n", tcname, status, msg, tctime
+        index($0,"</testcase>")>0 || (index($0,"<testcase")>0 && index($0,"/>")>0) {
+            if(tcname != "") print tcname, status, msg, tctime
             tcname=""; status="PASS"; msg=""; tctime=""
         }
     ' "$xml")
