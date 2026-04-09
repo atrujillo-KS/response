@@ -55,15 +55,15 @@ pipeline {
                     RESLOG="$WORKSPACE/resource-log.csv"
                     CORES=$(nproc)
                     echo "time,mem_total,mem_used,mem_free,mem_available,mem_pct,load_1m,load_5m,load_15m,cores,procs_waiting,cpu_saturated" > "$RESLOG"
-                    (while true; do
+                    (set +x; while true; do
                         TS=$(date +%H:%M:%S)
-                        MEM=$(free -m | awk '/Mem:/{printf "%s,%s,%s,%s,%.0f", $2,$3,$4,$7,$3/$2*100}')
-                        LOAD=$(uptime | awk -F'load average: ' '{print $2}' | tr -d ' ')
-                        L1=$(echo "$LOAD" | cut -d',' -f1)
+                        read -r TOTAL USED FREE AVAIL PCT <<< $(free -m | awk '/Mem:/{printf "%s %s %s %s %.0f", $2,$3,$4,$7,$3/$2*100}')
+                        read -r L1 L5 L15 <<< $(uptime | awk -F'load average: ' '{gsub(/,/," ",$2); print $2}')
                         WAITING=$(awk '{printf "%.0f", $1 - '"$CORES"'}' <<< "$L1")
                         [ "$WAITING" -lt 0 ] 2>/dev/null && WAITING=0
                         if [ "$WAITING" -gt 0 ]; then SAT="YES"; else SAT="no"; fi
-                        echo "${TS},${MEM},${LOAD},${CORES},${WAITING},${SAT}" >> "$RESLOG"
+                        echo "[RESOURCES] Mem: ${PCT}% (${USED}/${TOTAL}M) | Load: ${L1} | Cores: ${CORES} | Waiting: ${WAITING} | Saturated: ${SAT}"
+                        echo "${TS},${TOTAL},${USED},${FREE},${AVAIL},${PCT},${L1},${L5},${L15},${CORES},${WAITING},${SAT}" >> "$RESLOG"
                         sleep 60
                     done) &
                     MONITOR_PID=$!
