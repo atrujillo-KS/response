@@ -48,13 +48,18 @@ pipeline {
                 sh '''
                     set -ux
 
-                    echo "=== RESOURCES BEFORE ==="
-                    free -h
-                    nproc
-                    uptime
-
                     # Clean old reports so only this run's results are captured
                     rm -rf "$WORKSPACE/$KATALON_DIR/Reports"
+
+                    # Background resource monitor — samples every 30s
+                    (while true; do
+                        echo "=== RESOURCES $(date +%H:%M:%S) ==="
+                        free -h | grep Mem
+                        uptime
+                        echo "---"
+                        sleep 30
+                    done) &
+                    MONITOR_PID=$!
 
                     katalonc \
                       -noSplash \
@@ -66,10 +71,7 @@ pipeline {
                       -retry=0 \
                       --config -webui.autoUpdateDrivers=true || true
 
-                    echo "=== RESOURCES AFTER ==="
-                    free -h
-                    nproc
-                    uptime
+                    kill $MONITOR_PID 2>/dev/null || true
                 '''
             }
         }
