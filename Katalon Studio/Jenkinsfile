@@ -48,6 +48,11 @@ pipeline {
                 sh '''
                     set -eux
 
+                    echo "=== RESOURCES BEFORE ==="
+                    free -h
+                    nproc
+                    uptime
+
                     # Clean old reports so only this run's results are captured
                     rm -rf "$WORKSPACE/$KATALON_DIR/Reports"
 
@@ -60,6 +65,11 @@ pipeline {
                       -orgID="2333388" \
                       -retry=0 \
                       --config -webui.autoUpdateDrivers=true
+
+                    echo "=== RESOURCES AFTER ==="
+                    free -h
+                    nproc
+                    uptime
                 '''
             }
         }
