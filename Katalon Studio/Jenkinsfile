@@ -1,4 +1,4 @@
-// Jenkinsfile v1.13.0 — RESPONSE
+// Jenkinsfile v1.13.1 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -53,12 +53,17 @@ pipeline {
 
                     # Background resource monitor — samples every 60s to CSV
                     RESLOG="$WORKSPACE/resource-log.csv"
-                    echo "time,mem_total,mem_used,mem_free,mem_available,mem_pct,load_1m,load_5m,load_15m" > "$RESLOG"
+                    CORES=$(nproc)
+                    echo "time,mem_total,mem_used,mem_free,mem_available,mem_pct,load_1m,load_5m,load_15m,cores,procs_waiting,cpu_saturated" > "$RESLOG"
                     (while true; do
                         TS=$(date +%H:%M:%S)
                         MEM=$(free -m | awk '/Mem:/{printf "%s,%s,%s,%s,%.0f", $2,$3,$4,$7,$3/$2*100}')
                         LOAD=$(uptime | awk -F'load average: ' '{print $2}' | tr -d ' ')
-                        echo "${TS},${MEM},${LOAD}" >> "$RESLOG"
+                        L1=$(echo "$LOAD" | cut -d',' -f1)
+                        WAITING=$(awk '{printf "%.0f", $1 - '"$CORES"'}' <<< "$L1")
+                        [ "$WAITING" -lt 0 ] 2>/dev/null && WAITING=0
+                        if [ "$WAITING" -gt 0 ]; then SAT="YES"; else SAT="no"; fi
+                        echo "${TS},${MEM},${LOAD},${CORES},${WAITING},${SAT}" >> "$RESLOG"
                         sleep 60
                     done) &
                     MONITOR_PID=$!
@@ -403,13 +408,22 @@ ROWS=""
 PEAK_MEM=0
 PEAK_LOAD=""
 PEAK_MEM_TIME=""
-while IFS=',' read -r ts total used free avail pct l1 l5 l15; do
+PEAK_WAITING=0
+while IFS=',' read -r ts total used free avail pct l1 l5 l15 cores waiting sat; do
     [ "$ts" = "time" ] && continue
-    ROWS="${ROWS}<tr><td>${ts}</td><td>${total}M</td><td>${used}M</td><td>${free}M</td><td>${avail}M</td><td><strong>${pct}%</strong></td><td>${l1}</td><td>${l5}</td><td>${l15}</td></tr>"
+    if [ "$sat" = "YES" ]; then
+        SAT_STYLE="style=\"background:#FBE5E9; color:#B5001B; font-weight:600;\""
+    else
+        SAT_STYLE=""
+    fi
+    ROWS="${ROWS}<tr><td>${ts}</td><td>${total}M</td><td>${used}M</td><td>${free}M</td><td>${avail}M</td><td><strong>${pct}%</strong></td><td>${l1}</td><td>${l5}</td><td>${l15}</td><td>${cores}</td><td ${SAT_STYLE}>${waiting}</td><td ${SAT_STYLE}>${sat}</td></tr>"
     if [ "${pct:-0}" -gt "$PEAK_MEM" ] 2>/dev/null; then
         PEAK_MEM="$pct"
         PEAK_MEM_TIME="$ts"
         PEAK_LOAD="$l1"
+    fi
+    if [ "${waiting:-0}" -gt "$PEAK_WAITING" ] 2>/dev/null; then
+        PEAK_WAITING="$waiting"
     fi
 done < "$RESLOG"
 
@@ -458,15 +472,16 @@ cat > "$RESOUT" <<RESHTML
 
 <div class="overview">
   <div class="stats-row">
-    <div class="stat-card"><div class="number ${PEAK_MEM_COLOR:-red}">${PEAK_MEM}%</div><div class="label">Peak Memory</div></div>
+    <div class="stat-card"><div class="number red">${PEAK_MEM}%</div><div class="label">Peak Memory</div></div>
     <div class="stat-card"><div class="number orange">${PEAK_LOAD}</div><div class="label">Peak Load (1m)</div></div>
+    <div class="stat-card"><div class="number red">${PEAK_WAITING}</div><div class="label">Peak Procs Waiting</div></div>
     <div class="stat-card"><div class="number">${PEAK_MEM_TIME}</div><div class="label">Peak Time</div></div>
   </div>
 </div>
 
 <h2 style="margin-top:1.5rem; font-size:1rem;">Samples</h2>
 <table>
-<tr><th>Time</th><th>Total</th><th>Used</th><th>Free</th><th>Available</th><th>Used %</th><th>Load 1m</th><th>Load 5m</th><th>Load 15m</th></tr>
+<tr><th>Time</th><th>Total</th><th>Used</th><th>Free</th><th>Available</th><th>Used %</th><th>Load 1m</th><th>Load 5m</th><th>Load 15m</th><th>Cores</th><th>Waiting</th><th>Saturated</th></tr>
 ${ROWS}
 </table>
 
