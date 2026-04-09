@@ -365,7 +365,9 @@ class MainValidator {
 		}
 
 		// Normal mode (or not Studio): Hard-stop immediately
-		throw new StepFailedException("Failure at ${step}: ${e.message}", e)
+		String failMsg = "Failure at ${step}: ${e.message}"
+		if (expected || actual) failMsg += " | Expected: '${expected}' | Actual: '${actual}'"
+		throw new StepFailedException(failMsg, e)
 	}
 
 	// -------------------- Browser --------------------
@@ -1421,7 +1423,8 @@ class MainValidator {
 					if (!ok) fail(command, new Exception("Text mismatch"), locator, actualText ?: "", value ?: "")
 				} catch (Exception e) {
 					if (!actualText) actualText = "[Could not retrieve text]"
-					if (!softFailMode) WebUI.comment("✖ Failed to verify text on '${locator}': ${e.message}")
+					if (!softFailMode) WebUI.comment("✖ Failed to verify text on '${locator}': ${e.message}" +
+						" | Expected: '${value ?: ''}' | Actual: '${actualText ?: ''}'")
 					fail(command, e, locator, actualText, value ?: "")
 				}
 				break
