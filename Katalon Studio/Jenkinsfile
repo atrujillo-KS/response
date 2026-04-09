@@ -1,4 +1,4 @@
-// Jenkinsfile v1.12.0 — RESPONSE
+// Jenkinsfile v1.12.1 — RESPONSE
 
 pipeline {
     agent { label 'ec2-agent-01' }
@@ -54,7 +54,7 @@ pipeline {
                     # Background resource monitor — samples every 30s
                     (while true; do
                         echo "=== RESOURCES $(date +%H:%M:%S) ==="
-                        free -h | grep Mem
+                        free -h | grep -E 'total|Mem'
                         uptime
                         echo "---"
                         sleep 30
