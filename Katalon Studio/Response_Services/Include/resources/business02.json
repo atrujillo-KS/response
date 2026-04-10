@@ -1,0 +1,776 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Business_EquipmentPurchasePrice": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Purchase price of equipment"
+          }
+        },
+        {
+          "Global_SalesTaxRate": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": "Sales tax rate"
+          }
+        },
+        {
+          "Business_CapitalAmount": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Amount of capital you have allocated for this equipment"
+          }
+        },
+        {
+          "Business_AnnualSalesRevenue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000.00",
+            "minimumValue": "0",
+            "maximumValue": "1000000000",
+            "textLabel": "Annual revenue"
+          }
+        },
+        {
+          "Business_EquipmentUsefulLifeInYears": {
+            "value": "10",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Estimated useful life of equipment in years"
+          }
+        },
+        {
+          "Business_MACRSDepreciationYears": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "4",
+            "textLabel": "MACRS depreciation years"
+          }
+        },
+        {
+          "Business_AverageAnnualMaintenanceCosts": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3000",
+            "minimumValue": "0",
+            "maximumValue": "5000000",
+            "textLabel": "Average annual maintenance costs"
+          }
+        },
+        {
+          "Business_FederalTaxRate": {
+            "value": "34.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "34",
+            "minimumValue": "0",
+            "maximumValue": "80",
+            "textLabel": "Federal tax rate"
+          }
+        },
+        {
+          "Business_StateTaxRate": {
+            "value": "5.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5.5",
+            "minimumValue": "0.00",
+            "maximumValue": "50",
+            "textLabel": "State tax rate"
+          }
+        },
+        {
+          "Business_SavingsRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Cost of capital or average loan rate"
+          }
+        },
+        {
+          "MonthTxt": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Month you plan to purchase or lease equipment"
+          }
+        },
+        {
+          "Business_MonthEquipmentBoughtOrLeased": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "11",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_ZipCode": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "0",
+            "maximumValue": "0",
+            "textLabel": "Zip code where equipment will primarily be used"
+          }
+        },
+        {
+          "Business_EquipmentDownPaymentPercentage": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Business_EquipmentLoanTerm": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1.00",
+            "maximumValue": "480",
+            "textLabel": "Loan term in months"
+          }
+        },
+        {
+          "Business_EquipmentLoanInterestRate": {
+            "value": "8.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Business_EquipmentLeaseSecurityDeposit": {
+            "value": "2,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2500",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Security deposit"
+          }
+        },
+        {
+          "Business_IsEquipmentLeaseSecurityDepositRefunded": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_EquipmentLeaseTerm": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "480",
+            "textLabel": "Lease term in months"
+          }
+        },
+        {
+          "Business_EquipmentLeasePaymentFrequency": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "6",
+            "textLabel": "Frequency of lease payments"
+          }
+        },
+        {
+          "Business_EquipmentLeasePayment": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Lease payment"
+          }
+        },
+        {
+          "Business_OtherEquipmentLeaseFees": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Other lease fees"
+          }
+        },
+        {
+          "Business_ResponsibleForEquipmentMaintenance": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_OptionToBuyEquipment": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_OptionToBuyEquipmentPrice": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Option-to-buy price"
+          }
+        },
+        {
+          "Business_EquipmentFairMarketValueAtEndOfLease": {
+            "value": "7,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "7500",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "At end of lease term"
+          }
+        },
+        {
+          "Business_EquipmentFairMarketValueAtEndOfUsefulLife": {
+            "value": "2,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2500",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "At end of useful life (aka scrap value)"
+          }
+        }
+      ],
+      "title": "Should I buy or lease equipment?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Business02_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Business02_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Business02_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Business02_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Business02_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Business02_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Business02_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Business_EquipmentPurchasePrice": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "textLabel": "Equipment purchase price"
+          }
+        },
+        {
+          "SalesTaxBusiness02": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "textLabel": "Sales tax"
+          }
+        },
+        {
+          "LoanTotalPmtsBusiness02": {
+            "value": "39,697",
+            "dataFormat": "Currency",
+            "textLabel": "Total payments"
+          }
+        },
+        {
+          "LeaseTotalPmtsBusiness02": {
+            "value": "33,100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTaxSavingsBusiness02": {
+            "value": "17,853",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "LeaseTaxSavingsBusiness02": {
+            "value": "14,062",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanNetPmtsBusiness02": {
+            "value": "21,844",
+            "dataFormat": "Currency",
+            "textLabel": "Net payments"
+          }
+        },
+        {
+          "LeaseNetPmtsBusiness02": {
+            "value": "19,038",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NPVBuyEOLT": {
+            "value": "28,679",
+            "dataFormat": "Currency",
+            "textLabel": "NPV of payments"
+          }
+        },
+        {
+          "NPVLeaseEOLT": {
+            "value": "21,105",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAvgCostYrBusiness02": {
+            "value": "4,369",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "LeaseAvgCostYrBusiness02": {
+            "value": "3,808",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTotalPmtsEOUL": {
+            "value": "58,159",
+            "dataFormat": "Currency",
+            "textLabel": "Total payments"
+          }
+        },
+        {
+          "LeaseTotalPmtsEOUL": {
+            "value": "56,400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTaxSavingsEOUL": {
+            "value": "22,790",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "LeaseTaxSavingsEOUL": {
+            "value": "22,278",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanNetPmtsEOUL": {
+            "value": "35,368",
+            "dataFormat": "Currency",
+            "textLabel": "Net payments"
+          }
+        },
+        {
+          "LeaseNetPmtsEOUL": {
+            "value": "34,122",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NPVBuyEOUL": {
+            "value": "35,752",
+            "dataFormat": "Currency",
+            "textLabel": "NPV of payments"
+          }
+        },
+        {
+          "NPVLeaseEOUL": {
+            "value": "32,980",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAvgCostYrEOUL": {
+            "value": "3,537",
+            "dataFormat": "Currency",
+            "textLabel": "Avg. cost per year"
+          }
+        },
+        {
+          "LeaseAvgCostYrEOUL": {
+            "value": "3,412",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_CostDifferenceLeaseTerm": {
+            "value": "7,574",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference between buying and leasing over lease term"
+          }
+        },
+        {
+          "Business_CostDifferenceEquipmentLife": {
+            "value": "2,772",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference between buying and leasing over equipment life"
+          }
+        },
+        {
+          "Business_MoreOrLessLeaseTerm": {
+            "value": "more than",
+            "dataFormat": "None",
+            "textLabel": "Will buying equipment be more than or less than leasing over the lease term?"
+          }
+        },
+        {
+          "Business_MoreOrLessEquipmentLife": {
+            "value": "more than",
+            "dataFormat": "None",
+            "textLabel": "Will buying equipment be more than or less than leasing over the equipment life?"
+          }
+        }
+      ],
+      "defaultAnswer": [],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Business_HDHPWithHSASingleCoverageEmployees": "150"
+        },
+        {
+          "Business_HDHPWithHSASingleCoverageDeductible": "2550"
+        },
+        {
+          "Business_HDHPWithHSASingleCoveragePremium": "2200"
+        },
+        {
+          "Business_SingleCoverageNormalPremium": "1400"
+        },
+        {
+          "Business_AverageHSAEmployeeContributionSingle": "2400"
+        },
+        {
+          "Business_AverageHSAEmployerContributionSingle": "1400"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageEmployees": "10"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageDeductible": "4330"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoveragePremium": "1080"
+        },
+        {
+          "Business_FamilyCoverageNormalPremium": "1120"
+        },
+        {
+          "Business_AverageHSAEmployeeContributionFamily": "100"
+        },
+        {
+          "Business_AverageHSAEmployerContributionFamily": "800"
+        },
+        {
+          "Business_MarginalTaxRate": "3.70"
+        },
+        {
+          "Business_FUTAStateUnemploymentTaxRate": "10.00"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Business_EquipmentPurchasePrice": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "textLabel": "Equipment purchase price"
+          }
+        },
+        {
+          "SalesTaxBusiness02": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "textLabel": "Sales tax"
+          }
+        },
+        {
+          "LoanTotalPmtsBusiness02": {
+            "value": "39,697",
+            "dataFormat": "Currency",
+            "textLabel": "Total payments"
+          }
+        },
+        {
+          "LeaseTotalPmtsBusiness02": {
+            "value": "33,100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTaxSavingsBusiness02": {
+            "value": "17,853",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "LeaseTaxSavingsBusiness02": {
+            "value": "14,062",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanNetPmtsBusiness02": {
+            "value": "21,844",
+            "dataFormat": "Currency",
+            "textLabel": "Net payments"
+          }
+        },
+        {
+          "LeaseNetPmtsBusiness02": {
+            "value": "19,038",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NPVBuyEOLT": {
+            "value": "28,679",
+            "dataFormat": "Currency",
+            "textLabel": "NPV of payments"
+          }
+        },
+        {
+          "NPVLeaseEOLT": {
+            "value": "21,105",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAvgCostYrBusiness02": {
+            "value": "4,369",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "LeaseAvgCostYrBusiness02": {
+            "value": "3,808",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTotalPmtsEOUL": {
+            "value": "58,159",
+            "dataFormat": "Currency",
+            "textLabel": "Total payments"
+          }
+        },
+        {
+          "LeaseTotalPmtsEOUL": {
+            "value": "56,400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTaxSavingsEOUL": {
+            "value": "22,790",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "LeaseTaxSavingsEOUL": {
+            "value": "22,278",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanNetPmtsEOUL": {
+            "value": "35,368",
+            "dataFormat": "Currency",
+            "textLabel": "Net payments"
+          }
+        },
+        {
+          "LeaseNetPmtsEOUL": {
+            "value": "34,122",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NPVBuyEOUL": {
+            "value": "35,752",
+            "dataFormat": "Currency",
+            "textLabel": "NPV of payments"
+          }
+        },
+        {
+          "NPVLeaseEOUL": {
+            "value": "32,980",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAvgCostYrEOUL": {
+            "value": "3,537",
+            "dataFormat": "Currency",
+            "textLabel": "Avg. cost per year"
+          }
+        },
+        {
+          "LeaseAvgCostYrEOUL": {
+            "value": "3,412",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_CostDifferenceLeaseTerm": {
+            "value": "7,574",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference between buying and leasing over lease term"
+          }
+        },
+        {
+          "Business_CostDifferenceEquipmentLife": {
+            "value": "2,772",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference between buying and leasing over equipment life"
+          }
+        },
+        {
+          "Business_MoreOrLessLeaseTerm": {
+            "value": "more than",
+            "dataFormat": "None",
+            "textLabel": "Will buying equipment be more than or less than leasing over the lease term?"
+          }
+        },
+        {
+          "Business_MoreOrLessEquipmentLife": {
+            "value": "more than",
+            "dataFormat": "None",
+            "textLabel": "Will buying equipment be more than or less than leasing over the equipment life?"
+          }
+        }
+      ]
+    }
+  ]
+}

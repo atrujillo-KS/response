@@ -1,0 +1,318 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Bond_PurchasePrice": {
+            "value": "110",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "110",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Price you paid (% of face value)"
+          }
+        },
+        {
+          "Bond_FaceValue": {
+            "value": "10000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Face value"
+          }
+        },
+        {
+          "Bond_CouponRate": {
+            "value": "4.5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Coupon rate"
+          }
+        },
+        {
+          "Bond_PriceToday": {
+            "value": "113",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "113",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Price today (% of face value)"
+          }
+        },
+        {
+          "Bond_MonthsSincePurchase": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months since purchase"
+          }
+        },
+        {
+          "Bond_MonthsToMaturity": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months to maturity"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Your coupon income is:"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_Type": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Type of bond:"
+          }
+        }
+      ],
+      "title": "What is the bond return if I sell now?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Bond03_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond03_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond03_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Bond03_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Bond03_NonDefault_Results"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Bond_GainOrLossBeforeTaxesIfSellNow": {
+            "value": "12,254",
+            "dataFormat": "Currency",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestBeforeTaxesIfSellNow": {
+            "value": "3,080",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldBeforeTaxesIfSellNow": {
+            "value": "46.87",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossAfterTaxesIfSellNow": {
+            "value": "11,201",
+            "dataFormat": "Currency",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestAfterTaxesIfSellNow": {
+            "value": "2,411",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldAfterTaxesIfSellNow": {
+            "value": "44.12",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossBeforeTaxesIfHoldToMaturity": {
+            "value": "6,869",
+            "dataFormat": "Currency",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestBeforeTaxesIfHoldToMaturity": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldBeforeTaxes": {
+            "value": "21.33",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossAfterTaxesIfHoldToMaturity": {
+            "value": "6,279",
+            "dataFormat": "Currency",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestAfterTaxesIfHoldToMaturity": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldAfterTaxes": {
+            "value": "33.29",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Bond_PurchasePrice": "23.46"
+        },
+        {
+          "Bond_FaceValue": "8975"
+        },
+        {
+          "Bond_CouponRate": "5.49"
+        },
+        {
+          "Bond_Type": "1"
+        },
+        {
+          "Bond_PriceToday": "160"
+        },
+        {
+          "Bond_MonthsSincePurchase": "66"
+        },
+        {
+          "Bond_MonthsToMaturity": "24"
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": "0"
+        },
+        {
+          "Global_SavingsInterestRate": "5"
+        },
+        {
+          "Global_TaxFilingStatus": "3"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "231000"
+        },
+        {
+          "Global_StateTaxRate": "8.6"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ]
+    }
+  ]
+}

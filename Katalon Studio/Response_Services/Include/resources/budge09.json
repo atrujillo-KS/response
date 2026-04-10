@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Global_SpouseMonthlyGrossIncome": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly gross income"
+          }
+        },
+        {
+          "MonthlyEmploymentTaxes": {
+            "value": "440",
+            "dataFormat": "Currency",
+            "textLabel": "Less employment taxes"
+          }
+        },
+        {
+          "MonthlyIncomeTaxes": {
+            "value": "1,829",
+            "dataFormat": "Currency",
+            "textLabel": "Less income taxes"
+          }
+        },
+        {
+          "MonthlyExtraExpenses": {
+            "value": "1,180",
+            "dataFormat": "Currency",
+            "textLabel": "Less extra expenses if work"
+          }
+        },
+        {
+          "MonthlyExtraExp_AtHome": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Plus extra expenses if stay at home"
+          }
+        },
+        {
+          "MonthlyGain": {
+            "value": "2,702",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Monthly benefits from working</b>"
+          }
+        },
+        {
+          "Budget_GainOrLoss": {
+            "value": "Work",
+            "dataFormat": "None",
+            "textLabel": "Should spouse work or not work"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Budge09_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Budge09_Default_Results"
+        }
+      ]
+    }
+  ]
+}

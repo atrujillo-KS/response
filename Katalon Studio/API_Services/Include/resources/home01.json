@@ -1,0 +1,945 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_MonthlyGrossIncome": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "6000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Wages before taxes or deductions"
+          }
+        },
+        {
+          "Home_InvestmentIncomeBeforeTaxes": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Investment income before taxes"
+          }
+        },
+        {
+          "Home_MonthlyIncomeFromRentalProperties": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Income from rental properties"
+          }
+        },
+        {
+          "Global_OtherMonthlyIncome": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other income"
+          }
+        },
+        {
+          "Home_AutoLoanPayments": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Auto loans"
+          }
+        },
+        {
+          "Home_MonthlyStudentLoanPayments": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Student loans"
+          }
+        },
+        {
+          "Home_MonthlyRentalPropertyLoanPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Rental property loans ($0 if refinancing)"
+          }
+        },
+        {
+          "Home_OtherMonthlyPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Other payments"
+          }
+        },
+        {
+          "Home_AlimonyPayment": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Monthly alimony, child support or other"
+          }
+        },
+        {
+          "Home_CreditCardPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Monthly credit card payments"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_DownPaymentPercentage": {
+            "value": "20.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "20.000",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": "Down payment (% of price)"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00101",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00101",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00067",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00067",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00033",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00033",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00021",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00021",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00121",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00121",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.00096",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00096",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00065",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00065",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00028",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00028",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00126",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00126",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00084",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00084",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00041",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00041",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00026",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00026",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00151",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00151",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.0012",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.0012",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00081",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00081",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00035",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00035",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How much can I borrow?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home01_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "var response = pm.response.json();\r\n    pm.expect(response.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home01_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home01_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PctDown": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Percent down"
+          }
+        },
+        {
+          "PctDown2": {
+            "value": "20.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "PctDown3": {
+            "value": "30.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "PctDown4": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsDownPmt1": {
+            "value": "24,478",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment amount"
+          }
+        },
+        {
+          "ConsDownPmt2": {
+            "value": "65,470",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsDownPmt3": {
+            "value": "112,235",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsDownPmt4": {
+            "value": "87,294",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsLoanAmt1": {
+            "value": "220,303",
+            "dataFormat": "Currency",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "ConsLoanAmt2": {
+            "value": "261,881",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsLoanAmt3": {
+            "value": "261,881",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsLoanAmt4": {
+            "value": "261,881",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrice1": {
+            "value": "244,782",
+            "dataFormat": "Currency",
+            "textLabel": "Price of home"
+          }
+        },
+        {
+          "ConsPrice2": {
+            "value": "327,351",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrice3": {
+            "value": "374,116",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrice4": {
+            "value": "349,175",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrincAndInt1": {
+            "value": "1,183",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "ConsPrincAndInt2": {
+            "value": "1,406",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrincAndInt3": {
+            "value": "1,406",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsPrincAndInt4": {
+            "value": "1,406",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTaxAndIns1": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "ConsTaxAndIns2": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTaxAndIns3": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTaxAndIns4": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsMortIns1": {
+            "value": "143",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "ConsMortIns2": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsMortIns3": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsMortIns4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTotPmt1": {
+            "value": "1,680",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "ConsTotPmt2": {
+            "value": "1,760",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTotPmt3": {
+            "value": "1,760",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ConsTotPmt4": {
+            "value": "1,760",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "PctDown": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Percent down"
+          }
+        },
+        {
+          "PctDown2": {
+            "value": "20.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "PctDown3": {
+            "value": "30.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "PctDown4": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrDownPmt1": {
+            "value": "30,017",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment amount"
+          }
+        },
+        {
+          "AggrDownPmt2": {
+            "value": "82,236",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrDownPmt3": {
+            "value": "140,975",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrDownPmt4": {
+            "value": "109,647",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrLoanAmt1": {
+            "value": "270,152",
+            "dataFormat": "Currency",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "AggrLoanAmt2": {
+            "value": "328,942",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrLoanAmt3": {
+            "value": "328,942",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrLoanAmt4": {
+            "value": "328,942",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrice1": {
+            "value": "300,169",
+            "dataFormat": "Currency",
+            "textLabel": "Price of home"
+          }
+        },
+        {
+          "AggrPrice2": {
+            "value": "411,178",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrice3": {
+            "value": "469,918",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrice4": {
+            "value": "438,590",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrincAndInt1": {
+            "value": "1,450",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "AggrPrincAndInt2": {
+            "value": "1,766",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrincAndInt3": {
+            "value": "1,766",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrPrincAndInt4": {
+            "value": "1,766",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTaxAndIns1": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "AggrTaxAndIns2": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTaxAndIns3": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTaxAndIns4": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrMortIns1": {
+            "value": "176",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "AggrMortIns2": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrMortIns3": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrMortIns4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTotPmt1": {
+            "value": "1,980",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "AggrTotPmt2": {
+            "value": "2,120",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTotPmt3": {
+            "value": "2,120",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AggrTotPmt4": {
+            "value": "2,120",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "NOTE: Please be sure that you've entered a monthly (not yearly) income figure in the field labeled \"Wages Before Taxes or Deductions\" and all other fields relating to income."
+        },
+        {
+          "textLabel": "The amount you can borrow, based upon various down payments, including the down payment you indicated:"
+        },
+        {
+          "textLabel": "A conservative estimate"
+        },
+        {
+          "textLabel": "Your future monthly payment"
+        },
+        {
+          "textLabel": "An aggressive estimate"
+        },
+        {
+          "textLabel": "Your future monthly payment"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_MonthlyGrossIncome": "7200"
+        },
+        {
+          "Home_InvestmentIncomeBeforeTaxes": "2800"
+        },
+        {
+          "Home_MonthlyIncomeFromRentalProperties": "2200"
+        },
+        {
+          "Global_OtherMonthlyIncome": "3800"
+        },
+        {
+          "Home_AutoLoanPayments": "340"
+        },
+        {
+          "Home_MonthlyStudentLoanPayments": "120"
+        },
+        {
+          "Home_CreditCardPayments": "380"
+        },
+        {
+          "Home_AlimonyPayment": "210"
+        },
+        {
+          "Home_MonthlyRentalPropertyLoanPayments": "1000"
+        },
+        {
+          "Home_OtherMonthlyPayments": "610"
+        },
+        {
+          "Home_InterestRate": "6.4"
+        },
+        {
+          "Home_LoanTermInYears": "21"
+        },
+        {
+          "Home_DownPaymentPercentage": "24"
+        },
+        {
+          "Home_YearlyPropertyTax": "4500"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "1400"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "NOTE: Please be sure that you've entered a monthly (not yearly) income figure in the field labeled \"Wages Before Taxes or Deductions\" and all other fields relating to income."
+        },
+        {
+          "textLabel": "The amount you can borrow, based upon various down payments, including the down payment you indicated:"
+        },
+        {
+          "textLabel": "A conservative estimate"
+        },
+        {
+          "textLabel": "Your future monthly payment"
+        },
+        {
+          "textLabel": "An aggressive estimate"
+        }
+      ]
+    }
+  ]
+}

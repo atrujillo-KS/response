@@ -1,0 +1,680 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "30,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "30000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "2",
+            "maximumValue": "120",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "EstimatedByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField1": {
+            "value": "0",
+            "dataFormat": "",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "IngnoreByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField2": {
+            "value": "0",
+            "dataFormat": "",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Yearly rate of growth of social security benefits"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "98",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "98",
+            "minimumValue": "5",
+            "maximumValue": "100",
+            "textLabel": "Life expectancy"
+          }
+        }
+      ],
+      "title": "How much will Social Security provide after retirement?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Retire02n_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Retire02n_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Retire02n_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Retire02n_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Retire02n_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Retire02n_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Retire02n_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "30,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "5",
+            "dataFormat": "None",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "1",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "EstimatedByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField1": {
+            "value": "0",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "IngnoreByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField2": {
+            "value": "0",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Yearly rate of growth of social security benefits"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "98",
+            "dataFormat": "None",
+            "textLabel": "Life expectancy"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Personal information"
+        },
+        {
+          "textLabel": "Social Security benefits"
+        },
+        {
+          "textLabel": "Monthly benefits are"
+        },
+        {
+          "textLabel": "Your projections"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "CurrAge": "31"
+        },
+        {
+          "Income": "121000"
+        },
+        {
+          "RetireAge": "60"
+        },
+        {
+          "RetireWage": "3000"
+        },
+        {
+          "WageYrs": "10"
+        },
+        {
+          "SpsAge": "37"
+        },
+        {
+          "SpsInc": "30000"
+        },
+        {
+          "SpsRetireAge": "67"
+        },
+        {
+          "DeathAge": "90"
+        },
+        {
+          "AnnIncGrow": "6"
+        },
+        {
+          "SSAge": "63"
+        },
+        {
+          "SSType": "0"
+        },
+        {
+          "SSPmt": "900"
+        },
+        {
+          "SpsSSAge": "67"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "false",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "31",
+            "dataFormat": "None",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "121,000",
+            "dataFormat": "Currency",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "30,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "60",
+            "dataFormat": "None",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "10",
+            "dataFormat": "None",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "63",
+            "dataFormat": "None",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "900",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "EstimatedByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField1": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "IngnoreByCalc": {
+            "value": " ",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField2": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "6.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Yearly rate of growth of social security benefits"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "90",
+            "dataFormat": "None",
+            "textLabel": "Life expectancy"
+          }
+        }
+      ]
+    }
+  ]
+}

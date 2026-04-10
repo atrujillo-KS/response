@@ -1,0 +1,581 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_AutoInterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Auto_UsedVehicleInterestRate": {
+            "value": "5.500",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "48",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Loan term (months)"
+          }
+        },
+        {
+          "Auto_UsedVehicleLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "48",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_UsedVehicleDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_YearsOwned": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "30",
+            "textLabel": "Years you will own vehicle"
+          }
+        },
+        {
+          "Auto_YearsUsedVehicleOwned": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "30",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_MonthlyMaintenance": {
+            "value": "30",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "30",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Monthly maintenance costs"
+          }
+        },
+        {
+          "Auto_UsedVehicleMonthlyMaintenance": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_MonthlyInsurance": {
+            "value": "75",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "75",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Monthly Insurance costs"
+          }
+        },
+        {
+          "Auto_UsedVehicleMonthlyInsurance": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_Registration": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Registration costs"
+          }
+        },
+        {
+          "Auto_UsedVehicleRegistration": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoPurchasePrice": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Auto_UsedVehiclePurchasePrice": {
+            "value": "12,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "12000",
+            "minimumValue": "0",
+            "maximumValue": "250000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_UsedVehicleAgeInYears": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "30",
+            "textLabel": "Vehicle age (years)"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings interest rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state & federal tax rates"
+          }
+        },
+        {
+          "Auto_FutureDepreciation": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Future depreciation"
+          }
+        }
+      ],
+      "title": "Which is better: a new or used vehicle?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Auto01_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "var response = pm.response.json();\r\n    pm.expect(response.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto01_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto01_Inital_Inputs"
+        },
+        {
+          "name": "Default Results",
+          "body": "pm.expect(pm.response.code).to.equal(200);\r\n\r\n\r\n    \n    pm.sendRequest({\r\n        url: 'https://qa.awsc.leadfusion.com/tools/qatest/auto01/tool.fcs?json&toolPage=results&nolog=',\r\n        method: 'POST',\r\n        header: {\r\n            'Content-Type': 'application/json'\r\n        },\r\n        params: {\r\n            newuser: true,\r\n            json: true,\r\n            toolPage: 'results',\r\n            \n        }\r\n    }, function (err, res) {\r\n        \n        console.log(res.json());",
+          "source": "initial",
+          "itemName": "Auto01_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Auto01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Auto01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Auto01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Auto01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "AveCostPerYrAuto01": {
+            "value": "7,735",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "AveCostPerYr2Auto01": {
+            "value": "3,193",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonPmtAuto01": {
+            "value": "875",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "MonPmt2Auto01": {
+            "value": "233",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "FirstYrDepAuto01": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "textLabel": "First year's depreciation"
+          }
+        },
+        {
+          "FirstYrDep2": {
+            "value": "1,680",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDepAuto01": {
+            "value": "20,020",
+            "dataFormat": "Currency",
+            "textLabel": "Total depreciation during ownership"
+          }
+        },
+        {
+          "TotDep2Auto01": {
+            "value": "5,588",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaidAuto01": {
+            "value": "4,005",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2Auto01": {
+            "value": "1,163",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoPurchasePrice": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "textLabel": "Price new"
+          }
+        },
+        {
+          "DepYrs": {
+            "value": "16,768",
+            "dataFormat": "Currency",
+            "textLabel": "Less depreciation for 3 years"
+          }
+        },
+        {
+          "PriceYrs": {
+            "value": "23,232",
+            "dataFormat": "Currency",
+            "textLabel": "Price at 3 years of age"
+          }
+        },
+        {
+          "Auto_NewVsUsedYearlyCostDifference": {
+            "value": "4,542",
+            "dataFormat": "Currency",
+            "textLabel": "New vs used cost difference"
+          }
+        },
+        {
+          "Auto_LessOrMore": {
+            "value": "Used",
+            "dataFormat": "None",
+            "textLabel": "New vehicle or used vehicle"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Considering financing, maintenance and other costs, the used vehicle purchased at a price of $12,000 will cost you $4,542 less on average each year than the new vehicle purchased for $40,000."
+        },
+        {
+          "textLabel": "The value of the new vehicle at the end of 3 years is $23,232 and was computed as follows:"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_AutoPurchasePrice": "55000"
+        },
+        {
+          "Global_AutoDownPayment": "6000"
+        },
+        {
+          "Global_AutoInterestRate": "7.30"
+        },
+        {
+          "Global_AutoLoanTerm": "36"
+        },
+        {
+          "Auto_YearsOwned": "5"
+        },
+        {
+          "Auto_MonthlyMaintenance": "80"
+        },
+        {
+          "Auto_MonthlyInsurance": "90"
+        },
+        {
+          "Auto_Registration": "240"
+        },
+        {
+          "Auto_UsedVehiclePurchasePrice": "21000"
+        },
+        {
+          "Auto_UsedVehicleDownPayment": "1000"
+        },
+        {
+          "Auto_UsedVehicleInterestRate": "6.20"
+        },
+        {
+          "Auto_UsedVehicleLoanTerm": "36"
+        },
+        {
+          "Auto_UsedVehicleAgeInYears": "5"
+        },
+        {
+          "Auto_YearsUsedVehicleOwned": "6"
+        },
+        {
+          "Auto_UsedVehicleMonthlyMaintenance": "85"
+        },
+        {
+          "Auto_UsedVehicleMonthlyInsurance": "90"
+        },
+        {
+          "Auto_UsedVehicleRegistration": "50"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "28"
+        },
+        {
+          "Auto_FutureDepreciation": "0"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "AveCostPerYrAuto01": {
+            "value": "8,160",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "AveCostPerYr2Auto01": {
+            "value": "4,172",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonPmtAuto01": {
+            "value": "1,520",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "MonPmt2Auto01": {
+            "value": "610",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "FirstYrDepAuto01": {
+            "value": "8,800",
+            "dataFormat": "Currency",
+            "textLabel": "First year's depreciation"
+          }
+        },
+        {
+          "FirstYrDep2": {
+            "value": "2,520",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDepAuto01": {
+            "value": "23,375",
+            "dataFormat": "Currency",
+            "textLabel": "Total depreciation during ownership"
+          }
+        },
+        {
+          "TotDep2Auto01": {
+            "value": "10,224",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaidAuto01": {
+            "value": "5,709",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2Auto01": {
+            "value": "1,969",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoPurchasePrice": {
+            "value": "55,000",
+            "dataFormat": "Currency",
+            "textLabel": "Price new"
+          }
+        },
+        {
+          "DepYrs": {
+            "value": "23,375",
+            "dataFormat": "Currency",
+            "textLabel": "Less depreciation for 5 years"
+          }
+        },
+        {
+          "PriceYrs": {
+            "value": "31,625",
+            "dataFormat": "Currency",
+            "textLabel": "Price at 5 years of age"
+          }
+        },
+        {
+          "Auto_NewVsUsedYearlyCostDifference": {
+            "value": "3,988",
+            "dataFormat": "Currency",
+            "textLabel": "New vs used cost difference"
+          }
+        },
+        {
+          "Auto_LessOrMore": {
+            "value": "Used",
+            "dataFormat": "None",
+            "textLabel": "New vehicle or used vehicle"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Considering financing, maintenance and other costs, the used vehicle purchased at a price of $21,000 will cost you $3,988 less on average each year than the new vehicle purchased for $55,000."
+        },
+        {
+          "textLabel": "The value of the new vehicle at the end of 5 years is $31,625 and was computed as follows:"
+        }
+      ]
+    }
+  ]
+}

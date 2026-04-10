@@ -1,0 +1,965 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/response/resdemo-esp/calc/auto07"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Leadfusion Auto Calculator",
+      "value": "Leadfusion Auto Calculator"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_title_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "¿Qué plazo debo elegir para el préstamo de vehículo?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_label",
+      "value": "Ayuda"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Ayuda"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "Esta calculadora le ayuda a determinar, entre dos préstamos para comprar un vehículo con diferentes plazos, cuál es el más ventajoso. En el caso de dos préstamos con la misma tasa de interés, el pago mensual es mayor para el préstamo de menor plazo. Sin embargo, puede cancelar el préstamo con anterioridad e invertir los ahorros en una cuenta con pago de intereses. Si la tasa de retorno de sus ahorros es mucho mayor que la tasa de interés del préstamo para comprar un vehículo, podría ser mejor invertir el dinero y financiar la compra del vehículo."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "El Préstamo 2 le costará, en dólares actuales, $8,302 menos que el Préstamo 1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Préstamo 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Préstamo 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto07_result_label",
+      "value": "Pago mensual"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto07_result_value",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmt2Auto07_result_value",
+      "value": "$1,667"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto07_result_label",
+      "value": "Intereses totales pagados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto07_result_value",
+      "value": "$4,005"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2Auto07_result_value",
+      "value": "$2,011"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_next_steps_label",
+      "value": "Siguientes pasos"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_next_steps_zoneA_title",
+      "value": "Siguientes pasos"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_next_steps_zoneA_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Costo total"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Pagos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container3",
+      "value": "Amortización"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div/span",
+      "value": "Cronograma de pagos - Préstamo 1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_tables_links0",
+      "value": "VER TABLA"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links0"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Cronograma de pagos - Préstamo 1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Mes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Pago mensual"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Saldo"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Capital pagado"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Intereses pagados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Interés acumulado"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$37,283"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$717"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[2]",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[4]",
+      "value": "$871"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[5]",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[48]/td[6]",
+      "value": "$4,005"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_container3-graph-container']/div/div[2]/span",
+      "value": "Cronograma de pagos - Préstamo 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tables_links1",
+      "value": "VER TABLA"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tables_links1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_amortization_title",
+      "value": "Cronograma de pagos - Préstamo 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-1",
+      "value": "Mes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-2",
+      "value": "Pago mensual"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-3",
+      "value": "Saldo"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-4",
+      "value": "Capital pagado"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-5",
+      "value": "Intereses pagados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "col-6",
+      "value": "Interés acumulado"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[2]",
+      "value": "$1,667"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[3]",
+      "value": "$36,491"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[4]",
+      "value": "$1,509"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[5]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr/td[6]",
+      "value": "$158"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td[2]",
+      "value": "$1,667"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td[4]",
+      "value": "$1,660"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td[5]",
+      "value": "$7"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tbody[@id='lf-table-rows']/tr[24]/td[6]",
+      "value": "$2,011"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graphs-table_close_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "OtherInfo-accordion",
+      "value": "Otra información"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-label",
+      "value": "Precio de compra"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-error-message",
+      "value": "Debe ubicarse entre $0 y $1,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Su tasa impositiva estatal y federal"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-error-message",
+      "value": "Debe ubicarse entre 0.00% y 90.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_FederalAndStateTaxRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tasas de impuestos"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El porcentaje de su ingreso imponible adeudado al gobierno estatal y federal. La tasa de impuestos aumenta a medida que aumenta la base imponible."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "La tasa de interés sobre sus ahorros"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-error-message",
+      "value": "Debe ubicarse entre 0.00% y 100.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_SavingsInterestRate_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Tasa de interés de ahorro"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Tasa de interés anual que usted obtiene sobre sus ahorros."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Loan1-accordion",
+      "value": "Préstamo 1"
+    }
+  },
+  {
+    "click": {
+      "id": "Loan1-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-label",
+      "value": "Plazo del préstamo (meses)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-error-message",
+      "value": "Debe ubicarse entre 1 y 360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-label",
+      "value": "Cuota inicial"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-error-message",
+      "value": "Debe ubicarse entre $0 y $249,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_AutoDownPayment_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Pago inicial"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-label",
+      "value": "Tasa de interés"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-error-message",
+      "value": "Debe ubicarse entre 0.00% y 50.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Loan2-accordion",
+      "value": "Préstamo 2"
+    }
+  },
+  {
+    "click": {
+      "id": "Loan2-accordion"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanTerm-label",
+      "value": "Plazo del préstamo (meses)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment-label",
+      "value": "Cuota inicial"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment-error-message",
+      "value": "Debe ubicarse entre $0 y $249,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanDownPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Auto_SecondLoanDownPayment_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-term",
+      "value": "Pago inicial"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "El dinero en efectivo que usted deposita en la compra de una vivienda, un automóvil, etc. Cuanto más grande sea el pago inicial, menos deberá pedir prestado."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanInterestRate-label",
+      "value": "Tasa de interés"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_SecondLoanInterestRate-error-message",
+      "value": "Debe ubicarse entre 0.00% y 50.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "OtherInfo-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "25,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.45"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.45"
+    }
+  },
+  {
+    "click": {
+      "id": "Loan1-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "60"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "1,500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "6.78"
+    }
+  },
+  {
+    "click": {
+      "id": "Loan2-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_SecondLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_SecondLoanDownPayment",
+      "value": "3,444"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_SecondLoanInterestRate",
+      "value": "1.59"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "El Préstamo 2 le costará, en dólares actuales, $7,159 menos que el Préstamo 1"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto07_result_value",
+      "value": "$463"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmt2Auto07_result_value",
+      "value": "$614"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto07_result_value",
+      "value": "$4,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaid2Auto07_result_value",
+      "value": "$532"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_terms_of_use_label",
+      "value": "Términos de uso"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_main']/div/div[3]/div[6]/div/small[2]",
+      "value": "© 2026 Leadfusion"
+    }
+  },
+  {
+    "click": {
+      "id": "//span[@id='lf_terms_of_use_label']/b"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//span[@id='lf_answer']/span[2]",
+      "value": "$7,159 menos"
+    }
+  },
+  {
+    "verifyVisible": {
+      "id": "lf_save_print_share"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_print_share"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_save_print_share_title",
+      "value": "Guardar, imprimir y compartir sus resultados"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_enter_email_label",
+      "value": "Ingrese su dirección de correo electrónico para:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_save_label",
+      "value": "Guarde sus resultados enviando un enlace por correo electrónico a esta página"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_print_label",
+      "value": "Imprima sus resultados con una versión imprimible"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_share_label",
+      "value": "Comparta sus resultados enviando un mensaje de correo electrónico a sus amigos o familiares"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_email_address_label",
+      "value": "Ingrese su dirección de correo electrónico:"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf-email-address"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-email-submit",
+      "value": "ENVIAR"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-submit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-email-message",
+      "value": "Dirección de correo electrónico no válida, correo electrónico de muestra: janesmith@gmail.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-address"
+    }
+  },
+  {
+    "type": {
+      "id": "lf-email-address",
+      "value": "KatRecAuto07SPANISH@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-submit"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-email-message",
+      "value": "Gracias. Su informe será enviado en breve."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_print_share_dialog_close_btn"
+    }
+  }
+]

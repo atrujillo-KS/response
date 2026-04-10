@@ -1,0 +1,130 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "nonDefaultResults": [
+        {
+          "Global_SpouseMonthlyGrossIncome": {
+            "value": "11,500",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly gross income"
+          }
+        },
+        {
+          "MonthlyEmploymentTaxes": {
+            "value": "1,033",
+            "dataFormat": "Currency",
+            "textLabel": "Less employment taxes"
+          }
+        },
+        {
+          "MonthlyIncomeTaxes": {
+            "value": "2,592",
+            "dataFormat": "Currency",
+            "textLabel": "Less income taxes"
+          }
+        },
+        {
+          "MonthlyExtraExpenses": {
+            "value": "2,820",
+            "dataFormat": "Currency",
+            "textLabel": "Less extra expenses if work"
+          }
+        },
+        {
+          "MonthlyExtraExp_AtHome": {
+            "value": "2,300",
+            "dataFormat": "Currency",
+            "textLabel": "Plus extra expenses if stay at home"
+          }
+        },
+        {
+          "MonthlyGain": {
+            "value": "7,355",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Monthly benefits from working</b>"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_SpouseMonthlyGrossIncome": "11500"
+        },
+        {
+          "Global_MonthlyNontaxableIncome": "4750"
+        },
+        {
+          "Global_SelfEmployed": "1"
+        },
+        {
+          "Global_FederalTaxRate": "33.00"
+        },
+        {
+          "Global_StateTaxRate": "5.40"
+        },
+        {
+          "Global_ExtraChildCareCosts": "1100"
+        },
+        {
+          "Global_ExtraWorkTransportationCosts": "150"
+        },
+        {
+          "Global_ExtraWorkClothingCosts": "150"
+        },
+        {
+          "Global_ExtraHousekeepingCosts": "190"
+        },
+        {
+          "Global_ExtraChildrensEntertainmentCosts": "180"
+        },
+        {
+          "Global_ExtraEatingOutCosts": "250"
+        },
+        {
+          "Global_ExtraOtherCostsGoingToWorkStayingAtHome": "800"
+        },
+        {
+          "Global_ExtraMedicalInsuranceCosts": "600"
+        },
+        {
+          "Global_ExtraLifeInsuranceCosts": "400"
+        },
+        {
+          "Global_ExtraOtherCostsStayingAtHome": "1300"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Budget09_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Budget09_NonDefault_Results"
+        },
+        {
+          "name": "Verify values of 'value', 'textLabel', and 'dataElementName' in the array",
+          "body": "var fields = jsonData;\r\n\r\n    \n    var expectedFields = [\r\n        { dataElementName: \"Global_SpouseMonthlyGrossIncome\", dataFormat: \"Currency\", value: \"11,500\", textLabel: \"Monthly gross income\" },\r\n        { dataElementName: \"MonthlyEmploymentTaxes\", dataFormat: \"Currency\", value: \"1,033\", textLabel: \"Less employment taxes\" },\r\n        { dataElementName: \"MonthlyIncomeTaxes\", dataFormat: \"Currency\", value: \"2,592\", textLabel: \"Less income taxes\" },\r\n        { dataElementName: \"MonthlyExtraExpenses\", dataFormat: \"Currency\", value: \"2,820\", textLabel: \"Less extra expenses if work\" },\r\n        { dataElementName: \"MonthlyExtraExp_AtHome\", dataFormat: \"Currency\", value: \"2,300\", textLabel: \"Plus extra expenses if stay at home\" },\r\n        { dataElementName: \"MonthlyGain\", dataFormat: \"Currency\", value: \"7,355\", textLabel: \"<b>Monthly benefits from working</b>\" }\r\n    ];\r\n\r\n    \n    for (var i = 0; i < fields.length; i++) {\r\n        pm.expect(fields[i].dataElementName, `Failed for \"${fields[i].dataElementName}\" - dataElementName`).to.eql(expectedFields[i].dataElementName);\r\n        pm.expect(fields[i].dataFormat, `Failed for \"${fields[i].dataElementName}\" - dataFormat`).to.eql(expectedFields[i].dataFormat);\r\n        pm.expect(fields[i].value, `Failed for \"${fields[i].dataElementName}\" - value`).to.eql(expectedFields[i].value);\r\n        pm.expect(fields[i].textLabel, `Failed for \"${fields[i].dataElementName}\" - textLabel`).to.eql(expectedFields[i].textLabel);\r\n    }",
+          "source": "nondefault",
+          "itemName": "Budget09_NonDefault_Results"
+        }
+      ]
+    }
+  ]
+}

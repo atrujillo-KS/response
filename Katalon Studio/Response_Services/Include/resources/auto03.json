@@ -1,0 +1,508 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_AutoPurchasePrice": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Global_SalesTaxRate": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": "Sales tax rate"
+          }
+        },
+        {
+          "Auto_VehicleAgeInYears": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "30",
+            "textLabel": "Vehicle age (years)"
+          }
+        },
+        {
+          "Auto_CashRebate": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Cash rebate"
+          }
+        },
+        {
+          "Global_AutoDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_OtherCosts": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other upfront costs"
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "48",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Loan term (months)"
+          }
+        },
+        {
+          "Global_AutoInterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Auto_LeaseTerm": {
+            "value": "24",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "24",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Lease term (months)"
+          }
+        },
+        {
+          "Auto_LeaseMonthlyPayment": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250.00",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Auto_LeaseSecurityDeposit": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Security deposit"
+          }
+        },
+        {
+          "Auto_LeaseDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Cash paid"
+          }
+        },
+        {
+          "Auto_LeaseCashRebate": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Cash rebate"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings interest rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state & federal tax rates"
+          }
+        },
+        {
+          "Auto_FutureDepreciation": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Future depreciation"
+          }
+        }
+      ],
+      "title": "Should I lease or purchase a vehicle?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Auto03_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto03_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto03_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Auto03_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Auto03_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Auto03_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Auto03_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "AveCostPerYrAuto03": {
+            "value": "6,796",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "AveCostPerYr2Auto03": {
+            "value": "3,980",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotLeasePmt1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Total lease payments"
+          }
+        },
+        {
+          "TotLeasePmt2": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAtPurcAuto03": {
+            "value": "3,200",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes at purchase"
+          }
+        },
+        {
+          "NA1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonPmtAuto03": {
+            "value": "875",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Auto_LeaseMonthlyPayment": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "TotIntPaidAuto03": {
+            "value": "4,005",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest"
+          }
+        },
+        {
+          "NA2": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDepAuto03": {
+            "value": "20,020",
+            "dataFormat": "Currency",
+            "textLabel": "Total depreciation"
+          }
+        },
+        {
+          "NA3": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_BuyVsLeaseYearlyCostDifference": {
+            "value": "2,816",
+            "dataFormat": "Currency",
+            "textLabel": "Buy vs lease cost difference"
+          }
+        },
+        {
+          "Auto_LessOrMore": {
+            "value": "Lease",
+            "dataFormat": "None",
+            "textLabel": "Purchase or lease vehicle"
+          }
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "If you buy"
+        },
+        {
+          "textLabel": "If you lease"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_AutoPurchasePrice": "50000"
+        },
+        {
+          "Global_AutoDownPayment": "5000"
+        },
+        {
+          "Global_AutoLoanTerm": "36"
+        },
+        {
+          "Global_AutoInterestRate": "4.55"
+        },
+        {
+          "Global_SalesTaxRate": "7.25"
+        },
+        {
+          "Auto_VehicleAgeInYears": "1"
+        },
+        {
+          "Auto_CashRebate": "1000"
+        },
+        {
+          "Auto_OtherCosts": "500"
+        },
+        {
+          "Auto_LeaseMonthlyPayment": "300"
+        },
+        {
+          "Auto_LeaseDownPayment": "5000"
+        },
+        {
+          "Auto_LeaseTerm": "36"
+        },
+        {
+          "Auto_LeaseSecurityDeposit": "450"
+        },
+        {
+          "Auto_LeaseCashRebate": "500"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "25.99"
+        },
+        {
+          "Auto_FutureDepreciation": "2"
+        },
+        {
+          "Global_SavingsInterestRate": "4.56"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "AveCostPerYrAuto03": {
+            "value": "9,336",
+            "dataFormat": "Currency",
+            "textLabel": "Average cost per year"
+          }
+        },
+        {
+          "AveCostPerYr2Auto03": {
+            "value": "4,934",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotLeasePmt1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Total lease payments"
+          }
+        },
+        {
+          "TotLeasePmt2": {
+            "value": "10,800",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAtPurcAuto03": {
+            "value": "3,625",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes at purchase"
+          }
+        },
+        {
+          "NA1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonPmtAuto03": {
+            "value": "1,310",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Auto_LeaseMonthlyPayment": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "TotIntPaidAuto03": {
+            "value": "3,155",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest"
+          }
+        },
+        {
+          "NA2": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDepAuto03": {
+            "value": "22,448",
+            "dataFormat": "Currency",
+            "textLabel": "Total depreciation"
+          }
+        },
+        {
+          "NA3": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_BuyVsLeaseYearlyCostDifference": {
+            "value": "4,403",
+            "dataFormat": "Currency",
+            "textLabel": "Buy vs lease cost difference"
+          }
+        },
+        {
+          "Auto_LessOrMore": {
+            "value": "Lease",
+            "dataFormat": "None",
+            "textLabel": "Purchase or lease vehicle"
+          }
+        }
+      ],
+      "NonDefaultColumnTextLabels": [
+        {
+          "textLabel": "If you buy"
+        },
+        {
+          "textLabel": "If you lease"
+        }
+      ]
+    }
+  ]
+}

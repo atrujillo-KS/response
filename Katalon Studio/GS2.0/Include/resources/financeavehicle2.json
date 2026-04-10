@@ -1,0 +1,1047 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Buy or Refinance a Vehicle",
+      "value": "Buy or Refinance a Vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TypeofVehicleFinancing__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PriceofVehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*",
+      "value": "Look up price of used vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Look Up the Price of a Used Vehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trade-In Value'])[1]/following::label[1]",
+      "value": "Vehicle Make"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicletypes_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicletypes_select",
+      "value": "label=Audi"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Make'])[1]/following::label[1]",
+      "value": "Model Year"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleyears_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleyears_select",
+      "value": "label=2021"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Model'])[1]/following::label[1]",
+      "value": "Vehicle Model"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehiclemodel_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehiclemodel_select_used",
+      "value": "label=Q5 - SUVs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[1]/following::label[1]",
+      "value": "Trim Package"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleTrim_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleTrim_select_used",
+      "value": "label=Utility 4D Premium 45 AWD"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[2]/following::label[1]",
+      "value": "Vehicle Mileage"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_UsedVehicleMileage",
+      "value": "60,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Outstanding Loan Principal'])[1]/following::label[1]",
+      "value": "Zip Code"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode_Nada",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upgrades and Extras'])[1]/following::label[1]",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SalesTaxRate",
+      "value": "7.75%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your Sales Tax Rate'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "A tax paid to a governing body for the sales of certain goods and services. Sales tax rate and application varies depending on the state."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SalesTaxRate_slider",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "storeValue": {
+      "id": "lf_NewVehiclePurchasePrice",
+      "value": "CurrentValue"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "2021 Audi Q5 Utility 4D Premium 45 AWD with 60,000 miles"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[2]",
+      "value": "${CurrentValue}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Use this Amount'])[1]/preceding::label[2]",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_NewVehiclePurchasePrice",
+      "value": "${CurrentValue}"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_use_NadaPurchasePrice",
+      "value": "USE THIS AMOUNT"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='MSRP*'])[1]/following::th[1]",
+      "value": "Base Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[4]/following::th[1]",
+      "value": "Sales tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-inline-proceeds-output-label.lf-nada-purchase-price.lf-nada-left-column.ng-binding",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=td.lf-inline-proceeds-output-value.lf-nada-purchase-price.lf-nada-center-column.ng-binding",
+      "value": "${CurrentValue}"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Down Payment'])[1]/following::button[1]"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PriceofVehicle",
+      "value": "${CurrentValue}"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_PriceofVehicle",
+      "value": "60500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DownPaymentAmount"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[2]/following::span[3]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_inline_modal_title",
+      "value": "Calculate Down Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='NADA price lookup service is currently unavailable.'])[1]/following::label[1]",
+      "value": "Cash"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CashDownPayment",
+      "value": "$6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CashDownPayment_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash'])[1]/following::label[1]",
+      "value": "Cash-Back or Rebate Incentive"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CashBackRebateIncentive",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CashBackRebateIncentive_slider",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash-Back or Rebate Incentive'])[1]/following::span[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_tooltip_title",
+      "value": "Cash-Back or Rebate Incentive"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The manufacturer of your vehicle or your dealer might be offering a cash back or rebate incentive to purchase a specific vehicle. Use it to reduce the cost of your vehicle."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash-Back or Rebate Incentive'])[2]/following::label[1]",
+      "value": "Have a Trade-in Vehicle?"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id=\"'HaveTradeIn'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Trade-in"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The auto or other vehicle you exchange when you buy a new one."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_HaveTradeIn",
+      "value": "Select... No Yes - value known Yes - look up value for me"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HaveTradeIn",
+      "value": "string:0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a Trade-in Vehicle?'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Trade-in"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The auto or other vehicle you exchange when you buy a new one."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_CashDownPayment",
+      "value": "$5000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_CashBackRebateIncentive",
+      "value": "2000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_HaveTradeIn"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_HaveTradeIn",
+      "value": "label=Yes - value known"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_TradeInValue",
+      "value": "25000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_LessOutstandingLoanAmount",
+      "value": "1500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_btn",
+      "value": "Calculate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$30,500'])[1]/following::div[1]",
+      "value": "Your total down payment is $30,500."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Purchase Price'])[2]/following::label[1]",
+      "value": "Down Payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TotalDownPayment",
+      "value": "$30,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[3]/tbody/tr/th",
+      "value": "Cash"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash'])[2]/following::th[1]",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$5,000'])[1]/following::th[1]",
+      "value": "Cash-Back or Rebate Incentive"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash-Back or Rebate Incentive'])[2]/following::td[1]",
+      "value": "$2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$2,000'])[1]/following::th[1]",
+      "value": "Trade-In Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trade-In Value'])[2]/following::td[1]",
+      "value": "$25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$25,000'])[1]/following::th[1]",
+      "value": "Less: Outstanding Loan Principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Less: Outstanding Loan Principal'])[1]/following::td[1]",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[3]/tbody/tr[5]/th",
+      "value": "Money Available for Down Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//table[3]/tbody/tr[5]/td",
+      "value": "$30,500"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[4]/div/div[3]/button"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id='lf_field_list']/div[9]/div/button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_ZipCode_label",
+      "value": "ZIP Code"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditRatingBasic"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_CreditRatingBasic",
+      "value": "label=Excellent"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_review_sort"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_review_sort",
+      "value": "label=Lowest Monthly Payment"
+    }
+  },
+  {
+    "click": {
+      "id": "//option[@value='string:MonthlyPayment']"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max options selected'])[1]/following::div[6]",
+      "value": "$362"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max options selected'])[2]/following::div[6]",
+      "value": "$504"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_major_2 > div.lf-results-row-major-value.ng-binding",
+      "value": "$583"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max options selected'])[4]/following::div[6]",
+      "value": "$705"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Max options selected'])[5]/following::div[6]",
+      "value": "$906"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_review_sort"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_review_sort",
+      "value": "label=Lowest APR"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-next-col-header-label.ng-binding",
+      "value": "36-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[2]/div",
+      "value": "60-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[3]/div",
+      "value": "48-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$906']/parent::*",
+      "value": "$906$906"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$583']/parent::*",
+      "value": "$583$583"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$705']/parent::*",
+      "value": "$705$705"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-LoanTermInMonths.lf-compare-row-label-single",
+      "value": "Term (Months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td/div",
+      "value": "$906"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[2]/div",
+      "value": "$583"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[3]/div",
+      "value": "$705"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$32,612']/parent::*",
+      "value": "$32,612$32,612"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$35,215']/parent::*",
+      "value": "$35,215$35,215"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$34,201']/parent::*",
+      "value": "$34,201$34,201"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$30,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$30,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$30,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td/div",
+      "value": "$2,612"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[2]/div",
+      "value": "$5,065"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[3]/div",
+      "value": "$3,901"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[2]/div",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[3]/div",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td/div",
+      "value": "$32,612"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[2]/div",
+      "value": "$35,215"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[3]/div",
+      "value": "$34,201"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Payoff Schedules"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$29,232"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$29,724"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$29,747"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[35]/td/div",
+      "value": "$902"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[48]/td[3]/div",
+      "value": "$381"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[2]/div",
+      "value": "$205"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Details Side by Side"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CompareIntRate",
+      "value": "5.50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CompareIntRate.lf-row-CompareIntRate-1",
+      "value": "6.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CompareIntRate.lf-row-CompareIntRate-2",
+      "value": "6.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr",
+      "value": "5.50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr.lf-row-Apr-1",
+      "value": "6.46%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr.lf-row-Apr-2",
+      "value": "6.51%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanTermInMonths",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanTermInMonths.lf-row-LoanTermInMonths-1",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanTermInMonths.lf-row-LoanTermInMonths-2",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-DiscountForAutomaticDebit",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-DiscountForAutomaticDebit.lf-row-DiscountForAutomaticDebit-1",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-DiscountForAutomaticDebit.lf-row-DiscountForAutomaticDebit-2",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanFeeOutput",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanFeeOutput.lf-row-LoanFeeOutput-1",
+      "value": "$150"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanFeeOutput.lf-row-LoanFeeOutput-2",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MaxLoanToValue",
+      "value": "100%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MaxLoanToValue.lf-row-MaxLoanToValue-1",
+      "value": "100%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MaxLoanToValue.lf-row-MaxLoanToValue-2",
+      "value": "100%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinLoanAmount",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinLoanAmount.lf-row-MinLoanAmount-1",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinLoanAmount.lf-row-MinLoanAmount-2",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ModelYearsSupported.lf-row-ModelYearsSupported-0",
+      "value": "2002-2022"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ModelYearsSupported.lf-row-ModelYearsSupported-1",
+      "value": "2002-2022"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ModelYearsSupported.lf-row-ModelYearsSupported-2",
+      "value": "2002-2022"
+    }
+  }
+]

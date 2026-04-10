@@ -1,0 +1,664 @@
+{
+  "config": {
+    "baseUrl": "https://qa.awsc.leadfusion.com",
+    "tokenUrl": "/oauth2/oauth2/token",
+    "authHeader": "Basic YXBpY2xpZW50OmFwaWNsaWVudHNlY3JldA=="
+  },
+  "tests": [
+    {
+      "name": "PAM_Category_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add New Category",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/pam/category?siteId=qatest&clientId=19500",
+          "body": {
+            "name": "Test Category",
+            "clientId": 19500,
+            "siteId": "qatest"
+          },
+          "expect": { "status": 200 },
+          "extract": {
+            "newCategoryId": "data.categories[?name=='Test Category'].categoryId"
+          }
+        },
+        {
+          "name": "Get All Categories",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/pam/category?siteId=qatest&clientId=19500",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.categories[?categoryId==${newCategoryId}].name": "Test Category"
+            }
+          }
+        },
+        {
+          "name": "Update Category Name",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/pam/category?siteId=qatest&clientId=19500",
+          "body": {
+            "name": "Test Category new name",
+            "categoryId": "${newCategoryId}",
+            "clientId": 19500,
+            "siteId": "qatest"
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.categories[?categoryId==${newCategoryId}].name": "Test Category new name"
+            }
+          }
+        },
+        {
+          "name": "Copy Category",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/pam/category?siteId=qatest&clientId=19500",
+          "body": {
+            "name": "Test Category copy",
+            "clientId": 19500,
+            "siteId": "qatest",
+            "enabled": true
+          },
+          "expect": { "status": 200 },
+          "extract": {
+            "copiedCategoryId": "data.categories[?name=='Test Category copy'].categoryId"
+          }
+        },
+        {
+          "name": "Delete Original Category",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/pam/category",
+          "body": {
+            "categoryId": "${newCategoryId}",
+            "clientId": 19500,
+            "siteId": "qatest"
+          },
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Delete Copied Category",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/pam/category",
+          "body": {
+            "categoryId": "${copiedCategoryId}",
+            "clientId": 19500,
+            "siteId": "qatest"
+          },
+          "expect": { "status": 200 }
+        }
+      ]
+    },
+    {
+      "name": "PAM_Adjustments_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add New Adjustment",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/pam/adjustments",
+          "body": {
+            "clientId": 827889422,
+            "siteId": "fem",
+            "categoryId": 361,
+            "type": "Test type",
+            "conditions": "Test conditions",
+            "adjustment": "Test adjustment",
+            "paymentMethod": 0
+          },
+          "expect": {
+            "status": 201,
+            "body": {
+              "data.adjustments[0].type": "Test type",
+              "data.adjustments[0].conditions": "Test conditions",
+              "data.adjustments[0].adjustment": "Test adjustment"
+            }
+          },
+          "extract": {
+            "newAdjustmentId": "data.adjustments[0].id"
+          }
+        },
+        {
+          "name": "Get All Adjustments",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/pam/adjustments?siteId=fem&clientId=827889422&categoryId=361",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.adjustments[?id==${newAdjustmentId}].type": "Test type"
+            }
+          }
+        },
+        {
+          "name": "Update Adjustment",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/pam/adjustments",
+          "body": {
+            "id": "${newAdjustmentId}",
+            "clientId": 827889422,
+            "siteId": "fem",
+            "categoryId": 361,
+            "type": "TestType",
+            "conditions": "PropertyType=1",
+            "adjustment": "0.100",
+            "paymentMethod": 0
+          },
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Verify Updated Adjustment",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/pam/adjustments?siteId=fem&clientId=827889422&categoryId=361",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.adjustments[?id==${newAdjustmentId}].type": "TestType",
+              "data.adjustments[?id==${newAdjustmentId}].conditions": "PropertyType=1",
+              "data.adjustments[?id==${newAdjustmentId}].adjustment": "0.100"
+            }
+          }
+        },
+        {
+          "name": "Delete Adjustment",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/pam/adjustments",
+          "body": {
+            "categoryId": 361,
+            "clientId": 827889422,
+            "siteId": "fem",
+            "adjustmentId": "${newAdjustmentId}"
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.status": "SUCCESS",
+              "data.message": "Adjustment deleted successfully."
+            }
+          }
+        },
+        {
+          "name": "Verify Adjustment Deleted",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/pam/adjustments?siteId=fem&clientId=827889422&categoryId=361",
+          "expect": { "status": 404 }
+        }
+      ]
+    },
+    {
+      "name": "LicensingClient_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add Licensing",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/licensing",
+          "body": {
+            "clientId": 19500,
+            "domains": ["example.com"],
+            "tools": ["home01", "home02"]
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.example\\.com": ["home01", "home02"]
+            }
+          }
+        },
+        {
+          "name": "Get All Licensings",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/licensing?clientId=19500",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.domains": ["example.com"],
+              "data.tools": ["home01", "home02"]
+            }
+          }
+        },
+        {
+          "name": "Update Licensing",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/licensing",
+          "body": {
+            "clientId": 19500,
+            "domains": ["example.com"],
+            "tools": ["home01", "home02", "home03"]
+          },
+          "expect": { "status": 200 }
+        }
+      ]
+    },
+    {
+      "name": "LicensingSite_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add Licensing",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/licensing",
+          "body": {
+            "clientId": 19500,
+            "domains": ["example.com"],
+            "siteId": "qatest",
+            "tools": ["home01", "home02"]
+          },
+          "expect": {
+            "status": 200
+          }
+        },
+        {
+          "name": "Get All Licensings",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/licensing?siteId=qatest&clientId=19500",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.domains": ["example.com"],
+              "data.tools": ["home01", "home02"]
+            }
+          }
+        },
+        {
+          "name": "Update Licensing",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/licensing",
+          "body": {
+            "clientId": 19500,
+            "siteId": "qatest",
+            "domains": ["example.com"],
+            "tools": ["home01", "home02", "home03"]
+          },
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Delete Licensing",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/licensing",
+          "body": {
+            "clientId": 19500,
+            "siteId": "qatest",
+            "domains": ["example.com"],
+            "tools": ["home01", "home02", "home03"]
+          },
+          "expect": { "status": 200 }
+        }
+      ]
+    },
+    {
+      "name": "ClientAPI_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add ClientAPI",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/clientapi",
+          "body": {
+            "apiType": "basic",
+            "clientId": 19500,
+            "siteId": "qatest",
+            "apiName": "TEST Test Client API",
+            "apiDescription": "This is a test Client API for PostmanTest",
+            "useFields": false,
+            "attributes": {
+              "CORS_DOMAIN": "https://qa.awsc.leadfusion.com",
+              "USERNAME": "testUsername",
+              "PASSWORD": "testPassword",
+              "REQUEST_ENDPOINT": "https://qa.awsc.leadfusion.com/endpoint"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.status": "success"
+            }
+          },
+          "extract": {
+            "newClientAPIId": "data.apiId"
+          }
+        },
+        {
+          "name": "Get All ClientAPIs",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/clientapi",
+          "expect": {
+            "status": 200
+          }
+        },
+        {
+          "name": "Update ClientAPI",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/clientapi",
+          "body": {
+            "apiId": "${newClientAPIId}",
+            "apiType": "basic",
+            "clientId": 19500,
+            "siteId": "qatest",
+            "apiName": "EDIT Test Client API",
+            "apiDescription": "EDIT This is a test Client API.",
+            "useFields": false,
+            "attributes": {
+              "CORS_DOMAIN": "https://qa.awsc.leadfusion.com",
+              "USERNAME": "EDITUsername",
+              "PASSWORD": "EDITPassword",
+              "REQUEST_ENDPOINT": "https://qa.awsc.leadfusion.com/endpoint"
+            },
+            "fields": [
+              {"LABEL": "Edit New Name", "KEY": "first_name", "CUSTOMER_KEY_MAP": "salesforce_firstname", "TYPE": "String", "REQUIRED": true},
+              {"LABEL": "Edit Last Name", "KEY": "last_name", "CUSTOMER_KEY_MAP": "salesforce_lastname", "TYPE": "String", "REQUIRED": true},
+              {"LABEL": "Edit Customer ID", "KEY": "customer_id", "CUSTOMER_KEY_MAP": "salesforce_customer_id", "TYPE": "Numeric", "REQUIRED": false}
+            ]
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.apiId": "${newClientAPIId}"
+            }
+          }
+        },
+        {
+          "name": "Delete ClientAPI",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/clientapi",
+          "body": {
+            "apiId": "${newClientAPIId}"
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.status": "success"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clients_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add New Client",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/clients",
+          "body": {
+            "clientName": "PostmanClient",
+            "platformOptions": {
+              "clientCookie": true,
+              "userDataStorage": 731,
+              "emailSupport": true,
+              "dataExport": true,
+              "productDataMgr": true
+            },
+            "clientDetails": {
+              "city": "San Diego",
+              "state": "CA",
+              "zipCode": 92130
+            }
+          },
+          "expect": { "status": 200 },
+          "extract": {
+            "newClientId": "data.clientId"
+          }
+        },
+        {
+          "name": "Get Client",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/clients?clientId=${newClientId}",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.client.clientName": "PostmanClient",
+              "data.client.clientDetails.city": "San Diego",
+              "data.client.clientDetails.state": "CA",
+              "data.client.clientDetails.zipCode": 92130
+            }
+          }
+        },
+        {
+          "name": "Update Client",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/clients",
+          "body": {
+            "clientName": "PostmanClient",
+            "clientDetails": {
+              "address": "Updated Address",
+              "city": "SD",
+              "state": "CA",
+              "zipCode": "92128",
+              "country": "US",
+              "censusBureauRegion": "West",
+              "federalReserveDistrict": "San Francisco",
+              "beaAnalysisRegion": "Southwest",
+              "standardFederalRegion": "Region 1",
+              "assetSize": 100,
+              "tier": 1,
+              "industry": "Bank"
+            },
+            "platformOptions": {
+              "userDataStorage": 365,
+              "emailSupport": false,
+              "dataExport": false,
+              "clientCookie": true,
+              "productDataMgr": false
+            }
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.status": "success"
+            }
+          }
+        },
+        {
+          "name": "Verify Updated Client",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/clients?clientId=${newClientId}",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.client.clientDetails.city": "SD",
+              "data.client.clientDetails.address": "Updated Address",
+              "data.client.clientDetails.industry": "Bank",
+              "data.client.platformOptions.userDataStorage": 365,
+              "data.client.platformOptions.emailSupport": false
+            }
+          }
+        },
+        {
+          "name": "Delete Client",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/clients",
+          "body": {
+            "clientId": "${newClientId}"
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.status": "success"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ClientSites_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add ClientSite",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/clientsites",
+          "body": {
+            "clientId": 19500,
+            "siteId": "PostmanSite",
+            "clientSiteOptions": {
+              "showCurrencyCents": true,
+              "truncateCurrency": true,
+              "domainMasking": "leadfusion.com",
+              "defaultLanguage": "en_US",
+              "calcEnabled": true
+            }
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.message": "success"
+            }
+          }
+        },
+        {
+          "name": "Get All ClientSites",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/clientsites?clientId=19500",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.site[?siteId=='PostmanSite'].clientSiteOptions.domainMasking": "leadfusion.com"
+            }
+          }
+        },
+        {
+          "name": "Update ClientSite",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/clientsites",
+          "body": {
+            "clientId": 19500,
+            "siteId": "PostmanSite",
+            "description": "NewDescription",
+            "clientSiteOptions": {
+              "showCurrencyCents": true,
+              "truncateCurrency": false,
+              "defaultLanguage": "en_US",
+              "domainMasking": "example.com",
+              "actionTracking": true
+            }
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.message": "success"
+            }
+          }
+        },
+        {
+          "name": "Verify Updated ClientSite",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/clientsites?clientId=19500",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.site[?siteId=='PostmanSite'].clientSiteOptions.domainMasking": "example.com",
+              "data.site[?siteId=='PostmanSite'].clientSiteOptions.actionTracking": true
+            }
+          }
+        },
+        {
+          "name": "Delete ClientSite",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/clientsites",
+          "body": {
+            "clientId": 19500,
+            "siteId": "PostmanSite"
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.message": "success"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users_ALL_Endpoints",
+      "steps": [
+        {
+          "name": "Add New User",
+          "method": "POST",
+          "path": "/cc-api-v2/resource/users",
+          "body": {
+            "clientId": 19500,
+            "username": "user2@example.com",
+            "password": "M8xw-xTFeU8K:rL",
+            "firstName": "Steve",
+            "lastName": "Doe",
+            "phone": "1234567890",
+            "title": "Manager",
+            "groupName": "LF_ADMIN",
+            "authorizedClientsAndSites": [
+              {
+                "clientId": 19500,
+                "siteIds": ["testCF-8797"]
+              }
+            ]
+          },
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.user.username": "user2@example.com",
+              "data.user.firstName": "Steve",
+              "data.user.lastName": "Doe"
+            }
+          },
+          "extract": {
+            "newUserId": "data.user.userId"
+          }
+        },
+        {
+          "name": "Get All Users",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/users",
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Update User",
+          "method": "PATCH",
+          "path": "/cc-api-v2/resource/users",
+          "body": {
+            "clientId": 19500,
+            "userId": "${newUserId}",
+            "username": "EDITuser2@example.com",
+            "password": "EDITNew2SecurePassword123!",
+            "firstName": "Joe",
+            "lastName": "Black",
+            "phone": "5534567890",
+            "title": "Senior Manager",
+            "groupName": "LF_ADMIN",
+            "authorizedClientsAndSites": [
+              { "clientId": 19500, "siteIds": ["qatest"] },
+              { "clientId": 827889422, "siteIds": ["fem", "fem-es"] }
+            ]
+          },
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Verify Updated User",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/users",
+          "expect": {
+            "status": 200,
+            "body": {
+              "data.users[?userId==${newUserId}].username": "EDITuser2@example.com",
+              "data.users[?userId==${newUserId}].firstName": "Joe",
+              "data.users[?userId==${newUserId}].lastName": "Black"
+            }
+          }
+        },
+        {
+          "name": "Delete User",
+          "method": "DELETE",
+          "path": "/cc-api-v2/resource/users",
+          "body": {
+            "userId": "${newUserId}"
+          },
+          "expect": { "status": 200 }
+        },
+        {
+          "name": "Verify User Deleted",
+          "method": "GET",
+          "path": "/cc-api-v2/resource/users",
+          "expect": {
+            "status": 200,
+            "bodyAbsent": {
+              "data.users[?userId==${newUserId}]": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

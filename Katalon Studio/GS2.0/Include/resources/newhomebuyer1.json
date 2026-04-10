@@ -1,0 +1,1309 @@
+[
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[1]/following::span[3]",
+      "value": "Calculate how much you can afford"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[1]/following::span[3]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "How Much Can You Afford?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//button[@id='lf-inline-explain-more']/div[3]",
+      "value": "Explain more"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf-inline-explain-more']/div[3]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_explanation",
+      "value": "Two ratios are commonly used by lenders to determine whether a mortgage applicant can afford a mortgage loan: The housing ratio, or \"front-end ratio\", measures the amount of your total monthly housing payment (including principal, interest, property taxes, homeowners insurance, mortgage insurance, and HOA fees) as a percentage of your monthly gross income. Lenders typically prefer to see a housing ratio of 28% or less. The debt-to-income (DTI) ratio, or \"back-end ratio\", measures the amount of total monthly payments you are required to make for all outstanding debt as a percentage of your monthly income. Generally your DTI ratio should be 36% or lower to qualify for a mortgage. Exceptions Loan approvals are possible with housing and DTI ratios that are higher than the conventional 28% and 36% limits. Government loan programs such as FHA, VA, and USDA allow for higher ratios. Also, mortgage applicants with elevated ratios may still be approved based on strengths in other aspects of the application, e.g. large down payment, exceptionally high credit score, or large reserves in bank accounts and investments."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf-inline-explain-more']/div[3]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=label.lf-inline-label.ng-binding",
+      "value": "Annual Gross Income"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnualGrossIncome",
+      "value": "$70,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_AnnualGrossIncome"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Gross Income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The IRS defines gross income as all income that is not exempt from tax. Gross income may be received as money, goods, property, or services."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+  "verifyText": {
+    "id": "//label[normalize-space(.)='Monthly Debt Payments']",
+    "value": "Monthly Debt Payments"
+  	}
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyPaymentObligations",
+      "value": "$250"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_MonthlyPaymentObligations"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Monthly Debt Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "All of you and your co-borrower's monthly debts, including minimum monthly required credit card payments, car payments, student loans, alimony/child support payments, any house payments (rent or mortgage) other than the new mortgage you are seeking, rental property maintenance, and other personal loans with periodic payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_PropertyDownPayment2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Down Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The cash you deposit towards the purchase of home, car, etc. The larger the down payment, the less you are required to borrow."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+  "verifyText": {
+    "id": "//label[normalize-space(.)='Loan Term (years)']",
+    "value": "Loan Term (years)"
+  }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TermYrs",
+      "value": "30"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_TermYrs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Term"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The period of a loan, generally measured in years. Auto loans generally range from 2 to 5 years. Mortgage loans: 15 to 30 years."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+  "verifyText": {
+    "id": "//label[normalize-space(.)='Interest Rate']",
+      "value": "Interest Rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_IntRate",
+      "value": "5.000%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_IntRate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Interest Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "The amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of money."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_nhb_calc_assuptions",
+      "value": "Assumptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_btn",
+      "value": "Calculate"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_back"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_nhb_calc_assuptions']/div[2]"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_nhb_calc_assuptions']/div[2]"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_nhb_calc_assuptions']/div[2]"
+    }
+  },
+  {
+  "verifyText": {
+    "id": "//label[normalize-space(.)='Taxes, Insurance & HOA']",
+      "value": "Taxes, Insurance & HOA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TaxesInsuranceHOA",
+      "value": "Include Do Not Include"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TaxesInsuranceHOA",
+      "value": "string:0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id=\"'TaxesInsuranceHOA'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Total Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Total monthly payment for a residential mortgage loan is the sum of mortgage principal, interest, property taxes, and homeowner's insurance (PITI). Other applicable amounts may be included, including premiums for other property insurance and homeowner's or condominium association fees."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'YrPropTax2'\"]/div/label",
+      "value": "Annual Property Tax"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_YrPropTax2",
+      "value": "$3,250"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id=\"'YrPropTax2'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Property Tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "A tax assessed on real estate by the local government, usually based on the value of the property (including the land) you own."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'YrIns2'\"]/div/label",
+      "value": "Annual Homeowners Insurance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_YrIns2",
+      "value": "$1,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id=\"'YrIns2'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Homeowner's insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Protects the homeowner from weather-related damage, as well as potential liability from events that occur on the property. Normally required by lenders."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'MonthlyHOA2'\"]/div/label",
+      "value": "Monthly HOA Fee"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyHOA2",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id=\"'MonthlyHOA2'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Monthly Homeowners Association (HOA) Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Homeowners Association (HOA) fees are monthly dues that condo owners - and homeowners in some single family neighborhoods - pay to cover the costs of maintaining common areas or shared amenities such as clubhouses, pools, landscaping, security, etc."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'DebtRatio1'\"]/div/label",
+      "value": "Debt-to-Income Ratio"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_DebtRatio1",
+      "value": "36%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id=\"'DebtRatio1'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Debt Ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Used by lenders to approve loan applicants. Debt ratio equals combined monthly debt payments divided by gross monthly income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'HousingRatio1'\"]/div/label",
+      "value": "Housing Ratio"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_HousingRatio1",
+      "value": "28%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id=\"'HousingRatio1'\"]/div/button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Housing Ratio"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Used by lenders to approve loan applicants. Housing ratio equals combined monthly mortgage payment divided by gross monthly income."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_affordability_Desc_text",
+      "value": "The mortgage you can afford depends on many factors, including your total monthly payment, income, debt obligations, and down payment amount."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-inline-explain-more"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-inline-explain-more"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_affordability_answer",
+      "value": "You can afford a house worth up to $288,285 with a monthly payment of $1,633"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-calc-total-number-label-container > label:nth-child(1)",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AffordablePurchasePrice",
+      "value": "$288,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-save-send-info-btnlf-uppercase",
+      "value": "Use this Amount"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-save-send-info-btnlf-uppercase"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PropertyPrice",
+      "value": "$288,285"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PropertyPrice",
+      "value": "$288,285"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_results_button",
+      "value": "GET RESULTS"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "30-Year USDA Fixed with 0.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_0']/div",
+      "value": "$785"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_0']/li/span[2]",
+      "value": "$243,051"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_0']/li[2]/span[2]",
+      "value": "1.025%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_0']/li[3]/span[2]",
+      "value": "1.069%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_0']/li[4]/span[2]",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_0']/li[5]",
+      "value": "Closing Costs: $3,425"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "5/1 ARM with 0.375 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_1']/div",
+      "value": "$989"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li/span[2]",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li[2]/span[2]",
+      "value": "2.875%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li[3]/span[2]",
+      "value": "3.255%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li[4]/span[2]",
+      "value": "0.375"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li[5]/span[2]",
+      "value": "$3,821"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "30-Year Fixed Due in 15 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_2']/div",
+      "value": "$989"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li/span[2]",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li[2]/span[2]",
+      "value": "2.875%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li[3]/span[2]",
+      "value": "2.966%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li[4]/span[2]",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li[5]/span[2]",
+      "value": "$3,619"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "30-year Fixed with 0.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_3']/div",
+      "value": "$1,008"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li/span[2]",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li[2]/span[2]",
+      "value": "3.025%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li[3]/span[2]",
+      "value": "3.129%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li[4]/span[2]",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li[5]/span[2]",
+      "value": "$3,619"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_4']/div[2]/div[3]/button",
+      "value": "30-Year FHA Fixed with 0.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_4']/div",
+      "value": "$1,228"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li/span[2]",
+      "value": "$242,455"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li[2]/span[2]",
+      "value": "4.500%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li[3]/span[2]",
+      "value": "4.845%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li[4]/span[2]",
+      "value": "0.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li[5]/span[2]",
+      "value": "$-308"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_5']/div[2]/div[3]/button",
+      "value": "15-year Fixed with 1.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_5']/div",
+      "value": "$1,536"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_5']/li/span[2]",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_5']/li[2]/span[2]",
+      "value": "2.025%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_5']/li[3]/span[2]",
+      "value": "2.290%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_5']/li[4]/span[2]",
+      "value": "1.000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_5']/li[5]/span[2]",
+      "value": "$6,002"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_review_sort"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_review_sort",
+      "value": "label=Lowest APR"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-1"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-4"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$301,229']/parent::*",
+      "value": "$301,229$301,229"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$282,855']/parent::*",
+      "value": "$282,855$282,855"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$374,482']/parent::*",
+      "value": "$374,482$374,482"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-0",
+      "value": "30-Year USDA Fixed with 0.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-1",
+      "value": "15-year Fixed with 1.000 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-2",
+      "value": "5/1 ARM with 0.375 pts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-LoanTotal.lf-compare-row-label-single",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[5]/td/div",
+      "value": "$301,229"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[5]/td[2]/div",
+      "value": "$282,855"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[5]/td[3]/div",
+      "value": "$374,482"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Affordability"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id='lf_custom']/div/div/div[2]/div[5]/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "38%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "29%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalDebtIncomeRatio-0",
+      "value": "36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalDebtIncomeRatio-1",
+      "value": "36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalDebtIncomeRatio-2",
+      "value": "36%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td/div",
+      "value": "21%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[2]/div",
+      "value": "33%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[3]/div",
+      "value": "24%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalHomeIncomeRatio-0",
+      "value": "28%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalHomeIncomeRatio-1",
+      "value": "28%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-GlobalHomeIncomeRatio-2",
+      "value": "28%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Worst Case Monthly Payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$785"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$1,536"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$989"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td/div",
+      "value": "$785"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[2]/div",
+      "value": "$1,536"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[3]/div",
+      "value": "$2,282"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Details Side by Side"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-PropertyPrice",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-PropertyPrice",
+      "value": "$288,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-PropertyPrice.lf-row-PropertyPrice-1",
+      "value": "$288,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-PropertyPrice.lf-row-PropertyPrice-2",
+      "value": "$288,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-BaseLoanAmount",
+      "value": "Base Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-BaseLoanAmount.lf-row-BaseLoanAmount-0",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-BaseLoanAmount.lf-row-BaseLoanAmount-1",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-BaseLoanAmount.lf-row-BaseLoanAmount-2",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-GovernLoanProgramFeeRollIntoLoanAmt",
+      "value": "Government Loan Program Fee (if rolled into loan amount)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td/div",
+      "value": "$4,766"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td[2]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td[3]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-LoanAmt",
+      "value": "Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td/div",
+      "value": "$243,051"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td[2]/div",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td[3]/div",
+      "value": "$238,285"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-MonthlyPayment-expand.lf-compare-row-label-parent",
+      "value": "Initial Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Initial Monthly Payment'])[1]/following::div[2]",
+      "value": "$1,219"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Initial Monthly Payment'])[1]/following::div[4]",
+      "value": "$1,940"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Initial Monthly Payment'])[1]/following::div[6]",
+      "value": "$1,426"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MonthlyPayment_expand"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MonthlyPayment']/tbody/tr[5]/td/div",
+      "value": "$80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MonthlyPayment']/tbody/tr[5]/td[2]/div",
+      "value": "$50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MonthlyPayment']/tbody/tr[5]/td[3]/div",
+      "value": "$83"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MonthlyPayment_expand"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-TotalEstimateSettlementCharges-expand.lf-compare-row-label-parent",
+      "value": "Estimated Closing Costs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Closing Costs'])[1]/following::div[2]",
+      "value": "$3,425"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Closing Costs'])[1]/following::div[4]",
+      "value": "$6,002"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Closing Costs'])[1]/following::div[6]",
+      "value": "$3,821"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-CashNeededAtClosing-expand.lf-compare-row-label-parent",
+      "value": "Cash Needed at Closing"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash Needed at Closing'])[1]/following::div[2]",
+      "value": "$56,652"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash Needed at Closing'])[1]/following::div[4]",
+      "value": "$59,325"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash Needed at Closing'])[1]/following::div[6]",
+      "value": "$57,228"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-ARMDetails-expand.lf-compare-row-label-parent",
+      "value": "ARM Details"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ARMDetails_expand"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr/td[3]/div",
+      "value": "1-5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[2]/td[3]/div",
+      "value": "One-Year T-Bill"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[3]/td[3]",
+      "value": "3.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[4]/td[3]/div",
+      "value": "0.275%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[5]/td[3]/div",
+      "value": "2.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[6]/td[3]/div",
+      "value": "2.000%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_ARMDetails']/tbody/tr[7]/td[3]/div",
+      "value": "10.000%"
+    }
+  }
+]

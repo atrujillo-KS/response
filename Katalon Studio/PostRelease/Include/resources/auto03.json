@@ -1,0 +1,696 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Leadfusion Auto Calculator",
+      "value": "Leadfusion Auto Calculator"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_title_label"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I lease or purchase a vehicle?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_tab",
+      "value": "Help"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_tab"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_help_title",
+      "value": "Help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_0",
+      "value": "This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_1",
+      "value": "It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_2",
+      "value": "Your average yearly cost of owning a vehicle declines sharply after the first few years. This is due to smaller depreciation and financing expenses."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_help_3",
+      "value": "Your first year of a lease term is the most expensive since you pay extra lease-financing charges. As a lessee, you do not incur depreciation expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_help_Container_close_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Lease option will cost you $2,816 less on average each year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th",
+      "value": "Purchase"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf-results-table-main']/thead/tr/th[2]",
+      "value": "Lease"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AveCostPerYrAuto03_result_label",
+      "value": "Average cost per year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AveCostPerYrAuto03_result_value",
+      "value": "$6,796"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AveCostPerYr2Auto03_result_value",
+      "value": "$3,980"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto03_result_label",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto03_result_value",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseMonthlyPayment_result_value",
+      "value": "$250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto03_result_label",
+      "value": "Total interest paid"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto03_result_value",
+      "value": "$4,005"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA2_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDepAuto03_result_label",
+      "value": "Total depreciation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDepAuto03_result_value",
+      "value": "$20,020"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA3_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1 > text",
+      "value": "Lease"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container1",
+      "value": "Average Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_graph_tabs_lf_container2",
+      "value": "Payments"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_graph_tabs_lf_container1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "purchase-accordion",
+      "value": "Purchase"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-label",
+      "value": "Purchase price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "40,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoDownPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm-label",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "48"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoLoanTerm_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoInterestRate-label",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "purchaseAssumptions-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "purchaseAssumptions-accordion",
+      "value": "Purchase Assumptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SalesTaxRate-label",
+      "value": "Sales tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "8.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_VehicleAgeInYears-label",
+      "value": "Vehicle age (years)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_VehicleAgeInYears",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_CashRebate-label",
+      "value": "Cash rebate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_CashRebate",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_CashRebate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_OtherCosts-label",
+      "value": "Other upfront costs"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_OtherCosts",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lease-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lease-accordion",
+      "value": "Lease"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseMonthlyPayment-label",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_LeaseMonthlyPayment",
+      "value": "250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseDownPayment-label",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_LeaseDownPayment",
+      "value": "2,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseDownPayment_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseTerm-label",
+      "value": "Lease term (months)"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_LeaseTerm",
+      "value": "24"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseTerm_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseSecurityDeposit-label",
+      "value": "Security deposit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_LeaseSecurityDeposit",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseCashRebate-label",
+      "value": "Cash rebate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Auto_LeaseCashRebate",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseCashRebate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "taxes-accordion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "taxes-accordion",
+      "value": "Taxes & Depreciation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate-label",
+      "value": "Your state & federal tax rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "33.80"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_FutureDepreciation-label",
+      "value": "Future depreciation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_FutureDepreciation",
+      "value": "Low Average High"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate-label",
+      "value": "Your savings interest rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "1.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FederalAndStateTaxRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_FutureDepreciation_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_SavingsInterestRate_tooltip",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "purchase-accordion"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "30,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "6,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "6.78"
+    }
+  },
+  {
+    "click": {
+      "id": "purchaseAssumptions-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "7.55"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_VehicleAgeInYears",
+      "value": "7"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_CashRebate",
+      "value": "1,500"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_OtherCosts",
+      "value": "450"
+    }
+  },
+  {
+    "click": {
+      "id": "lease-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_LeaseMonthlyPayment",
+      "value": "300"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_LeaseDownPayment",
+      "value": "4,500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_LeaseTerm",
+      "value": "12"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_LeaseSecurityDeposit",
+      "value": "1,200"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Auto_LeaseCashRebate",
+      "value": "1,260"
+    }
+  },
+  {
+    "click": {
+      "id": "taxes-accordion"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.55"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_Auto_FutureDepreciation",
+      "value": "label=Low"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "3.45"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "The Purchase option will cost you $3,322 less on average each year."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AveCostPerYrAuto03_result_value",
+      "value": "$3,499"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AveCostPerYr2Auto03_result_value",
+      "value": "$6,821"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonPmtAuto03_result_value",
+      "value": "$692"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Auto_LeaseMonthlyPayment_result_value",
+      "value": "$300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotIntPaidAuto03_result_value",
+      "value": "$2,429"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA2_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotDepAuto03_result_value",
+      "value": "$7,658"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_NA3_result_value",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "click": {
+      "id": "Layer_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_save_print_share_title",
+      "value": "Save, print and share your results"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-address"
+    }
+  },
+  {
+    "type": {
+      "id": "lf-email-address",
+      "value": "lffem2@gmail.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-email-submit"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-email-message",
+      "value": "Thank You. Your report will be sent shortly."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_print_share_dialog_close_btn"
+    }
+  }
+]

@@ -1,0 +1,406 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Home_DownPaymentPercentage": {
+            "value": "20.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "20.000",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_MonthlyHOA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Monthly HOA fee"
+          }
+        },
+        {
+          "Home_ShorterTermInterestRate": {
+            "value": "4.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "4",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_SecondLoanInterestRate": {
+            "value": "4.500",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_FifteenYearLoanTermInYears": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "15",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_SecondLoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home06_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"Which vehicle loan is better?\");",
+          "source": "initial",
+          "itemName": "Home06_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home06_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Home_MonthlyPaymentDifference": {
+            "value": "466",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment difference"
+          }
+        },
+        {
+          "Home_TotalInterestDifference": {
+            "value": "98,526",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest difference"
+          }
+        },
+        {
+          "Home_TotalInterestShorterTermLoan": {
+            "value": "66,288",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest (shorter term loan)"
+          }
+        },
+        {
+          "Home_TotalInterestLongerTermLoan": {
+            "value": "164,813",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest (longer term loan)"
+          }
+        },
+        {
+          "Home_PrincipalAndInterestPaymentShorterTermLoan": {
+            "value": "1,479",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest (shorter term loan)"
+          }
+        },
+        {
+          "Home_PrincipalAndInterestPaymentLongerTermLoan": {
+            "value": "1,013",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest (longer term loan)"
+          }
+        },
+        {
+          "Home_TaxesAndInsuranceShorterTermLoan": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes & insurance (shorter term loan)"
+          }
+        },
+        {
+          "Home_TaxesAndInsuranceLongerTermLoan": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes & insurance (longer term loan)"
+          }
+        },
+        {
+          "Home_HOAFeesShorterTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees (shorter term loan)"
+          }
+        },
+        {
+          "Home_HOAFeesLongerTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees (longer term loan)"
+          }
+        },
+        {
+          "Home_PMIShorterTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI) (shorter term loan)"
+          }
+        },
+        {
+          "Home_PMILongerTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI) (longer term loan)"
+          }
+        },
+        {
+          "Home_TotalMonthlyPaymentShorterTermLoan": {
+            "value": "1,834",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment (shorter term loan)"
+          }
+        },
+        {
+          "Home_TotalMonthlyPaymentLongerTermLoan": {
+            "value": "1,368",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment (longer term loan)"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "The 15 year loan will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $466 more monthly and save you $98526 in total interest compared to the 30 year loan."
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "1380000"
+        },
+        {
+          "Home_DownPaymentPercentage": "31"
+        },
+        {
+          "Home_FifteenYearLoanTermInYears": "7"
+        },
+        {
+          "Home_ShorterTermInterestRate": "5.5"
+        },
+        {
+          "Home_SecondLoanTermInYears": "20"
+        },
+        {
+          "Home_SecondLoanInterestRate": "3.1"
+        },
+        {
+          "Home_YearlyPropertyTax": "5000"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "4800"
+        },
+        {
+          "Home_MonthlyHOA": "450"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Home_MonthlyPaymentDifference": {
+            "value": "8,354",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment difference"
+          }
+        },
+        {
+          "Home_TotalInterestDifference": {
+            "value": "129,496",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest difference"
+          }
+        },
+        {
+          "Home_TotalInterestShorterTermLoan": {
+            "value": "197,185",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest (shorter term loan)"
+          }
+        },
+        {
+          "Home_TotalInterestLongerTermLoan": {
+            "value": "326,681",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest (longer term loan)"
+          }
+        },
+        {
+          "Home_PrincipalAndInterestPaymentShorterTermLoan": {
+            "value": "13,683",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest (shorter term loan)"
+          }
+        },
+        {
+          "Home_PrincipalAndInterestPaymentLongerTermLoan": {
+            "value": "5,329",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest (longer term loan)"
+          }
+        },
+        {
+          "Home_TaxesAndInsuranceShorterTermLoan": {
+            "value": "817",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes & insurance (shorter term loan)"
+          }
+        },
+        {
+          "Home_TaxesAndInsuranceLongerTermLoan": {
+            "value": "817",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes & insurance (longer term loan)"
+          }
+        },
+        {
+          "Home_HOAFeesShorterTermLoan": {
+            "value": "450",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees (shorter term loan)"
+          }
+        },
+        {
+          "Home_HOAFeesLongerTermLoan": {
+            "value": "450",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees (longer term loan)"
+          }
+        },
+        {
+          "Home_PMIShorterTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI) (shorter term loan)"
+          }
+        },
+        {
+          "Home_PMILongerTermLoan": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI) (longer term loan)"
+          }
+        },
+        {
+          "Home_TotalMonthlyPaymentShorterTermLoan": {
+            "value": "14,950",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment (shorter term loan)"
+          }
+        },
+        {
+          "Home_TotalMonthlyPaymentLongerTermLoan": {
+            "value": "6,595",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment (longer term loan)"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "The 7 year loan will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $8354 more monthly and save you $129496 in total interest compared to the 20 year loan."
+        }
+      ]
+    }
+  ]
+}

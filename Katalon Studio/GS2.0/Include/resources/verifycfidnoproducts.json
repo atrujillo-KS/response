@@ -1,0 +1,51 @@
+[
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditRating"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_CreditRating",
+      "value": "label=Very Poor (below 640)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your code is:'])[1]/following::div[1]",
+      "value": "CFID"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your code is:'])[1]/following::div[1]",
+      "value": "${CFID}"
+    }
+  }
+]

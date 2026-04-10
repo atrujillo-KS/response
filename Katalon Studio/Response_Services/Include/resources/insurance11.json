@@ -1,0 +1,495 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_StateOfResidence": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "49",
+            "textLabel": "State of residence"
+          }
+        },
+        {
+          "Insurance_CarOwnershipStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Car ownership status"
+          }
+        },
+        {
+          "Insurance_CarValue": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Value of your car"
+          }
+        },
+        {
+          "Insurance_FinancialState": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Can you pay out-of-pocket to replace the car?"
+          }
+        }
+      ],
+      "title": "How much car insurance coverage do I need?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Insurance11_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance11_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance11_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Insurance11_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Insurance11_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Insurance11_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Insurance11_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Insurance_LowerCostBILPerPerson": {
+            "value": "25000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost BIL Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostBILPerAccident": {
+            "value": "50000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionBILPerPerson": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection BIL Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionBILPerAccident": {
+            "value": "300000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionBILPerPerson": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection BIL Per Person"
+          }
+        },
+        {
+          "Insurance_BetterProtectionBILyPerAccident": {
+            "value": "500000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_LowerCostPDL": {
+            "value": "25000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost PDL"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPDL": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection PDL"
+          }
+        },
+        {
+          "Insurance_BetterProtectionPDL": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection PDL"
+          }
+        },
+        {
+          "Insurance_LowerCostUMBIPerPerson": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostUMBIPerAccident": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMBIPerPerson": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMBIPerAccident": {
+            "value": "300000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMBIPerPerson": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMBIyPerAccident": {
+            "value": "500000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_LowerCostUMPD": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMPD"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMPD": {
+            "value": "50000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMPD"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMPD": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMPD"
+          }
+        },
+        {
+          "Insurance_LowerCostPIPPerPerson": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost PIP Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostPIPPerAccident": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Lower Cost PIP Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPIPPerPerson": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Good Protection PIP Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPIPPerAccident": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Good Protection PIP Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionPIP": {
+            "value": "State maximum",
+            "dataFormat": "None",
+            "textLabel": "Better Protection PIP"
+          }
+        },
+        {
+          "Insurance_LowerCostComprehensiveAndCollision": {
+            "value": "Required (suggested $250 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost Comprehensive and Collision"
+          }
+        },
+        {
+          "Insurance_GoodProtectionComprehensiveAndCollision": {
+            "value": "Required (suggested $500 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Good Protection Comprehensive and Collision"
+          }
+        },
+        {
+          "Insurance_BetterProtectionComprehensiveAndCollision": {
+            "value": "Required (suggested $1,000 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Better Protection Comprehensive and Collision"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_StateOfResidence": "4"
+        },
+        {
+          "Insurance_CarOwnershipStatus": "1"
+        },
+        {
+          "Insurance_CarValue": "1"
+        },
+        {
+          "Insurance_FinancialState": "1"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Insurance_LowerCostBILPerPerson": {
+            "value": "15000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost BIL Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostBILPerAccident": {
+            "value": "30000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionBILPerPerson": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection BIL Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionBILPerAccident": {
+            "value": "300000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionBILPerPerson": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection BIL Per Person"
+          }
+        },
+        {
+          "Insurance_BetterProtectionBILyPerAccident": {
+            "value": "500000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection BIL Per Accident"
+          }
+        },
+        {
+          "Insurance_LowerCostPDL": {
+            "value": "5000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost PDL"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPDL": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection PDL"
+          }
+        },
+        {
+          "Insurance_BetterProtectionPDL": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection PDL"
+          }
+        },
+        {
+          "Insurance_LowerCostUMBIPerPerson": {
+            "value": "15000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostUMBIPerAccident": {
+            "value": "30000",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMBIPerPerson": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMBIPerAccident": {
+            "value": "300000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMBIPerPerson": {
+            "value": "250000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMBI Per Person"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMBIyPerAccident": {
+            "value": "500000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMBI Per Accident"
+          }
+        },
+        {
+          "Insurance_LowerCostUMPD": {
+            "value": "3500",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost UMPD"
+          }
+        },
+        {
+          "Insurance_GoodProtectionUMPD": {
+            "value": "50000",
+            "dataFormat": "None",
+            "textLabel": "Good Protection UMPD"
+          }
+        },
+        {
+          "Insurance_BetterProtectionUMPD": {
+            "value": "100000",
+            "dataFormat": "None",
+            "textLabel": "Better Protection UMPD"
+          }
+        },
+        {
+          "Insurance_LowerCostPIPPerPerson": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost PIP Per Person"
+          }
+        },
+        {
+          "Insurance_LowerCostPIPPerAccident": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Lower Cost PIP Per Accident"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPIPPerPerson": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": "Good Protection PIP Per Person"
+          }
+        },
+        {
+          "Insurance_GoodProtectionPIPPerAccident": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": "Good Protection PIP Per Accident"
+          }
+        },
+        {
+          "Insurance_BetterProtectionPIP": {
+            "value": "State maximum",
+            "dataFormat": "None",
+            "textLabel": "Better Protection PIP"
+          }
+        },
+        {
+          "Insurance_LowerCostComprehensiveAndCollision": {
+            "value": "Required (suggested $250 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Lower Cost Comprehensive and Collision"
+          }
+        },
+        {
+          "Insurance_GoodProtectionComprehensiveAndCollision": {
+            "value": "Required (suggested $500 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Good Protection Comprehensive and Collision"
+          }
+        },
+        {
+          "Insurance_BetterProtectionComprehensiveAndCollision": {
+            "value": "Required (suggested $1,000 deductible)",
+            "dataFormat": "None",
+            "textLabel": "Better Protection Comprehensive and Collision"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Bond_DesiredYieldToMaturity": {
+            "value": "7",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "7",
+            "minimumValue": "0.1",
+            "maximumValue": "100",
+            "textLabel": "Annual return you desire"
+          }
+        },
+        {
+          "Bond_ReturnTaxOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_PurchasePrice": {
+            "value": "110",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "110",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Price you paid (% of face value)"
+          }
+        },
+        {
+          "Bond_FaceValue": {
+            "value": "10000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Face value"
+          }
+        },
+        {
+          "Bond_CouponRate": {
+            "value": "4.5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Coupon rate"
+          }
+        },
+        {
+          "Bond_MonthsSincePurchase": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months since purchase"
+          }
+        },
+        {
+          "Bond_MonthsToMaturity": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months to maturity"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_Type": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Type of bond:"
+          }
+        }
+      ],
+      "title": "What bond price achieves my target rate of return?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Bond07_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond07_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond07_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bond07_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bond07_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Bond07_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Bond07_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Bond_PurchasePrice": "23.46"
+        },
+        {
+          "Bond_FaceValue": "8975"
+        },
+        {
+          "Bond_CouponRate": "5.49"
+        },
+        {
+          "Bond_Type": "0"
+        },
+        {
+          "Bond_DesiredYieldToMaturity": "6.79"
+        },
+        {
+          "Bond_ReturnTaxOption": "1"
+        },
+        {
+          "Bond_MonthsSincePurchase": "18"
+        },
+        {
+          "Bond_MonthsToMaturity": "54"
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": "0"
+        },
+        {
+          "Global_SavingsInterestRate": "8.12"
+        },
+        {
+          "Global_TaxFilingStatus": "1"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "250000"
+        },
+        {
+          "Global_StateTaxRate": "7.6"
+        }
+      ],
+      "nonDefaultResults": [],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "To earn a return of 6.79% after you pay taxes, you'll need to sell your bond at a price of $1,621 or higher. To sell at a price of $1,621, the <GLOSSREF key=\"MarketInterestRate\">market rate</GLOSSREF> will need to be approximately 54.39% or lower."
+        }
+      ]
+    }
+  ]
+}

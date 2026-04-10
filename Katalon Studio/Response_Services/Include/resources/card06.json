@@ -1,0 +1,553 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Card_FlightCardIntroductoryInterestRate": {
+            "value": "4.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Introductory interest rate"
+          }
+        },
+        {
+          "Card_FeeCardIntroductoryInterestRate": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightCardIntroductoryTerm": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "0",
+            "maximumValue": "120",
+            "textLabel": "Introductory term (months)"
+          }
+        },
+        {
+          "Card_FeeCardIntroductoryTerm": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "0",
+            "maximumValue": "120",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightCardInterestRate": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Regular interest rate"
+          }
+        },
+        {
+          "Card_FeeCardInterestRate": {
+            "value": "9.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "9",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightCardIntroAnnualFee": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Introductory annual fee"
+          }
+        },
+        {
+          "Card_FeeCardIntroductoryAnnualFee": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightCardAnnualFee": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Regular annual fee"
+          }
+        },
+        {
+          "Card_FeeCardAnnualFee": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TotalCardDebt": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Amount you owe"
+          }
+        },
+        {
+          "Global_YearsCardToBeUsed": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "1",
+            "maximumValue": "30",
+            "textLabel": "Years you'll use card"
+          }
+        },
+        {
+          "Global_FutureMonthlyChargesOnCard": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Future monthly charges"
+          }
+        },
+        {
+          "Card_MonthlyPayment": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Future monthly payments"
+          }
+        },
+        {
+          "Card_FlightCardMilesEarnedPerDollarSpent": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Miles earned per dollar spent"
+          }
+        },
+        {
+          "Card_FlightCardMilesEarnedForApplying": {
+            "value": "10,000",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Miles earned for applying"
+          }
+        },
+        {
+          "Card_FlightCardMaximumMilesEarnedYearly": {
+            "value": "60,000",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Maximum miles earned yearly"
+          }
+        },
+        {
+          "Card_FlightCardMilesRequiredForFreeTicket": {
+            "value": "25,000",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "25000",
+            "minimumValue": "1",
+            "maximumValue": "100000",
+            "textLabel": "Miles required for free ticket"
+          }
+        },
+        {
+          "Card_FlightCardRegularCostOfTicket": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": "Regular cost of ticket"
+          }
+        }
+      ],
+      "title": "Which is better: flight card or low rate card?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Card06_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card06_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card06_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Card06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Card06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Card06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Card06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Card_FlightMilesEarned": {
+            "value": "17,200",
+            "dataFormat": "None",
+            "textLabel": "Flight miles earned"
+          }
+        },
+        {
+          "Card_LowRateMilesEarned": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTicketsEarned": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": "Number of tickets earned"
+          }
+        },
+        {
+          "Card_LowRateTicketsEarned": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalTicketValue": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Value of tickets"
+          }
+        },
+        {
+          "Card_LowRateTotalTicketValue": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalInterestAndFees": {
+            "value": "1,030",
+            "dataFormat": "Currency",
+            "textLabel": "Interest & fees paid"
+          }
+        },
+        {
+          "Card_LowRateTotalInterestAndFees": {
+            "value": "846",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalCost": {
+            "value": "13,230",
+            "dataFormat": "Currency",
+            "textLabel": "Total cost"
+          }
+        },
+        {
+          "Card_LowRateTotalCost": {
+            "value": "13,046",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_CostDifference": {
+            "value": "184",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference"
+          }
+        },
+        {
+          "Global_YearsCardToBeUsedOutput": {
+            "value": "3",
+            "dataFormat": "None",
+            "textLabel": "Years you'll use card"
+          }
+        },
+        {
+          "Card_FlightOrLowRateLess": {
+            "value": "low rate card",
+            "dataFormat": "None",
+            "textLabel": "Flight card or low rate card is less"
+          }
+        },
+        {
+          "Card_FlightOrLowRateMore": {
+            "value": "flight card",
+            "dataFormat": "None",
+            "textLabel": "Flight card or low rate card is more"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "The low rate card will cost you $184 less over a 3 year period."
+        },
+        {
+          "textLabel": "The low rate card will cost you $13,046 over a 3 year period. The flight card will cost you $13,230."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Card_FlightCardIntroductoryInterestRate": "5.33"
+        },
+        {
+          "Card_FlightCardIntroductoryTerm": "15"
+        },
+        {
+          "Card_FlightCardIntroAnnualFee": "26"
+        },
+        {
+          "Card_FlightCardInterestRate": "12.45"
+        },
+        {
+          "Card_FlightCardAnnualFee": "50"
+        },
+        {
+          "Card_FlightCardMilesEarnedPerDollarSpent": "5"
+        },
+        {
+          "Card_FlightCardMilesEarnedForApplying": "20555"
+        },
+        {
+          "Card_FlightCardMaximumMilesEarnedYearly": "100000"
+        },
+        {
+          "Card_FlightCardMilesRequiredForFreeTicket": "30333"
+        },
+        {
+          "Card_FlightCardRegularCostOfTicket": "400"
+        },
+        {
+          "Card_FeeCardIntroductoryInterestRate": "6"
+        },
+        {
+          "Card_FeeCardIntroductoryTerm": "24"
+        },
+        {
+          "Card_FeeCardIntroductoryAnnualFee": "240"
+        },
+        {
+          "Card_FeeCardInterestRate": "12"
+        },
+        {
+          "Card_FeeCardAnnualFee": "150"
+        },
+        {
+          "Global_TotalCardDebt": "3000"
+        },
+        {
+          "Global_YearsCardToBeUsed": "13"
+        },
+        {
+          "Global_FutureMonthlyChargesOnCard": "1250"
+        },
+        {
+          "Card_MonthlyPayment": "2450"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Card_FlightMilesEarned": {
+            "value": "995,555",
+            "dataFormat": "None",
+            "textLabel": "Flight miles earned"
+          }
+        },
+        {
+          "Card_LowRateMilesEarned": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTicketsEarned": {
+            "value": "32",
+            "dataFormat": "None",
+            "textLabel": "Number of tickets earned"
+          }
+        },
+        {
+          "Card_LowRateTicketsEarned": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalTicketValue": {
+            "value": "12,800",
+            "dataFormat": "Currency",
+            "textLabel": "Value of tickets"
+          }
+        },
+        {
+          "Card_LowRateTotalTicketValue": {
+            "value": "N/A",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalInterestAndFees": {
+            "value": "632",
+            "dataFormat": "Currency",
+            "textLabel": "Interest & fees paid"
+          }
+        },
+        {
+          "Card_LowRateTotalInterestAndFees": {
+            "value": "2,179",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_FlightTotalCost": {
+            "value": "185,832",
+            "dataFormat": "Currency",
+            "textLabel": "Total cost"
+          }
+        },
+        {
+          "Card_LowRateTotalCost": {
+            "value": "200,179",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Card_CostDifference": {
+            "value": "14,346",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference"
+          }
+        },
+        {
+          "Global_YearsCardToBeUsedOutput": {
+            "value": "13",
+            "dataFormat": "None",
+            "textLabel": "Years you'll use card"
+          }
+        },
+        {
+          "Card_FlightOrLowRateLess": {
+            "value": "flight card",
+            "dataFormat": "None",
+            "textLabel": "Flight card or low rate card is less"
+          }
+        },
+        {
+          "Card_FlightOrLowRateMore": {
+            "value": "low rate card",
+            "dataFormat": "None",
+            "textLabel": "Flight card or low rate card is more"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "The flight card will cost you $14,346 less over a 13 year period."
+        },
+        {
+          "textLabel": "The low rate card will cost you $200,179 over a 13 year period. The flight card will cost you $185,832."
+        }
+      ]
+    }
+  ]
+}

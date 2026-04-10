@@ -1,0 +1,239 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_CurrentSavings": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Amount you have deposited"
+          }
+        },
+        {
+          "Savings_YearsDeposited": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "5",
+            "minimumValue": "1",
+            "maximumValue": "90",
+            "textLabel": "Years saved"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings rate"
+          }
+        },
+        {
+          "Global_FederalTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "80",
+            "textLabel": "Your federal tax rate"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Global_InflationRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Inflation rate"
+          }
+        },
+        {
+          "Savings_CompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        }
+      ],
+      "title": "How will taxes and inflation affect my savings?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Savings06_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings06_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings06_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Savings06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Savings06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "fv_TaxOnly": {
+            "value": "5,173",
+            "dataFormat": "Currency",
+            "textLabel": "If you pay taxes on earnings"
+          }
+        },
+        {
+          "fv_Both": {
+            "value": "4,922",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "fv_None": {
+            "value": "5,256",
+            "dataFormat": "Currency",
+            "textLabel": "If tax-deferred or tax-exempt"
+          }
+        },
+        {
+          "fv_InflationOnly": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "In 5 years, your deposit will be worth:"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_CurrentSavings": "5000"
+        },
+        {
+          "Savings_YearsDeposited": "5"
+        },
+        {
+          "Global_SavingsInterestRate": "1"
+        },
+        {
+          "Global_FederalTaxRate": "25"
+        },
+        {
+          "Global_StateTaxRate": "6.8"
+        },
+        {
+          "Global_InflationRate": "1"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        },
+        {
+          "Savings_CompoundingFrequency": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "fv_TaxOnly": {
+            "value": "5,173",
+            "dataFormat": "Currency",
+            "textLabel": "If you pay taxes on earnings"
+          }
+        },
+        {
+          "fv_Both": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "fv_None": {
+            "value": "5,256",
+            "dataFormat": "Currency",
+            "textLabel": "If tax-deferred or tax-exempt"
+          }
+        },
+        {
+          "fv_InflationOnly": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "In 5 years, your deposit will be worth:"
+        }
+      ]
+    }
+  ]
+}

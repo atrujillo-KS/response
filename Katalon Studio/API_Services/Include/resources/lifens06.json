@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "ULEndRate": {
+            "value": "-1.12",
+            "dataFormat": "Percentage",
+            "textLabel": "Universal life"
+          }
+        },
+        {
+          "ULCashOutRate": {
+            "value": "0.15",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ULDeathRate": {
+            "value": "1.10",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermEndRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "TermCashOutRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermDeathRate": {
+            "value": "4.16",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvEndRate": {
+            "value": "-8.07",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "TInvCashOutRate": {
+            "value": "-1.96",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvDeathRate": {
+            "value": "3.66",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Lifens06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Lifens06_Default_Results"
+        }
+      ]
+    }
+  ]
+}

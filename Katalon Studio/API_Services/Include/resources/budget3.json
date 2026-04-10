@@ -1,0 +1,115 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Budget_MonthlyIncomeAfterTaxes": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Your income"
+          }
+        },
+        {
+          "Budget_MonthlyIncomeAfterTaxes": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Your income"
+          }
+        },
+        {
+          "ActualSpending": {
+            "value": "3,220",
+            "dataFormat": "Currency",
+            "textLabel": "Your spending"
+          }
+        },
+        {
+          "DesiredSpending": {
+            "value": "2,710",
+            "dataFormat": "Currency",
+            "textLabel": "Desired spending"
+          }
+        },
+        {
+          "ActualAvailable": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Amount available for investment"
+          }
+        },
+        {
+          "DesiredAvailable": {
+            "value": "290",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ActualSaved": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Future value* if invested for 10 years"
+          }
+        },
+        {
+          "DesiredSaved": {
+            "value": "36,004",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Your income"
+        },
+        {
+          "textLabel": "Your spending"
+        },
+        {
+          "textLabel": "Desired spending"
+        },
+        {
+          "textLabel": "Amount available for investment"
+        },
+        {
+          "textLabel": "Future value* if invested for 10 years"
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "Current spending"
+        },
+        {
+          "textLabel": "Desired spending"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Budget3_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Budget3_Default_Results"
+        }
+      ]
+    }
+  ]
+}

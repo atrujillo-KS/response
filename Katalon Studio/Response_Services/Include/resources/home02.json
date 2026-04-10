@@ -1,0 +1,218 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Appraised value"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        }
+      ],
+      "title": "How much will my mortgage payments be?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home02_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home02_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home02_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home02_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home02_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home02_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home02_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PrincAndInt": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": "Principal And Interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPay": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": "Total Payment"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "880000"
+        },
+        {
+          "Home_DownPaymentPercentage": "14"
+        },
+        {
+          "Home_LoanTermInYears": "15"
+        },
+        {
+          "Home_InterestRate": "7.458"
+        },
+        {
+          "Home_YearlyPropertyTax": "8300"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "1522"
+        },
+        {
+          "Home_LoanAmount": "756800"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "PrincAndInt": {
+            "value": "6,998",
+            "dataFormat": "Currency",
+            "textLabel": "Principal And Interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "819",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortIns": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPay": {
+            "value": "8,066",
+            "dataFormat": "Currency",
+            "textLabel": "Total Payment"
+          }
+        }
+      ]
+    }
+  ]
+}

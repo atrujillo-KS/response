@@ -1,0 +1,463 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Bond_TaxExemptBondPurchasePrice": {
+            "value": "101",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "101",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Price you paid (% of face value)"
+          }
+        },
+        {
+          "Bond_PurchasePrice": {
+            "value": "110",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "110",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxExemptBondFaceValue": {
+            "value": "10000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Face value"
+          }
+        },
+        {
+          "Bond_FaceValue": {
+            "value": "10000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxExemptBondCouponRate": {
+            "value": "2.5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Coupon rate"
+          }
+        },
+        {
+          "Bond_CouponRate": {
+            "value": "4.5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxExemptBondMonthsToMaturity": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months until maturity"
+          }
+        },
+        {
+          "Bond_MonthsToMaturity": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_MonthsTaxExemptBondOwned": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months until you sell bonds"
+          }
+        },
+        {
+          "Bond_TaxExemptBondMarketRateToday": {
+            "value": "5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0.1",
+            "maximumValue": "100",
+            "textLabel": "Market rate when you sell"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Your coupon income is:"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "Should I buy a tax-exempt or taxable bond?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Bond12_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond12_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond12_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bond12_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bond12_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Bond12_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Bond12_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity": {
+            "value": "-0.20",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldBeforeTaxesIfHoldToMaturity": {
+            "value": "-1.89",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity": {
+            "value": "-0.20",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldAfterTaxesIfHoldToMaturity": {
+            "value": "-1.89",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_SellingPrice": {
+            "value": "9,087",
+            "dataFormat": "Currency",
+            "textLabel": "Selling price"
+          }
+        },
+        {
+          "Bond_TaxableBondSellingPrice": {
+            "value": "9,804",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldBeforeTaxesIfSell": {
+            "value": "-7.55",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldBeforeTaxesIfSell": {
+            "value": "-10.87",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldAfterTaxesIfSell": {
+            "value": "-7.55",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldAfterTaxesIfSell": {
+            "value": "-10.87",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxableOrTaxExempt": {
+            "value": "tax-exempt",
+            "dataFormat": "None",
+            "textLabel": "Will taxable or tax-exempt bonds earn higher return?"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "<b>If you hold to maturity  </b>"
+        },
+        {
+          "textLabel": "<b>Your return:</b>"
+        },
+        {
+          "textLabel": "<b>If you sell in 12 months</b>"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Bond_TaxExemptBondPurchasePrice": "101.68"
+        },
+        {
+          "Bond_TaxExemptBondFaceValue": "6400"
+        },
+        {
+          "Bond_TaxExemptBondCouponRate": "7.23"
+        },
+        {
+          "Bond_TaxExemptBondMonthsToMaturity": "42"
+        },
+        {
+          "Bond_PurchasePrice": "23.46"
+        },
+        {
+          "Bond_FaceValue": "8975"
+        },
+        {
+          "Bond_CouponRate": "5.49"
+        },
+        {
+          "Bond_MonthsToMaturity": "54"
+        },
+        {
+          "Bond_MonthsTaxExemptBondOwned": "12"
+        },
+        {
+          "Bond_TaxExemptBondMarketRateToday": "5"
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": "0"
+        },
+        {
+          "Global_SavingsInterestRate": "8.12"
+        },
+        {
+          "Global_TaxFilingStatus": "1"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "171000"
+        },
+        {
+          "Global_StateTaxRate": "7.3"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Bond_TaxexemptBondYieldBeforeTaxesIfHoldToMaturity": {
+            "value": "6.71",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldBeforeTaxesIfHoldToMaturity": {
+            "value": "46.01",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldAfterTaxesIfHoldToMaturity": {
+            "value": "6.71",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldAfterTaxesIfHoldToMaturity": {
+            "value": "43.74",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_SellingPrice": {
+            "value": "6,676",
+            "dataFormat": "Currency",
+            "textLabel": "Selling price"
+          }
+        },
+        {
+          "Bond_TaxableBondSellingPrice": {
+            "value": "7,541",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldBeforeTaxesIfSell": {
+            "value": "9.80",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldBeforeTaxesIfSell": {
+            "value": "356.13",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxexemptBondYieldAfterTaxesIfSell": {
+            "value": "9.80",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_TaxableBondYieldAfterTaxesIfSell": {
+            "value": "275.32",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_TaxableOrTaxExempt": {
+            "value": "taxable",
+            "dataFormat": "None",
+            "textLabel": "Will taxable or tax-exempt bonds earn higher return?"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "<b>If you hold to maturity  </b>"
+        },
+        {
+          "textLabel": "<b>Your return:</b>"
+        },
+        {
+          "textLabel": "<b>If you sell in 12 months</b>"
+        }
+      ]
+    }
+  ]
+}

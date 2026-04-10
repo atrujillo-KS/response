@@ -1,0 +1,1073 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Credit Cards",
+      "value": "Evaluate Business Credit Cards"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Evaluate Business Credit Cards"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_later_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-your-code-label",
+      "value": "Your code is:"
+    }
+  },
+  {
+    "storeText": {
+      "id": "lf-cfid-label",
+      "value": "Code"
+    }
+  },
+  {
+    "checkStoredText": {
+      "id": "lf-cfid-label",
+      "value": "Code"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-cfid-label",
+      "value": "${Code}"
+    }
+  },  
+  {
+	"waitForElementPresent": {
+	   "id": "lf_actions_back",
+	   "value": "5"
+	  }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_code",
+      "value": ""
+    }
+  },
+  {
+    "click": {
+      "id": "//button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Recall your work"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Enter the 5-digit code to recall work saved from previous visit."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//button[2]",
+      "value": "Recall"
+    }
+  },
+  {
+	"setText": {
+	   "id": "lf_code",
+	   "value": "${Code}"
+	 }
+  },
+  {
+    "click": {
+      "id": "//button[2]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_message_text",
+      "value": "Your work has been recalled"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_save_later_btn",
+      "value": "Save for later"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_later_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "SAVE FOR LATER"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-apply-title-label",
+      "value": "1. Save"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-apply-title-desc-label",
+      "value": "Pick up where you left off."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-your-code-label",
+      "value": "Your code is:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-cfid-label",
+      "value": "${Code}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-send-btn-label",
+      "value": "SEND CODE"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_sendEmailAddress1",
+      "value": "BusinessCreditCard@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-send-btn-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_message_text",
+      "value": "Your code will be sent shortly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_sendEmailAddress1",
+      "value": "BusinessCreditCard@bulkmail.sanc.leadfusion.com"
+    }
+  },  
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Send Code'])[1]/following::div[8]",
+      "value": "2. Want Expert Help?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Diego, CA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+      {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Miami, FL"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-branch-btn > div:nth-child(2)",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-call-btn > div:nth-child(2)",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-chat-btn > div:nth-child(2)",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_field_list']/span/div/div/div[2]",
+      "value": "Let's start by learning more about your business and your specific credit card needs."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds_label",
+      "value": "Primary Credit Card Need"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__1",
+      "value": "Cash Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__2",
+      "value": "Travel Rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__3",
+      "value": "Low Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__4",
+      "value": "Balance Transfers"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__5",
+      "value": "Build Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CreditCardNeeds__6",
+      "value": "No Annual Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_assist_title",
+      "value": "PRIMARY CREDIT CARD NEED"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div/span[2]/div",
+      "value": "Cash Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div/span[2]/div[2]",
+      "value": "Earn cash rewards for making purchases."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[2]/span[2]/div",
+      "value": "Travel Rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[2]/span[2]/div[2]",
+      "value": "Get bonus points on purchases that you can redeem for airline miles, free hotel stays, etc."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[3]/span[2]/div",
+      "value": "Low Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[3]/span[2]/div[2]",
+      "value": "Save money if you're carrying a balance each month."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[4]/span[2]/div",
+      "value": "Balance Transfers"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[4]/span[2]/div[2]",
+      "value": "Save money on existing credit card debt and pay it down faster."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[5]/span[2]/div",
+      "value": "Build Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[5]/span[2]/div[2]",
+      "value": "Establish, strengthen or even rebuild your credit history."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[6]/span[2]/div",
+      "value": "No Annual Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_CreditCardNeeds_assistant']/div/div/div[2]/div/div/div[6]/span[2]/div[2]",
+      "value": "Save money over other cards that charge you an annual fee."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ZipCode_label",
+      "value": "ZIP Code"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZIP Code'])[1]/following::div[7]",
+      "value": "ZIP CODE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Zip Code'])[1]/following::div[2]",
+      "value": "Knowing where your business is located will help us determine the credit cards that are available in your specific area."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_BusinessCreditHistory"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BusinessCreditHistory_label",
+      "value": "Credit History"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BusinessCreditHistory",
+      "value": "Excellent Good Fair Poor"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_BusinessCreditHistory",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div/div",
+      "value": "CREDIT HISTORY"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div",
+      "value": "How have you handled your personal debt? If you are already in business, have you paid your trade suppliers and other business obligations on time?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div/span/div",
+      "value": "Excellent"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div/span/div[2]",
+      "value": "You have a long history of paying your bills on time and maintaining low balances on credit products."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[2]/span/div",
+      "value": "Good"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[2]/span/div[2]",
+      "value": "You make most of your payments on time and in full. Balances on credit products are relatively low compared to their credit limits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[3]/span/div",
+      "value": "Fair"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[3]/span/div[2]",
+      "value": "You have some blemishes on your credit history, including multiple late payments to more than one lender, and possibly a loan default."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[4]/span/div",
+      "value": "Poor"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div[2]/div/div[2]/div[4]/span/div[2]",
+      "value": "You consistently make payments late, have defaulted on a loan, and/or declared bankruptcy in the past."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div/button",
+      "value": "more info"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_BusinessCreditHistory_assistant']/div/div/div/button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What Is My FICO Score?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "Your FICO score (an acronym for the credit scoring service, Fair Isaacs Company) is an assigned number between 300 and 850 that indicates to lenders your capacity to repay a loan. It can change regularly, as new information is sent by your creditors to one or more of the three major national credit bureaus, Experian, Trans Union, and Equifax. The higher your FICO score, the more likely you will qualify for a mortgage loan and the best interest rates."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "A FICO score is comprised of 5 parts:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dt/b",
+      "value": "Payment history"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dd",
+      "value": "Your types of accounts and your payment record; any bankruptcies, legal judgments, wage garnishments, etc.; the severity and amount of late payments; the number of past-due items and when they occurred. (35%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dt[2]/b",
+      "value": "Amounts owed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dd[2]",
+      "value": "How much you currently owe and on what types of accounts; number of accounts with balances; the proportion of credit lines still available. (30%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dt[3]/b",
+      "value": "Length of credit history"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dd[3]",
+      "value": "Time since accounts opened; by specific type of account; since last activity. (15%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dt[4]/b",
+      "value": "New credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dd[4]",
+      "value": "Number of recently opened accounts, by type and date opened; recent credit inquiries and date of inquiries; reestablishment of good credit after payment delinquencies. (10%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dt[5]/b",
+      "value": "Types of credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/dl/dd[5]",
+      "value": "The number and types of credit accounts available for your use. (10%)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "What's your own score?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "By federal law, you're entitled to a free credit report once every 12 months from each of the three major credit bureaus - Experian, TransUnion, or Equifax."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Experian",
+      "value": "Experian"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=TransUnion",
+      "value": "TransUnion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Equifax",
+      "value": "Equifax"
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Continue'])[1]/following::div[5]",
+      "value": "Financial Education"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_glossary:WhyUseASmallBusinessCreditCard",
+      "value": "Why Use A Small Business Credit Card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_glossary:MakeSmartUseOfYourBusinessCreditCard",
+      "value": "Make Smart Use of Your Business Credit Card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_glossary:WhichRewardsProgamIsBestForYou",
+      "value": "Which Rewards Program is Best for You?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_glossary:WhyUseASmallBusinessCreditCard"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Why Use A Small Business Credit Card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "While consumer and business cards have much in common, business credit cards offer unique benefits to small business owners."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "Better terms"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd",
+      "value": "Business cards frequently come with higher credit limits than consumer cards - making them ideal for larger purchases - and may offer flexible payment terms to help businesses maintain cash flow."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "Rewards more suitable for business purchases"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "The majority of business cards come with a points or miles-based rewards program with bonus categories targeted toward common types of business purchases, such as travel, transportation, dining, and office supplies."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dt",
+      "value": "Build credit for your business"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dd",
+      "value": "Business credit cards report to business credit bureaus, and are an easy way to start building credit for your business."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dt",
+      "value": "Expense tracking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dd",
+      "value": "Business cards also commonly have features that help business owners track and manage their credit card spending, such as spending reports and yearly summaries."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dt",
+      "value": "Integration with accounting software"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dd",
+      "value": "The ability to download transactions to QuickBooks, Quicken and Excel can help automate your bookkeeping."
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_glossary:MakeSmartUseOfYourBusinessCreditCard"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Make Smart Use of Your Business Credit Card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "Putting the following good habits into practice can help increase your purchasing power, boost your business credit history, and avoid pitfalls."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "Pay off balances thoughtfully"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd",
+      "value": "By using your card regularly and paying it off in full each month, you can quickly improve your business credit history."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "Track your spending regularly"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "Be proactive and reduce the risk of fraud by regularly reviewing your monthly credit card statements and checking your account online. Notify your card issuer promptly if you spot any erroneous or unrecognized transactions."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dt",
+      "value": "Keep spending in check with balance alerts and employee limits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dd",
+      "value": "Set up balance alerts for your card and your employees' cards so that you'll be notified by text and/or email whenever your total spending hits a certain threshold that you've set. Only give cards to trustworthy employees who make frequent business purchases, put limits and alerts on these employee cards, and establish clear usage rules."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dt",
+      "value": "Only use for business expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dd",
+      "value": "Putting your personal spending on your business credit card will make it harder to track your business spending and can expose you to personal liability if someone sues your company."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dt",
+      "value": "Take advantage of tax deductible interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dd",
+      "value": "Any interest payments you make on the business credit card for business-related purchases are deductible as a business expense. In other words, you can reduce the amount of your business earnings that are subject to tax for these interest payments."
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_glossary:WhichRewardsProgamIsBestForYou"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Which Rewards Program is Best for You?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "Cash back. Free hotel stays. Free or upgraded flights. Figuring out which rewards card will deliver the best payoff for your business spending patterns can seem daunting. Which factors should you consider before applying for a business rewards credit card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "Card Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd",
+      "value": "The most popular and straightforward reward is cash back. With a cash back reward program, a percentage of the amount that you spend is paid back to you. Some programs have higher pay back rates in specific categories (e.g. travel, dining, office supplies, etc.) while others offer a flat rate regardless of spending category. Other reward programs give you a certain number of miles or points for purchases that you can redeem for free travel, gift cards, merchandise, or other perks. Savvy small business owners that have the patience, discipline, time or flexibility to hunt out the best redemption opportunities can get incredible deals on these cards."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd/p",
+      "value": "Other reward programs give you a certain number of miles or points for purchases that you can redeem for free travel, gift cards, merchandise, or other perks. Savvy small business owners that have the patience, discipline, time or flexibility to hunt out the best redemption opportunities can get incredible deals on these cards."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "Sign-Up Bonuses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "Some cards have huge sign-up bonuses - typically in cash back, points or miles - if you meet the spending requirements within a specific timeframe to qualify for them. These awards can be worth hundreds of dollars in value."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dt",
+      "value": "Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dd",
+      "value": "Credit cards come with multiple fees - some are worth paying, others aren't, and most are avoidable. The most common credit card fees include annual fees, balance transfer fees, foreign transaction fees, late payment fees, and cash advance fees. Cards with annual fees tend to have higher rewards structures and higher signup bonuses than those without, so they're worth considering. If you travel overseas at all, you should get a credit card without foreign transaction fees."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dt",
+      "value": "Final Consideration"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dd",
+      "value": "Rewards based credit cards are more beneficial to small business owners who pay their credit card statement off every month. These cards generally have higher Annual Percentage Rates (APRs) and if the balance were not paid in full every month, the extra interest would eclipse any rewards earned."
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-disclosures"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Disclosures"
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='View Disclosures'])[1]/following::div[1]",
+      "value": "This tool is provided for the education and illustrative purposes only. The accuracy of the calculations and their applicability to your circumstances are not guaranteed. Please consult your financial, tax or legal advisor regarding your unique situation."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='View Disclosures'])[1]/following::p[1]",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+  "delay": {
+    "value": "2"
+  }
+  },
+  {
+    "waitForText": {
+      "id": "lf_step_title_text",
+      "value": "YOUR CARD USE (Step 2 of 2)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_field_list']/span/div/div/div[2]",
+      "value": "Knowing how you intend to use this credit card will help us guide you to the most relevant options."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InitialAccountBalance_label",
+      "value": "Initial Card Balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InitialAccountBalance",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InitialAccountBalance_slider",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_InitialAccountBalance_assistant']/div/div/div/div",
+      "value": "INITIAL CARD BALANCE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Initial Card Balance'])[2]/following::div[2]",
+      "value": "What will the beginning balance be on the card?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyCreditCardSpending_label",
+      "value": "Monthly Card Spending"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MonthlyCreditCardSpending"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyCreditCardSpending",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyCreditCardSpending_slider",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.ng-scope > div.ng-scope > div.lf-assist-title.ng-binding",
+      "value": "MONTHLY CARD SPENDING"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-assist-desc.ng-binding",
+      "value": "Knowing your spending habits can help you evaluate which card is best for you."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[2]/div/div/div/div/div[3]/div",
+      "value": "If you're in pursuit of points, miles or cash back, we can help you categorize your spending to estimate how much you will earn with our rewards cards."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Knowing your spending habits can help you evaluate which card is best for you.'])[1]/following::span[3]",
+      "value": "Categorize your spending"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayBalanceInFullEachMonth_label",
+      "value": "Pay Balance in FULL Each Month"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Pay Balance in FULL Each Month'])[1]/following::div[5]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayBalanceInFullEachMonth__true",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayBalanceInFullEachMonth__false",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PayBalanceInFullEachMonth_label",
+      "value": "Pay Balance in FULL Each Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Pay Balance in Full'])[1]/following::div[2]",
+      "value": "If you plan on paying off your account balance each month, let us know and we'll factor that into an analysis of how our credit cards will work for you."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+  "delay": {
+    "value": "2"
+  }
+  }
+]
+ 

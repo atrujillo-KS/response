@@ -1,0 +1,246 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_OriginationCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Origination Charge"
+          }
+        },
+        {
+          "Home_DiscountPoints": {
+            "value": "1.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Charge For Specific Interest Rate"
+          }
+        },
+        {
+          "Home_OtherClosingCosts": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other settlement services"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Appraised value"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        }
+      ],
+      "title": "How much can I save in taxes?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home08_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "var response = pm.response.json();\r\n    pm.expect(response.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home08_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home08_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home08_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home08_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home08_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home08_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "RateTaxAdj": {
+            "value": "2.62",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate adjusted by tax savings"
+          }
+        },
+        {
+          "YrSavings": {
+            "value": "3,222",
+            "dataFormat": "Currency",
+            "textLabel": "Average yearly tax savings"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "580000"
+        },
+        {
+          "Home_DownPaymentPercentage": "13"
+        },
+        {
+          "Home_LoanTermInYears": "18"
+        },
+        {
+          "Home_InterestRate": "7.2"
+        },
+        {
+          "Home_OriginationCharge": "3000"
+        },
+        {
+          "Home_DiscountPoints": "1.8"
+        },
+        {
+          "Home_OtherClosingCosts": "7700"
+        },
+        {
+          "Home_YearlyPropertyTax": "7300"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "5800"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "17"
+        },
+        {
+          "Home_LoanAmount": "504600"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "RateTaxAdj": {
+            "value": "6.07",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate adjusted by tax savings"
+          }
+        },
+        {
+          "YrSavings": {
+            "value": "5,076",
+            "dataFormat": "Currency",
+            "textLabel": "Average yearly tax savings"
+          }
+        }
+      ]
+    }
+  ]
+}

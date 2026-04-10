@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "id": "InterestRate_API_Test",
+      "description": "Validate interest rate API response for US Bank",
+
+      "globals": {
+        "BASEURL": "https://expert.leadfusion.com",
+        "ZIPCODE": "92130",
+        "LOAN_AMOUNT": "1000",
+        "HOME_VALUE": "250000",
+        "HOME_PRINCIPAL": "150000"
+      },
+
+      "steps": [
+        {
+          "name": "GET_INTEREST_RATES",
+          "method": "GET",
+          "endpoint": "/ext-api/lf-usbank/consolidatemydebt/interest-rate",
+          "query": {
+            "zipCode": "{{ZIPCODE}}",
+            "loanAmount": "{{LOAN_AMOUNT}}",
+            "homeValue": "{{HOME_VALUE}}",
+            "homePrincipal": "{{HOME_PRINCIPAL}}"
+          },
+          "expect": {
+            "status": 200,
+            "notEmpty": "$",
+
+            "contains": [
+              {
+                "path": "$[*].productKey",
+                "value": "home-equity-line-of-credit"
+              }
+            ],
+
+            "equals": {
+              "$[0].interestRate": 8.3,
+              "$[0].productKey": "home-equity-line-of-credit"
+            }
+          }
+        },
+
+        {
+          "name": "VALIDATE_STRUCTURE",
+          "method": "GET",
+          "endpoint": "/ext-api/lf-usbank/consolidatemydebt/interest-rate",
+          "query": {
+            "zipCode": "{{ZIPCODE}}",
+            "loanAmount": "{{LOAN_AMOUNT}}",
+            "homeValue": "{{HOME_VALUE}}",
+            "homePrincipal": "{{HOME_PRINCIPAL}}"
+          },
+          "expect": {
+            "status": 200,
+
+            "jsonTypes": {
+              "$[0].interestRate": "number",
+              "$[0].productKey": "string",
+              "$[0].adjustments": "array"
+            }
+          }
+        },
+
+        {
+          "name": "VALIDATE_ADJUSTMENTS_EXIST",
+          "method": "GET",
+          "endpoint": "/ext-api/lf-usbank/consolidatemydebt/interest-rate",
+          "query": {
+            "zipCode": "{{ZIPCODE}}",
+            "loanAmount": "{{LOAN_AMOUNT}}",
+            "homeValue": "{{HOME_VALUE}}",
+            "homePrincipal": "{{HOME_PRINCIPAL}}"
+          },
+          "expect": {
+            "status": 200,
+            "notEmpty": "$[0].adjustments"
+          }
+        },
+
+        {
+          "name": "VALIDATE_PERSONAL_LOAN_PRESENT",
+          "method": "GET",
+          "endpoint": "/ext-api/lf-usbank/consolidatemydebt/interest-rate",
+          "query": {
+            "zipCode": "{{ZIPCODE}}",
+            "loanAmount": "{{LOAN_AMOUNT}}",
+            "homeValue": "{{HOME_VALUE}}",
+            "homePrincipal": "{{HOME_PRINCIPAL}}"
+          },
+          "expect": {
+            "status": 200,
+            "contains": [
+              {
+                "path": "$[*].productKey",
+                "value": "personal-loan:12-12"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

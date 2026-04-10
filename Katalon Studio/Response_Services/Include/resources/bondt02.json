@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Bond_CouponYieldBeforeTaxes": {
+            "value": "4.09",
+            "dataFormat": "Percentage",
+            "textLabel": "Current yield"
+          }
+        },
+        {
+          "Bond_CouponYieldAfterTaxes": {
+            "value": "3.36",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bondt02_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bondt02_Default_Results"
+        }
+      ]
+    }
+  ]
+}

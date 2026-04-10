@@ -1,0 +1,640 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/tools/qatest/paycheck01/tool.fcs?newuser"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "How do 401(k) salary deductions affect my take-home pay?",
+      "value": "How do 401(k) salary deductions affect my take-home pay?"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/following::span[1]",
+      "value": "Your 401(k) details"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your 401(k) details'])[1]/following::span[1]",
+      "value": "How much you save in taxes each pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='How much you save in taxes each pay period'])[1]/following::span[1]",
+      "value": "$22"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$22'])[1]/following::span[1]",
+      "value": "How much your take-home pay is reduced each pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='How much your take-home pay is reduced each pay period'])[1]/following::span[1]",
+      "value": "$123"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$123'])[1]/following::span[1]",
+      "value": "Your 401(k) plan contribution per pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your 401(k) plan contribution per pay period'])[1]/following::span[1]",
+      "value": "$146"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$146'])[1]/following::span[1]",
+      "value": "Your employer's contribution to your 401(k) per pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Your employer', \"'\", 's contribution to your 401(k) per pay period')])[1]/following::span[1]",
+      "value": "$44"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$44'])[1]/following::span[1]",
+      "value": "Your employer's annual contribution limit to your 401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Your employer', \"'\", 's annual contribution limit to your 401(k)')])[1]/following::span[1]",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$5,000'])[1]/following::span[1]",
+      "value": "Your paycheck details"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_grossincome",
+      "value": "Gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gross income'])[1]/following::span[1]",
+      "value": "$1,458"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_amountwithheldbyirs",
+      "value": "Amount withheld by IRS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CalcFedTax",
+      "value": "$67"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_socialsecuritytaxes",
+      "value": "Social Security taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CalcFICA",
+      "value": "$90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_medicaretaxes",
+      "value": "Medicare taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CalcMedicare",
+      "value": "$21"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_stateincometaxes",
+      "value": "State taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CalcStateTax",
+      "value": "$45"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "CalcDeductions",
+      "value": "$146"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_deductionsfrompay",
+      "value": "Deductions from pay"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_netincome",
+      "value": "Net income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Net income'])[1]/following::span[1]",
+      "value": "$1,090"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='div_CalcsBasedOn_FieldLayout']/table/tbody/tr/td[2]/table/tbody/tr/td/span",
+      "value": "Calculations were based on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Gross income per year",
+      "value": "Gross income per year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gross income per year'])[1]/following::span[1]",
+      "value": "$35,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_payperiodfrequency",
+      "value": "Your pay period frequency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your pay period frequency'])[1]/following::span[1]",
+      "value": "Semi-monthly"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_yourtaxfilingstatus",
+      "value": "Your tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your tax filing status'])[1]/following::span[1]",
+      "value": "Single"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_totalexemptions",
+      "value": "Your total exemptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your total exemptions'])[1]/following::span[1]",
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_additionalwithholdings",
+      "value": "Your additional income withheld by IRS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your additional income withheld by IRS'])[1]/following::span[1]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[1]/following::span[1]",
+      "value": "State tax (% of gross income)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State tax (% of gross income)'])[1]/following::span[1]",
+      "value": "3.40%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State tax (% of gross income)'])[1]/following::span[2]",
+      "value": "State tax (% of Federal income)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State tax (% of Federal income)'])[1]/following::span[1]",
+      "value": "0.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "help"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/following::span[2]",
+      "value": "This tool calculates your take-home pay after deducting income taxes and contributions to a 401(k) or similar retirement plan that is sponsored by your employer. Similar retirement plans include 403(b) and Section 457 plans."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Section 457 plans'])[1]/following::span[1]",
+      "value": "Because contributions to a 401(k) or other qualified retirement plan are deducted from gross income, you reduce the amount of income on which you owe taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='gross income'])[1]/following::span[2]",
+      "value": "This tool also adds any matching contributions that your employer makes to your retirement plan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_deduction",
+      "value": "deducting"
+    }
+  },
+  {
+    "click": {
+      "id": "glossaryanchor_deduction"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryLabel",
+      "value": "Deduction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryDescription",
+      "value": "An amount that you subtract from your taxable income. As a result, a deduction lowers your taxable income, which, in turn, lowers your tax liability."
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_contributions",
+      "value": "contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_dcplan401k",
+      "value": "401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_dcplan403b",
+      "value": "403(b)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_section457plan",
+      "value": "Section 457 plans"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_grossincome",
+      "value": "gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_matchingcontribution",
+      "value": "matching contributions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=(we value your privacy)",
+      "value": "(we value your privacy)"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_your401kcontributionpayperiod",
+      "value": "Your 401(k) contribution amount per pay period"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_Your401kContributionAmountPerPayPeriod",
+      "value": "250"
+    }
+  },
+  {
+    "click": {
+      "id": "Your401kOption_1"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_Employer401kContributionAmountPerPayPeriod",
+      "value": "100"
+    }
+  },
+  {
+    "click": {
+      "id": "Emp401kOption_1"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Emp401kLimit",
+      "value": "6000"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_GrossIncome",
+      "value": "85000"
+    }
+  },
+  {
+    "click": {
+      "id": "PayPeriod"
+    }
+  },
+  {
+    "click": {
+      "id": "PayPeriod_0"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_GrossIncomeYTD",
+      "value": "35000"
+    }
+  },
+  {
+    "select": {
+      "id": "PayFreq",
+      "value": "label=Monthly"
+    }
+  },
+  {
+    "select": {
+      "id": "FilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Exemptions",
+      "value": "4"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_AddFedTax",
+      "value": "450"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_StateTaxRatePaycheck"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_StateTaxRatePaycheck",
+      "value": "4.58"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_StateTaxRateFIT",
+      "value": "2.45"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Specific state tax info.'])[1]/following::div[2]"
+    }
+  },
+  {
+    "type": {
+      "id": "xpath=//*[@id=\"lf_DeductionList:0.DeductionData.DeductionName\"]",
+      "value": "Child Support"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id=\"DeductionList:0.DeductionData.DeductionType_1\"]"
+    }
+  },
+  {
+    "type": {
+      "id": "//*[@id=\"lf_DeductionList:0.DeductionData.DeductionAmount\"]",
+      "value": "100"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='How much you save in taxes each pay period'])[1]/following::span[1]",
+      "value": "$41"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='How much your take-home pay is reduced each pay period'])[1]/following::span[1]",
+      "value": "$209"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your 401(k) plan contribution per pay period'])[1]/following::span[1]",
+      "value": "$250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Your employer', \"'\", 's contribution to your 401(k) per pay period')])[1]/following::span[1]",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Your employer', \"'\", 's annual contribution limit to your 401(k)')])[1]/following::span[1]",
+      "value": "$6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gross income'])[1]/following::span[1]",
+      "value": "$7,083"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Amount withheld by IRS'])[1]/following::span[1]",
+      "value": "$895"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Security taxes'])[1]/following::span[1]",
+      "value": "$433"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Medicare taxes'])[1]/following::span[1]",
+      "value": "$101"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"CalcStateTax\"]",
+      "value": "$308"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"CalcDeductions\"]",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"CalcNetIncome\"]",
+      "value": "$4,996"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_deduction401k",
+      "value": "401(k) deduction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_your401kcontributionpayperiod",
+      "value": "Your 401(k) contribution amount per pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_employer401kcontributionpayperiod",
+      "value": "Your employer's 401(k) contribution amount per pay period"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_yearly401kcontributionlimit",
+      "value": "Employer's annual contribution limit to your 401(k)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_grossincome",
+      "value": "Gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_grossincomeytd",
+      "value": "Gross income (year to date)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_totalexemptions",
+      "value": "Your total exemptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_additionalwithholdings",
+      "value": "Your additional income withheld by IRS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_stateincometaxes",
+      "value": "State tax information"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Specific state tax info.",
+      "value": "Specific state tax info."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_payperioddeduction",
+      "value": "Amount per pay period of this tax deduction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_taxexemptdeduction",
+      "value": "This deduction is exempt from which taxes"
+    }
+  }
+]

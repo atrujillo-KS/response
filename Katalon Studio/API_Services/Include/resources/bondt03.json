@@ -1,0 +1,129 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Bond_GainOrLossBeforeTaxesIfSellNow": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestBeforeTaxesIfSellNow": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldBeforeTaxesIfSellNow": {
+            "value": "6.89",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossAfterTaxesIfSellNow": {
+            "value": "280",
+            "dataFormat": "Currency",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestAfterTaxesIfSellNow": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldAfterTaxesIfSellNow": {
+            "value": "5.95",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossBeforeTaxesIfHoldToMaturity": {
+            "value": "(1,000)",
+            "dataFormat": "Currency",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestBeforeTaxesIfHoldToMaturity": {
+            "value": "2,430",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldBeforeTaxes": {
+            "value": "2.06",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_GainOrLossAfterTaxesIfHoldToMaturity": {
+            "value": "(1,000)",
+            "dataFormat": "Currency",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Bond_CouponPaymentsAndInterestAfterTaxesIfHoldToMaturity": {
+            "value": "2,265",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_YieldAfterTaxes": {
+            "value": "1.83",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "<b>If you sell now</b><HR>"
+        },
+        {
+          "textLabel": "<b>If you hold to maturity</b><HR>"
+        },
+        {
+          "textLabel": "Rates of return are estimates that are based on current tax laws."
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bondt03_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bondt03_Default_Results"
+        }
+      ]
+    }
+  ]
+}

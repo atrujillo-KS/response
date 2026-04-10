@@ -1,0 +1,220 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Bond_PurchasePrice": {
+            "value": "110",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "110",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": "Price you paid (% of face value)"
+          }
+        },
+        {
+          "Bond_FaceValue": {
+            "value": "10000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Face value"
+          }
+        },
+        {
+          "Bond_CouponRate": {
+            "value": "4.5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Coupon rate"
+          }
+        },
+        {
+          "Bond_MonthsToMaturity": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months to maturity"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Your coupon income is:"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_Type": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Type of bond:"
+          }
+        }
+      ],
+      "title": "What is my yield to maturity?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Bond01_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond01_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Bond01_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Bond01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Bond01_NonDefault_Results"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Bond_RateOfReturnBeforeTaxes": {
+            "value": "19.89",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_RateOfReturnAfterTaxes": {
+            "value": "17.72",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Bond_PurchasePrice": "80"
+        },
+        {
+          "Bond_FaceValue": "4200"
+        },
+        {
+          "Bond_CouponRate": "7"
+        },
+        {
+          "Bond_MonthsToMaturity": "24"
+        },
+        {
+          "Bond_CouponIncomeSpendingOption": "0"
+        },
+        {
+          "Global_SavingsInterestRate": "9"
+        },
+        {
+          "Bond_Type": "1"
+        },
+        {
+          "Global_TaxFilingStatus": "1"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "120000"
+        },
+        {
+          "Global_StateTaxRate": "4.3"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Savings_DepositAmount": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Initial deposit amount"
+          }
+        },
+        {
+          "Savings_PredictedAnnualRateIncrease": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25.00",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Predicted annual rate increase"
+          }
+        },
+        {
+          "Global_FederalTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "80",
+            "textLabel": "Your federal tax rate"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_CompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        },
+        {
+          "Savings_FirstCDTermInMonths": {
+            "value": "24",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "24",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Deposit term (in months)"
+          }
+        },
+        {
+          "Savings_FirstCDInterestRate": {
+            "value": "1.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1.50",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_FirstCDCompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        },
+        {
+          "Savings_ThirdCDTermInMonths": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Deposit term (in months)"
+          }
+        },
+        {
+          "Savings_ThirdCDInterestRate": {
+            "value": "2.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.50",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_ThirdCDCompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        }
+      ],
+      "title": "Which savings option earns more if rates go up?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Savings18_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings18_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings18_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Savings18_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Savings18_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings18_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings18_NonDefault_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings18_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings18_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "SavingsInterestEarned": {
+            "value": "575",
+            "dataFormat": "Currency",
+            "textLabel": "Savings Account"
+          }
+        },
+        {
+          "SavingsCumulativeReturn": {
+            "value": "5.75",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ShortTermCDInterestEarned": {
+            "value": "804",
+            "dataFormat": "Currency",
+            "textLabel": "Short Term CD"
+          }
+        },
+        {
+          "ShortTermCDCumulativeReturn": {
+            "value": "8.04",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "LongTermCDInterestEarned": {
+            "value": "889",
+            "dataFormat": "Currency",
+            "textLabel": "Long Term CD"
+          }
+        },
+        {
+          "LongTermCDCumulativeReturn": {
+            "value": "8.89",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "If rates go up annually by 25.00%, the long term CD will earn the most over 5 years"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": "Savings_DepositAmount: 28000"
+        },
+        {
+          "Savings_PredictedAnnualRateIncrease": "9"
+        },
+        {
+          "Global_FederalTaxRate": "29.1"
+        },
+        {
+          "Global_StateTaxRate": "6.1"
+        },
+        {
+          "Global_SavingsInterestRate": "4"
+        },
+        {
+          "Savings_CompoundingFrequency": "0"
+        },
+        {
+          "Savings_FirstCDTermInMonths": "20"
+        },
+        {
+          "Savings_FirstCDInterestRate": "3.5"
+        },
+        {
+          "Savings_FirstCDCompoundingFrequency": "2"
+        },
+        {
+          "Savings_ThirdCDTermInMonths": "68"
+        },
+        {
+          "Savings_ThirdCDInterestRate": "5.7"
+        },
+        {
+          "Savings_ThirdCDCompoundingFrequency": "0"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "SavingsInterestEarned": {
+            "value": "2,155",
+            "dataFormat": "Currency",
+            "textLabel": "Savings Account"
+          }
+        },
+        {
+          "SavingsCumulativeReturn": {
+            "value": "21.55",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ShortTermCDInterestEarned": {
+            "value": "1,760",
+            "dataFormat": "Currency",
+            "textLabel": "Short Term CD"
+          }
+        },
+        {
+          "ShortTermCDCumulativeReturn": {
+            "value": "17.60",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "LongTermCDInterestEarned": {
+            "value": "2,566",
+            "dataFormat": "Currency",
+            "textLabel": "Long Term CD"
+          }
+        },
+        {
+          "LongTermCDCumulativeReturn": {
+            "value": "25.66",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "If rates go up annually by 9.00%, the long term CD will earn the most over 6 years"
+        }
+      ]
+    }
+  ]
+}

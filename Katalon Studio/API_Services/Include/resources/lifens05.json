@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Insurance_FutureRateOfReturnWholeLife": {
+            "value": "7.13",
+            "dataFormat": "Percentage",
+            "textLabel": "Whole life"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnWholeLife": {
+            "value": "4.43",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermLife": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermLife": {
+            "value": "4.16",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermInvestment": {
+            "value": "-8.24",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermInvestment": {
+            "value": "3.48",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Lifens05_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Lifens05_Default_Results"
+        }
+      ]
+    }
+  ]
+}

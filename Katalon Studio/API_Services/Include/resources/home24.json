@@ -1,0 +1,212 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_MonthlyGrossIncome": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "6000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyRent": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_CreditCardPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_AutoLoanPayments": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyStudentLoanPayments": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_OtherMonthlyLoanAmounts": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "200000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_OtherMonthlyPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "What is my debt-to-Income (DTI) ratio?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home24_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home24_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home24_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home24_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home24_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home24_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home24_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Home24_GrossMonthlyIncome_Output": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home24_RecurringMonthlyDebts_Output": {
+            "value": "1,100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home24_DTIRatio_Output": {
+            "value": "18.33",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_MonthlyGrossIncome": "11000"
+        },
+        {
+          "Home_PrincipalAndInterestPayment": "2300"
+        },
+        {
+          "Home_MonthlyPropertyTax": "450.23"
+        },
+        {
+          "Home_MonthlyHomeownersInsurance": "129"
+        },
+        {
+          "Home_PMI": "50"
+        },
+        {
+          "Home_MonthlyHOA": "389"
+        },
+        {
+          "Home_OtherMonthlyPayments": "120"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Home24_GrossMonthlyIncome_Output": {
+            "value": "11,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home24_RecurringMonthlyDebts_Output": {
+            "value": "1,220",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home24_DTIRatio_Output": {
+            "value": "11.09",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Appraised value"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        }
+      ],
+      "title": "How can I reduce mortgage insurance costs?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home13_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home13_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home13_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home13_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home13_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home13_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home13_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "DownPmt1": {
+            "value": "12,500",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment amount"
+          }
+        },
+        {
+          "DownPmt2": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DownPmt3": {
+            "value": "37,500",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DownPmt4": {
+            "value": "50,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns1Home13": {
+            "value": "228",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "MortIns2Home13": {
+            "value": "146",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns3Home13": {
+            "value": "59",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns4Home13": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt1Home13": {
+            "value": "1,857",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "TotPmt2Home13": {
+            "value": "1,708",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt3Home13": {
+            "value": "1,554",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt4Home13": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "You can reduce your cost of mortgage insurance by using a larger down payment. Loans with down payments of greater than 20% do not require mortgage insurance."
+        },
+        {
+          "textLabel": "For the 5% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 106 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $57,912 in mortgage insurance costs."
+        },
+        {
+          "textLabel": "For the 10% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 79 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $41,096 in mortgage insurance costs."
+        },
+        {
+          "textLabel": "For the 15% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 45 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $18,742 in mortgage insurance costs."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "1100000"
+        },
+        {
+          "Home_LoanTermInYears": "22"
+        },
+        {
+          "Home_InterestRate": "7.1"
+        },
+        {
+          "Home_YearlyPropertyTax": "9200"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "5500"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "DownPmt1": {
+            "value": "55,000",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment amount"
+          }
+        },
+        {
+          "DownPmt2": {
+            "value": "110,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DownPmt3": {
+            "value": "165,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DownPmt4": {
+            "value": "220,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns1Home13": {
+            "value": "1,003",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "MortIns2Home13": {
+            "value": "644",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns3Home13": {
+            "value": "262",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns4Home13": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt1Home13": {
+            "value": "10,061",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "TotPmt2Home13": {
+            "value": "9,289",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt3Home13": {
+            "value": "8,496",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt4Home13": {
+            "value": "7,821",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "You can reduce your cost of mortgage insurance by using a larger down payment. Loans with down payments of greater than 20% do not require mortgage insurance."
+        },
+        {
+          "textLabel": "For the 5% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 79 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $185,592 in mortgage insurance costs."
+        },
+        {
+          "textLabel": "For the 10% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 59 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $131,918 in mortgage insurance costs."
+        },
+        {
+          "textLabel": "For the 15% loan"
+        },
+        {
+          "textLabel": "Given regular monthly payments, the balance you owe will be 80% of today's <GLOSSREF key=\"appraisalvalue\">appraisal value</GLOSSREF> in approximately 34 months. If then you obtain a new appraisal for the same amount and request the lender to remove the mortgage insurance requirement, you may save $60,214 in mortgage insurance costs."
+        }
+      ]
+    }
+  ]
+}

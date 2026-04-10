@@ -1,0 +1,401 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "College_MonthsInCollegeYear": {
+            "value": "9",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "9",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Number of months in school year"
+          }
+        },
+        {
+          "College_YearlyBooksExpense": {
+            "value": "750",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "750",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": "Books"
+          }
+        },
+        {
+          "College_YearlyLabOtherFees": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Lab and other fees"
+          }
+        },
+        {
+          "College_MonthlyInternetExpense": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Internet service or connections"
+          }
+        },
+        {
+          "College_MonthlyTVExpense": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Cable or satellite TV"
+          }
+        },
+        {
+          "College_MonthlyPhoneExpense": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Telephone including long distance"
+          }
+        },
+        {
+          "College_MonthlyCellPhoneExpense": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Cellular phone"
+          }
+        },
+        {
+          "College_MonthlyLaundryExpense": {
+            "value": "15",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Laundry"
+          }
+        },
+        {
+          "College_MonthlyFoodExpense": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Food"
+          }
+        },
+        {
+          "College_MonthlyEntertainmentExpense": {
+            "value": "160",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "160",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Entertainment"
+          }
+        },
+        {
+          "College_MonthlyClothingExpense": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Clothing"
+          }
+        },
+        {
+          "College_MonthlyPersonalItemsExpense": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Personal items"
+          }
+        },
+        {
+          "College_MonthlyGasExpense": {
+            "value": "40",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Gasoline"
+          }
+        },
+        {
+          "College_MonthlyAutoPayments": {
+            "value": "120",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "120",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Vehicle payments"
+          }
+        },
+        {
+          "College_MonthlyAutoInsurance": {
+            "value": "120",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "120",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Vehicle insurance"
+          }
+        },
+        {
+          "College_MonthlyTransportationExpense": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Transportation or travel"
+          }
+        },
+        {
+          "College_MonthlyHealthInsuranceExpense": {
+            "value": "125",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "125",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Health insurance"
+          }
+        },
+        {
+          "College_MonthlyOtherExpenses": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "5000",
+            "textLabel": "Other expenses"
+          }
+        }
+      ],
+      "title": "How much should I budget for college living expenses?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "College11_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College11_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College11_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "College11_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "College11_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "College11_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "College11_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "CalcTotExpensesCollege11": {
+            "value": "10,360",
+            "dataFormat": "Currency",
+            "textLabel": "Living expenses"
+          }
+        },
+        {
+          "CalcAvgExpMonth": {
+            "value": "1,151.11",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        },
+        {
+          "CalcTotExpenses10": {
+            "value": "11,396",
+            "dataFormat": "Currency",
+            "textLabel": "Living expenses plus 10%"
+          }
+        },
+        {
+          "CalcAvgExpMonth10": {
+            "value": "1,266.22",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "In addition to your direct college expenses (tuition and room and board), you may wish to budget for other living expenses. Based on your inputs you should budget <b>$10,360</b> to cover these other living expenses."
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "Total Amount"
+        },
+        {
+          "textLabel": "Avg Amt/Month for 9 mos."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "College_MonthsInCollegeYear": "8"
+        },
+        {
+          "College_YearlyBooksExpense": "1200"
+        },
+        {
+          "College_YearlyLabOtherFees": "800"
+        },
+        {
+          "College_MonthlyInternetExpense": "140"
+        },
+        {
+          "College_MonthlyTVExpense": "80"
+        },
+        {
+          "College_MonthlyPhoneExpense": "90"
+        },
+        {
+          "College_MonthlyCellPhoneExpense": "80"
+        },
+        {
+          "College_MonthlyLaundryExpense": "50"
+        },
+        {
+          "College_MonthlyFoodExpense": "280"
+        },
+        {
+          "College_MonthlyEntertainmentExpense": "70"
+        },
+        {
+          "College_MonthlyClothingExpense": "270"
+        },
+        {
+          "College_MonthlyPersonalItemsExpense": "150"
+        },
+        {
+          "College_MonthlyGasExpense": "115"
+        },
+        {
+          "College_MonthlyAutoPayments": "250"
+        },
+        {
+          "College_MonthlyAutoInsurance": "170"
+        },
+        {
+          "College_MonthlyTransportationExpense": "170"
+        },
+        {
+          "College_MonthlyHealthInsuranceExpense": "270"
+        },
+        {
+          "College_MonthlyOtherExpenses": "750"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "CalcTotExpensesCollege11": {
+            "value": "25,480",
+            "dataFormat": "Currency",
+            "textLabel": "Living expenses"
+          }
+        },
+        {
+          "CalcAvgExpMonth": {
+            "value": "3,185.00",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        },
+        {
+          "CalcTotExpenses10": {
+            "value": "28,028",
+            "dataFormat": "Currency",
+            "textLabel": "Living expenses plus 10%"
+          }
+        },
+        {
+          "CalcAvgExpMonth10": {
+            "value": "3,503.50",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "In addition to your direct college expenses (tuition and room and board), you may wish to budget for other living expenses. Based on your inputs you should budget <b>$25,480</b> to cover these other living expenses."
+        }
+      ]
+    }
+  ]
+}

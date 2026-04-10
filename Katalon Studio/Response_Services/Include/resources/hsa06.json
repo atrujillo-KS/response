@@ -1,0 +1,575 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "AnnualPrescriptions": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Annual prescriptions filled"
+          }
+        },
+        {
+          "AnnualDoctorVisits": {
+            "value": "2",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Annual doctor visits"
+          }
+        },
+        {
+          "FedTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25.00",
+            "minimumValue": "0.00",
+            "maximumValue": "80.00",
+            "textLabel": "Current federal tax rate"
+          }
+        },
+        {
+          "HDHPPremium": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Monthly insurance premium"
+          }
+        },
+        {
+          "TradPremium": {
+            "value": "800",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "800",
+            "minimumValue": "0",
+            "maximumValue": "2500",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDeductible": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Annual insurance deductible"
+          }
+        },
+        {
+          "TradDeductible": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "15000",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPOOP": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Annual maximum out-of-pocket expense"
+          }
+        },
+        {
+          "TradOOP": {
+            "value": "2,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2500",
+            "minimumValue": "0",
+            "maximumValue": "25000",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPPrescriptionCopay": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Prescription co-pay"
+          }
+        },
+        {
+          "TradPrescriptionCopay": {
+            "value": "25",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPMDVisit": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Doctor visit co-pay"
+          }
+        },
+        {
+          "TradMDVisit": {
+            "value": "25",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPMDAvgCost": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Average cost of doctor visit"
+          }
+        },
+        {
+          "TradMDAvgCost": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPEstMedExp": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Other estimated medical expenses"
+          }
+        },
+        {
+          "TradEstMedExp": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPCoins": {
+            "value": "70.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "70",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Co-insurance cost"
+          }
+        },
+        {
+          "TradCoins": {
+            "value": "90.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "90",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPContribution": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Monthly HSA contribution"
+          }
+        }
+      ],
+      "title": "How does a HDHP with a HSA compare to a traditional plan?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "HSA06_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA06_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA06_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "HSA06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "HSA06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "HSA06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "HSA06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "HDHPCoinsuranceCosts": {
+            "value": "3,600",
+            "dataFormat": "Currency",
+            "textLabel": "Insurance cost"
+          }
+        },
+        {
+          "TradCoinsuranceCosts": {
+            "value": "9,600",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDeductibleMet": {
+            "value": "1,620",
+            "dataFormat": "Currency",
+            "textLabel": "Deductible met"
+          }
+        },
+        {
+          "TradDeductibleMet": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPInsCost": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Co-insurance"
+          }
+        },
+        {
+          "TradInsCost": {
+            "value": "18",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDoctorCopay": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Co-pays"
+          }
+        },
+        {
+          "TradDoctorCopay": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPTotalGross": {
+            "value": "5,220",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TradTotalGross": {
+            "value": "9,668",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPTaxSavings": {
+            "value": "(450)",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "TradTaxSavings": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPNetCost": {
+            "value": "4,770",
+            "dataFormat": "Currency",
+            "textLabel": "Net cost"
+          }
+        },
+        {
+          "TradNetCost": {
+            "value": "9,668",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "An HDHP with an HSA would save you $4,898"
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "HDHP w/HSA"
+        },
+        {
+          "textLabel": "Traditional Health Plan"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "AnnualPrescriptions": "3"
+        },
+        {
+          "AnnualDoctorVisits": "3"
+        },
+        {
+          "FedTaxRate": "26.4"
+        },
+        {
+          "HDHPPremium": "900"
+        },
+        {
+          "HDHPDeductible": "2000"
+        },
+        {
+          "HDHPOOP": "11000"
+        },
+        {
+          "HDHPPrescriptionCopay": "4"
+        },
+        {
+          "HDHPMDVisit": "9"
+        },
+        {
+          "HDHPMDAvgCost": "43"
+        },
+        {
+          "HDHPEstMedExp": "12000"
+        },
+        {
+          "HDHPCoins": "62"
+        },
+        {
+          "HDHPContribution": "90"
+        },
+        {
+          "TradPremium": "600"
+        },
+        {
+          "TradDeductible": "1200"
+        },
+        {
+          "TradOOP": "4000"
+        },
+        {
+          "TradPrescriptionCopay": "19"
+        },
+        {
+          "TradMDVisit": "14"
+        },
+        {
+          "TradMDAvgCost": "71"
+        },
+        {
+          "TradEstMedExp": "320"
+        },
+        {
+          "TradCoins": "84"
+        },
+        {
+          "undefined": "0"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "HDHPCoinsuranceCosts": {
+            "value": "10,800",
+            "dataFormat": "Currency",
+            "textLabel": "Insurance cost"
+          }
+        },
+        {
+          "TradCoinsuranceCosts": {
+            "value": "7,200",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDeductibleMet": {
+            "value": "12,141",
+            "dataFormat": "Currency",
+            "textLabel": "Deductible met"
+          }
+        },
+        {
+          "TradDeductibleMet": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPInsCost": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Co-insurance"
+          }
+        },
+        {
+          "TradInsCost": {
+            "value": "94",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDoctorCopay": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Co-pays"
+          }
+        },
+        {
+          "TradDoctorCopay": {
+            "value": "42",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPTotalGross": {
+            "value": "12,800",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TradTotalGross": {
+            "value": "7,336",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPTaxSavings": {
+            "value": "(285)",
+            "dataFormat": "Currency",
+            "textLabel": "Tax savings"
+          }
+        },
+        {
+          "TradTaxSavings": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPNetCost": {
+            "value": "12,515",
+            "dataFormat": "Currency",
+            "textLabel": "Net cost"
+          }
+        },
+        {
+          "TradNetCost": {
+            "value": "7,336",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "An HDHP with an HSA would cost you $5,178"
+        }
+      ]
+    }
+  ]
+}

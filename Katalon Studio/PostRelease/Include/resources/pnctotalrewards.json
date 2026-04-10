@@ -1,0 +1,786 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.pnc.com/response/lf-pnc/calc/totalrewards"
+    }
+  },
+  {
+    "verifyTitle": {
+      "value": "PNC Bank Custom Calculator"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//h2[@id='lf_title_label']/span",
+      "value": "Total Up Your Rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-pnc-subtitle",
+      "value": "Determine your tier and see your potential rewards earnings."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Required_Text-small-label",
+      "value": "Fields marked with asterisks (*) are required."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Global_CurrentSavings-label']/h5",
+      "value": "Current Balances"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-small-label",
+      "value": "Enter the estimated 90-day average of all your PNC deposit and investment account balances."
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Global_CurrentSavings",
+      "value": ""
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_Retirement_InvestmentOneAmount-label']/h5",
+      "value": "Additional Balances"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentOneAmount-small-label",
+      "value": "Enter any additional funds you're willing to transfer to a new or existing PNC deposit or investment account."
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Retirement_InvestmentOneAmount",
+      "value": ""
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//label[@id='lf_PNCTotalRewards_Product_selections-label']/h5",
+      "value": "Product Selections"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Product_selections-small-label",
+      "value": "The more you bank with us, the more benefits you get. Choose from the products below to see how your savings can stack up."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CC_Spend_checkbox-label",
+      "value": "Monthly Credit Card Spend"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CC_Spend",
+      "value": "false"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CC_Spend_checkbox_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The approximate amount of money you put on your credit card each month."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Invest_Balance",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Invest_Balance_checkbox-label",
+      "value": "New Investment Balances"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Invest_Balance_checkbox_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The value of deposits in a newly opened managed investment account."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Vehicle_Balance",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CHELOC_Balance_checkbox-label",
+      "value": "New Choice Home Equity Line Of Credit Principal Loan Balance"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CHELOC_Balance_checkbox_tooltip"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "The amount you owe on a new Choice Home Equity Line of Credit."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[1]/div[1]/h6",
+      "value": "Silver Tier"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-landing-tier:nth-child(1) > div:nth-child(3) > div:nth-child(1)",
+      "value": "$25,000 - $99,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[1]/div[3]/div[2]",
+      "value": "Average Eligible Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[2]/div[1]/h6",
+      "value": "Gold Tier"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[2]/div[3]/div[1]",
+      "value": "$100,000 - $499,999"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[2]/div[3]/div[2]",
+      "value": "Average Eligible Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[3]/div[1]/h6",
+      "value": "Platinum Tier"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[3]/div[3]/div[1]",
+      "value": "$500,000+"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[2]/div[3]/div[3]/div[2]",
+      "value": "Average Eligible Balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-pnc-est-button",
+      "value": "Estimate My Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-pnc-reset-button",
+      "value": "Reset"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_CurrentSavings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_CurrentSavings-error-message",
+      "value": "Must be between $1.00 and $10,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_InvestmentOneAmount-error-message",
+      "value": "Enter a dollar amount between $1 and $10,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard-error-message",
+      "value": "Enter a dollar amount between $1 and $100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Retirement_CurrentSavings-error-message",
+      "value": "Must be between $1.00 and $100,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Global_AutoPurchasePrice-error-message",
+      "value": "Enter a dollar amount between $1 and $100,000,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_CHELOC_Balance-error-message",
+      "value": "Enter a dollar amount between $1 and $100,000,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_Global_CurrentSavings"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "50,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-pnc-est-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_answer']/div/div[2]/div/h6",
+      "value": "PNC TotalRewards Silver"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[3]/div[1]/div[2]/div[2]/h3/span/div/div[2]/div[2]/div/h2",
+      "value": "$971.39"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[3]/div[1]/div[2]/div[2]/h3/span/div/div[2]/div[2]/div/span",
+      "value": "Annual Estimated Earnings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[3]/div[1]/div[2]/div[2]/div/p",
+      "value": "Displayed rewards are based on the average PNC customer's account usage and balances."
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_Expanded_Fee_Benefits_checkbox",
+      "value": "on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[9]/div[1]/label/span",
+      "value": "Expanded Fee Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Expanded_Fee_Benefits_checkbox-span",
+      "value": "$172.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Expanded_Fee_Benefits-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Expanded_Fee_Benefits_result_value_']/p",
+      "value": "Estimated benefits of $172 are based on a PNC customer with a Virtual Wallet who is charged: $7 Monthly Service Charge (12 times per year), $3 ATM fee (6 times per year), $3 ATM surcharge (6 times per year), $25 Domestic Self Service wire fee (once per year), and $27 PNC exclusive check order (once per year). [1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Consumer Checking & Savings Fee Schedule",
+      "value": "Consumer Checking & Savings Fee Schedule"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Expanded_Fee_Benefits-accordion-button"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_Credit_Card_Bonus_checkbox",
+      "value": "on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-PNCTotalRewards_Calculated_Credit_Card_Bonus-accordion-item > div:nth-child(1) > label:nth-child(1) > span:nth-child(2)",
+      "value": "Credit Card bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Credit_Card_Bonus_checkbox-span",
+      "value": "$12.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Credit_Card_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Credit_Card_Bonus_result_value_']/p",
+      "value": "Estimated bonus based on $1,000 in monthly purchases on a 2% PNC Cash Unlimited Visa Credit Card.[2]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Apply for a PNC Credit Card",
+      "value": "Apply for a PNC Credit Card"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_PNC_Investments_Bonus_checkbox",
+      "value": "on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-PNCTotalRewards_Calculated_PNC_Investments_Bonus-accordion-item > div:nth-child(1) > label:nth-child(1) > span:nth-child(2)",
+      "value": "PNC Wealth Management bonus"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_PNC_Investments_Bonus_checkbox-span",
+      "value": "$500.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_PNC_Investments_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_PNC_Investments_Bonus_result_value_']/p",
+      "value": "Estimated one-time bonus based on an initial deposit within 60 days of opening a new eligible managed investment account of $170,000.[3]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=PNC Wealth Management Overview of Product and Services",
+      "value": "PNC Wealth Management Overview of Product and Services"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_PNC_Investments_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_Auto_Cashback_checkbox",
+      "value": "on"
+    }
+  },
+    {
+    "verifyText": {
+      "id": "css=#lf-PNCTotalRewards_Calculated_Auto_Cashback-accordion-item > div:nth-child(1) > label:nth-child(1) > span:nth-child(2)",
+      "value": "Auto Loan cash rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Auto_Cashback_checkbox-span",
+      "value": "$33.88"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Auto_Cashback-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Auto_Cashback_result_value_']/p",
+      "value": "Estimated annual benefit for a 0.025% quarterly cash reward on the average daily principal loan balance is based on an example loan balance of $38,000 for an eligible auto loan, an assumed 5-year loan term and does not take into account the interest rate or payments on the auto loan.[4]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Learn more about PNC Auto Loans",
+      "value": "Learn more about PNC Auto Loans"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Auto_Cashback-accordion-button"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_CHELOC_Cash_Back_checkbox",
+      "value": "on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-PNCTotalRewards_Calculated_CHELOC_Cash_Back-accordion-item > div:nth-child(1) > label:nth-child(1) > span:nth-child(2)",
+      "value": "Choice Home Equity Line of Credit cash rewards"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_CHELOC_Cash_Back_checkbox-span",
+      "value": "$53.51"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_CHELOC_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_CHELOC_Cash_Back_result_value_']/p",
+      "value": "Estimated benefit based on a 0.025% quarterly cash reward on the average daily principal loan balance of a new CHELOC of $55,000, over a 20 year term and does not take into account the interest rate on the CHELOC.[5]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=Apply for a PNC CHELOC Loan",
+      "value": "Apply for a PNC CHELOC Loan"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PNCTotalRewards_Calculated_Mortgage_Cash_Back_checkbox",
+      "value": "on"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf-PNCTotalRewards_Calculated_Mortgage_Cash_Back-accordion-item > div:nth-child(1) > label:nth-child(1) > span:nth-child(2)",
+      "value": "Mortgage cash reward"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Mortgage_Cash_Back_checkbox-span",
+      "value": "$200.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Mortgage_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Mortgage_Cash_Back_result_value_']/p",
+      "value": "Estimated benefit is based on a one-time cash reward determined by your activated Select Tier benefits at the time your loan funds for an eligible mortgage.[6]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "link=About PNC Mortgages and Home Financing Options",
+      "value": "About PNC Mortgages and Home Financing Options"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Mortgage_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Retirement_InvestmentOneAmount",
+      "value": "100,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CC_Spend"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_FutureMonthlyChargesOnCard",
+      "value": "5,485"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Invest_Balance"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Retirement_CurrentSavings",
+      "value": "120,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_Vehicle_Balance"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "45,000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PNCTotalRewards_Use_Custom_CHELOC_Balance"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_PNCTotalRewards_CHELOC_Balance",
+      "value": "25,456"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "50,000.01"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_Global_CurrentSavings",
+      "value": "50,000.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-pnc-est-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_answer']/div/div[2]/div/h6",
+      "value": "PNC TotalRewards Gold"
+    }
+  },
+  
+  
+  
+  
+  
+
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[1]/div/div[4]/div[3]/div[1]/div[2]/div[2]/h3/span/div/div[2]/div[2]/div/h2",
+      "value": "$1,730.88"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Expanded_Fee_Benefits_checkbox-span",
+      "value": "$172.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Expanded_Fee_Benefits-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Expanded_Fee_Benefits_result_value_']/p",
+      "value": "Estimated benefits of $172 are based on a PNC customer with a Virtual Wallet who is charged: $7 Monthly Service Charge (12 times per year), $3 ATM fee (6 times per year), $3 ATM surcharge (6 times per year), $25 Domestic Self Service wire (once per year), and $27 PNC exclusive check order (once per year).[1]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Expanded_Fee_Benefits-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Credit_Card_Bonus_checkbox-span",
+      "value": "$329.10"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Credit_Card_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Credit_Card_Bonus_result_value_']/p",
+      "value": "Your reward of $329.10 is calculated based on your input of $5,485 spent on the 2% PNC Cash Unlimited® Visa Signature® Credit Card.[2]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Credit_Card_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_PNC_Investments_Bonus_checkbox-span",
+      "value": "$500.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_PNC_Investments_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_PNC_Investments_Bonus_result_value_']/p",
+      "value": "Your one-time bonus of $500.00 is calculated based on your input of $120,000.[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_PNC_Investments_Bonus-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Auto_Cashback_checkbox-span",
+      "value": "$80.25"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Auto_Cashback-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Auto_Cashback_result_value_']/p",
+      "value": "Your reward of $80.25 is calculated based on your input of $45,000 on a 5 year term based on the average daily principal loan balance.[4]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Auto_Cashback-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_CHELOC_Cash_Back_checkbox-span",
+      "value": "$49.53"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_CHELOC_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_CHELOC_Cash_Back_result_value_']/p",
+      "value": "Estimated annual benefit of $49.53 for a 0.050% quarterly cash reward on the average daily principal loan balance is based on your input of $25,456, on an assumed 20 year loan term and does not take into account the interest rate on the CHELOC.[5]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_CHELOC_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_PNCTotalRewards_Calculated_Mortgage_Cash_Back_checkbox-span",
+      "value": "$600.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Mortgage_Cash_Back-accordion-button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_PNCTotalRewards_Calculated_Mortgage_Cash_Back_result_value_']/p",
+      "value": "Estimated benefit is based on a one-time cash reward determined by your activated Select Tier benefits at the time your loan funds for an eligible mortgage.[6]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-PNCTotalRewards_Calculated_Mortgage_Cash_Back-accordion-button"
+    }
+  },  
+  
+  
+  
+  
+  
+  
+  {
+    "verifyText": {
+      "id": "xpath=//small[@id='lf-terms-of-use']/span",
+      "value": "Use of the calculator signifies agreement to the"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//span[@id='lf_terms_of_use_label']/b",
+      "value": "Terms of use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=small.lf-copyright",
+      "value": "© 2026 Leadfusion"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='© 2026 Leadfusion'])[1]/following::span[1]",
+      "value": "The PNC TotalRewards Program Calculator is intended to be used for educational, informational, and illustrative purposes only. The accuracy of the calculations and their applicability to your circumstances are not guaranteed. Please consult your financial, tax or legal advisor regarding your unique situation. The default benefits listed in the calculator are based on assumptions of average customer behavior. Your unique situation and financial decisions will impact your Program value."
+    }
+  }
+]

@@ -1,0 +1,735 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Fund_SharePurchasePrice": {
+            "value": "30",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "30",
+            "minimumValue": "0.1",
+            "maximumValue": "1000000",
+            "textLabel": "Share purchase price"
+          }
+        },
+        {
+          "Fund_FundTwoSharePurchasePrice": {
+            "value": "30",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "30",
+            "minimumValue": "0.1",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_SharesPurchased": {
+            "value": "300",
+            "dataFormat": "Double2",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": "Shares purchased"
+          }
+        },
+        {
+          "Fund_FundTwoSharesPurchased": {
+            "value": "300",
+            "dataFormat": "Double2",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_YearlySharePriceIncrease": {
+            "value": "8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Growth rate, share price"
+          }
+        },
+        {
+          "Fund_FundTwoYearlySharePriceIncrease": {
+            "value": "5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_YearlyIncreaseInDividendsAndGains": {
+            "value": "5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Growth rate, dividends and gains"
+          }
+        },
+        {
+          "Fund_FundTwoYearlyIncreaseInDividendsAndGains": {
+            "value": "5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_FrontendLoad": {
+            "value": "3",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "Front load/purchase fees"
+          }
+        },
+        {
+          "Fund_FundTwoFrontendLoad": {
+            "value": "3",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_Annual12b1Fees": {
+            "value": "0",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "Yearly management fees"
+          }
+        },
+        {
+          "Fund_FundTwoAnnual12b1Fees": {
+            "value": "0",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_BackendLoad": {
+            "value": "0",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "Back load/selling fees"
+          }
+        },
+        {
+          "Fund_FundTwoBackendLoad": {
+            "value": "0",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_LongTermYearlyGainsPerShare": {
+            "value": "1.0",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "1.0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Annual long-term gains/share"
+          }
+        },
+        {
+          "Fund_FundTwoLongTermYearlyGainsPerShare": {
+            "value": "1",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_ShortTermYearlyGainsPerShare": {
+            "value": "1",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Annual short-term gains/share"
+          }
+        },
+        {
+          "Fund_FundTwoShortTermYearlyGainsPerShare": {
+            "value": "0.5",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "0.5",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_FundTwoTaxableQuarterlyDividendsPerShare": {
+            "value": "1",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Quarterly dividends/share, taxable"
+          }
+        },
+        {
+          "Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Quarterly dividends/share, fed. Tax-exempt"
+          }
+        },
+        {
+          "Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Quarterly dividends/share, state Tax-exempt"
+          }
+        },
+        {
+          "Fund_FundTwoNonTaxableQuarterlyDividendsPerShare": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Quarterly dividends/share, non-taxable"
+          }
+        },
+        {
+          "Fund_AdditionalInvestment": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Additional amounts invested"
+          }
+        },
+        {
+          "Fund_InvestmentFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_MonthsOwned": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months you will own"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Fund_DividendsAndGainsReinvestmentOption": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Dividends and gains are:"
+          }
+        },
+        {
+          "FakeField1": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField2": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How do growth and income funds compare?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Fund14_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Fund14_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Fund14_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Fund14_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Fund14_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Fund14_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Fund14_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Future": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": "<b>In 60 months</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_SharePriceGrowth": {
+            "value": "44.08",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": "Selling price per share"
+          }
+        },
+        {
+          "Fund_SharePriceIncome": {
+            "value": "38.29",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_QuarterlyDividendsGrowth": {
+            "value": "$0.00",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "output",
+            "textLabel": "Quarterly dividends per share"
+          }
+        },
+        {
+          "Fund_QuarterlyDividendsIncome": {
+            "value": "1.28",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnBeforeTaxesGrowth": {
+            "value": "6.72",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Fund_RateOfReturnBeforeTaxesIncome": {
+            "value": "18.01",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnAfterTaxesGrowth": {
+            "value": "5.34",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Fund_RateOfReturnAfterTaxesIncome": {
+            "value": "16.32",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_TotalFeesGrowth": {
+            "value": "620",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Total fees"
+          }
+        },
+        {
+          "Fund_TotalFeesIncome": {
+            "value": "620",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_TotalTaxesGrowth": {
+            "value": "1,216",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Total taxes"
+          }
+        },
+        {
+          "Fund_TotalTaxesIncome": {
+            "value": "1,519",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Fund_SharePurchasePrice": "30"
+        },
+        {
+          "Fund_SharesPurchased": "1300"
+        },
+        {
+          "Fund_YearlySharePriceIncrease": "21"
+        },
+        {
+          "Fund_FundTwoSharePurchasePrice": "20"
+        },
+        {
+          "Fund_FundTwoSharesPurchased": "1000"
+        },
+        {
+          "Fund_FundTwoYearlySharePriceIncrease": "19"
+        },
+        {
+          "Fund_AdditionalInvestment": "3100"
+        },
+        {
+          "Fund_InvestmentFrequency": "0"
+        },
+        {
+          "Fund_MonthsOwned": "90"
+        },
+        {
+          "Global_TaxFilingStatus": "1"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "198000"
+        },
+        {
+          "Global_StateTaxRate": "1.7"
+        },
+        {
+          "Fund_FrontendLoad": "3"
+        },
+        {
+          "Fund_Annual12b1Fees": "2"
+        },
+        {
+          "Fund_BackendLoad": "0"
+        },
+        {
+          "Fund_FundTwoFrontendLoad": "3"
+        },
+        {
+          "Fund_FundTwoAnnual12b1Fees": "0"
+        },
+        {
+          "Fund_FundTwoBackendLoad": "0"
+        },
+        {
+          "Fund_LongTermYearlyGainsPerShare": "1"
+        },
+        {
+          "Fund_ShortTermYearlyGainsPerShare": "0.5"
+        },
+        {
+          "Fund_YearlyIncreaseInDividendsAndGains": "10"
+        },
+        {
+          "Fund_FundTwoLongTermYearlyGainsPerShare": "1"
+        },
+        {
+          "Fund_FundTwoShortTermYearlyGainsPerShare": "0.5"
+        },
+        {
+          "Fund_FundTwoYearlyIncreaseInDividendsAndGains": "5"
+        },
+        {
+          "Fund_FundTwoTaxableQuarterlyDividendsPerShare": "1"
+        },
+        {
+          "Fund_FundTwoFederalTaxExemptQuarterlyDividendsPerShare": "0"
+        },
+        {
+          "Fund_FundTwoStateTaxExemptQuarterlyDividendsPerShare": "0"
+        },
+        {
+          "Fund_FundTwoNonTaxableQuarterlyDividendsPerShare": "0"
+        },
+        {
+          "Fund_DividendsAndGainsReinvestmentOption": "1"
+        },
+        {
+          "Global_SavingsInterestRate": "6"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Future": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": "<b>In 90 months</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_SharePriceGrowth": {
+            "value": "125.32",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": "Selling price per share"
+          }
+        },
+        {
+          "Fund_SharePriceIncome": {
+            "value": "73.73",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_QuarterlyDividendsGrowth": {
+            "value": "$0.00",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "output",
+            "textLabel": "Quarterly dividends per share"
+          }
+        },
+        {
+          "Fund_QuarterlyDividendsIncome": {
+            "value": "1.45",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnBeforeTaxesGrowth": {
+            "value": "20.08",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Fund_RateOfReturnBeforeTaxesIncome": {
+            "value": "23.98",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnAfterTaxesGrowth": {
+            "value": "16.98",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "After taxes"
+          }
+        },
+        {
+          "Fund_RateOfReturnAfterTaxesIncome": {
+            "value": "23.55",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_TotalFeesGrowth": {
+            "value": "55,729",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Total fees"
+          }
+        },
+        {
+          "Fund_TotalFeesIncome": {
+            "value": "8,726",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_TotalTaxesGrowth": {
+            "value": "92,151",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Total taxes"
+          }
+        },
+        {
+          "Fund_TotalTaxesIncome": {
+            "value": "118,016",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

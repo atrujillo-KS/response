@@ -1,0 +1,146 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://calculators.firsttechfed.com/gs/lf-firsttech/goal/evaluatecreditcards.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Evaluate Credit Cards"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/evaluatepaymentprocessing.html"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "YOUR BUSINESS (Step 1 of 2)"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/businesschecking.html"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_field_list']/span/div/div/div/div/h2",
+      "value": "Your Account Needs"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/evaluatepaymentprocessing.html"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "YOUR BUSINESS (Step 1 of 2)"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/businesschecking.html"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "Your Account Needs"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.usbank.com/gs/lf-usbank/goal/consolidatemydebt.html"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[5]/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ConsolidateReason"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_ConsolidateReason",
+      "value": "label=Pay off debt sooner"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_ConsolidateReason']/option"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[6]/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_add_debt_btn_icon"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[8]/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[6]/div/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$'])[2]/following::h2[1]",
+      "value": "Your current debt overview"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Consolidation options'])[1]/following::p[1]",
+      "value": "Based on what you told us, here are the lending options you may be eligible for to consolidate your debt."
+    }
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://expert.becu.org/gs/lf-becu/goal/financeavehicle.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Buy or Refinance a Vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PriceofVehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TypeofVehicleFinancing__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PriceofVehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*",
+      "value": "Look up price of used vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Look Up the Price of a Used Vehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trade-In Value'])[1]/following::label[1]",
+      "value": "Vehicle Make"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicletypes_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicletypes_select",
+      "value": "label=Audi"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Make'])[1]/following::label[1]",
+      "value": "Model Year"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleyears_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleyears_select",
+      "value": "label=2021"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Model'])[1]/following::label[1]",
+      "value": "Vehicle Model"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehiclemodel_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehiclemodel_select_used",
+      "value": "label=Q5 - SUVs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[1]/following::label[1]",
+      "value": "Trim Package"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleTrim_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleTrim_select_used",
+      "value": "label=Utility 4D Premium 45 AWD"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[2]/following::label[1]",
+      "value": "Vehicle Mileage"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_UsedVehicleMileage",
+      "value": "60,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Outstanding Loan Principal'])[1]/following::label[1]",
+      "value": "Zip Code"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode_Nada",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upgrades and Extras'])[1]/following::label[1]",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SalesTaxRate",
+      "value": "7.75%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your Sales Tax Rate'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "A tax paid to a governing body for the sales of certain goods and services. Sales tax rate and application varies depending on the state."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SalesTaxRate_slider",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "storeValue": {
+      "id": "lf_NewVehiclePurchasePrice",
+      "value": "CurrentValue"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "2021 Audi Q5 Utility 4D Premium 45 AWD with 60,000 miles"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/financeavehicle.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_step_title_text",
+      "value": "Finance your vehicle with PNC"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PriceofVehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_TypeofVehicleFinancing__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PriceofVehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*",
+      "value": "Look up price of used vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*/text()[normalize-space(.)='Look up price of used vehicle']/parent::*"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Look Up the Price of a Used Vehicle"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trade-In Value'])[1]/following::label[1]",
+      "value": "Vehicle Make"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicletypes_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicletypes_select",
+      "value": "label=Audi"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Make'])[1]/following::label[1]",
+      "value": "Model Year"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleyears_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleyears_select",
+      "value": "label=2021"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vehicle Model'])[1]/following::label[1]",
+      "value": "Vehicle Model"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehiclemodel_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehiclemodel_select_used",
+      "value": "label=Q5 - SUVs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[1]/following::label[1]",
+      "value": "Trim Package"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_vehicleTrim_select_used"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_vehicleTrim_select_used",
+      "value": "label=Utility 4D Premium 45 AWD"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Trim Package'])[2]/following::label[1]",
+      "value": "Vehicle Mileage"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_UsedVehicleMileage",
+      "value": "60,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Outstanding Loan Principal'])[1]/following::label[1]",
+      "value": "Zip Code"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode_Nada",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upgrades and Extras'])[1]/following::label[1]",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_SalesTaxRate",
+      "value": "7.75%"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your Sales Tax Rate'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Your Sales Tax Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "A tax paid to a governing body for the sales of certain goods and services. Sales tax rate and application varies depending on the state."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_SalesTaxRate_slider",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "storeValue": {
+      "id": "lf_NewVehiclePurchasePrice",
+      "value": "CurrentValue"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "2021 Audi Q5 Utility 4D Premium 45 AWD with 60,000 miles"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://calculators.myfico.com/response/lf-fico/calc/creditline02"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf-Loans-details']/div[3]/div/div/div/fieldset/legend",
+      "value": "Amount owed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "Should I consolidate my debts?"
+    }
+  }
+]

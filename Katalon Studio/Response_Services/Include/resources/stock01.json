@@ -1,0 +1,419 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Stock_SharePurchasePrice": {
+            "value": "30.000",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "30",
+            "minimumValue": "0.1",
+            "maximumValue": "1000",
+            "textLabel": "Share price at purchase"
+          }
+        },
+        {
+          "Stock_SharesPurchased": {
+            "value": "200",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Shares purchased"
+          }
+        },
+        {
+          "Stock_AverageQuarterlyDividend": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Average quarterly dividend"
+          }
+        },
+        {
+          "Stock_MonthsOwned": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months owned"
+          }
+        },
+        {
+          "Stock_SharePriceToday": {
+            "value": "36.000",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "36",
+            "minimumValue": "0.1",
+            "maximumValue": "1000",
+            "textLabel": "Share price today"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Stock_PurchaseFeesFixedAmount": {
+            "value": "8",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "As fixed dollar amount"
+          }
+        },
+        {
+          "Stock_SaleFeesFixedAmount": {
+            "value": "8",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Stock_PurchaseFeesPercentage": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "As % of total amount"
+          }
+        },
+        {
+          "Stock_SaleFeesPercentage": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": ""
+          }
+        },
+        {
+          "Stock_PurchaseFeesAmountPerShare": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "As dollar amount per share"
+          }
+        },
+        {
+          "Stock_SaleFeesAmountPerShare": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": ""
+          }
+        },
+        {
+          "Stock_DividendIncomeSpendingOption": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "What is the return on my stock if I sell now?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Stock01_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Stock01_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Stock01_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Stock01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Stock01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Stock01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Stock01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "FMRRBefStock01": {
+            "value": "10.14",
+            "dataFormat": "Percentage",
+            "textLabel": "Your return"
+          }
+        },
+        {
+          "FMRRAftStock01": {
+            "value": "9.47",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SaleGainBefStock01": {
+            "value": "1,184",
+            "dataFormat": "Currency",
+            "textLabel": "Gain or loss on sale of stock"
+          }
+        },
+        {
+          "SaleGainAftStock01": {
+            "value": "1,103",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDivBef": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "textLabel": "Total dividends received"
+          }
+        },
+        {
+          "TotDivAftStock01": {
+            "value": "1,864",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DivYieldBef": {
+            "value": "6.84",
+            "dataFormat": "Percentage",
+            "textLabel": "Current yield on dividends"
+          }
+        },
+        {
+          "DivYieldAft": {
+            "value": "6.36",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Stock_SharePurchasePrice": "10"
+        },
+        {
+          "Stock_SharesPurchased": "800"
+        },
+        {
+          "Stock_MonthsOwned": "78"
+        },
+        {
+          "Stock_SharePriceToday": "30"
+        },
+        {
+          "Stock_AverageQuarterlyDividend": "170"
+        },
+        {
+          "Stock_DividendIncomeSpendingOption": "0"
+        },
+        {
+          "Global_SavingsInterestRate": "13"
+        },
+        {
+          "Global_TaxFilingStatus": "1"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "100000"
+        },
+        {
+          "Global_StateTaxRate": "5.3"
+        },
+        {
+          "Stock_PurchaseFeesFixedAmount": "22"
+        },
+        {
+          "Stock_PurchaseFeesPercentage": "3"
+        },
+        {
+          "Stock_PurchaseFeesAmountPerShare": "2"
+        },
+        {
+          "Stock_SaleFeesFixedAmount": "24"
+        },
+        {
+          "Stock_SaleFeesPercentage": "4"
+        },
+        {
+          "Stock_SaleFeesAmountPerShare": "1"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "FMRRBefStock01": {
+            "value": "20.70",
+            "dataFormat": "Percentage",
+            "textLabel": "Your return"
+          }
+        },
+        {
+          "FMRRAftStock01": {
+            "value": "17.42",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SaleGainBefStock01": {
+            "value": "12,354",
+            "dataFormat": "Currency",
+            "textLabel": "Gain or loss on sale of stock"
+          }
+        },
+        {
+          "SaleGainAftStock01": {
+            "value": "9,846",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotDivBef": {
+            "value": "4,420",
+            "dataFormat": "Currency",
+            "textLabel": "Total dividends received"
+          }
+        },
+        {
+          "TotDivAftStock01": {
+            "value": "3,558",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DivYieldBef": {
+            "value": "8.77",
+            "dataFormat": "Percentage",
+            "textLabel": "Current yield on dividends"
+          }
+        },
+        {
+          "DivYieldAft": {
+            "value": "7.02",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

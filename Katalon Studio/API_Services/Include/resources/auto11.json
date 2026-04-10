@@ -1,0 +1,279 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_AutoDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_MonthlyPayment": {
+            "value": "450",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "450",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Global_AutoInterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "48",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Loan term (months)"
+          }
+        },
+        {
+          "Auto_TradeInValue": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "200000",
+            "textLabel": "Value of your trade-in*"
+          }
+        },
+        {
+          "Auto_CashRebate": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Cash rebate*"
+          }
+        }
+      ],
+      "title": "What vehicle can I afford?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Auto11_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto11_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto11_Inital_Inputs"
+        },
+        {
+          "name": "Default Results",
+          "body": "pm.expect(pm.response.code).to.equal(200);\r\n\r\n\r\n    \n    pm.sendRequest({\r\n        url: 'https://qa.awsc.leadfusion.com/tools/qatest/auto01/tool.fcs?json&toolPage=results&nolog=',\r\n        method: 'POST',\r\n        header: {\r\n            'Content-Type': 'application/json'\r\n        },\r\n        params: {\r\n            newuser: true,\r\n            json: true,\r\n            toolPage: 'results',\r\n            \n        }\r\n    }, function (err, res) {\r\n        \n        console.log(res.json());",
+          "source": "initial",
+          "itemName": "Auto11_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Auto11_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Auto11_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Auto11_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Auto11_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Global_AutoDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_TradeInValue": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Trade-in"
+          }
+        },
+        {
+          "Auto_CashRebate": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Rebate"
+          }
+        },
+        {
+          "Auto_MonthlyPayment": {
+            "value": "450",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "textLabel": "Term of loan (months)"
+          }
+        },
+        {
+          "Auto_TotalCost": {
+            "value": "21,540",
+            "dataFormat": "Currency",
+            "textLabel": "Vehicle total cost you can afford"
+          }
+        },
+        {
+          "Auto_LoanAmount": {
+            "value": "19,540",
+            "dataFormat": "Currency",
+            "textLabel": "Loan amount for vehicle"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Based on your inputs, you will be able to afford a vehicle that costs $21,540."
+        },
+        {
+          "textLabel": "You will need to qualify for a loan of $19,540 to finance your purchase."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Auto_MonthlyPayment": "630"
+        },
+        {
+          "Global_AutoDownPayment": "5000"
+        },
+        {
+          "Global_AutoLoanTerm": "60"
+        },
+        {
+          "Global_AutoInterestRate": "7.50"
+        },
+        {
+          "Auto_CashRebate": "4600"
+        },
+        {
+          "Auto_TradeInValue": "22000"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Global_AutoDownPayment": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_TradeInValue": {
+            "value": "22,000",
+            "dataFormat": "Currency",
+            "textLabel": "Trade-in"
+          }
+        },
+        {
+          "Auto_CashRebate": {
+            "value": "4,600",
+            "dataFormat": "Currency",
+            "textLabel": "Rebate"
+          }
+        },
+        {
+          "Auto_MonthlyPayment": {
+            "value": "630",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "60",
+            "dataFormat": "None",
+            "textLabel": "Term of loan (months)"
+          }
+        },
+        {
+          "Auto_TotalCost": {
+            "value": "63,040",
+            "dataFormat": "Currency",
+            "textLabel": "Vehicle total cost you can afford"
+          }
+        },
+        {
+          "Auto_LoanAmount": {
+            "value": "31,440",
+            "dataFormat": "Currency",
+            "textLabel": "Loan amount for vehicle"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Based on your inputs, you will be able to afford a vehicle that costs $63,040."
+        },
+        {
+          "textLabel": "You will need to qualify for a loan of $31,440 to finance your purchase."
+        }
+      ]
+    }
+  ]
+}

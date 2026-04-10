@@ -1,0 +1,356 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_AutoDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Auto_SecondLoanDownPayment": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "249999",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoPurchasePrice": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Auto_SecondLoanPurchasePrice": {
+            "value": "15,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "15000.0",
+            "minimumValue": "0",
+            "maximumValue": "250000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoLoanTerm": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "48",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Loan term (months)"
+          }
+        },
+        {
+          "Auto_SecondLoanTerm": {
+            "value": "24",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "24",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AutoInterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Auto_SecondLoanInterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings interest rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state & federal tax rates"
+          }
+        }
+      ],
+      "title": "Which vehicle loan is better?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Auto06_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto06_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Auto06_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Auto06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Auto06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Auto06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Auto06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "MonPmtAuto06": {
+            "value": "875",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "MonPmt2Auto06": {
+            "value": "570",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaidAuto06": {
+            "value": "4,005",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2Auto06": {
+            "value": "688",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_FirstLoanTotalCost": {
+            "value": "23,985",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 1 total loan cost"
+          }
+        },
+        {
+          "Auto_SecondLoanTotalCost": {
+            "value": "5,824",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 2 total loan cost"
+          }
+        },
+        {
+          "Auto_FinanceVsCashCostDifference": {
+            "value": "18,161",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 1 vs loan 2 cost difference"
+          }
+        },
+        {
+          "Auto_LoanLess": {
+            "value": "Loan 2",
+            "dataFormat": "None",
+            "textLabel": "Which loan will cost you less?"
+          }
+        },
+        {
+          "Auto_LoanMore": {
+            "value": "Loan 1",
+            "dataFormat": "None",
+            "textLabel": "Which loan will cost you more?"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Loan 1 will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $18,161 more than Loan 2."
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_AutoPurchasePrice": "67000"
+        },
+        {
+          "Global_AutoDownPayment": "10000"
+        },
+        {
+          "Global_AutoLoanTerm": "72"
+        },
+        {
+          "Global_AutoInterestRate": "6.1"
+        },
+        {
+          "Auto_SecondLoanPurchasePrice": "62000"
+        },
+        {
+          "Auto_SecondLoanDownPayment": "3000"
+        },
+        {
+          "Auto_SecondLoanTerm": "48"
+        },
+        {
+          "Auto_SecondLoanInterestRate": "3.2"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "26.11"
+        },
+        {
+          "Global_SavingsInterestRate": "9.55"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "MonPmtAuto06": {
+            "value": "947",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment"
+          }
+        },
+        {
+          "MonPmt2Auto06": {
+            "value": "1,311",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaidAuto06": {
+            "value": "11,209",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2Auto06": {
+            "value": "3,935",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Auto_FirstLoanTotalCost": {
+            "value": "49,625",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 1 total loan cost"
+          }
+        },
+        {
+          "Auto_SecondLoanTotalCost": {
+            "value": "34,322",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 2 total loan cost"
+          }
+        },
+        {
+          "Auto_FinanceVsCashCostDifference": {
+            "value": "15,303",
+            "dataFormat": "Currency",
+            "textLabel": "Loan 1 vs loan 2 cost difference"
+          }
+        },
+        {
+          "Auto_LoanMore": {
+            "value": "Loan 1",
+            "dataFormat": "None",
+            "textLabel": "Which loan will cost you more?"
+          }
+        },
+        {
+          "Auto_LoanLess": {
+            "value": "Loan 2",
+            "dataFormat": "None",
+            "textLabel": "Which loan will cost you less?"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Loan 1 will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $15,303 more than Loan 2."
+        }
+      ],
+      "NonDefaultColumnTextLabels": [
+        {
+          "textLabel": "Loan 1"
+        },
+        {
+          "textLabel": "Loan 2"
+        }
+      ]
+    }
+  ]
+}

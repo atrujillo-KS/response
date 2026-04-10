@@ -1,0 +1,337 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "CalcGrossIncome": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income (excluding tips)"
+          }
+        },
+        {
+          "CalcFedTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Amount withheld by IRS"
+          }
+        },
+        {
+          "CalcFICA": {
+            "value": "31",
+            "dataFormat": "Currency",
+            "textLabel": "Social Security taxes"
+          }
+        },
+        {
+          "CalcMedicare": {
+            "value": "7",
+            "dataFormat": "Currency",
+            "textLabel": "Medicare taxes"
+          }
+        },
+        {
+          "CalcStateTax": {
+            "value": "17",
+            "dataFormat": "Currency",
+            "textLabel": "State taxes"
+          }
+        },
+        {
+          "CalcDeductions": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Deductions from pay"
+          }
+        },
+        {
+          "CalcNetIncome": {
+            "value": "245",
+            "dataFormat": "Currency",
+            "textLabel": "Net income (excluding tips)"
+          }
+        },
+        {
+          "AmtOweFed": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Federal tax shortfall"
+          }
+        },
+        {
+          "TotTips": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "textLabel": "Your total tips"
+          }
+        },
+        {
+          "JobRate": {
+            "value": "10",
+            "dataFormat": "Currency",
+            "textLabel": "Your hourly pay rate"
+          }
+        },
+        {
+          "JobHrs": {
+            "value": "30",
+            "dataFormat": "Integer",
+            "textLabel": "Number of hours worked per pay period"
+          }
+        },
+        {
+          "PayFreqText": {
+            "value": "Semi-monthly",
+            "dataFormat": "",
+            "textLabel": "Your pay period frequency"
+          }
+        },
+        {
+          "FilingStatusText": {
+            "value": "Single",
+            "dataFormat": "",
+            "textLabel": "Your tax filing status"
+          }
+        },
+        {
+          "Exemptions": {
+            "value": "2",
+            "dataFormat": "None",
+            "textLabel": "Your total exemptions"
+          }
+        },
+        {
+          "AddFedTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Your additional income withheld by IRS"
+          }
+        },
+        {
+          "StateTaxRatePaycheck": {
+            "value": "3.40",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of gross income)"
+          }
+        },
+        {
+          "StateTaxRateFIT": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of Federal income)"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "JobRate": "32"
+        },
+        {
+          "JobHrs": "48"
+        },
+        {
+          "TotTips": "2500"
+        },
+        {
+          "GrossIncomeYTD": "95000"
+        },
+        {
+          "PayFreq": "3"
+        },
+        {
+          "FilingStatus": "1"
+        },
+        {
+          "Exemptions": "4"
+        },
+        {
+          "AddFedTax": "400"
+        },
+        {
+          "StateTaxOpt": "0"
+        },
+        {
+          "StateTaxRatePaycheck": "3.4"
+        },
+        {
+          "StateTaxRateFIT": "2"
+        },
+        {
+          "DeductionList": "7.DeductionData.FICATaxExempt: true"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Paycheck07_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Paycheck07_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Paycheck07_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Paycheck07_NonDefault_Results"
+        },
+        {
+          "name": "Verify values of 'value', 'textLabel', and 'dataElementName' in the array",
+          "body": "var fields = jsonData;\r\n\r\n    \n    var expectedFields = [\r\n        { dataElementName: \"CalcGrossIncome\", dataFormat: \"Currency\", value: \"1,536\", textLabel: \"Gross income (excluding tips)\" },\r\n        { dataElementName: \"CalcFedTax\", dataFormat: \"Currency\", value: \"727\", textLabel: \"Amount withheld by IRS\" },\r\n        { dataElementName: \"CalcFICA\", dataFormat: \"Currency\", value: \"250\", textLabel: \"Social Security taxes\" },\r\n        { dataElementName: \"CalcMedicare\", dataFormat: \"Currency\", value: \"59\", textLabel: \"Medicare taxes\" },\r\n        { dataElementName: \"CalcStateTax\", dataFormat: \"Currency\", value: \"0\", textLabel: \"State taxes\" },\r\n        { dataElementName: \"CalcDeductions\", dataFormat: \"Currency\", value: \"0\", textLabel: \"Deductions from pay\" },\r\n        { dataElementName: \"CalcNetIncome\", dataFormat: \"Currency\", value: \"500\", textLabel: \"Net income (excluding tips)\" },\r\n        { dataElementName: \"AmtOweFed\", dataFormat: \"Currency\", value: \"0\", textLabel: \"Federal tax shortfall\" },\r\n        { dataElementName: \"TotTips\", dataFormat: \"Currency\", value: \"2,500\", textLabel: \"Your total tips\" },\r\n        { dataElementName: \"JobRate\", dataFormat: \"Currency\", value: \"32\", textLabel: \"Your hourly pay rate\" },\r\n        { dataElementName: \"JobHrs\", dataFormat: \"Integer\", value: \"48\", textLabel: \"Number of hours worked per pay period\" },\r\n        { dataElementName: \"PayFreqText\", dataFormat: \"\", value: \"Semi-monthly\", textLabel: \"Your pay period frequency\" },\r\n        { dataElementName: \"FilingStatusText\", dataFormat: \"\", value: \"Married filing jointly\", textLabel: \"Your tax filing status\" },\r\n        { dataElementName: \"Exemptions\", dataFormat: \"None\", value: \"4\", textLabel: \"Your total exemptions\" },\r\n        { dataElementName: \"AddFedTax\", dataFormat: \"Currency\", value: \"400\", textLabel: \"Your additional income withheld by IRS\" },\r\n        { dataElementName: \"StateTaxRatePaycheck\", dataFormat: \"%\", value: \"3.40\", textLabel: \"State tax (% of gross income)\" },\r\n        { dataElementName: \"StateTaxRateFIT\", dataFormat: \"%\", value: \"2.00\", textLabel: \"State tax (% of Federal income)\" }\r\n    ];\r\n\r\n    \n    for (var i = 0; i < fields.length; i++) {\r\n        pm.expect(fields[i].dataElementName, `Failed for \"${fields[i].dataElementName}\" - dataElementName`).to.eql(expectedFields[i].dataElementName);\r\n        pm.expect(fields[i].dataFormat, `Failed for \"${fields[i].dataElementName}\" - dataFormat`).to.eql(expectedFields[i].dataFormat);\r\n        pm.expect(fields[i].value, `Failed for \"${fields[i].dataElementName}\" - value`).to.eql(expectedFields[i].value);\r\n        pm.expect(fields[i].textLabel, `Failed for \"${fields[i].dataElementName}\" - textLabel`).to.eql(expectedFields[i].textLabel);\r\n    }",
+          "source": "nondefault",
+          "itemName": "Paycheck07_NonDefault_Results"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "CalcGrossIncome": {
+            "value": "1,536",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income (excluding tips)"
+          }
+        },
+        {
+          "CalcFedTax": {
+            "value": "714",
+            "dataFormat": "Currency",
+            "textLabel": "Amount withheld by IRS"
+          }
+        },
+        {
+          "CalcFICA": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": "Social Security taxes"
+          }
+        },
+        {
+          "CalcMedicare": {
+            "value": "59",
+            "dataFormat": "Currency",
+            "textLabel": "Medicare taxes"
+          }
+        },
+        {
+          "CalcStateTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "State taxes"
+          }
+        },
+        {
+          "CalcDeductions": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Deductions from pay"
+          }
+        },
+        {
+          "CalcNetIncome": {
+            "value": "513",
+            "dataFormat": "Currency",
+            "textLabel": "Net income (excluding tips)"
+          }
+        },
+        {
+          "AmtOweFed": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Federal tax shortfall"
+          }
+        },
+        {
+          "TotTips": {
+            "value": "2,500",
+            "dataFormat": "Currency",
+            "textLabel": "Your total tips"
+          }
+        },
+        {
+          "JobRate": {
+            "value": "32",
+            "dataFormat": "Currency",
+            "textLabel": "Your hourly pay rate"
+          }
+        },
+        {
+          "JobHrs": {
+            "value": "48",
+            "dataFormat": "Integer",
+            "textLabel": "Number of hours worked per pay period"
+          }
+        },
+        {
+          "PayFreqText": {
+            "value": "Semi-monthly",
+            "dataFormat": "",
+            "textLabel": "Your pay period frequency"
+          }
+        },
+        {
+          "FilingStatusText": {
+            "value": "Married filing jointly",
+            "dataFormat": "",
+            "textLabel": "Your tax filing status"
+          }
+        },
+        {
+          "Exemptions": {
+            "value": "4",
+            "dataFormat": "None",
+            "textLabel": "Your total exemptions"
+          }
+        },
+        {
+          "AddFedTax": {
+            "value": "400",
+            "dataFormat": "Currency",
+            "textLabel": "Your additional income withheld by IRS"
+          }
+        },
+        {
+          "StateTaxRatePaycheck": {
+            "value": "3.40",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of gross income)"
+          }
+        },
+        {
+          "StateTaxRateFIT": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of Federal income)"
+          }
+        }
+      ]
+    }
+  ]
+}

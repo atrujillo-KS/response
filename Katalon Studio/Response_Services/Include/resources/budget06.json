@@ -1,0 +1,380 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_CurrentMonthlyHousingExpenses": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Housing"
+          }
+        },
+        {
+          "Global_CurrentUtilitiesExpenses": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "5000",
+            "textLabel": "Utilities"
+          }
+        },
+        {
+          "Global_CurrentMonthlyTransportationExpenses": {
+            "value": "800",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "800",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Transportation"
+          }
+        },
+        {
+          "Global_CurrentMonthlyFoodExpenses": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Food"
+          }
+        },
+        {
+          "Global_CurrentMonthlyHealthExpenses": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Health"
+          }
+        },
+        {
+          "Global_CurrentMonthlyDebtPayments": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Non-mortgage debt payments"
+          }
+        },
+        {
+          "Budget_CurrentChildCareExpenses": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Childcare"
+          }
+        },
+        {
+          "Global_CurrentMonthlyEducationExpenses": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Education"
+          }
+        },
+        {
+          "Budget_CurrentAlimony": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Child support and alimony"
+          }
+        },
+        {
+          "Global_CurrentMonthlyOtherExpenses": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other essential expenses"
+          }
+        },
+        {
+          "Global_AnnualGrossIncome": {
+            "value": "75,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "75000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Annual gross income"
+          }
+        },
+        {
+          "Global_EssentialExpensesMonthsToCover": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Months of essential expenses to cover"
+          }
+        },
+        {
+          "Global_CurrentEmergencyFundSavings": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Current emergency funds available"
+          }
+        },
+        {
+          "Global_MonthlyInvestment": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Amount you can save monthly"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Rate you earn on savings"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your tax rate"
+          }
+        }
+      ],
+      "title": "How much should I set aside for emergencies?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Budget06_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Budget06_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Budget06_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Budget06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Budget06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Budget06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Budget06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Global_EmergencyFundGoal": {
+            "value": "11,400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_MonthlyInvestment": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Amount you can save monthly"
+          }
+        },
+        {
+          "Global_MonthlyIncome": {
+            "value": "4,138",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TotalEssentialMonthlyExpenses": {
+            "value": "(3,800)",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AvailableMonthlyCash": {
+            "value": "338",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_MonthsToReachEmergencyFundGoal": {
+            "value": "75",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_CurrentMonthlyHousingExpenses": "2400"
+        },
+        {
+          "Global_CurrentUtilitiesExpenses": "350"
+        },
+        {
+          "Global_CurrentMonthlyTransportationExpenses": "1500"
+        },
+        {
+          "Global_CurrentMonthlyFoodExpenses": "600"
+        },
+        {
+          "Global_CurrentMonthlyHealthExpenses": "2300"
+        },
+        {
+          "Global_CurrentMonthlyDebtPayments": "1400"
+        },
+        {
+          "Budget_CurrentChildCareExpenses": "1800"
+        },
+        {
+          "Global_CurrentMonthlyEducationExpenses": "500"
+        },
+        {
+          "Budget_CurrentAlimony": "900"
+        },
+        {
+          "Global_CurrentMonthlyOtherExpenses": "600"
+        },
+        {
+          "Global_AnnualGrossIncome": "75000"
+        },
+        {
+          "Global_EssentialExpensesMonthsToCover": "3"
+        },
+        {
+          "Global_CurrentEmergencyFundSavings": "0"
+        },
+        {
+          "Global_MonthlyInvestment": "150"
+        },
+        {
+          "Global_SavingsInterestRate": "1.00"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "33.80"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Global_EmergencyFundGoal": {
+            "value": "37,050",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_MonthlyInvestment": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Amount you can save monthly"
+          }
+        },
+        {
+          "Global_MonthlyIncome": {
+            "value": "4,138",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TotalEssentialMonthlyExpenses": {
+            "value": "(12,350)",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AvailableMonthlyCash": {
+            "value": "(8,212)",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_MonthsToReachEmergencyFundGoal": {
+            "value": "232",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

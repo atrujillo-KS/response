@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Bond_RateOfReturnBeforeTaxes": {
+            "value": "2.38",
+            "dataFormat": "Percentage",
+            "textLabel": "Before taxes"
+          }
+        },
+        {
+          "Bond_RateOfReturnAfterTaxes": {
+            "value": "1.61",
+            "dataFormat": "Percentage",
+            "textLabel": "After taxes"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bondt01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bondt01_Default_Results"
+        }
+      ]
+    }
+  ]
+}

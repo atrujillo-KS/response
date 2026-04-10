@@ -1,0 +1,466 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "AnnualDoctorVisits": {
+            "value": "2",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Doctor visits per year"
+          }
+        },
+        {
+          "HDHPMDVisit": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Doctor visit co-pay"
+          }
+        },
+        {
+          "MonthlyPrescriptions": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Prescriptions filled per month"
+          }
+        },
+        {
+          "PrescriptionCopay": {
+            "value": "15",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Per prescription co-pay"
+          }
+        },
+        {
+          "otcDrugs": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "5000",
+            "textLabel": "Annual over-the-counter medication expenses"
+          }
+        },
+        {
+          "MedicalDeductible": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Annual medical deductible"
+          }
+        },
+        {
+          "DentalDeductible": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "2000",
+            "textLabel": "Annual dental deductible"
+          }
+        },
+        {
+          "DentalOop": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "15000",
+            "textLabel": "Out-of-pocket dental fillings and crown costs"
+          }
+        },
+        {
+          "BracesDown": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "New braces down payment"
+          }
+        },
+        {
+          "OrthoMonthly": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "500",
+            "textLabel": "Monthly orthodontia costs"
+          }
+        },
+        {
+          "OrthoPayments": {
+            "value": "36",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "36",
+            "minimumValue": "0",
+            "maximumValue": "72",
+            "textLabel": "# of monthly orthodontia payments"
+          }
+        },
+        {
+          "OrthoCovered": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Orthodontia covered by dental plan"
+          }
+        },
+        {
+          "ContactsOop": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "2000",
+            "textLabel": "Out-of-pocket contact lenses and supplies expenses"
+          }
+        },
+        {
+          "EyeSurgeryOop": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Out-of-pocket corrective eye surgery expenses"
+          }
+        },
+        {
+          "SunglassesOop": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "2000",
+            "textLabel": "Out-of-pocket prescription sun-glasses expense"
+          }
+        },
+        {
+          "EyeGlassesOop": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "2000",
+            "textLabel": "Out-of-pocket prescription eye-glasses expense"
+          }
+        },
+        {
+          "AnnualTherapy": {
+            "value": "52",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "52",
+            "minimumValue": "0",
+            "maximumValue": "365",
+            "textLabel": "Annual mental health professional visits"
+          }
+        },
+        {
+          "TherapyCopay": {
+            "value": "35",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "35",
+            "minimumValue": "0",
+            "maximumValue": "250",
+            "textLabel": "Mental health professional visit co-pay"
+          }
+        },
+        {
+          "AnnualChiropractor": {
+            "value": "52",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "52",
+            "minimumValue": "0",
+            "maximumValue": "365",
+            "textLabel": "Annual chiropractor visits"
+          }
+        },
+        {
+          "ChiropractorCopay": {
+            "value": "35",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "35",
+            "minimumValue": "0",
+            "maximumValue": "250",
+            "textLabel": "Chiropractor visit co-pay"
+          }
+        },
+        {
+          "AnnualAcupuncture": {
+            "value": "52",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "52",
+            "minimumValue": "0",
+            "maximumValue": "365",
+            "textLabel": "Acupuncture visits per year"
+          }
+        },
+        {
+          "AccupunctureCopay": {
+            "value": "35",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "35",
+            "minimumValue": "0",
+            "maximumValue": "250",
+            "textLabel": "Acupuncture visit co-pay"
+          }
+        }
+      ],
+      "title": "How much will I spend on HSA-eligible health care?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "HSA07_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA07_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA07_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "HSA07_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "HSA07_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "HSA07_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "HSA07_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "MedicalTotal": {
+            "value": "840",
+            "dataFormat": "Currency",
+            "textLabel": "Medical"
+          }
+        },
+        {
+          "DentalTotal": {
+            "value": "2,700",
+            "dataFormat": "Currency",
+            "textLabel": "Dental"
+          }
+        },
+        {
+          "VisionTotal": {
+            "value": "3,300",
+            "dataFormat": "Currency",
+            "textLabel": "Vision"
+          }
+        },
+        {
+          "OtherTotal": {
+            "value": "5,460",
+            "dataFormat": "Currency",
+            "textLabel": "Other"
+          }
+        },
+        {
+          "GrandTotal": {
+            "value": "12,300",
+            "dataFormat": "Currency",
+            "textLabel": "Total"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Based on your inputs you will spend $12,300 on health related expenses a year."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "AnnualDoctorVisits": "7"
+        },
+        {
+          "HDHPMDVisit": "45"
+        },
+        {
+          "MonthlyPrescriptions": "9"
+        },
+        {
+          "PrescriptionCopay": "32"
+        },
+        {
+          "otcDrugs": "1300"
+        },
+        {
+          "MedicalDeductible": "2600"
+        },
+        {
+          "DentalDeductible": "320"
+        },
+        {
+          "DentalOop": "2200"
+        },
+        {
+          "BracesDown": "3000"
+        },
+        {
+          "OrthoMonthly": "250"
+        },
+        {
+          "OrthoPayments": "20"
+        },
+        {
+          "OrthoCovered": "4100"
+        },
+        {
+          "ContactsOop": "720"
+        },
+        {
+          "EyeSurgeryOop": "3600"
+        },
+        {
+          "SunglassesOop": "820"
+        },
+        {
+          "EyeGlassesOop": "760"
+        },
+        {
+          "AnnualTherapy": "27"
+        },
+        {
+          "TherapyCopay": "64"
+        },
+        {
+          "AnnualChiropractor": "26"
+        },
+        {
+          "ChiropractorCopay": "70"
+        },
+        {
+          "AnnualAcupuncture": "29"
+        },
+        {
+          "AccupunctureCopay": "63"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "MedicalTotal": {
+            "value": "5,071",
+            "dataFormat": "Currency",
+            "textLabel": "Medical"
+          }
+        },
+        {
+          "DentalTotal": {
+            "value": "4,420",
+            "dataFormat": "Currency",
+            "textLabel": "Dental"
+          }
+        },
+        {
+          "VisionTotal": {
+            "value": "5,900",
+            "dataFormat": "Currency",
+            "textLabel": "Vision"
+          }
+        },
+        {
+          "OtherTotal": {
+            "value": "5,375",
+            "dataFormat": "Currency",
+            "textLabel": "Other"
+          }
+        },
+        {
+          "GrandTotal": {
+            "value": "20,766",
+            "dataFormat": "Currency",
+            "textLabel": "Total"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Based on your inputs you will spend $20,766 on health related expenses a year."
+        }
+      ]
+    }
+  ]
+}

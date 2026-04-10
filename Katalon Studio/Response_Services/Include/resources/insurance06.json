@@ -1,0 +1,674 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Insurance_DeathBenefit": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "10000000",
+            "textLabel": "Policy amount"
+          }
+        },
+        {
+          "Insurance_UpfrontFees": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Upfront fees"
+          }
+        },
+        {
+          "Insurance_PercentageOfPremiumsAppliedToFees": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Portion of premiums applied to fees"
+          }
+        },
+        {
+          "Insurance_MonthlyFees": {
+            "value": "5",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "200",
+            "textLabel": "Monthly fees"
+          }
+        },
+        {
+          "Global_LifeExpectancy": {
+            "value": "98",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "98",
+            "minimumValue": "5",
+            "maximumValue": "120",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_RecurringFeeType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_AnnualFeePercentageofPolicyAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Yearly insurance charge (percent of policy amount)"
+          }
+        },
+        {
+          "Insurance_AnnualFeePercentageofCashValue": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "5",
+            "textLabel": "Yearly insurance fee (percent of cash value)"
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumOneAmount": {
+            "value": "75",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "75",
+            "minimumValue": "1",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumOneYearsPaid": {
+            "value": "20",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "20",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumOneAmount": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Lump Sum Premium 1 Amount"
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumOneYearsPaid": {
+            "value": "7",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "7",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Lump Sum Premium 1 Year paid"
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumTwoAmount": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Monthly Premium 2 Amount"
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumTwoYearsPaid": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Monthly Premium 2 Years paid"
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumTwoAmount": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Lump Sum Premium 2 Amount"
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumTwoYearsPaid": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Lump Sum Premium 2 Year paid"
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumThreeAmount": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Monthly Premium 3 Amount"
+          }
+        },
+        {
+          "Insurance_MonthlyPremiumThreeYearsPaid": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Monthly Premium 3 Years paid"
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumThreeAmount": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Lump Sum Premium 3 Amount"
+          }
+        },
+        {
+          "Insurance_LumpSumPremiumThreeYearsPaid": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Lump Sum Premium 3 Year paid"
+          }
+        },
+        {
+          "Insurance_DeathBenefitPayoutOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_ExpectedInterestRate": {
+            "value": "4.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Average interest you'll earn"
+          }
+        },
+        {
+          "Insurance_YearsUntilCashInPolicy": {
+            "value": "25",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "25",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Years until you claim cash value"
+          }
+        },
+        {
+          "Insurance_SurrenderCharge": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Surrender charge"
+          }
+        },
+        {
+          "Insurance_TermLifeDeathBenefit": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "10000000",
+            "textLabel": "Policy amount"
+          }
+        },
+        {
+          "Insurance_TermLifePremium": {
+            "value": "45",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "45",
+            "minimumValue": "1",
+            "maximumValue": "4000",
+            "textLabel": "Current premium amount"
+          }
+        },
+        {
+          "Insurance_PremiumIncreasePerRenewal": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Premium increase/renewal"
+          }
+        },
+        {
+          "Insurance_TermLifePremiumPaymentsPerYear": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Premium payments per year"
+          }
+        },
+        {
+          "Insurance_TermLifeYearsToRemainCovered": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Years to remain covered"
+          }
+        },
+        {
+          "Insurance_PolicyTermInYears": {
+            "value": "10",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "1",
+            "maximumValue": "50",
+            "textLabel": "Policy term (years)"
+          }
+        },
+        {
+          "Global_CurrentAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "Insurance_YearsBeforeDeath": {
+            "value": "50",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Years until your death"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        }
+      ],
+      "title": "Which is better: term or universal Life?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Insurance06_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance06_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance06_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Insurance06_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Insurance06_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Insurance06_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Insurance06_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "ULEndRate": {
+            "value": "-1.12",
+            "dataFormat": "Percentage",
+            "textLabel": "Universal life"
+          }
+        },
+        {
+          "ULCashOutRate": {
+            "value": "0.15",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ULDeathRate": {
+            "value": "1.10",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermEndRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "TermCashOutRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermDeathRate": {
+            "value": "4.16",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvEndRate": {
+            "value": "-8.07",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "TInvCashOutRate": {
+            "value": "-1.96",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvDeathRate": {
+            "value": "3.66",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_CurrentAge": "32"
+        },
+        {
+          "Global_LifeExpectancy": "77"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "18.23"
+        },
+        {
+          "Insurance_ExpectedInterestRate": "5.12"
+        },
+        {
+          "Insurance_TermLifeDeathBenefit": "260000"
+        },
+        {
+          "Insurance_PolicyTermInYears": "10"
+        },
+        {
+          "Insurance_TermLifeYearsToRemainCovered": "16"
+        },
+        {
+          "Insurance_TermLifePremium": "390"
+        },
+        {
+          "Insurance_TermLifePremiumPaymentsPerYear": "6"
+        },
+        {
+          "Insurance_PremiumIncreasePerRenewal": "18"
+        },
+        {
+          "Insurance_MonthlyPremiumOneAmount": "250"
+        },
+        {
+          "Insurance_MonthlyPremiumTwoAmount": "510"
+        },
+        {
+          "Insurance_MonthlyPremiumThreeAmount": "290"
+        },
+        {
+          "Insurance_MonthlyPremiumOneYearsPaid": "11"
+        },
+        {
+          "Insurance_MonthlyPremiumTwoYearsPaid": "31"
+        },
+        {
+          "Insurance_MonthlyPremiumThreeYearsPaid": "26"
+        },
+        {
+          "Insurance_LumpSumPremiumOneAmount": "8000"
+        },
+        {
+          "Insurance_LumpSumPremiumTwoAmount": "28000"
+        },
+        {
+          "Insurance_LumpSumPremiumThreeAmount": "22000"
+        },
+        {
+          "Insurance_LumpSumPremiumOneYearsPaid": "6"
+        },
+        {
+          "Insurance_LumpSumPremiumTwoYearsPaid": "43"
+        },
+        {
+          "Insurance_LumpSumPremiumThreeYearsPaid": "23"
+        },
+        {
+          "Insurance_UpfrontFees": "210"
+        },
+        {
+          "Insurance_PercentageOfPremiumsAppliedToFees": "22"
+        },
+        {
+          "Insurance_RecurringFeeType": "1"
+        },
+        {
+          "Insurance_AnnualFeePercentageofCashValue": "0.14"
+        },
+        {
+          "Insurance_MonthlyFees": "0"
+        },
+        {
+          "Insurance_AnnualFeePercentageofPolicyAmount": "0"
+        },
+        {
+          "Insurance_DeathBenefit": "382000"
+        },
+        {
+          "Insurance_DeathBenefitPayoutOption": "1"
+        },
+        {
+          "Insurance_YearsUntilCashInPolicy": "13"
+        },
+        {
+          "Insurance_SurrenderCharge": "15.5"
+        },
+        {
+          "Insurance_YearsBeforeDeath": "45"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "ULEndRate": {
+            "value": "-7.82",
+            "dataFormat": "Percentage",
+            "textLabel": "Universal life"
+          }
+        },
+        {
+          "ULCashOutRate": {
+            "value": "-6.43",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ULDeathRate": {
+            "value": "3.69",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermEndRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "TermCashOutRate": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TermDeathRate": {
+            "value": "2.70",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvEndRate": {
+            "value": "-15.57",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "TInvCashOutRate": {
+            "value": "-11.79",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "TInvDeathRate": {
+            "value": "3.73",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

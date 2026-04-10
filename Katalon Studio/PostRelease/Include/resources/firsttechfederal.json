@@ -1,0 +1,114 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://calculators.firsttechfed.com/gs/lf-firsttech/goal/refinancemystudentloans.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Refinance My Student Loans"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_primaryGoal"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_primaryGoal",
+      "value": "label=Lower Payment"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "5-Year Interest-Only Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "10 - Year Interest-Only Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "15 - Year 50% Balloon Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_4']/div[2]/div[3]/button",
+      "value": "15 - Year 40% Balloon Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_5']/div[2]/div[3]/button",
+      "value": "15 - Year Fixed Rate Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_6']/div[2]/div[3]/button",
+      "value": "10 - Year Fixed Rate Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_7']/div[2]/div[3]/button",
+      "value": "7 - Year Fixed Rate Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_8']/div[2]/div[3]/button",
+      "value": "5-Year Fixed Rate Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_1_nextsteps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[2]/button",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "click": {
+      "id": "css=body > div.lf-body > div.lf-pos-rel > div.reset-aria-hidden.ng-scope > div.lf-action-container.ng-scope > div.lf-action-content > div.lf-action-apply-container.ng-scope > div > div.lf-action-apply-content > div > div.lf-action-apply-btn-container > button"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser"
+    }
+  },
+    {
+    "verifyURL": {
+      "value": "https://www.firsttechfed.com/"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//h2",
+      "value": "APPLY NOW"
+    }
+  }
+]

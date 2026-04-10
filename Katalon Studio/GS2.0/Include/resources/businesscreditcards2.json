@@ -1,0 +1,747 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Credit Cards",
+      "value": "Evaluate Business Credit Cards"      
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditCardNeeds__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92128"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_BusinessCreditHistory"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_BusinessCreditHistory",
+      "value": "label=Excellent"
+    }
+  }, 
+  {
+    "click": {
+      "id": "lf_CreditCardNeeds__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_InitialAccountBalance",
+      "value": "5000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MonthlyCreditCardSpending",
+      "value": "1500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_PayBalanceInFullEachMonth__false"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MonthlyCreditCardPayment",
+      "value": "1700"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[@id='lf_results_row_0']/h2",
+      "value": "Best Match"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "Business Travel Rewards Mastercard"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_0']/div",
+      "value": "$85"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//h3",
+      "value": "1. Apply Online"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div/div[3]/div/div[3]",
+      "value": "You've selected the following option:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[3]/div/div[4]/div/div/div",
+      "value": "Business Travel Rewards Mastercard"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.btn.btn-primary.lf-action-apply-btn.ng-binding",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[2]/div[3]/div[2]/div[1]/div[1]/div[3]/div/div[4]/div/div[3]/button",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
+      "value": "What you'll need to apply"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What You'll Need To Apply"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li",
+      "value": "Personal background information such as names used, educational background, previous addresses and criminal record (if any)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li[2]",
+      "value": "Resume"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li[3]",
+      "value": "A business plan that shows your projected financial statements, profit-and-loss margins, balance sheet, cash flow, management team and more"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li[4]",
+      "value": "Personal and business income tax returns from the past three years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li[5]",
+      "value": "Personal and business bank statements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/ul/li[6]",
+      "value": "Legal documents related to your business such as business licenses, articles of incorporation, third-party contracts, commercial leases and more."
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Refine location"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-4"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-5"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//th/div",
+      "value": "Best Match"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-best-match.ng-binding.ng-scope",
+      "value": "Best Match"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-next-col-header-label.ng-binding",
+      "value": "Business Travel Rewards Mastercard"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-1",
+      "value": "Business Premium VISA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-2",
+      "value": "Business Reward Points Mastercard"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-CardBasics-expand.lf-compare-row-label-parent",
+      "value": "Card Basics"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-ProductDescription",
+      "value": "Description"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ProductDescription",
+      "value": "Earn 2 miles for every $1 you spend on purchases and avoid foreign transaction fees when travelling internationally. Miles can be redeemed for a credit against most travel expenses"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr/td[2]/div",
+      "value": "0% Intro APR on balance transfers for 12 billing cycles and no annual fee."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr/td[3]/div",
+      "value": "Earn 2-5 points for every $1 you spend on purchases, depending on category. Get 80,000 bonus points after you spend $5,000 on purchases in the first 3 months."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[2]/th/span",
+      "value": "A Good Choice If"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[2]/td/div",
+      "value": "You are a frequent traveler seeking to earn free flights, hotel stays, and other travel perks."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[2]/td[2]/div",
+      "value": "You are seeking to pay down your balance faster."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[2]/td[3]/div",
+      "value": "You want to use points for rewards from over 500 leading brands in travel, gift cards, merchandise, or entertainment."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[3]/th/span",
+      "value": "Purchase APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[3]/td/div",
+      "value": "15.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[3]/td[2]/div",
+      "value": "0.00% for 12 months then 9.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[3]/td[3]/div",
+      "value": "13.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_CardBasics']/tbody/tr[4]/th/span",
+      "value": "Balance Transfer APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-BalanceTransferAPRDesc",
+      "value": "0.00% for 12 months then 15.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::div[2]",
+      "value": "0.00% for 12 months then 9.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::div[3]",
+      "value": "0.00% for 12 months then 13.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Purchase APR'])[1]/following::span[1]",
+      "value": "Balance Transfer APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::div[1]",
+      "value": "0.00% for 12 months then 15.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::div[2]",
+      "value": "0.00% for 12 months then 9.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::div[3]",
+      "value": "0.00% for 12 months then 13.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Balance Transfer APR'])[1]/following::span[1]",
+      "value": "Grace Period for Payment (Days)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Grace Period for Payment (Days)'])[1]/following::div[2]",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Grace Period for Payment (Days)'])[1]/following::div[3]",
+      "value": "25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Grace Period for Payment (Days)'])[1]/following::span[1]",
+      "value": "Minimum Payment Calculation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Minimum Payment Calculation'])[1]/following::div[1]",
+      "value": "Interest plus 1% of the balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest plus 1% of the balance'])[1]/following::div[1]",
+      "value": "Interest plus 1% of the balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest plus 1% of the balance'])[2]/following::div[1]",
+      "value": "Interest plus 1% of the balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rewards Redemption'])[1]/following::div[1]",
+      "value": "Redeem with participating airlines."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Redeem with participating airlines.'])[1]/following::div[1]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[1]/following::div[1]",
+      "value": "Visit our rewards center at www.rewardcenter.com to redeem your points."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Visit our rewards center at www.rewardcenter.com to redeem your points.'])[1]/following::button[1]",
+      "value": "Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$25'])[6]/following::button[1]",
+      "value": "Other Features"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Total Cost"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-timeframe-label.ng-binding",
+      "value": "Timeframe"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_timeframe_select",
+      "value": "3 Months 6 Months 1 Year 2 Years 3 Years 4 Years 5 Years"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_timeframe_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_timeframe_select",
+      "value": "label=3 Years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-best-match.lf-compare-best-match-graph.ng-binding",
+      "value": "Best Match"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$820']/parent::*",
+      "value": "$820$820"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$276']/parent::*",
+      "value": "$276$276"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$682']/parent::*",
+      "value": "$682$682"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-CumulativeCosts_CreditCardAnnualFee_3.Years.lf-compare-row-label-single",
+      "value": "Annual Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-",
+      "value": "$255"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CumulativeCosts_CreditCardAnnualFee_3.Years-1",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/th/span",
+      "value": "Balance Transfer Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td/div",
+      "value": "$200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[2]/div",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[3]/div",
+      "value": "$200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/th/span",
+      "value": "Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td/div",
+      "value": "$365"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[2]/div",
+      "value": "$176"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[3]/div",
+      "value": "$302"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Rewards Programs"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-rewards-programs.ng-binding",
+      "value": "We've made certain assumptions about the cash equivalent value of of miles- and points-based rewards in order to provide an 'apples to apples' comparison of rewards you might earn. Update these default values as needed to personalize the comparison to rewards you believe you'll actually use."
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MilesToCashValueOfReward",
+      "value": "1000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MilesToRedeem",
+      "value": "15000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_PointToCashValueOfReward",
+      "value": "1200"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_PointsToRedeem",
+      "value": "10000"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.btn.btn-primary.lf-inline-calculate-btn.ng-binding"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$9,310']/parent::*",
+      "value": "$9,310$9,310"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='This card does']/parent::*",
+      "value": "This card doesnot have arewards program."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$19,440']/parent::*",
+      "value": "$19,440$19,440"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CumulativeCashBack_3.Years.lf-compare-row-label-single",
+      "value": "Cumulative Reward"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CumulativeCashBack_3.Years-0",
+      "value": "133,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CumulativeCashBack_3.Years-1",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CumulativeCashBack_3.Years-2",
+      "value": "162,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CashBack_3.Years.lf-compare-row-label-single",
+      "value": "Cumulative Cash Equivalent Value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CashBack_3.Years-0",
+      "value": "$9,310"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CashBack_3.Years-1",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-CashBack_3.Years-2",
+      "value": "$19,440"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  }
+]

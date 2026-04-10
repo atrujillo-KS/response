@@ -1,0 +1,1113 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Finance Working Capital",
+      "value": "Finance Working Capital"      
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92010"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_YearsInBusiness",
+      "value": "15"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Employees",
+      "value": "200"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AnnualRevenue",
+      "value": "1000000"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-link-button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Total Annual Revenue"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::div[1]",
+      "value": "We can help you determine the total income generated from your business over the last year."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'InventoryUnitsSold'\"]/div/label",
+      "value": "Total Units of Product Sold"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_InventoryUnitsSold",
+      "value": "10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_InventoryUnitsSold_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_InventoryUnitsSold_sliderhandle@aria-valuemax",
+      "value": "100000"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "lf_InventoryUnitsSold_sliderhandle@aria-valuenow",
+      "value": "10000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'AverageSalesPriceProducts'\"]/div/label",
+      "value": "Average Sales Price of Products"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AverageSalesPriceProducts",
+      "value": "$25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AverageSalesPriceProducts_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'ServiceHoursSold'\"]/div/label",
+      "value": "Total Hours of Services Sold"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ServiceHoursSold",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ServiceHoursSold_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'AverageSalesPriceServices'\"]/div/label",
+      "value": "Average Sales Price of Services"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AverageSalesPriceServices",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AverageSalesPriceServices_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'BusinessInvestmentIncome'\"]/div/label",
+      "value": "Income from Company-owned Investments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_BusinessInvestmentIncome",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BusinessInvestmentIncome_slider",
+      "value": "0"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_InventoryUnitsSold",
+      "value": "15000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AverageSalesPriceProducts",
+      "value": "$300"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ServiceHoursSold",
+      "value": "25000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AverageSalesPriceServices",
+      "value": "100"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_BusinessInvestmentIncome",
+      "value": "150000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_back_to_worksheet",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "Your total annual revenue is $7,150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$7,150,000'])[1]/following::label[1]",
+      "value": "Total Annual Revenue"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TotalAnnualRevenue",
+      "value": "$7,150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotalAnnualRevenue_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Annual Revenue'])[2]/following::button[1]",
+      "value": "Use this Amount"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Annual Revenue'])[2]/following::button[1]"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AnnualRevenue",
+      "value": "$7,150,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AnnualRevenue",
+      "value": "1000000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_BusinessCreditNeeded",
+      "value": "$150000"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_BusinessCreditHistory"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_BusinessCreditHistory",
+      "value": "label=Excellent"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Poor'])[2]/following::span[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_SBAGuaranteeFeePmtPreference__1"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Pay Upfront in Cash'])[2]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "SBA 7(a) Term Loan - 5 Year"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "Product"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[@id='lf_results_row_major_0']/div",
+      "value": "$2,848"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "Balloon Business Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_1']/div",
+      "value": "$3,094"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "SBA Express Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_2']/div",
+      "value": "$3,594"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "Business Equity Term Loan - 3 Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_3']/div",
+      "value": "$4,700"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply Now'])[1]/following::div[5]",
+      "value": "1. Apply Online"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start a Loan Application'])[1]/following::div[1]",
+      "value": "You've selected the following loan option:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('You', \"'\", 've selected the following loan option:')])[1]/following::div[4]",
+      "value": "${Product}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.btn.btn-primary.lf-action-apply-btn.ng-binding",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_apply_now_8277390589",
+      "value": "Apply Now"
+    }
+  },
+  
+  {
+    "verifyText": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
+      "value": "What you'll need to apply"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What You'll Need To Apply"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/p",
+      "value": "During the application process, you may be asked to provide the following information."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li",
+      "value": "Personal background information such as names used, educational background, previous addresses and criminal record (if any)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[2]",
+      "value": "Resume"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[3]",
+      "value": "A business plan that shows your projected financial statements, profit-and-loss margins, balance sheet, cash flow, management team and more"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[4]",
+      "value": "Personal and business income tax returns from the past three years"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[5]",
+      "value": "Personal and business bank statements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[6]",
+      "value": "You may be required to offer collateral to secure the loan. This will require a document that describes the value of personal or business property that you're offering as security for the loan."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/ul/li[7]",
+      "value": "Legal documents related to your business such as business licenses, articles of incorporation, third-party contracts, commercial leases and more."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_modal_close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-expertise-refine-link"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "94109"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Francisco, CA"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "click": {
+      "id": "//li/button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_emailBankerName",
+      "value": "Finance Working Capital"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_emailBankerEmail",
+      "value": "financeworkingcapital@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Message'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_emailed_banker_ok_id",
+      "value": "Your email has been sent"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@type='button']"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_review_sort"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_review_sort",
+      "value": "label=Fastest Payoff"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div[2]/div/div/button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td/div",
+      "value": "Business Equity Term Loan - 3 Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[2]/div",
+      "value": "SBA 7(a) Term Loan - 5 Year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[3]/div",
+      "value": "SBA Express Line of Credit"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$4,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$2,848"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$3,594"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[36]/td/div",
+      "value": "$4,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[2]/div",
+      "value": "$2,848"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[3]/div",
+      "value": "$2,697"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$170,916']/parent::*",
+      "value": "$170,916$170,916"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$171,224']/parent::*",
+      "value": "$171,224$171,224"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$168,659']/parent::*",
+      "value": "$168,659$168,659"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/th/span",
+      "value": "Principal"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/th/span",
+      "value": "Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td/div",
+      "value": "$19,216"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[2]/div",
+      "value": "$20,874"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[2]/td[3]/div",
+      "value": "$18,159"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/th/span",
+      "value": "Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td/div",
+      "value": "$1,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[2]/div",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[3]/td[3]/div",
+      "value": "$500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/th/span",
+      "value": "Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td/div",
+      "value": "$170,916"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[2]/div",
+      "value": "$171,224"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[3]/div",
+      "value": "$168,659"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Payoff Schedules"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$146,300"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$147,808"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$147,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[35]/td/div",
+      "value": "$4,669"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[59]/td[2]/div",
+      "value": "$2,835"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[59]/td[3]/div",
+      "value": "$2,687"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[2]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[3]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Details Side by Side"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/th/span",
+      "value": "Base Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/td/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/td[2]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/td[3]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/th/span",
+      "value": "Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/td/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/td[2]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/td[3]/div",
+      "value": "$150,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/th/span",
+      "value": "Interest Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td/div",
+      "value": "8.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td[2]/div",
+      "value": "5.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td[3]/div",
+      "value": "4.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/th/span",
+      "value": "APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td/div",
+      "value": "8.77%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td[2]/div",
+      "value": "5.35%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td[3]/div",
+      "value": "4.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/th/span",
+      "value": "Initial Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/td/div",
+      "value": "$4,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/td[2]/div",
+      "value": "$2,848"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/td[3]/div",
+      "value": "$3,594"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[6]/following::button[1]",
+      "value": "Loan Term (Months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loan Term (Months)'])[1]/following::div[2]",
+      "value": "36"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loan Term (Months)'])[1]/following::div[4]",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Loan Term (Months)'])[1]/following::div[6]",
+      "value": "60"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[8]/following::button[1]",
+      "value": "Interest Type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interest Type'])[1]/following::div[2]",
+      "value": "Fixed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fixed'])[3]/following::div[1]",
+      "value": "Fixed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fixed'])[5]/following::div[1]",
+      "value": "Fixed"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-LoanClosingCosts-expand.lf-compare-row-label-parent",
+      "value": "Estimated Upfront Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-table-row-parent.lf-row-LoanClosingCosts-0",
+      "value": "$1,700"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-table-row-parent.lf-row-LoanClosingCosts-1",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-table-row-parent.lf-row-LoanClosingCosts-2",
+      "value": "$500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[3]/th/span",
+      "value": "Origination Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[3]/td/div",
+      "value": "$1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[3]/td[2]/div",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[3]/td[3]/div",
+      "value": "$500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[7]/th/span",
+      "value": "Appraisal Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[7]/td/div",
+      "value": "$200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[7]/td[2]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanClosingCosts']/tbody/tr[7]/td[3]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[23]/following::button[1]",
+      "value": "Other Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='None'])[6]/following::button[1]",
+      "value": "Minimum Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$25'])[1]/following::button[1]",
+      "value": "Loan Features"
+    }
+  }
+]

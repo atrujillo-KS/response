@@ -1,0 +1,201 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://tools.firstflorida.org/gs/lf-firstflorida/goal/financeavehicle.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Buy or Refinance a Vehicle"
+    }
+  },
+    {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "VEHICLE INFORMATION (Step 1 of 2)"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92121"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "84-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "72-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "60-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "48-Month Auto Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_4']/div[2]/div[3]/button",
+      "value": "36-Month Auto Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id='lf_results_row_go_0']/button"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[2]/button"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Toggle navigation'])[1]/preceding::div[1]",
+      "value": "First Florida Credit Union"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://tools.firstflorida.org/gs/lf-firstflorida/goal/consolidatemydebt.html"
+    }
+  },
+      {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Consolidate My Debt"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92121"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "Diamond Rewards VISA"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "5 Year Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "4 Year Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "3 Year Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_4']/div[2]/div[3]/button",
+      "value": "2 Year Personal Loan"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_results_row_5']/div[2]/div[3]/button",
+      "value": "1 Year Personal Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id='lf_results_row_go_0']/button"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[2]/button"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Toggle navigation'])[1]/preceding::div[1]",
+      "value": "First Florida Credit Union"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://tools.firstflorida.org/gs/lf-firstflorida/goal/financeavehicle.html"
+    }
+  },
+      {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "VEHICLE INFORMATION (Step 1 of 2)"
+    }
+  }
+]

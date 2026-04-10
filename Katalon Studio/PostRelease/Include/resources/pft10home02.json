@@ -1,0 +1,376 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/tools/qatest/home02/tool.fcs?newuser"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/tools/qatest/home02/tool.fcs"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/following::span[2]",
+      "value": "Principal And Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Principal And Interest'])[1]/following::span[1]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_impounds",
+      "value": "Taxes and insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxes and insurance'])[1]/following::span[1]",
+      "value": "$354"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_pmi",
+      "value": "Mortgage insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mortgage insurance'])[1]/following::span[1]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[1]/following::span[1]",
+      "value": "Total Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Payment'])[1]/following::span[1]",
+      "value": "$1,428"
+    }
+  },
+  {
+    "click": {
+      "id": "glossaryanchor_impounds"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryLabel",
+      "value": "Property Taxes and Homeowner's Insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryDescription",
+      "value": "A typical monthly mortgage payment consists of amounts for loan principal, interest, property taxes, and homeowner's insurance."
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "click": {
+      "id": "glossaryanchor_pmi"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryLabel",
+      "value": "Private mortgage insurance (PMI)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryDescription",
+      "value": "An insurance policy that protects lenders against loss if a borrower defaults. Typically required if the loan-to-value (LTV) ratio of the home exceeds 80%."
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_2"
+    }
+  },
+  {
+    "click": {
+      "id": "tables"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cumulative interest'])[1]/following::span[1]",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cumulative interest'])[1]/following::span[2]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,074'])[1]/following::span[1]",
+      "value": "$199,760"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$240'])[1]/following::span[1]",
+      "value": "$833"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$833'])[1]/following::span[1]",
+      "value": "$833"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$186,507'])[1]/following::span[1]",
+      "value": "360"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$186,507'])[1]/following::span[2]",
+      "value": "$1,074"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,074'])[360]/following::span[1]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$0'])[1]/following::span[1]",
+      "value": "$1,069"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,069'])[2]/following::span[1]",
+      "value": "$4"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$4'])[1]/following::span[1]",
+      "value": "$186,512"
+    }
+  },
+  {
+    "click": {
+      "id": "help"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/following::div[5]",
+      "value": "This tool calculates your monthly mortgage payment for a given purchase price, down payment, interest rate, and loan term. \n\n\n\nIf the loan amount is more than 80% of the home's purchase price, the calculator estimates a monthly amount for private mortgage insurance (PMI). Mortgage lenders generally require that you obtain mortgage insurance if your down payment is less than 20% of the home purchase price."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='cs@leadfusion.com'])[1]/following::span[4]",
+      "value": "If the loan amount is more than 80% of the home's purchase price, the calculator estimates a monthly amount for private mortgage insurance (PMI). Mortgage lenders generally require that you obtain mortgage insurance if your down payment is less than 20% of the home purchase price."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_downpayment",
+      "value": "down payment"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_LoanAmount",
+      "value": "200000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_HomeAppraisedValue",
+      "value": "350000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_LoanTermInYears",
+      "value": "15"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_InterestRate",
+      "value": "4.59"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_YearlyPropertyTax",
+      "value": "4000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Home_YearlyHomeownersInsurance",
+      "value": "1200"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Principal And Interest'])[1]/following::span[1]",
+      "value": "$1,539"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxes and insurance'])[1]/following::span[1]",
+      "value": "$433"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mortgage insurance'])[1]/following::span[1]",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Payment'])[1]/following::span[1]",
+      "value": "$1,973"
+    }
+  },
+  {
+    "click": {
+      "id": "tables"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/th/span",
+      "value": "180"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/td[2]/span",
+      "value": "$1,539"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/td[4]/span",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/td[6]/span",
+      "value": "$1,533"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/td[8]/span",
+      "value": "$6"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData1180']/td[10]/span",
+      "value": "$77,056"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_appraisalvalue",
+      "value": "Appraised value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_term",
+      "value": "Term (years)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_interestrate",
+      "value": "Interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_propertytax",
+      "value": "Yearly property tax"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_homeownersinsurance",
+      "value": "Yearly property insurance"
+    }
+  },
+  {
+    "setText": {
+      "id": "xpath=/html/body/table/tbody/tr/td/form/table[2]/tbody/tr/td[3]/div[2]/table[2]/tbody/tr[2]/td/div/table/tbody/tr[1]/td[2]/span/input",
+      "value": "PFT1.0Home02@bulk1.ettes2.net"
+    }
+  },
+  {
+    "click": {
+      "id": "nextPage"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*[@id=\"messageTable\"]/tbody/tr/td/span/span",
+      "value": "Thank You. Your report will be sent shortly."
+    }
+  }
+]

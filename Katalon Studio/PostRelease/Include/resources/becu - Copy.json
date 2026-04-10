@@ -1,0 +1,84 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://www.becu.org/guided-selling-tools/vehicle-loan-comparison"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Financial Guidance: Vehicle Loan Comparison | BECU",
+      "value": "Financial Guidance: Vehicle Loan Comparison | BECU"
+    }
+  },
+  {
+	  "selectFrame": { 
+	    "id": "index=0"
+	 }
+  },
+	  
+  {
+    "verifyText": {
+      "id": "xpath=/html/body/div[2]/div[2]/div/div[2]/h1",
+      "value": "Buy or Refinance a Vehicle"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_continue_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//h2",
+      "value": "About You (Step 2 of 2)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_results_row_go_0_nextsteps",
+      "value": "Next Step"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "Apply Now"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[2]/button"
+    }
+  },
+  {
+    "selectWindow": {
+      "id": "win_ser_1"
+    }
+  },
+  {
+    "close": {
+      "id": "win_ser_1"
+    }
+  }
+]

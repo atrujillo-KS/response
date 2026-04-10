@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "id": "CustomerFirst_EndToEnd",
+      "description": "CustomerFirst FEM end-to-end flow converted from Postman",
+
+      "globals": {
+        "BASEURL": "https://qa.awsc.leadfusion.com",
+        "ZIPCODE": "90210",
+        "EMAILADDRESS": "lffem2@gmail.com"
+      },
+
+      "steps": [
+        {
+          "name": "STEP_1_SAVE_ZIPCODE",
+          "method": "POST",
+          "endpoint": "/gs-api-v1/newhomebuyer/fem/save",
+          "expect": {
+            "status": 200
+          }
+        },
+
+        {
+          "name": "STEP_2_GET_USERCFID",
+          "method": "POST",
+          "endpoint": "/gs-api-v1/customerfirst/fem/usercfid",
+          "extract": {
+            "USERCFID": "$.data.cfid"
+          },
+          "expect": {
+            "status": 200
+          }
+        },
+
+        {
+          "name": "STEP_3_SHARE",
+          "method": "POST",
+          "endpoint": "/gs-api-v1/newhomebuyer/fem/share",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          "body": "cfid={{USERCFID}}&templateName=NHB-Save-For-Later&templateVersion=0&dialogName=newhomebuyer&siteId=fem&shareWithFriend=false&emailAddress={{EMAILADDRESS}}",
+          "extract": {
+            "EMAILID": "$.data.emailid"
+          },
+          "expect": {
+            "status": 200
+          }
+        },
+
+        {
+          "name": "STEP_4_GET_EMAIL_BY_CFID",
+          "method": "GET",
+          "endpoint": "/gs-api-v1/customerfirst/fem/emailaddressbycfid",
+          "query": {
+            "cfid": "{{USERCFID}}"
+          },
+          "expect": {
+            "status": 200,
+            "equals": {
+              "$.data.emailaddress": "{{EMAILADDRESS}}"
+            }
+          }
+        },
+
+        {
+          "name": "STEP_5_GET_CFID_BY_EMAIL",
+          "method": "GET",
+          "endpoint": "/gs-api-v1/customerfirst/fem/cfidbyemailaddress",
+          "query": {
+            "emailaddress": "{{EMAILADDRESS}}"
+          },
+          "expect": {
+            "status": 200,
+            "equals": {
+              "$.data.cfid": "{{USERCFID}}"
+            }
+          }
+        },
+
+        {
+          "name": "STEP_6_GET_EMAILID_BY_EMAIL",
+          "method": "GET",
+          "endpoint": "/gs-api-v1/customerfirst/fem/emailidbyemailaddress",
+          "query": {
+            "emailaddress": "{{EMAILADDRESS}}"
+          },
+          "expect": {
+            "status": 200,
+            "equals": {
+              "$.data.emailid": "{{EMAILID}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

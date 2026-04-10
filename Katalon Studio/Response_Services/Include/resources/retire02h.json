@@ -1,0 +1,3102 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "30,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "30000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "2",
+            "maximumValue": "120",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "67",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Monthly pension payment"
+          }
+        },
+        {
+          "SpsPenAmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Years you will receive payments"
+          }
+        },
+        {
+          "SpsPenYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "InflationRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Inflation on your expenses"
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Yearly rate of growth in income"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "98",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "98",
+            "minimumValue": "5",
+            "maximumValue": "100",
+            "textLabel": "Life expectancy"
+          }
+        },
+        {
+          "DeathAmt": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "20000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Funds desired at death"
+          }
+        },
+        {
+          "TaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate before retirement"
+          }
+        },
+        {
+          "RetireTaxRate": {
+            "value": "15.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate after retirement"
+          }
+        },
+        {
+          "RetExpYrs1": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Initial living expenses"
+          }
+        },
+        {
+          "RetExpAmt1": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3000",
+            "minimumValue": "1",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetExpYrs2": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Intermediate living expenses"
+          }
+        },
+        {
+          "RetExpAmt2": {
+            "value": "3,400",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3400",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Remainder": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "java.lang.Double",
+            "textLabel": "Remainder of retirement"
+          }
+        },
+        {
+          "RetExpAmt3": {
+            "value": "2,400",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2400",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt1": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Investment #1"
+          }
+        },
+        {
+          "InvRate1": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef1": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt2": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "20000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Investment #2"
+          }
+        },
+        {
+          "InvRate2": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef2": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt1": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Account #1"
+          }
+        },
+        {
+          "SavRate1": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep1": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef1": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt2": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Account #2"
+          }
+        },
+        {
+          "SavRate2": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep2": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef2": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "M401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "MRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "KeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "IRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "RothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Other"
+          }
+        },
+        {
+          "OtherDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "Sps401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "SpsRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SpsSepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SpsSimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "SpsKeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "SpsIRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "SpsRothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "What will my income be after I retire?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Retire02h_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Retire02h_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Retire02h_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Retire02h_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Retire02h_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Retire02h_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Retire02h_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "30,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "2,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "67",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Monthly pension payment"
+          }
+        },
+        {
+          "SpsPenAmt": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Years you will receive payments"
+          }
+        },
+        {
+          "SpsPenYrs": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "InflationRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Inflation on your expenses"
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Yearly rate of growth in income"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "98",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Life expectancy"
+          }
+        },
+        {
+          "DeathAmt": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Funds desired at death"
+          }
+        },
+        {
+          "TaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Your state + federal tax rate before retirement"
+          }
+        },
+        {
+          "RetireTaxRate": {
+            "value": "15.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": "Your state + federal tax rate after retirement"
+          }
+        },
+        {
+          "RetExpYrs1": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Initial living expenses"
+          }
+        },
+        {
+          "RetExpAmt1": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetExpYrs2": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Intermediate living expenses"
+          }
+        },
+        {
+          "RetExpAmt2": {
+            "value": "3,400",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Remainder": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "java.lang.Double",
+            "textLabel": "Remainder of retirement"
+          }
+        },
+        {
+          "RetExpAmt3": {
+            "value": "2,400",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt1": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Investment #1"
+          }
+        },
+        {
+          "InvRate1": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef1": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt2": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Investment #2"
+          }
+        },
+        {
+          "InvRate2": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef2": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt1": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Account #1"
+          }
+        },
+        {
+          "SavRate1": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep1": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef1": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt2": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Account #2"
+          }
+        },
+        {
+          "SavRate2": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep2": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef2": {
+            "value": "3",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "M401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "MRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "KeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "IRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "RothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Other"
+          }
+        },
+        {
+          "OtherDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "Sps401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "SpsRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SpsSepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SpsSimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "SpsKeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "SpsIRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "SpsRothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "CurrAge": "28"
+        },
+        {
+          "Income": "68000"
+        },
+        {
+          "RetireAge": "60"
+        },
+        {
+          "RetireWage": "3000"
+        },
+        {
+          "WageYrs": "10"
+        },
+        {
+          "SpsAge": "48"
+        },
+        {
+          "SpsInc": "121000"
+        },
+        {
+          "SpsRetireAge": "58"
+        },
+        {
+          "SpsRetireWage": "1000"
+        },
+        {
+          "SpsWageYrs": "5"
+        },
+        {
+          "DeathAge": "90"
+        },
+        {
+          "RetExpAmt1": "7000"
+        },
+        {
+          "RetExpYrs1": "12"
+        },
+        {
+          "RetExpAmt2": "7000"
+        },
+        {
+          "RetExpYrs2": "11"
+        },
+        {
+          "RetExpAmt3": "5000"
+        },
+        {
+          "TaxRate": "29"
+        },
+        {
+          "RetireTaxRate": "17"
+        },
+        {
+          "InflationRate": "1.8"
+        },
+        {
+          "AnnIncGrow": "6"
+        },
+        {
+          "SSAge": "63"
+        },
+        {
+          "SSType": "0"
+        },
+        {
+          "SSPmt": "900"
+        },
+        {
+          "SpsSSAge": "60"
+        },
+        {
+          "SpsSSPmt": "600"
+        },
+        {
+          "PenAmt": "500"
+        },
+        {
+          "PenYrs": "6"
+        },
+        {
+          "PenAdjOpt": "3"
+        },
+        {
+          "SpsPenAmt": "700"
+        },
+        {
+          "SpsPenYrs": "6"
+        },
+        {
+          "SpsPenAdjOpt": "2"
+        },
+        {
+          "M401kBal": "65000"
+        },
+        {
+          "M401kRate": "3"
+        },
+        {
+          "M401kDep": "1100"
+        },
+        {
+          "M401kEmp": "1000"
+        },
+        {
+          "SavAmt1": "42000"
+        },
+        {
+          "SavRate1": "6"
+        },
+        {
+          "SavDep1": "400"
+        },
+        {
+          "SavBef1": "1"
+        },
+        {
+          "SavAmt2": "25000"
+        },
+        {
+          "SavRate2": "3"
+        },
+        {
+          "SavDep2": "100"
+        },
+        {
+          "SavBef2": "2"
+        },
+        {
+          "InvAmt1": "14000"
+        },
+        {
+          "InvRate1": "8"
+        },
+        {
+          "InvBef1": "4"
+        },
+        {
+          "InvAmt2": "24000"
+        },
+        {
+          "InvRate2": "5"
+        },
+        {
+          "InvBef2": "0"
+        },
+        {
+          "AcctOwner2": "2"
+        },
+        {
+          "DetailOpt": "15"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Global_IncludeSpouse": {
+            "value": "false",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Include spouse"
+          }
+        },
+        {
+          "CurrAge": {
+            "value": "28",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "SpsAge": {
+            "value": "48",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Income": {
+            "value": "68,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Yearly income"
+          }
+        },
+        {
+          "SpsInc": {
+            "value": "121,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireAge": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Age at retirement"
+          }
+        },
+        {
+          "SpsRetireAge": {
+            "value": "58",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetireWage": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Monthly wages after retirement"
+          }
+        },
+        {
+          "SpsRetireWage": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "WageYrs": {
+            "value": "10",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "For how many years"
+          }
+        },
+        {
+          "SpsWageYrs": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSAge": {
+            "value": "63",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Age you will claim Social Security benefits"
+          }
+        },
+        {
+          "SpsSSAge": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "SSPmt": {
+            "value": "900",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSSPmt": {
+            "value": "600",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAmt": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": "Monthly pension payment"
+          }
+        },
+        {
+          "SpsPenAmt": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenYrs": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": "Years you will receive payments"
+          }
+        },
+        {
+          "SpsPenYrs": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt": {
+            "value": "3",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt": {
+            "value": "2",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option1": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option3": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "PenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsPenAdjOpt.Option4": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "InflationRate": {
+            "value": "1.80",
+            "dataFormat": "Percentage",
+            "textLabel": "Inflation on your expenses"
+          }
+        },
+        {
+          "AnnIncGrow": {
+            "value": "6.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Yearly rate of growth in income"
+          }
+        },
+        {
+          "DeathAge": {
+            "value": "90",
+            "dataFormat": "None",
+            "textLabel": "Life expectancy"
+          }
+        },
+        {
+          "DeathAmt": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "textLabel": "Funds desired at death"
+          }
+        },
+        {
+          "TaxRate": {
+            "value": "29.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Your state + federal tax rate before retirement"
+          }
+        },
+        {
+          "RetireTaxRate": {
+            "value": "17.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Your state + federal tax rate after retirement"
+          }
+        },
+        {
+          "RetExpYrs1": {
+            "value": "12",
+            "dataFormat": "None",
+            "textLabel": "Initial living expenses"
+          }
+        },
+        {
+          "RetExpAmt1": {
+            "value": "7,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "RetExpYrs2": {
+            "value": "11",
+            "dataFormat": "None",
+            "textLabel": "Intermediate living expenses"
+          }
+        },
+        {
+          "RetExpAmt2": {
+            "value": "7,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Remainder": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "Remainder of retirement"
+          }
+        },
+        {
+          "RetExpAmt3": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt1": {
+            "value": "14,000",
+            "dataFormat": "Currency",
+            "textLabel": "Investment #1"
+          }
+        },
+        {
+          "InvRate1": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef1": {
+            "value": "4",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvAmt2": {
+            "value": "24,000",
+            "dataFormat": "Currency",
+            "textLabel": "Investment #2"
+          }
+        },
+        {
+          "InvRate2": {
+            "value": "5.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "InvBef2": {
+            "value": "0",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt1": {
+            "value": "42,000",
+            "dataFormat": "Currency",
+            "textLabel": "Account #1"
+          }
+        },
+        {
+          "SavRate1": {
+            "value": "6.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep1": {
+            "value": "400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef1": {
+            "value": "1",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavAmt2": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "textLabel": "Account #2"
+          }
+        },
+        {
+          "SavRate2": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavDep2": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SavBef2": {
+            "value": "2",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kBal": {
+            "value": "65,000",
+            "dataFormat": "Currency",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "M401kDep": {
+            "value": "1,100",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kEmp": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "M401kRate": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "MRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "KeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "KeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "IRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "IRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "RothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "RothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Other"
+          }
+        },
+        {
+          "OtherDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "OtherRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "401(k)"
+          }
+        },
+        {
+          "Sps401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Sps401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth 401(k)"
+          }
+        },
+        {
+          "SpsRoth401kDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRoth401kRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SEP"
+          }
+        },
+        {
+          "SpsSepDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSepRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "SIMPLE"
+          }
+        },
+        {
+          "SpsSimpleDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsSimpleRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Keogh"
+          }
+        },
+        {
+          "SpsKeoghDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghEmp": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsKeoghRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRABal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Traditional IRA*"
+          }
+        },
+        {
+          "SpsIRADep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsIRARate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothBal": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Roth IRA*"
+          }
+        },
+        {
+          "SpsRothDep": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "SpsRothRate": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

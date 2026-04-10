@@ -1,0 +1,734 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Appraised value"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_CurrentLoanAmount": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "100000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_CurrentLoanPayment": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ExistingPMIPayment": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ExtraPaymentsLoanType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ExtraPaymentType": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Extra payment type"
+          }
+        },
+        {
+          "Home_ExtraPaymentStartYear": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "39",
+            "textLabel": "Extra payment start - year"
+          }
+        },
+        {
+          "Home_ExtraPaymentStartMonth": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Extra payment start - month"
+          }
+        },
+        {
+          "Home_ExtraPaymentFrequency": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Payment frequency"
+          }
+        },
+        {
+          "Home_ExtraPaymentsStartYear": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "1",
+            "maximumValue": "39",
+            "textLabel": "Extra payments start - year"
+          }
+        },
+        {
+          "Home_ExtraPaymentsStartMonth": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Extra payments start - month"
+          }
+        },
+        {
+          "Home_ExtraPaymentsEnd": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Extra payments end"
+          }
+        },
+        {
+          "Home_ExtraPaymentsEndYear": {
+            "value": "10",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Extra payments end - year"
+          }
+        },
+        {
+          "Home_ExtraPaymentsEndMonth": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Extra payments end - month"
+          }
+        },
+        {
+          "Home_AdditionalPayment": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Additional payment"
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00101",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00101",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00067",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00067",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00033",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00033",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00021",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00021",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00121",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00121",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.00096",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00096",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00065",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00065",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00028",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00028",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00126",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00126",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00084",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00084",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00041",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00041",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00026",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00026",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00151",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00151",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.0012",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.0012",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00081",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00081",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00035",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00035",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How advantageous are extra payments?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home16_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home16_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home16_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home16_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home16_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home16_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home16_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "TotIntPaid": {
+            "value": "186,512",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2": {
+            "value": "149,443",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff": {
+            "value": "360",
+            "dataFormat": "None",
+            "textLabel": "Months until payoff"
+          }
+        },
+        {
+          "MonUntilPayoff2": {
+            "value": "298",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "PrincAndInt": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest payment"
+          }
+        },
+        {
+          "PrincAndInt2Home16": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI)"
+          }
+        },
+        {
+          "MortIns2Home16": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Property taxes and insurance"
+          }
+        },
+        {
+          "TaxAndIns2": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "TotPmt2Home16": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AdditionalPrincipalPmt": {
+            "value": "29,800",
+            "dataFormat": "Currency",
+            "textLabel": "Additional principal payments"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Making extra payments will save you $37,069 in interest"
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "No extra payments"
+        },
+        {
+          "textLabel": "Extra payments"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Home_ExtraPaymentsLoanType": "1"
+        },
+        {
+          "Global_HomeAppraisedValue": "250000"
+        },
+        {
+          "Home_DownPaymentPercentage": "20"
+        },
+        {
+          "Home_LoanTermInYears": "30"
+        },
+        {
+          "Home_CurrentLoanAmount": "140000"
+        },
+        {
+          "Home_CurrentLoanPayment": "2300"
+        },
+        {
+          "Home_InterestRate": "3.8"
+        },
+        {
+          "Home_ExistingPMIPayment": "400"
+        },
+        {
+          "Home_ExtraPaymentType": "2"
+        },
+        {
+          "Home_ExtraPaymentStartYear": "2"
+        },
+        {
+          "Home_ExtraPaymentStartMonth": "2"
+        },
+        {
+          "Home_ExtraPaymentFrequency": "2"
+        },
+        {
+          "Home_ExtraPaymentsStartYear": "1"
+        },
+        {
+          "Home_ExtraPaymentsStartMonth": "1"
+        },
+        {
+          "Home_ExtraPaymentsEnd": "1"
+        },
+        {
+          "Home_ExtraPaymentsEndYear": "10"
+        },
+        {
+          "Home_ExtraPaymentsEndMonth": "1"
+        },
+        {
+          "Home_AdditionalPayment": "1500"
+        },
+        {
+          "Home_YearlyPropertyTax": "4800"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "3100"
+        },
+        {
+          "Home_LoanAmount": "200000"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "TotIntPaid": {
+            "value": "15,770",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest paid"
+          }
+        },
+        {
+          "TotIntPaid2": {
+            "value": "15,491",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff": {
+            "value": "68",
+            "dataFormat": "None",
+            "textLabel": "Months until payoff"
+          }
+        },
+        {
+          "MonUntilPayoff2": {
+            "value": "67",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "PrincAndInt": {
+            "value": "2,300",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest payment"
+          }
+        },
+        {
+          "PrincAndInt2Home16": {
+            "value": "2,300",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns": {
+            "value": "400",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance (PMI)"
+          }
+        },
+        {
+          "MortIns2Home16": {
+            "value": "400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "658",
+            "dataFormat": "Currency",
+            "textLabel": "Property taxes and insurance"
+          }
+        },
+        {
+          "TaxAndIns2": {
+            "value": "658",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "3,358",
+            "dataFormat": "Currency",
+            "textLabel": "Total monthly payment"
+          }
+        },
+        {
+          "TotPmt2Home16": {
+            "value": "3,358",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "AdditionalPrincipalPmt": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "textLabel": "Additional principal payments"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Making extra payments will save you $279 in interest"
+        }
+      ]
+    }
+  ]
+}

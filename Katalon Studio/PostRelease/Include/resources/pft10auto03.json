@@ -1,0 +1,396 @@
+[
+  {
+    "setText": {
+      "id": "xpath=/html/body/table/tbody/tr/td/form/table[2]/tbody/tr/td[3]/div[2]/table[2]/tbody/tr[2]/td/div/table/tbody/tr[1]/td[2]/span/input",
+      "value": "PFT1.0Auto01@bulk1.ettes2.net"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=/html/body/table/tbody/tr/td/form/table[2]/tbody/tr/td[3]/div[2]/table[2]/tbody/tr[2]/td/div/table/tbody/tr[5]/td/span/input"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Should I lease or purchase a vehicle?'])[2]/following::span[2]",
+      "value": "Thank You. Your report will be sent shortly."
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Should I lease or purchase a vehicle?'])[2]/following::span[3]",
+      "value": "If you buy"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you buy'])[1]/following::span[2]",
+      "value": "If you lease"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you lease'])[1]/following::span[1]",
+      "value": "Average cost per year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='AveCostPerYrAuto03']/span",
+      "value": "$6,796"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='AveCostPerYr2Auto03']/span",
+      "value": "$3,980"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_TotLeasePmt1']/td[2]/table/tbody/tr/th/table/tbody/tr/td/span",
+      "value": "Total lease payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total lease payments'])[1]/following::span[1]",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='N/A'])[1]/following::span[1]",
+      "value": "$6,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_TaxAtPurcAuto03']/td[2]/table/tbody/tr/th/table/tbody/tr/td/span",
+      "value": "Taxes at purchase"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Taxes at purchase'])[1]/following::span[1]",
+      "value": "$3,200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "NA1",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_MonPmtAuto03']/td[2]/table/tbody/tr/th/table/tbody/tr/td/span",
+      "value": "Monthly payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monthly payment'])[1]/following::span[1]",
+      "value": "$875"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Auto_LeaseMonthlyPayment",
+      "value": "$250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_TotIntPaidAuto03']/td[2]/table/tbody/tr/th/table/tbody/tr/td/span",
+      "value": "Total interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotIntPaidAuto03']/span",
+      "value": "$4,005"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "NA2",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_TotDepAuto03']/td[2]/table/tbody/tr/th/table/tbody/tr/td/span",
+      "value": "Total depreciation"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotDepAuto03']/span",
+      "value": "$20,020"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "NA3",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "help"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Should I lease or purchase a vehicle?'])[2]/following::span[2]",
+      "value": "This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle.'])[1]/following::span[2]",
+      "value": "It is assumed that you do not exercise the purchase option at the end of the lease term. With a vehicle loan, you will own the vehicle when the loan is paid off."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle.'])[1]/following::span[4]",
+      "value": "Your average yearly cost of owning a vehicle declines sharply after the first few years. This is due to smaller depreciation and financing expenses."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='This tool helps you to decide if leasing is preferable to borrowing to acquire a vehicle.'])[1]/following::span[6]",
+      "value": "Your first year of a lease term is the most expensive since you pay extra lease-financing charges. As a lessee, you do not incur depreciation expenses."
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForTextPresent": {
+      "id": "Purchase price"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoPurchasePrice",
+      "value": "35000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_SalesTaxRate",
+      "value": "7.75"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_VehicleAgeInYears",
+      "value": "1"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_CashRebate",
+      "value": "1500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoDownPayment",
+      "value": "3000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Auto_OtherCosts",
+      "value": "1500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoLoanTerm",
+      "value": "36"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_AutoInterestRate",
+      "value": "4.85"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Auto_LeaseTerm",
+      "value": "36"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Auto_LeaseMonthlyPayment",
+      "value": "350"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Auto_LeaseSecurityDeposit",
+      "value": "400"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Auto_LeaseDownPayment",
+      "value": "3000"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Auto_LeaseCashRebate",
+      "value": "1500"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "2.59"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_FederalAndStateTaxRate",
+      "value": "25.48"
+    }
+  },
+  {
+    "click": {
+      "id": "Auto_FutureDepreciation_2"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//td[@id='AveCostPerYrAuto03']/span",
+      "value": "$6,462"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='AveCostPerYr2Auto03']/span",
+      "value": "$4,585"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotLeasePmt1']/span",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotLeasePmt2']/span",
+      "value": "$12,600"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TaxAtPurcAuto03']/span",
+      "value": "$2,713"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='NA1']/span",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='MonPmtAuto03']/span",
+      "value": "$912"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='Auto_LeaseMonthlyPayment']/span",
+      "value": "$350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotIntPaidAuto03']/span",
+      "value": "$2,334"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='NA2']/span",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='TotDepAuto03']/span",
+      "value": "$15,714"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//td[@id='NA3']/span",
+      "value": "N/A"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_cashrebate",
+      "value": "Cash rebate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_downpayment",
+      "value": "Down payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_term",
+      "value": "Loan term (months)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_savingsinterestrate",
+      "value": "Your savings interest rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_taxrates",
+      "value": "Your state & federal tax rates"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_depreciation",
+      "value": "Future depreciation"
+    }
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "HealthPlanTypeOpt": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Plan Type"
+          }
+        },
+        {
+          "HealthPlanType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "HSAAge": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Age 55 years of age or older"
+          }
+        },
+        {
+          "HSASpouseAgeOpt": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Age of spouse  55 years or older"
+          }
+        },
+        {
+          "HSASpouseAge": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPDeductible": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Plan deductible"
+          }
+        },
+        {
+          "HSARetire": {
+            "value": "30",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Years until retirement"
+          }
+        },
+        {
+          "GoalFutureHSABalance": {
+            "value": "4,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "4500",
+            "minimumValue": "0",
+            "maximumValue": " 1000000",
+            "textLabel": "Desired amount at retirement"
+          }
+        },
+        {
+          "MonthlyMedical": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "50000",
+            "textLabel": "Monthly health care expenses"
+          }
+        },
+        {
+          "HSABalance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Current HSA balance"
+          }
+        },
+        {
+          "HSAReturnRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Annual rate of return"
+          }
+        }
+      ],
+      "title": "How much should I contribute to my HSA to reach my retirement goal?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "HSA05_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA05_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA05_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "HSA05_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "HSA05_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "HSA05_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "HSA05_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [],
+      "defaultAnswer": [
+        {
+          "textLabel": "Saving $258 per month should help you reach your goal of $4,500."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "HSAAge": "1"
+        },
+        {
+          "HSASpouseAge": "1"
+        },
+        {
+          "HSARetire": "14"
+        },
+        {
+          "MonthlyMedical": "800"
+        },
+        {
+          "HDHPDeductible": "5000"
+        },
+        {
+          "HealthPlanType": "1"
+        },
+        {
+          "HSABalance": "0"
+        },
+        {
+          "HSAReturnRate": "3.7"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Saving $438 per month should help you reach your goal of $4,500."
+        }
+      ]
+    }
+  ]
+}

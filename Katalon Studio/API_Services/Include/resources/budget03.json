@@ -1,0 +1,631 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Budget_CurrentHomePayment": {
+            "value": "900",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "900",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Home payment"
+          }
+        },
+        {
+          "Budget_DesiredHomePayment": {
+            "value": "900",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "900",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentHomeMaintenanceSpending": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Home maintenance"
+          }
+        },
+        {
+          "Budget_DesiredHomeMaintenanceSpending": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CurrentUtilitiesExpenses": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "5000",
+            "textLabel": "Utilities"
+          }
+        },
+        {
+          "Budget_DesiredUtilities": {
+            "value": "130",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "130",
+            "minimumValue": "0",
+            "maximumValue": "5000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentAutoPayments": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Auto payments"
+          }
+        },
+        {
+          "Budget_DesiredAutoPayments": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentAutoExpenses": {
+            "value": "120",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "120",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Auto expenses"
+          }
+        },
+        {
+          "Budget_DesiredAutoExpenses": {
+            "value": "90",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "90",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentInsurancePayments": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Insurance payments"
+          }
+        },
+        {
+          "Budget_DesiredInsurancePayments": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentChildCareExpenses": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Child care"
+          }
+        },
+        {
+          "Budget_DesiredChildCareExpenses": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentAlimony": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Alimony"
+          }
+        },
+        {
+          "Budget_DesiredAlimony": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CurrentMonthlyEducationExpenses": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Education"
+          }
+        },
+        {
+          "Budget_DesiredEducationExpenses": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CurrentMonthlyFoodExpenses": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Food"
+          }
+        },
+        {
+          "Budget_DesiredFoodExpenses": {
+            "value": "180",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "180",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentClothingSpending": {
+            "value": "140",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "140",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Clothing"
+          }
+        },
+        {
+          "Budget_DesiredClothingSpending": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentGiftsAndCharitySpending": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Gifts and charity"
+          }
+        },
+        {
+          "Budget_DesiredGiftsAndCharitySpending": {
+            "value": "80",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "80",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentEntertainmentSpending": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Entertainment"
+          }
+        },
+        {
+          "Budget_DesiredEntertainmentSpending": {
+            "value": "120",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "120",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentTravelSpending": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Travel"
+          }
+        },
+        {
+          "Budget_DesiredTravelSpending": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_CurrentCreditCardInterest": {
+            "value": "40",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Credit card interest"
+          }
+        },
+        {
+          "Budget_DesiredCreditCardInterest": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CurrentMonthlyOtherExpenses": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Miscellaneous"
+          }
+        },
+        {
+          "Budget_DesiredMiscellaneousSpending": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Budget_MonthlyIncomeAfterTaxes": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3000",
+            "minimumValue": "1",
+            "maximumValue": "100000",
+            "textLabel": "Your monthly income after taxes"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Rate you earn on savings"
+          }
+        },
+        {
+          "Global_FederalTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "80",
+            "textLabel": "Your federal tax rate"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        }
+      ],
+      "title": "How much am I spending?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Budget03_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Budget03_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Budget03_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Budget03_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Budget03_NonDefault_Results"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Budget_MonthlyIncomeAfterTaxes": {
+            "value": "3,500",
+            "dataFormat": "Currency",
+            "textLabel": "Your income"
+          }
+        },
+        {
+          "Budget_MonthlyIncomeAfterTaxes": {
+            "value": "3,500",
+            "dataFormat": "Currency",
+            "textLabel": "Your income"
+          }
+        },
+        {
+          "ActualSpending": {
+            "value": "10,560",
+            "dataFormat": "Currency",
+            "textLabel": "Your spending"
+          }
+        },
+        {
+          "DesiredSpending": {
+            "value": "6,360",
+            "dataFormat": "Currency",
+            "textLabel": "Desired spending"
+          }
+        },
+        {
+          "ActualAvailable": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Amount available for investment"
+          }
+        },
+        {
+          "DesiredAvailable": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ActualSaved": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Future value* if invested for 10 years"
+          }
+        },
+        {
+          "DesiredSaved": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "* After paying taxes on your investment's earnings"
+        }
+      ],
+      "NonDefaultColumnTextLabels": [
+        {
+          "textLabel": "Current spending"
+        },
+        {
+          "textLabel": "Desired spending"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Budget_CurrentHomePayment": "3800"
+        },
+        {
+          "Budget_CurrentHomeMaintenanceSpending": "330"
+        },
+        {
+          "Global_CurrentUtilitiesExpenses": "360"
+        },
+        {
+          "Budget_CurrentAutoPayments": "800"
+        },
+        {
+          "Budget_CurrentAutoExpenses": "440"
+        },
+        {
+          "Budget_CurrentInsurancePayments": "1100"
+        },
+        {
+          "Budget_DesiredHomePayment": "1300"
+        },
+        {
+          "Budget_DesiredHomeMaintenanceSpending": "120"
+        },
+        {
+          "Budget_DesiredUtilities": "210"
+        },
+        {
+          "Budget_DesiredAutoPayments": "200"
+        },
+        {
+          "Budget_DesiredAutoExpenses": "130"
+        },
+        {
+          "Budget_DesiredInsurancePayments": "1400"
+        },
+        {
+          "Budget_CurrentChildCareExpenses": "800"
+        },
+        {
+          "Budget_CurrentAlimony": "300"
+        },
+        {
+          "Global_CurrentMonthlyEducationExpenses": "500"
+        },
+        {
+          "Budget_DesiredChildCareExpenses": "100"
+        },
+        {
+          "Budget_DesiredAlimony": "200"
+        },
+        {
+          "Budget_DesiredEducationExpenses": "200"
+        },
+        {
+          "Global_CurrentMonthlyFoodExpenses": "570"
+        },
+        {
+          "Budget_CurrentClothingSpending": "210"
+        },
+        {
+          "Budget_CurrentGiftsAndCharitySpending": "90"
+        },
+        {
+          "Budget_CurrentEntertainmentSpending": "260"
+        },
+        {
+          "Budget_CurrentTravelSpending": "140"
+        },
+        {
+          "Budget_CurrentCreditCardInterest": "160"
+        },
+        {
+          "Global_CurrentMonthlyOtherExpenses": "700"
+        },
+        {
+          "Budget_DesiredFoodExpenses": "260"
+        },
+        {
+          "Budget_DesiredClothingSpending": "210"
+        },
+        {
+          "Budget_DesiredGiftsAndCharitySpending": "140"
+        },
+        {
+          "Budget_DesiredEntertainmentSpending": "160"
+        },
+        {
+          "Budget_DesiredTravelSpending": "190"
+        },
+        {
+          "Budget_DesiredCreditCardInterest": "40"
+        },
+        {
+          "Budget_DesiredMiscellaneousSpending": "1500"
+        },
+        {
+          "Budget_MonthlyIncomeAfterTaxes": "3500"
+        },
+        {
+          "Global_SavingsInterestRate": "2.2"
+        },
+        {
+          "Global_FederalTaxRate": "21"
+        },
+        {
+          "Global_StateTaxRate": "5.5"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1297 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_Your401kContributionAmountPerPayPeriod": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Your 401(k) contribution amount per pay period"
+          }
+        },
+        {
+          "Global_Your401kContributionPercentagePerPayPeriod": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your 401(k) contribution percentage per pay period"
+          }
+        },
+        {
+          "Your401kOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_Employer401kContributionAmountPerPayPeriod": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Your employer's 401(k) contribution amount per pay period"
+          }
+        },
+        {
+          "Global_Employer401kContributionPercentagePerPayPeriod": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your employer's 401(k) contribution percentage per pay period"
+          }
+        },
+        {
+          "Emp401kOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "Emp401kLimit": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "40000",
+            "textLabel": "Employer's annual contribution limit to your 401(k)"
+          }
+        },
+        {
+          "GrossIncome": {
+            "value": "35,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "35000",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Gross income"
+          }
+        },
+        {
+          "PayPeriod": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "GrossIncomeYTD": {
+            "value": "20,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "20000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Gross income (year to date)"
+          }
+        },
+        {
+          "PayFreq": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "7",
+            "textLabel": "Your pay period frequency"
+          }
+        },
+        {
+          "FilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Your tax filing status"
+          }
+        },
+        {
+          "Exemptions": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "8",
+            "textLabel": "Your total exemptions"
+          }
+        },
+        {
+          "AddFedTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Your additional income withheld by IRS"
+          }
+        },
+        {
+          "StateTaxOpt": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "State tax information"
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "StateTaxRatePaycheck": {
+            "value": "3.40",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3.40",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "StateTaxRateFIT": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes0": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_0_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes1": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_1_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes2": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_2_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes3": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_3_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes4": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_4_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes5": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_5_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes6": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_6_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_DeductionName": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_DeductionAmount": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_DeductionType": {
+            "value": "0",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExemptFromWhichTaxes7": {
+            "value": "",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_FederalTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_StateTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_MedicareTaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeductionList_7_FICATaxExempt": {
+            "value": "true",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "true",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How do 401(k) salary deductions affect my take-home pay?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Paycheck01_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Paycheck01_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Paycheck01_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Paycheck01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Paycheck01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Paycheck01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Paycheck01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "CalcTaxesSaved": {
+            "value": "22",
+            "dataFormat": "Currency",
+            "textLabel": "How much you save in taxes each pay period"
+          }
+        },
+        {
+          "CalcPayReduced": {
+            "value": "123",
+            "dataFormat": "Currency",
+            "textLabel": "How much your take-home pay is reduced each pay period"
+          }
+        },
+        {
+          "Calc401kContrib": {
+            "value": "146",
+            "dataFormat": "Currency",
+            "textLabel": "Your 401(k) plan contribution per pay period"
+          }
+        },
+        {
+          "Calc401kEmpContrib": {
+            "value": "44",
+            "dataFormat": "Currency",
+            "textLabel": "Your employer's contribution to your 401(k) per pay period"
+          }
+        },
+        {
+          "Emp401kLimit": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "textLabel": "Your employer's annual contribution limit to your 401(k)"
+          }
+        },
+        {
+          "CalcGrossIncome": {
+            "value": "1,458",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income"
+          }
+        },
+        {
+          "CalcFedTax": {
+            "value": "73",
+            "dataFormat": "Currency",
+            "textLabel": "Amount withheld by IRS"
+          }
+        },
+        {
+          "CalcFICA": {
+            "value": "90",
+            "dataFormat": "Currency",
+            "textLabel": "Social Security taxes"
+          }
+        },
+        {
+          "CalcMedicare": {
+            "value": "21",
+            "dataFormat": "Currency",
+            "textLabel": "Medicare taxes"
+          }
+        },
+        {
+          "CalcStateTax": {
+            "value": "45",
+            "dataFormat": "Currency",
+            "textLabel": "State taxes"
+          }
+        },
+        {
+          "CalcDeductions": {
+            "value": "146",
+            "dataFormat": "Currency",
+            "textLabel": "Deductions from pay"
+          }
+        },
+        {
+          "CalcNetIncome": {
+            "value": "1,084",
+            "dataFormat": "Currency",
+            "textLabel": "Net income"
+          }
+        },
+        {
+          "GrossIncome": {
+            "value": "35,000",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income"
+          }
+        },
+        {
+          "PayFreqText": {
+            "value": "Semi-monthly",
+            "dataFormat": "",
+            "textLabel": "Your pay period frequency"
+          }
+        },
+        {
+          "FilingStatusText": {
+            "value": "Single",
+            "dataFormat": "",
+            "textLabel": "Your tax filing status"
+          }
+        },
+        {
+          "Exemptions": {
+            "value": "2",
+            "dataFormat": "None",
+            "textLabel": "Your total exemptions"
+          }
+        },
+        {
+          "AddFedTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Your additional income withheld by IRS"
+          }
+        },
+        {
+          "StateTaxRatePaycheck": {
+            "value": "3.40",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of gross income)"
+          }
+        },
+        {
+          "StateTaxRateFIT": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of Federal income)"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_Your401kContributionPercentagePerPayPeriod": "18"
+        },
+        {
+          "Global_Your401kContributionAmountPerPayPeriod": "410"
+        },
+        {
+          "Your401kOption": "1"
+        },
+        {
+          "Global_Employer401kContributionPercentagePerPayPeriod": "6"
+        },
+        {
+          "Global_Employer401kContributionAmountPerPayPeriod": "100"
+        },
+        {
+          "Emp401kOption": "1"
+        },
+        {
+          "Emp401kLimit": "6000"
+        },
+        {
+          "GrossIncome": "80000"
+        },
+        {
+          "PayPeriod": "1"
+        },
+        {
+          "GrossIncomeYTD": "215000"
+        },
+        {
+          "PayFreq": "4"
+        },
+        {
+          "FilingStatus": "2"
+        },
+        {
+          "Exemptions": "5"
+        },
+        {
+          "AddFedTax": "150"
+        },
+        {
+          "StateTaxOpt": "2"
+        },
+        {
+          "StateTaxRatePaycheck": "3.4"
+        },
+        {
+          "StateTaxRateFIT": "2"
+        },
+        {
+          "DeductionList": "7.DeductionData.FICATaxExempt: true"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "CalcTaxesSaved": {
+            "value": "155",
+            "dataFormat": "Currency",
+            "textLabel": "How much you save in taxes each pay period"
+          }
+        },
+        {
+          "CalcPayReduced": {
+            "value": "255",
+            "dataFormat": "Currency",
+            "textLabel": "How much your take-home pay is reduced each pay period"
+          }
+        },
+        {
+          "Calc401kContrib": {
+            "value": "410",
+            "dataFormat": "Currency",
+            "textLabel": "Your 401(k) plan contribution per pay period"
+          }
+        },
+        {
+          "Calc401kEmpContrib": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "textLabel": "Your employer's contribution to your 401(k) per pay period"
+          }
+        },
+        {
+          "Emp401kLimit": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "textLabel": "Your employer's annual contribution limit to your 401(k)"
+          }
+        },
+        {
+          "CalcGrossIncome": {
+            "value": "80,000",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income"
+          }
+        },
+        {
+          "CalcFedTax": {
+            "value": "25,972",
+            "dataFormat": "Currency",
+            "textLabel": "Amount withheld by IRS"
+          }
+        },
+        {
+          "CalcFICA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Social Security taxes"
+          }
+        },
+        {
+          "CalcMedicare": {
+            "value": "1,786",
+            "dataFormat": "Currency",
+            "textLabel": "Medicare taxes"
+          }
+        },
+        {
+          "CalcStateTax": {
+            "value": "519",
+            "dataFormat": "Currency",
+            "textLabel": "State taxes"
+          }
+        },
+        {
+          "CalcDeductions": {
+            "value": "410",
+            "dataFormat": "Currency",
+            "textLabel": "Deductions from pay"
+          }
+        },
+        {
+          "CalcNetIncome": {
+            "value": "51,313",
+            "dataFormat": "Currency",
+            "textLabel": "Net income"
+          }
+        },
+        {
+          "GrossIncome": {
+            "value": "80,000",
+            "dataFormat": "Currency",
+            "textLabel": "Gross income"
+          }
+        },
+        {
+          "PayFreqText": {
+            "value": "Monthly",
+            "dataFormat": "",
+            "textLabel": "Your pay period frequency"
+          }
+        },
+        {
+          "FilingStatusText": {
+            "value": "Married filing single",
+            "dataFormat": "",
+            "textLabel": "Your tax filing status"
+          }
+        },
+        {
+          "Exemptions": {
+            "value": "5",
+            "dataFormat": "None",
+            "textLabel": "Your total exemptions"
+          }
+        },
+        {
+          "AddFedTax": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Your additional income withheld by IRS"
+          }
+        },
+        {
+          "StateTaxRatePaycheck": {
+            "value": "3.40",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of gross income)"
+          }
+        },
+        {
+          "StateTaxRateFIT": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "textLabel": "State tax (% of Federal income)"
+          }
+        }
+      ]
+    }
+  ]
+}

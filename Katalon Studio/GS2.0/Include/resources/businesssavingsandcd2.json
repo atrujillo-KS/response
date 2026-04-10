@@ -1,0 +1,505 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Savings & CD Accounts",
+      "value": "Evaluate Business Savings & CD Accounts"      
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_BusinessStructure"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_CurrentSavings",
+      "value": "20000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AvailableForAdditionalMonthlySavings",
+      "value": "500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "60 Month Business CD"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_results_row_major_0']/div",
+      "value": "0.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "12 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_1']/div",
+      "value": "0.30%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "9 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_2']/div",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "6 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_3']/div",
+      "value": "0.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_4']/div[2]/div[3]/button",
+      "value": "3 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_4']/div",
+      "value": "0.15%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_5']/div[2]/div[3]/button",
+      "value": "Premier Business Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_5']/div",
+      "value": "0.10%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_6']/div[2]/div[3]/button",
+      "value": "Essential Business Savings"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_major_6']/div",
+      "value": "0.05%"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button",
+      "value": "Product"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-title-label",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start a Loan Application'])[1]/following::div[1]",
+      "value": "You've selected the following option:"
+    }
+  },
+  {
+    "click": {
+      "id": "css=div.lf-action-container.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('You', \"'\", 've selected the following option:')])[1]/following::div[4]",
+      "value": "${Product}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.btn.btn-primary.lf-action-apply-btn.ng-binding",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_apply_now_8448198746",
+      "value": "Apply Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
+      "value": "What you'll need to open an account"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What You'll Need to Open an Account"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('What You', \"'\", 'll Need to Open an Account')])[1]/following::button[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Send Code'])[1]/following::div[8]",
+      "value": "2. Want Expert Help?"
+    }
+  },
+    {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Diego, CA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+      {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Miami, FL"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-branch-btn > div:nth-child(2)",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-call-btn > div:nth-child(2)",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-chat-btn > div:nth-child(2)",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-2"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-3"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-4"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td/div",
+      "value": "9 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[2]/div",
+      "value": "6 Month Business CD"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_graphs']/div/table/tbody/tr/td[3]/div",
+      "value": "3 Month Business CD"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[6]/following::div[1]",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$20,000'])[1]/following::div[1]",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$20,000'])[2]/following::div[1]",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//tr[122]/td/div",
+      "value": "$79,656"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$79,656'])[4]/following::div[1]",
+      "value": "$80,978"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$80,978'])[1]/following::div[1]",
+      "value": "$80,743"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Compare'])[1]/following::span[7]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Features & Benefits"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Insurance'])[1]/following::span[1]",
+      "value": "Minimum to Open"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Minimum to Open'])[1]/following::div[1]",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,000'])[1]/following::div[1]",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,000'])[2]/following::div[1]",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$1,000'])[3]/following::span[1]",
+      "value": "Fixed Rate of Return"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fixed Rate of Return'])[1]/following::div[1]",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[2]/following::div[1]",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[6]/td[3]/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Rates & Fees"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rate'])[1]/following::div[1]",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rate'])[1]/following::div[2]",
+      "value": "0.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rate'])[1]/following::div[3]",
+      "value": "0.15%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rate'])[1]/following::span[1]",
+      "value": "Annual Percentage Yield (APY)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "0.25%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "0.20%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "0.15%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Account Services"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[6]/following::span[1]",
+      "value": "Fee-Free Use of In-Network ATMs"
+    }
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income (MAGI)"
+          }
+        },
+        {
+          "College_PeriodicSavings": {
+            "value": "125",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "125",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Periodic savings"
+          }
+        },
+        {
+          "College_SavingsFrequency": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "6",
+            "textLabel": "Saving frequency"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "What is your filing status?"
+          }
+        }
+      ],
+      "title": "What investments can I use to save for college?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "College03_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College03_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College03_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "College03_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "College03_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "College03_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "College03_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [],
+      "defaultAnswer": [
+        {
+          "textLabel": "Based on your inputs, you can contribute to a <GLOSSREF key=\"CoverdellESA\">Coverdell ESA</GLOSSREF>, <GLOSSREF key=\"QTP\">qualified tuition plans</GLOSSREF> or both. The 2001 tax law enhances the benefits of saving with a Coverdell ESA or qualified tuition plan. However contributions to a Coverdell account may not exceed $2,000 in a single year beginning in 2002. According to the IRS, contributions to a qualified tuition plan may not exceed the total cost of qualified higher educational expenses.<br><br>You can also save for the college education of a child or grandchild with an <GLOSSREF key=\"UGMAUTMA\">UGMA/UTMA</GLOSSREF> account.<br><br>You may also wish to save for college with a <GLOSSREF key=\"taxableAccount\">taxable account</GLOSSREF> that invests in stocks, bonds, and mutual funds."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "260000"
+        },
+        {
+          "College_PeriodicSavings": "12000"
+        },
+        {
+          "College_SavingsFrequency": "1"
+        },
+        {
+          "Global_TaxFilingStatus": "2"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "The 2001 tax law enhances the benefits of saving with a <GLOSSREF key=\"CoverdellESA\">Coverdell ESA</GLOSSREF> or <GLOSSREF key=\"QTP\">qualified tuition plans</GLOSSREF>. You can save for college in a qualified tuition plan.<br><br>It appears as if you will not be able to contribute to a Coverdell ESA. This is because your indicated <GLOSSREF key=\"MAGI\">MAGI</GLOSSREF> is above the income limitations for your tax filing status.<br><br>For persons filing a single return, allowable contributions to a Coverdell ESA begin to phase out when modified adjustable gross income (MAGI) reaches $95,000. Allowable contributions are completely phased out if MAGI is $110,000 or more.<br><br>Beginning in 2002, the income phase-out limits for married persons filing a joint return increase to $190,000 and $220,000, respectively.<br><br>You can also save for the college education of a child or grandchild with an <GLOSSREF key=\"UGMAUTMA\">UGMA/UTMA</GLOSSREF> account.<br><br>You may also wish to save for college with a <GLOSSREF key=\"taxableAccount\">taxable account</GLOSSREF> that invests in stocks, bonds, and mutual funds."
+        }
+      ]
+    }
+  ]
+}

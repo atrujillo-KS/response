@@ -1,0 +1,552 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Card_SpendingPeriod": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "How much do you spend every"
+          }
+        },
+        {
+          "Card_SpendingCategoryOneAmount": {
+            "value": "750",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "750",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "At restaurants"
+          }
+        },
+        {
+          "Card_SpendingCategoryTwoAmount": {
+            "value": "750",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "750",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "On gas"
+          }
+        },
+        {
+          "Card_SpendingCategoryThreeAmount": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "At grocery stores"
+          }
+        },
+        {
+          "Card_SpendingCategoryFourAmount": {
+            "value": "75",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "75",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "At drug stores"
+          }
+        },
+        {
+          "Card_SpendingCategoryFiveAmount": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "All other purchases"
+          }
+        },
+        {
+          "Card_SpendingCategoryOneCashBackRate": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Restaurants"
+          }
+        },
+        {
+          "Card_SpendingCategoryTwoCashBackRate": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Gas"
+          }
+        },
+        {
+          "Card_SpendingCategoryThreeCashBackRate": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Grocery stores"
+          }
+        },
+        {
+          "Card_SpendingCategoryFourCashBackRate": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Drug stores"
+          }
+        },
+        {
+          "Card_SpendingCategoryFiveCashBackRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "All other purchases"
+          }
+        },
+        {
+          "Card_CashBackLimitAmount": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Rates apply for spending up to"
+          }
+        },
+        {
+          "Card_CashBackLimitPeriod": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "12",
+            "textLabel": "For each calendar"
+          }
+        },
+        {
+          "Card_RateAfterCashBackLimitReached": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "10",
+            "textLabel": "Rate after limit reached"
+          }
+        },
+        {
+          "Card_CashBonusAmount": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Cash bonus"
+          }
+        },
+        {
+          "Card_CashBonusSpendingThreshold": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "After you spend"
+          }
+        },
+        {
+          "Card_CashBonusSpendingPeriod": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Within (number of months)"
+          }
+        }
+      ],
+      "title": "How much cash back will I earn with a cash rewards card?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Card09_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card09_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card09_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify 'textLabel' in 'toolPageContent.textLabel'",
+          "body": "pm.expect(textLabel).to.eql(expectedTextLabelSet1);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify 'textLabel' in 'toolPageContent.columnTextLabel'",
+          "body": "pm.expect(columnTextLabel).to.eql(expectedColumnTextLabelSet1);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify values of 'value', 'textLabel', and 'dataElementName' in 'field' array",
+          "body": "for (var i = 0; i < fields.length; i++) {\r\n            pm.expect(fields[i].dataElementName).to.eql(expectedFieldsSet1[i].dataElementName);\r\n            pm.expect(fields[i].dataFormat).to.eql(expectedFieldsSet1[i].dataFormat);\r\n            pm.expect(fields[i].value).to.eql(expectedFieldsSet1[i].value);\r\n            pm.expect(fields[i].textLabel).to.eql(expectedFieldsSet1[i].textLabel);\r\n        }",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify 'textLabel' in 'toolPageContent.textLabel'",
+          "body": "pm.expect(textLabel).to.eql(expectedTextLabelSet2);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify 'textLabel' in 'toolPageContent.columnTextLabel'",
+          "body": "pm.expect(columnTextLabel).to.eql(expectedColumnTextLabelSet2);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Verify values of 'value', 'textLabel', and 'dataElementName' in 'field' array",
+          "body": "for (var i = 0; i < fields.length; i++) {\r\n            pm.expect(fields[i].dataElementName, `Failed for ${fields[i].dataElementName} - dataElementName`).to.eql(expectedFieldsSet2[i].dataElementName);\r\n            pm.expect(fields[i].dataFormat, `Failed for ${fields[i].dataElementName} - dataFormat`).to.eql(expectedFieldsSet2[i].dataFormat);\r\n            pm.expect(fields[i].value, `Failed for ${fields[i].dataElementName} - value`).to.eql(expectedFieldsSet2[i].value);\r\n            pm.expect(fields[i].textLabel, `Failed for ${fields[i].dataElementName} - textLabel`).to.eql(expectedFieldsSet2[i].textLabel);\r\n        }",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Unexpected 'textLabel' value",
+          "body": "pm.expect.fail(\"Unexpected 'textLabel' value: \" + textLabel);",
+          "source": "default",
+          "itemName": "Card09_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Card09_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Card09_NonDefault_Results"
+        }
+      ]
+      },
+  	  {
+    	"if": {
+      		"defaultAnswer": [
+        {
+          "textLabel": "You will earn $163 in cash back after 3 months."
+        }
+      ]
+      },
+      "defaultResults": [        {
+          "Card_CashBackRestaurants": {
+            "value": "22",
+            "dataFormat": "Currency",
+            "textLabel": "Restaurants"
+          }
+        },
+        {
+          "Card_CashBackGas": {
+            "value": "15",
+            "dataFormat": "Currency",
+            "textLabel": "Gas"
+          }
+        },
+        {
+          "Card_CashBackGroceryStores": {
+            "value": "19",
+            "dataFormat": "Currency",
+            "textLabel": "Grocery stores"
+          }
+        },
+        {
+          "Card_CashBackDrugStores": {
+            "value": "2",
+            "dataFormat": "Currency",
+            "textLabel": "Drug stores"
+          }
+        },
+        {
+          "Card_CashBackOthers": {
+            "value": "5",
+            "dataFormat": "Currency",
+            "textLabel": "All other purchases"
+          }
+        },
+        {
+          "Card_CashBackSignupBonus": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "textLabel": "One-time signup bonus"
+          }
+        },
+        {
+          "Card_CashBackTotal": {
+            "value": "163",
+            "dataFormat": "Currency",
+            "textLabel": "<strong>Total</strong>"
+          }
+        },
+        {
+          "Card_SpendingPeriodOutput": {
+            "value": "3 months",
+            "dataFormat": "None",
+            "textLabel": "How much you spend every"
+          }
+        }
+        ]
+        },
+  {
+    "elseIf": {
+    "defaultAnswer": [
+        {
+          "textLabel": "You will earn $150 in cash back after 3 months."
+        }
+      ]
+      },
+      "defaultResults": [        {
+          "Card_CashBackRestaurants": {
+            "value": "36",
+            "dataFormat": "Currency",
+            "textLabel": "Restaurants"
+          }
+        },
+        {
+          "Card_CashBackGas": {
+            "value": "22",
+            "dataFormat": "Currency",
+            "textLabel": "Gas"
+          }
+        },
+        {
+          "Card_CashBackGroceryStores": {
+            "value": "14",
+            "dataFormat": "Currency",
+            "textLabel": "Grocery stores"
+          }
+        },
+        {
+          "Card_CashBackDrugStores": {
+            "value": "5",
+            "dataFormat": "Currency",
+            "textLabel": "Drug stores"
+          }
+        },
+        {
+          "Card_CashBackOthers": {
+            "value": "45",
+            "dataFormat": "Currency",
+            "textLabel": "All other purchases"
+          }
+        },
+        {
+          "Card_CashBackSignupBonus": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "textLabel": "One-time signup bonus"
+          }
+        },
+        {
+          "Card_CashBackTotal": {
+            "value": "10,122",
+            "dataFormat": "Currency",
+            "textLabel": "<strong>Total</strong>"
+          }
+        },
+        {
+          "Card_SpendingPeriodOutput": {
+            "value": "1 month",
+            "dataFormat": "None",
+            "textLabel": "How much you spend every"
+          }
+        }
+        ]
+        },
+    {
+    "endIf": {
+    }
+  },
+	{
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Card_SpendingPeriod": "1"
+        },
+        {
+          "Card_SpendingCategoryOneAmount": "900"
+        },
+        {
+          "Card_SpendingCategoryTwoAmount": "550"
+        },
+        {
+          "Card_SpendingCategoryThreeAmount": "469"
+        },
+        {
+          "Card_SpendingCategoryFourAmount": "150"
+        },
+        {
+          "Card_SpendingCategoryFiveAmount": "1500"
+        },
+        {
+          "Card_SpendingCategoryOneCashBackRate": "4"
+        },
+        {
+          "Card_SpendingCategoryTwoCashBackRate": "4"
+        },
+        {
+          "Card_SpendingCategoryThreeCashBackRate": "3"
+        },
+        {
+          "Card_SpendingCategoryFourCashBackRate": "3"
+        },
+        {
+          "Card_SpendingCategoryFiveCashBackRate": "3"
+        },
+        {
+          "Card_CashBackLimitAmount": "4900"
+        },
+        {
+          "Card_CashBackLimitPeriod": "12"
+        },
+        {
+          "Card_RateAfterCashBackLimitReached": "4"
+        },
+        {
+          "Card_CashBonusAmount": "10000"
+        },
+        {
+          "Card_CashBonusSpendingThreshold": "2100"
+        },
+        {
+          "Card_CashBonusSpendingPeriod": "3"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Card_CashBackRestaurants": {
+            "value": "36",
+            "dataFormat": "Currency",
+            "textLabel": "Restaurants"
+          }
+        },
+        {
+          "Card_CashBackGas": {
+            "value": "22",
+            "dataFormat": "Currency",
+            "textLabel": "Gas"
+          }
+        },
+        {
+          "Card_CashBackGroceryStores": {
+            "value": "14",
+            "dataFormat": "Currency",
+            "textLabel": "Grocery stores"
+          }
+        },
+        {
+          "Card_CashBackDrugStores": {
+            "value": "5",
+            "dataFormat": "Currency",
+            "textLabel": "Drug stores"
+          }
+        },
+        {
+          "Card_CashBackOthers": {
+            "value": "45",
+            "dataFormat": "Currency",
+            "textLabel": "All other purchases"
+          }
+        },
+        {
+          "Card_CashBackSignupBonus": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "textLabel": "One-time signup bonus"
+          }
+        },
+        {
+          "Card_CashBackTotal": {
+            "value": "10,122",
+            "dataFormat": "Currency",
+            "textLabel": "<strong>Total</strong>"
+          }
+        },
+        {
+          "Card_SpendingPeriodOutput": {
+            "value": "1 month",
+            "dataFormat": "None",
+            "textLabel": "How much you spend every"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "You will earn $10,122 in cash back after 1 month."
+        }
+      ]
+    }
+  ]
+}

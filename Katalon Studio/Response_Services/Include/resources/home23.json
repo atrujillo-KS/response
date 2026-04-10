@@ -1,0 +1,285 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_DownPaymentPercentage": {
+            "value": "20.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "20.000",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_USMilitaryExperience": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "String",
+            "defaultValue": "0",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PriorVALoanBenefitUse": {
+            "value": "false",
+            "dataFormat": "None",
+            "dataType": "Boolean",
+            "defaultValue": "false",
+            "minimumValue": "",
+            "maximumValue": "",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How much will my VA loan payments be?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home23_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home23_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home23_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home23_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home23_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home23_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home23_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PrincAndInt": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAmtOut": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "VAFundingFee": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTotal": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "600000"
+        },
+        {
+          "Home_DownPaymentPercentage": "13.000"
+        },
+        {
+          "Home_LoanTermInYears": "18"
+        },
+        {
+          "Home_InterestRate": "6.800"
+        },
+        {
+          "Home_USMilitaryExperience": "VetDisabled"
+        },
+        {
+          "Home_PriorVALoanBenefitUse": "true"
+        },
+        {
+          "Home_YearlyPropertyTax": "3250"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "1000"
+        },
+        {
+          "Home_LoanAmount": "522000"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "PrincAndInt": {
+            "value": "4,196",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "4,550",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanAmtOut": {
+            "value": "522,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "VAFundingFee": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "LoanTotal": {
+            "value": "522,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

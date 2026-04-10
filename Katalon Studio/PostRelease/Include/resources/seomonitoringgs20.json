@@ -1,0 +1,291 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://www.google.com"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Let's start with information about your home\" site:firsttechfed.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "No results found for"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the vehicle you want to purchase or refinance\" site:firstflorida.org"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://www.firstflorida.org"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Tell us about the vehicle you want to purchase or refinance"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the debt you are looking to consolidate\" site:firstflorida.org"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://www.firstflorida.org"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Tell us about the debt you are looking to consolidate"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Let's start by learning more about you and your specific credit card needs.\" site:firsttechfed.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://calculators.firsttechfed.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Let's start by learning more about you and your specific credit card needs"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the student loan(s) you are looking to refinance\" site:firsttechfed.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "storeText": {
+      "id": "css=body",
+      "value": "pageContent"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "No results found for"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Let's start with information about your home\" site:pnc.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://expert.pnc.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Let's start with information about your home"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Which auto loan is right for you?\" site:pnc.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://www.pnc.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Which auto loan is right for you"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the debt you are looking to consolidate\" site:pnc.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://expert.pnc.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Tell us about the debt you are looking to consolidate"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the property you want to purchase\" site:logixbanking.com"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://www.logixbanking.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Tell us about the property you want to purchase"
+    }
+  },
+  {
+    "setText": {
+      "id": "name=q",
+      "value": "\"Tell us about the property you want to purchase\" site:navyfederal.org"
+    }
+  },
+  {
+    "sendKeys": {
+      "id": "name=q",
+      "value": "${KEY_ENTER}"
+    }
+  },
+  {
+    "waitForElementPresent": {
+      "id": "css=div#search",
+      "value": "30000"
+    }
+  },
+  {
+    "verifyTextPresent": {
+      "id": "https://www.navyfederal.org"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=em",
+      "value": "Tell us about the property you want to purchase"
+    }
+  }
+]

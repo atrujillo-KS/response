@@ -1,0 +1,304 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_CurrentSavings": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Current savings"
+          }
+        },
+        {
+          "Savings_RateOne": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Annual rate of return 1"
+          }
+        },
+        {
+          "Savings_RateTwo": {
+            "value": "4.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Annual rate of return 2"
+          }
+        },
+        {
+          "Savings_RateThree": {
+            "value": "6.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Annual rate of return 3"
+          }
+        },
+        {
+          "Savings_RateFour": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Annual rate of return 4"
+          }
+        },
+        {
+          "Savings_YearsDeposited": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "5",
+            "minimumValue": "1",
+            "maximumValue": "90",
+            "textLabel": "Years deposited"
+          }
+        },
+        {
+          "Savings_CompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        }
+      ],
+      "title": "How much of a difference will the rate make?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Savings08_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings08_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings08_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Savings08_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Savings08_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings08_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings08_NonDefault_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings08_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings08_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Savings_RateOne": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 1"
+          }
+        },
+        {
+          "Savings_RateOneInterestEarned": {
+            "value": "808",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateTwo": {
+            "value": "4.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 2"
+          }
+        },
+        {
+          "Savings_RateTwoInterestEarned": {
+            "value": "1,105",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateThree": {
+            "value": "6.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 3"
+          }
+        },
+        {
+          "Savings_RateThreeInterestEarned": {
+            "value": "1,744",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateFour": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 4"
+          }
+        },
+        {
+          "Savings_RateFourInterestEarned": {
+            "value": "3,227",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "The rate you earn makes a significant difference over time"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_CurrentSavings": "19000"
+        },
+        {
+          "Savings_RateOne": "1.45"
+        },
+        {
+          "Savings_RateTwo": "6.45"
+        },
+        {
+          "Savings_RateThree": "7.91"
+        },
+        {
+          "Savings_RateFour": "8.21"
+        },
+        {
+          "Savings_YearsDeposited": "37"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Savings_RateOne": {
+            "value": "1.45",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 1"
+          }
+        },
+        {
+          "Savings_RateOneInterestEarned": {
+            "value": "13,480",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateTwo": {
+            "value": "6.45",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 2"
+          }
+        },
+        {
+          "Savings_RateTwoInterestEarned": {
+            "value": "186,316",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateThree": {
+            "value": "7.91",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 3"
+          }
+        },
+        {
+          "Savings_RateThreeInterestEarned": {
+            "value": "332,263",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_RateFour": {
+            "value": "8.21",
+            "dataFormat": "Percentage",
+            "textLabel": "Annual rate of return 4"
+          }
+        },
+        {
+          "Savings_RateFourInterestEarned": {
+            "value": "373,209",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "The rate you earn makes a significant difference over time"
+        }
+      ]
+    }
+  ]
+}

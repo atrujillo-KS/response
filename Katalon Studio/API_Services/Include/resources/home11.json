@@ -1,0 +1,357 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_CurrentLoanAmount": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "100000000",
+            "textLabel": "Original loan amount"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Original term (years)"
+          }
+        },
+        {
+          "Home_YearsAlreadyPaid": {
+            "value": "3",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "3",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Years already paid"
+          }
+        },
+        {
+          "Home_CurrentLoanInterestRate": {
+            "value": "6.500",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "6.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_SecondLoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "New term (years)"
+          }
+        },
+        {
+          "Home_RefinanceInterestRate": {
+            "value": "3.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_ClosingCostsPercentage": {
+            "value": "3.500",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Closing costs (% of new loan amount)"
+          }
+        },
+        {
+          "Home_FinanceClosingCosts": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Finance closing costs"
+          }
+        },
+        {
+          "Home_CashOutAmount": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Cash-out amount"
+          }
+        }
+      ],
+      "title": "Am I better off refinancing?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home11_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home11_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home11_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home11_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home11_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home11_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home11_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Home_MonthlyPaymentDifference": {
+            "value": "211",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment difference"
+          }
+        },
+        {
+          "Home_TotalInterestDifference": {
+            "value": "56,703",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest difference"
+          }
+        },
+        {
+          "Home_BreakevenPoint": {
+            "value": "16",
+            "dataFormat": "Currency",
+            "textLabel": "Breakeven point"
+          }
+        },
+        {
+          "Home_RemainingLoanAmountCurrentLoan": {
+            "value": "96,417",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_RemainingLoanAmountRefinanceLoan": {
+            "value": "99,792",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyPaymentCurrentLoan": {
+            "value": "632",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyPaymentRefinanceLoan": {
+            "value": "421",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_RemainingInterestCurrentLoan": {
+            "value": "108,373",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_RemainingInterestRefinanceLoan": {
+            "value": "51,670",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_YearsUntilPayoffCurrentLoan": {
+            "value": "27",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_YearsUntilPayoffRefinanceLoan": {
+            "value": "30",
+            "dataFormat": "None",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "<GLOSSREF key=\"refinancing\">Refinancing</GLOSSREF> is estimated to lower your monthly payment by $211 and <GLOSSREF key=\"costanalysis\">save</GLOSSREF> you $56703 in total interest. Your break-even point is approximately 15 months."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Home_CurrentLoanAmount": "420000"
+        },
+        {
+          "Home_LoanTermInYears": "24"
+        },
+        {
+          "Home_YearsAlreadyPaid": "13"
+        },
+        {
+          "Home_CurrentLoanInterestRate": "3.7"
+        },
+        {
+          "Home_SecondLoanTermInYears": "20"
+        },
+        {
+          "Home_RefinanceInterestRate": "4.5"
+        },
+        {
+          "Home_ClosingCostsPercentage": "5"
+        },
+        {
+          "Home_FinanceClosingCosts": "1"
+        },
+        {
+          "Home_CashOutAmount": "130000"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Home_MonthlyPaymentDifference": {
+            "value": "129",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment difference"
+          }
+        },
+        {
+          "Home_TotalInterestDifference": {
+            "value": "138,848",
+            "dataFormat": "Currency",
+            "textLabel": "Total interest difference"
+          }
+        },
+        {
+          "Home_BreakevenPoint": {
+            "value": "(143)",
+            "dataFormat": "Currency",
+            "textLabel": "Breakeven point"
+          }
+        },
+        {
+          "Home_RemainingLoanAmountCurrentLoan": {
+            "value": "238,544",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_RemainingLoanAmountRefinanceLoan": {
+            "value": "368,544",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_MonthlyPaymentCurrentLoan": {
+            "value": "2,203",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_MonthlyPaymentRefinanceLoan": {
+            "value": "2,332",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_RemainingInterestCurrentLoan": {
+            "value": "52,190",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_RemainingInterestRefinanceLoan": {
+            "value": "191,038",
+            "dataFormat": "Currency"
+          }
+        },
+        {
+          "Home_YearsUntilPayoffCurrentLoan": {
+            "value": "11",
+            "dataFormat": "None"
+          }
+        },
+        {
+          "Home_YearsUntilPayoffRefinanceLoan": {
+            "value": "20",
+            "dataFormat": "None"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "<GLOSSREF key=\"refinancing\">Refinancing</GLOSSREF> is estimated to increase your monthly payment by $129 and <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $138848 in total interest."
+        }
+      ]
+    }
+  ]
+}

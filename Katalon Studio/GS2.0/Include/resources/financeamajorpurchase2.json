@@ -1,0 +1,1399 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Finance a Major Purchase",
+      "value": "Finance a Major Purchase"      
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MajorPurchasePrice",
+      "value": "35000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_BasePurchasePrice",
+      "value": "26000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MajorPurchaseAddOnsAndExtras",
+      "value": "1500"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_SalesTaxRate",
+      "value": "6.45"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::div[1]",
+      "value": "We can help you determine the purchase price, factoring in extras, upgrades, and sales tax."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The total purchase price is $29,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$29,274'])[1]/following::label[1]",
+      "value": "Purchase Price"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TotalMajorPurchasePrice",
+      "value": "$29,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotalMajorPurchasePrice_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Purchase Price'])[3]/following::button[1]",
+      "value": "USE THIS AMOUNT"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[3]/following::div[4]",
+      "value": "Purchase Price Breakdown"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "css=div.highcharts-a11y-proxy-group:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > button:nth-child(1)@aria-label",
+      "value": "Show Base Price"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "css=div.highcharts-a11y-proxy-group:nth-child(2) > ul:nth-child(1) > li:nth-child(2) > button:nth-child(1)@aria-label",
+      "value": "Show Upgrades and Extras"
+    }
+  },
+  {
+    "verifyAttribute": {
+      "id": "css=div.highcharts-a11y-proxy-group:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > button:nth-child(1)@aria-label",
+      "value": "Show Sales Tax"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Purchase Price'])[3]/following::button[1]"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_MajorPurchaseDownPaymentAmount",
+      "value": "$6000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='DOWN PAYMENT'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Down Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::div[1]",
+      "value": "We can help you determine your down payment, factoring in cash, rebates, and cash-back incentives."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine your down payment, factoring in cash, rebates, and cash-back incentives.'])[1]/following::label[1]",
+      "value": "Cash"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MajorPurchaseCashDownPayment",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MajorPurchaseCashDownPayment_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cash'])[1]/following::label[1]",
+      "value": "Rebates & Cash-Back Incentives"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Rebates & Cash-Back Incentives'])[1]/following::span[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Rebates & Cash-Back Incentives"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "An offer to consumers - as an incentive to buy - that reduces the purchase price of a good by the amount of the rebate."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MajorPurchaseCashBackRebateIncentive",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MajorPurchaseCashBackRebateIncentive_slider",
+      "value": "0"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_MajorPurchaseCashDownPayment",
+      "value": "4500"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_MajorPurchaseCashBackRebateIncentive",
+      "value": "500"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_calculate_value_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_calculate_value_back",
+      "value": "< Back to worksheet"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The total down payment is $5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$5,000'])[1]/following::label[1]",
+      "value": "Down Payment"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_TotalMajorPurchaseDownPaymentAmount",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_TotalMajorPurchaseDownPaymentAmount_slider",
+      "value": "0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Down Payment'])[2]/following::button[1]"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MajorPurchaseDownPaymentAmount",
+      "value": "$5,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "94109"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DoYouOwnAHome__2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_DoYouOwnAHome__1"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AppValOfYourHome",
+      "value": "650000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_OutstandingMortgagePrinciple",
+      "value": "250000"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_CreditRatingBasic",
+      "value": "label=Fair"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.btn.btn-primary.lf-step-btn.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Home Equity Line of Credit"
+    }
+  },
+  {
+    "storeText": {
+      "id": "css=button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Product"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//div[@id='lf_results_row_major_0']/div",
+      "value": "$90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_results_row_minor_0",
+      "value": "Loan Amount: $24,274 | Rate: 4.45% | APR: 4.45% | Fees: $495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_1']/div[2]/div[3]/button",
+      "value": "Choice Home Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-extra-results-desktop.ng-binding",
+      "value": "Introductory Rate Offer: 1.99% APR and $108 Intro Payment for the first 6 months"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_1']/div",
+      "value": "$155"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_results_row_minor_1",
+      "value": "Loan Amount: $24,274 | Regular Rate: 4.45% | Regular APR: 4.45% | Fees: $495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_2']/div[2]/div[3]/button",
+      "value": "10-Year Home Equity Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_2']/div",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_results_row_minor_2",
+      "value": "Loan Amount: $24,274 | Rate: 8.75% | APR: 9.03% | Fees: $295"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_3']/div[2]/div[3]/button",
+      "value": "Balloon Home Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_results_row_major_3']/div",
+      "value": "$434"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_results_row_minor_3",
+      "value": "Loan Amount: $24,274 | Rate: 3.45% | APR: 3.45% | Fees: $495"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply Now'])[1]/following::div[5]",
+      "value": "1. Apply Online"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start a Loan Application'])[1]/following::div[1]",
+      "value": "You've selected the following option:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('You', \"'\", 've selected the following option:')])[1]/following::div[4]",
+      "value": "${Product}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.btn.btn-primary.lf-action-apply-btn.ng-binding",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_apply_now_1251239802",
+      "value": "Apply Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
+      "value": "What you'll need to apply"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What You'll Need to Apply"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div",
+      "value": "During the application process, you may be asked to provide the following information for yourself and any co-borrower on the loan: Identifying information (e.g. name, address, date of birth, social security number, and driver's license) Proof of employment Verification of income (e.g. most recent pay stubs and W2s) If self-employed, your most recent profit and loss statement Verification of residence (e.g. a copy of a utility bill) Savings and checking statements The name of the lender, loan number, and loan balance for all loans you are looking to consolidate If applying for a home equity loans and lines of credit, you may be asked to provide the following additional information: Property information (address, purchase price, purchase date, property type) Estimated property value Proof of homeowners insurance Proof of flood insurance (if you live in a Special Flood Hazard Area)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_modal_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Refine location"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_review_sort"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_review_sort",
+      "value": "label=Lowest APR"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-2"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-4"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-next-col-header-label.ng-binding",
+      "value": "Balloon Home Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-compare-table-content > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1)",
+      "value": "Home Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-compare-table-content > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > div:nth-child(1)",
+      "value": "10-Year Home Equity Loan"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$434"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[120]/td/div",
+      "value": "$3,712"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[120]/td[2]/div",
+      "value": "$90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[120]/td[3]/div",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[121]/td[2]/div",
+      "value": "$185"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td[2]/div",
+      "value": "$185"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td[3]",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$28,656']/parent::*",
+      "value": "$28,656$28,656"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$44,610']/parent::*",
+      "value": "$44,610$44,610"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$36,801']/parent::*",
+      "value": "$36,801$36,801"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanAmount-0",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanAmount-1",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanAmount-2",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanInterestPaid-0",
+      "value": "$3,887"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanInterestPaid-1",
+      "value": "$19,841"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanInterestPaid-2",
+      "value": "$12,232"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanClosingCosts-0",
+      "value": "$495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanClosingCosts-1",
+      "value": "$495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanClosingCosts-2",
+      "value": "$295"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanTotal-0",
+      "value": "$28,656"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanTotal-1",
+      "value": "$44,610"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-LoanTotal-2",
+      "value": "$36,801"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Payoff Schedules"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$23,910"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "$24,147"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[119]/td/div",
+      "value": "$3,701"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[119]/td[2]/div",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[119]/td[3]/div",
+      "value": "$302"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[121]/td[2]/div",
+      "value": "$24,179"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[299]/td[2]/div",
+      "value": "$184"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td[2]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[300]/td[3]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Details Side by Side"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-LoanAmount",
+      "value": "Loan Amount"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanAmount.lf-row-LoanAmount-0",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanAmount.lf-row-LoanAmount-1",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-LoanAmount.lf-row-LoanAmount-2",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-MinPayment",
+      "value": "Initial Monthly Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinPayment.lf-row-MinPayment-0",
+      "value": "$434"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinPayment.lf-row-MinPayment-1",
+      "value": "$90"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinPayment.lf-row-MinPayment-2",
+      "value": "$304"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-IntRate",
+      "value": "Rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-IntRate.lf-row-IntRate-0",
+      "value": "3.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-IntRate.lf-row-IntRate-1",
+      "value": "4.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-IntRate.lf-row-IntRate-2",
+      "value": "8.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-Apr",
+      "value": "APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr.lf-row-Apr-0",
+      "value": "3.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr.lf-row-Apr-1",
+      "value": "4.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-Apr.lf-row-Apr-2",
+      "value": "9.03%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-EstimatedClosingFees-expand",
+      "value": "Fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-EstimatedClosingFees-0",
+      "value": "$495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-EstimatedClosingFees-1",
+      "value": "$495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-row-EstimatedClosingFees-2",
+      "value": "$295"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-plain-button.ng-binding"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-2"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-4"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-1"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-3"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$108"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$732"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[60]/td[2]/div",
+      "value": "$169"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[173]/td[2]/div",
+      "value": "$16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[6]/td/div",
+      "value": "$106"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[7]/td/div",
+      "value": "$155"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[480]/td/div",
+      "value": "$88"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Total Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$47,810']/parent::*",
+      "value": "$47,810$47,810"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$30,123']/parent::*",
+      "value": "$30,123$30,123"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-.lf-row-LoanTotal-0.lf-row-0-LoanTotal",
+      "value": "$47,810"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Payoff Schedules"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td/div",
+      "value": "$24,207"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "$23,678"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[172]/td[2]/div",
+      "value": "$16"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[479]/td/div",
+      "value": "$87"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Details Side by Side"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/td/div",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[5]/td[2]/div",
+      "value": "$24,274"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[6]/td/div",
+      "value": "480"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[6]/td[2]/div",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/td/div",
+      "value": "$108"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[7]/td[2]/div",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td/div",
+      "value": "$155"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[8]/td[2]/div",
+      "value": "$732"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td/div",
+      "value": "4.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[9]/td[2]/div",
+      "value": "6.74%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/td/div",
+      "value": "4.45%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[10]/td[2]/div",
+      "value": "6.74%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[11]/td/div",
+      "value": "Variable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[11]/td[2]/div",
+      "value": "Variable"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[12]/td/div",
+      "value": "0.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[12]/td[2]/div",
+      "value": "0.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[13]/td/div",
+      "value": "1.99%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanBasics']/tbody/tr[13]/td[2]/div",
+      "value": "N/A"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choice Home Equity Line of Credit $495'])[1]/following::div[1]",
+      "value": "$495"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Personal Line of Credit $395'])[1]/following::div[1]",
+      "value": "$395"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MinimumMonthlyPayment_expand"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr/td/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr/td[2]/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[2]/td/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[2]/td[2]/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[3]/td/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[3]/td[2]/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[4]/td/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[4]/td[2]/div",
+      "value": "3.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[5]/td/div",
+      "value": "$25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_MinimumMonthlyPayment']/tbody/tr[5]/td[2]/div",
+      "value": "$25"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_MinimumMonthlyPayment_expand"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_LoanFeatures_expand"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr/td/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr/td[2]/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[2]/td/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[2]/td[2]/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[3]/td/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[3]/td[2]/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[4]/td/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[4]/td[2]/div",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[5]/td/div",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_LoanFeatures']/tbody/tr[5]/td[2]/div",
+      "value": "No"
+    }
+  }
+]

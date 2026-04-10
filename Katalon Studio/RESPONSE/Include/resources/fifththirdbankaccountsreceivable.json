@@ -1,0 +1,223 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.leadfusion.com/response/lf-53/calc/artool?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_title_label",
+      "value": "How much can my business save by using Expert AR Receivables Matching?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Without Expert AR Receivables Matching, your manual payment reconciliation costs are estimated to be approximately $67,500 per year. Expert AR Receivables Matching is estimated to save your business 1,456 hours annually."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalAnnualSalaryCurrentState_result_label",
+      "value": "Total current annual salary dedicated to working payment exceptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalAnnualSalaryCurrentState_result_value",
+      "value": "$67,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPaymentsCurrentState_result_label",
+      "value": "Total current hours dedicated to working payment exceptions"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPaymentsCurrentState_result_value",
+      "value": "2,080"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPayments_result_label",
+      "value": "Total estimated hours dedicated to working payment exceptions with Expert AR Receivables Matching"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPayments_result_value",
+      "value": "624"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_MonthlyPayments-label",
+      "value": "Monthly payments"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExpertAR_MonthlyPayments",
+      "value": "900"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_MonthlyPayments-error-message",
+      "value": "Must be between 1 and 100,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[@id='lf_ExpertAR_MonthlyPayments_tooltip']/div",
+      "value": "i"
+    }
+  },
+  {
+    "click": {
+      "id": "//a[@id='lf_ExpertAR_MonthlyPayments_tooltip']/div"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-tooltip-term",
+      "value": "Monthly Payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-tooltip-text",
+      "value": "Monthly payments include all ACH, LBX, and Wire payments."
+    }
+  },
+  {
+    "click": {
+      "id": "lf-tooltip-close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_FTEsWorkingExceptions-label",
+      "value": "FTEs working exceptions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExpertAR_FTEsWorkingExceptions",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_FTEsWorkingExceptions-error-message",
+      "value": "Must be between 1 and 1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_PercentageOfFTETimeWorkingExceptions-label",
+      "value": "% of FTE time working exceptions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExpertAR_PercentageOfFTETimeWorkingExceptions",
+      "value": "10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_PercentageOfFTETimeWorkingExceptions-error-message",
+      "value": "Must be between 1% and 100%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_AverageAnnualSalaryOneReceivablesFTE-label",
+      "value": "Average annual salary of 1 Receivables FTE"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_ExpertAR_AverageAnnualSalaryOneReceivablesFTE",
+      "value": "50,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_AverageAnnualSalaryOneReceivablesFTE-error-message",
+      "value": "Must be between $1 and $1,000,000"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ExpertAR_MonthlyPayments",
+      "value": "1,100"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ExpertAR_FTEsWorkingExceptions",
+      "value": "5"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ExpertAR_PercentageOfFTETimeWorkingExceptions",
+      "value": "15"
+    }
+  },
+  {
+    "setTextAndWait": {
+      "id": "lf_ExpertAR_AverageAnnualSalaryOneReceivablesFTE",
+      "value": "85,000"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Without Expert AR Receivables Matching, your manual payment reconciliation costs are estimated to be approximately $86,063 per year. Expert AR Receivables Matching is estimated to save your business 1,092 hours annually."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalAnnualSalaryCurrentState_result_value",
+      "value": "$86,063"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPaymentsCurrentState_result_value",
+      "value": "1,560"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ExpertAR_TotalHoursWorkingPayments_result_value",
+      "value": "468"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_answer_more_info"
+    }
+  }
+]

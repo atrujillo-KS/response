@@ -1,0 +1,315 @@
+[
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/tools/qatest/bond01/tool.fcs?newuser"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.leadfusion.com/tools/qatest/bond01/tool.fcs"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id=\"results\"]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_rateofreturn",
+      "value": "Your return:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_Bond_RateOfReturnBeforeTaxes']/td[2]/table/tbody/tr/th",
+      "value": "Before taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Bond_RateOfReturnBeforeTaxes",
+      "value": "2.38%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='fieldRow_Bond_RateOfReturnAfterTaxes']/td[2]/table/tbody/tr/th",
+      "value": "After taxes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Bond_RateOfReturnAfterTaxes",
+      "value": "1.61%"
+    }
+  },
+  {
+    "click": {
+      "id": "graphs"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*[@id=\"contentData11\"]/th/span",
+      "value": "75.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData11\"]/td[2]",
+      "value": "10.12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData16\"]/th/span",
+      "value": "100.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData16\"]/td[2]",
+      "value": "3.72"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData110\"]/th/span",
+      "value": "120.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData110\"]/td[2]/span",
+      "value": "-0.28"
+    }
+  },
+  {
+    "click": {
+      "id": "help"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='What is my yield to maturity?'])[2]/following::span[2]",
+      "value": "This tool calculates yield to maturity, or the rate of return, before and after taxes, you earn on a bond if you hold the bond to maturity. Yield to maturity assumes that the interest coupons you receive on the bond can be reinvested at the same rate."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='yield to maturity'])[1]/following::span[2]",
+      "value": "Depending on the types of bonds being compared, the taxes applied to coupon payments will vary. Treasury securities are exempt from state income taxes. Municipal bonds are exempt from federal income taxes. In some cases, they are also exempt from state income taxes."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='yield to maturity'])[1]/following::span[4]",
+      "value": "After-tax rates of return are estimates that are based on current tax laws."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_ytm",
+      "value": "yield to maturity"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Bond_PurchasePrice",
+      "value": "95.15"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Bond_FaceValue",
+      "value": "20000"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Bond_CouponRate",
+      "value": "7.89"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Bond_MonthsToMaturity",
+      "value": "48"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_ModifiedAdjustedGrossIncome",
+      "value": "70000"
+    }
+  },
+  {
+    "select": {
+      "id": "Global_TaxFilingStatus",
+      "value": "label=Married filing jointly"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_StateTaxRate",
+      "value": "5.98"
+    }
+  },
+  {
+    "click": {
+      "id": "Bond_CouponIncomeSpendingOption_0"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_Global_SavingsInterestRate",
+      "value": "5.78"
+    }
+  },
+  {
+    "click": {
+      "id": "Bond_Type_2"
+    }
+  },
+  {
+    "click": {
+      "id": "results"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "Bond_RateOfReturnBeforeTaxes",
+      "value": "9.14%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "Bond_RateOfReturnAfterTaxes",
+      "value": "8.10%"
+    }
+  },
+  {
+    "click": {
+      "id": "graphs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='div_fieldLayout1']/table/tbody/tr[3]/td/span",
+      "value": "Yield based on purchase price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData11\"]/th/span",
+      "value": "75.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData11\"]/td[2]/span",
+      "value": "14.46"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData16\"]/th/span",
+      "value": "100.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData16']/td[2]/span",
+      "value": "6.82"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"contentData110\"]/th/span",
+      "value": "120.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//tr[@id='contentData110']/td[2]/span",
+      "value": "2.06"
+    }
+  },
+  {
+    "click": {
+      "id": "initial"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "glossaryanchor_bondprice",
+      "value": "Price you paid (% of face value)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_facevalue",
+      "value": "Face value"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_couponrate",
+      "value": "Coupon rate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_maturity",
+      "value": "Months to maturity"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_magi",
+      "value": "Modified adjusted gross income"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_taxfilingstatus",
+      "value": "Tax filing status"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_couponinterest",
+      "value": "Your coupon income is:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_bondtypes",
+      "value": "Type of bond:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_munibonds",
+      "value": "Municipal bond: not state tax-exempt"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_treasurysecurities",
+      "value": "Treasury security"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "glossaryanchor_corporatebonds",
+      "value": "Corporate or other"
+    }
+  }
+]

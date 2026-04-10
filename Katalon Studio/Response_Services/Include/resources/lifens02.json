@@ -1,0 +1,184 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Insurance_CurrentCashValue": {
+            "value": "2,500",
+            "dataFormat": "Currency",
+            "textLabel": "Cash value"
+          }
+        },
+        {
+          "Insurance_FutureCashValue": {
+            "value": "50,000",
+            "dataFormat": "Currency",
+            "textLabel": "Cash value at that time"
+          }
+        },
+        {
+          "Insurance_DeathBenefit": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "textLabel": "Death benefit"
+          }
+        },
+        {
+          "NowDiv": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": "Net dividends received"
+          }
+        },
+        {
+          "FutDivInsurance02": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathDiv": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowEarn": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Earnings"
+          }
+        },
+        {
+          "FutEarn": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathEarn": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowTaxesInsurance02": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes owed"
+          }
+        },
+        {
+          "FutTaxesInsurance02": {
+            "value": "11,238",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathTaxesInsurance02": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowReceivedInsurance02": {
+            "value": "2,750",
+            "dataFormat": "Currency",
+            "textLabel": "Received after taxes"
+          }
+        },
+        {
+          "FutReceivedInsurance02": {
+            "value": "39,012",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathReceivedInsurance02": {
+            "value": "100,250",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowRateInsurance02": {
+            "value": "-6.99",
+            "dataFormat": "Percentage",
+            "textLabel": "After-tax rate of return"
+          }
+        },
+        {
+          "FutRateInsurance02": {
+            "value": "5.06",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathRateInsurance02": {
+            "value": "3.76",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowPremInsurance02": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Premiums paid"
+          }
+        },
+        {
+          "FutPremInsurance02": {
+            "value": "16,750",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathPremInsurance02": {
+            "value": "30,500",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Lifens02_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Lifens02_Default_Results"
+        }
+      ]
+    }
+  ]
+}

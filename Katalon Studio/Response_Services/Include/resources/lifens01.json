@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Expenses": {
+            "value": "370,784",
+            "dataFormat": "Currency",
+            "textLabel": "Total amount necessary today to fund expenses"
+          }
+        },
+        {
+          "NowAssets": {
+            "value": "46,500",
+            "dataFormat": "Currency",
+            "textLabel": "Assets  you own today which you may convert to cash"
+          }
+        },
+        {
+          "FutAssets": {
+            "value": "260,507",
+            "dataFormat": "Currency",
+            "textLabel": "Amount of expenses your family will be able to cover"
+          }
+        },
+        {
+          "InsNeeded": {
+            "value": "63,777",
+            "dataFormat": "Currency",
+            "textLabel": "Shortfall (insurance you'll need)"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Lifens01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Lifens01_Default_Results"
+        }
+      ]
+    }
+  ]
+}

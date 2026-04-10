@@ -1,0 +1,183 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "HealthPlanTypeOpt": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Plan Type"
+          }
+        },
+        {
+          "HealthPlanType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "HSAAge": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Age 55 years of age or older"
+          }
+        },
+        {
+          "HSASpouseAgeOpt": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Age of spouse  55 years or older"
+          }
+        },
+        {
+          "HSASpouseAge": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "HSAContribution": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Annual HSA contributions"
+          }
+        },
+        {
+          "FedTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25.00",
+            "minimumValue": "0.00",
+            "maximumValue": "80.00",
+            "textLabel": "Current federal tax rate"
+          }
+        },
+        {
+          "StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.80",
+            "minimumValue": "0.00",
+            "maximumValue": "20.00",
+            "textLabel": "Current state tax rate"
+          }
+        }
+      ],
+      "title": "How much will I save on my taxes by using a HSA?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "HSA01_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA01_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "HSA01_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "HSA01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "HSA01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "HSA01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "HSA01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [],
+      "defaultAnswer": [
+        {
+          "textLabel": "Based on your inputs, your tax savings will be $301 if you itemize and are not subject to the <GLOSSREF key=\\\"amt\\\">alternative minimum tax (AMT)</GLOSSREF>. However, if you are subject to AMT or you don't itemize, your tax savings will be $318."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "HealthPlanType": "1"
+        },
+        {
+          "HSAAge": "1"
+        },
+        {
+          "HSASpouseAge": "1"
+        },
+        {
+          "HSAContribution": "1520"
+        },
+        {
+          "FedTaxRate": "22.4"
+        },
+        {
+          "StateTaxRate": "7.7"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Based on your inputs, your tax savings will be $431 if you itemize and are not subject to the <GLOSSREF key=\\\"amt\\\">alternative minimum tax (AMT)</GLOSSREF>. However, if you are subject to AMT or you don't itemize, your tax savings will be $458."
+        }
+      ]
+    }
+  ]
+}

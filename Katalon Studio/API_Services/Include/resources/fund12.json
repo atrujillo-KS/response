@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Fund_ExchangeRateAtPurchase": {
+            "value": "200",
+            "dataFormat": "Double2",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0.1",
+            "maximumValue": "100000",
+            "textLabel": "Foreign currency <br> exchanged for $1"
+          }
+        },
+        {
+          "Fund_ExchangeRateAtSale": {
+            "value": "210",
+            "dataFormat": "Double2",
+            "dataType": "Double",
+            "defaultValue": "210",
+            "minimumValue": "0.1",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_SharePurchasePrice": {
+            "value": "30",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "30",
+            "minimumValue": "0.1",
+            "maximumValue": "1000000",
+            "textLabel": "Share price"
+          }
+        },
+        {
+          "Fund_SharePriceToday": {
+            "value": "35",
+            "dataFormat": "Currency3",
+            "dataType": "Double",
+            "defaultValue": "35",
+            "minimumValue": "0.1",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_LongTermYearlyGainsPerShare": {
+            "value": "1.0",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "1.0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Annual long-term gains per share"
+          }
+        },
+        {
+          "Fund_ShortTermYearlyGainsPerShare": {
+            "value": "1",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Annual short-term gains per share"
+          }
+        },
+        {
+          "Fund_TaxableQuarterlyDividendsPerShare": {
+            "value": "1",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Quarterly dividends per share"
+          }
+        },
+        {
+          "Fund_YearlyIncreaseInDividendsAndGains": {
+            "value": "5",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Yearly increase for dividends & gains"
+          }
+        },
+        {
+          "Fund_SharesPurchased": {
+            "value": "300",
+            "dataFormat": "Double2",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": "Shares purchased"
+          }
+        },
+        {
+          "Fund_AdditionalInvestment": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Additional amounts invested"
+          }
+        },
+        {
+          "Fund_InvestmentFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_MonthsOwned": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "360",
+            "textLabel": "Months owned"
+          }
+        },
+        {
+          "Fund_FrontendLoad": {
+            "value": "3",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "Front load/purchase fees"
+          }
+        },
+        {
+          "Fund_BackendLoad": {
+            "value": "0",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": "Back load/selling fees"
+          }
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": {
+            "value": "40000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "40000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Modified adjusted gross income"
+          }
+        },
+        {
+          "Global_TaxFilingStatus": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Tax filing status"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.8",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        },
+        {
+          "Fund_DividendsAndGainsReinvestmentOption": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Dividends and gains are:"
+          }
+        },
+        {
+          "FakeField1": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "FakeField2": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How do exchange rates affect my foreign fund?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Fund12_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Fund12_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Fund12_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Fund12_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Fund12_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Fund12_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Fund12_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Fund_SharePriceAtNewRate": {
+            "value": "33.33",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": "Adjusted for exchange rates"
+          }
+        },
+        {
+          "Fund_GainOrLossAtNewRate": {
+            "value": "3.33",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnAtNewRate": {
+            "value": "13.91",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate of return at new exchange rate"
+          }
+        },
+        {
+          "Fund_RateOfReturnAtOriginalRate": {
+            "value": "14.60",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate of return at original exchange rate"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Fund_ExchangeRateAtPurchase": "15.49"
+        },
+        {
+          "Fund_ExchangeRateAtSale": "16.75"
+        },
+        {
+          "Fund_SharePurchasePrice": "18.479"
+        },
+        {
+          "Fund_SharePriceToday": "463.000"
+        },
+        {
+          "Fund_LongTermYearlyGainsPerShare": "9.00"
+        },
+        {
+          "Fund_ShortTermYearlyGainsPerShare": "15.00"
+        },
+        {
+          "Fund_TaxableQuarterlyDividendsPerShare": "19"
+        },
+        {
+          "Fund_YearlyIncreaseInDividendsAndGains": "21.00"
+        },
+        {
+          "Fund_SharesPurchased": "2,200.00"
+        },
+        {
+          "Fund_AdditionalInvestment": "2,300"
+        },
+        {
+          "Fund_InvestmentFrequency": "2"
+        },
+        {
+          "Fund_MonthsOwned": "94"
+        },
+        {
+          "Fund_FrontendLoad": "4.000"
+        },
+        {
+          "Fund_BackendLoad": "5.000"
+        },
+        {
+          "Global_ModifiedAdjustedGrossIncome": "72,000"
+        },
+        {
+          "Global_TaxFilingStatus": "3"
+        },
+        {
+          "Global_StateTaxRate": "3.90"
+        },
+        {
+          "Fund_DividendsAndGainsReinvestmentOption": "1"
+        },
+        {
+          "Global_SavingsInterestRate": "6.00"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Fund_SharePriceAtNewRate": {
+            "value": "428.17",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": "Adjusted for exchange rates"
+          }
+        },
+        {
+          "Fund_GainOrLossAtNewRate": {
+            "value": "409.69",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": ""
+          }
+        },
+        {
+          "Fund_RateOfReturnAtNewRate": {
+            "value": "47.55",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate of return at new exchange rate"
+          }
+        },
+        {
+          "Fund_RateOfReturnAtOriginalRate": {
+            "value": "51.42",
+            "dataFormat": "Percentage",
+            "textLabel": "Rate of return at original exchange rate"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "At time of sale"
+        },
+        {
+          "textLabel": "At the original exchange rate of 15.49 units of foreign currency per dollar, your rate of return is 51.42% after taxes and fees."
+        },
+        {
+          "textLabel": "At today's exchange rate of 16.75 units of foreign currency per dollar, your dollar-denominated rate of return is 47.55% a decrease of 3.87% ."
+        }
+      ]
+    }
+  ]
+}

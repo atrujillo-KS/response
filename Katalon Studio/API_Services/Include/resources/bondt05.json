@@ -1,0 +1,108 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "Bond_MarketValueIfRatesDrop": {
+            "value": "10,684",
+            "dataFormat": "Currency",
+            "textLabel": "Your bond's value today"
+          }
+        },
+        {
+          "Bond_MarketValue": {
+            "value": "9,761",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_MarketValueIfRatesRise": {
+            "value": "8,925",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_PreTaxGainOrLossIfRatesDrop": {
+            "value": "(316)",
+            "dataFormat": "Currency",
+            "textLabel": "Gain(loss) if sold today*"
+          }
+        },
+        {
+          "Bond_PreTaxGainOrLoss": {
+            "value": "(1,239)",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_PreTaxGainOrLossIfRatesRise": {
+            "value": "(2,075)",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Bond_RatesDrop": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "textLabel": "If rates drop"
+          }
+        },
+        {
+          "Bond_RatesStay": {
+            "value": "5.00",
+            "dataFormat": "Percentage",
+            "textLabel": "If rates stay"
+          }
+        },
+        {
+          "Bond_RatesRise": {
+            "value": "7.00",
+            "dataFormat": "Percentage",
+            "textLabel": "If rates rise"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "If rates drop to 3.0%"
+        },
+        {
+          "textLabel": "If rates stay at 5.0%"
+        },
+        {
+          "textLabel": "If rates rise to 7.0%"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Bondt05_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Bondt05_Default_Results"
+        }
+      ]
+    }
+  ]
+}

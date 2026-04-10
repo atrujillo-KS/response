@@ -1,0 +1,386 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "College_MealPlanType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "College_WeeklyMealPlanCost": {
+            "value": "1,200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1200",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": "Cost of meal plan"
+          }
+        },
+        {
+          "College_MealsCoveredWeekly": {
+            "value": "15",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "15",
+            "minimumValue": "1",
+            "maximumValue": "42",
+            "textLabel": "Number of meals covered each week"
+          }
+        },
+        {
+          "College_WeeklyMealPlanCampusCash": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Campus cash"
+          }
+        },
+        {
+          "College_MealsMissedWeeklyInWeeklyMealPlan": {
+            "value": "2",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "2",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Estimated meals missed weekly"
+          }
+        },
+        {
+          "College_WeeksIncludedInMealPlan": {
+            "value": "16",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "16",
+            "minimumValue": "1",
+            "maximumValue": "52",
+            "textLabel": "Number of weeks of plan"
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "dataType": "output",
+            "textLabel": ""
+          }
+        },
+        {
+          "College_BlockMealPlanCost": {
+            "value": "960",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "960",
+            "minimumValue": "1",
+            "maximumValue": "10000",
+            "textLabel": "Cost of meal plan"
+          }
+        },
+        {
+          "College_MealsIncludedInBlockMealPlan": {
+            "value": "160",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "160",
+            "minimumValue": "1",
+            "maximumValue": "1200",
+            "textLabel": "Number of meals in block plan"
+          }
+        },
+        {
+          "College_BlockMealPlanCampusCash": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Campus cash"
+          }
+        },
+        {
+          "College_MealsMissedWeeklyInBlockMealPlan": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1199",
+            "textLabel": "Estimated number of meals missed"
+          }
+        },
+        {
+          "MealTaxableOpt": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Is the meal plan taxable?"
+          }
+        },
+        {
+          "College_IsMealPlanTaxable": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": ""
+          }
+        },
+        {
+          "SalesTaxRateText": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Sales tax rate"
+          }
+        },
+        {
+          "Global_SalesTaxRate": {
+            "value": "8.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "8",
+            "minimumValue": "0",
+            "maximumValue": "99",
+            "textLabel": ""
+          }
+        },
+        {
+          "AverageCostOOP": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": "Your cost if paid out-of-pocket"
+          }
+        },
+        {
+          "College_CostPerMealIfPaidOutOfPocket": {
+            "value": "5.00",
+            "dataFormat": "CurrencyWithCents",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "1",
+            "maximumValue": "50",
+            "textLabel": "Average cost per meal if paid out-of-pocket"
+          }
+        }
+      ],
+      "title": "Is a meal plan a good deal?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "College12_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College12_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "College12_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "College12_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "College12_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "College12_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "College12_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "MealPlanCost": {
+            "value": "1,200",
+            "dataFormat": "Currency",
+            "textLabel": "Meal plan cost"
+          }
+        },
+        {
+          "SalesTaxCollege12": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Sales tax"
+          }
+        },
+        {
+          "TotalMealPlanCost": {
+            "value": "1,200",
+            "dataFormat": "Currency",
+            "textLabel": "Total meal plan cost"
+          }
+        },
+        {
+          "FlexDollars": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Campus \"cash\""
+          }
+        },
+        {
+          "NetMealPlanCost": {
+            "value": "1,050",
+            "dataFormat": "Currency",
+            "textLabel": "Net amount paid for meals"
+          }
+        },
+        {
+          "AvgCostMax": {
+            "value": "4.38",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": "If maximize use of meal plan"
+          }
+        },
+        {
+          "AvgCostForfeit": {
+            "value": "5.05",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": "If <b>32</b> meals missed or forfeited"
+          }
+        },
+        {
+          "College_CostPerMealIfPaidOutOfPocket": {
+            "value": "5.00",
+            "dataFormat": "CurrencyWithCents",
+            "textLabel": "Average cost per meal if paid out-of-pocket"
+          }
+        },
+        {
+          "NoOfMeal": {
+            "value": "240",
+            "dataFormat": "None",
+            "textLabel": "Number of meals covered"
+          }
+        },
+        {
+          "NoOfMealForfeit": {
+            "value": "32",
+            "dataFormat": "None",
+            "textLabel": "Number of meals missed or forfeited"
+          }
+        },
+        {
+          "CostForfeitMeals": {
+            "value": "160",
+            "dataFormat": "Currency",
+            "textLabel": "Your cost to replace missed or forfeited meals"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "College_MealPlanType": "1"
+        },
+        {
+          "College_WeeklyMealPlanCost": "1200"
+        },
+        {
+          "College_MealsCoveredWeekly": "15"
+        },
+        {
+          "College_WeeklyMealPlanCampusCash": "150"
+        },
+        {
+          "College_MealsMissedWeeklyInWeeklyMealPlan": "2"
+        },
+        {
+          "College_BlockMealPlanCost": "2700"
+        },
+        {
+          "College_MealsIncludedInBlockMealPlan": "271"
+        },
+        {
+          "College_BlockMealPlanCampusCash": "220"
+        },
+        {
+          "College_MealsMissedWeeklyInBlockMealPlan": "11"
+        },
+        {
+          "College_WeeksIncludedInMealPlan": "26"
+        },
+        {
+          "College_CostPerMealIfPaidOutOfPocket": "10"
+        },
+        {
+          "College_IsMealPlanTaxable": "1"
+        },
+        {
+          "Global_SalesTaxRate": "6"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+	    { "MealPlanCost": { "value": "2,700", "dataFormat": "Currency", "textLabel": "Meal plan cost" } },
+	    { "SalesTaxCollege12": { "value": "162", "dataFormat": "Currency", "textLabel": "Sales tax" } },
+	    { "TotalMealPlanCost": { "value": "2,862", "dataFormat": "Currency", "textLabel": "Total meal plan cost" } },
+	    { "FlexDollars": { "value": "220", "dataFormat": "Currency", "textLabel": "Campus \"cash\"" } },
+	    { "NetMealPlanCost": { "value": "2,642", "dataFormat": "Currency", "textLabel": "Net amount paid for meals" } },
+	    { "AvgCostMax": { "value": "9.75", "dataFormat": "CurrencyWithCents", "textLabel": "If maximize use of meal plan" } },
+	    { "AvgCostForfeit": { "value": "10.16", "dataFormat": "CurrencyWithCents", "textLabel": "If <b>11</b> meals missed or forfeited" } },
+	    { "College_CostPerMealIfPaidOutOfPocket": { "value": "10.00", "dataFormat": "CurrencyWithCents", "textLabel": "Average cost per meal if paid out-of-pocket" } },
+	    { "NoOfMeal": { "value": "271", "dataFormat": "None", "textLabel": "Number of meals covered" } },
+	    { "NoOfMealForfeit": { "value": "11", "dataFormat": "None", "textLabel": "Number of meals missed or forfeited" } },
+	    { "CostForfeitMeals": { "value": "110", "dataFormat": "Currency", "textLabel": "Your cost to replace missed or forfeited meals" } }
+      ],
+      "nonDefaultAnswer": []
+    }
+  ]
+}

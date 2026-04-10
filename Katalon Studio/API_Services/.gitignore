@@ -1,0 +1,47 @@
+# Katalon Studio project ignore rules
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE / Workspace
+.settings/
+.metadata/
+bin/
+Libs/
+Reports/
+console.properties
+entityReference.index
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+*.swp
+*.class
+*.har
+
+# Test execution outputs
+Reports/**
+Screenshots/**
+result/**
+output/**
+junitreports/**
+
+# Gradle cache if using
+.gradle/
+build/
+
+# Katalon license & runtime data
+config/
+plugins/
+katalon.properties
+console.log
+
+!output/.gitkeep
+
+.classpath
+
+.project
+
+.cache

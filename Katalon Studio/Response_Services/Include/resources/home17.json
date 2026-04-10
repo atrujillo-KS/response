@@ -1,0 +1,539 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_AffordabilityCalculationOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Calculate affordability by"
+          }
+        },
+        {
+          "Global_AnnualGrossIncome": {
+            "value": "75,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "75000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Annual gross income"
+          }
+        },
+        {
+          "Global_CurrentMonthlyDebtPayments": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Monthly debt payments"
+          }
+        },
+        {
+          "Home_MaximumMortgagePayment": {
+            "value": "1,850",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1850",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Maximum payment"
+          }
+        },
+        {
+          "Home_DownPaymentAmount": {
+            "value": "50,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Down payment"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Loan term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_IncludeTaxesInsuranceHOA": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Taxes, insurance & HOA"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Property tax (yearly)"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Homeowners insurance(yearly)"
+          }
+        },
+        {
+          "Home_MonthlyHOA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Monthly HOA fee"
+          }
+        },
+        {
+          "Home_DebtRatio": {
+            "value": "36.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "36",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Debt-to-income ratio"
+          }
+        },
+        {
+          "Home_HousingRatio": {
+            "value": "28.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "28",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Housing ratio"
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00101",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00101",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00067",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00067",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00033",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00033",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00021",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00021",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00121",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00121",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.00096",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00096",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00065",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00065",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateFixedPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00028",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00028",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00126",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00126",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV90_01To95": {
+            "value": "0.00084",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00084",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTV85_01To90": {
+            "value": "0.00041",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00041",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsLessThanOrEqualTo20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00026",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00026",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVGreaterThanOrEqualTo95_01": {
+            "value": "0.00151",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00151",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV90_01To95": {
+            "value": "0.0012",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.0012",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTV85_01To90": {
+            "value": "0.00081",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00081",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMIRateARMPaymentsGreaterThan20YearTermLTVLessThanOrEqualTo85": {
+            "value": "0.00035",
+            "dataFormat": "None",
+            "dataType": "Double",
+            "defaultValue": "0.00035",
+            "minimumValue": "0",
+            "maximumValue": "0.002",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How much home can I afford?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home17_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home17_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home17_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home17_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home17_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home17_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home17_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PrincAndIntHome17": {
+            "value": "1,327",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "PropTax": {
+            "value": "271",
+            "dataFormat": "Currency",
+            "textLabel": "Property taxes"
+          }
+        },
+        {
+          "PropIns": {
+            "value": "83",
+            "dataFormat": "Currency",
+            "textLabel": "Homeowners insurance"
+          }
+        },
+        {
+          "MonthlyHOA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees"
+          }
+        },
+        {
+          "MortInsHome17": {
+            "value": "69",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance(PMI)"
+          }
+        },
+        {
+          "TotPmtHome17": {
+            "value": "1,750",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Total monthly payment</b>"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "You can afford a home worth up to $297,163 with a total monthly payment of $1,750."
+        },
+        {
+          "textLabel": "<b>Summary of your monthly payment</b>"
+        },
+        {
+          "textLabel": "<b>NOTE:</b> If the calculated total monthly payment above is less than the total monthly payment that you entered, consider increasing your down payment. This will allow you to afford a home at a higher price, resulting in a calculated total monthly payment that is closer to or matches the total monthly payment entered."
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Home_AffordabilityCalculationOption": "1"
+        },
+        {
+          "Global_AnnualGrossIncome": "75000"
+        },
+        {
+          "Global_CurrentMonthlyDebtPayments": "250"
+        },
+        {
+          "Home_MaximumMortgagePayment": "4000"
+        },
+        {
+          "Home_DownPaymentAmount": "290000"
+        },
+        {
+          "Home_LoanTermInYears": "18"
+        },
+        {
+          "Home_InterestRate": "3.9"
+        },
+        {
+          "Home_IncludeTaxesInsuranceHOA": "1"
+        },
+        {
+          "Home_YearlyPropertyTax": "2400"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "5500"
+        },
+        {
+          "Home_MonthlyHOA": "300"
+        },
+        {
+          "Home_DebtRatio": "36"
+        },
+        {
+          "Home_HousingRatio": "28"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "PrincAndIntHome17": {
+            "value": "4,000",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "PropTax": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Property taxes"
+          }
+        },
+        {
+          "PropIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Homeowners insurance"
+          }
+        },
+        {
+          "MonthlyHOA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "HOA fees"
+          }
+        },
+        {
+          "MortInsHome17": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Private mortgage insurance(PMI)"
+          }
+        },
+        {
+          "TotPmtHome17": {
+            "value": "4,000",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Total monthly payment</b>"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "You can afford a home worth up to $910,114 with a total monthly payment of $4,000."
+        },
+        {
+          "textLabel": "<b>Summary of your monthly payment</b>"
+        },
+        {
+          "textLabel": "<b>NOTE:</b> If the calculated total monthly payment above is less than the total monthly payment that you entered, consider increasing your down payment. This will allow you to afford a home at a higher price, resulting in a calculated total monthly payment that is closer to or matches the total monthly payment entered."
+        }
+      ]
+    }
+  ]
+}

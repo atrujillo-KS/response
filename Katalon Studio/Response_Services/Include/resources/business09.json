@@ -1,0 +1,427 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Business_HDHPWithHSASingleCoverageEmployees": {
+            "value": "10",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_HDHPWithHSASingleCoverageDeductible": {
+            "value": "2,170",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "2170",
+            "minimumValue": "1350",
+            "maximumValue": "6750",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_HDHPWithHSASingleCoveragePremium": {
+            "value": "415",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "415",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_SingleCoverageNormalPremium": {
+            "value": "475",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "475",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_AverageHSAEmployeeContributionSingle": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "500",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_AverageHSAEmployerContributionSingle": {
+            "value": "475",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "475",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageEmployees": {
+            "value": "10",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageDeductible": {
+            "value": "4,330",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "4330",
+            "minimumValue": "2700",
+            "maximumValue": "13500",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoveragePremium": {
+            "value": "1,080",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1080",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_FamilyCoverageNormalPremium": {
+            "value": "1,120",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1120",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_AverageHSAEmployeeContributionFamily": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_AverageHSAEmployerContributionFamily": {
+            "value": "800",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "800",
+            "minimumValue": "0",
+            "maximumValue": "20000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_MarginalTaxRate": {
+            "value": "3.70",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3.7",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_FUTAStateUnemploymentTaxRate": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "25",
+            "textLabel": ""
+          }
+        },
+        {
+          "HSAMaxcontribution": {
+            "value": "3,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3500",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "CurrentTaxYear": {
+            "value": "2019",
+            "dataFormat": "Integer",
+            "dataType": "Integer",
+            "defaultValue": "2019",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "How much can my business save by offering my employees a HDHP with a HSA?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Business09_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Business09_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Business09_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Business09_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Business09_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Business09_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Business09_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "HDHPWithHSATotalAnnualSavings": {
+            "value": "425",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSATotalCostOfPremiums": {
+            "value": "179,400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSATotalCostOfEmployerContributions": {
+            "value": "12,750",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSATotalFICATaxSavings": {
+            "value": "15,158",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSATotalFUTAStateUnemploymentTaxSavings": {
+            "value": "19,815",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSATotalBusinessExpenseTaxSavings": {
+            "value": "5,816",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSANetTotalAnnualCost": {
+            "value": "151,361",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "HDHPWithHSANetTotalAnnualCostPerEmployee": {
+            "value": "7,568",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanTotalCostOfPremiums": {
+            "value": "191,400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanTotalCostOfEmployerContributions": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanTotalFICATaxSavings": {
+            "value": "14,642",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanTotalFUTAStateUnemploymentTaxSavings": {
+            "value": "19,140",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanTotalBusinessExpenseTaxSavings": {
+            "value": "5,832",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanNetTotalAnnualCost": {
+            "value": "151,786",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExistingHealthPlanNetTotalAnnualCostPerEmployee": {
+            "value": "7,589",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Business_CostDifference": {
+            "value": "425",
+            "dataFormat": "Currency",
+            "textLabel": "Cost difference between HDHP with a HSA or traditional"
+          }
+        },
+        {
+          "Business_LessOrMore": {
+            "value": "save",
+            "dataFormat": "None",
+            "textLabel": "Will HDHP with a HSA cost or save for your business?"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Business_HDHPWithHSASingleCoverageEmployees": "160"
+        },
+        {
+          "Business_HDHPWithHSASingleCoverageDeductible": "2600"
+        },
+        {
+          "Business_HDHPWithHSASingleCoveragePremium": "1600"
+        },
+        {
+          "Business_SingleCoverageNormalPremium": "2000"
+        },
+        {
+          "Business_AverageHSAEmployeeContributionSingle": "2200"
+        },
+        {
+          "Business_AverageHSAEmployerContributionSingle": "1000"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageEmployees": "70"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoverageDeductible": "4000"
+        },
+        {
+          "Business_HDHPWithHSAFamilyCoveragePremium": "3400"
+        },
+        {
+          "Business_FamilyCoverageNormalPremium": "4600"
+        },
+        {
+          "Business_AverageHSAEmployeeContributionFamily": "1600"
+        },
+        {
+          "Business_AverageHSAEmployerContributionFamily": "2200"
+        },
+        {
+          "Business_MarginalTaxRate": "8.00"
+        },
+        {
+          "Business_FUTAStateUnemploymentTaxRate": "8.00"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+      	{ "HDHPWithHSATotalAnnualSavings": { "value": "1,201,348", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSATotalCostOfPremiums": { "value": "5,928,000", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSATotalCostOfEmployerContributions": { "value": "314,000", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSATotalFICATaxSavings": { "value": "513,009", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSATotalFUTAStateUnemploymentTaxSavings": { "value": "536,480", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSATotalBusinessExpenseTaxSavings": { "value": "415,401", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSANetTotalAnnualCost": { "value": "4,777,110", "dataFormat": "Currency", "textLabel": "" } },
+	    { "HDHPWithHSANetTotalAnnualCostPerEmployee": { "value": "20,770", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanTotalCostOfPremiums": { "value": "7,704,000", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanTotalCostOfEmployerContributions": { "value": "0", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanTotalFICATaxSavings": { "value": "589,356", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanTotalFUTAStateUnemploymentTaxSavings": { "value": "616,320", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanTotalBusinessExpenseTaxSavings": { "value": "519,866", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanNetTotalAnnualCost": { "value": "5,978,458", "dataFormat": "Currency", "textLabel": "" } },
+	    { "ExistingHealthPlanNetTotalAnnualCostPerEmployee": { "value": "25,993", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Business_CostDifference": { "value": "1,201,348", "dataFormat": "Currency", "textLabel": "Cost difference between HDHP with a HSA or traditional" } },
+	    { "Business_LessOrMore": { "value": "save", "dataFormat": "None", "textLabel": "Will HDHP with a HSA cost or save for your business?" } }
+      ],
+      "nonDefaultAnswer": []
+    }
+  ]
+}

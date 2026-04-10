@@ -1,0 +1,1417 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Checking Accounts",
+      "value": "Evaluate Business Checking Accounts"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Evaluate Business Checking Accounts"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_later_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-your-code-label",
+      "value": "Your code is:"
+    }
+  },
+  {
+    "storeText": {
+      "id": "lf-cfid-label",
+      "value": "Code"
+    }
+  },
+  {
+    "checkStoredText": {
+      "id": "lf-cfid-label",
+      "value": "Code"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-cfid-label",
+      "value": "${Code}"
+    }
+  },  
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_code",
+      "value": ""
+    }
+  },
+  {
+    "click": {
+      "id": "//button/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_title",
+      "value": "Recall your work"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_tooltip_text",
+      "value": "Enter the 5-digit code to recall work saved from previous visit."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_tooltip_close"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//button[2]",
+      "value": "Recall"
+    }
+  },
+  {
+	"setText": {
+	   "id": "lf_code",
+	   "value": "${Code}"
+	 }
+  },
+  {
+    "click": {
+      "id": "//button[2]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_message_text",
+      "value": "Your work has been recalled"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_save_later_btn",
+      "value": "Save for later"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_save_later_btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-title-label",
+      "value": "SAVE FOR LATER"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-apply-title-label",
+      "value": "1. Save"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-apply-title-desc-label",
+      "value": "Pick up where you left off."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-your-code-label",
+      "value": "Your code is:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-cfid-label",
+      "value": "${Code}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-send-btn-label",
+      "value": "SEND CODE"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_sendEmailAddress1",
+      "value": "BusinessChecking@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-send-btn-label"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_message_text",
+      "value": "Your code will be sent shortly"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_sendEmailAddress1",
+      "value": "BusinessChecking@bulkmail.sanc.leadfusion.com"
+    }
+  },  
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Send Code'])[1]/following::div[8]",
+      "value": "2. Want Expert Help?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Diego, CA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+      {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Miami, FL"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-branch-btn > div:nth-child(2)",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-call-btn > div:nth-child(2)",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-chat-btn > div:nth-child(2)",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-disclosures"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Disclosures"
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='View Disclosures'])[1]/following::p[1]",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='View Disclosures'])[1]/following::div[1]",
+      "value": "This tool is provided for the education and illustrative purposes only. The accuracy of the calculations and their applicability to your circumstances are not guaranteed. Please consult your financial, tax or legal advisor regarding your unique situation."
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_step_title_text",
+      "value": "YOUR ACCOUNT NEEDS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_field_list']/span/div/div/div[2]",
+      "value": "Let's learn a little about your business first."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_ZipCode_label",
+      "value": "ZIP Code"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZIP Code'])[1]/following::div[7]",
+      "value": "ZIP CODE"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode_container"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZIP CODE'])[1]/following::div[2]",
+      "value": "Knowing what zip code you live in will help us determine the products that are available in your specific area."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BusinessStructure_label",
+      "value": "Business Structure"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_BusinessStructure",
+      "value": "Sole Proprietorship Non-profit Government Agency Other"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_BusinessStructure",
+      "value": "1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='More information'])[1]/following::div[4]",
+      "value": "BUSINESS STRUCTURE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='BUSINESS STRUCTURE'])[1]/following::div[2]",
+      "value": "Depending on your business structure, you may be eligible for accounts with no monthly maintenance fees or minimum balance requirements."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-assist-select-label.ng-binding",
+      "value": "Sole Proprietorship"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sole Proprietorship'])[2]/following::div[1]",
+      "value": "The simplest structure, which usually involves just one individual who owns and operates the enterprise."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_BusinessStructure_assistant']/div/div/div[2]/div[2]/div[2]/span/div",
+      "value": "Non-profit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_BusinessStructure_assistant']/div/div/div[2]/div[2]/div[2]/span/div[2]",
+      "value": "A corporation formed to carry out a charitable, educational, religious, literary, or scientific purpose."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Average Combined Account Balance'])[1]/following::div[2]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_BusinessStructure_assistant']/div/div/div[2]/div[2]/div[3]/span/div",
+      "value": "Government Agency"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Government Agency'])[2]/following::div[1]",
+      "value": "An organization responsible for the oversight and administration of specific governmental functions."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_BusinessStructure_assistant']/div/div/div[2]/div[2]/div[4]/span/div",
+      "value": "Other"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Other'])[2]/following::div[1]",
+      "value": "A corporation, partnership, or limited liability company (LLC)."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgBizCheckingAccountBal_label",
+      "value": "Average Checking Account Balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_AvgBizCheckingAccountBal",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_AvgBizCheckingAccountBal_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='More Information'])[1]/following::div[4]",
+      "value": "AVERAGE CHECKING ACCOUNT BALANCE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='AVERAGE CHECKING ACCOUNT BALANCE'])[1]/following::div[2]",
+      "value": "At any given time, what do you expect your checking account balance will be? The monthly service fee on some of our accounts will be waived for business customers that maintain certain minimum balances."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CombinedBizAccountBalance_label",
+      "value": "Average Combined Account Balance"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CombinedBizAccountBalance",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_CombinedBizAccountBalance_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='More Information'])[2]/following::div[4]",
+      "value": "AVERAGE COMBINED ACCOUNT BALANCE"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='AVERAGE COMBINED ACCOUNT BALANCE'])[1]/following::div[2]",
+      "value": "What is the minimum amount you expect to keep across all your Fusion Financial checking, money market, CD, and savings accounts? The monthly service fee on some of our accounts will be waived for business customers that maintain certain combined minimum balances."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyTransactions_label",
+      "value": "Monthly Transactions"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyTransactions",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyCashDeposits_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='More Information'])[3]/following::div[4]",
+      "value": "MONTHLY TRANSACTIONS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='MONTHLY TRANSACTIONS'])[1]/following::div[2]",
+      "value": "How many combined debit card transactions, ATM deposits, and check deposits does your business make in an average month?"
+    }
+  },
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Checking Accounts",
+      "value": "Evaluate Business Checking Accounts"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_MonthlyCashDeposits",
+      "value": "$10,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_MonthlyCashDeposits_slider",
+      "value": "0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='More Information'])[4]/following::div[4]",
+      "value": "MONTHLY CASH DEPOSITS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='MONTHLY CASH DEPOSITS'])[1]/following::div[2]",
+      "value": "How much physical cash (only cash, not checks or electronic deposits) do you deposit into your account every month?"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-step-field-label-text.ng-binding",
+      "value": "Financial Education"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_glossary:MostOutCheckingAccount",
+      "value": "Choosing the Right Checking Account for Your Business"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_glossary:CreateBudget",
+      "value": "Get the Most out of Your Business Checking Account"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_glossary:MostOutCheckingAccount"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Choosing the Right Checking Account for Your Business"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "A business checking account is important because the business's finances should be completely separate from the owner's personal finances. Separation eases the accounting burden and helps to ensure that business liability does not shift to the owner. When choosing the right account, consider your transaction volume, cash deposit requirements, and business type."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "Your transaction requirements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd",
+      "value": "With most business checking accounts, certain transactions are unlimited, like Business Bill Pay and payments. Others, like checks , count towards the number of transactions included at no additional charge. Just like going over data or minutes in your phone plan, you might start exceeding what's included in your account and begin incurring excess activity fees."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "Your cash deposit requirements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "Business checking accounts also have a limit on the amount of cash that businesses can deposit for no charge. Banks do this because it's harder to process large amounts of cash and prefer electronic transactions. If your business deals mostly in cash, such as a restaurant, you may want to look for accounts with higher cash deposit limits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dt",
+      "value": "Your business type"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dd",
+      "value": "If you are a nonprofit, you are typically eligible for interest-bearing accounts with lower monthly maintenance fees and a low transaction limit."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div[2]",
+      "value": "We offer accounts designed to handle different transaction volumes, amounts of cash deposits, and business types, depending on your needs."
+    }
+  },
+  {
+    "click": {
+      "id": "//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_glossary:CreateBudget"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Get the Most out of Your Business Checking Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/div",
+      "value": "The following checking account tips can help you better manage your money."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dt",
+      "value": "Maintain the minimum monthly balance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div/dd",
+      "value": "Some business checking accounts offer monthly fee waivers if the account balance stays above a stated minimum every day of the month. Avoid paying monthly service fees by not letting your balance fall below the minimum. Better yet, set a goal to keep a few hundred more than the minimum required in your account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dt",
+      "value": "Create an automatic savings plan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[2]/dd",
+      "value": "Link your checking account to your savings account to automatically transfer a certain amount each month."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dt",
+      "value": "Avoid overdraft fees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[3]/dd",
+      "value": "An overdraft occurs when you spend more money than you have in your account. Overdraft Protection is an optional service that can help you protect yourself from costly overdraft fees and the inconvenience of declined transactions or returned items. With Overdraft Protection, available funds are automatically transferred from an eligible savings or credit account to your eligible checking account if you don't have enough money to cover your transactions."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dt",
+      "value": "Set up account alerts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[4]/dd",
+      "value": "Get notified by text or email when your account balance drops below a specific amount, a check you've written has cleared your account, or when potentially fraudulent activity or identity theft has occurred on your account."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dt",
+      "value": "Take advantage of automatic payments"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[5]/dd",
+      "value": "Setting up automatic payments for recurring bills through Online Business Bill Pay is a hassle-free way to ensure your bills are paid on time. No more stamps and snail mail."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[6]/dt",
+      "value": "Review your account once a year"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[@id='lf_inline_modal_body']/dl/div[6]/dd",
+      "value": "As your business grows, you may be eligible for better terms, need additional services, or be subject to higher fees for more transactions or cash deposits."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_modal_close"
+    }
+  },
+  {
+	"waitForElementPresent": {
+	   "id": "lf_results_button",
+	   "value": "5"
+	  }
+  },
+  {
+    "click": {
+      "id": "lf_results_button"
+    }
+  },
+  {
+	"waitForElementPresent": {
+	   "id": "css=.lf-step-title-text",
+	   "value": "5"
+	  }
+  },
+  {
+    "waitForText": {
+      "id": "css=.lf-step-title-text",
+      "value": "RELEVANT ACCOUNT OPTIONS"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-step-description.ng-binding",
+      "value": "Based on what you've told us, here are the account options that best meet the needs of your business."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-review-eval-select.lf-desktop-show.ng-binding.ng-scope",
+      "value": "Select up to 3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select up to 3'])[1]/following::span[1]",
+      "value": "Sort by:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_review_sort",
+      "value": "Lowest Total Fees Lowest Transaction Limit Highest Cash Deposit Limit"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_review_sort",
+      "value": "string:MonthlyServiceFees"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Everyday Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-results-row-major-value.ng-binding",
+      "value": "$5"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_0']/div/span",
+      "value": "Description:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_0']/div/span[2]",
+      "value": "A simple and convenient account with low minimum balance requirements and transaction limits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_0']/div[2]/span",
+      "value": "A Good Choice If:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_0']/div[2]/span[2]",
+      "value": "You are a newer business that has low transaction activity and no cash management needs."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_0']/div[2]/div[3]/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_1 > div.lf-results-row > div.lf-results-row-name > button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Interest Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_major_1 > div.lf-results-row-major-value.ng-binding",
+      "value": "$0"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_1']/div/span",
+      "value": "Description:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_1']/div/span[2]",
+      "value": "An interest-earning checking account with tiered rates and added benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_1']/div[2]/span",
+      "value": "A Good Choice If:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_1']/div[2]/span[2]",
+      "value": "Your business keeps high balances and you want to put that money to work for you."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div[2]/div[3]/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_2 > div.lf-results-row > div.lf-results-row-name > button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Premier Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_major_2 > div.lf-results-row-major-value.ng-binding",
+      "value": "$50"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div[2]/div[3]/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_2']/div/span",
+      "value": "Description:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_2']/div/span[2]",
+      "value": "A checking account for higher balances with our best interest rates, discounts, and fee waivers."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_2']/div[2]/span",
+      "value": "A Good Choice If:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_details_2']/div[2]/span[2]",
+      "value": "You are a mid-sized or large business that carries higher balances and seeks extra rewards and benefits"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-1"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-2"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-next-col-header-label.ng-binding",
+      "value": "Everyday Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-1",
+      "value": "Interest Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-2",
+      "value": "Premier Business Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CalculatedMonthlyServiceFee.lf-compare-row-label-single",
+      "value": "Monthly Service Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CalculatedExcessTransactionFees.lf-compare-row-label-single",
+      "value": "Excess Transaction Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CalculatedExcessDepositFees.lf-compare-row-label-single",
+      "value": "Cash Handling Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_compare_tab_desc",
+      "value": "Compare estimated account fees based on the information that you provided. The monthly service fee on an account may be waived if you meet the balance requirement or other conditions. In addition, just like going over data or minutes in your phone plan, you might start exceeding what's included in an account and begin incurring excess transaction or cash handling fees."
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-EstimatedMonthlyCost.lf-compare-row-label-single",
+      "value": "Estimated Monthly Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td/div",
+      "value": "$5"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[2]/div",
+      "value": "$0"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td[3]/div",
+      "value": "$50"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Fee Details"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-MonthlyServiceFees.lf-compare-row-label-single",
+      "value": "Monthly Service Fee"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MonthlyServiceFees.lf-row-MonthlyServiceFees-0",
+      "value": "$12"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MonthlyServiceFees.lf-row-MonthlyServiceFees-1",
+      "value": "$20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MonthlyServiceFees.lf-row-MonthlyServiceFees-2",
+      "value": "$50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-HowToAvoidMonthlyFee.lf-compare-row-label-single",
+      "value": "How to Avoid Monthly Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-HowToAvoidMonthlyFee.lf-row-HowToAvoidMonthlyFee-0",
+      "value": "Maintain a minimum daily balance of $2,500 OR a combined minimum daily balance of $10,000 among your Fusion Financial deposit accounts, outstanding loan and/or mortgage balances"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-HowToAvoidMonthlyFee.lf-row-HowToAvoidMonthlyFee-1",
+      "value": "Maintain a minimum daily balance of $5,000 OR a combined minimum daily balance of $25,000 among your Fusion Financial deposit accounts, outstanding loan and/or mortgage balances"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-HowToAvoidMonthlyFee.lf-row-HowToAvoidMonthlyFee-2",
+      "value": "Maintain a minimum daily balance of $25,000 OR a combined minimum daily balance of $100,000 among your Fusion Financial deposit accounts, outstanding loan and/or mortgage balances"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-TransactionsIncluded.lf-compare-row-label-single",
+      "value": "Free Transactions Per Month"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-TransactionsIncluded.lf-row-TransactionsIncluded-0",
+      "value": "200"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-TransactionsIncluded.lf-row-TransactionsIncluded-1",
+      "value": "350"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-TransactionsIncluded.lf-row-TransactionsIncluded-2",
+      "value": "500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-ExcessTransactionFees.lf-compare-row-label-single",
+      "value": "Cost Per Each Additional Transaction"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessTransactionFees.lf-row-ExcessTransactionFees-0",
+      "value": "$0.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessTransactionFees.lf-row-ExcessTransactionFees-1",
+      "value": "$0.40"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessTransactionFees.lf-row-ExcessTransactionFees-2",
+      "value": "$0.30"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-CashDepositLimit.lf-compare-row-label-single",
+      "value": "Free Monthly Cash Deposits Up To"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CashDepositLimit.lf-row-CashDepositLimit-0",
+      "value": "$7,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CashDepositLimit.lf-row-CashDepositLimit-1",
+      "value": "$20,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CashDepositLimit.lf-row-CashDepositLimit-2",
+      "value": "$25,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-ExcessDepositFee.lf-compare-row-label-single",
+      "value": "Fee Per Each $100 Above Cash Handling Limit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessDepositFee.lf-row-ExcessDepositFee-0",
+      "value": "$0.20"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessDepositFee.lf-row-ExcessDepositFee-1",
+      "value": "$0.15"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessDepositFee.lf-row-ExcessDepositFee-2",
+      "value": "$0.10"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-NonWaivableAcctFeeInNetworkATM.lf-compare-row-label-single",
+      "value": "In-Network ATM Transaction Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeInNetworkATM.lf-row-NonWaivableAcctFeeInNetworkATM-0",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeInNetworkATM.lf-row-NonWaivableAcctFeeInNetworkATM-1",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeInNetworkATM.lf-row-NonWaivableAcctFeeInNetworkATM-2",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-NonWaivableAcctFeeOutNetworkATM.lf-compare-row-label-single",
+      "value": "Out-of-Network ATM Transaction Fee"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeOutNetworkATM.lf-row-NonWaivableAcctFeeOutNetworkATM-0",
+      "value": "$2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeOutNetworkATM.lf-row-NonWaivableAcctFeeOutNetworkATM-1",
+      "value": "$2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeOutNetworkATM.lf-row-NonWaivableAcctFeeOutNetworkATM-2",
+      "value": "$2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-NonWaivableAcctFeePaperStatements.lf-compare-row-label-single",
+      "value": "Paper Statements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeePaperStatements.lf-row-NonWaivableAcctFeePaperStatements-0",
+      "value": "$5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeePaperStatements.lf-row-NonWaivableAcctFeePaperStatements-1",
+      "value": "$5.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeePaperStatements.lf-row-NonWaivableAcctFeePaperStatements-2",
+      "value": "$5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Features & Benefits"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-ProductDescription.lf-compare-row-label-single",
+      "value": "Description"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ProductDescription.lf-row-ProductDescription-0",
+      "value": "A simple and convenient account with low minimum balance requirements and transaction limits."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[2]/div",
+      "value": "An interest-earning checking account with tiered rates and added benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr/td[3]/div",
+      "value": "A checking account for higher balances with our best interest rates, discounts, and fee waivers."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-MinimumDeposit.lf-compare-row-label-single",
+      "value": "Minimum to Open"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinimumDeposit.lf-row-MinimumDeposit-0",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinimumDeposit.lf-row-MinimumDeposit-1",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinimumDeposit.lf-row-MinimumDeposit-2",
+      "value": "$1,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-InsuredVsUninsuredDepositsText.lf-compare-row-label-single",
+      "value": "Insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-InsuredVsUninsuredDepositsText.lf-row-InsuredVsUninsuredDepositsText-0",
+      "value": "This account is insured by the FDIC up to the standard maximum deposit insurance amount of $250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-InsuredVsUninsuredDepositsText.lf-row-InsuredVsUninsuredDepositsText-1",
+      "value": "This account is insured by the FDIC up to the standard maximum deposit insurance amount of $250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-InsuredVsUninsuredDepositsText.lf-row-InsuredVsUninsuredDepositsText-2",
+      "value": "This account is insured by the FDIC up to the standard maximum deposit insurance amount of $250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-APY.lf-compare-row-label-single",
+      "value": "Annual Percentage Yield (APY)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-APY.lf-row-APY-0",
+      "value": "0.00%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-APY.lf-row-APY-1",
+      "value": "0.50%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-APY.lf-row-APY-2",
+      "value": "0.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Account Services"
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf_print_share_btn > svg:nth-child(1)"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//div[@id='lf_inline_modal_body']/div/div",
+      "value": "Share"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Share or Save Your Results"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/div",
+      "value": "Share"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div/div[2]",
+      "value": "Send your results to a friend."
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_shareEmailAddress"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Send your results to a friend.'])[1]/following::button[1]",
+      "value": "Send"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div[3]/div",
+      "value": "Save"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div[3]/div[2]",
+      "value": "Get a code to save and recall your work."
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_saveEmailAddress",
+      "value": "BusinessChecking@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Print'])[2]/following::div[2]",
+      "value": "Save"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div[3]/button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_message_text",
+      "value": "Your code will be sent shortly"
+    }
+  }
+]

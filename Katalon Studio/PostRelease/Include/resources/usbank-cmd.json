@@ -1,0 +1,312 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://expert.usbank.com/gs/lf-usbank/goal/consolidatemydebt.html?newuser"
+    }
+  },
+    {
+    "waitForText": {
+      "id": "lf_ZipCode_label",
+      "value": "What's your ZIP code?"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id='lf_field_list']/div[5]/div/button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_step_title_text",
+      "value": "Your information (Step 1 of 3)"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ConsolidateReason"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_ConsolidateReason']/option[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf_field_list > div.lf-step-buttons > div > button"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_add_debt_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id='lf_field_list']/div[8]/div[1]/button"
+    }
+  },
+    {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[6]/div/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_results_row_1']/div[1]/div[2]/div[2]/h3",
+      "value": "3-Year Unsecured Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=#lf_results_row_major_1 > div.lf-results-row-major-label.ng-binding",
+      "value": "Estimated Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Payment'])[2]/following::div[1]",
+      "value": "$34/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_results_row_minor_1']/li[1]/span[1]",
+      "value": "Fixed APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_results_row_minor_1']/li[1]/span[2]",
+      "value": "13.99%"
+    }
+  },
+
+
+
+
+
+
+  {
+    "click": {
+      "id": "xpath=xpath=(.//*[normalize-space(text()) and normalize-space(.)='Learn more'])[1]/following::button[1]"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_step_back_btn"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_step_back_btn"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_CreditRatingBasic"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//option[@value='3']"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ConsolidateReason"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//select[@id='lf_ConsolidateReason']/option[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "css=#lf_field_list > div.lf-step-buttons > div > button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_LoanOneBalance",
+      "value": "$15000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_LoanOneAPR",
+      "value": "14.99"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Global_LoanOnePayment",
+      "value": "355"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//*[@id='lf_field_list']/div[8]/div[1]/button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_OutstandingMortgagePrinciple",
+      "value": "$250,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_CurrentValueOfHome",
+      "value": "$650,000"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//div[@id='lf_field_list']/div[6]/div/button"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[2]/following::div[2]",
+      "value": "Est. interest-only payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Est. interest-only payment'])[2]/following::div[1]",
+      "value": "$126/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_1']/div/div[2]/div[2]/h3",
+      "value": "Home Equity Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li/span",
+      "value": "Variable APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_1']/li/span[2]",
+      "value": "10.05%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_2']/div/div[2]/div[2]/h3",
+      "value": "5-Year Unsecured Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[3]/following::div[2]",
+      "value": "Estimated Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Payment'])[2]/following::div[1]",
+      "value": "$385/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_2']/li/span",
+      "value": "Fixed APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Payment'])[2]/following::div[1]",
+      "value": "$385/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_3']/div/div[2]/div[2]/h3",
+      "value": "Personal Line of Credit"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[4]/following::div[2]",
+      "value": "Estimated Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Payment'])[4]/following::div[1]",
+      "value": "$454/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li/span",
+      "value": "Variable APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_3']/li/span[2]",
+      "value": "11.75%"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_results_row_4']/div/div[2]/div[2]/h3",
+      "value": "3-Year Unsecured Personal Loan"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Next Step'])[5]/following::div[2]",
+      "value": "Estimated Payment"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Payment'])[6]/following::div[1]",
+      "value": "$535/mo."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li/span",
+      "value": "Fixed APR"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//ul[@id='lf_results_row_minor_4']/li/span[2]",
+      "value": "16.99%"
+    }
+  },
+    {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Learn more'])[4]/following::button[1]"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_step_back_btn"
+    }
+  },
+    {
+    "click": {
+      "id": "lf_step_back_btn"
+    }
+  }
+  
+]

@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "defaultResults": [
+        {
+          "NowReceived": {
+            "value": "2,450",
+            "dataFormat": "Currency",
+            "textLabel": "Received after taxes"
+          }
+        },
+        {
+          "FutReceived": {
+            "value": "56,390",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathReceived": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowRate": {
+            "value": "-24.42",
+            "dataFormat": "Percentage",
+            "textLabel": "After-tax rate of return"
+          }
+        },
+        {
+          "FutRate": {
+            "value": "2.19",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathRate": {
+            "value": "0.92",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowTaxes": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes owed"
+          }
+        },
+        {
+          "FutTaxes": {
+            "value": "7,858",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathTaxes": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "NowPrem": {
+            "value": "4,500",
+            "dataFormat": "Currency",
+            "textLabel": "Premiums paid"
+          }
+        },
+        {
+          "FutPrem": {
+            "value": "41,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "DeathPrem": {
+            "value": "77,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Lifens03_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Lifens03_Default_Results"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Global_OutstandingMortgagePrincipal": {
+            "value": "150,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_OriginationCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Origination Charge"
+          }
+        },
+        {
+          "Home_DiscountPoints": {
+            "value": "1.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Charge For Specific Interest Rate"
+          }
+        },
+        {
+          "Home_AppraisalFee": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Appraisal report"
+          }
+        },
+        {
+          "Home_CreditReportFee": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Credit report"
+          }
+        },
+        {
+          "Home_FloodCertificationFee": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Flood Certification"
+          }
+        },
+        {
+          "Home_TaxServiceFee": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Tax Service"
+          }
+        },
+        {
+          "Home_LenderTitleServices": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "350",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Lender's title insurance"
+          }
+        },
+        {
+          "Home_OwnerTitleServices": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "350",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Owner's title insurance"
+          }
+        },
+        {
+          "Home_GovernmentRecordingFees": {
+            "value": "25",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Recording fee"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        }
+      ],
+      "title": "What will my refinancing costs be?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home12_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home12_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home12_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home12_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home12_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home12_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home12_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "LenderOrigCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "textLabel": "Origination charge"
+          }
+        },
+        {
+          "ChargeAmountForSpecificInterestRate": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "textLabel": "Charge for specific interest rate"
+          }
+        },
+        {
+          "AdjOrigCharges": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Your adjusted origination charges:"
+          }
+        },
+        {
+          "Home_AppraisalFee": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "textLabel": "Appraisal report"
+          }
+        },
+        {
+          "Home_CreditReportFee": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Credit report"
+          }
+        },
+        {
+          "Home_FloodCertificationFee": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "textLabel": "Flood Certification"
+          }
+        },
+        {
+          "Home_TaxServiceFee": {
+            "value": "150",
+            "dataFormat": "Currency",
+            "textLabel": "Tax Service"
+          }
+        },
+        {
+          "Home_LenderTitleServices": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "textLabel": "Lender's title insurance"
+          }
+        },
+        {
+          "Home_OwnerTitleServices": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "textLabel": "Owner's title insurance"
+          }
+        },
+        {
+          "Home_GovernmentRecordingFees": {
+            "value": "25",
+            "dataFormat": "Currency",
+            "textLabel": "Recording fee"
+          }
+        },
+        {
+          "InitDepositForEscrow": {
+            "value": "708",
+            "dataFormat": "Currency",
+            "textLabel": "Initial deposit for your escrow account"
+          }
+        },
+        {
+          "DailyInterestCharge": {
+            "value": "313",
+            "dataFormat": "Currency",
+            "textLabel": "Daily interest charges"
+          }
+        },
+        {
+          "HomeownerIns": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "textLabel": "Homeowner's insurance"
+          }
+        },
+        {
+          "ChargesForAllSettlementServices": {
+            "value": "3,246",
+            "dataFormat": "Currency",
+            "textLabel": "Charges for all other settlement services"
+          }
+        },
+        {
+          "TotEstimatedSettlementCharges": {
+            "value": "6,246",
+            "dataFormat": "Currency",
+            "textLabel": "Total estimated settlement charges"
+          }
+        },
+        {
+          "PrincAndIntHome12": {
+            "value": "805",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPmtHome12": {
+            "value": "1,159",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Total monthly payment</b>"
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "1720000"
+        },
+        {
+          "Global_OutstandingMortgagePrincipal": "820000"
+        },
+        {
+          "Home_LoanTermInYears": "9"
+        },
+        {
+          "Home_InterestRate": "6.1"
+        },
+        {
+          "Home_YearlyPropertyTax": "8900"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "3000"
+        },
+        {
+          "Home_OriginationCharge": "1500"
+        },
+        {
+          "Home_DiscountPoints": "2.9"
+        },
+        {
+          "Home_AppraisalFee": "550"
+        },
+        {
+          "Home_CreditReportFee": "300"
+        },
+        {
+          "Home_FloodCertificationFee": "340"
+        },
+        {
+          "Home_TaxServiceFee": "380"
+        },
+        {
+          "Home_LenderTitleServices": "350"
+        },
+        {
+          "Home_OwnerTitleServices": "6300"
+        },
+        {
+          "Home_GovernmentRecordingFees": "370"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "LenderOrigCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "textLabel": "Origination charge"
+          }
+        },
+        {
+          "ChargeAmountForSpecificInterestRate": {
+            "value": "23,780",
+            "dataFormat": "Currency",
+            "textLabel": "Charge for specific interest rate"
+          }
+        },
+        {
+          "AdjOrigCharges": {
+            "value": "25,280",
+            "dataFormat": "Currency",
+            "textLabel": "Your adjusted origination charges:"
+          }
+        },
+        {
+          "Home_AppraisalFee": {
+            "value": "550",
+            "dataFormat": "Currency",
+            "textLabel": "Appraisal report"
+          }
+        },
+        {
+          "Home_CreditReportFee": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "textLabel": "Credit report"
+          }
+        },
+        {
+          "Home_FloodCertificationFee": {
+            "value": "340",
+            "dataFormat": "Currency",
+            "textLabel": "Flood Certification"
+          }
+        },
+        {
+          "Home_TaxServiceFee": {
+            "value": "380",
+            "dataFormat": "Currency",
+            "textLabel": "Tax Service"
+          }
+        },
+        {
+          "Home_LenderTitleServices": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "textLabel": "Lender's title insurance"
+          }
+        },
+        {
+          "Home_OwnerTitleServices": {
+            "value": "6,300",
+            "dataFormat": "Currency",
+            "textLabel": "Owner's title insurance"
+          }
+        },
+        {
+          "Home_GovernmentRecordingFees": {
+            "value": "370",
+            "dataFormat": "Currency",
+            "textLabel": "Recording fee"
+          }
+        },
+        {
+          "InitDepositForEscrow": {
+            "value": "1,983",
+            "dataFormat": "Currency",
+            "textLabel": "Initial deposit for your escrow account"
+          }
+        },
+        {
+          "DailyInterestCharge": {
+            "value": "2,084",
+            "dataFormat": "Currency",
+            "textLabel": "Daily interest charges"
+          }
+        },
+        {
+          "HomeownerIns": {
+            "value": "3,000",
+            "dataFormat": "Currency",
+            "textLabel": "Homeowner's insurance"
+          }
+        },
+        {
+          "ChargesForAllSettlementServices": {
+            "value": "15,658",
+            "dataFormat": "Currency",
+            "textLabel": "Charges for all other settlement services"
+          }
+        },
+        {
+          "TotEstimatedSettlementCharges": {
+            "value": "40,938",
+            "dataFormat": "Currency",
+            "textLabel": "Total estimated settlement charges"
+          }
+        },
+        {
+          "PrincAndIntHome12": {
+            "value": "9,885",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "992",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPmtHome12": {
+            "value": "10,877",
+            "dataFormat": "Currency",
+            "textLabel": "<b>Total monthly payment</b>"
+          }
+        }
+      ]
+    }
+  ]
+}

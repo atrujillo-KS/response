@@ -1,0 +1,212 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_MonthlyGrossIncome": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "6000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PrincipalAndInterestPayment": {
+            "value": "1,300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1300",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyPropertyTax": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyHomeownersInsurance": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_PMI": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_MonthlyHOA": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_OtherMonthlyPayments": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "What is my housing expense ratio?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home25_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home25_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home25_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home25_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home25_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home25_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home25_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Home25_GrossMonthlyIncome_Output": {
+            "value": "6,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home25_MonthlyMortgagePayment_Output": {
+            "value": "1,700",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home25_HousingExpenseRatio_Output": {
+            "value": "28.33",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_MonthlyGrossIncome": "11000"
+        },
+        {
+          "Home_PrincipalAndInterestPayment": "2300"
+        },
+        {
+          "Home_MonthlyPropertyTax": "450.23"
+        },
+        {
+          "Home_MonthlyHomeownersInsurance": "129"
+        },
+        {
+          "Home_PMI": "50"
+        },
+        {
+          "Home_MonthlyHOA": "389"
+        },
+        {
+          "Home_OtherMonthlyPayments": "120"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Home25_GrossMonthlyIncome_Output": {
+            "value": "11,000",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home25_MonthlyMortgagePayment_Output": {
+            "value": "3,438",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home25_HousingExpenseRatio_Output": {
+            "value": "31.26",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

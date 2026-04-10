@@ -1,0 +1,785 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_SecondLoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_SecondLoanInterestRate": {
+            "value": "4.500",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "4.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_OriginationCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Origination Charge"
+          }
+        },
+        {
+          "Home_SecondLoanOriginationCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_DiscountPoints": {
+            "value": "1.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Charge For Specific Interest Rate"
+          }
+        },
+        {
+          "Home_SecondLoanDiscountPoints": {
+            "value": "1.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_OtherClosingCosts": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other settlement services"
+          }
+        },
+        {
+          "Home_SecondLoanOtherClosingCosts": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMonthsBeforeFirstAdjustment": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months before first adjustment"
+          }
+        },
+        {
+          "Home_SecondARMMonthsBeforeFirstAdjustment": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMonthsBetweenRateAdjustments": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months between rate adjustments"
+          }
+        },
+        {
+          "Home_SecondARMMonthsBetweenRateAdjustments": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMaximumRateAdjustment": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Maximum rate adjustment"
+          }
+        },
+        {
+          "Home_SecondARMMaximumRateAdjustment": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMinimumRate": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Minimum rate"
+          }
+        },
+        {
+          "Home_SecondARMMinimumRate": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMaximumRate": {
+            "value": "7.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "7.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Maximum rate"
+          }
+        },
+        {
+          "Home_SecondARMMaximumRate": {
+            "value": "7.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "7.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMargin": {
+            "value": "2.75",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.75",
+            "minimumValue": "-20",
+            "maximumValue": "20",
+            "textLabel": "Margin"
+          }
+        },
+        {
+          "Home_SecondARMMargin": {
+            "value": "2.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.5",
+            "minimumValue": "-20",
+            "maximumValue": "20",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMIndexRate": {
+            "value": "1.25",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1.25",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Index rate"
+          }
+        },
+        {
+          "Home_SecondARMIndexRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMIndexRateChangeBetweenIndexAdjustments": {
+            "value": "0.200",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0.2",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Index rate change per adjustment"
+          }
+        },
+        {
+          "Home_SecondARMIndexRateChangeBetweenIndexAdjustments": {
+            "value": "0.200",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0.2",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_ARMMonthsBetweenIndexAdjustments": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months between index adjustments"
+          }
+        },
+        {
+          "Home_SecondARMMonthsBetweenIndexAdjustments": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan Amount"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_ExpectedYearsInHome": {
+            "value": "7",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "7",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Years before you sell or pay off loan"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings rate"
+          }
+        },
+        {
+          "Home_InterestRateType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Regarding loan one"
+          }
+        },
+        {
+          "Global_InterestRateChangePrediction": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        },
+        {
+          "Home_SecondLoanInterestRateType": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Regarding loan two"
+          }
+        },
+        {
+          "Home_SecondARMInterestRateChangePrediction": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": ""
+          }
+        }
+      ],
+      "title": "Which loan is better?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home15_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home15_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home15_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home15_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home15_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home15_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home15_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PrincAndIntHome15": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "PrincAndInt2Home15": {
+            "value": "1,013",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "TaxAndIns2": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortInsHome15": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "MortIns2Home15": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmtHome15": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": "Total payment"
+          }
+        },
+        {
+          "TotPmt2Home15": {
+            "value": "1,368",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "EffRateHome15": {
+            "value": "3.085",
+            "dataFormat": "Percentage3",
+            "textLabel": "Effective interest rate"
+          }
+        },
+        {
+          "EffRate2Home15": {
+            "value": "2.743",
+            "dataFormat": "Percentage3",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Loan 1 will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you in <GLOSSREF key=\"presentvalue\">today's dollars</GLOSSREF>, $4,428 more than Loan 2 over the 7 years you will own the property."
+        }
+      ],
+      "DefaultColumnTextLabels": [
+        {
+          "textLabel": "Loan 1"
+        },
+        {
+          "textLabel": "Loan 2"
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "980000"
+        },
+        {
+          "Home_DownPaymentPercentage": "30"
+        },
+        {
+          "Home_ExpectedYearsInHome": "11"
+        },
+        {
+          "Home_InterestRateType": "1"
+        },
+        {
+          "Home_LoanTermInYears": "24"
+        },
+        {
+          "Home_InterestRate": "3.2"
+        },
+        {
+          "Home_OriginationCharge": "6800"
+        },
+        {
+          "Home_DiscountPoints": "1.8"
+        },
+        {
+          "Home_OtherClosingCosts": "5000"
+        },
+        {
+          "Home_ARMMonthsBeforeFirstAdjustment": "6"
+        },
+        {
+          "Home_ARMMonthsBetweenRateAdjustments": "6"
+        },
+        {
+          "Global_InterestRateChangePrediction": "1"
+        },
+        {
+          "Home_ARMMaximumRateAdjustment": "1"
+        },
+        {
+          "Home_ARMMinimumRate": "3"
+        },
+        {
+          "Home_ARMMaximumRate": "7.5"
+        },
+        {
+          "Home_ARMMargin": "2.75"
+        },
+        {
+          "Home_ARMIndexRate": "1.25"
+        },
+        {
+          "Home_ARMMonthsBetweenIndexAdjustments": "4"
+        },
+        {
+          "Home_ARMIndexRateChangeBetweenIndexAdjustments": "0.2"
+        },
+        {
+          "Home_SecondLoanInterestRateType": "0"
+        },
+        {
+          "Home_SecondLoanTermInYears": "11"
+        },
+        {
+          "Home_SecondLoanInterestRate": "8"
+        },
+        {
+          "Home_SecondLoanOriginationCharge": "5000"
+        },
+        {
+          "Home_SecondLoanDiscountPoints": "3.8"
+        },
+        {
+          "Home_SecondLoanOtherClosingCosts": "4300"
+        },
+        {
+          "Home_SecondARMMonthsBeforeFirstAdjustment": "6"
+        },
+        {
+          "Home_SecondARMMonthsBetweenRateAdjustments": "6"
+        },
+        {
+          "Home_SecondARMInterestRateChangePrediction": "0"
+        },
+        {
+          "Home_SecondARMMaximumRateAdjustment": "1"
+        },
+        {
+          "Home_SecondARMMinimumRate": "3"
+        },
+        {
+          "Home_SecondARMMaximumRate": "7.5"
+        },
+        {
+          "Home_SecondARMMargin": "2.5"
+        },
+        {
+          "Home_SecondARMIndexRate": "1"
+        },
+        {
+          "Home_SecondARMMonthsBetweenIndexAdjustments": "4"
+        },
+        {
+          "Home_SecondARMIndexRateChangeBetweenIndexAdjustments": "0.2"
+        },
+        {
+          "Home_YearlyPropertyTax": "5400"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "4300"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "23"
+        },
+        {
+          "Global_SavingsInterestRate": "14"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Home_LoanAmount": "686000"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "PrincAndIntHome15": {
+            "value": "3,416",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "PrincAndInt2Home15": {
+            "value": "7,831",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "808",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "TaxAndIns2": {
+            "value": "808",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortInsHome15": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "MortIns2Home15": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmtHome15": {
+            "value": "4,224",
+            "dataFormat": "Currency",
+            "textLabel": "Total payment"
+          }
+        },
+        {
+          "TotPmt2Home15": {
+            "value": "8,639",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "EffRateHome15": {
+            "value": "4.970",
+            "dataFormat": "Percentage3",
+            "textLabel": "Effective interest rate"
+          }
+        },
+        {
+          "EffRate2Home15": {
+            "value": "6.826",
+            "dataFormat": "Percentage3",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Loan 1  loan will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you in <GLOSSREF key=\"presentvalue\">today's dollars</GLOSSREF>, $117,727 less than Loan 2 over the 11 years you will own the property."
+        }
+      ]
+    }
+  ]
+}

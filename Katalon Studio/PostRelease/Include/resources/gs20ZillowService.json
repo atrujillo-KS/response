@@ -1,0 +1,190 @@
+[
+
+  {
+    "navigateTo": {
+      "id": "https://tools.navyfederal.org/gs/lf-navyfcu/goal/newhomebuyer.html"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_dialog_title",
+      "value": "Buy a New Home"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-step-btn"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_AppraisedValue_button",
+      "value": "Look up a home's estimated value"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_AppraisedValue_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Estimated Value of Home"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_address1",
+      "value": "8849 Dewsbury"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_city",
+      "value": "San Diego"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_inline_state"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_inline_state",
+      "value": "label=California"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_zipcode",
+      "value": "92126"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_zillow_results_calculate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_zillow_error",
+      "value": "Sorry, the address you provided is not found in Zillow's property database."
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]",
+      "value": "Use this Amount"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The estimated value of the home is ${Price}"
+    }
+  },
+  {
+    "navigateTo": {
+      "id": "https://expert.pnc.com/gs/lf-pnc/goal/tapintomyhomeequity.html"
+    }
+  },
+  {
+    "delay": {
+      "value": "2"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=h2.lf-step-title-text.ng-binding.ng-scope",
+      "value": "Home information (Step 1 of 3)"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92130"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-step-btn"
+    }
+  },
+   {
+    "waitForText": {
+      "id": "lf_AppraisedValue_button",
+      "value": "Look up a home's estimated value"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_AppraisedValue_button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Estimated Value of Home"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_address1",
+      "value": "8849 Dewsbury"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_city",
+      "value": "San Diego"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_inline_state"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_inline_state",
+      "value": "label=California"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_zipcode",
+      "value": "92126"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_zillow_results_calculate"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]",
+      "value": "Use this Amount"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The estimated value of the home is ${Price}"
+    }
+  }
+]

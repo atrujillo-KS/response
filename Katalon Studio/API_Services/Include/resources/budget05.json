@@ -1,0 +1,412 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_TotalCardDebt": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Amount you owe"
+          }
+        },
+        {
+          "Global_CardInterestRate": {
+            "value": "12.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "12",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Global_PayoffPlan": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1",
+            "textLabel": "Payoff Plan"
+          }
+        },
+        {
+          "Global_DesiredMonthlyCardPayment": {
+            "value": "350",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "350",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Future monthly payments"
+          }
+        },
+        {
+          "Global_DesiredMonthsToPayOffCard": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "480",
+            "textLabel": "Desired months to pay off"
+          }
+        },
+        {
+          "Global_MinimumPaymentPercentage": {
+            "value": "5.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Minimum payment percentage"
+          }
+        },
+        {
+          "Global_MinimumPaymentFloor": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Minimum payment floor"
+          }
+        },
+        {
+          "Global_TierOneMinimumCardBalance": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TierOnePaymentScenariosIncrement": {
+            "value": "25",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TierTwoMinimumCardBalance": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TierTwoPaymentScenariosIncrement": {
+            "value": "50",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TierThreeMinimumCardBalance": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "25000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_TierThreePaymentScenariosIncrement": {
+            "value": "100",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_PredictedCardInterestRateChange": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Predicted rate change"
+          }
+        },
+        {
+          "FakeField": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CardInterestRateIncreaseAmount": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CardInterestRateDecreaseAmount": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": ""
+          }
+        }
+      ],
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Budget05_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"How much will my vehicle payments be?\");",
+          "source": "initial",
+          "itemName": "Budget05_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Budget05_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Budget05_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Budget05_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Budget05_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Budget05_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Global_PayoffPlanMonthlyPayment": {
+            "value": "444",
+            "dataFormat": "Currency",
+            "textLabel": "Monthly payment for payoff"
+          }
+        },
+        {
+          "Global_PayoffPlanMonths": {
+            "value": "12",
+            "dataFormat": "Integer",
+            "textLabel": "Months for payoff"
+          }
+        },
+        {
+          "Global_PayoffPlanInterest": {
+            "value": "331",
+            "dataFormat": "Currency",
+            "textLabel": "Interest for payoff"
+          }
+        },
+        {
+          "Global_EndingBalance": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Ending balance"
+          }
+        },
+        {
+          "Global_AlternativePlanOneMonthlyPayment": {
+            "value": "400",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanOnePayoffInMonths": {
+            "value": "14",
+            "dataFormat": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanOneInterest": {
+            "value": "368",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanTwoMonthlyPayment": {
+            "value": "425",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanTwoPayoffInMonths": {
+            "value": "13",
+            "dataFormat": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanTwoInterest": {
+            "value": "347",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanThreeMonthlyPayment": {
+            "value": "475",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanThreePayoffInMonths": {
+            "value": "12",
+            "dataFormat": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanThreeInterest": {
+            "value": "310",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanFourMonthlyPayment": {
+            "value": "500",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanFourPayoffInMonths": {
+            "value": "11",
+            "dataFormat": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_AlternativePlanFourInterest": {
+            "value": "295",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "A $444 monthly payment and no further charges will pay off your credit card in 12 months. Over that time you will pay $331 in total interest."
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_TotalCardDebt": "42000"
+        },
+        {
+          "Global_CardInterestRate": "17.50"
+        },
+        {
+          "Global_PayoffPlan": "1"
+        },
+        {
+          "Global_DesiredMonthsToPayOffCard": "21"
+        },
+        {
+          "Global_DesiredMonthlyCardPayment": "2200"
+        },
+        {
+          "Global_MinimumPaymentPercentage": "3.50"
+        },
+        {
+          "Global_MinimumPaymentFloor": "27"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+	  "nonDefaultResults": [
+	    { "Global_PayoffPlanMonthlyPayment": { "value": "2,200", "dataFormat": "Currency", "textLabel": "Monthly payment for payoff" } },
+	    { "Global_PayoffPlanMonths": { "value": "23", "dataFormat": "Integer", "textLabel": "Months for payoff" } },
+	    { "Global_PayoffPlanInterest": { "value": "7,586", "dataFormat": "Currency", "textLabel": "Interest for payoff" } },
+	    { "Global_EndingBalance": { "value": "0", "dataFormat": "Currency", "textLabel": "Ending balance" } },
+	    { "Global_AlternativePlanOneMonthlyPayment": { "value": "2,000", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanOnePayoffInMonths": { "value": "26", "dataFormat": "Integer", "textLabel": "" } },
+	    { "Global_AlternativePlanOneInterest": { "value": "8,513", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanTwoMonthlyPayment": { "value": "2,100", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanTwoPayoffInMonths": { "value": "24", "dataFormat": "Integer", "textLabel": "" } },
+	    { "Global_AlternativePlanTwoInterest": { "value": "8,020", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanThreeMonthlyPayment": { "value": "2,300", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanThreePayoffInMonths": { "value": "22", "dataFormat": "Integer", "textLabel": "" } },
+	    { "Global_AlternativePlanThreeInterest": { "value": "7,197", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanFourMonthlyPayment": { "value": "2,400", "dataFormat": "Currency", "textLabel": "" } },
+	    { "Global_AlternativePlanFourPayoffInMonths": { "value": "21", "dataFormat": "Integer", "textLabel": "" } },
+	    { "Global_AlternativePlanFourInterest": { "value": "6,848", "dataFormat": "Currency", "textLabel": "" } }
+	  ],
+	  "nonDefaultAnswer": [
+	    { "textLabel": "It will take you 22 months to pay off your credit card with a fixed payment of $2,300 and no further charges. Over that time you will pay $7,197 in total interest." }
+	  ]
+    }
+  ]
+}

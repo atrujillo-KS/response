@@ -1,0 +1,175 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_TotalCardDebt": {
+            "value": "5,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "5000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Amount you owe"
+          }
+        },
+        {
+          "Global_FutureMonthlyChargesOnCard": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Future monthly charges"
+          }
+        },
+        {
+          "Card_MonthlyPayment": {
+            "value": "300",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "300",
+            "minimumValue": "1",
+            "maximumValue": "1000000",
+            "textLabel": "Future monthly payments"
+          }
+        },
+        {
+          "Global_CardInterestRate": {
+            "value": "12.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "12",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Global_CardAnnualFee": {
+            "value": "60",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "60",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Annual fee"
+          }
+        }
+      ],
+      "title": "How important is the interest rate?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Card01_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card01_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Card01_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Card01_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Card01_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Card01_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Card01_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Card_PayoffYears": {
+            "value": "6",
+            "dataFormat": "None",
+            "textLabel": "Years to pay off card"
+          }
+        },
+        {
+          "Card_PayoffMonth": {
+            "value": "4",
+            "dataFormat": "None",
+            "textLabel": "Months to pay off card"
+          }
+        },
+        {
+          "Card_EndingBalance": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Ending balance"
+          }
+        }
+      ],
+     "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Global_TotalCardDebt": "7300"
+        },
+        {
+          "Global_CardInterestRate": "15.00"
+        }
+      ],      
+      "nonDefaultResults": [
+        {
+          "Card_PayoffYears": {
+            "value": "22",
+            "dataFormat": "None",
+            "textLabel": "Years to pay off card"
+          }
+        },
+        {
+          "Card_PayoffMonth": {
+            "value": "6",
+            "dataFormat": "None",
+            "textLabel": "Months to pay off card"
+          }
+        },
+        {
+          "Card_EndingBalance": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Ending balance"
+          }
+        }
+      ]
+    }
+  ]
+}

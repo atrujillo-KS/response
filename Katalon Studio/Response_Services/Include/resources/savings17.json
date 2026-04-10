@@ -1,0 +1,629 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Savings_FirstCDInitialDeposit": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Initial deposit amount"
+          }
+        },
+        {
+          "Savings_FirstCDTermInMonths": {
+            "value": "24",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "24",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Short Term CD"
+          }
+        },
+        {
+          "Savings_FirstCDInterestRate": {
+            "value": "1.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1.50",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_FirstCDCompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        },
+        {
+          "Savings_SecondCDInitialDeposit": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Initial deposit amount"
+          }
+        },
+        {
+          "Savings_SecondCDTermInMonths": {
+            "value": "36",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "36",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Medium Term CD"
+          }
+        },
+        {
+          "Savings_SecondCDInterestRate": {
+            "value": "2.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.00",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_SecondCDCompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        },
+        {
+          "Savings_ThirdCDInitialDeposit": {
+            "value": "10,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "10000",
+            "minimumValue": "0",
+            "maximumValue": "1000000",
+            "textLabel": "Initial deposit amount"
+          }
+        },
+        {
+          "Savings_ThirdCDTermInMonths": {
+            "value": "60",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "60",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Long Term CD"
+          }
+        },
+        {
+          "Savings_ThirdCDInterestRate": {
+            "value": "2.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.50",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Savings_ThirdCDCompoundingFrequency": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "3",
+            "textLabel": "Compounding frequency"
+          }
+        },
+        {
+          "Savings_YearsDeposited": {
+            "value": "5",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "5",
+            "minimumValue": "1",
+            "maximumValue": "90",
+            "textLabel": "Investment timeframe (in years)"
+          }
+        },
+        {
+          "Global_FederalTaxRate": {
+            "value": "25.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "25",
+            "minimumValue": "0",
+            "maximumValue": "80",
+            "textLabel": "Your federal tax rate"
+          }
+        },
+        {
+          "Global_StateTaxRate": {
+            "value": "6.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "6.8",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Your state tax rate"
+          }
+        }
+      ],
+      "title": "How can I benefit from a CD ladder?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Savings17_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings17_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Savings17_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Savings17_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Savings17_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings17_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings17_NonDefault_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Savings17_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Savings17_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "CDLadder": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>CD Ladder</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_FirstCDTermInMonths": {
+            "value": "24",
+            "dataFormat": "None",
+            "textLabel": "Short Term CD"
+          }
+        },
+        {
+          "ShortTermCDAPY": {
+            "value": "1.03",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ShortTermCDBal": {
+            "value": "10,742",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_SecondCDTermInMonths": {
+            "value": "36",
+            "dataFormat": "None",
+            "textLabel": "Medium Term CD"
+          }
+        },
+        {
+          "MediumTermCDAPY": {
+            "value": "1.37",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "MediumTermCDBal": {
+            "value": "10,779",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_ThirdCDTermInMonths": {
+            "value": "60",
+            "dataFormat": "None",
+            "textLabel": "Long Term CD"
+          }
+        },
+        {
+          "LongTermCDAPY": {
+            "value": "1.72",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "LongTermCDBal": {
+            "value": "10,889",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Total": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>Total</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotalBal": {
+            "value": "32,410",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "WeightedAvgTerm": {
+            "value": "40",
+            "dataFormat": "None",
+            "textLabel": "Weighted Average"
+          }
+        },
+        {
+          "WeightedAvgAPY": {
+            "value": "1.37",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "SingleShortTermCDAPYLabel": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>Single Short Term CD</b>"
+          }
+        },
+        {
+          "SingleShortTermCDAPY": {
+            "value": "1.03",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SingleShortTermCDBal": {
+            "value": "31,574",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "BalDifferenceLabel": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "Difference"
+          }
+        },
+        {
+          "BalDifference": {
+            "value": "836",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Over 5 years, the CD ladder is estimated to grow to $32,410, which is $836 more than investing in a single short term CD and rolling it over."
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Savings_FirstCDInitialDeposit": "17000"
+        },
+        {
+          "Savings_FirstCDTermInMonths": "12"
+        },
+        {
+          "Savings_FirstCDInterestRate": "2.8"
+        },
+        {
+          "Savings_FirstCDCompoundingFrequency": "0"
+        },
+        {
+          "Savings_SecondCDInitialDeposit": "23000"
+        },
+        {
+          "Savings_SecondCDTermInMonths": "29"
+        },
+        {
+          "Savings_SecondCDInterestRate": "3.8"
+        },
+        {
+          "Savings_SecondCDCompoundingFrequency": "0"
+        },
+        {
+          "Savings_ThirdCDInitialDeposit": "15000"
+        },
+        {
+          "Savings_ThirdCDTermInMonths": "47"
+        },
+        {
+          "Savings_ThirdCDInterestRate": "3"
+        },
+        {
+          "Savings_ThirdCDCompoundingFrequency": "0"
+        },
+        {
+          "Savings_YearsDeposited": "6"
+        },
+        {
+          "Global_FederalTaxRate": "16.1"
+        },
+        {
+          "Global_StateTaxRate": "4"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "CDLadder": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>CD Ladder</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_FirstCDTermInMonths": {
+            "value": "12",
+            "dataFormat": "None",
+            "textLabel": "Short Term CD"
+          }
+        },
+        {
+          "ShortTermCDAPY": {
+            "value": "2.26",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "ShortTermCDBal": {
+            "value": "19,599",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_SecondCDTermInMonths": {
+            "value": "29",
+            "dataFormat": "None",
+            "textLabel": "Medium Term CD"
+          }
+        },
+        {
+          "MediumTermCDAPY": {
+            "value": "3.08",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "MediumTermCDBal": {
+            "value": "26,972",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Savings_ThirdCDTermInMonths": {
+            "value": "47",
+            "dataFormat": "None",
+            "textLabel": "Long Term CD"
+          }
+        },
+        {
+          "LongTermCDAPY": {
+            "value": "2.43",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "LongTermCDBal": {
+            "value": "17,321",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "Total": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>Total</b>"
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotalBal": {
+            "value": "63,891",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "WeightedAvgTerm": {
+            "value": "29",
+            "dataFormat": "None",
+            "textLabel": "Weighted Average"
+          }
+        },
+        {
+          "WeightedAvgAPY": {
+            "value": "2.65",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Blank": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "SingleShortTermCDAPYLabel": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "<b>Single Short Term CD</b>"
+          }
+        },
+        {
+          "SingleShortTermCDAPY": {
+            "value": "2.26",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "SingleShortTermCDBal": {
+            "value": "62,903",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        },
+        {
+          "BalDifferenceLabel": {
+            "value": "",
+            "dataFormat": "",
+            "textLabel": "Difference"
+          }
+        },
+        {
+          "BalDifference": {
+            "value": "989",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Over 6 years, the CD ladder is estimated to grow to $63,891, which is $989 more than investing in a single short term CD and rolling it over."
+        }
+      ]
+    }
+  ]
+}

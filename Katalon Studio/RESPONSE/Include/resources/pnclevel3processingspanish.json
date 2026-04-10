@@ -1,0 +1,135 @@
+[
+  {
+    "navigateTo": {
+      "value": "https://tools.pnc.com/response/lf-pnc-sp/calc/levelthreeprocessingspanish?newuser"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_answer",
+      "value": "Se estima que el procesamiento de nivel 3 le generaría a su empresa un ahorro de $400 al año"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/caption",
+      "value": "Chart"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th",
+      "value": "Categoría"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[2]",
+      "value": "Costo promedio sin nivel 3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/thead/tr/th[3]",
+      "value": "Costo promedio con nivel 3"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td",
+      "value": "1,500"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-0']/tbody/tr/td[2]",
+      "value": "1,100"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume-label",
+      "value": "Volumen de procesamiento de tarjetas anual"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume",
+      "value": "100,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume-error-message",
+      "value": "Debe ubicarse entre $1.00 y $100,000,000.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume-label",
+      "value": "% del volumen de tarjetas corporativas, de flota y de compras"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume",
+      "value": "50.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume-error-message",
+      "value": "Debe ubicarse entre 1.00% y 100.00%"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_AnnualCardProcessingVolume",
+      "value": "300,000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_Commercial_CorporateFleetPurchaseCardVolume",
+      "value": "25"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_answer",
+      "value": "Se estima que el procesamiento de nivel 3 le generaría a su empresa un ahorro de $600 al año"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-2']/tbody/tr/td",
+      "value": "2,250"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='highcharts-data-table-2']/tbody/tr/td[2]",
+      "value": "1,650"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_view_data_table_1"
+    }
+  }
+]

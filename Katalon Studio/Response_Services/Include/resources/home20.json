@@ -1,0 +1,272 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Global_OutstandingMortgagePrincipal": {
+            "value": "150,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "150000",
+            "minimumValue": "0",
+            "maximumValue": "100000000",
+            "textLabel": "Current loan balance"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_RemainingTermInMonths": {
+            "value": "336",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "336",
+            "minimumValue": "1",
+            "maximumValue": "540",
+            "textLabel": "Remaining Term (in months)"
+          }
+        }
+      ],
+      "title": "What extra monthly payment is needed to pay off my loan by a specific date?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home20_initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home20_initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home20_initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home20_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home20_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home20_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home20_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "TotIntPaid": {
+            "value": "129,001",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaid2": {
+            "value": "12,124",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff": {
+            "value": "336",
+            "dataFormat": "None",
+			"dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff2": {
+            "value": "36",
+            "dataFormat": "None",
+			"dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "830",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt2Home20": {
+            "value": "4,608",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExtraPaymentOutput": {
+            "value": "3,778",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotalInterestSavedOutput": {
+            "value": "116,877",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        }
+      ],
+       "changeFieldsDefault": [ 
+        {
+        "Home_ExtraPaymentStartDate": { 
+        	"dataFormat": "Date",
+			"futureDateIn": "Months", 
+			"futureValue": "1" 
+			}
+        },
+        {
+          "Home_TargetPayoffDate": { 
+        	"dataFormat": "Date",
+			"futureDateIn": "Years", 
+			"futureValue": "3" 
+			}
+        } 
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_OutstandingMortgagePrincipal": "250000"
+        },
+        {
+          "Home_RemainingTermInMonths": "300"
+        },
+        {
+          "Home_InterestRate": "4.758"
+        },
+        {
+        "Home_ExtraPaymentStartDate": { 
+        	"dataFormat": "Date",
+			"futureDateIn": "Months", 
+			"futureValue": "3" 
+			}
+        },
+        {
+          "Home_TargetPayoffDate": { 
+        	"dataFormat": "Date",
+			"futureDateIn": "months", 
+			"futureValue": "38" 
+			}
+        }, 
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "TotIntPaid": {
+            "value": "177,933",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotIntPaid2": {
+            "value": "21,115",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff": {
+            "value": "300",
+            "dataFormat": "None",
+			"dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "MonUntilPayoff2": {
+            "value": "38",
+            "dataFormat": "None",
+			"dataType": "Integer",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPay": {
+            "value": "1,426",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmt2Home20": {
+            "value": "7,624",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "ExtraPaymentOutput": {
+            "value": "6,197",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotalInterestSavedOutput": {
+            "value": "156,818",
+            "dataFormat": "Currency",
+			"dataType": "Double",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}

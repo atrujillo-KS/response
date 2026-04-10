@@ -1,0 +1,522 @@
+[
+  {
+    "verifyTitle": {
+      "id": "Evaluate Business Checking Accounts",
+      "value": "Evaluate Business Checking Accounts"      
+    }
+  },
+  {
+    "click": {
+      "id": "lf_ZipCode"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_ZipCode",
+      "value": "92121"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_BusinessStructure"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_BusinessStructure",
+      "value": "label=Non-profit"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_AvgBizCheckingAccountBal",
+      "value": "10000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_CombinedBizAccountBalance",
+      "value": "15000"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MonthlyTransactions",
+      "value": "200"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_MonthlyCashDeposits",
+      "value": "15000"
+    }
+  },
+  {
+    "click": {
+      "id": "//div[@id='lf_field_list']/div[8]/div/button"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=button.lf-result-expand.ng-binding.ng-scope",
+      "value": "Non-Profit Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-results-row-major-value.ng-binding",
+      "value": "$75"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_results_row_go_0_nextsteps"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-title-label",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply Now'])[1]/following::div[5]",
+      "value": "1. Apply Online"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start a Loan Application'])[1]/following::div[1]",
+      "value": "You've selected the following option:"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('You', \"'\", 've selected the following option:')])[1]/following::div[4]",
+      "value": "Non-Profit Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.btn.btn-primary.lf-action-apply-btn.ng-binding",
+      "value": "APPLY NOW"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_apply_now_8426541885",
+      "value": "Apply Now"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
+      "value": "What you'll need to open an account"
+    }
+  },
+  {
+    "click": {
+      "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "What You'll Need to Open an Account"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id='lf_inline_modal_body']/div",
+      "value": "Fusion Financial, like all financial institutions, is required by federal law to obtain, verify and record information that identifies each customer that opens an account. When a client opens an account, we will ask for the client's legal name, address, tax identification number and other identifying information. We may ask for copies of business licenses or other documents evidencing the existence and good standing of the entity. For individuals, including sole proprietors, we may ask for the date of birth, and may also ask to see photo identification or other identifying documents. Once approved, you'll be asked to submit your opening deposit to activate your account."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@id='lf_modal_close']/span"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Refine location"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_actions_back",
+      "value": "Back"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_actions_back"
+    }
+  },
+  {
+    "click": {
+      "id": "css=.lf-results-check-0"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_eval_selected"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//*/text()[normalize-space(.)='$75']/parent::*",
+      "value": "$75$75"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_table"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/th/span",
+      "value": "Estimated Monthly Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/th/span",
+      "value": "Estimated Monthly Cost"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//table[@id='lf_resultsTable_']/tbody/tr[4]/td/div",
+      "value": "$75"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_view_as_graph"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Fee Details"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-0",
+      "value": "Non-Profit Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-TransactionsIncluded.lf-row-TransactionsIncluded-0",
+      "value": "100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessTransactionFees.lf-row-ExcessTransactionFees-0",
+      "value": "$0.50"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-CashDepositLimit.lf-row-CashDepositLimit-0",
+      "value": "$5,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExcessDepositFee.lf-row-ExcessDepositFee-0",
+      "value": "$0.25"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeInNetworkATM.lf-row-NonWaivableAcctFeeInNetworkATM-0",
+      "value": "$0.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-NonWaivableAcctFeeOutNetworkATM.lf-row-NonWaivableAcctFeeOutNetworkATM-0",
+      "value": "$2.00"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=tr.lf-compare-single.lf-compare-row-NonWaivableAcctFeePaperStatements.lf-compare-row-bold-false > td.lf-results-1.lf-compare-row-value",
+      "value": "$5.00"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Features & Benefits"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=span.lf-th-ProductDescription.lf-compare-row-label-single",
+      "value": "Description"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ProductDescription.lf-row-ProductDescription-0",
+      "value": "An affordable checking account with no minimum balance requirement and no monthly maintenance fee."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AGoodChoiceIf.lf-compare-row-label-single",
+      "value": "A Good Choice If"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AGoodChoiceIf.lf-row-AGoodChoiceIf-0",
+      "value": "You are a small nonprofit organization with low monthly checking activity and account balances."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-ExclusiveAcctBenefit1.lf-compare-row-label-single",
+      "value": "Exclusive Account Benefits"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-ExclusiveAcctBenefit1.lf-row-ExclusiveAcctBenefit1-0",
+      "value": "No fee for two out-of-network ATM transactions per statement cycle. Free or discounted safe deposit box"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-InsuredVsUninsuredDepositsText.lf-compare-row-label-single",
+      "value": "Insurance"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-InsuredVsUninsuredDepositsText.lf-row-InsuredVsUninsuredDepositsText-0",
+      "value": "This account is insured by the FDIC up to the standard maximum deposit insurance amount of $250,000"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-MinimumDeposit.lf-compare-row-label-single",
+      "value": "Minimum to Open"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-MinimumDeposit.lf-row-MinimumDeposit-0",
+      "value": "$100"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-InterestBearing.lf-compare-row-label-single",
+      "value": "Earns Interest"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-InterestBearing.lf-row-InterestBearing-0",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-APY.lf-compare-row-label-single",
+      "value": "Annual Percentage Yield (APY)"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-APY.lf-row-APY-0",
+      "value": "0.00%"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_compare_select"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_compare_select",
+      "value": "label=Account Services"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "css=th.lf-compare-header.lf-compare-header-0",
+      "value": "Non-Profit Checking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureATMAccess.lf-compare-row-label-single",
+      "value": "Fee-free Use of In-Network ATMs"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureATMAccess.lf-row-AcctFeatureATMAccess-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureOnlineAccess.lf-compare-row-label-single",
+      "value": "Free Online Banking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureOnlineAccess.lf-row-AcctFeatureOnlineAccess-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureOnlineBillPayment.lf-compare-row-label-single",
+      "value": "Free Online Bill Pay"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureOnlineBillPayment.lf-row-AcctFeatureOnlineBillPayment-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureMobileBanking.lf-compare-row-label-single",
+      "value": "Mobile Banking"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureMobileBanking.lf-row-AcctFeatureMobileBanking-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureDebitCard.lf-compare-row-label-single",
+      "value": "Chip-enabled Business Debit Card"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureDebitCard.lf-row-AcctFeatureDebitCard-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureEStatements.lf-compare-row-label-single",
+      "value": "Online Statements"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureEStatements.lf-row-AcctFeatureEStatements-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureAccountAlerts.lf-compare-row-label-single",
+      "value": "Account Alerts"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureAccountAlerts.lf-row-AcctFeatureAccountAlerts-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureOverdraftProtection.lf-compare-row-label-single",
+      "value": "Optional Overdraft Protection"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureOverdraftProtection.lf-row-AcctFeatureOverdraftProtection-0",
+      "value": "Yes"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureQuickbooksIntegration.lf-compare-row-label-single",
+      "value": "QuickBooks Integration"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureQuickbooksIntegration.lf-row-AcctFeatureQuickbooksIntegration-0",
+      "value": "No"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=span.lf-th-AcctFeatureAccountManagement.lf-compare-row-label-single",
+      "value": "Account Management"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=div.lf-compare-row-value-container.lf-row-AcctFeatureAccountManagement.lf-row-AcctFeatureAccountManagement-0",
+      "value": "No"
+    }
+  }
+]

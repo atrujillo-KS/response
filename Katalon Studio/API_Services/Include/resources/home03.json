@@ -1,0 +1,382 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Appraised value"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        },
+        {
+          "Home_ARMMonthsBeforeFirstAdjustment": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months before first adjustment"
+          }
+        },
+        {
+          "Home_AdjustableLoanInitialInterestRate": {
+            "value": "3.750",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "3.75",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Initial interest rate"
+          }
+        },
+        {
+          "Home_ARMMonthsBetweenRateAdjustments": {
+            "value": "6",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "6",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months between rate adjustments"
+          }
+        },
+        {
+          "Home_ARMMaximumRateAdjustment": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Maximum rate adjustment"
+          }
+        },
+        {
+          "Home_ARMMinimumRate": {
+            "value": "3.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "3",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Minimum rate"
+          }
+        },
+        {
+          "Home_ARMMaximumRate": {
+            "value": "7.50",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "7.5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Maximum rate"
+          }
+        },
+        {
+          "Home_ARMMargin": {
+            "value": "2.75",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "2.75",
+            "minimumValue": "-20",
+            "maximumValue": "20",
+            "textLabel": "Margin"
+          }
+        },
+        {
+          "Home_ARMIndexRate": {
+            "value": "1.25",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1.25",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Index rate"
+          }
+        },
+        {
+          "Home_ARMMonthsBetweenIndexAdjustments": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "120",
+            "textLabel": "Months between index adjustments"
+          }
+        },
+        {
+          "Home_ARMIndexRateChangeBetweenIndexAdjustments": {
+            "value": "0.200",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "0.2",
+            "minimumValue": "0",
+            "maximumValue": "20",
+            "textLabel": "Index rate change per adjustment"
+          }
+        },
+        {
+          "Global_InterestRateChangePrediction": {
+            "value": "1",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Predicted change in rates"
+          }
+        }
+      ],
+      "title": "How much will my adjustable rate payments be?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home03_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home03_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home03_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home03_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home03_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home03_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home03_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "PrincAndIntHome": {
+            "value": "926",
+            "dataFormat": "Currency",
+            "textLabel": "Principal And Interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortInsHome": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPmtHome": {
+            "value": "1,280",
+            "dataFormat": "Currency",
+            "textLabel": "Total Payment"
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "<b>Your initial monthly payment</b>"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Global_HomeAppraisedValue": "580000"
+        },
+        {
+          "Home_DownPaymentPercentage": "9"
+        },
+        {
+          "Home_YearlyPropertyTax": "6400"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "800"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "32"
+        },
+        {
+          "Home_LoanTermInYears": "26"
+        },
+        {
+          "Home_AdjustableLoanInitialInterestRate": "4.2"
+        },
+        {
+          "Home_ARMMonthsBeforeFirstAdjustment": "18"
+        },
+        {
+          "Home_ARMMonthsBetweenRateAdjustments": "5"
+        },
+        {
+          "Global_InterestRateChangePrediction": "0"
+        },
+        {
+          "Home_ARMMaximumRateAdjustment": "1.1"
+        },
+        {
+          "Home_ARMMinimumRate": "3.9"
+        },
+        {
+          "Home_ARMMaximumRate": "6.7"
+        },
+        {
+          "Home_ARMMargin": "2"
+        },
+        {
+          "Home_ARMIndexRate": "1.8"
+        },
+        {
+          "Home_ARMMonthsBetweenIndexAdjustments": "6"
+        },
+        {
+          "Home_ARMIndexRateChangeBetweenIndexAdjustments": "0.4"
+        },
+        {
+          "Home_LoanAmount": "527800"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "PrincAndIntHome": {
+            "value": "2,783",
+            "dataFormat": "Currency",
+            "textLabel": "Principal And Interest"
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "600",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "MortInsHome": {
+            "value": "633",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "TotPmtHome": {
+            "value": "4,016",
+            "dataFormat": "Currency",
+            "textLabel": "Total Payment"
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "<b>Your initial monthly payment</b>"
+        }
+      ]
+    }
+  ]
+}

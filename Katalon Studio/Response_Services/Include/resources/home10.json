@@ -1,0 +1,531 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Home_MonthlyRent": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "10000",
+            "textLabel": "Monthly rent"
+          }
+        },
+        {
+          "Home_MonthlyRentersInsurance": {
+            "value": "15",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "15",
+            "minimumValue": "0",
+            "maximumValue": "1000",
+            "textLabel": "Monthly renter's insurance"
+          }
+        },
+        {
+          "Home_YearlyRentChange": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "-99",
+            "maximumValue": "100",
+            "textLabel": "Yearly rent increase (decrease)"
+          }
+        },
+        {
+          "Global_HomeAppraisedValue": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Purchase price"
+          }
+        },
+        {
+          "Home_YearlyHomeValueChange": {
+            "value": "0.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "0",
+            "minimumValue": "-99",
+            "maximumValue": "100",
+            "textLabel": "Appreciation (Depreciation) rate"
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        },
+        {
+          "Home_ExpectedYearsInHome": {
+            "value": "7",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "7",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Years before sell/pay off loan"
+          }
+        },
+        {
+          "Home_LoanAmount": {
+            "value": "200,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200000",
+            "minimumValue": "1",
+            "maximumValue": "1000000000",
+            "textLabel": "Loan amount"
+          }
+        },
+        {
+          "Home_LoanTermInYears": {
+            "value": "30",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "30",
+            "minimumValue": "1",
+            "maximumValue": "40",
+            "textLabel": "Term (years)"
+          }
+        },
+        {
+          "Home_InterestRate": {
+            "value": "5.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "5",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Interest rate"
+          }
+        },
+        {
+          "Home_OriginationCharge": {
+            "value": "1,500",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1500",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Origination Charge"
+          }
+        },
+        {
+          "Home_DiscountPoints": {
+            "value": "1.000",
+            "dataFormat": "Percentage3",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Charge For Specific Interest Rate"
+          }
+        },
+        {
+          "Home_OtherClosingCosts": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Other settlement services"
+          }
+        },
+        {
+          "Home_YearlyPropertyTax": {
+            "value": "3,250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "3250",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property tax"
+          }
+        },
+        {
+          "Home_YearlyMaintenance": {
+            "value": "700",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "700",
+            "minimumValue": "0",
+            "maximumValue": "100000",
+            "textLabel": "Yearly maintenance"
+          }
+        },
+        {
+          "Home_YearlyHomeownersInsurance": {
+            "value": "1,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "1000",
+            "minimumValue": "0",
+            "maximumValue": "4000000",
+            "textLabel": "Yearly property insurance"
+          }
+        },
+        {
+          "Home_SellingCosts": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Selling costs (% of selling price)"
+          }
+        }
+      ],
+      "title": "Am I better off renting?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Home10_Inital_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home10_Inital_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.email.emailid).not.eql(\"\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(jsonData.lf_response.tool.user.email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Home10_Inital_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Home10_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Home10_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Home10_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Home10_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "TaxSavingsHome10": {
+            "value": "30,699",
+            "dataFormat": "Currency",
+            "textLabel": "Total tax savings"
+          }
+        },
+        {
+          "TotMaint": {
+            "value": "4,900",
+            "dataFormat": "Currency",
+            "textLabel": "Total maintenance"
+          }
+        },
+        {
+          "SellPriceHome10": {
+            "value": "250,000",
+            "dataFormat": "Currency",
+            "textLabel": "Selling price"
+          }
+        },
+        {
+          "Equity": {
+            "value": "74,110",
+            "dataFormat": "Currency",
+            "textLabel": "Equity"
+          }
+        },
+        {
+          "SellCostsHome10": {
+            "value": "25,000",
+            "dataFormat": "Currency",
+            "textLabel": "Selling costs"
+          }
+        },
+        {
+          "PrincAndIntHome10": {
+            "value": "1,074",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "NA1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "354",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "NA2": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "NA3": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmtHome10": {
+            "value": "1,428",
+            "dataFormat": "Currency",
+            "textLabel": "Total initial payment"
+          }
+        },
+        {
+          "TotRentPmt": {
+            "value": "715",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "defaultAnswer": [
+        {
+          "textLabel": "Renting will <GLOSSREF key=\"costanalysis\">cost</GLOSSREF> you $41,662 less than owning over the 7 years, in today's dollars."
+        },
+        {
+          "textLabel": "Regarding ownership for the 7 years"
+        },
+        {
+          "textLabel": "Total payments"
+        }
+      ],
+      "changeFields": [
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "newuser": ""
+        },
+        {
+          "Home_MonthlyRent": "4800"
+        },
+        {
+          "Home_MonthlyRentersInsurance": "51"
+        },
+        {
+          "Home_YearlyRentChange": "5"
+        },
+        {
+          "Global_HomeAppraisedValue": "1160000"
+        },
+        {
+          "Home_DownPaymentPercentage": "35"
+        },
+        {
+          "Home_YearlyPropertyTax": "5300"
+        },
+        {
+          "Home_YearlyHomeownersInsurance": "2300"
+        },
+        {
+          "Home_YearlyMaintenance": "4400"
+        },
+        {
+          "Home_LoanTermInYears": "21"
+        },
+        {
+          "Home_InterestRate": "6.2"
+        },
+        {
+          "Home_OriginationCharge": "1200"
+        },
+        {
+          "Home_DiscountPoints": "1.7"
+        },
+        {
+          "Home_OtherClosingCosts": "2500"
+        },
+        {
+          "Home_YearlyHomeValueChange": "5"
+        },
+        {
+          "Home_ExpectedYearsInHome": "14"
+        },
+        {
+          "Home_SellingCosts": "7"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "28"
+        },
+        {
+          "Global_SavingsInterestRate": "13"
+        },
+        {
+          "Home_LoanAmount": "754000"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "TaxSavingsHome10": {
+            "value": "167,298",
+            "dataFormat": "Currency",
+            "textLabel": "Total tax savings"
+          }
+        },
+        {
+          "TotMaint": {
+            "value": "61,600",
+            "dataFormat": "Currency",
+            "textLabel": "Total maintenance"
+          }
+        },
+        {
+          "SellPriceHome10": {
+            "value": "2,332,558",
+            "dataFormat": "Currency",
+            "textLabel": "Selling price"
+          }
+        },
+        {
+          "Equity": {
+            "value": "1,968,196",
+            "dataFormat": "Currency",
+            "textLabel": "Equity"
+          }
+        },
+        {
+          "SellCostsHome10": {
+            "value": "163,279",
+            "dataFormat": "Currency",
+            "textLabel": "Selling costs"
+          }
+        },
+        {
+          "PrincAndIntHome10": {
+            "value": "5,358",
+            "dataFormat": "Currency",
+            "textLabel": "Principal and interest"
+          }
+        },
+        {
+          "NA1": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TaxAndIns": {
+            "value": "633",
+            "dataFormat": "Currency",
+            "textLabel": "Taxes and insurance"
+          }
+        },
+        {
+          "NA2": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "MortIns": {
+            "value": "0",
+            "dataFormat": "Currency",
+            "textLabel": "Mortgage insurance"
+          }
+        },
+        {
+          "NA3": {
+            "value": "N/A",
+            "dataFormat": "",
+            "textLabel": ""
+          }
+        },
+        {
+          "TotPmtHome10": {
+            "value": "5,991",
+            "dataFormat": "Currency",
+            "textLabel": "Total initial payment"
+          }
+        },
+        {
+          "TotRentPmt": {
+            "value": "4,851",
+            "dataFormat": "Currency",
+            "textLabel": ""
+          }
+        }
+      ],
+      "nonDefaultAnswer": [
+        {
+          "textLabel": "Owning will <GLOSSREF key=\"costanalysis\">save</GLOSSREF> you $41,868 compared to renting over the 14 years, in today's dollars."
+        },
+        {
+          "textLabel": "Regarding ownership for the 14 years"
+        },
+        {
+          "textLabel": "Total payments"
+        }
+      ]
+    }
+  ]
+}

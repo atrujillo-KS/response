@@ -1,0 +1,419 @@
+{
+  "cases": [
+    {
+      "answer": "",
+      "initialFields": [
+        {
+          "Insurance_TermLifeDeathBenefit": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "10000000",
+            "textLabel": "Policy amount"
+          }
+        },
+        {
+          "Insurance_DeathBenefit": {
+            "value": "100,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "100000",
+            "minimumValue": "1",
+            "maximumValue": "10000000",
+            "textLabel": "Current premium amount"
+          }
+        },
+        {
+          "Insurance_TermLifePremium": {
+            "value": "45",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "45",
+            "minimumValue": "1",
+            "maximumValue": "4000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_Premium": {
+            "value": "200",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "200",
+            "minimumValue": "1",
+            "maximumValue": "4000",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_TermLifePremiumPaymentsPerYear": {
+            "value": "12",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "12",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": "Premium payments per year"
+          }
+        },
+        {
+          "Insurance_PremiumPaymentsPerYear": {
+            "value": "4",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "4",
+            "minimumValue": "1",
+            "maximumValue": "12",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_PremiumIncreasePerRenewal": {
+            "value": "10.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "10",
+            "minimumValue": "0",
+            "maximumValue": "50",
+            "textLabel": "Premium increase per renewal"
+          }
+        },
+        {
+          "Insurance_PolicyTermInYears": {
+            "value": "10",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "10",
+            "minimumValue": "1",
+            "maximumValue": "50",
+            "textLabel": "Policy term (years)"
+          }
+        },
+        {
+          "Insurance_AverageAnnualDividend": {
+            "value": "250",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "250",
+            "minimumValue": "0",
+            "maximumValue": "4000",
+            "textLabel": "Average yearly dividend"
+          }
+        },
+        {
+          "Insurance_YearsUntilCashInPolicy": {
+            "value": "25",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "25",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Years until you claim cash value"
+          }
+        },
+        {
+          "Insurance_FutureCashValue": {
+            "value": "50,000",
+            "dataFormat": "Currency",
+            "dataType": "Double",
+            "defaultValue": "50000",
+            "minimumValue": "0",
+            "maximumValue": "10000000",
+            "textLabel": "Cash value at that time"
+          }
+        },
+        {
+          "Insurance_DividendIncomeSpendingOption": {
+            "value": "0",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "0",
+            "minimumValue": "0",
+            "maximumValue": "2",
+            "textLabel": "Your whole life dividend income is"
+          }
+        },
+        {
+          "AppTowards": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_SavingsInterestRate": {
+            "value": "1.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "1",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": ""
+          }
+        },
+        {
+          "Spent": {
+            "value": " ",
+            "dataFormat": "",
+            "dataType": "String",
+            "textLabel": ""
+          }
+        },
+        {
+          "Global_CurrentAge": {
+            "value": "37",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "37",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Current age"
+          }
+        },
+        {
+          "Insurance_YearsBeforeDeath": {
+            "value": "50",
+            "dataFormat": "None",
+            "dataType": "Integer",
+            "defaultValue": "50",
+            "minimumValue": "1",
+            "maximumValue": "100",
+            "textLabel": "Years until your death"
+          }
+        },
+        {
+          "Insurance_ExpectedInterestRate": {
+            "value": "4.00",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "4",
+            "minimumValue": "0",
+            "maximumValue": "100",
+            "textLabel": "Your savings rate"
+          }
+        },
+        {
+          "Global_FederalAndStateTaxRate": {
+            "value": "33.80",
+            "dataFormat": "Percentage",
+            "dataType": "Double",
+            "defaultValue": "33.8",
+            "minimumValue": "0",
+            "maximumValue": "90",
+            "textLabel": "Your state + federal tax rate"
+          }
+        }
+      ],
+      "title": "Which is better: term or whole Life?",
+      "extraTests": [
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "initial",
+          "itemName": "Insurance05_Initial_Inputs"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance05_Initial_Inputs"
+        },
+        {
+          "name": "Email Address / Masked Email / FormID are not empty",
+          "body": "var email = jsonData.lf_response.tool.user.email;\r\n    pm.expect(email.emailid).not.eql(\"\");\r\n    pm.expect(email.maskedemail).to.eql(\"lf*****@gmail.com\");\r\n    pm.expect(email.formID).not.eql(\"\");",
+          "source": "initial",
+          "itemName": "Insurance05_Initial_Inputs"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "default",
+          "itemName": "Insurance05_Default_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "default",
+          "itemName": "Insurance05_Default_Results"
+        },
+        {
+          "name": "Successful POST request",
+          "body": "pm.expect(pm.response.code).to.be.oneOf([200]);",
+          "source": "nondefault",
+          "itemName": "Insurance05_NonDefault_Results"
+        },
+        {
+          "name": "uid is not empty",
+          "body": "pm.expect(jsonData.lf_response.tool.user.uid).not.eql(\"\");",
+          "source": "nondefault",
+          "itemName": "Insurance05_NonDefault_Results"
+        }
+      ],
+      "defaultResults": [
+        {
+          "Insurance_FutureRateOfReturnWholeLife": {
+            "value": "7.13",
+            "dataFormat": "Percentage",
+            "textLabel": "Whole life"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnWholeLife": {
+            "value": "4.43",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermLife": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermLife": {
+            "value": "4.16",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermInvestment": {
+            "value": "-8.24",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermInvestment": {
+            "value": "3.48",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ],
+      "changeFields": [
+        {
+          "newuser": ""
+        },
+        {
+          "json": ""
+        },
+        {
+          "toolPage": "results"
+        },
+        {
+          "nolog": ""
+        },
+        {
+          "Global_CurrentAge": "35"
+        },
+        {
+          "Global_LifeExpectancy": "100"
+        },
+        {
+          "Global_FederalAndStateTaxRate": "21.23"
+        },
+        {
+          "Insurance_ExpectedInterestRate": "4"
+        },
+        {
+          "Insurance_TermLifeDeathBenefit": "420000"
+        },
+        {
+          "Insurance_PolicyTermInYears": "3"
+        },
+        {
+          "Insurance_TermLifePremium": "170"
+        },
+        {
+          "Insurance_TermLifePremiumPaymentsPerYear": "9"
+        },
+        {
+          "Insurance_PremiumIncreasePerRenewal": "10"
+        },
+        {
+          "Insurance_DeathBenefit": "710000"
+        },
+        {
+          "Insurance_Premium": "430"
+        },
+        {
+          "Insurance_PremiumPaymentsPerYear": "3"
+        },
+        {
+          "Insurance_AverageAnnualDividend": "600"
+        },
+        {
+          "Insurance_DividendIncomeSpendingOption": "2"
+        },
+        {
+          "Global_SavingsInterestRate": "8"
+        },
+        {
+          "Insurance_YearsUntilCashInPolicy": "22"
+        },
+        {
+          "Insurance_FutureCashValue": "520000"
+        },
+        {
+          "(empty)": ""
+        },
+        {
+          "Insurance_YearsBeforeDeath": "65"
+        },
+        {
+          "Global_UserGpcPreference": "0"
+        }
+      ],
+      "nonDefaultResults": [
+        {
+          "Insurance_FutureRateOfReturnWholeLife": {
+            "value": "20.68",
+            "dataFormat": "Percentage",
+            "textLabel": "Whole life"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnWholeLife": {
+            "value": "5.46",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermLife": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term only"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermLife": {
+            "value": "-0.02",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        },
+        {
+          "Insurance_FutureRateOfReturnTermInvestment": {
+            "value": "-100.00",
+            "dataFormat": "Percentage",
+            "textLabel": "Term + investment"
+          }
+        },
+        {
+          "Insurance_DeathRateOfReturnTermInvestment": {
+            "value": "1.78",
+            "dataFormat": "Percentage",
+            "textLabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}
