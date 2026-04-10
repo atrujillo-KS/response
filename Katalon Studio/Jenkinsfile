@@ -11,12 +11,12 @@ pipeline {
     stages {
         stage('RESPONSE') {
             steps {
-                build job: 'RESPONSE', wait: true, propagate: false
+                build job: 'RES_2.0', wait: true, propagate: false
             }
         }
         stage('GS2.0') {
             steps {
-                build job: 'GS2.0', wait: true, propagate: false
+                build job: 'GS_2.0', wait: true, propagate: false
             }
         }
     }
