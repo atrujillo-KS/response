@@ -11,18 +11,48 @@ pipeline {
     stages {
         stage('RESPONSE') {
             steps {
-                build job: 'RES_2.0', wait: true, propagate: false
+                script {
+                    env.RES_BUILD = build(job: 'RES_2.0', wait: true, propagate: false).number
+                }
             }
         }
         stage('GS2.0') {
             steps {
-                build job: 'GS_2.0', wait: true, propagate: false
+                script {
+                    env.GS_BUILD = build(job: 'GS_2.0', wait: true, propagate: false).number
+                }
             }
         }
     }
 
     post {
         always {
+            script {
+                def jenkins = env.JENKINS_URL ?: "${env.BUILD_URL}".replaceAll(/job\/.*/, '')
+                def links = """
+                    <h2>Child Job Reports</h2>
+                    <ul>
+                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Test_20Summary_20Report/">RES_2.0 — Test Summary</a></li>
+                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Resource_20Usage/">RES_2.0 — Resource Usage</a></li>
+                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Test_20Summary_20Report/">GS_2.0 — Test Summary</a></li>
+                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Resource_20Usage/">GS_2.0 — Resource Usage</a></li>
+                    </ul>
+                """
+                writeFile file: 'report-links.html', text: """<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Orchestrator Reports</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:2rem;color:#333034}
+h2{margin-bottom:1rem}ul{list-style:none;padding:0}li{margin:0.5rem 0}
+a{color:#4545BF;text-decoration:none;font-size:1.1rem}a:hover{text-decoration:underline}</style>
+</head><body>${links}</body></html>"""
+            }
+            publishHTML(target: [
+                reportName: 'Report Links',
+                reportDir: '.',
+                reportFiles: 'report-links.html',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
             echo 'Orchestrator pipeline complete.'
         }
     }
