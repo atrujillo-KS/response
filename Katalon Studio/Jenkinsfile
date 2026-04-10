@@ -8,6 +8,10 @@ pipeline {
         disableConcurrentBuilds()
     }
 
+    triggers {
+        cron('10 14 * * *')
+    }
+
     stages {
         stage('RESPONSE') {
             steps {
