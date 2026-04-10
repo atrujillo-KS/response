@@ -12,14 +12,18 @@ pipeline {
         stage('RESPONSE') {
             steps {
                 script {
-                    env.RES_BUILD = build(job: 'RES_2.0', wait: true, propagate: false).number
+                    def result = build(job: 'RES_2.0', wait: true, propagate: false)
+                    env.RES_BUILD = result.number
+                    env.RES_RESULT = result.result
                 }
             }
         }
         stage('GS2.0') {
             steps {
                 script {
-                    env.GS_BUILD = build(job: 'GS_2.0', wait: true, propagate: false).number
+                    def result = build(job: 'GS_2.0', wait: true, propagate: false)
+                    env.GS_BUILD = result.number
+                    env.GS_RESULT = result.result
                 }
             }
         }
@@ -53,7 +57,17 @@ a{color:#4545BF;text-decoration:none;font-size:1.1rem}a:hover{text-decoration:un
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
-            echo 'Orchestrator pipeline complete.'
+            script {
+                def failed = []
+                if (env.RES_RESULT != 'SUCCESS') failed.add("RES_2.0 (${env.RES_RESULT})")
+                if (env.GS_RESULT != 'SUCCESS') failed.add("GS_2.0 (${env.GS_RESULT})")
+                if (failed) {
+                    echo "Failed jobs: ${failed.join(', ')}"
+                    currentBuild.result = 'FAILURE'
+                } else {
+                    echo 'All jobs passed.'
+                }
+            }
         }
     }
 }
