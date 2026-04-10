@@ -1,7 +1,7 @@
 // Jenkinsfile v1.13.1 — Orchestrator
 
 pipeline {
-    agent { label 'ec2-agent-01' }
+    agent { label 'built-in' }
 
     options {
         timestamps()
