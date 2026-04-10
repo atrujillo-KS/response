@@ -467,6 +467,7 @@ cat > "$RESOUT" <<RESHTML
 <div class="meta-bar">
   <span>Build: <strong>#${BUILD_NUMBER}</strong></span>
   <span>Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></span>
+  <span>Instances: <strong>$(awk -F'[<>]' '/maxConcurrentInstances/{print $3}' "$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts" 2>/dev/null || echo "?")</strong></span>
   <span>Samples: <strong>${SAMPLES}</strong> (every 60s)</span>
 </div>
 
