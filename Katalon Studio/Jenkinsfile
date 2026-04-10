@@ -1,0 +1,29 @@
+// Jenkinsfile v1.13.1 — Orchestrator
+
+pipeline {
+    agent { label 'ec2-agent-01' }
+
+    options {
+        timestamps()
+        disableConcurrentBuilds()
+    }
+
+    stages {
+        stage('RESPONSE') {
+            steps {
+                build job: 'RESPONSE', wait: true, propagate: false
+            }
+        }
+        stage('GS2.0') {
+            steps {
+                build job: 'GS2.0', wait: true, propagate: false
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Orchestrator pipeline complete.'
+        }
+    }
+}
