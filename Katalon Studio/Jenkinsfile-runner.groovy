@@ -403,11 +403,11 @@ PEAK_WAITING=0
 while IFS=',' read -r ts total used free avail pct l1 l5 l15 cores waiting sat; do
     [ "$ts" = "time" ] && continue
     if [ "$sat" = "YES" ]; then
-        SAT_STYLE="style=\"background:#FBE5E9; color:#B5001B; font-weight:600;\""
+        SAT_CLASS=" class=\"saturated\""
     else
-        SAT_STYLE=""
+        SAT_CLASS=""
     fi
-    ROWS="${ROWS}<tr><td>${ts}</td><td>${total}M</td><td>${used}M</td><td>${free}M</td><td>${avail}M</td><td><strong>${pct}%</strong></td><td>${l1}</td><td>${l5}</td><td>${l15}</td><td>${cores}</td><td ${SAT_STYLE}>${waiting}</td><td ${SAT_STYLE}>${sat}</td></tr>"
+    ROWS="${ROWS}<tr><td>${ts}</td><td>${total}M</td><td>${used}M</td><td>${free}M</td><td>${avail}M</td><td><strong>${pct}%</strong></td><td>${l1}</td><td>${l5}</td><td>${l15}</td><td>${cores}</td><td${SAT_CLASS}>${waiting}</td><td${SAT_CLASS}>${sat}</td></tr>"
     if [ "${pct:-0}" -gt "$PEAK_MEM" ] 2>/dev/null; then
         PEAK_MEM="$pct"
         PEAK_MEM_TIME="$ts"
@@ -446,6 +446,7 @@ cat > "$RESOUT" <<RESHTML
   th { background: #333034; color: #fff; padding: 0.5rem 1rem; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
   td { padding: 0.5rem 1rem; font-size: 0.85rem; border-bottom: 1px solid #D1D0D1; }
   tr:hover td { background: #EDEDFA; }
+  .saturated { background: #FBE5E9; color: #B5001B; font-weight: 600; }
   .footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #D1D0D1; color: #7D797F; font-size: 0.8rem; }
 </style>
 </head>
