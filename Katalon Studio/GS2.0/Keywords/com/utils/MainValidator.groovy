@@ -1677,7 +1677,7 @@ class MainValidator {
 									WebUI.waitForElementClickable(to, 10, FailureHandling.STOP_ON_FAILURE)
 									WebUI.click(to, FailureHandling.OPTIONAL)
 
-									WebElement el = WebUI.findWebElement(to)
+									WebElement el = WebUI.findWebElement(to, 10)
 									String fieldFormat = WebUI.executeJavaScript(
 											"return arguments[0].getAttribute('field-format') || '';",
 											Arrays.asList(el)
