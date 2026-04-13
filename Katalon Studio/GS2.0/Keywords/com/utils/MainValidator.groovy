@@ -1425,8 +1425,8 @@ class MainValidator {
 											jsOnlyLocators.contains(locator)
 
 									if (useJs) {
-										((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", el)
-										((JavascriptExecutor) driver).executeScript("arguments[0].click();", el)
+										((JavascriptExecutor) driver).executeScript(
+												"var e=document.getElementById(arguments[0]); if(e){e.scrollIntoView({block:'center'}); e.click();}", locator)
 										String jsMsg = "🖱 click (JS forced) | locator='" + locator + "'"
 										logStep(jsMsg)
 										WebUI.comment(jsMsg)
