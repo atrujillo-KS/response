@@ -18,7 +18,17 @@ def run(Map config) {
             ]) {
                 try {
                     stage('Info') {
-                        echo "Jenkinsfile v${JENKINSFILE_VERSION} | Project: ${KATALON_PROJECT} | Suite: ${KATALON_SUITE}"
+                        sh '''
+                            TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
+                            PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
+                            PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
+                            CLIENT_ID=""; PROFILE_URL=""
+                            if [ -f "$PROFILE" ]; then
+                                CLIENT_ID=$(awk -F"[<>']" '/<name>clientId/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+                                PROFILE_URL=$(awk -F"[<>']" '/<name>URL/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+                            fi
+                            echo "Jenkinsfile v$JENKINSFILE_VERSION | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $PROFILE_NAME | clientId: $CLIENT_ID | URL: $PROFILE_URL"
+                        '''
                     }
 
                     stage('Preflight') {
@@ -114,6 +124,16 @@ find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= rea
         rm -f "$xml"
     fi
 done
+
+# --- Extract profile info (clientId, URL) ---
+TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
+PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
+PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
+ENV_CLIENT_ID=""; ENV_URL=""
+if [ -f "$PROFILE" ]; then
+    ENV_CLIENT_ID=$(awk -F"[<>']" '/<name>clientId/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+    ENV_URL=$(awk -F"[<>']" '/<name>URL/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+fi
 
 # --- Generate custom HTML report ---
 
@@ -338,6 +358,8 @@ cat > "$OUT" <<HTMLEOF
   <span>Suite: <strong>${KATALON_SUITE}</strong></span>
   <span>Build: <strong>#${BUILD_NUMBER}</strong></span>
   <span>Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></span>
+  <span>Client: <strong>${ENV_CLIENT_ID}</strong></span>
+  <span>URL: <strong>${ENV_URL}</strong></span>
   <span>Browser: <strong>${ENV_BROWSER}</strong></span>
   <span>OS: <strong>${ENV_OS}</strong></span>
   <span>Katalon: <strong>${ENV_KATALON}</strong></span>
@@ -394,6 +416,16 @@ set +x
 RESLOG="$WORKSPACE/resource-log.csv"
 RESOUT="$WORKSPACE/resource-report/index.html"
 mkdir -p "$WORKSPACE/resource-report"
+
+# Extract profile info
+TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
+PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
+PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
+ENV_CLIENT_ID=""; ENV_URL=""
+if [ -f "$PROFILE" ]; then
+    ENV_CLIENT_ID=$(awk -F"[<>']" '/<name>clientId/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+    ENV_URL=$(awk -F"[<>']" '/<name>URL/{found=1} found && /<initValue>/{print $4; exit}' "$PROFILE")
+fi
 
 if [ ! -f "$RESLOG" ] || [ "$(wc -l < "$RESLOG")" -le 1 ]; then
     echo "No resource data collected — skipping resource report."
@@ -465,6 +497,8 @@ cat > "$RESOUT" <<RESHTML
 <div class="meta-bar">
   <span>Build: <strong>#${BUILD_NUMBER}</strong></span>
   <span>Date: <strong>$(date '+%Y-%m-%d %H:%M:%S %Z')</strong></span>
+  <span>Client: <strong>${ENV_CLIENT_ID}</strong></span>
+  <span>URL: <strong>${ENV_URL}</strong></span>
   <span>Instances: <strong>$(awk -F'[<>]' '/maxConcurrentInstances/{print $3}' "$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts" 2>/dev/null || echo "?")</strong></span>
   <span>Samples: <strong>${SAMPLES}</strong> (every 60s)</span>
 </div>
