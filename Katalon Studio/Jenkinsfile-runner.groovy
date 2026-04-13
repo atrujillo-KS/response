@@ -1,8 +1,8 @@
-// Jenkinsfile-runner v1.13.4 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.5 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
-    def JENKINSFILE_VERSION = '1.13.1'
+    def JENKINSFILE_VERSION = '1.13.5'
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
@@ -24,8 +24,8 @@ def run(Map config) {
                             PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
                             CLIENT_ID=""; PROFILE_URL=""
                             if [ -f "$PROFILE" ]; then
-                                CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE")
-                                PROFILE_URL=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE")
+                                CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+                                PROFILE_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
                             fi
                             echo "Jenkinsfile v$JENKINSFILE_VERSION | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $PROFILE_NAME | clientId: $CLIENT_ID | URL: $PROFILE_URL"
                         '''
@@ -131,8 +131,8 @@ PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/
 PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
 ENV_CLIENT_ID=""; ENV_URL=""
 if [ -f "$PROFILE" ]; then
-    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE")
-    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE")
+    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
 fi
 
 # --- Generate custom HTML report ---
@@ -423,8 +423,8 @@ PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/
 PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
 ENV_CLIENT_ID=""; ENV_URL=""
 if [ -f "$PROFILE" ]; then
-    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE")
-    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>'\''?|'\''?<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE")
+    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
 fi
 
 if [ ! -f "$RESLOG" ] || [ "$(wc -l < "$RESLOG")" -le 1 ]; then
