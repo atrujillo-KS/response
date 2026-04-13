@@ -1235,7 +1235,7 @@ class MainValidator {
 				"lf_sendEmailAddress1",
 				"lf_message_text"
 			] as Set
-			Set<String> delayAfterClickSuffixes = ["lf_eval_selected"] as Set
+			Set<String> delayAfterClickSuffixes = ["lf_eval_selected", "patterns_enabled"] as Set
 			Set<String> delayBeforeClickSuffixes = ["lf_compare_select"] as Set
 
 			// Step execution
@@ -1540,7 +1540,8 @@ class MainValidator {
 									}
 
 									flushWatchdogLogs(false)
-									actualText = getTextWithRetries(to, value)
+									int textTimeoutMs = (command == "waitForText") ? VERIFY_RETRY_TIMEOUT_MS * 3 : VERIFY_RETRY_TIMEOUT_MS
+									actualText = getTextWithRetries(to, value, textTimeoutMs)
 
 									String act = normalize(actualText)
 									String exp = normalize(value)
