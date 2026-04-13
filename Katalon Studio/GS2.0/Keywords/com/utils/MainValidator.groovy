@@ -1403,6 +1403,7 @@ class MainValidator {
 									}
 
 									Set<String> jsOnlyLocators = ["patterns_enabled"] as Set
+									WebElement el = null
 
 									// Pure JS path — bypass findWebElement entirely to avoid stale refs
 									if (jsOnlyLocators.contains(locator)) {
@@ -1414,7 +1415,6 @@ class MainValidator {
 										logStep(jsMsg)
 										WebUI.comment(jsMsg)
 									} else {
-										WebElement el = null
 										try {
 											el = WebUI.findWebElement(to, 8)
 										} catch (Throwable findEx) {
