@@ -1,4 +1,4 @@
-// Jenkinsfile-runner v1.13.1 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.2 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
@@ -115,9 +115,9 @@ fi
 FIRST_XML=$(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | head -1)
 ENV_BROWSER=""; ENV_OS=""; ENV_KATALON=""
 if [ -n "$FIRST_XML" ]; then
-    ENV_BROWSER=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="browser") print v}' "$FIRST_XML")
-    ENV_OS=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="os") print v}' "$FIRST_XML")
-    ENV_KATALON=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="katalonVersion") print v}' "$FIRST_XML")
+    ENV_BROWSER=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="browser") print v}' "$FIRST_XML" | head -1)
+    ENV_OS=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="os") print v}' "$FIRST_XML" | head -1)
+    ENV_KATALON=$(awk -F'"' '/<property /{n="";v=""; for(i=1;i<NF;i++){if($i~/name=/)n=$(i+1); if($i~/value=/)v=$(i+1)}; if(n=="katalonVersion") print v}' "$FIRST_XML" | head -1)
 fi
 
 TOTAL_TESTS=0; TOTAL_PASS=0; TOTAL_FAIL=0; TOTAL_ERROR=0; TOTAL_SKIP=0
