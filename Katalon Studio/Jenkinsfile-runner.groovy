@@ -24,8 +24,8 @@ def run(Map config) {
                             PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
                             CLIENT_ID=""; PROFILE_URL=""
                             if [ -f "$PROFILE" ]; then
-                                CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
-                                PROFILE_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
+                                CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+                                PROFILE_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
                             fi
                             echo "Jenkinsfile v$JENKINSFILE_VERSION | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $PROFILE_NAME | clientId: $CLIENT_ID | URL: $PROFILE_URL"
                         '''
@@ -131,8 +131,8 @@ PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/
 PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
 ENV_CLIENT_ID=""; ENV_URL=""
 if [ -f "$PROFILE" ]; then
-    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
-    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
+    ENV_CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+    ENV_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
 fi
 
 # --- Generate custom HTML report ---
@@ -423,8 +423,8 @@ PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/
 PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
 ENV_CLIENT_ID=""; ENV_URL=""
 if [ -f "$PROFILE" ]; then
-    ENV_CLIENT_ID=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
-    ENV_URL=$(awk '/<initValue>/{gsub(/.*<initValue>|<\/initValue>.*/,""); val=$0} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
+    ENV_CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
+    ENV_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
 fi
 
 if [ ! -f "$RESLOG" ] || [ "$(wc -l < "$RESLOG")" -le 1 ]; then
