@@ -848,6 +848,12 @@ class MainValidator {
 				boolean ready = false
 				try {
 					ready = el.isDisplayed() && el.isEnabled()
+				} catch (org.openqa.selenium.StaleElementReferenceException stale) {
+					// Element went stale — re-find it
+					try {
+						el = driver.findElement(By.id(locator))
+						ready = el.isDisplayed() && el.isEnabled()
+					} catch (Throwable ignored2) {}
 				} catch (Throwable ignored) {}
 
 				if (!ready) {
