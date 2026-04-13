@@ -1409,7 +1409,9 @@ class MainValidator {
 									if (jsOnlyLocators.contains(locator)) {
 										boolean jsClicked = (Boolean) ((JavascriptExecutor) driver).executeScript(
 												"var e=document.getElementById(arguments[0]);" +
-												"if(e){e.scrollIntoView({block:'center'}); e.click(); return true;} return false;", locator)
+												"if(e){e.scrollIntoView({block:'center'});" +
+												"var evt=new MouseEvent('click',{bubbles:true,cancelable:true,view:window});" +
+												"e.dispatchEvent(evt); return true;} return false;", locator)
 										if (!jsClicked) throw new Exception("Element not found via JS: " + locator)
 										String jsMsg = "🖱 click (JS direct) | locator='" + locator + "'"
 										logStep(jsMsg)
@@ -1590,6 +1592,7 @@ class MainValidator {
 									String exp = (value ?: "").toString().trim().toLowerCase()
 									boolean expectedChecked = ["true", "1", "yes", "checked"].contains(exp)
 
+									Set<String> jsOnlyCheckLocators = ["patterns_enabled"] as Set
 									boolean actualChecked = false
 									boolean matched = false
 									Exception vcLastEx = null
@@ -1597,16 +1600,26 @@ class MainValidator {
 
 									while (System.currentTimeMillis() < vcDeadline) {
 										try {
-											WebElement el = WebUI.findWebElement(to, 5)
-											if ("input".equalsIgnoreCase(el.getTagName())) {
-												actualChecked = el.isSelected()
+											// For jsOnly elements, read checked state purely via JS — skip isSelected() entirely
+											if (jsOnlyCheckLocators.contains(locator)) {
+												WebDriver vcDriver = DriverFactory.getWebDriver()
+												actualChecked = (Boolean) ((JavascriptExecutor) vcDriver).executeScript(
+														"var e=document.getElementById(arguments[0]); return e ? e.checked : false;", locator)
+												String dbg = "🔍 verifyChecked JS-only | locator='" + locator + "' | checked=" + actualChecked + " | expected=" + expectedChecked
+												logStep(dbg)
+												WebUI.comment(dbg)
 											} else {
-												String aria = el.getAttribute("aria-checked")
-												if (aria != null) actualChecked = "true".equalsIgnoreCase(aria)
-												else {
-													List<WebElement> inputs = el.findElements(By.cssSelector("input[type='checkbox'],input[type='radio']"))
-													if (inputs) actualChecked = inputs[0].isSelected()
-													else throw new Exception("Element is not checkbox/radio and no descendant input found")
+												WebElement el = WebUI.findWebElement(to, 5)
+												if ("input".equalsIgnoreCase(el.getTagName())) {
+													actualChecked = el.isSelected()
+												} else {
+													String aria = el.getAttribute("aria-checked")
+													if (aria != null) actualChecked = "true".equalsIgnoreCase(aria)
+													else {
+														List<WebElement> inputs = el.findElements(By.cssSelector("input[type='checkbox'],input[type='radio']"))
+														if (inputs) actualChecked = inputs[0].isSelected()
+														else throw new Exception("Element is not checkbox/radio and no descendant input found")
+													}
 												}
 											}
 											vcLastEx = null
