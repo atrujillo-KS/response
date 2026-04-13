@@ -500,7 +500,10 @@ echo "Resource report generated: resource-report/index.html"
                             allowMissing: true
                         ])
                         archiveArtifacts artifacts: "${KATALON_DIR}/Reports/**/*", allowEmptyArchive: true
-                        junit testResults: "${KATALON_DIR}/Reports/**/JUnit_Report.xml", allowEmptyResults: true
+                        def testResult = junit testResults: "${KATALON_DIR}/Reports/**/JUnit_Report.xml", allowEmptyResults: true
+                        if (testResult.failCount > 0) {
+                            error "Build failed: ${testResult.failCount} test(s) failed out of ${testResult.totalCount}"
+                        }
                     }
                 }
             }
