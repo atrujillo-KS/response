@@ -1,4 +1,4 @@
-// Jenkinsfile-runner v1.13.2 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.3 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
@@ -102,12 +102,18 @@ else
     echo "No Katalon index.html found in $LATEST_RUN"
 fi
 
-# Remove collection-level JUnit XML to prevent duplicate test results in Jenkins
-COLLECTION_NAME=$(basename "$KATALON_SUITE")
-if [ -d "$LATEST_RUN/$COLLECTION_NAME" ]; then
-    echo "Removing collection-level JUnit XML from: $COLLECTION_NAME"
-    find "$LATEST_RUN/$COLLECTION_NAME" -name "JUnit_Report.xml" -type f -delete
-fi
+# Remove collection-level JUnit XMLs (they aggregate all suites and cause
+# double-counted totals and duplicate failure entries).  Detect them by
+# counting <testsuite > occurrences — individual suite XMLs have exactly 1.
+echo "=== JUnit XMLs found under $LATEST_RUN ==="
+find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= read -r xml; do
+    SC=$(grep -c '<testsuite ' "$xml" 2>/dev/null || echo 0)
+    echo "  $xml  (testsuite count: $SC)"
+    if [ "$SC" -gt 1 ]; then
+        echo "  -> Removing collection-level aggregate"
+        rm -f "$xml"
+    fi
+done
 
 # --- Generate custom HTML report ---
 
