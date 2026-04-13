@@ -1415,7 +1415,7 @@ class MainValidator {
 									}
 									if (el == null) throw new Exception("Element not found: " + locator)
 
-									Set<String> jsOnlyLocators = [] as Set
+									Set<String> jsOnlyLocators = ["patterns_enabled"] as Set
 
 									boolean useJs = locator.startsWith("lf_view_data_table") ||
 											locator.endsWith("_link") ||
