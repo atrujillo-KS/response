@@ -1402,36 +1402,46 @@ class MainValidator {
 										break
 									}
 
-									WebElement el = null
-									try {
-										el = WebUI.findWebElement(to, 8)
-									} catch (Throwable findEx) {
-										String findFbMsg = "[click] findWebElement failed (" + findEx.message + ") | trying driver.findElement | locator='" + locator + "'"
-										logStep(findFbMsg)
-										WebUI.comment(findFbMsg)
-										try {
-											el = DriverFactory.getWebDriver().findElement(By.id(locator))
-										} catch (Throwable ignored2) {}
-									}
-									if (el == null) throw new Exception("Element not found: " + locator)
-
 									Set<String> jsOnlyLocators = ["patterns_enabled"] as Set
 
-									boolean useJs = locator.startsWith("lf_view_data_table") ||
-											locator.endsWith("_link") ||
-											locator.endsWith("_expand") ||
-											locator.endsWith("compare_view_as_table") ||
-											locator == "lf_results_button" ||
-											jsOnlyLocators.contains(locator)
-
-									if (useJs) {
-										((JavascriptExecutor) driver).executeScript(
-												"var e=document.getElementById(arguments[0]); if(e){e.scrollIntoView({block:'center'}); e.click();}", locator)
-										String jsMsg = "🖱 click (JS forced) | locator='" + locator + "'"
+									// Pure JS path — bypass findWebElement entirely to avoid stale refs
+									if (jsOnlyLocators.contains(locator)) {
+										boolean jsClicked = (Boolean) ((JavascriptExecutor) driver).executeScript(
+												"var e=document.getElementById(arguments[0]);" +
+												"if(e){e.scrollIntoView({block:'center'}); e.click(); return true;} return false;", locator)
+										if (!jsClicked) throw new Exception("Element not found via JS: " + locator)
+										String jsMsg = "🖱 click (JS direct) | locator='" + locator + "'"
 										logStep(jsMsg)
 										WebUI.comment(jsMsg)
 									} else {
-										clickWithRetry(el, locator, driver)
+										WebElement el = null
+										try {
+											el = WebUI.findWebElement(to, 8)
+										} catch (Throwable findEx) {
+											String findFbMsg = "[click] findWebElement failed (" + findEx.message + ") | trying driver.findElement | locator='" + locator + "'"
+											logStep(findFbMsg)
+											WebUI.comment(findFbMsg)
+											try {
+												el = DriverFactory.getWebDriver().findElement(By.id(locator))
+											} catch (Throwable ignored2) {}
+										}
+										if (el == null) throw new Exception("Element not found: " + locator)
+
+										boolean useJs = locator.startsWith("lf_view_data_table") ||
+												locator.endsWith("_link") ||
+												locator.endsWith("_expand") ||
+												locator.endsWith("compare_view_as_table") ||
+												locator == "lf_results_button"
+
+										if (useJs) {
+											((JavascriptExecutor) driver).executeScript(
+													"arguments[0].scrollIntoView({block:'center'}); arguments[0].click();", el)
+											String jsMsg = "🖱 click (JS forced) | locator='" + locator + "'"
+											logStep(jsMsg)
+											WebUI.comment(jsMsg)
+										} else {
+											clickWithRetry(el, locator, driver)
+										}
 									}
 
 									if (delayAfterClickPrefixes.any { locator.startsWith(it) } ||
