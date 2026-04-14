@@ -1,8 +1,8 @@
-// Jenkinsfile-runner v1.13.9 — Shared pipeline logic
+// Jenkinsfile-runner v1.14.0 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
-    def JENKINSFILE_VERSION = '1.13.9'
+    def JENKINSFILE_VERSION = '1.14.0'
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
@@ -114,37 +114,16 @@ fi
 
 # Remove collection-level JUnit XMLs (they aggregate all suites and cause
 # double-counted totals and duplicate failure entries).
-# Strategy: find the shallowest JUnit XML (collection) and remove it if
-# there are also deeper XMLs (individual suites).
+# The collection directory matches the suite collection name (e.g. Headless-PROD).
+COLLECTION_NAME=$(basename "$KATALON_SUITE")
 echo "=== JUnit XMLs found under $LATEST_RUN ==="
-SHALLOWEST_DEPTH=9999
-SHALLOWEST_XML=""
-DEEPEST_DEPTH=0
 find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= read -r xml; do
-    REL="${xml#$LATEST_RUN/}"
-    DEPTH=$(echo "$REL" | tr '/' '\n' | wc -l)
-    echo "  $xml  (depth: $DEPTH)"
+    echo "  $xml"
 done
-# Now actually remove: find all, keep only the deepest level
-ALL_XMLS=$(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null)
-if [ -n "$ALL_XMLS" ]; then
-    MAX_DEPTH=0
-    while IFS= read -r xml; do
-        REL="${xml#$LATEST_RUN/}"
-        DEPTH=$(echo "$REL" | tr '/' '\n' | wc -l)
-        [ "$DEPTH" -gt "$MAX_DEPTH" ] && MAX_DEPTH=$DEPTH
-    done <<< "$ALL_XMLS"
-    while IFS= read -r xml; do
-        REL="${xml#$LATEST_RUN/}"
-        DEPTH=$(echo "$REL" | tr '/' '\n' | wc -l)
-        if [ "$DEPTH" -lt "$MAX_DEPTH" ]; then
-            echo "  -> Removing shallower (collection-level) XML: $xml"
-            rm -f "$xml"
-        fi
-    done <<< "$ALL_XMLS"
+if [ -d "$LATEST_RUN/$COLLECTION_NAME" ]; then
+    echo "  -> Removing collection-level JUnit XMLs from: $COLLECTION_NAME/"
+    find "$LATEST_RUN/$COLLECTION_NAME" -name "JUnit_Report.xml" -type f -delete
 fi
-
-# Log surviving JUnit XMLs (these are what the custom report + Jenkins junit will use)
 echo "=== Surviving JUnit XMLs after collection removal: ==="
 find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= read -r xml; do
     echo "  $xml"
