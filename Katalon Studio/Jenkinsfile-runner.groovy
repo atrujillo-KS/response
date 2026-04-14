@@ -1,8 +1,8 @@
-// Jenkinsfile-runner v1.13.6 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.7 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
-    def JENKINSFILE_VERSION = '1.13.6'
+    def JENKINSFILE_VERSION = '1.13.7'
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
@@ -144,6 +144,21 @@ if [ -n "$ALL_XMLS" ]; then
     done <<< "$ALL_XMLS"
 fi
 
+# Copy surviving suite-level XMLs to a clean directory for Jenkins junit step
+# (avoids glob mismatch between custom report and junit parsing)
+JUNIT_DIR="$WORKSPACE/junit-results"
+rm -rf "$JUNIT_DIR"
+mkdir -p "$JUNIT_DIR"
+JIDX=0
+while IFS= read -r xml; do
+    JIDX=$((JIDX + 1))
+    SUITE_DIR=$(basename "$(dirname "$xml")")
+    cp "$xml" "$JUNIT_DIR/${SUITE_DIR}_${JIDX}_JUnit_Report.xml"
+    echo "  -> Copied to junit-results: ${SUITE_DIR}_${JIDX}_JUnit_Report.xml"
+done < <(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null)
+echo "=== JUnit XMLs staged for Jenkins: ==="
+ls -la "$JUNIT_DIR/" 2>/dev/null || echo "(none)"
+
 # --- Extract profile info (clientId, URL) ---
 TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
 PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
@@ -189,6 +204,7 @@ while IFS= read -r -d '' xml; do
 
     SUITE_FAILS=$((FAILS + ERRORS))
 
+    echo "--- Suite: ${SUITE} (${TESTS} tests, ${FAILS} failures, ${ERRORS} errors, ${SKIPS} skipped) ---"
     SUITE_FAILED_TC=""
     while IFS="$(printf '\t')" read -r tc_name tc_status tc_msg tc_time tc_cmd tc_actual; do
         [ -z "$tc_name" ] && continue
@@ -212,6 +228,14 @@ while IFS= read -r -d '' xml; do
             FAIL|ERROR) TC_CLASS="tc-fail"; PILL_CLASS="fail" ;; SKIP) TC_CLASS="tc-skip"; PILL_CLASS="skip" ;; *) TC_CLASS="tc-pass"; PILL_CLASS="pass" ;;
         esac
         tc_time="${tc_time:-0}"
+        # Log each test case result to Jenkins console
+        if [ "$tc_status" = "FAIL" ] || [ "$tc_status" = "ERROR" ]; then
+            echo "  FAIL  ${tc_short}  (${tc_time}s)"
+        elif [ "$tc_status" = "SKIP" ]; then
+            echo "  SKIP  ${tc_short}"
+        else
+            echo "  PASS  ${tc_short}  (${tc_time}s)"
+        fi
         if [ "$tc_status" = "FAIL" ] || [ "$tc_status" = "ERROR" ]; then
             SUITE_FAILED_TC="${SUITE_FAILED_TC}<tr class=\"tc-fail\"><td>${tc_short}</td><td>${tc_time}s</td><td>${tc_display}</td></tr>"
         fi
@@ -553,7 +577,7 @@ echo "Resource report generated: resource-report/index.html"
                             allowMissing: true
                         ])
                         archiveArtifacts artifacts: "${KATALON_DIR}/Reports/**/*", allowEmptyArchive: true
-                        def testResult = junit testResults: "${KATALON_DIR}/Reports/**/JUnit_Report.xml", allowEmptyResults: true
+                        def testResult = junit testResults: "junit-results/*_JUnit_Report.xml", allowEmptyResults: true
                         if (testResult.failCount > 0) {
                             error "Build failed: ${testResult.failCount} test(s) failed out of ${testResult.totalCount}"
                         }
