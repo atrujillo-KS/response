@@ -344,6 +344,18 @@ class MainValidator {
 		return to
 	}
 
+	/** Convert a Katalon TestObject back to a Selenium By locator */
+	private static By toSeleniumBy(TestObject to) {
+		def prop = to.getProperties()?.find { it.isActive() }
+		if (!prop) return By.id(to.getObjectId())
+		switch (prop.getName()) {
+			case "xpath": return By.xpath(prop.getValue())
+			case "css":   return By.cssSelector(prop.getValue())
+			case "id":    return By.id(prop.getValue())
+			default:      return By.xpath("//*[@${prop.getName()}='${prop.getValue()}']")
+		}
+	}
+
 	// -------------------- Browser --------------------
 
 	/** Hard cleanup: kill any stale driver, watchdog, and temp profile from a previous run */
@@ -758,12 +770,16 @@ class MainValidator {
 				actualText = WebUI.getAttribute(to, "textContent", FailureHandling.OPTIONAL) ?: ""
 			}
 			// Fallback: if getText() returned partial content (e.g. headless Chrome
-			// strips child span text), try textContent which includes all descendants
+			// strips child span text), use JS innerText which includes all descendants
 			if (normExpected != null && normalize(actualText) != normExpected) {
-				String tcText = WebUI.getAttribute(to, "textContent", FailureHandling.OPTIONAL) ?: ""
-				if (tcText.trim() && normalize(tcText) != normalize(actualText)) {
-					actualText = tcText
-				}
+				try {
+					WebDriver driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver()
+					WebElement el = driver.findElement(toSeleniumBy(to))
+					String jsText = ((JavascriptExecutor) driver).executeScript("return arguments[0].innerText", el) ?: ""
+					if (jsText.trim() && normalize(jsText) != normalize(actualText)) {
+						actualText = jsText
+					}
+				} catch (Exception ignored) {}
 			}
 
 			long elapsed = System.currentTimeMillis() - startMs
