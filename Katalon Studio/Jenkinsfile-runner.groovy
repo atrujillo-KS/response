@@ -1,8 +1,8 @@
-// Jenkinsfile-runner v1.13.8 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.9 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
-    def JENKINSFILE_VERSION = '1.13.8'
+    def JENKINSFILE_VERSION = '1.13.9'
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
@@ -92,8 +92,8 @@ set +x
 REPORT_DIR="$WORKSPACE/$KATALON_DIR/Reports"
 OUT="$WORKSPACE/custom-report/index.html"
 
-# Find the latest run directory (most recent timestamp folder)
-LATEST_RUN=$(find "$REPORT_DIR" -maxdepth 1 -mindepth 1 -type d 2>/dev/null | sort | tail -1)
+# Find the latest run directory (timestamp folders only, skip Self-healing etc.)
+LATEST_RUN=$(find "$REPORT_DIR" -maxdepth 1 -mindepth 1 -type d -name '20*' 2>/dev/null | sort | tail -1)
 
 if [ -z "$LATEST_RUN" ]; then
     echo "No report directories found — skipping report generation."
