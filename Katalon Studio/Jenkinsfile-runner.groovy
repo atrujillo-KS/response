@@ -1,8 +1,8 @@
-// Jenkinsfile-runner v1.13.7 — Shared pipeline logic
+// Jenkinsfile-runner v1.13.8 — Shared pipeline logic
 // Usage: node('ec2-agent-01') { checkout scm; load('...').run(config) }
 
 def run(Map config) {
-    def JENKINSFILE_VERSION = '1.13.7'
+    def JENKINSFILE_VERSION = '1.13.8'
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
@@ -144,20 +144,11 @@ if [ -n "$ALL_XMLS" ]; then
     done <<< "$ALL_XMLS"
 fi
 
-# Copy surviving suite-level XMLs to a clean directory for Jenkins junit step
-# (avoids glob mismatch between custom report and junit parsing)
-JUNIT_DIR="$WORKSPACE/junit-results"
-rm -rf "$JUNIT_DIR"
-mkdir -p "$JUNIT_DIR"
-JIDX=0
-while IFS= read -r xml; do
-    JIDX=$((JIDX + 1))
-    SUITE_DIR=$(basename "$(dirname "$xml")")
-    cp "$xml" "$JUNIT_DIR/${SUITE_DIR}_${JIDX}_JUnit_Report.xml"
-    echo "  -> Copied to junit-results: ${SUITE_DIR}_${JIDX}_JUnit_Report.xml"
-done < <(find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null)
-echo "=== JUnit XMLs staged for Jenkins: ==="
-ls -la "$JUNIT_DIR/" 2>/dev/null || echo "(none)"
+# Log surviving JUnit XMLs (these are what the custom report + Jenkins junit will use)
+echo "=== Surviving JUnit XMLs after collection removal: ==="
+find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= read -r xml; do
+    echo "  $xml"
+done
 
 # --- Extract profile info (clientId, URL) ---
 TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
@@ -577,7 +568,7 @@ echo "Resource report generated: resource-report/index.html"
                             allowMissing: true
                         ])
                         archiveArtifacts artifacts: "${KATALON_DIR}/Reports/**/*", allowEmptyArchive: true
-                        def testResult = junit testResults: "junit-results/*_JUnit_Report.xml", allowEmptyResults: true
+                        def testResult = junit testResults: "${KATALON_DIR}/Reports/**/JUnit_Report.xml", allowEmptyResults: true
                         if (testResult.failCount > 0) {
                             error "Build failed: ${testResult.failCount} test(s) failed out of ${testResult.totalCount}"
                         }
