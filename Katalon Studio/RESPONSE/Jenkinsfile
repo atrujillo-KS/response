@@ -1,5 +1,6 @@
-// Jenkinsfile v1.13.1 — RESPONSE
+// Jenkinsfile v1.13.8 — RESPONSE
 node('ec2-agent-01') {
+    deleteDir()
     checkout scm
     def runner = load 'Katalon Studio/Jenkinsfile-runner.groovy'
     runner.run(
