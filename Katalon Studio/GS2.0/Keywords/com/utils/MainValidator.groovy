@@ -757,6 +757,14 @@ class MainValidator {
 			if (!actualText.trim()) {
 				actualText = WebUI.getAttribute(to, "textContent", FailureHandling.OPTIONAL) ?: ""
 			}
+			// Fallback: if getText() returned partial content (e.g. headless Chrome
+			// strips child span text), try textContent which includes all descendants
+			if (normExpected != null && normalize(actualText) != normExpected) {
+				String tcText = WebUI.getAttribute(to, "textContent", FailureHandling.OPTIONAL) ?: ""
+				if (tcText.trim() && normalize(tcText) != normalize(actualText)) {
+					actualText = tcText
+				}
+			}
 
 			long elapsed = System.currentTimeMillis() - startMs
 

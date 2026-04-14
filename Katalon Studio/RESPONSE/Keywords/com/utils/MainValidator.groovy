@@ -529,7 +529,15 @@ class MainValidator {
 		String actualText = ""
 		while (retries-- > 0) {
 			actualText = WebUI.getText(to, FailureHandling.OPTIONAL)
-			if (actualText?.trim()) break
+			if (actualText?.trim()) {
+				// Fallback: if getText() returned partial content (e.g. headless Chrome
+				// strips child span text), try textContent which includes all descendants
+				String tcText = WebUI.getAttribute(to, "textContent", FailureHandling.OPTIONAL) ?: ""
+				if (tcText.trim() && tcText.trim().length() > actualText.trim().length()) {
+					actualText = tcText
+				}
+				break
+			}
 			Thread.sleep(200)
 		}
 		return actualText
