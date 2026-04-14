@@ -6,6 +6,7 @@ def run(Map config) {
     def KATALON_DIR         = config.katalon_dir
     def KATALON_PROJECT     = config.katalon_project
     def KATALON_SUITE       = config.katalon_suite ?: 'Test Suites/Headless-PROD'
+    def ENVIRONMENT         = config.environment ?: 'PROD'
 
     timestamps {
         withCredentials([string(credentialsId: 'katalon-api-key', variable: 'KATALON_API_KEY')]) {
@@ -14,20 +15,19 @@ def run(Map config) {
                 "KATALON_DIR=${KATALON_DIR}",
                 "KATALON_PROJECT=${KATALON_PROJECT}",
                 "KATALON_SUITE=${KATALON_SUITE}",
-                "KATALON_BROWSER=Chrome"
+                "KATALON_BROWSER=Chrome",
+                "ENVIRONMENT=${ENVIRONMENT}"
             ]) {
                 try {
                     stage('Info') {
                         sh '''
-                            TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
-                            PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
-                            PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
+                            PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${ENVIRONMENT}.glbl"
                             CLIENT_ID=""; PROFILE_URL=""
                             if [ -f "$PROFILE" ]; then
                                 CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
                                 PROFILE_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
                             fi
-                            echo "Jenkinsfile v$JENKINSFILE_VERSION | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $PROFILE_NAME | clientId: $CLIENT_ID | URL: $PROFILE_URL"
+                            echo "Jenkinsfile v$JENKINSFILE_VERSION | Env: $ENVIRONMENT | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $ENVIRONMENT | clientId: $CLIENT_ID | URL: $PROFILE_URL"
                         '''
                     }
 
@@ -77,6 +77,7 @@ def run(Map config) {
                               -runMode=console \
                               -projectPath="$WORKSPACE/$KATALON_DIR/$KATALON_PROJECT" \
                               -testSuiteCollectionPath="$KATALON_SUITE" \
+                              -executionProfile="$ENVIRONMENT" \
                               -apiKey="$KATALON_API_KEY" \
                               -orgID="2333388" \
                               -retry=0 \
@@ -130,9 +131,7 @@ find "$LATEST_RUN" -name "JUnit_Report.xml" -type f 2>/dev/null | while IFS= rea
 done
 
 # --- Extract profile info (clientId, URL) ---
-TS_FILE="$WORKSPACE/$KATALON_DIR/Test Suites/${KATALON_SUITE##*/}.ts"
-PROFILE_NAME=$(awk -F'[<>]' '/<profileName>/{print $3; exit}' "$TS_FILE" 2>/dev/null || echo "PROD")
-PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${PROFILE_NAME}.glbl"
+PROFILE="$WORKSPACE/$KATALON_DIR/Profiles/${ENVIRONMENT}.glbl"
 ENV_CLIENT_ID=""; ENV_URL=""
 if [ -f "$PROFILE" ]; then
     ENV_CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
@@ -409,7 +408,7 @@ HTMLEOF
 echo "Custom report generated: custom-report/index.html"
                         '''
                         publishHTML(target: [
-                            reportName: 'Katalon Test Report',
+                            reportName: "Katalon Test Report - ${ENVIRONMENT}",
                             reportDir: 'katalon-report',
                             reportFiles: 'index.html',
                             keepAll: true,
@@ -417,7 +416,7 @@ echo "Custom report generated: custom-report/index.html"
                             allowMissing: true
                         ])
                         publishHTML(target: [
-                            reportName: 'Test Summary Report',
+                            reportName: "Test Summary Report - ${ENVIRONMENT}",
                             reportDir: 'custom-report',
                             reportFiles: 'index.html',
                             keepAll: true,
@@ -539,7 +538,7 @@ RESHTML
 echo "Resource report generated: resource-report/index.html"
                         '''
                         publishHTML(target: [
-                            reportName: 'Resource Usage',
+                            reportName: "Resource Usage - ${ENVIRONMENT}",
                             reportDir: 'resource-report',
                             reportFiles: 'index.html',
                             keepAll: true,

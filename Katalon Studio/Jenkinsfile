@@ -1,22 +1,23 @@
-// Jenkinsfile v1.13.1 — Orchestrator
+// Jenkinsfile v1.14.0 — Orchestrator
 
 pipeline {
     agent { label 'built-in' }
+
+    parameters {
+        choice(name: 'ENVIRONMENT', choices: ['PROD', 'QA', 'STG'], description: 'Target environment (branch + profile)')
+    }
 
     options {
         timestamps()
         disableConcurrentBuilds()
     }
 
-    triggers {
-        cron('0 1 * * *')
-    }
-
     stages {
         stage('RESPONSE') {
             steps {
                 script {
-                    def result = build(job: 'RES_2.0', wait: true, propagate: false)
+                    def result = build(job: 'RES_2.0', wait: true, propagate: false,
+                        parameters: [string(name: 'ENVIRONMENT', value: params.ENVIRONMENT)])
                     env.RES_BUILD = result.number
                     env.RES_RESULT = result.result
                 }
@@ -25,7 +26,8 @@ pipeline {
         stage('GS2.0') {
             steps {
                 script {
-                    def result = build(job: 'GS_2.0', wait: true, propagate: false)
+                    def result = build(job: 'GS_2.0', wait: true, propagate: false,
+                        parameters: [string(name: 'ENVIRONMENT', value: params.ENVIRONMENT)])
                     env.GS_BUILD = result.number
                     env.GS_RESULT = result.result
                 }
@@ -36,18 +38,19 @@ pipeline {
     post {
         always {
             script {
+                def envLabel = params.ENVIRONMENT ?: 'PROD'
                 def jenkins = env.JENKINS_URL ?: "${env.BUILD_URL}".replaceAll(/job\/.*/, '')
                 def links = """
-                    <h2>Child Job Reports</h2>
+                    <h2>Child Job Reports — ${envLabel}</h2>
                     <ul>
-                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Test_20Summary_20Report/">RES_2.0 — Test Summary</a></li>
-                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Resource_20Usage/">RES_2.0 — Resource Usage</a></li>
-                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Test_20Summary_20Report/">GS_2.0 — Test Summary</a></li>
-                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Resource_20Usage/">GS_2.0 — Resource Usage</a></li>
+                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Test_20Summary_20Report_20-_20${envLabel}/">RES_2.0 — Test Summary</a></li>
+                        <li><a href="${jenkins}job/RES_2.0/${env.RES_BUILD ?: 'lastBuild'}/Resource_20Usage_20-_20${envLabel}/">RES_2.0 — Resource Usage</a></li>
+                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Test_20Summary_20Report_20-_20${envLabel}/">GS_2.0 — Test Summary</a></li>
+                        <li><a href="${jenkins}job/GS_2.0/${env.GS_BUILD ?: 'lastBuild'}/Resource_20Usage_20-_20${envLabel}/">GS_2.0 — Resource Usage</a></li>
                     </ul>
                 """
                 writeFile file: 'report-links.html', text: """<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Orchestrator Reports</title>
+<html><head><meta charset="utf-8"><title>Orchestrator Reports — ${envLabel}</title>
 <style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:2rem;color:#333034}
 h2{margin-bottom:1rem}ul{list-style:none;padding:0}li{margin:0.5rem 0}
 a{color:#4545BF;text-decoration:none;font-size:1.1rem}a:hover{text-decoration:underline}</style>
@@ -69,7 +72,7 @@ a{color:#4545BF;text-decoration:none;font-size:1.1rem}a:hover{text-decoration:un
                     echo "Failed jobs: ${failed.join(', ')}"
                     currentBuild.result = 'FAILURE'
                 } else {
-                    echo 'All jobs passed.'
+                    echo "All jobs passed — ${params.ENVIRONMENT}"
                 }
             }
         }

@@ -1,11 +1,24 @@
-// Jenkinsfile v1.13.8 — RESPONSE
+// Jenkinsfile v1.14.0 — RESPONSE
 node('ec2-agent-01') {
+    properties([
+        parameters([
+            choice(name: 'ENVIRONMENT', choices: ['PROD', 'QA', 'STG'], description: 'Target environment (branch + profile)')
+        ])
+    ])
+
+    def envBranch = params.ENVIRONMENT ?: 'PROD'
+
     deleteDir()
-    checkout scm
+    checkout([$class: 'GitSCM',
+        branches: [[name: "*/${envBranch}"]],
+        userRemoteConfigs: scm.userRemoteConfigs
+    ])
+
     def runner = load 'Katalon Studio/Jenkinsfile-runner.groovy'
     runner.run(
         katalon_dir:     'Katalon Studio/RESPONSE',
         katalon_project: 'RESPONSE.prj',
-        katalon_suite:   'Test Suites/Headless-PROD'
+        katalon_suite:   'Test Suites/Headless-PROD',
+        environment:     envBranch
     )
 }

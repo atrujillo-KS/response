@@ -1,11 +1,24 @@
-// Jenkinsfile v1.13.8 — GS2.0
+// Jenkinsfile v1.14.0 — GS2.0
 node('ec2-agent-01') {
+    properties([
+        parameters([
+            choice(name: 'ENVIRONMENT', choices: ['PROD', 'QA', 'STG'], description: 'Target environment (branch + profile)')
+        ])
+    ])
+
+    def envBranch = params.ENVIRONMENT ?: 'PROD'
+
     deleteDir()
-    checkout scm
+    checkout([$class: 'GitSCM',
+        branches: [[name: "*/${envBranch}"]],
+        userRemoteConfigs: scm.userRemoteConfigs
+    ])
+
     def runner = load 'Katalon Studio/Jenkinsfile-runner.groovy'
     runner.run(
         katalon_dir:     'Katalon Studio/GS2.0',
         katalon_project: 'GS2.0.prj',
-        katalon_suite:   'Test Suites/Headless-PROD'
+        katalon_suite:   'Test Suites/Headless-PROD',
+        environment:     envBranch
     )
 }
