@@ -199,6 +199,11 @@
     }
   },
   {
+    "startCapture": {
+      "id": "/save"
+    }
+  },
+  {
     "setText": {
       "id": "lf_Global_StudentLoanOneAmountOwed",
       "value": "15000"
@@ -263,6 +268,14 @@
     }
   },
   {
+    "delay": {
+      "value": "3"
+    }
+  },
+  {
+    "logCapture": {}
+  },
+  {
     "verifyText": {
       "id": "lf_calculate_back_to_worksheet",
       "value": "< Back to worksheet"
@@ -270,7 +283,7 @@
   },
   {
     "waitForText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "id": "debt_results_text",
       "value": "You pay $3,100 monthly on a total debt of $41,000 and your effective interest rate is 4.17%"
     }
   },
