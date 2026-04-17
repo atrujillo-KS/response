@@ -53,7 +53,14 @@ Jenkins jobs are configured to read the Jenkinsfile from the **main** branch. Th
 3. The shared runner (`Jenkinsfile-runner.groovy`) executes using the code and profiles from that branch
 4. The `executionProfile` is set to match the environment (e.g., `PROD` profile on `PROD` branch)
 
-**Important**: Changes to Jenkinsfile parameters or pipeline logic must be on **main** to take effect. Always merge feature branches into main and push. Environment-specific branches should also be kept in sync with main.
+**What goes where:**
+
+- **main branch** — Only Jenkinsfiles, pipeline logic (`Jenkinsfile-runner.groovy`), orchestrator, and project wrapper configs. Main is a launcher only; it never runs tests. Test project changes on main are irrelevant.
+- **Environment branches (PROD, QA, STG, AWS)** — Test project changes: JSON test data, profiles, test cases, verifiers, Keywords, test suites. These are the branches that actually execute.
+
+**Rules:**
+- Jenkinsfile/pipeline changes → commit to **main**, then merge main into environment branches
+- Test project changes → commit directly to the relevant **environment branch(es)**, do NOT push to main
 
 ## When Editing Jenkinsfiles
 
@@ -61,4 +68,4 @@ Jenkins jobs are configured to read the Jenkinsfile from the **main** branch. Th
 - Edit individual project `Jenkinsfile` only for project-specific config (dir, project, suite)
 - Edit `Katalon Studio/Jenkinsfile` for orchestration changes (job order, scheduling, report links)
 - Always mention the Jenkinsfile version when pushing changes
-- Always merge changes to **main** and push, then merge main into environment branches (AWS, PROD, QA, STG)
+- Jenkinsfile changes must be on **main** to take effect — merge into environment branches after
