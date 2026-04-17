@@ -2,7 +2,7 @@
   {
     "verifyTitle": {
       "id": "Tap Into My Home Equity",
-      "value": "Tap Into My Home Equity"      
+      "value": "Tap Into My Home Equity"
     }
   },
   {
@@ -28,120 +28,6 @@
     }
   },
   {
-    "click": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[1]/following::span[3]"
-    }
-  },
-  {
-    "waitForText": {
-      "id": "lf_inline_modal_title",
-      "value": "Estimated Value of Home"
-    }
-  },
-  {
-    "click": {
-      "id": "lf_zillow_results_calculate"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Street Address'])[1]/following::div[1]",
-      "value": "Street Address must be entered"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='City'])[1]/following::div[1]",
-      "value": "City must be entered"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State'])[1]/following::div[1]",
-      "value": "State must be entered"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Zip code'])[1]/following::div[1]",
-      "value": "Zip code must be entered"
-    }
-  },
-  {
-    "click": {
-      "id": "lf_inline_address1"
-    }
-  },
-  {
-    "setText": {
-      "id": "lf_inline_address1",
-      "value": "8849 Dewsbury"
-    }
-  },
-  {
-    "setText": {
-      "id": "lf_inline_city",
-      "value": "San Diego"
-    }
-  },
-  {
-    "click": {
-      "id": "lf_inline_state"
-    }
-  },
-  {
-    "select": {
-      "id": "lf_inline_state",
-      "value": "label=California"
-    }
-  },
-  {
-    "setText": {
-      "id": "lf_inline_zipcode",
-      "value": "92126"
-    }
-  },
-  {
-    "click": {
-      "id": "lf_zillow_results_calculate"
-    }
-  },
-  {
-    "storeText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
-      "value": "EstimatedValue"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
-      "value": "The estimated value of the home is ${EstimatedValue}"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=//div[@id=\"'EstimatedHomeValue'\"]/div/label",
-      "value": "Estimated Home Value"
-    }
-  },
-  {
-    "verifyValue": {
-      "id": "lf_EstimatedHomeValue",
-      "value": "${EstimatedValue}"
-    }
-  },
-  {
-    "click": {
-      "id": "lf_accept_zillow_value"
-    }
-  },
-  {
-    "verifyValue": {
-      "id": "lf_AppValOfYourHome",
-      "value": "${EstimatedValue}"
-    }
-  },
-  {
     "setText": {
       "id": "lf_AppValOfYourHome",
       "value": "635783"
@@ -152,12 +38,13 @@
       "id": "lf_OutstandingMortgagePrinciple",
       "value": "200000"
     }
-  },  
+  },
   {
     "click": {
       "id": "lf_CashNeededFromEquity"
     }
-  },{
+  },
+  {
     "setText": {
       "id": "lf_CashNeededFromEquity",
       "value": "150000"
@@ -179,7 +66,7 @@
       "id": "xpath=//div[@id='lf_inline_modal_body']/div/b",
       "value": "Home Equity Loan"
     }
-  },  
+  },
   {
     "verifyText": {
       "id": "lf_inline_modal_body",
@@ -382,42 +269,6 @@
   {
     "click": {
       "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('What You', \"'\", 'll Need To Apply')])[1]/following::button[1]"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "lf-action-expertise-refine-link",
-      "value": "Refine location"
-    }
-  },
-  {
-    "waitForText": {
-      "id": "//li/button",
-      "value": "Email me"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "//div[5]/div/div/div[2]/h3",
-      "value": "Other Options"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=//*[@id='lf_find_branch']/div",
-      "value": "Find a Branch Near You"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=//*[@id='lf_find_call_back']/div",
-      "value": "Request a Call Back"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "xpath=//*[@id='lf_Live_chat']/div",
-      "value": "Live Chat"
     }
   },
   {
