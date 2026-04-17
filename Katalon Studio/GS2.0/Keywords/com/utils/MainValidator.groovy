@@ -53,7 +53,7 @@ import java.util.concurrent.ConcurrentLinkedQueue
 class MainValidator {
 
 	// -------------------- Version --------------------
-	public static final String VERSION = "1.6.1"
+	public static final String VERSION = "1.6.0"
 
 	// -------------------- Global retry settings for verification commands --------------------
 	private static final int VERIFY_RETRY_TIMEOUT_MS = 5000
@@ -1365,81 +1365,6 @@ class MainValidator {
 								}
 								break
 
-							case "startCapture":
-								try {
-									String urlFilter = locator ?: ""
-									WebUI.executeJavaScript('''
-										(function(filter) {
-											window.__netCapture = { requests: [], filter: filter };
-											var origOpen = XMLHttpRequest.prototype.open;
-											var origSend = XMLHttpRequest.prototype.send;
-											XMLHttpRequest.prototype.open = function(method, url) {
-												this.__cap = { method: method, url: url };
-												return origOpen.apply(this, arguments);
-											};
-											XMLHttpRequest.prototype.send = function(body) {
-												var self = this;
-												if (self.__cap && (!filter || self.__cap.url.indexOf(filter) !== -1)) {
-													var entry = { method: self.__cap.method, url: self.__cap.url, payload: body, ts: new Date().toISOString() };
-													self.addEventListener('load', function() {
-														entry.status = self.status;
-														try { entry.response = self.responseText; } catch(e) {}
-														window.__netCapture.requests.push(entry);
-													});
-												}
-												return origSend.apply(this, arguments);
-											};
-											var origFetch = window.fetch;
-											if (origFetch) {
-												window.fetch = function(input, init) {
-													var url = typeof input === 'string' ? input : (input.url || '');
-													var method = (init && init.method) || 'GET';
-													var body = (init && init.body) || null;
-													if (!filter || url.indexOf(filter) !== -1) {
-														var entry = { method: method, url: url, payload: typeof body === 'string' ? body : JSON.stringify(body), ts: new Date().toISOString() };
-														return origFetch.apply(this, arguments).then(function(resp) {
-															entry.status = resp.status;
-															return resp.clone().text().then(function(t) { entry.response = t; window.__netCapture.requests.push(entry); return resp; });
-														});
-													}
-													return origFetch.apply(this, arguments);
-												};
-											}
-										})(arguments[0]);
-									''', Arrays.asList(urlFilter))
-									WebUI.comment("🔍 Network capture started | Filter: '${urlFilter ?: "(all)"}'")
-								} catch (Exception e) {
-									logStep("⚠ startCapture failed: ${e.message}")
-								}
-								break
-
-							case "logCapture":
-								try {
-									String capJson = WebUI.executeJavaScript("return JSON.stringify(window.__netCapture ? window.__netCapture.requests : []);", null)
-									def capRequests = new groovy.json.JsonSlurper().parseText(capJson ?: "[]")
-									if (capRequests.isEmpty()) {
-										WebUI.comment("📡 No network requests captured")
-									} else {
-										capRequests.eachWithIndex { req, i ->
-											String msg = "📡 Captured[${i}] ${req.method} ${req.url} → ${req.status}\n    Payload: ${req.payload}\n    Response: ${req.response ?: '(empty)'}"
-											logStep(msg)
-											WebUI.comment(msg)
-										}
-									}
-								} catch (Exception e) {
-									logStep("⚠ logCapture failed: ${e.message}")
-								}
-								break
-
-							case "clearCapture":
-								try {
-									WebUI.executeJavaScript("if(window.__netCapture) window.__netCapture.requests = [];", null)
-									WebUI.comment("🔍 Network capture cleared")
-								} catch (Exception e) {
-									logStep("⚠ clearCapture failed: ${e.message}")
-								}
-								break
-
 							case "click":
 							case "clickAndWait":
 								try {
@@ -1830,25 +1755,10 @@ class MainValidator {
 										WebUI.sendKeys(to, Keys.chord(Keys.ENTER), FailureHandling.OPTIONAL)
 									}
 
-									// Auto-validate and retry once if value didn't stick
-									int stWaitMs = (command == "setTextAndWait") ? 6000 : 2500
-									def stResult = waitUntilValueEquals(to, value?.toString() ?: "", stWaitMs, 150)
-									String stExpClean = (value?.toString() ?: "").replaceAll('[\$,%]', '')
-									String stActClean = (stResult.last ?: "").replaceAll('[\$,%]', '')
-									boolean stMatched = stResult.ok || (normalize(stExpClean) == normalize(stActClean))
-									WebUI.comment("✔ ${command} applied | Locator: ${locator} | Expected: '${value}' | Actual: '${stResult.last}'")
-									if (!stMatched) {
-										logStep("🔄 setText retry | Locator: ${locator} | Expected: '${value}' | Got: '${stResult.last}'")
-										if ("percent".equalsIgnoreCase(fieldFormat)) {
-											setPercentField(to, value.toString())
-										} else if ("range".equalsIgnoreCase(inputType)) {
-											WebUI.executeJavaScript(
-													"arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input',{bubbles:true})); arguments[0].dispatchEvent(new Event('change',{bubbles:true}));",
-													Arrays.asList(el, value?.toString() ?: "")
-													)
-										} else {
-											jsSetInputValue(to, value?.toString() ?: "", true)
-											WebUI.sendKeys(to, Keys.chord(Keys.ENTER), FailureHandling.OPTIONAL)
+									if (command == "setTextAndWait") {
+										def waited = waitUntilValueEquals(to, value?.toString() ?: "", 6000, 150)
+										if (!waited.ok) {
+											captureFailure(command, new Exception("Value did not match after setTextAndWait"), locator, waited.last ?: "", value ?: "")
 										}
 									}
 									flushWatchdogLogs(false)
