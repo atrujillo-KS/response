@@ -19,7 +19,7 @@ Katalon Studio/
 - **Orchestrator** (`Katalon Studio/Jenkinsfile`) runs on `built-in` agent, triggers `RES_2.0` then `GS_2.0` sequentially. Publishes report links. Marks itself failed if any child fails.
 - **Shared Runner** (`Jenkinsfile-runner.groovy`) contains all pipeline logic: preflight, Katalon execution, resource monitoring, HTML report generation, JUnit parsing.
 - **Project Wrappers** (e.g., `RESPONSE/Jenkinsfile`, `GS2.0/Jenkinsfile`) are thin ~10-line files that `load` the shared runner with project-specific config (`katalon_dir`, `katalon_project`, `katalon_suite`).
-- **Other projects** (API_Services, Educators 2.0, PostRelease, Response_Services) still use full standalone Jenkinsfiles — to be migrated to the shared runner pattern.
+- **All projects** now use the shared runner pattern (migrated in v1.14.0).
 
 ## Jenkins Job Names
 
@@ -31,7 +31,7 @@ Katalon Studio/
 
 ## Key Conventions
 
-- **Jenkinsfile version**: Always noted in commit messages and file headers (currently v1.13.1)
+- **Jenkinsfile version**: Always noted in commit messages and file headers (currently v1.14.0)
 - **Execution**: `katalonc` CLI, Chrome headless, orgID `2333388`
 - **Test Suites**: Main runner suite is `Test Suites/Headless-PROD` (parallel execution)
 - **Concurrency**: Configured via `maxConcurrentInstances` in `.ts` files (typically 6-8)
@@ -44,9 +44,21 @@ Katalon Studio/
 - Verifier/layout files in `Include/verifier/`
 - Spanish translations in `Include/verifier/es/`
 
+## Branch & Environment Strategy
+
+Jenkins jobs are configured to read the Jenkinsfile from the **main** branch. The Jenkinsfile itself then checks out the environment-specific branch based on the `ENVIRONMENT` parameter:
+
+1. Jenkins loads the Jenkinsfile from **main** (this is where parameter definitions like `ENVIRONMENT` choices live)
+2. The Jenkinsfile runs `deleteDir()` + `checkout` to switch to the selected branch (`PROD`, `QA`, `STG`, or `AWS`)
+3. The shared runner (`Jenkinsfile-runner.groovy`) executes using the code and profiles from that branch
+4. The `executionProfile` is set to match the environment (e.g., `PROD` profile on `PROD` branch)
+
+**Important**: Changes to Jenkinsfile parameters or pipeline logic must be on **main** to take effect. Always merge feature branches into main and push. Environment-specific branches should also be kept in sync with main.
+
 ## When Editing Jenkinsfiles
 
 - Edit `Jenkinsfile-runner.groovy` for pipeline logic changes (affects all projects using shared runner)
 - Edit individual project `Jenkinsfile` only for project-specific config (dir, project, suite)
 - Edit `Katalon Studio/Jenkinsfile` for orchestration changes (job order, scheduling, report links)
 - Always mention the Jenkinsfile version when pushing changes
+- Always merge changes to **main** and push, then merge main into environment branches (AWS, PROD, QA, STG)
