@@ -2,7 +2,7 @@
 node('ec2-agent-01') {
     properties([
         parameters([
-            choice(name: 'ENVIRONMENT', choices: ['PROD', 'QA', 'STG'], description: 'Target environment (branch + profile)')
+            choice(name: 'ENVIRONMENT', choices: ['PROD', 'QA', 'STG', 'AWS'], description: 'Target environment (branch + profile)')
         ])
     ])
 
