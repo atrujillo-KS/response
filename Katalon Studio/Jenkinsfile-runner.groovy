@@ -72,6 +72,9 @@ def run(Map config) {
                             done) &
                             MONITOR_PID=$!
 
+                            # Relax SHA1withRSA cert constraint for WS.sendRequest (Java HTTP client)
+                            export JAVA_TOOL_OPTIONS="-Djdk.certpath.disabledAlgorithms=\"MD2, MD5\""
+
                             katalonc \
                               -noSplash \
                               -runMode=console \
