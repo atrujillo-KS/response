@@ -17,6 +17,216 @@
     }
   },
   {
+    "click": {
+      "id": "//div[@id='lf_PropertyPrice_assistant']/div/div/div/div/button[2]/div/span[2]/span"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_inline_modal_title",
+      "value": "Estimated Value of Home"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::div[2]",
+      "value": "Enter the address information to retrieve a home valuation estimate from Zillow, an independent third party."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='X'])[2]/following::label[1]",
+      "value": "Street Address"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Street Address'])[1]/following::label[1]",
+      "value": "Street Address 2"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Street Address 2'])[1]/following::label[1]",
+      "value": "City"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='City'])[1]/following::label[1]",
+      "value": "State"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_inline_state",
+      "value": "Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_inline_state",
+      "value": "?"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State'])[1]/following::label[1]",
+      "value": "Zip code"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf_zillow_results_calculate",
+      "value": "Look Up"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//p[@id='zillow_disclaimer']/span",
+      "value": "© Zillow, Inc.,"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"zillow_disclaimer\"]/span[2]",
+      "value": "2006-2026."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id=\"zillow_disclaimer\"]/span[3]",
+      "value": "Use is subject to Zillow's"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//a[contains(text(),'Terms of Use')]",
+      "value": "Terms of Use"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_zillow_results_calculate"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Street Address'])[1]/following::div[1]",
+      "value": "Street Address must be entered"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='City'])[1]/following::div[1]",
+      "value": "City must be entered"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='State'])[1]/following::div[1]",
+      "value": "State must be entered"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Zip code'])[1]/following::div[1]",
+      "value": "Zip code must be entered"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_inline_address1"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_address1",
+      "value": "8849 Dewsbury"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_city",
+      "value": "San Diego"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_inline_state"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_inline_state",
+      "value": "label=California"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_zipcode",
+      "value": "92126"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_zillow_results_calculate"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]",
+      "value": "USE THIS AMOUNT"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "Price"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The estimated value of the home is ${Price}"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstimatedHomeValue",
+      "value": "${Price}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Use this Amount'])[1]/following::span[1]",
+      "value": "Zestimate® home valuation is provided \"as is\" via the Zestimate API."
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Use this Amount'])[1]/following::span[2]",
+      "value": "See more details for"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='See more details for'])[1]/following::span[2]",
+      "value": "on Zillow."
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_PropertyPrice",
+      "value": "${Price}"
+    }
+  },
+  {
     "setText": {
       "id": "lf_PropertyPrice",
       "value": "635783"
