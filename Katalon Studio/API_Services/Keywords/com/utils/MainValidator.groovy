@@ -18,6 +18,11 @@ import java.text.DecimalFormat
 import java.math.RoundingMode
 import java.util.Calendar
 import java.util.TimeZone
+import javax.net.ssl.SSLContext
+import javax.net.ssl.TrustManager
+import javax.net.ssl.X509TrustManager
+import javax.net.ssl.HttpsURLConnection
+import java.security.cert.X509Certificate
 
 // Response Services Script
 class MainValidator {
@@ -782,9 +787,30 @@ class MainValidator {
 		return sb.toString()
 	}
 
+	// ---------- SSL trust-all (workaround for SHA1withRSA certs on CI) ----------
+	private static boolean sslInitialized = false
+	private static synchronized void disableSslVerification() {
+		if (sslInitialized) return
+		try {
+			TrustManager[] trustAll = [new X509TrustManager() {
+				X509Certificate[] getAcceptedIssuers() { return null }
+				void checkClientTrusted(X509Certificate[] certs, String authType) {}
+				void checkServerTrusted(X509Certificate[] certs, String authType) {}
+			}] as TrustManager[]
+			SSLContext sc = SSLContext.getInstance('TLS')
+			sc.init(null, trustAll, new java.security.SecureRandom())
+			HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory())
+			HttpsURLConnection.setDefaultHostnameVerifier({ hostname, session -> true })
+			sslInitialized = true
+		} catch (Exception e) {
+			println "WARNING: Could not disable SSL verification: ${e.message}"
+		}
+	}
+
 	// ---------- Entry point ----------
 	@Keyword
 	static void runFromJson(String calcId, boolean includeNonDefault = false) {
+		disableSslVerification()
 		resetRunFlag()
 		resetFailCount()
 		prepareLogging(calcId)
