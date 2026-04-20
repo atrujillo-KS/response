@@ -1,0 +1,165 @@
+🚀 MainValidator v1.6.0 | calcId=refinancemystudentloans2
+🌐 Navigate attempt 1/3 → https://qa.awsc.leadfusion.com/gs/fem/goal/refinancemystudentloans.html
+🖱 click (native) | locator='lf_continue_button'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_continue_button'
+🖱 click (native) | locator='xpath=//div[@id='lf_EffIntRateStudentLoans_assistant']/div/div/div/div/div[3]/button/span[2]/span'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=//div[@id='lf_EffIntRateStudentLoans_assistant']/div/div/div/div/div[3]/button/span[2]/span'
+🖱 click (native) | locator='lf_add_debt_btn'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_add_debt_btn'
+🖱 click (native) | locator='lf_add_debt_btn'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_add_debt_btn'
+🖱 click (native) | locator='lf_add_debt_btn'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_add_debt_btn'
+🖱 click (native) | locator='lf_add_debt_btn'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_add_debt_btn'
+🖱 click (native) | locator='lf_calculate_btn'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_calculate_btn'
+🔄 getTextWithRetries attempt 1 (96ms) | expected='You pay $3,100 monthly on a total debt of $41,000 and your effective interest rate is 4.17%' | actual='
+                    You pay
+                    $
+                    monthly on a total debt of
+                    $
+                    and your effective interest rate is %
+                '
+✅ getTextWithRetries matched on attempt 2 (337ms) | expected='You pay $3,100 monthly on a total debt of $41,000 and your effective interest rate is 4.17%' | actual='You pay $3,100 monthly on a total debt of $41,000 and your effective interest rate is 4.17%'
+🖱 click (native) | locator='lf_use_StudentDebt'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_use_StudentDebt'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.206}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_use_DebtAmount']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_use_DebtAmount'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_use_DebtAmount'
+🖱 click (native) | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]'
+🖱 click (native) | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Good'])[2]/following::div[1]'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Good'])[2]/following::div[1]'
+🖱 click (native) | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fair'])[2]/following::div[1]'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fair'])[2]/following::div[1]'
+🖱 click (native) | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assumptions'])[1]/following::button[1]'
+✅ Stored '15-Year Interest-Only Loan' into variable 'Product'
+🖱 click (native) | locator='lf_review_sort'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_review_sort'
+🖱 click (native) | locator='lf_results_row_go_1_nextsteps'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_results_row_go_1_nextsteps'
+🔄 getTextWithRetries attempt 1 (105ms) | expected='1. Apply Online' | actual='1. Save'
+✅ getTextWithRetries matched on attempt 2 (341ms) | expected='1. Apply Online' | actual='1. Apply Online'
+🖱 click (native) | locator='css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope'
+🔍 post-click state | displayed=true | enabled=true | locator='css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope'
+🖱 click (native) | locator='//button[@id='lf_modal_close']/span'
+🔍 post-click state | element no longer accessible (may have navigated) | locator='//button[@id='lf_modal_close']/span'
+🖱 click (native) | locator='lf_actions_back'
+🔍 post-click state | element no longer accessible (may have navigated) | locator='lf_actions_back'
+🖱 click (native) | locator='css=.lf-results-check-1'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-1'
+🖱 click (native) | locator='css=.lf-results-check-3'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-3'
+🖱 click (native) | locator='css=.lf-results-check-4'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-4'
+🖱 click (native) | locator='lf_eval_selected'
+⏳ click | delayAfterClick (0.8s) for locator='lf_eval_selected'
+🔍 post-click state | element no longer accessible (may have navigated) | locator='lf_eval_selected'
+🖱 click (JS forced) | locator='lf_compare_view_as_table'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_table'
+🖱 click (native) | locator='xpath=//table[@id='lf_resultsTable_']/tbody/tr[180]/td[3]/div'
+🔍 post-click state | displayed=true | enabled=true | locator='xpath=//table[@id='lf_resultsTable_']/tbody/tr[180]/td[3]/div'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🔄 getTextWithRetries attempt 1 (127ms) | expected='$40,000' | actual='$148'
+✅ getTextWithRetries matched on attempt 2 (388ms) | expected='$40,000' | actual='$40,000'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.941}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_compare_view_as_graph']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_compare_view_as_graph'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_graph'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🖱 click (JS forced) | locator='lf_compare_view_as_table'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_table'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.941}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_compare_view_as_graph']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_compare_view_as_graph'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_graph'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🖱 click (native) | locator='css=button.lf-plain-button.ng-binding'
+🔍 post-click state | element no longer accessible (may have navigated) | locator='css=button.lf-plain-button.ng-binding'
+🖱 click (native) | locator='css=.lf-results-check-1'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-1'
+🖱 click (native) | locator='css=.lf-results-check-3'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-3'
+🖱 click (native) | locator='css=.lf-results-check-0'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-0'
+🖱 click (native) | locator='css=.lf-results-check-2'
+🔍 post-click state | displayed=true | enabled=true | locator='css=.lf-results-check-2'
+🖱 click (native) | locator='lf_eval_selected'
+⏳ click | delayAfterClick (0.8s) for locator='lf_eval_selected'
+🔍 post-click state | element no longer accessible (may have navigated) | locator='lf_eval_selected'
+🖱 click (JS forced) | locator='lf_compare_view_as_table'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_table'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.3606}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_compare_view_as_graph']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_compare_view_as_graph'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_graph'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🖱 click (JS forced) | locator='lf_compare_view_as_table'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_table'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.3606}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_compare_view_as_graph']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_compare_view_as_graph'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_graph'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🖱 click (JS forced) | locator='lf_compare_view_as_table'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_table'
+🖱 click (JS fallback on first attempt) | native error='element not interactable
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544c234bef829661b806eb657f1fb354, clickElement {id=f.951F2FD4429B6F74B4703169799634D6.d.D545DFF15D10DBD02018BF6F0B3E4F2F.e.3606}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61149}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61149/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (544c234bef829661b806eb657f1fb354)] -> xpath: //*[@id = 'lf_compare_view_as_graph']]
+Session ID: 544c234bef829661b806eb657f1fb354' | locator='lf_compare_view_as_graph'
+🔍 post-click state | displayed=false | enabled=true | locator='lf_compare_view_as_graph'
+⏳ click | delayBeforeClick for locator='lf_compare_select'
+🖱 click (native) | locator='lf_compare_select'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_compare_select'
+🖱 click (JS forced) | locator='lf_EstimatedClosingFees_expand'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_EstimatedClosingFees_expand'
+🖱 click (JS forced) | locator='lf_EstimatedClosingFees_expand'
+🔍 post-click state | displayed=true | enabled=true | locator='lf_EstimatedClosingFees_expand'

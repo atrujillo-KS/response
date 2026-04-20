@@ -36,7 +36,7 @@
   {
     "setText": {
       "id": "lf_inline_address1",
-      "value": "8849 Dewsbury"
+      "value": "8849 Dewsbury Ave"
     }
   },
   {
@@ -65,12 +65,6 @@
   {
     "click": {
       "id": "lf_zillow_results_calculate"
-    }
-  },
-  {
-    "verifyText": {
-      "id": "lf_zillow_error",
-      "value": "Sorry, the address you provided is not found in Zillow's property database."
     }
   },
   {
@@ -170,12 +164,6 @@
     }
   },
   {
-    "waitForText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]",
-      "value": "Use this Amount"
-    }
-  },
-  {
     "storeText": {
       "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
       "value": "Price"
@@ -185,6 +173,17 @@
     "verifyText": {
       "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
       "value": "The estimated value of the home is ${Price}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-save-send-info-btn",
+      "value": "USE THIS AMOUNT"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@type='button']",
     }
   }
 ]
