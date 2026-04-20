@@ -26,6 +26,9 @@ def run(Map config) {
                             if [ -f "$PROFILE" ]; then
                                 CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>clientId</{print val}' "$PROFILE" | tr -d "'")
                                 PROFILE_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>URL</{print val}' "$PROFILE" | tr -d "'")
+                                # Fallback: try baseUrl if URL is empty
+                                [ -z "$PROFILE_URL" ] && PROFILE_URL=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>baseUrl</{print val}' "$PROFILE" | tr -d "'")
+                                [ -z "$CLIENT_ID" ] && CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>siteId</{print val}' "$PROFILE" | tr -d "'")
                             fi
                             echo "Jenkinsfile v$JENKINSFILE_VERSION | Env: $ENVIRONMENT | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $ENVIRONMENT | clientId: $CLIENT_ID | URL: $PROFILE_URL"
                         '''
