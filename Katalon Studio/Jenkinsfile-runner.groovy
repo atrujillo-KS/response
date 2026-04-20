@@ -31,6 +31,14 @@ def run(Map config) {
                                 [ -z "$CLIENT_ID" ] && CLIENT_ID=$(awk -F'[<>]' '/<initValue>/{val=$3} /<name>siteId</{print val}' "$PROFILE" | tr -d "'")
                             fi
                             echo "Jenkinsfile v$JENKINSFILE_VERSION | Env: $ENVIRONMENT | Project: $KATALON_PROJECT | Suite: $KATALON_SUITE | Profile: $ENVIRONMENT | clientId: $CLIENT_ID | URL: $PROFILE_URL"
+
+                            # Test connectivity to the target URL
+                            if [ -n "$PROFILE_URL" ]; then
+                                TEST_URL="$PROFILE_URL/tools/${CLIENT_ID}/auto01/tool.fcs?newuser=&json=&toolPage=initial"
+                                echo "Test URL: $TEST_URL"
+                                HTTP_CODE=$(curl -sk -o /dev/null -w "%{http_code}" "$TEST_URL" 2>/dev/null || echo "FAILED")
+                                echo "Connectivity check: HTTP $HTTP_CODE"
+                            fi
                         '''
                     }
 
