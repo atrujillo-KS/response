@@ -86,12 +86,14 @@ def run(Map config) {
                             # Relax SHA1withRSA cert constraint for WS.sendRequest (Java HTTP client)
                             export JAVA_TOOL_OPTIONS="-Djdk.certpath.disabledAlgorithms=\"MD2, MD5\""
 
+                            # Note: -executionProfile is omitted for test suite collections
+                            # because it overrides the per-suite profiles defined in the .ts file.
+                            # Each suite in the collection specifies its own profileName.
                             katalonc \
                               -noSplash \
                               -runMode=console \
                               -projectPath="$WORKSPACE/$KATALON_DIR/$KATALON_PROJECT" \
                               -testSuiteCollectionPath="$KATALON_SUITE" \
-                              -executionProfile="$ENVIRONMENT" \
                               -apiKey="$KATALON_API_KEY" \
                               -orgID="2333388" \
                               -retry=0 \
