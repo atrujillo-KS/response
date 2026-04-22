@@ -2,7 +2,7 @@
   {
     "verifyTitle": {
       "id": "Finance Working Capital",
-      "value": "Finance Working Capital"
+      "value": "Finance Working Capital"      
     }
   },
   {
@@ -368,6 +368,7 @@
       "value": "Apply Now"
     }
   },
+  
   {
     "verifyText": {
       "id": "css=button.lf-education-link.lf-plain-button.lf-what-you-need-apply.ng-binding.ng-scope",
@@ -436,6 +437,86 @@
   {
     "click": {
       "id": "lf_modal_close"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-expertise-refine-link"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "94109"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Francisco, CA"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
+    }
+  },
+  {
+    "click": {
+      "id": "//li/button"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_emailBankerName",
+      "value": "Finance Working Capital"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_emailBankerEmail",
+      "value": "financeworkingcapital@bulkmail.sanc.leadfusion.com"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Message'])[1]/following::button[1]"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "lf_emailed_banker_ok_id",
+      "value": "Your email has been sent"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=//button[@type='button']"
     }
   },
   {

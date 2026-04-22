@@ -2,7 +2,7 @@
   {
     "verifyTitle": {
       "id": "Refinance My Mortgage",
-      "value": "Refinance My Mortgage"
+      "value": "Refinance My Mortgage"   
     }
   },
   {
@@ -19,6 +19,80 @@
   {
     "click": {
       "id": "lf_CurrentValueOfHome"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='We can help you determine this amount.'])[1]/following::span[3]"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_inline_address1"
+    }
+  },
+  {
+    "type": {
+      "id": "lf_inline_address1",
+      "value": "8849 Dewsbury"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_city",
+      "value": "San Diego"
+    }
+  },
+  {
+    "select": {
+      "id": "lf_inline_state",
+      "value": "label=California"
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_inline_zipcode",
+      "value": "92126"
+    }
+  },
+  {
+    "click": {
+      "id": "lf_zillow_results_calculate"
+    }
+  },
+  {
+    "storeText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::span[1]",
+      "value": "EstimatedValue"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='< Back to worksheet'])[1]/following::div[1]",
+      "value": "The estimated value of the home is ${EstimatedValue}"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//div[@id=\"'EstimatedHomeValue'\"]/div/label",
+      "value": "Estimated Home Value"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_EstimatedHomeValue",
+      "value": "${EstimatedValue}"
+    }
+  },
+  {
+    "click": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Estimated Home Value'])[1]/following::button[1]"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_CurrentValueOfHome",
+      "value": "${EstimatedValue}"
     }
   },
   {
@@ -302,6 +376,42 @@
   {
     "click": {
       "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('What You', \"'\", 'll Need To Apply')])[1]/following::button[1]"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Refine location"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_branch']/div",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_find_call_back']/div",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "xpath=//*[@id='lf_Live_chat']/div",
+      "value": "Live Chat"
     }
   },
   {

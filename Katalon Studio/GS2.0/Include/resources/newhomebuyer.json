@@ -175,6 +175,88 @@
     }
   },
   {
+    "verifyText": {
+      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Send Code'])[1]/following::h3[1]",
+      "value": "2. Want Expert Help?"
+    }
+  },
+  {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "San Diego, CA"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "92130"
+    }
+  },
+      {
+    "click": {
+      "id": "lf-action-expertise-refine-link",
+    }
+  },
+  {
+    "setText": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "lf-action-expertise-refine-link",
+      "value": "Miami, FL"
+    }
+  },
+  {
+    "verifyValue": {
+      "id": "lf_refine_location",
+      "value": "33157"
+    }
+  },
+  {
+    "waitForText": {
+      "id": "//li/button",
+      "value": "Email me"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "//div[5]/div/div/div[2]/h3",
+      "value": "Other Options"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-branch-btn > div:nth-child(2)",
+      "value": "Find a Branch Near You"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-call-btn > div:nth-child(2)",
+      "value": "Request a Call Back"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "css=.lf-action-chat-btn > div:nth-child(2)",
+      "value": "Live Chat"
+    }
+  },
+  {
     "waitForText": {
       "id": "lf_actions_back",
       "value": "Back"
@@ -191,6 +273,7 @@
       "value": "PROPERTY INFORMATION (Step 1 of 3)"
     }
   },
+
   {
     "verifyText": {
       "id": "//div[@id='lf_field_list']/span/div/div/div[2]",
@@ -250,7 +333,7 @@
       "value": "Investment"
     }
   },
-  {
+    {
     "delay": {
       "value": "2"
     }
@@ -857,7 +940,7 @@
   },
   {
     "verifyText": {
-      "id": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Annual Homeowners Insurance'])[2]/following::div[2]",
+      "id": "xpath=//div[@id='lf_YrIns_assistant']/div/div/div[2]/div",
       "value": "Homeowners insurance is designed to protect a property against damage to the home itself, damage to your possessions in the home, and personal liability for damages or injuries caused by you or your family that occur on the premises of the property."
     }
   },
@@ -901,7 +984,7 @@
       "id": "lf_continue_button"
     }
   },
-  {
+    {
     "waitForText": {
       "id": "lf_step_title_text",
       "value": "ABOUT YOU (Step 3 of 3)"
@@ -1699,7 +1782,7 @@
       "id": "lf_eval_selected"
     }
   },
-  {
+{
     "waitForText": {
       "id": "xpath=//div[@id='lf_graph_container']//*[name()='text'][contains(normalize-space(.),'$237,448')]",
       "value": "$237,448$237,448"
@@ -2080,6 +2163,28 @@
     "verifyText": {
       "id": "css=th.lf-compare-header.lf-compare-header-2",
       "value": "30-Year FHA Fixed with 0.000 pts"
+    }
+  },
+ {
+    "verifyChecked": {
+      "id": "patterns_enabled",
+      "value": "false"
+    }
+  },
+  {
+    "verifyText": {
+      "id": "patterns_enabled_label",
+      "value": "Enable color patterns"
+    }
+  },
+  {
+    "click": {
+      "id": "patterns_enabled"
+    }
+  },
+  {
+    "click": {
+      "id": "patterns_enabled"
     }
   },
   {
@@ -2657,7 +2762,8 @@
       "id": "win_ser_1"
     }
   },
-  {
+  
+    {
     "click": {
       "id": "lf_modal_close"
     }
