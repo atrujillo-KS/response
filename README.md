@@ -69,6 +69,51 @@ Katalon Studio/
 └── Response_Services/
 ```
 
+## Branch & Environment Strategy
+
+Jenkins jobs read the Jenkinsfile from the **main** branch. The Jenkinsfile then checks out the environment-specific branch based on the `ENVIRONMENT` parameter:
+
+1. Jenkins loads the Jenkinsfile from **main**
+2. The Jenkinsfile checks out the selected branch (`PROD`, `QA`, `STG`, or `AWS`)
+3. The shared runner executes using the code and profiles from that branch
+
+**What goes where:**
+
+- **main branch** — Jenkinsfiles, pipeline logic, orchestrator config only. Main is a launcher; it never runs tests.
+- **Environment branches (PROD, QA, STG, AWS)** — Test project changes: JSON test data, profiles, test cases, verifiers, Keywords, test suites.
+
+**Rules:**
+- Jenkinsfile/pipeline changes → commit to **main**, then merge into environment branches
+- Test project changes → commit directly to the relevant **environment branch(es)**
+
+## Environment Promotion Workflow
+
+Test changes flow through environments in this order:
+
+```
+QA → STG → PROD
+         → AWS
+```
+
+All test work starts on **QA**. When ready for staging, merge QA into STG. When STG is validated, merge STG into PROD and/or AWS.
+
+| Command        | Action                              |
+|----------------|-------------------------------------|
+| "Update STG"   | `git checkout STG && git merge QA && git push`     |
+| "Update PROD"  | `git checkout PROD && git merge STG && git push`   |
+| "Update AWS"   | `git checkout AWS && git merge STG && git push`    |
+
+### Promoting Jenkinsfile / Pipeline Changes
+
+Pipeline changes live on **main** and must be merged down into each environment branch:
+
+```bash
+git checkout QA  && git merge main && git push
+git checkout STG && git merge main && git push
+git checkout PROD && git merge main && git push
+git checkout AWS  && git merge main && git push
+```
+
 ## Environment Profiles
 
 Each project supports multiple environments via Katalon execution profiles:

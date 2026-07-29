@@ -62,6 +62,62 @@ Jenkins jobs are configured to read the Jenkinsfile from the **main** branch. Th
 - Jenkinsfile/pipeline changes → commit to **main**, then merge main into environment branches
 - Test project changes → commit directly to the relevant **environment branch(es)**, do NOT push to main
 
+## Environment Promotion Workflow
+
+Test changes flow through environments in this order:
+
+```
+QA → STG → PROD
+         → AWS
+```
+
+All test work starts on **QA**. When ready for staging, merge QA into STG. When STG is validated, merge STG into PROD and/or AWS.
+
+### "Update STG"
+
+Merge QA into STG and push:
+
+```bash
+git checkout STG
+git merge QA
+git push
+```
+
+### "Update PROD"
+
+Merge STG into PROD and push:
+
+```bash
+git checkout PROD
+git merge STG
+git push
+```
+
+### "Update AWS"
+
+Merge STG into AWS and push:
+
+```bash
+git checkout AWS
+git merge STG
+git push
+```
+
+### Promoting Jenkinsfile / Pipeline Changes
+
+Pipeline changes live on **main** and must be merged down into each environment branch:
+
+```bash
+git checkout QA  && git merge main && git push
+git checkout STG && git merge main && git push
+git checkout PROD && git merge main && git push
+git checkout AWS  && git merge main && git push
+```
+
+### Dual-Repo Sync
+
+This repository (`git KS`) and `qa_automated_scripts` share the same Katalon project structure. When making changes to RESPONSE or GS2.0 (test data, Keywords, verifiers, test cases), apply the same changes to both repos and promote through the same workflow.
+
 ## When Editing Jenkinsfiles
 
 - Edit `Jenkinsfile-runner.groovy` for pipeline logic changes (affects all projects using shared runner)
